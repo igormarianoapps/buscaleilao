@@ -1,19 +1,11 @@
 {
-  "checked_at": "2026-11-02T11:44:47+00:00",
-  "verified": 3,
-  "platform_events": 0,
+  "checked_at": "2026-11-02T18:57:32+00:00",
+  "verified": 43,
+  "platform_events": 40,
   "failed": [
     {
       "id": "lorena-2026-11-10",
       "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
-    },
-    {
-      "id": "Copart",
-      "error": "https://www.copart.com.br/salesListResult: Nenhum evento futuro identificado com segurança; https://www.copart.com.br/auctionCalendar: Nenhum evento futuro identificado com segurança"
-    },
-    {
-      "id": "VIP Leilões",
-      "error": "https://www.vipleiloes.com.br/: HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nFound; https://www.vipleiloes.com.br/index: HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nFound"
     }
   ]
 }
