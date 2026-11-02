@@ -48,7 +48,7 @@ def make(source,identifier,title,state,city,day,hour=None,notes=None):
 def parse_copart(page):
     found={}
     # Exact city-UF plus date, based on the official public sales-list table.
-    pat=r"([A-Za-zÀ-ÿ][A-Za-zÀ-ÿ\s-]{2,65}?)\s*-\s*([A-Z]{2})\s*(?:\\|\\s*){0,3}(\d{2}\.\d{2}\.\d{4})"
+    pat=r"([A-Za-zÀ-ÿ][A-Za-zÀ-ÿ\s-]{2,65}?)\s*-\s*([A-Z]{2})\s*(?:\|\s*){0,3}(\d{2}\.\d{2}\.\d{4})"
     for m in re.finditer(pat,page):
         city,state,raw=m.groups()
         day=parse_date(raw)
