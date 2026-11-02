@@ -6,7 +6,8 @@ from datetime import date, datetime, timezone
 from html.parser import HTMLParser
 
 STATES=set("AC AL AP AM BA CE DF ES GO MA MT MS MG PA PB PR PE PI RJ RN RS RO RR SC SP SE TO".split())
-URLS={"Copart":"https://www.copart.com.br/salesListResult","VIP Leilões":"https://www.vipleiloes.com.br/agenda"}
+URLS={"Copart":"https://www.copart.com.br/salesListResult","VIP Leilões":"https://www.vipleiloes.com.br/"}
+FALLBACKS={"Copart":["https://www.copart.com.br/auctionCalendar"],"VIP Leilões":["https://www.vipleiloes.com.br/index"]}
 
 class Reader(HTMLParser):
     def __init__(self):
@@ -47,7 +48,7 @@ def make(source,identifier,title,state,city,day,hour=None,notes=None):
 def parse_copart(page):
     found={}
     # Exact city-UF plus date, based on the official public sales-list table.
-    pat=r"([A-Za-zÀ-ÿ][A-Za-zÀ-ÿ\s-]{2,65}?)\s*-\s*([A-Z]{2})\s*\|?\s*(\d{2}\.\d{2}\.\d{4})"
+    pat=r"([A-Za-zÀ-ÿ][A-Za-zÀ-ÿ\s-]{2,65}?)\s*-\s*([A-Z]{2})\s*(?:\\|\\s*){0,3}(\d{2}\.\d{2}\.\d{4})"
     for m in re.finditer(pat,page):
         city,state,raw=m.groups()
         day=parse_date(raw)
@@ -79,12 +80,19 @@ def parse_vip(page):
 def collect_platforms():
     events,errors=[],[]
     for name,parser in (("Copart",parse_copart),("VIP Leilões",parse_vip)):
-        try:
-            found=parser(fetch(URLS[name]))
-            if not found: raise ValueError("Nenhum evento futuro identificado com segurança")
-            events.extend(found)
-            print(f"PLATFORM {name}: {len(found)} eventos por estado")
-        except (OSError,ValueError) as exc:
-            errors.append({"id":name,"error":str(exc)[:300]})
-            print(f"PLATFORM {name}: {exc}")
+        reasons=[]
+        for url in [URLS[name],*FALLBACKS[name]]:
+            try:
+                found=parser(fetch(url))
+                if not found: raise ValueError("Nenhum evento futuro identificado com segurança")
+                for event in found:
+                    event["source_url"]=url
+                events.extend(found)
+                print(f"PLATFORM {name}: {len(found)} eventos por estado via {url}")
+                break
+            except (OSError,ValueError) as exc:
+                reasons.append(f"{url}: {str(exc)[:150]}")
+        else:
+            errors.append({"id":name,"error":"; ".join(reasons)[:500]})
+            print(f"PLATFORM {name}: nenhuma fonte acessível com eventos validados")
     return events,errors
