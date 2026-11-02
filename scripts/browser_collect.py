@@ -80,7 +80,8 @@ def parse_vip_text(text):
         if not states or any(s not in STATES for s in states): continue
         # Different auction listings may share date+time+state; absent title/identifier
         # they are NOT safe to merge. Skip ambiguous blocks instead of fabricating identity.
-        heading_text = sections[idx][-240:] + "\\n" + block[:160]\n        heading = re.search(r"\b(?:Seguradoras|Financeiras|Conservado e Sucata|Conservados|Sucatas|Detran[- ]?[A-Z]{2}|Particulares)\b",block,re.I)
+        heading_text = sections[idx][-240:] + "\\n" + block[:160]
+        heading = re.search(r"\b(?:Seguradoras|Financeiras|Conservado e Sucata|Conservados|Sucatas|Detran[- ]?[A-Z]{2}|Particulares)\b",heading_text,re.I)
         if not heading: continue
         title = heading.group(0)
         hour = d.group(2)
