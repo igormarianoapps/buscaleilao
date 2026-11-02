@@ -67,7 +67,7 @@ def parse_vip_text(text):
     normalized = re.sub(r"\r", "", text)
     # VIP cards mark their start with Início, followed by date and time.
     sections = re.split(r"(?=\bIn[ií]cio\s*:?[ \t]*\d{2}/\d{2}/\d{4})", normalized, flags=re.I)
-    for block in sections[1:]:
+    for idx, block in enumerate(sections[1:]):
         # Do not cross into next event: the splitting above is the boundary.
         d = re.search(r"\bIn[ií]cio\s*:?[ \t]*(\d{2}/\d{2}/\d{4})\s+(\d{2}:\d{2})",block,re.I)
         if not d: continue
