@@ -63,21 +63,5 @@
       "10 de novembro de 2026",
       "63 lotes"
     ]
-  },
-  {
-    "id": "ibia-001-2026",
-    "title": "Leilão nº 001/2026 — veículos, máquinas e bens diversos",
-    "state": "MG",
-    "city": "Ibiá",
-    "auction_date": "2026-11-17",
-    "auction_time": "09:00",
-    "vehicle_count": null,
-    "organizer": "Prefeitura de Ibiá",
-    "source_type": "municipal",
-    "source_url": "https://www.ibia.mg.gov.br/",
-    "evidence": [
-      "Leilão 001/2026",
-      "17/11/2026"
-    ]
   }
 ]
