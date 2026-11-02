@@ -13,7 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "app" / "discovery-candidates.json"
-STATES = ["GO", "SP", "MG", "PR"]
+STATES = ["GO", "SP", "MG", "PR", "RJ", "RS", "SC", "BA", "PE", "CE", "PA", "MT", "MS", "MA", "ES", "DF", "AM", "PB", "RN", "PI", "TO", "RO", "AC", "AL", "AP", "RR", "SE"]
 YEAR = datetime.now(timezone.utc).year
 QUERIES = [
     f'leilão veículos prefeitura edital {YEAR}',
@@ -22,9 +22,12 @@ QUERIES = [
     f'leilão veículos leiloeiro {YEAR}',
     f'leilão carros motos seguradoras {YEAR}',
     f'leilão veículos prefeitura cidade pequena {YEAR}',
+    f'leilão veículos Polícia Rodoviária Federal edital {YEAR}',
+    f'leilão veículos Freitas Superbid Sodré Guariglia {YEAR}',
+    f'leilão carros veículos edital municípios interior {YEAR}',
 ]
 UA = "BuscaLeilao/0.2 (https://github.com/igormarianoapps/buscaleilao)"
-MAX_ITEMS = 50
+MAX_ITEMS = 180
 
 
 def discover(queries=QUERIES):
@@ -47,13 +50,19 @@ def discover(queries=QUERIES):
                     continue
                 if not re.search(r"ve[ií]cul|autom[oó]v|moto|sucata", title, re.I):
                     continue
+                publisher = item.find("source")
+                domain = publisher.attrib.get("url", "") if publisher is not None else ""
+                rank = "official" if re.search(r"(\\.gov\\.br|\\.leg\\.br|\\.jus\\.br|prefeitura)", domain + " " + title,re.I) else "other"
                 found[link] = {"title": title[:220], "url": link, "published": pub,
+                               "publisher_url": domain, "source_priority": rank,
                                "discovered_by": "news_rss", "status": "unverified"}
                 if len(found) >= MAX_ITEMS:
                     break
         except (OSError, ValueError, ET.ParseError) as exc:
             errors.append({"query": term, "error": str(exc)[:200]})
-    return list(found.values()), errors
+    results = list(found.values())
+    results.sort(key=lambda x: (x["source_priority"] != "official", x["published"]), reverse=False)
+    return results, errors
 
 
 def main():
