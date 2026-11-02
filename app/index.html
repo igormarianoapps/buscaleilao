@@ -22,9 +22,11 @@ small{color:#64748b}.empty{padding:28px;background:white;border-radius:12px}
 <label>Estado<select name="state"><option value="">Todos os estados</option></select></label>
 <label>Data do leilão<input type="date" name="day"></label>
 <button type="submit">Buscar leilões</button>
+<label>Organizador<select name="organizer"><option value="">Todos os organizadores</option><option value="Copart">Copart</option><option value="VIP Leilões">VIP Leilões</option><option value="municipal">Prefeituras e órgãos municipais</option></select></label>
 </form><div class="topline"><h2>Próximos leilões</h2><small id="count"></small></div><section id="results" class="cards" aria-live="polite"></section>
-<p><small>Versão inicial: a coleta automática ainda não está ativa. A ausência de resultados não significa ausência de leilões.</small></p>
-</main><script>
+<p><small>Agenda atualizada por coleta periódica de fontes públicas. A cobertura ainda é parcial; confirme sempre as informações no site do leiloeiro.</small></p>
+</main><script type="module">
+import {filterAuctions} from "/app/agenda.mjs";
 const states="AC AL AP AM BA CE DF ES GO MA MT MS MG PA PB PR PE PI RJ RN RS RO RR SC SP SE TO".split(" ");
 const select=document.querySelector('select[name="state"]');
 states.sort().forEach(s=>select.add(new Option(s,s)));
@@ -39,17 +41,18 @@ async function load(){
     const res=await fetch("/app/events.json",{cache:"no-store"});
     if(!res.ok)throw Error("Falha ao consultar a API");
     const feed=await res.json();
-    const auctions=(feed.events||[]).filter(a=>a.status==="scheduled"&&a.auction_date>=new Date().toLocaleDateString("en-CA",{timeZone:"America/Sao_Paulo"})&&(!form.get("state")||a.state===form.get("state"))&&(!form.get("day")||a.auction_date===form.get("day")));
+    const today=new Intl.DateTimeFormat("en-CA",{timeZone:"America/Sao_Paulo",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());
+    const auctions=filterAuctions(feed.events,{state:form.get("state")||"",day:form.get("day")||"",today}).filter(a=> !form.get("organizer") || (form.get("organizer")==="municipal" ? a.source_type==="municipal" : a.organizer===form.get("organizer")));
     const n=auctions.length;
-    count.textContent=n+" resultado(s)";
+    count.textContent=n+" leilão(ões)";
     results.innerHTML=n?auctions.map(a=>`<article class="card">
-      <span class="tag">${escapeHTML(a.city)} · ${escapeHTML(a.state)}</span>
+      <span class="tag">${escapeHTML(a.city && a.city!=="Local não informado"?a.city+" · ":"")}${escapeHTML(a.states.join(", "))}</span>
       <h2>${escapeHTML(a.title)}</h2>
       <div class="meta"><span>📅 ${escapeHTML(a.auction_date.split("-").reverse().join("/"))}</span>
       <span>🕘 ${escapeHTML(a.auction_time||"Não informado")}</span>
       <span>🚗 ${a.vehicle_count===null?"Quantidade não informada":a.vehicle_count+" veículos"}</span></div>
       <p>${escapeHTML(a.organizer)}</p>
-      <small>Última verificação: ${escapeHTML(a.last_checked_at||"não informada")}</small><br>
+      <small>Fonte: ${escapeHTML(a.source_type==="municipal"?"Municipal":"Plataforma privada")} · Última verificação: ${escapeHTML(a.last_checked_at?new Date(a.last_checked_at).toLocaleString("pt-BR",{timeZone:"America/Sao_Paulo"}):"não informada")}</small><br>
       <a href="${escapeHTML(a.source_url)}" target="_blank" rel="noopener noreferrer">Abrir fonte oficial ↗</a>
       </article>`).join(""):'<div class="empty">Nenhum leilão encontrado na base atual para esses filtros.</div>';
   }catch(e){count.textContent="";results.textContent="Não foi possível carregar os leilões. Tente novamente.";}
