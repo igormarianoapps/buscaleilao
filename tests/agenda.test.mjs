@@ -11,9 +11,9 @@ const make = (id,state,overrides={}) => ({
 
 test('VIP multi-state event is one result with searchable states',()=>{
   const items=[
-    make('vip-2099-11-03-1000-go-financeiras','GO'),
-    make('vip-2099-11-03-1000-sp-financeiras','SP'),
-    make('vip-2099-11-03-1000-mg-financeiras','MG')
+    make('vip-event-one-go','GO',{event_id:'vip-event-one'}),
+    make('vip-event-one-sp','SP',{event_id:'vip-event-one'}),
+    make('vip-event-one-mg','MG',{event_id:'vip-event-one'})
   ];
   assert.equal(groupAuctions(items).length,1);
   assert.deepEqual(groupAuctions(items)[0].states,['GO','MG','SP']);
@@ -23,8 +23,8 @@ test('VIP multi-state event is one result with searchable states',()=>{
 
 test('different platforms and dates stay separate',()=>{
   const items=[
-    make('vip-2099-11-03-1000-sp-financeiras','SP'),
-    make('vip-2099-11-04-1000-sp-financeiras','SP',{auction_date:'2099-11-04'}),
+    make('vip-event-one-sp','SP',{event_id:'vip-event-one'}),
+    make('vip-event-two-sp','SP',{event_id:'vip-event-two',auction_date:'2099-11-04'}),
     make('copart-2099-11-03-sp-osasco','SP',{organizer:'Copart'})
   ];
   assert.equal(groupAuctions(items).length,3);
@@ -32,10 +32,15 @@ test('different platforms and dates stay separate',()=>{
 
 test('date and status filters exclude expired and cancelled',()=>{
   const items=[
-    make('vip-2099-11-03-1000-sp-financeiras','SP'),
+    make('vip-event-one-sp','SP',{event_id:'vip-event-one'}),
     make('old','GO',{auction_date:'2020-01-01'}),
     make('cancelled','SP',{status:'cancelled'})
   ];
   assert.equal(filterAuctions(items,{today:'2099-11-01',day:'2099-11-03'}).length,1);
   assert.equal(filterAuctions(items,{today:'2100-01-01'}).length,0);
+});
+
+test('similar VIP times without matching identity remain distinct',()=>{
+ const items=[make('different-a','GO'),make('different-b','GO')];
+ assert.equal(groupAuctions(items).length,2);
 });
