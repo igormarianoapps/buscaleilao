@@ -52,3 +52,6 @@ A meta é incluir **grandes e pequenos leiloeiros, instituições e órgãos pú
 
 ## Diagnóstico de acesso com navegador
 O workflow agora executa `scripts/browser_probe.py` usando Chromium/Playwright, guardando `app/browser-diagnostics.json` (URLs finais, códigos HTTP, quantidade de datas/tabelas e amostras públicas de texto). Esse relatório **não incorpora eventos automaticamente**: permite desenvolver adaptadores com base no HTML realmente renderizado e identificar bloqueios/loops sem contorná-los.
+
+## Coletores Playwright (versão experimental)
+O pipeline principal usa agora `scripts/browser_collect.py` para extrair calendários públicos da Copart e VIP em Chromium. Eventos são filtrados por data futura e UF identificada; quantidades de lotes não são tratadas como quantidades de veículos. O workflow precisa concluir para validar quantos eventos foram coletados. Não há garantia de cobertura total: datas/estados ou identificadores ausentes fazem o evento ser descartado.
