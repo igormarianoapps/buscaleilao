@@ -1,11 +1,43 @@
 {
-  "checked_at": "2026-11-02T18:57:32+00:00",
-  "verified": 43,
-  "platform_events": 40,
+  "checked_at": "2026-11-02T19:38:09+00:00",
+  "verified": 46,
+  "unique_events": 24,
+  "states_with_events": [
+    "AM",
+    "BA",
+    "CE",
+    "DF",
+    "GO",
+    "MA",
+    "MG",
+    "MT",
+    "PA",
+    "PB",
+    "PE",
+    "PR",
+    "RJ",
+    "RO",
+    "RS",
+    "SC",
+    "SP"
+  ],
+  "organizers": {
+    "Copart": 10,
+    "Polícia Rodoviária Federal": 2,
+    "Prefeitura de Fernando Prestes": 1,
+    "Prefeitura de Mogi das Cruzes": 1,
+    "Prefeitura de Vieiras": 1,
+    "VIP Leilões": 9
+  },
+  "platform_events": 41,
   "failed": [
     {
       "id": "lorena-2026-11-10",
       "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+    },
+    {
+      "id": "curitiba-smdt-17-2026",
+      "error": "<urlopen error _ssl.c:993: The handshake operation timed out>"
     }
   ]
 }
