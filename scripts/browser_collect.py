@@ -64,7 +64,8 @@ def parse_vip_text(text):
     A listing without an explicit UF is not shown under a potentially wrong state.
     """
     results = {}
-    ambiguous = set()\n    normalized = re.sub(r"\r", "", text)
+    ambiguous = set()
+    normalized = re.sub(r"\r", "", text)
     # VIP cards mark their start with Início, followed by date and time.
     sections = re.split(r"(?=\bIn[ií]cio\s*:?[ \t]*\d{2}/\d{2}/\d{4})", normalized, flags=re.I)
     for idx, block in enumerate(sections[1:]):
