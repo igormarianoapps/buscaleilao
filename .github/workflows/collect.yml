@@ -19,11 +19,13 @@ jobs:
           python-version: "3.12"
       - name: Check official sources
         run: python scripts/collect.py
+      - name: Discover new auction leads
+        run: python scripts/discover.py
       - name: Publish verified feed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add app/events.json app/collection-report.json
+          git add app/events.json app/collection-report.json app/discovery-candidates.json
           if ! git diff --cached --quiet; then
             git commit -m "data: refresh verified auction feed"
             git push
