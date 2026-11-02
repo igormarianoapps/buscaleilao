@@ -1,0 +1,113 @@
+{
+  "checked_at": "2026-11-02T11:45:08.392577+00:00",
+  "results": [
+    {
+      "source": "Copart sales",
+      "url": "https://www.copart.com.br/salesListResult",
+      "status": "loaded",
+      "http_status": 200,
+      "final_url": "https://www.copart.com.br/salesListResult/",
+      "title": "Próximos Leilōes de Venda de Veículos - Copart Brasil",
+      "html_bytes": 501016,
+      "text_length": 1930,
+      "tables": 1,
+      "iframes": 2,
+      "date_strings": 13,
+      "examples": [
+        "Início",
+        "A visitação no pátio Vila Jaguara ocorrerá na terça-feira, 03/11/2026, dia do leilão, das 8h30 às 10h00. O leilão será realizado de forma on-line. | Venda Seu Veículo De Forma Segu",
+        "Pátio do Leilão Data do Leilão Próximo Leilão",
+        "Curitiba - PR 03.11.2026 03.11.2026",
+        "Itaquaquecetuba - SP 03.11.2026 04.11.2026",
+        "Leilão Pátio Porto Seguro - SP 03.11.2026",
+        "Goiânia - GO 04.11.2026 04.11.2026",
+        "Osasco - SP 04.11.2026 05.11.2026",
+        "Eusébio - CE 05.11.2026",
+        "Vitória de Santo Antão - PE 05.11.2026",
+        "Betim - MG 06.11.2026",
+        "Se você está procurando mais detalhes sobre os próximos leilões, aqui é o lugar certo. A lista de vendas ajuda a encontrar todos os nossos leilões e a personalizar a forma como voc"
+      ]
+    },
+    {
+      "source": "Copart calendar",
+      "url": "https://www.copart.com.br/auctionCalendar",
+      "status": "loaded",
+      "http_status": 200,
+      "final_url": "https://www.copart.com.br/auctionCalendar/",
+      "title": "Calendário de Leilōes de Veículos - Veículos à Venda Copart Brasil",
+      "html_bytes": 806864,
+      "text_length": 4992,
+      "tables": 2,
+      "iframes": 2,
+      "date_strings": 43,
+      "examples": [
+        "Início",
+        "A visitação no pátio Vila Jaguara ocorrerá na terça-feira, 03/11/2026, dia do leilão, das 8h30 às 10h00. O leilão será realizado de forma on-line. | Venda Seu Veículo De Forma Segu",
+        "Leilões em todo o país! Clique no leilão relevante para confirir as listas de vendas dos próximos leilões ao vivo on-line.",
+        "Hora do Leilão",
+        "02.11.2026 Terça-feira",
+        "03.11.2026 Quarta-feira",
+        "04.11.2026 Quinta-feira",
+        "05.11.2026 Sexta-feira",
+        "06.11.2026 Sábado",
+        "07.11.2026 Domingo",
+        "08.11.2026",
+        "Leilão Pátio Porto Seguro - SP"
+      ]
+    },
+    {
+      "source": "VIP homepage",
+      "url": "https://www.vipleiloes.com.br/",
+      "status": "loaded",
+      "http_status": 200,
+      "final_url": "https://www.vipleiloes.com.br/",
+      "title": "Leilões de Veículos e Leilões Online | Vip Leilões",
+      "html_bytes": 349524,
+      "text_length": 8251,
+      "tables": 0,
+      "iframes": 4,
+      "date_strings": 31,
+      "examples": [
+        "Início: 03/11/2026",
+        "Início: 03/11/2026",
+        "Início: 03/11/2026",
+        "Início: 03/11/2026",
+        "Início: 03/11/2026",
+        "Início: 03/11/2026",
+        "Início: 03/11/2026",
+        "Início",
+        "31/10/2026 10:15",
+        "Estados",
+        "Leilão Online",
+        "Início"
+      ]
+    },
+    {
+      "source": "VIP agenda",
+      "url": "https://www.vipleiloes.com.br/agenda",
+      "status": "loaded",
+      "http_status": 200,
+      "final_url": "https://www.vipleiloes.com.br/agenda",
+      "title": "VIP Leilões - Agenda de Eventos",
+      "html_bytes": 239721,
+      "text_length": 5677,
+      "tables": 0,
+      "iframes": 2,
+      "date_strings": 24,
+      "examples": [
+        "Tipo de leilão",
+        "Início",
+        "31/10/2026 10:15",
+        "Estados",
+        "Leilão Online",
+        "Início",
+        "03/11/2026 10:00",
+        "Estados",
+        "Leilão Online",
+        "Início",
+        "03/11/2026 14:00",
+        "Estados"
+      ]
+    }
+  ]
+}
