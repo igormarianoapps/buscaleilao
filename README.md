@@ -30,3 +30,12 @@ Criar um pipeline de descoberta e coleta que:
 5. Faça descobertas recorrentes de novas fontes com monitoramento de falhas, respeitando limites e condições de acesso.
 
 **Observação:** este scaffold ainda não realiza coleta na internet. Não afirmar cobertura nacional antes de medir fontes e eventos coletados.
+
+## Coleta automática (primeira iteração)
+- Fontes municipais documentadas em `app/sources.json`, com evidências exigidas por fonte.
+- `scripts/collect.py` visita páginas HTML públicas, confere as evidências e publica `app/events.json`.
+- GitHub Actions: `.github/workflows/collect.yml`, duas vezes ao dia ou execução manual em **Actions → Collect verified auctions → Run workflow**.
+- `app/collection-report.json` registra erros e bloqueios. Sites bloqueados não são contornados e eventos sem evidência são ignorados.
+- O frontend consulta `/app/events.json` diretamente; verifique se essa rota é publicada na Vercel.
+- O script ainda **não descobre automaticamente novas fontes**, nem interpreta cancelamentos com precisão; a confirmação de status requer inspeção do edital.
+- O feed começa vazio e só é preenchido após uma execução bem-sucedida do workflow.
