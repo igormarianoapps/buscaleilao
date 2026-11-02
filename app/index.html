@@ -22,7 +22,6 @@ small{color:#64748b}.empty{padding:28px;background:white;border-radius:12px}
 <label>Estado<select name="state"><option value="">Todos os estados</option></select></label>
 <label>Data do leilão<input type="date" name="day"></label>
 <button type="submit">Buscar leilões</button>
-<label>Organizador<select name="organizer"><option value="">Todos os organizadores</option><option value="Copart">Copart</option><option value="VIP Leilões">VIP Leilões</option><option value="municipal">Prefeituras e órgãos municipais</option></select></label>
 </form><div class="topline"><h2>Próximos leilões</h2><small id="count"></small></div><section id="results" class="cards" aria-live="polite"></section>
 <p><small>Agenda atualizada por coleta periódica de fontes públicas. A cobertura ainda é parcial; confirme sempre as informações no site do leiloeiro.</small></p>
 </main><script type="module">
@@ -42,7 +41,7 @@ async function load(){
     if(!res.ok)throw Error("Falha ao consultar a API");
     const feed=await res.json();
     const today=new Intl.DateTimeFormat("sv-SE",{timeZone:"America/Sao_Paulo",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());
-    const auctions=filterAuctions(feed.events,{state:form.get("state")||"",day:form.get("day")||"",today}).filter(a=> !form.get("organizer") || (form.get("organizer")==="municipal" ? a.source_type==="municipal" : a.organizer===form.get("organizer")));
+    const auctions=filterAuctions(feed.events,{state:form.get("state")||"",day:form.get("day")||"",today});
     const n=auctions.length;
     count.textContent=n+" leilão(ões)";
     results.innerHTML=n?auctions.map(a=>`<article class="card">
