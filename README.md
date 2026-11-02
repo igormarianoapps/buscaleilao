@@ -39,3 +39,8 @@ Criar um pipeline de descoberta e coleta que:
 - O frontend consulta `/app/events.json` diretamente; verifique se essa rota é publicada na Vercel.
 - O script ainda **não descobre automaticamente novas fontes**, nem interpreta cancelamentos com precisão; a confirmação de status requer inspeção do edital.
 - O feed começa vazio e só é preenchido após uma execução bem-sucedida do workflow.
+
+## Descoberta automática (experimental)
+`scripts/discover.py` pesquisa RSS público por leilões de veículos. Os links vão para `app/discovery-candidates.json` como **candidatos não verificados** e não aparecem na agenda. Ainda é necessário validar manualmente links, data, quantidade e existência do evento, além de cadastrar coletores por fonte.
+
+Não desativar a verificação de SSL para contornar erros de certificado. O site de Lorena permanece como falha reportada até ter uma fonte acessível e confiável.
