@@ -19,6 +19,9 @@ QUERIES = [
     f'leilão veículos prefeitura edital {YEAR}',
     f'leilão veículos detran {YEAR}',
     f'leilão de veículos municipal {YEAR}',
+    f'leilão veículos leiloeiro {YEAR}',
+    f'leilão carros motos seguradoras {YEAR}',
+    f'leilão veículos prefeitura cidade pequena {YEAR}',
 ]
 UA = "BuscaLeilao/0.2 (https://github.com/igormarianoapps/buscaleilao)"
 MAX_ITEMS = 50
