@@ -64,7 +64,7 @@ def parse_vip_text(text):
     A listing without an explicit UF is not shown under a potentially wrong state.
     """
     results = {}
-    normalized = re.sub(r"\r", "", text)
+    ambiguous = set()\n    normalized = re.sub(r"\r", "", text)
     # VIP cards mark their start with Início, followed by date and time.
     sections = re.split(r"(?=\bIn[ií]cio\s*:?[ \t]*\d{2}/\d{2}/\d{4})", normalized, flags=re.I)
     for idx, block in enumerate(sections[1:]):
@@ -80,13 +80,13 @@ def parse_vip_text(text):
         if not states or any(s not in STATES for s in states): continue
         # Different auction listings may share date+time+state; absent title/identifier
         # they are NOT safe to merge. Skip ambiguous blocks instead of fabricating identity.
-        heading = re.search(r"\b(?:Seguradoras|Financeiras|Conservado e Sucata|Conservados|Sucatas|Detran[- ]?[A-Z]{2}|Particulares)\b",block,re.I)
+        heading_text = sections[idx][-240:] + "\\n" + block[:160]\n        heading = re.search(r"\b(?:Seguradoras|Financeiras|Conservado e Sucata|Conservados|Sucatas|Detran[- ]?[A-Z]{2}|Particulares)\b",block,re.I)
         if not heading: continue
         title = heading.group(0)
         hour = d.group(2)
         for state in states:
             key = f"vip-{day}-{hour.replace(':','')}-{state.lower()}-{slug(title)}"
-            if key in results:
+            if key in results or key in ambiguous:
                 # Same key can represent two distinct auctions. Exclude until
                 # a stable auction URL or event ID can be extracted.
                 results.pop(key, None)
