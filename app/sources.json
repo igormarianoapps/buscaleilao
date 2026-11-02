@@ -63,5 +63,56 @@
       "10 de novembro de 2026",
       "63 lotes"
     ]
+  },
+  {
+    "id": "curitiba-smdt-17-2026",
+    "title": "Leilão eletrônico SMDT nº 17/2026 — veículos em circulação",
+    "state": "PR",
+    "city": "Curitiba",
+    "auction_date": "2026-11-11",
+    "auction_time": "09:00",
+    "vehicle_count": 33,
+    "organizer": "Prefeitura de Curitiba",
+    "source_type": "municipal",
+    "source_url": "https://transito.curitiba.pr.gov.br/patio/leilao-eletronico-de-veiculos/52",
+    "evidence": [
+      "SMDT Nº 17/2026",
+      "11/11/2026",
+      "Itens nº 1 ao nº 33"
+    ]
+  },
+  {
+    "id": "prf-sp-2026-11-03",
+    "title": "Leilão de veículos e sucatas — PRF São Paulo (sessão 1)",
+    "state": "SP",
+    "city": "São Paulo",
+    "auction_date": "2026-11-03",
+    "auction_time": "10:00",
+    "vehicle_count": null,
+    "organizer": "Polícia Rodoviária Federal",
+    "source_type": "federal",
+    "source_url": "https://www.gov.br/prf/pt-br/assuntos/leiloes-prf/sao-paulo/sp-edital-de-leilao-de-veiculos-conservados-e-sucatas-1",
+    "evidence": [
+      "03 e 04 de novembro de 2026",
+      "10h00min",
+      "Edital 01/2026"
+    ]
+  },
+  {
+    "id": "prf-sp-2026-11-04",
+    "title": "Leilão de veículos e sucatas — PRF São Paulo (sessão 2)",
+    "state": "SP",
+    "city": "São Paulo",
+    "auction_date": "2026-11-04",
+    "auction_time": "10:00",
+    "vehicle_count": null,
+    "organizer": "Polícia Rodoviária Federal",
+    "source_type": "federal",
+    "source_url": "https://www.gov.br/prf/pt-br/assuntos/leiloes-prf/sao-paulo/sp-edital-de-leilao-de-veiculos-conservados-e-sucatas-1",
+    "evidence": [
+      "03 e 04 de novembro de 2026",
+      "10h00min",
+      "Edital 01/2026"
+    ]
   }
 ]
