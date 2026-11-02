@@ -55,3 +55,6 @@ O workflow agora executa `scripts/browser_probe.py` usando Chromium/Playwright, 
 
 ## Coletores Playwright (versão experimental)
 O pipeline principal usa agora `scripts/browser_collect.py` para extrair calendários públicos da Copart e VIP em Chromium. Eventos são filtrados por data futura e UF identificada; quantidades de lotes não são tratadas como quantidades de veículos. O workflow precisa concluir para validar quantos eventos foram coletados. Não há garantia de cobertura total: datas/estados ou identificadores ausentes fazem o evento ser descartado.
+
+## Agenda de eventos únicos
+O frontend agrupa registros da VIP que compartilham dia, horário e categoria, mas são indexados por várias UFs; permite filtrar por qualquer UF incluída. O filtro de organizadores separa Copart, VIP e fontes municipais. O arquivo bruto `app/events.json` pode ter mais linhas que o número mostrado no app porque inclui indexação por UF. **Limitação:** se dois eventos distintos tiverem a mesma categoria, data e horário na VIP, o agrupamento pode uni-los; a correção definitiva depende da captura do identificador único/link específico de cada evento.
