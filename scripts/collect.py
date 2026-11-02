@@ -11,7 +11,7 @@ import urllib.request
 from datetime import date, datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
-from platforms import collect_platforms
+from browser_collect import collect_platforms
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES = ROOT / "app" / "sources.json"
