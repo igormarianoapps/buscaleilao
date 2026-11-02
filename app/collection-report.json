@@ -1,5 +1,10 @@
 {
-  "checked_at": null,
-  "verified": 0,
-  "failed": []
+  "checked_at": "2026-11-02T11:04:56+00:00",
+  "verified": 4,
+  "failed": [
+    {
+      "id": "lorena-2026-11-10",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+    }
+  ]
 }
