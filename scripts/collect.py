@@ -11,6 +11,7 @@ import urllib.request
 from datetime import date, datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
+from platforms import collect_platforms
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES = ROOT / "app" / "sources.json"
@@ -81,10 +82,13 @@ def main():
         except (urllib.error.URLError, TimeoutError, ValueError, OSError) as exc:
             failures.append({"id": source["id"], "error": str(exc)[:300]})
             print("SKIP:", source["id"], str(exc)[:100])
+    platform_events, platform_failures = collect_platforms()
+    events.extend(platform_events)
+    failures.extend(platform_failures)
     events.sort(key=lambda e: (e["auction_date"], e["auction_time"] or "", e["city"]))
     # A failed verification must not leave outdated or unverified events visible.
     OUTPUT.write_text(json.dumps({"updated_at": checked, "events": events}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    REPORT.write_text(json.dumps({"checked_at": checked, "verified": len(events), "failed": failures}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    REPORT.write_text(json.dumps({"checked_at": checked, "verified": len(events), "platform_events": len(platform_events), "failed": failures}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Verified {len(events)}; blocked/unconfirmed {len(failures)}")
 
 
