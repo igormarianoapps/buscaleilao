@@ -41,7 +41,7 @@ async function load(){
     const res=await fetch("/app/events.json",{cache:"no-store"});
     if(!res.ok)throw Error("Falha ao consultar a API");
     const feed=await res.json();
-    const today=new Intl.DateTimeFormat("en-CA",{timeZone:"America/Sao_Paulo",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());
+    const today=new Intl.DateTimeFormat("sv-SE",{timeZone:"America/Sao_Paulo",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());
     const auctions=filterAuctions(feed.events,{state:form.get("state")||"",day:form.get("day")||"",today}).filter(a=> !form.get("organizer") || (form.get("organizer")==="municipal" ? a.source_type==="municipal" : a.organizer===form.get("organizer")));
     const n=auctions.length;
     count.textContent=n+" leilão(ões)";
