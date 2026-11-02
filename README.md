@@ -49,3 +49,6 @@ Não desativar a verificação de SSL para contornar erros de certificado. O sit
 `scripts/platforms.py` inclui adaptadores iniciais para calendários públicos de **Copart** e **VIP Leilões**. Eles extraem eventos, datas e estados, sem consultar lotes individuais. Quantidades de veículos permanecem não informadas quando a fonte divulga apenas lotes. Para leilões multiestaduais, um mesmo evento é indexado em cada UF mencionada. Falhas de acesso aparecem no relatório; não há garantia de cobertura integral ou validação em produção até a execução do workflow.
 
 A meta é incluir **grandes e pequenos leiloeiros, instituições e órgãos públicos**. A cobertura nacional completa depende do cadastro contínuo de fontes e de validadores confiáveis.
+
+## Diagnóstico de acesso com navegador
+O workflow agora executa `scripts/browser_probe.py` usando Chromium/Playwright, guardando `app/browser-diagnostics.json` (URLs finais, códigos HTTP, quantidade de datas/tabelas e amostras públicas de texto). Esse relatório **não incorpora eventos automaticamente**: permite desenvolver adaptadores com base no HTML realmente renderizado e identificar bloqueios/loops sem contorná-los.
