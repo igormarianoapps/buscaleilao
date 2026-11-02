@@ -36,9 +36,11 @@ async function load(){
   const params=new URLSearchParams();
   for(const [key,val] of form.entries())if(val)params.set(key,val);
   try{
-    const res=await fetch("/api/auctions?"+params.toString());
+    const res=await fetch("/app/events.json",{cache:"no-store"});
     if(!res.ok)throw Error("Falha ao consultar a API");
-    const {count:n,auctions}=await res.json();
+    const feed=await res.json();
+    const auctions=(feed.events||[]).filter(a=>a.status==="scheduled"&&a.auction_date>=new Date().toLocaleDateString("en-CA",{timeZone:"America/Sao_Paulo"})&&(!form.get("state")||a.state===form.get("state"))&&(!form.get("day")||a.auction_date===form.get("day")));
+    const n=auctions.length;
     count.textContent=n+" resultado(s)";
     results.innerHTML=n?auctions.map(a=>`<article class="card">
       <span class="tag">${escapeHTML(a.city)} · ${escapeHTML(a.state)}</span>
