@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-02T11:19:55+00:00",
+  "checked_at": "2026-11-02T11:39:58+00:00",
   "verified": 3,
   "platform_events": 0,
   "failed": [
@@ -9,11 +9,11 @@
     },
     {
       "id": "Copart",
-      "error": "Nenhum evento futuro identificado com segurança"
+      "error": "https://www.copart.com.br/salesListResult: Nenhum evento futuro identificado com segurança; https://www.copart.com.br/auctionCalendar: Nenhum evento futuro identificado com segurança"
     },
     {
       "id": "VIP Leilões",
-      "error": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nFound"
+      "error": "https://www.vipleiloes.com.br/: HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nFound; https://www.vipleiloes.com.br/index: HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nFound"
     }
   ]
 }

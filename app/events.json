@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T11:19:55+00:00",
+  "updated_at": "2026-11-02T11:39:58+00:00",
   "events": [
     {
       "id": "fernando-prestes-03-2026",
@@ -13,7 +13,7 @@
       "source_type": "municipal",
       "source_url": "https://www.fernandoprestes.sp.gov.br/portal/editais/0/1/2638",
       "status": "scheduled",
-      "last_checked_at": "2026-11-02T11:19:55+00:00"
+      "last_checked_at": "2026-11-02T11:39:58+00:00"
     },
     {
       "id": "mogi-2026-11-06",
@@ -27,7 +27,7 @@
       "source_type": "municipal",
       "source_url": "https://www.mogidascruzes.sp.gov.br/noticia/no-dia-6-de-novembro-prefeitura-fara-leilao-online-para-venda-de-84-veiculos",
       "status": "scheduled",
-      "last_checked_at": "2026-11-02T11:19:55+00:00"
+      "last_checked_at": "2026-11-02T11:39:58+00:00"
     },
     {
       "id": "vieiras-001-2026",
@@ -41,7 +41,7 @@
       "source_type": "municipal",
       "source_url": "https://vieiras.mg.gov.br/noticias/prefeitura-de-vieiras-realizara-leilao-eletronico-de-bens-moveis-no-dia-13-de-novembro-de-2026",
       "status": "scheduled",
-      "last_checked_at": "2026-11-02T11:19:55+00:00"
+      "last_checked_at": "2026-11-02T11:39:58+00:00"
     }
   ]
 }
