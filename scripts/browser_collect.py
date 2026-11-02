@@ -3,6 +3,7 @@
 No logins, bypasses, lot details, or assumptions about vehicle counts.
 """
 import asyncio
+import hashlib
 import re
 import unicodedata
 from datetime import date, datetime, timezone
@@ -59,44 +60,49 @@ def parse_copart_rows(rows):
     return list(results.values())
 
 def parse_vip_text(text):
-    """Conservative VIP parser: require date/time AND explicit UF in a single event block.
+    """Only publish a VIP listing if its own block names a future date and UFs.
 
-    A listing without an explicit UF is not shown under a potentially wrong state.
+    Each listing gets a shared event_id across UFs. Avoid assuming that
+    category/date/time uniquely identify an auction.
     """
-    results = {}
-    ambiguous = set()
+    results = []
     normalized = re.sub(r"\r", "", text)
-    # VIP cards mark their start with Início, followed by date and time.
-    sections = re.split(r"(?=\bIn[ií]cio\s*:?[ \t]*\d{2}/\d{2}/\d{4})", normalized, flags=re.I)
-    for idx, block in enumerate(sections[1:]):
-        # Do not cross into next event: the splitting above is the boundary.
-        d = re.search(r"\bIn[ií]cio\s*:?[ \t]*(\d{2}/\d{2}/\d{4})\s+(\d{2}:\d{2})",block,re.I)
-        if not d: continue
-        day = future_date(d.group(1))
-        if not day: continue
-        # Restrict UF extraction to the explicit States field, never inferred from location text.
-        field = re.search(r"\bEstados\s*:?\s*([A-Z]{2}(?:\s*[-,/]\s*[A-Z]{2})*)\b",block)
-        if not field: continue
-        states = re.split(r"\s*[-,/]\s*", field.group(1))
-        if not states or any(s not in STATES for s in states): continue
-        # Different auction listings may share date+time+state; absent title/identifier
-        # they are NOT safe to merge. Skip ambiguous blocks instead of fabricating identity.
-        heading_text = sections[idx][-240:] + "\\n" + block[:160]
-        heading = re.search(r"\b(?:Seguradoras|Financeiras|Conservado e Sucata|Conservados|Sucatas|Detran[- ]?[A-Z]{2}|Particulares)\b",heading_text,re.I)
-        if not heading: continue
-        title = heading.group(0)
-        hour = d.group(2)
-        for state in states:
-            key = f"vip-{day}-{hour.replace(':','')}-{state.lower()}-{slug(title)}"
-            if key in results or key in ambiguous:
-                # Same key can represent two distinct auctions. Exclude until
-                # a stable auction URL or event ID can be extracted.
-                results.pop(key, None)
-                ambiguous.add(key)
-                continue
-            results[key] = event(key, f"Leilão {title} — VIP",state,
-                                 "Local não informado",day,hour,"VIP Leilões",VIP_URL)
-    return list(results.values())
+    sections = re.split(
+        r"(?=\bIn[ií]cio\s*:?[ \t]*\d{2}/\d{2}/\d{4})",
+        normalized, flags=re.I
+    )
+    for block in sections[1:]:
+        match = re.search(
+            r"\bIn[ií]cio\s*:?[ \t]*(\d{2}/\d{2}/\d{4})\s+(\d{2}:\d{2})",
+            block, re.I
+        )
+        if not match:
+            continue
+        day = future_date(match.group(1))
+        if not day:
+            continue
+        states_match = re.search(
+            r"\bEstados\s*:?\s*([A-Z]{2}(?:\s*[-,/]\s*[A-Z]{2})*)\b",
+            block
+        )
+        if not states_match:
+            continue
+        states = re.split(r"\s*[-,/]\s*", states_match.group(1))
+        if not states or any(state not in STATES for state in states):
+            continue
+        hour = match.group(2)
+        # Hash the public listing itself, not just its category and clock time.
+        # No vehicle count can be inferred from the number of lots.
+        identity = hashlib.sha256(block.strip().encode("utf-8")).hexdigest()[:14]
+        event_id = f"vip-{day}-{hour.replace(':', '')}-{identity}"
+        for state in dict.fromkeys(states):
+            entry = event(f"{event_id}-{state.lower()}",
+                          "Leilão de veículos — VIP Leilões", state,
+                          "Local não informado", day, hour, "VIP Leilões", VIP_URL)
+            entry["event_id"] = event_id
+            entry["states"] = sorted(set(states))
+            results.append(entry)
+    return results
 
 async def collect_browser():
     from playwright.async_api import async_playwright
