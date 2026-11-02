@@ -14,10 +14,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "app" / "discovery-candidates.json"
 STATES = ["GO", "SP", "MG", "PR"]
+YEAR = datetime.now(timezone.utc).year
 QUERIES = [
-    'leilão veículos prefeitura edital 2026',
-    'leilão veículos detran 2026',
-    'leilão de veículos municipal novembro 2026',
+    f'leilão veículos prefeitura edital {YEAR}',
+    f'leilão veículos detran {YEAR}',
+    f'leilão de veículos municipal {YEAR}',
 ]
 UA = "BuscaLeilao/0.2 (https://github.com/igormarianoapps/buscaleilao)"
 MAX_ITEMS = 50
