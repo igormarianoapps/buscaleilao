@@ -82,9 +82,8 @@ def main():
             failures.append({"id": source["id"], "error": str(exc)[:300]})
             print("SKIP:", source["id"], str(exc)[:100])
     events.sort(key=lambda e: (e["auction_date"], e["auction_time"] or "", e["city"]))
-    # Do not erase the complete feed on a transient outage.
-    if events:
-        OUTPUT.write_text(json.dumps({"updated_at": checked, "events": events}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    # A failed verification must not leave outdated or unverified events visible.
+    OUTPUT.write_text(json.dumps({"updated_at": checked, "events": events}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     REPORT.write_text(json.dumps({"checked_at": checked, "verified": len(events), "failed": failures}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Verified {len(events)}; blocked/unconfirmed {len(failures)}")
 
