@@ -88,7 +88,19 @@ def main():
     events.sort(key=lambda e: (e["auction_date"], e["auction_time"] or "", e["city"]))
     # A failed verification must not leave outdated or unverified events visible.
     OUTPUT.write_text(json.dumps({"updated_at": checked, "events": events}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    REPORT.write_text(json.dumps({"checked_at": checked, "verified": len(events), "platform_events": len(platform_events), "failed": failures}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    event_keys = {a.get("event_id") or a["id"] for a in events}
+    state_coverage = sorted({a["state"] for a in events})
+    by_organizer = {}
+    for a in events:
+        by_organizer.setdefault(a["organizer"], set()).add(a.get("event_id") or a["id"])
+    report = {
+        "checked_at": checked, "verified": len(events),
+        "unique_events": len(event_keys),
+        "states_with_events": state_coverage,
+        "organizers": {k: len(v) for k, v in sorted(by_organizer.items())},
+        "platform_events": len(platform_events), "failed": failures
+    }
+    REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Verified {len(events)}; blocked/unconfirmed {len(failures)}")
 
 
