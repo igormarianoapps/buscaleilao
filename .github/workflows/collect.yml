@@ -1,0 +1,30 @@
+name: Collect verified auctions
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 10,16 * * *"
+permissions:
+  contents: write
+concurrency:
+  group: auction-feed
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check official sources
+        run: python scripts/collect.py
+      - name: Publish verified feed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/events.json app/collection-report.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: refresh verified auction feed"
+            git push
+          fi
