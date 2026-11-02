@@ -90,6 +90,7 @@ def parse_vip_text(text):
                 # Same key can represent two distinct auctions. Exclude until
                 # a stable auction URL or event ID can be extracted.
                 results.pop(key, None)
+                ambiguous.add(key)
                 continue
             results[key] = event(key, f"Leilão {title} — VIP",state,
                                  "Local não informado",day,hour,"VIP Leilões",VIP_URL)
