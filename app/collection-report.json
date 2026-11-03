@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-11-03T18:14:35+00:00",
-  "verified": 61,
-  "unique_events": 30,
+  "checked_at": "2026-11-03T19:40:49+00:00",
+  "verified": 92,
+  "unique_events": 41,
   "states_with_events": [
     "AM",
     "BA",
@@ -18,36 +18,57 @@
     "PI",
     "PR",
     "RJ",
+    "RO",
     "RS",
     "SC",
     "SP"
   ],
+  "states_without_events": [
+    "AC",
+    "AL",
+    "AP",
+    "MS",
+    "RN",
+    "RR",
+    "SE",
+    "TO"
+  ],
+  "state_presence_percent": 70.4,
+  "coverage_definition": "Presence of at least one event, not fraction of all auctions discovered",
   "organizers": {
-    "Copart": 8,
+    "Copart": 9,
+    "DETRAN Bahia": 1,
+    "DETRAN Goiás": 1,
+    "Freitas Leiloeiro": 3,
     "Polícia Rodoviária Federal": 3,
     "Prefeitura de Campina Grande": 1,
     "Prefeitura de Cuiabá — Semob": 3,
     "Prefeitura de Fernando Prestes": 1,
     "Prefeitura de Lorena": 1,
     "Prefeitura de Mogi das Cruzes": 1,
+    "Prefeitura de Serranópolis do Iguaçu": 1,
     "Prefeitura de Vieiras": 1,
-    "VIP Leilões": 11
+    "VIP Leilões": 15
   },
-  "platform_events": 50,
+  "platform_events": 78,
+  "curated_success": 16,
+  "curated_failure": 4,
   "failed": [
     {
       "id": "curitiba-smdt-17-2026",
-      "error": "HTTP Error 403: Forbidden",
-      "browser_error": "browser retry: HTTP 403"
-    },
-    {
-      "id": "detran-ba-23-2026",
-      "error": "<urlopen error timed out>",
-      "browser_error": "browser retry: Page.goto: Timeout 20000ms exceeded."
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "id": "aracaju-3-leilao-2026-11-12",
-      "error": "missing evidence: 12 de novembro, 22 lotes, veículos"
+      "error": "missing evidence: 12 de novembro; 22 lotes; veículos"
+    },
+    {
+      "id": "pedranopolis-sp-006-2026",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "superbid-gru-06-2026-11-29",
+      "error": "HTTP Error 403: Forbidden"
     }
   ]
 }

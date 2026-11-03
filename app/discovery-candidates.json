@@ -1,20 +1,11 @@
 {
-  "checked_at": "2026-11-03T18:16:38+00:00",
+  "checked_at": "2026-11-03T19:41:47+00:00",
   "candidates": [
     {
       "title": "Detran-GO realiza leilão de veículos de mais de 2 mil veículos - Goias.gov.br",
       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVEdCTFV2X3lOa2NSdlE1c1dDWjZtOGlnenJ1MWNRMTd1YnpaUnpWWUs3YVN4djVUMDkzcTJaS0xkeDdvYW9VZ1g5NUpTZWhka3Q2dkM3UUVKUmdLMzBGekF4RjJ2OTRQLVhZT2oyNHFHZmxaU1hfRFAyN09CNVFnMk8zaldvTGFLUlBEZUVyb1ZxX1lHM3c?oc=5",
       "published": "Wed, 28 Oct 2026 13:44:50 GMT",
       "publisher_url": "https://goias.gov.br",
-      "source_priority": "official",
-      "discovered_by": "news_rss",
-      "status": "unverified"
-    },
-    {
-      "title": "Prefeitura de Lorena realiza leilão de veículos inservíveis e sucatas - Prefeitura de Lorena",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPRlZxTnpmS0JYckJtMTQ0NVJYN2pycVo5dkFGZm5pTUVTdkJlbm5Ud1VRSmNTc3dZcVpESlptakFYbWlTWC1MUkdaMXc1bGlNUVp1QVF1c2hyTm9DZXJXNGhjUVliRlY3YTNLQzBnaHdpUllFZWdScnZMd2RjdlRFOHloUXZvSVFDRW9BRnExUGV5TFVObFpqZktyMVl5U3IwelhYUW9qaGdpeHBGOHhXazBDMWxDTXZySEZMUUJTdWNCME1PUDNKbmZR?oc=5",
-      "published": "Thu, 22 Oct 2026 07:00:00 GMT",
-      "publisher_url": "https://www.lorena.sp.gov.br",
       "source_priority": "official",
       "discovered_by": "news_rss",
       "status": "unverified"
@@ -65,6 +56,15 @@
       "status": "unverified"
     },
     {
+      "title": "Governo de Goiás realiza leilão de 143 veículos em outubro – Sead - Goias.gov.br",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQQTRqTkt0VXJBazRGbjdpdmZYREZGZUE1NUJtUDBfUTRqMmVxMkppeklveFRzS0QxU29ZaVFOWnBKVy1KYnR6NTVfQ3M5UXdJbC1mcHBlQlVjaVJZX25oOVM1RGJlYXI2WDVnZERPV1BxWTVjSGJYd3ZPOVRqRDNZRjlNX2RhNkV6aUc4LUZJdmVhTlRET0ZkQm53?oc=5",
+      "published": "Mon, 05 Oct 2026 18:54:51 GMT",
+      "publisher_url": "https://goias.gov.br",
+      "source_priority": "official",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
       "title": "Leilão oferece 363 veículos e sucatas na quarta (7) - DetranRS",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNcGV1ZGxpWHBIWGlzaFZkclNuVm9fOTdHbGItSjFXeTBpUUNzOWRJcjdtU0U4YkJBMWp1cTVseHpRQWNmRmFsd1JYTkp2RTg3a0VZYXlvRDBwVm9TTURweU5qTHpWUV9jVXJrWGFzeTRHWDducTZQMm5KNTdweXBIS0ZRTE8?oc=5",
       "published": "Fri, 02 Oct 2026 07:00:00 GMT",
@@ -83,18 +83,9 @@
       "status": "unverified"
     },
     {
-      "title": "TJGO realiza leilão com 347 veículos apreendidos e lances a partir de R$ 911,90; visitação começa nesta terça (22), com agendamento prévio - Tribunal de Justiça do Estado de Goiás",
-      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNcTZxTkhXTk5nRy10aVh3TVdGMWdZN1FIYThxeUd6S3NPVWs1S3FzeHdRT2M0cnRXaTVtbXRBS09rMjdkS1dZQ2NTLTFYZmFZcVNXMzR4MDJMZy1IT3owSl9wVFFBUFR6dkhwbUV2MmVsVHRiM0tIVE12UHhFTS1maVVYUjFVcmVvMnFlZEljZ2MtTWh0c1oyb2ZiWmVVeWZWalkzN1FNcUhzREhYS2pIc1hRbk9rb3BCVlhXT2s4THBhbzNEMHpGZFp3SWVDdjYwdy1nZ3k5NEZjV2hwX1RXSWdpT0REOGt6LUZTQzlGbmNla2UwaG02amg5RUg?oc=5",
-      "published": "Mon, 28 Sep 2026 07:00:00 GMT",
-      "publisher_url": "https://www.tjgo.jus.br",
-      "source_priority": "official",
-      "discovered_by": "news_rss",
-      "status": "unverified"
-    },
-    {
-      "title": "Leilão online oferta 30 veículos apreendidos em fiscalizações de trânsito - Prefeitura de Curitiba",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRm5FUkJ0UWlpWkh3WlV4WXM1VG5rSFBMODdHQm9jQWZFYVo2NkwwTE9QSEtnOG5zd0FRaXhZaElYbmxHS2NRSmpHcGpRQXVXVVU0UUg5YjJhMXhKaDFkT2RnVXA1NGtTWUQ2NTBueVJrOEFMZ3FDVGlvazlXQ0xFMm5EZnl2Zkk0enpweWFWbmFyY1F5Y0N1TFpJOEg1X25OZFBIODRMb0NVYjdpMS1ial9tVktDTHg3WEl3?oc=5",
-      "published": "Sat, 19 Sep 2026 07:00:00 GMT",
+      "title": "Leilão online oferta 124 veículos apreendidos em fiscalizações de trânsito - Prefeitura de Curitiba",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQRVFpRGhHcTNwenlVNXhMaWlCekcwMm9pTWRWTUxoWlJFQTFOM2JLdUNTelJXekpfRkdhRWlsRmlmX1dVR0tTeFBPYXVhMDR6dnlkMkRsWmd2MXRmT3YyUnUza0JuQk5FdmRVTEJuTFdsMjItd0lpV09kYmUwT1FWTkZYTmxhQUI1Njh3WDktSHhxNUZxVTd2NUl3ZUNnUWZnUDFlZVp4d2JGNUxqVVNNcTcwbzNIY1R3UlQ5UA?oc=5",
+      "published": "Sat, 26 Sep 2026 07:00:00 GMT",
       "publisher_url": "https://www.curitiba.pr.gov.br",
       "source_priority": "official",
       "discovered_by": "news_rss",
@@ -155,19 +146,19 @@
       "status": "unverified"
     },
     {
-      "title": "Região de Campinas tem leilão de veículos do Detran-SP com 645 lotes; veja como participar - agenciasp.sp.gov.br",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPY3dvXzVRcUp2Z3pJS25Ob3JFQlNpdTNHWlppdXZBNzlxUjdKb2YtYU5QdGVRREd3MGp3R0YyUlM1djlaVlQtbGxUenVMXzBYZHlFejd0N1NncXNqSFpjMFdjd3ZJMUM2OXlQeHlmal93b3FGYVVwUHZSeW5acHFRc2t2cm92c2JXUUxueHRzd3hhZGtWdk1rdVRoSHBLYmM1Q2lkeDFPYnhIV2lTZVN2M2NKeVI0TENzZTMyQnItdnI?oc=5",
-      "published": "Fri, 07 Aug 2026 07:00:00 GMT",
-      "publisher_url": "https://www.agenciasp.sp.gov.br",
+      "title": "Abilio sanciona lei que retira cobrança de remoção e estadia para veículos antes de leilão - Prefeitura de Cuiabá",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOd0hmQjQ4Mk8zbGowdWdNbVpGVUZEajdMek0xc01zREFuaXZpVlN5U1hKSHNWTGVUbGNPLXAtM29YUUR2cDA5U1hjb0pBX1lRSDExbXdCZkRQNHhrb09KTXhMNWttbTZYUE5uWVV3VWNuSm9WOXRfekRTeV9JVURXR2VqSVFWSmdKMHpKUG0xS2ZDbklYUmczdkhLWkJGdm83WEFpVkJHdk01ejJSRlZNRVdmZmNoVzFScHRyMVJSS3dqdklIRDB3?oc=5",
+      "published": "Wed, 19 Aug 2026 07:00:00 GMT",
+      "publisher_url": "https://www.cuiaba.mt.gov.br",
       "source_priority": "official",
       "discovered_by": "news_rss",
       "status": "unverified"
     },
     {
-      "title": "Prefeitura de Içara promove leilão de máquinas, veículos e equipamentos - Município de Içara",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOazZldG9HUjhTQ0V3S2g3akNienlCck1WSFdCdEN6Z2M2SGJpcjlBQ3VwZzRxbXBUVEpzbzVWeXZtMDJXX20xWWV3TlJrVlI4bkZRWjBQQnZGRnpTellUd21PR3gwOFpkN2xuc3dJSG80NmdlS2Zpek8zR0Z6d01mZlFuX0I1VklJdmV3M21kVjF6ZTRfamRpc3RvVlh2ZjJtQzlMQ1lOMnRESFNPWGhsUW9KeDV1TDhhZGJUaHlKUXdFRFJw?oc=5",
-      "published": "Thu, 06 Aug 2026 07:00:00 GMT",
-      "publisher_url": "https://www.icara.sc.gov.br",
+      "title": "Região de Campinas tem leilão de veículos do Detran-SP com 645 lotes; veja como participar - agenciasp.sp.gov.br",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPY3dvXzVRcUp2Z3pJS25Ob3JFQlNpdTNHWlppdXZBNzlxUjdKb2YtYU5QdGVRREd3MGp3R0YyUlM1djlaVlQtbGxUenVMXzBYZHlFejd0N1NncXNqSFpjMFdjd3ZJMUM2OXlQeHlmal93b3FGYVVwUHZSeW5acHFRc2t2cm92c2JXUUxueHRzd3hhZGtWdk1rdVRoSHBLYmM1Q2lkeDFPYnhIV2lTZVN2M2NKeVI0TENzZTMyQnItdnI?oc=5",
+      "published": "Fri, 07 Aug 2026 07:00:00 GMT",
+      "publisher_url": "https://www.agenciasp.sp.gov.br",
       "source_priority": "official",
       "discovered_by": "news_rss",
       "status": "unverified"
@@ -200,28 +191,10 @@
       "status": "unverified"
     },
     {
-      "title": "Prefeitura de Chapecó fará leilão de veículos e máquinas pesadas - Prefeitura de Chapecó",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZjZodE16QTI4bEVNZHROOXRsd3dNMVJIOEs5b21Xa1VSbGNHMV9VZHVZZ3RKYTVmS0Y1b1R3TWNXcjRYWktmTWhsMGltVDZiZzB4WEg0b3BIbFdvbkdEOFo1ZjNWcXVCeDhCcDdnVnBrQjZFSjA1SmYtU2FVc2Y5V1FuZzEwZW56OGFmc2xpUEtCVWlyT2NGakozOFVLQVhJX3hHamhMVlRBUXp1?oc=5",
-      "published": "Fri, 24 Jul 2026 07:00:00 GMT",
-      "publisher_url": "https://www.chapeco.sc.gov.br",
-      "source_priority": "official",
-      "discovered_by": "news_rss",
-      "status": "unverified"
-    },
-    {
-      "title": "IPDSA realiza leilão on-line com veículos, motocicletas e equipamentos - Prefeitura de Araxá",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQYzFDU0RLaEJzQkRkaS1OeE10cWVVZ2NwSC1CUzZ5V2RJeFJ5akg1eHlNYmFYczhZTGFMR1pGQjFKM1FZemVKUVJiS25raUdIWE1EamJTdy1ZNk9UWnphc1c2ZDZ1dnFEbGV2VmhvYVdsU2hObTUzeUhfMTltU3FfUThxRE5GejBibHZCdmlZUktRQ3d1SXFZNzY2eGwzWUNNLW1HT0x2bEFudw?oc=5",
-      "published": "Wed, 22 Jul 2026 07:00:00 GMT",
-      "publisher_url": "https://araxa.mg.gov.br",
-      "source_priority": "official",
-      "discovered_by": "news_rss",
-      "status": "unverified"
-    },
-    {
-      "title": "Região de Piracicaba tem leilão de veículos do Detran-SP com 614 lotes - agenciasp.sp.gov.br",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPeEdUSHdwTkFKZzFYbDRiMnV6dFp3QVg4OHlxb3l3X1BCVmRXR0dqdGhCX0c3SF9zSjFDNjMxc0RxTGdBYmxfazVaZlVxSXl4c0U0SGtkUDRjR1ZvNDBNcjgzd3pmV2pLdHZWZ1hsNmdxazBMQ0lKOFU1MUhaSFZXT3Rwemt6Y1ROYzBLcWNYNWhJNklXUWhHbGpQcHRsZUZ4OWdEZGxPV2tyVkhrdTlNS0ZUbGN4bzdXQU50WkszMWV6LWs?oc=5",
+      "title": "Judiciário confirma legalidade de apreensão e leilão de veículos em débito com IPVA - Tribunal de Justiça do Maranhão (TJMA)",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOc3kzN0k3cDV6R2Q2a1ZDODNwQkpZeG12MEpudWRZTzFUZEViRGI4d1dubnRBb3hmT0RIbEZPbm1IaGtCbXNqMGdGYTlhNHh5LVJBbEVJeDk4cnFNWWZxbkN6MUVyR2djVHpUdXNUcWdlWkMzUzl1QXpmdGpaU21BRUxCUnZiTjN3UEtLcjF6T3lXYlFaMU4zYlFyZlY2T2RhUk9zNnNMUC1iWXdFQ3BpR2staG9LVXRrVnoyZmNqVUs3cGJYd0ZjczBMMHk?oc=5",
       "published": "Mon, 20 Jul 2026 07:00:00 GMT",
-      "publisher_url": "https://www.agenciasp.sp.gov.br",
+      "publisher_url": "https://www.tjma.jus.br",
       "source_priority": "official",
       "discovered_by": "news_rss",
       "status": "unverified"
@@ -263,10 +236,10 @@
       "status": "unverified"
     },
     {
-      "title": "Cuiabá leva 1.065 veículos a leilão e busca reduzir custos com depósitos e bens apreendidos - JBNEWS",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxONjZLbk1nTXh1NGtPTnNPTV9FNF9sOWgzRDJjSlQtQ3NSMy1UUHdOTEFwdWJFNk9Wejg0TXpad0NxTnpwTHpFVU1YTGdKdC05S1FpQzF1SFMyTHRsOHI4TVVFNmhMaUhUeWd2dFctelU3aENNSzR3QkV6OWRjXzA5aXB5VGNrc3EwaG5KaVdhMklTbzlSY2FodzhhZ1g1dVUyQi1OVnpvRVlhYjdSX1lyVTVmd0g?oc=5",
-      "published": "Mon, 02 Nov 2026 11:19:28 GMT",
-      "publisher_url": "https://jbnews.com.br",
+      "title": "JCNET: Detran faz leilão de veículos em Bauru e região - sampi.net.br",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQlFRM3lFYTBoV1B4YUNEckhUTDMzdGdpZ0tmZWZtX09tQlNfLTBndVN5MmNlTEpJSll4ek8xd0ExOTh4dlYzODA2YnBtSEJKQTU0b0lHaThEVVhtUVg3SE1pQXV5dUJnTDFxU1d0djZ2OVUxWjB6Q0tzQS1kdU1LWEZyTGpjZTl4MnY5V3Y3Q25vTmtHRnk3SGxIMFRrX3M2eXB1eWQzaEhGTEkyOERycGNfRUg?oc=5",
+      "published": "Sun, 01 Nov 2026 10:54:23 GMT",
+      "publisher_url": "https://sampi.net.br",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
@@ -290,10 +263,10 @@
       "status": "unverified"
     },
     {
-      "title": "Detran-AC fará leilão on-line de 251 veículos em Rio Branco em novembro - ac24horas",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQTzZZQnZ3ZUNVcmpueGdERTdDM3JyMzdUaVA0alBlSDYwRUY5eG5SQS1ZVmRPSEpwZmpfLWg3NF9uaWxJUmctSWRMbU1UanRCSlhNeHVwRExLaDM1TVRwS1NfVFowbkw5ZWVwV3FLWUtGdThIMlo4TFkzcExaMVFUQnBBUTNMVHBvVWRnandOQWsyM2tSbXNpMTIxOUtPVkhiblRzSUxzM2PSAa4BQVVfeXFMUGJQUXNQY2lsRjFKdE45TjFOSFQyVk5TejF4U2xhUWFxOEd2ZWNkQy1NU21pU29sOHVZVXZNNXRmOUtrWHI4d0tQSTM2M25RdHBfbGMwZkk4VVZ3cUYzSjNLTF90a1lJYkFOZjBLY1JLbDh4MG9YeDhtSHlNcS1YMTBYUlVwVjdGMDRzaHhWNmZPOXFMMHMwaGZILWttSGFOZVJkOC1HUnlfU2pFaTBn?oc=5",
-      "published": "Thu, 29 Oct 2026 13:46:08 GMT",
-      "publisher_url": "https://ac24horas.com",
+      "title": "Leilão do Detran no Acre terá mais de 250 veículos com lances de R$ 144 a R$ 5 mil; veja como participar - A Gazeta do Acre",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPTU9TTktRV0VNcW00MFRCRXZRbzhmS3ZwWnBBU2VNU1l5cFVYSnZLczM4WU9WNm9VWF9pX3JLM2NpdmVZZXRMbXZnb015QVZxWkgyN01EQ3ZyTWN5NVhadnFTMkVpR0o1d2lYeG5Ld3ZBaHc1Wi0wU3NlUkpXSGVxMUphOHo0djNHdnVVN0xvT0lTUXAtdFhFLUJQaEQzaXBOb1ExQ0tNRUhEOFhxejA0NkR1X19QRmxWNkxkbXJWYmZzM2JWXzZKQ0xDTGVjVVl4a3pja2pPek5CS0hKQjQzNDVwMXBRdw?oc=5",
+      "published": "Thu, 29 Oct 2026 13:21:58 GMT",
+      "publisher_url": "https://agazetadoacre.com",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
@@ -308,10 +281,46 @@
       "status": "unverified"
     },
     {
+      "title": "Detran-SP prevê leilão de 100 mil veículos até o fim de 2026 com novo modelo que promete agilizar processos e reduzir tempo nos pátios - Gazeta de São Paulo",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNdF9sYTVnUi1SaldFOFBJbWo4cDRJNWh3RlR5SGYzbENNVFFVd0k0S3VQcUl0RUwxMW5tRVRWQWtZUTBfeHNvRTc2V2R3eFJVektFLXNXTGNua2hFQnBIaWMyRy1ZaEFiSndiLUtpX1dQbGxQYjNsc2hiQTlVZ1ZzMS05YlFvRHAxU1gzTXZvOEhETlNlQVl5b2xwOGlSSV80ZTFWV1BlV2UzUnJNUURBQUJNb0NsZ1ZLa2tOR0U5N21UQl92T19jZGZZVDZHRnlESTFQTHhwUERpbE5ZbVRlcFRIQ0NzMWZzRVg5V21KZWFGOEg0U0Q5Yzl2THhpVnhOY0w0?oc=5",
+      "published": "Wed, 28 Oct 2026 23:00:00 GMT",
+      "publisher_url": "https://www.gazetasp.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
       "title": "Detran-DF anuncia leilão de veículos conservados e sucatas - Metrópoles",
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQVGJ3eTlOaGhReWJ5NlFDU1V2UUw2SGpvTXp6UXpCbGcydkJ3T08xOUdhdVoxaTJhZURpU2dISXVsMzdjRThtYTJXY0J6VUxPZ0l2TEJqZUx0bWRGOGxWWFctVnFXSGh6aXdDd3gtbEpxYzlTVXZVVjd0YlR5a3JvdVQ1MWJfMHozWFlDWTV4QXh5aFVjWm5VOEVNMnhHaG50TWpvcg?oc=5",
       "published": "Wed, 28 Oct 2026 13:07:00 GMT",
       "publisher_url": "https://www.metropoles.com",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Prefeitura de Argirita realiza leilão online de veículos, máquinas e sucatas - Portal RKF",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNSGR3UnBORHctYmJ4cnQxRnJLSlBxbmZUOFh2dk1uU3B2R0h1T0I0N0dWcEVpdDlNRkxqQVVwV3J1ckdydmhqMGVKclRYa3hpUUdVbkx3VkJ3dUhuNElfYi1CWHRqY1lqTU04VzRUa3gzYnI5cFBiOTdZZkp0MUNmSjJPQTlxdXZNSW5GRmdnMGlwbkVNU2VWRzRQTHNRUG41R0w0SjJHNlZ1RTN1X3dQZll0bG00SS0zOHI0YV85dw?oc=5",
+      "published": "Tue, 27 Oct 2026 11:52:43 GMT",
+      "publisher_url": "https://reporterkadufontana.jor.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Prefeitura de União dos Palmares anuncia leilão de veículos, máquinas e sucatas em outubro - BR104",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQN19DMUpVa19pN1BweEppckFxUnh5THhlQXpxOGxyQUU4RGpkem1ib1k0VG9lTHh2UzhCZ1RvQm5pRTRPUXZVM1U2bHBxRDU3VEVJaTJpNVpEZmJZeWQ5eGM4VFhVYXU2X2U2YVhHWThYOTZjRTd0MmtBVTJzZEtwRHdVakkyaXVWQXNyRUtwQUxncEhrMHdnS2xoRkRFbV85dGRBeXBod0xmQ1NWOGtmS1plQjJYdw?oc=5",
+      "published": "Tue, 27 Oct 2026 07:00:00 GMT",
+      "publisher_url": "https://www.br104.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Prefeitura de Orleans abre leilão de máquinas, veículos e equipamentos - Imprensa News Sul",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQZjFxQVE5NzA4aUNaZmxwM1ZqcWJzWGFUU1hYY0tsVmdLMDk0YlpPV1hYRGFMMzBVNmVJb2ZEbzNkcnl0N1hwLWZoQjJFMlFvM29iTUc4dUxYZVpqYzNOcl9nQUJuM2x0Umw3cUotaWplV0xHcmw5NHBfc1RNSG01c3VoS2x3eWt2Y0EyTlV4cUM2a0RLdFNZYUFOOXBuMHAyNU9Z?oc=5",
+      "published": "Mon, 26 Oct 2026 19:09:43 GMT",
+      "publisher_url": "https://imprensanewssul.com.br",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
@@ -326,10 +335,10 @@
       "status": "unverified"
     },
     {
-      "title": "Governo de Pernambuco realizará leilão de carros e motos com lances a partir de R$ 2 mil - Voz de Pernambuco",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQOGo3RVlBMjhIT2FkZlVxZ3NfZUR1Z2JUSzFKNF81c1FjU2c4NS1qZ1BYbU56SUEyZGRmY0M4cWVvV0dldmJkMmhJdlRZSm9nQzNfeWNvenV4UmREU1JVVndkQmhrbmVSWFIyYk5OSV9zMXoyVXExNVNmTzM0WEVfT2FuNFEta0JrVXBBeHg4SGxXM2p3TERRLXVDV1lnQ0JMYXR1eDZyRWxTZDZwVGxZYVFXOF9ySUdDUXdGa2FVSEFMRm9Kd2VZ?oc=5",
+      "title": "No dia 6 de novembro, Prefeitura fará leilão online para venda de 84 veículos - Diário de Suzano",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOMXhhM2dTaUZ1elF4ZHdfcXVPZHdSUWdEcVFxb3BEc3RoQUFzR1Q0RTJwRDZuTFhacmdGcTJNdHJxV2JocEJ2R25DR0JUNklOVWFxWUdZMDRKNHFjcTlmX1NNMjc5NmlsNHZST2RwSWRBeTgwc2ZHeDVhNGJuTWFvWktZSnlBZFJ2cWhZeDZ5RFdvM0NfSDktSV9JVHRWempwS3dDUkhmejRidDZWUWE1LTQ2X2hjUnpUU1h1R2N6NXlLTkhqWW5CNTJEYW5MQQ?oc=5",
       "published": "Thu, 22 Oct 2026 07:00:00 GMT",
-      "publisher_url": "https://www.vozdepernambuco.com",
+      "publisher_url": "https://www.diariodesuzano.com.br",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
@@ -344,10 +353,55 @@
       "status": "unverified"
     },
     {
+      "title": "Detran anuncia leilão de veículos em Santos Dumont com lances a partir de R$ 300 - Portal 14B",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8tVE5mb0VOQlY4ay02Ql95dEtxTVl3dEJyaXk5T2hadm1PTGlSNllhdEk1NzBZMDFXTnc2YnlPdmF0YjJfY1lnQU9wakpPajZXTk1hR0FqU3RGLWdfOEJZ?oc=5",
+      "published": "Wed, 21 Oct 2026 07:00:00 GMT",
+      "publisher_url": "https://portal14b.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
       "title": "Leilão oferece mais de 80 veículos com lances a partir de R$ 2,5 mil em Mogi das Cruzes - G1",
       "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQYi1FQzM2OEJfeVZUY3lCZkEwYURza0JiUWZ4NFJHaHVuUnpUelh2amQ3ZFJ3Mlp0Y200UF9tSzNxZnFIdV9jNDBncmlKWXA2VGxDdFloc3kwczlDejlWMmtFMk8yQ00yS0NzdUtOczBvMlZoTEh5dmFBWHhpcTg3Ml9wRThTR2VTQzNJYW16ZTNtbWoxd2VQMlNCWVh1dEtoZFRrdF8xeXNjeGVpSHlwVzVKVDZiakZoWDNiRnBoNmdPT0xZVjJab2VTa0dkR0RRekpobkVIVnJsckU0QU9UVnIzbW9PbkxYejIwQzNB0gH8AUFVX3lxTFBsbjlfWlhnWG5LZmc0UnNvNDA4U1VsSWpyZzkzZ3Z0MnU5Y0ZFMHI4b0U0M2tnRHdBTEI1Y1ZzeTZYYWVRd0t6WU9TY3IxV2phYTdYN3htdG5mVmR1S1Q1Z2JBOVMySnZWbHRaekVrWjlXZlptTGtYZzZTY2k1YjV5TVNGMDc1Mjd3V29RcXpSeWVDRTVGeEdoeUF2RGE4YWcyRzl4WDh3bHhfeEFRTFVRMFRYRElWR1hCOXhqVWREbkw2WkE5dzlkQzNyVXRhZ1ZyaG8yR1JUY09aa2trdTg4Z1Q0TFhCRk9aMGJ0MjBScC1VUTVlcGJQdjNMdQ?oc=5",
       "published": "Wed, 21 Oct 2026 07:00:00 GMT",
       "publisher_url": "https://g1.globo.com",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Prefeitura de Pomerode e SAMAE abrem leilão eletrônico de veículos, máquinas e outros bens - Testo Notícias",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOczNiaV8xUGhnV2R2NjlyVkw3Nl9KZFNLMFZkckxEQmgzM1NFWEFjS0tybzZQODdaak9IbkY4Uzk2YzJUX3EzMzNtNGxWMHVDUmZOcmNOZ2R5d0E3OXUtQTdXdEIxZERQSGUzdEdHbGx6N1M0UGd0UllfNC1HSEpveHNxQVFQeldMcHZKWA?oc=5",
+      "published": "Tue, 20 Oct 2026 20:59:20 GMT",
+      "publisher_url": "https://testonoticias.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Prefeitura de Pomerode e SAMAE abrem leilão de veículos, máquinas e sucatas; veja como participar - Jornal de Pomerode",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQSFlmQjYzTzFXdXU1YmJFT1hRTkhDNkEtel9aZEZEdjNJaDh2T0VBbklmSWgwcUpRSU5oYS1EZFZFRy1mR0JyR0tPc0JuQ1FTYUNwaUkxWEtRMkpGTm9od3lBTGluRUthRlpOeVVTNVhRNVpNTzdHV0VGdjVQQTJkZ0RjQkhLem9PTnY4aXRDb1p6LXd2dzE1Y2pXUUtkcVZ6Z3g1QmJCMV9xQjVkbGdGS2gwQmh3cnFSVXQ4dy1pYnhhYUlGSndfUGNGM2c?oc=5",
+      "published": "Tue, 20 Oct 2026 17:41:31 GMT",
+      "publisher_url": "https://www.jornaldepomerode.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Detran-MS abre leilão com 108 veículos e lances a partir de R$ 4 mil - Capital News",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPNjZjUFByS0NNdVMwWkRUOWEyakphMnBnc2FIWXl4YjYxREprREF5Qm5URlJHTEFtV25ERVl0dHE0VnNpd2RzZ2dFbWdOVUZhRWNZVmx0TnU1N1BhUVFXNjBWeHpqUnpmWVhnQ0t1ZVFQX1ZEbzRDVlJRRFN2V18xZzA1X0tYcGNRYktvWk1rU3FZNmdWbGgwb0ZCYW1tb0Y3Tlo1a19xNFNab0VOc0R2UDhXcTkwdHJpWHFfQWh1Ql92SDBxTHNrVmFQekdDdlhqYUY0?oc=5",
+      "published": "Mon, 19 Oct 2026 07:00:00 GMT",
+      "publisher_url": "https://www.capitalnews.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Detran promove em Maringá leilão de 1.185 veículos para sucata - Maringá Mais",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNeU5GQW9kRGEtb01oYjd1UzZ5Q3o0QmZwMUhmejJIWUhNRjRRU3RNXzY5UlJ6OUQwZlNCazgxdE15YlBFZHlfS3M3UWJDQjdlcTB5SW0tdi1Cd3Q1ZmdPaUdjSnlUVDlSbWYyUTdEZUtoQUg0Xzd6Sl9OTzhJVnZHX1N1S2NBTUo3S0M2Y0hfT0ZBdHpXcFp5ZmVmRk5wV2pva2lrMFV2TnI?oc=5",
+      "published": "Mon, 19 Oct 2026 07:00:00 GMT",
+      "publisher_url": "https://www.maringamais.com.br",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
@@ -362,10 +416,73 @@
       "status": "unverified"
     },
     {
-      "title": "Leilão do TJDFT tem 13 veículos com lances abertos; pregão é em 9 de novembro - soubrasilia.com",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNOWFMQm9KRkY4VFA2cGNob0w2UUIzZm82NVBoRU9jTUZfRVpYSHE1M0dxRkNkWE4ybEhPd2NEOFpRZW9iVU9mR1FaUXI1eXlMbF9fc0pUMy1vRUJ6X29PeHVyZzJNSkdMOWRwRnR2eDFYVEl6NXFhdWhfN0dGUGUwY0duVkRHSGFwbmM3VjdCQi1pNnZN?oc=5",
-      "published": "Sat, 17 Oct 2026 07:00:00 GMT",
-      "publisher_url": "https://soubrasilia.com",
+      "title": "Leilão do Detran-MS tem carro com lance inicial de R$ 11,9 mil e motos a partir de R$ 4,4 mil - G1",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNZ1VWX3ZOMW5ieTJ6RXdaaFA1Q0kwWjRVZVpsVHpJYk1tUHRFM1ZwRW9NOHpKaUptNjE0d2dhMThMZXJmTFdYNmpTWUwycnUzZW1fZUZlblB2blAzN3l0VW13WEE0dWZlb0lVX2JwcXZnRWZ5Q2tWUk5LQXJVYlY0YWRwaUZjY3kwbXRVU1lTcjNmTVJYZ1BhTDlid1E5U0RtMllPOGljSDZjbmhTbWdSWFZ2T2pFNHpHTkZiSU4xNy16dUtUdE5yLWllRGNPRlZiOEdwNEpzLUc0ZkhLMGpLWE02YTZxeHNKYmFvaFZn0gH8AUFVX3lxTFB3NWJyTWJGVEw2TW45Z0FWbUpMSG1OWld5bUNxNVFHMTc0LTNCTFpBNzVXOFE5OC1WUmc3R0lQYXRfMUsyX3Y1RXJFdVBsWGI0RXp2ejJVcUQwUWFvdkZRc2ltbzBpdnV3M1JPSWJ2X1pwSjljOElTNEVrU2dXNWV3bl9LbHpfNWp2MkwtTlRmTEZqT001VGhvSlpoZzdMLXRLejFta01uY2wzYVo4Uk1KMFdPVVpfU2RVb2ZNQ3VqeGJodnI5Y1FyWEItbU5waDAwTk1EcXEwU2Q5OFNhbXoxcU83MVpqRGJFOHhUdGR1Y0VCLTI0VlNrb3kzeg?oc=5",
+      "published": "Fri, 16 Oct 2026 07:00:00 GMT",
+      "publisher_url": "https://g1.globo.com",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Detran-PR promove em Maringá leilão de 1.185 veículos para sucata no próximo dia 28 - REDE BRASIL DE TELEVISÃO",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSzBsRUFqT0xTWDNHZTZTbjZLYXpobm0zMUJTb1dHNWVqeU54ZDlZZFdVQk5fMXNrR05aT3BEbXM5WnY3cnFBQ0tWcDdnVng1RnRJN2UxeHd0dFN6c3hURFdFRmFqcUxIZGxCc2NYV2JCNldhY2ZXeHpKUlN0dmZxWDNEWmwtTUdjaWdIbHJqdVE3UV85X0xwNUR1dkxxRWo2Z1E1WnpGYmRCSGRxWnYyZm9UQkpTWU1F?oc=5",
+      "published": "Fri, 16 Oct 2026 07:00:00 GMT",
+      "publisher_url": "https://rbtv.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Detran-MS abre leilão com 78 veículos, sendo 63 motocicletas e 15 automóveis - ArapuaNews",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOTlk3VHNEOUQ3RFVVNWN2dFB1aG9HY3BfamZfdDBYRnB6Y0laSEVndnlpeEhhX2trVU9UaWMzNGNLY0NvSDUxdVFxbEZ3dXFvSksya1NjbWtONXJ6RWJIb1R0SFB4SU1vNWxHUVY5aWV1Rm1TOEU2bHpISkRacld4NDllejVLYUE1VUVWcUxzaFhCeHlDZy1XWUdoTGxzOHM4SFgxSw?oc=5",
+      "published": "Thu, 15 Oct 2026 18:30:00 GMT",
+      "publisher_url": "https://arapuanews.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Prefeitura de Leme do Prado faz leilão de veículos e sucatas com lances a partir de R$ 250 - G1",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPQXFSZS0xOWs5Q2c2dzlmMFNuQnlBRlZXT0dsZmR6eHN1bkxMRFJRZG44MVdrQlJNdHJtOTFpaWxNT1ZLRjZPaEdLb3pPUzVOVmNPWjZhZ1p6R0xVV1IzMTFNUEw5aXBscUFtQi1FUU5hRHdpVnQyZEI3cEJ0ZmhDOUI3NUNqV2NzVHlBampwcWtPUGxDcHZzOUo5dEJ0bFVOMlhFSjdXU1pydTFWUkQxbjVadk92VGFZUThfVHVqVE1mQXdwOWFHdU1nR3YwY0ZOV19nT0dvTEd3OUNXUndhbzlpcjM4QdIB9AFBVV95cUxOMGdnOEpSRy1MNTNlVlVtNkxSS3haRHZpU0VEWjBKUXlVQ1pVdGN2bGJCTzhEckRXS1NyRjhnbTluSUl5YXRvMFpjQ1dwOGpjQ3UyUURZNS1CaUxMZGY2Q1RUdDFqOFFYYzhfVTNUZGJMUzBmd0daMHduRWhXTmVRU2FwS0hlZ0owNk1iT0pVUmYyUmo2QmdHdG50dlJnSkNTWjZPc3FxLW1nbVczal9DLUVFXzFCMXQ5YWtBZGJUQy1JQjJUM2pvVXhLSTZkT19uV0ljcXJEYnRneUVUam1aaEN4c25YZ3A0QmRsRWtYNDBZZXFw?oc=5",
+      "published": "Thu, 15 Oct 2026 07:00:00 GMT",
+      "publisher_url": "https://g1.globo.com",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Leilão do Detran-RN tem Corolla por R$ 20,2 mil e motos a partir de R$ 1 mil; veja como participar - G1",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPdEN2WER6dV9DTkR4bmphd0tPejNObEhJU1FrOHNhNTN1SWxaemNGajVrc0Z5cGRINHMzS0RLZzJSZ24zd2hjNGZpbkowYlFJb1Rjejc0Nnh4ZzNwZmxKQ3JwUlBSY0ZsRHpZb2FsMXpMVjhNcHFDRmk2NERhUEtTZk45OUxlZktvdXRlNDhITEVyOXRQM29UalVrZzRmYld0NjMzMmJkZmVDbTYwLVBGLUhGOUhfVmhVVGJaemQwb2VWTy1Yb2p0bElIRlZSaV9UcWxJYUVDSVM0VmNzMTNRd1hHa05xMXlCMUo4dVVpRHlyVTFiTmfSAYQCQVVfeXFMTjhLR2Vtal9yNmZTejZoWm50ZGtMbU1yam43RE9qMHZNY0ExVHBjTzNoU2dNd1Z5Sl9pNWJ1R2VBNGlkQ1BiZUtHMTcyUHRIcmladnRoY2hyamdycFM1YjNOUkJUWFdTZkRORkZwMEVLUkNCZ2xJYzY3NGo4VVZOMUpiMkRpMnZZUnhMTi03cTJVT1dFaXpjYUpaVlBfV2JKaUh6Q2p2T2ExMk5wZTNEdG5kcm92Y1o3OW12YVlKQ1lVWXUwX0FhdlUwamVzZmpCSDdROTZzclFaWWVnRjR5Z2JIXzdNcllyd043M2lQTnZFQmJ5S08tZC1RQUI4cnY1MDV4djE?oc=5",
+      "published": "Thu, 15 Oct 2026 07:00:00 GMT",
+      "publisher_url": "https://g1.globo.com",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Leilão em Ipatinga tem motos 2025 e carros a partir de R$ 600 - G1",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPNmJ5bUxMVzlOUXRIdjkxZU9SU3g0dHpKRmVNSGxpbFVYRHZhZjlxald6bG5TQlBtdjZ1cGVhdkhVblNLUzZUcDMyb0hHVzNwZzM3UGtxZ0VzeEZUWHZ4QlVLWkxuNW5odnVOa1UzbEdUV2dUQ2FWZUdTaU5wUzFNSy05ZUlCOXZUVGJsNnczM2RfRWRnQjdaZkFoVzlUMG85TEh3MTBGQXU1aWc1SklMdlctdll3SWxEZ2fSAcgBQVVfeXFMT0lyb0lndmNxcmM4bHBkR1Jnd1JoUnktbjhmNWZsSUh0SDNZMlZySm9Nd21yQnNCLVR6UXM2OFU3ZUZuNHVKWlpxYUplSTdrTHVuWExXTm1GU3lqREZ2UF9hZlpXczhhaXY4TThSTlBSVV90YVI5b3piVnBfdmhzOFgxMXB5el9ackNYRTFzdEM2bUxVcExCNE51bFhVeEttOTdMVGk3cVF4YlprQUlFYVJXVzJTRlBHZWRnM3JZamVaSERWNU54dEo?oc=5",
+      "published": "Thu, 15 Oct 2026 07:00:00 GMT",
+      "publisher_url": "https://g1.globo.com",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Detran-MS abre leilão com 78 veículos e lances a partir de R$ 3 mil - A Crítica de Campo Grande",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9uOGZLOG5FMk4wTERRMTNZZFB6RmFIdVhtTDczVG5qM1lLMVVkSGY2em9uN1JfZ3NKLUJwN0xNeXQzM0c0WllINFpOV1NERlhkbUw0NG5OYTlKeHhWaHNwbnBLZURfTHdQSXow?oc=5",
+      "published": "Thu, 15 Oct 2026 07:00:00 GMT",
+      "publisher_url": "https://acritica.net",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Detran-MS abre leilão com carros a partir de R$ 3 mil e motos por R$ 3,3 mil - JD1 Notícias",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPV0lROVFTZVFFQzN3c1U1SFNpZEYzYWczUlJBTGxoMTFBdFFhQ2RINlp4Q3BIMEdPWGVIbzVJUXBGdXNxM0xIc2RmV3RQeXgwVm1jLUR1d04tRVZJSFhtbEE0bjVkRS0tLTFMcTVBWThZdEkwLWVWVXdyTnZPdkJYVFM2VkwySWJNMXNScm0xLW5hUmtTT2tXQnVXQWtfWDRsTXowcUdYaUZoOVFnMVhnYUo2UkxsdkFqRTFMLXZVNkw?oc=5",
+      "published": "Thu, 15 Oct 2026 07:00:00 GMT",
+      "publisher_url": "https://www.jd1noticias.com",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
@@ -380,37 +497,37 @@
       "status": "unverified"
     },
     {
-      "title": "Santarém abre leilão de carros e motos com lances iniciais a partir de R$ 200 - G1",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOTEpRNGt2VWZUX3hXdGdYZTBMMHhxRnA4LUxNajFjaG5vMS1iNm5GcEd6aU9JTVVfQ1hiSE1td01qaDZuQ3BpN2g4Zi1fcGZ4TThSYk9rYVhqY05DUjdRcDdJb0JpRVlFUjRtV1lpSWhDMEhReUVyZTFzcERsVjhMZFhVdVVyU2djZGVQY2FPbEExNkQtMjBSb3gtQ1RXb1RIZGNuZGIteVVIaGxlT3lTTTZ1NWQ5QjBCSEN3YzB4ejJwSmFtX0xkUW5YbkVSc0gzeEVWVDZuekfSAecBQVVfeXFMUFk5NG1LZ3pZcWR2M0VZc1daX28tUEZqc1RXd1JRaGNXSXFfdGFhWlpQVzJ2dkNpR29ZR2F3LV9pMXBmV3hObnRoZVg5S3ZCb2JMaHFDNm1fY01BSDhYNFY3Y0pnc0FjM0pGa3dNUGRlVzY2UDhHNThQVmF1WklFZ0pmMHN6Q3hFOGo3ZXI5LXYyWXNYTmdTbTQ0aUlxMlpJdHZDb2ZTMURUMzhOandYOFlzTVktMjdlcndpdTcwcU5MZUJmaEtoWEowcUtldHBlWm1mVkJxcWgwMF9FSVY3blh3bXdyYWdN?oc=5",
-      "published": "Sat, 10 Oct 2026 07:00:00 GMT",
-      "publisher_url": "https://g1.globo.com",
+      "title": "Leilão do Detran tem carros a partir de R$ 1 mil e motos de R$ 350 - Jornal Correio",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQcDR4RFpQWmQyb2NCWFQtemxoaXlKWnFtTEpCbFBzOXB1eGdLUU4wS0paSFpTS05TVC1DeDZPTEhLNnN3dWZUanN0NUZGVG9LQkhNdjVSMVllcU1CLUxlZUNhbGl4S1FvdUVLc1E4UWl4NFZIMnNFaDM2NTdPWDB1bzlXVnZMUnNOTlhPY2lrSW1SRUt2S1pzZHpkOFJManVOcWphUHFJeUVKVlZfOHc?oc=5",
+      "published": "Fri, 09 Oct 2026 07:00:00 GMT",
+      "publisher_url": "https://www.correio24horas.com.br",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
     },
     {
-      "title": "SMT REALIZA LEILÃO ONLINE DE 90 VEÍCULOS RETIDOS HÁ MAIS DE 60 DIAS - O Impacto",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMkJMQzV3UWxDZk5nM0s4WGVnNmZzTlNJRG5UV2xXaE9mTG93dE5QMXptbllXa0lzNEdadlNfWHAwUGpBRzNxY3V6ZXFubE92TzFnRFBxSkpKQVR2dnZtMmI2YVZ4aFhNWUphRDREa0ZVQlpweVdlYWpOamg4amxmd1hCdmZuVEFta0w0OXpxY24yUm5uYy1fQm14S2QyNFl3WkE?oc=5",
-      "published": "Thu, 08 Oct 2026 07:00:00 GMT",
-      "publisher_url": "https://oimpacto.com.br",
+      "title": "Coleção de motos de Billy Joel vai a leilão - Automóvel Club de Portugal | ACP",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPQVpuUklWaEMwUFF2MWt5VUNUNnBOSmhidUR0YkR6M1BjYnd4M044R3lqaEY0dEpoUVFqcDZ5Z2twZVdHSmVGazZDOVJsdXdHR2pOZzIwcnFYRHZ6YTdoMW1zUi1kNU5hMVk1UHBmNDBIMzRmMU5hNGVQZTZQS3QwX0NCLUUxQ1E4RnVsZGNTTTRzVmxMMTRZa0xWSENTbWhIclE?oc=5",
+      "published": "Thu, 08 Oct 2026 09:00:52 GMT",
+      "publisher_url": "https://www.acp.pt",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
     },
     {
-      "title": "A partir de R$ 1,6 mil: Governo do Paraná faz leilão com 92 veículos oficiais, incluindo Amarok, Hilux e Saveiro - G1",
-      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQVmRCVjN0THRSeFNYVTZqbVlWYnlJOTNTbHBfQXBUWDdnaVpJSTdDRFNieC12XzhuMUJzbnBxMGZoT1JIMnAzNkdLOExjN0QyclNtVUtoZDY1LUhUZkoxZnFXdTZ4OG5PUi1YX0dVUkd4NnRUT2xtMm0tVURrajJoWlBLZmM4WTlTMk1hWUZqdkFjZmIyY1VyaUJqWUNxUk92ekdXdl9ybFpGNW5zRXd4TDB4NWMtRVhpNEpWVUE4Ym9jVTU2RW1tTlpBUXJnZi1MX1lVRkpCYXFILW9zZmZ0V0JMMVBGYW9yamJoMGRYc0lSdUtvWmfSAYQCQVVfeXFMT002Yk54YmFiZ2xYVXlyU0xibEpxVFU4TTU2UDlSLUNNb25UWDgzZ0hDQXFobHppWXB5QUxwNVZpQWVWVWpXdDB1MUhXZkhiOWJfVlhwN09TWGFtT2szNTVDbW42VFk2WkdyV1hsYWplT0dBMUY4SFRRLUVJM0pTdlNtMm9zeTNORV9zTGNwRHhOemsxS3VwMVpaaHlNNXVtal9YY2tXM0RWeUxIZmtiVldGaGxSa21NWERQZklReGNNZ3dESUprTVE5bkZ3SzFTbC1mZWRUNGZhY1lXTlExbmlhR0l3ckRrYjRzVzFDNlhZbVhSU0RmX1dOWDhoSERMYV9rSVY?oc=5",
-      "published": "Wed, 07 Oct 2026 07:00:00 GMT",
-      "publisher_url": "https://g1.globo.com",
-      "source_priority": "other",
-      "discovered_by": "news_rss",
-      "status": "unverified"
-    },
-    {
-      "title": "PRF faz leilão on-line de veículos apreendidos em MS - A Crítica de Campo Grande",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdnd6eE1JVEpqNTRGMUpvWmFwa3hjeTFqYjBvWTRlb0tUVnozZGQtSV9WbFdPb3Z1bFpSUDJpSEZjOHNta1FHclpPcjZaN2JUSVdORmZ5aEl4bkRyZ0t4S2FPT0xqWlJpWnVUR3ZGdGJ3Y0tqQmp2M0dYSk1QRTZ6RU5vVV9iQ0k?oc=5",
+      "title": "BMW, Hilux e Compass: Detran-RN anuncia leilão on-line de mais de 100 veículos apreendidos e abandonados - G1",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQd1VRNWtocU41dDFtUkt5LUNxNUdxLTFXUHJRMEJzTTFJNkFudk0wR1NtZVgxZHlreTZ2dERicDNjMUtyUnNIcTNJS2VEN0lEZGQyOTJpLWV2YWJ6SjJpcjRmbFpQTW5nSE5FUzZyeGJCVmR3R3J6NjV6RmE0bjBQU2E1RXJiWUJwU1J4eUxYWTBsWVJqTXlpSlJiZmxWZzBTdjBxRmZtdGQzY0hfUUlKNFI2X1dnR210WU5Kc3g5QVdBM25ZbWtFTFlxbWhKckRDeVJlV001MWI1Tm91emZyNm5wT1hfZ9IB9AFBVV95cUxORGJiU2l6Nmk2Y1JhRW9xZEdpOGw0OFdubWtad2NBYldCWUE2b2F4UVJnMXpLa2xQdGo3eU5MUDI3ZXMxSFppaHZTSmw1akVoZkZJN2t0ejBtekdhdWRfRXAxal93YjdxWExVMnR5cUdhMnBWWUVtLXdkbGROT0RIbjQ1NS1xT000NXBYY3dBdjlZaEotQzQyUUM0WTgxUldXSE0xaWNScHRreVVkaC1sOTNXOWZ5VndBUFhlYXFYMWU3N0pjcXFUa0lYSDNOT1NRUWlBZXBVWkY1ajBiS1FwM1hlZ0V1NXEtX1IxRVZENFV2VHVX?oc=5",
       "published": "Tue, 06 Oct 2026 07:00:00 GMT",
-      "publisher_url": "https://acritica.net",
+      "publisher_url": "https://g1.globo.com",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Detran-RN anuncia leilão com BMW, Hilux, Compass e mais de 100 veículos em novembro - Tribuna do Norte",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQRWhDRzRXZG4yTjBPaURRYnZYVkpmV1I0NUZjNzZwRS00WDM2TzJ3aktwOGZtaHhUNTcxWFlVWTNad1Z2cG5yQUtsSFQ1OXdPWXM2a2JXUG1xdnk2SU1FdmV4THQ1bTlPaC1ZcF9fWmVlcEVlOFVtNjlhNlFUSWRYazlpN0dPRUxTNUt4SlB5SXpsM05Vd2NoaVQ3ZlEwQk9xVG5mRlgzSEtxNWNNR2syUElSUFc1QkFjYVdzUXlpdE9fX1BhSnBvVzJfUTQ?oc=5",
+      "published": "Tue, 06 Oct 2026 07:00:00 GMT",
+      "publisher_url": "https://tribunadonorte.com.br",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
@@ -425,6 +542,33 @@
       "status": "unverified"
     },
     {
+      "title": "Detran Leilão oferece 363 veículos e sucatas na quarta - Rádio Guaíba",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOWm5VV05rYm5RYldHTEZrRmdKdEhtWEZhdGdJLVR4MkVyREJTMWdKNWcyV2ZTYlhXTDhZUEtEaTVkS21iRWc3eUNHcVZZYVozMllzVVVsbW5sb0lQZ1RscC1GSUZkdHNqTVlVQWR2WWI2RzFDMl93ZVU0QUZqNElSTmNKTQ?oc=5",
+      "published": "Mon, 05 Oct 2026 10:47:20 GMT",
+      "publisher_url": "https://guaiba.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Detran-MT abre leilão de veículos apreendidos com lances até 29 de outubro - Fatos de Mato Grosso",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQMy1tS0oxYlZmNmszWWRZbFE1d3FCYzF2OUR0LVpxNS0xTzNUdHBqUlBST1dkNldGV3g2ckIwMzJSMFJaTGVSdk9wNWFBa2hyXzczOTVJSGVHckFDalVDTlJXdHIyZGFzUzI2LVQ3TnQ0M0dwRnJHa0h6VHdRR0ZaU0NrVWNrdkx5bVhZQXo2aGMzNm1MRzM3amdPUjBCQTJiZjNQWTJ5WElWNU5BblAtNm80Y016Rm53b3BCM2JuZ1VITWs?oc=5",
+      "published": "Mon, 05 Oct 2026 07:00:00 GMT",
+      "publisher_url": "https://www.fatosdematogrosso.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Leilão oferece 363 veículos e sucatas na quarta (7) - Canguçu Online",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNU3V4WHlQcl9RRnFIYUItYzhoOXk2LVhndlUwbm82Wm5DeUVOdDYtQjNuR2lvWmxsNGJnT0xjUnB4OVVRWVNQU29ZMlY4S2VhUVB1SExwZllfZ0tuTENSYkhiQ3NvZHJBSmJ3WmRkTjFBTDFlLTU1ZmNkOUtCVlY4TEVMUkt2Sm96Yzg2RmtaV2k5SXhvZVhnQWpucnVsOF84eDZqUTdPQ0lNWEpjVVE?oc=5",
+      "published": "Sat, 03 Oct 2026 07:00:00 GMT",
+      "publisher_url": "https://www.cangucuonline.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
       "title": "Mafra tem veículos em leilão da PRF com lances a partir de R$ 300; veja edital - Riomafra Mix",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQTjRwRGZsZnJibmU3U3JJZ2VzeEpESUNxUmhtcVh4YUJMc3Y5RElPN2pPZ25WWFRFZ0xSb0VCZ3FKUndMMkhCU3JUNDVMWXNfNG9vUGJITk1HT2x5Z3R4bGpuY09CVmRwWGVoOGYyc1Q3THduV3h3UnVlb05hYS03N01LXzA2cklrdjRicE5YMEJkeTlOODU3eEdxUlNkTVl3SDZoT01XSVNGZVpoRjY4R05OUGZqU0lpYmNPcHNTMA?oc=5",
       "published": "Wed, 30 Sep 2026 07:00:00 GMT",
@@ -434,37 +578,19 @@
       "status": "unverified"
     },
     {
-      "title": "PRF realiza leilão com mais de 1,3 mil veículos - Portal Tri Notícias",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNYk85WmRJSWxMR08xNmYwbGNQWVhFUmRFWnBKVHNYX1lNdzg5UUhCTC0wdE5xRVNseUdTWjBLdDZzb281M05lRmhMMkFwVGpiRG9rbTBYbkxxc2F6TGtfenhEdTRIZXRFbU91b2RXOFhtRHU1Y2dvLWpFYnliUmI0QWtpazhsOWZmR2pXV1c5NzB1RkpxZUE?oc=5",
-      "published": "Wed, 30 Sep 2026 07:00:00 GMT",
-      "publisher_url": "https://www.portaltri.com.br",
-      "source_priority": "other",
-      "discovered_by": "news_rss",
-      "status": "unverified"
-    },
-    {
-      "title": "Detran-SC realiza leilão on-line com 760 lotes de veículos e sucatas em outubro - JMais",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSVo3eWptVFMtTndTR2xiMWttdjFIR3dWLTVWMi03SHFoeU1sM0dWVHRRaS00SnBKMlhTZkQ3djYtSm5pejk5aXhjdzh2R05ZN0VjNE1hNUh5M2JrQjUwdzJKdWo5dG1pYUhBT0dQSTQ2QkUxQlNoQ2dNeml4LU13Sjg2WkM0VndEam1VM0IzYlN5ZEh6ZmdPOF9pa2c2U2libDVSbVNYVHQ?oc=5",
-      "published": "Tue, 29 Sep 2026 20:21:24 GMT",
-      "publisher_url": "https://www.jmais.com.br",
-      "source_priority": "other",
-      "discovered_by": "news_rss",
-      "status": "unverified"
-    },
-    {
-      "title": "PRF fará leilão de mais de 1,3 mil veículos em SC; há lotes em São Miguel do Oeste, Maravilha e Guaraciaba - WH3",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPUTJQUjFSVDM1MXEtUmR0M1NRZmVkUzJUVWp4Zmc4NGlWRUdWRWdUaF9mU2FHT29XcWJabnVoMHhRdEZCclY4dWZkMFpGRmhPNXA5Y3NScG9Kd0p2ZXNOVGZSRGp5bzNWa19FVEhUSHl3alIwcmhxNTlRMUF2QjBGMm1ubG1qSUI3X0NEYVFraFBGdDFKMENTZUY4NUlFMmVaZEtWeDh4NFlGVkctVDNpcUhaOUY?oc=5",
+      "title": "Veículos, máquinas e equipamentos estão em leilão eletrônico em São José das Palmeiras - Correio do Lago",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPNmFHXzBuclJOVDJNeGYyRFNycHlNSEVaZ2hEbVpGVk14MTVHSFJGQnphdXVic0l3WDA4UEVTcldyUjN3bkJOaE1ZdjNMQnhzRjNEVG1WTEV4SWVYRC1Oenh1VTk5Y0QwUU0xZXVfQjhuZTlRM1BKSUNvZGR6QUszTjdpY04zemhhUkpuaVdpRm9Ea0ppdkliNnZ6aVo5U1FQT0JZTnhGVWdNQV80RzJ6ZzFsNlpYcWdmQnVhaEx5dzJ5Z0J0TkZYSg?oc=5",
       "published": "Tue, 29 Sep 2026 07:00:00 GMT",
-      "publisher_url": "https://wh3.com.br",
+      "publisher_url": "http://correiodolago.com.br",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
     },
     {
-      "title": "PRF promove leilão de mais de mil veículos apreendidos ou abandonados na região - Portal da Cidade - União da Vitória / PR",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPWGZqazA0b3ZMUi1sRHR2S19FbjdoOWRvdXV6QVczTGdoLVMwTUJBMFYtc0Z1WUh3YlBWZC1welhsZk91aWlGRXVMVkRMV04yeVBjbGcwRDduQXIxQnA4WmtDN19GU2JXNlJldGY0dlhHZHJJeWt1cEVrMkt1MUEwazM5VjlGZGZ6eTJBYnBScG9SUk9nM0k1a29EWUNlSzZVVW83enFFUXk1Sl8xMjEyODIxUnZrY0NxOXZRWV96bXA2MjR3VmlUNHZXM3NhaHNSaHdrYms5OFh5T21r?oc=5",
-      "published": "Tue, 29 Sep 2026 07:00:00 GMT",
-      "publisher_url": "https://uniaodavitoria.portaldacidade.com",
+      "title": "Prefeitura de Palmas realizará leilão eletrônico de veículos, máquinas e bens inservíveis - JORNAL A FOLHA DO SUDOESTE",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOR3RsY1hkcTM0NlM5MUVXOFJnMlRvMXZ4VlRIQlBzTlZsb09XQ0w3NGRrdy1qcm5Wb2k3ZnFrR2JDNW5rY0FsZzB5bkxQQ2VNUWwycGhWVE5TNUpqeEM4WTlfeFg4MHZNU0RiNEl0VkpSUGFHaWVMdFNLSVlmVHNONFhRU2JNTkx4TExfQWhINFlnSjZFUHllcWZMNjVTeERrcnRyWjVQeHNMUks0UE9ldHZoZnpRTE9VV3dDNFE4OUhBaWViRk43QS1DWnlleDQ?oc=5",
+      "published": "Thu, 24 Sep 2026 07:00:00 GMT",
+      "publisher_url": "https://www.jornalafolha.com.br",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
@@ -479,10 +605,82 @@
       "status": "unverified"
     },
     {
-      "title": "Prefeitura de Palmas realizará leilão eletrônico de veículos, máquinas e bens inservíveis - JORNAL A FOLHA DO SUDOESTE",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOQjNxdjdGWVZUQVdoQWx3YjVxdWxMRktub1Z3WVRrb3NQdmVZNTJwYzM0aFZfOUdLZ3Q5ZVNBblk4dnRMSmUwQnhIMno3QllfbEw1bWYzdUpZaHQtMkpTSHAwYVNnMkZiMVZLXzRPRE5UeXNRd2swbEhwZnpKckM3WW4yYXR6QWVXRjZVbTlUMGhGdHRSUVVfd0g0OUdWNm05RzFpeHd6RDNfWVZCMXM3MFBMVnlmZ3lmYVR1N1FtZDkzT1VQbnZj?oc=5",
+      "title": "Detran-MS abre leilão com veículos a partir de R$ 811; confira - Midiamax",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPOGM0bEdGdFVIeDhWYmw5SnZFZkV5VFNQdThpVXVWSXoweS1fTmVnYnRHS21uSXlTb3lwWmdMb0hRQzVtZkh3QW9YRnB5WXg1Zl9jYk9KNXZTZHAyNzlZem1heFpKZjQ2OGx5U1ZnUUlkUnNQMHkxTHlrbGZMTjNzdFItSnJhNzlVVXUtQllPV2V2WVRoU09FdDdmWEVXV0tFMVE?oc=5",
+      "published": "Wed, 23 Sep 2026 07:00:00 GMT",
+      "publisher_url": "https://midiamax.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Quer comprar um carro ou moto? Detran abre leilão online com veículos a partir de R$ 811 - Primeira Página",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNRTJNb3FfTU9IWDFobUUxRmtsYV9SQWtQaXJHc1VQbnhUckRsdUc3UFJmWXJGRjhEblJwUWFUS0ZFaXBZLXZkRWZfT1NSc2NxdXdjaFF6c2pSampSd2RpVXhSLVh4eHd6SEc5ZG5oODV3bDJtU0RHTG93UmJ1NEhlQTdxRFY0a0lNSjVEREpUZlMwUUlWWWgw?oc=5",
+      "published": "Wed, 23 Sep 2026 07:00:00 GMT",
+      "publisher_url": "https://primeirapagina.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Veículos recolhidos em Sobradinho e outros municípios do Vale do Rio Pardo irão a leilão virtual - radiosobradinho.com.br",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQMG9oMjFiVkU1WHdkSE5ObjA0Zl9VRzI1c3ZQVlNYQlA2NUNHekNkX3c0eEh2VG53WFp4VUpHTjJ6cEJ0N01xanowdXZ6T1pLMk5oSDFlNjI0bUVHT1BwTkg3SzZjZjFMVERvZFFmdEJkYWlvM0hhVVFpUVdONWpOckRYb21pQlpQTU8xRlFEQk92WjdPTzBEbVBCUFV3NEpoX0xXc0JwbVNfZjZmYjF1UnQyclQwUGdkUlhrUHBla1VGWDJEME85VWc5b04?oc=5",
+      "published": "Sat, 19 Sep 2026 07:00:00 GMT",
+      "publisher_url": "https://www.radiosobradinho.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Leilão do DetranRS reúne mais de 800 veículos e sucatas - Litoralmania",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBNSDRpSkFKd2NYcWVwdnFaSmFQVXZ5SThqcDZTUktJbWg4TmU1YnhILW9VSThaNzRpOWlta0xOb1M2M0pTOENvdXdGbzAzLW9hM255UEYxRGhuUHdiU1A2YWhDQ3J4QTdVeHNYN3VxaDV3eUpz?oc=5",
+      "published": "Fri, 18 Sep 2026 07:00:00 GMT",
+      "publisher_url": "https://litoralmania.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Detran RS realiza leilão virtual com 858 veículos e sucatas na próxima quarta-feira - Litoral na Rede",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPOHRZbVRrYndzUWhRSWVwZEtIZjliZkFUOFByTUQ3Um1mSENkSzVfb0FYRTJSWTdFTnhrTTFMZzNIWUhMa2lfal9wU1dqbmJCdkF6eWpBRE8xWDAxT2FrRndjQmdzZDc0bHFKRXFIQVpyVVhzRG10Rkt2TmdOcVFpY2hVcXAxdmp0YzVONkRKY0R4bkR1cjV2d3U0X3g0Vkl5LTVRRExRLUxfVW04Y1djTEQxNA?oc=5",
+      "published": "Thu, 17 Sep 2026 07:00:00 GMT",
+      "publisher_url": "https://litoralnarede.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Prefeitura de Guanambi adia leilão de veículos para o próximo dia 22 - Agência Sertão",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNaEdseS1BY3NDbkFMRlR1dDA1NFJ1NXJMNkNHb3hLdkFqbWpRV0Z4M1VVYkhDcXBRR0FZNmlqeWVmMV9aZnBLQzVMUHlzb0dWU05YVWJGX1M0R2Z3R1loalBmUl9IX0dVb1BsVUlaYmMyMUtnQWd1aDMwYWdmUXF6N1g4czVydXZLcjJTTG5aNzU1bDdOLVM4Z1VuV29nMWwzc1NIVHZlYmV2d9IBqgFBVV95cUxNaEdseS1BY3NDbkFMRlR1dDA1NFJ1NXJMNkNHb3hLdkFqbWpRV0Z4M1VVYkhDcXBRR0FZNmlqeWVmMV9aZnBLQzVMUHlzb0dWU05YVWJGX1M0R2Z3R1loalBmUl9IX0dVb1BsVUlaYmMyMUtnQWd1aDMwYWdmUXF6N1g4czVydXZLcjJTTG5aNzU1bDdOLVM4Z1VuV29nMWwzc1NIVHZlYmV2dw?oc=5",
       "published": "Wed, 16 Sep 2026 07:00:00 GMT",
-      "publisher_url": "https://www.jornalafolha.com.br",
+      "publisher_url": "https://agenciasertao.com",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Leilão do Detran tem moto a partir de R$ 1,2 mil e Uno por R$ 8 mil; veja como dar lances - G1",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPdEpkdVZLQmZ0cnh1b2lVbDlxSWVSXzFjYXNYU3VtbndfYzNoRGt5SGsycHBuWVZEOVNYelZCbEZDUTY2b1ZXMV9CYXltOE5uWE5iNXltWUM0S181Ui1HM0s5MUNQVjE2RmRtNDZzaGR5RGh2Z2hzUk9tOWJaX1RDbGJ6R2w0WXBIVWYtUHdEbGxOREhnUmd3YjdLdmpxOFI2ZHR1ZkVnSEhCR0hnQWNLMHZfcF93bkhxa25rR3Itb051bk84UFFDdlgxbVpSUDR5bXBYRGVfejB2UTVOblE2Z1AzWlFIc0Q20gH3AUFVX3lxTFA1SXhDbFRNR3ctSkhHTWlGSlJHY0EzNG5nanBna1dPVmgweHpwYWhGZl9saXZXdTVqdjlFMTlrSVJtdTRFWkJoVHplQ3hzRHNSU01MekkxRDYyMVlGeGhfWlVBXzlfYVhkZkxiZEtVVzV3alhQSnJ2RGJzSTgtQTAwVDE4eTB3WFdFV0Z4OVExcEppWHEwa1hYNGRiQTZlMU5fUG5ZQVpmSEdrWTlpbEhYeFdKamRFeE80SllxTnoyaHVubG1UNUN5YXliLVVJN2pfSE10SXhEU2tvZ1FZd1lRV0pVbF96MjN5aE1lMFFfaDhtcE51bzQ?oc=5",
+      "published": "Tue, 15 Sep 2026 07:00:00 GMT",
+      "publisher_url": "https://g1.globo.com",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Detran promove leilão online com 111 lotes de veículos e sucatas na próxima terça-feira - Tribuna do Norte",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNWFRERUxhQk5ZYi1MR21ZUWo2eDJkZEV1NUFaUXVsYURuRHNfR011a2cwUnRyb19YX05yY1RQZVpMaGFPV0tFX21GSEFjU2pGZnEzbURPUUJJeE9IYkhQTFhzSnR2ZTNGcGlEV2syMVhKZGptcDNRNl9hVm5PRmdFVXBESWdSZDBWYkdGazRTUnBzbzRKTmpZeUx2a3ZObmtfQmstVUZoMjI5VXdTTTZ3ZkVLU2RvZDROcl9UUWVYTnpXX2NhODRBRXNZTzZERGVqcjVoMw?oc=5",
+      "published": "Tue, 15 Sep 2026 07:00:00 GMT",
+      "publisher_url": "https://tribunadonorte.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Prefeitura de Lagoa de Itaenga anuncia que realizará leilão de veículos - Voz de Pernambuco",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNakFpVUo1anpiUVZxUzJONlYyd3FfTWFhZXJicWRTMjFTQUY4MjM1X0xzQnVYWVU2bWl1TVNnRGFmdlFRT3hXSEVvanZuSHZCT3VFMWE2c3NLd3FWbV84eGx3UVY5WUtPTTlfZHpSTF80MFA5akNmbkh0aG0xR2Vka2NGTkYtbkJxcENZZmlXcDk4WEpiSDktWTMyWWVlYU1lUl9KVURqYmxOd0tZbXBZQVVR?oc=5",
+      "published": "Mon, 14 Sep 2026 07:00:00 GMT",
+      "publisher_url": "https://www.vozdepernambuco.com",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
@@ -497,10 +695,163 @@
       "status": "unverified"
     },
     {
+      "title": "Chance de ter veículo próprio em SC: Detran faz leilão com lances online e opção para rodar - ND Mais",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQay1IbVZ0Q3NabVc4cG5TczIxT0Zhb195VEVua0xnbFRMMEo1S3hJV1M0WjdGU1YtUkZPaHdSSHpLWFVNMzkxNDRMOEplVUNPRG1wa3E5aHBLUXBjSkJXNjVkcWlKUFpnbkttdVZGeDVhZjRXY1lLeVFHOXRuanhUWk9sMnJlZ1BEZV90em4xMm9aa2laMmt6WUc5a2g?oc=5",
+      "published": "Mon, 14 Sep 2026 07:00:00 GMT",
+      "publisher_url": "https://ndmais.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Leilão do Detran-RS com 834 veículos e sucatas acontece nesta quarta - Jornal Noroeste",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNOTVWYlkwUW9semVQcUJhT3VWSmhCNnVHNTU3MWdOYUJiU0ZPZkJaQnNEMnM5dEllRUlUNy1LYVlBREdyUUpRakt1eDA2NmNySHotQzFaTGtUS0NvZEpIYmpuc1ViUmkyMlBaVGhJMXlhck5DZWxGWGxCSkJvNnZUNnhIYXRLYkF0Rlk0ZTNJaE51RTBqal9PQzI4dkY0S3NvVHlXSVpIbUxWSmQxb3FkX1hn?oc=5",
+      "published": "Mon, 14 Sep 2026 07:00:00 GMT",
+      "publisher_url": "https://jornalnoroeste.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Leilão do DetranRS oferece 834 veículos e sucatas na quarta (16) - Canguçu Online",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNHA5ODJUN3FmdVFOMXBIUW9fa1Z3Zi1OTW9mcjRjNjZGUkZHQ2E3dFpuajVzamNKVU1pRFBUSjV2Umh5UF93eUNaZjFpaXd4azRaWldUY3VVZ2lrMjZFcV9KT2ZYYk5OaVk1M1p0b2k1OXB4MWM5Y2dKRjlONlplblJRYmFqXzdPTkFVSTl1TjJCdU9iV2tFMG5qYl83bXRfWFN0SDlxMy0xWVZ3YXBLR3ZhT3B4UzV0ek82ci0yVQ?oc=5",
+      "published": "Sat, 12 Sep 2026 07:00:00 GMT",
+      "publisher_url": "https://www.cangucuonline.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Prefeitura de São Gabriel realiza leilão online de veículos, máquinas, equipamentos e sucatas - Coluna Ponto de Vista",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOQnNJYkg3Z1BpRVJvbm8yRU1YbC1Ua0c0VGRGNmc5ZFNONXF0ZGFqRTNxS3ZCXzdsQVhGdHRqTllsbkthRnMtUW5hdXJZWXctMjF4RHU3bG1rbmVWd3FYbW1YX1RUcEYxVlB1ZXNIQ0s5d1ZFUVJNN0lGZXk0WkhLTjRHa09ZZEgw?oc=5",
+      "published": "Thu, 10 Sep 2026 07:00:00 GMT",
+      "publisher_url": "https://www.colunapontodevista.com",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Prefeitura de Barão de Cocais fará leilão de veículos e máquinas com lances a partir de R$ 10 mil - Jornal A Notícia",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQMmU3VHBzSzNYeFZUWHVtMHdhRWlGVWhPUzNULWZkMXVfVVRjNWZxZEU2THN6bzhhSEw5OHdfQ0poRnZNZ3I2RlNubExvSXRoLThNaFMwZHpDcnZqWU9kaW5Ld29UcmV1Ti1BMmFxLW8yVmdwQzZOcTM1U3dPdDFtT0pQaGhaYWE1WlNCNk05VUtMUGVjTHVFTGdWWldILVcwLUZuSkk4MnpqU3gyX1FBSWFueThtYWYxWmtaN3ROUGJoVmw4NHRjQW9DdzZhRDUz?oc=5",
+      "published": "Thu, 10 Sep 2026 07:00:00 GMT",
+      "publisher_url": "https://anoticiaregional.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Prefeitura fará leilão de veículos e máquinas com lances a partir de R$ 10 mil - O Popular JM",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQSUlSNC0tSzZFOHpIeTRjbVBiZnBpdWNlQ1RPc1o4TVN0cjl4cW9PQjZYanlkdUZ6dy0tdE9PWVBPZThuVVctZF91MmFyQkNYSFU3MlpxN1ZvWThpWG1hTUZmQzRlODJxeTVHQTJYa0NXdFZnbVpibUlXWDhvM19QYWs0VHkzYzd5T2VudmkyVWJuSmdZVk5RUUhrbGFxRjR3NzU5Vk1KTQ?oc=5",
+      "published": "Thu, 10 Sep 2026 07:00:00 GMT",
+      "publisher_url": "https://opopularjm.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Detran e Polícia Civil fazem leilão online de veículos apreendidos no RN; veja como participar - G1",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQRHVfel81UmVkNXF5RUQxZFJxMTlibldkUHpUN1lVOXE5Z0lIbVVQUTBLQlFUOWY2SlN3SDR6Yl9YbXI4RFc4S3JDVXB4VUZETV9CcGttaE1mS0xKQno3VGtRalpTSm9WQ1pFdXRsc0JMZTVBcDhPRmd4b2k5ZEwteWdoT0wxVUhJa2ViY1dfQ3RORzhET0lwSVBBcHd6cW8tdDdOOWRPamFoZ2RiczhwTGx5cDY1ODZxRmFxdEp5Z0tTX1prbm1TNHlrcVpHNW5OcVdTSjZhZ3RyeVY4a2ZLVm9zVnRqSHJhRHBtVdIB-wFBVV95cUxPLTE5R2lVQ091aWZTbFVnNldVcTNVSWkzMjg1WlhIdFVOY0ZhMDFNZWJDSW5JS19nSk5rY1hLSkFxQ2otdjhwai14MFpoTDdRRnV1X1QxaFZpSmFoQjRGeGhyMG1ZVjFKUmtGOVBFNTJVOC01WTNpaTJMcUxqYi1GZlhHTzRlVXpIN3ZfOFlIcUV4SHE1cmtVdV8yU3FCd0FhMzhWS2w2T3JBN1hwSkxSaW10Sjhjc09tYy0zMmx2LWR5ME5EcFpIaV9xMEFwaHU0cFRmMzFmVmlUR3FObUpCLWIwcjItZ3I2Y0tpTlIzOWNLQ3VNSGcycEZ0VQ?oc=5",
+      "published": "Wed, 09 Sep 2026 07:00:00 GMT",
+      "publisher_url": "https://g1.globo.com",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Santa Cruz terá 170 veículos em leilão do Detran com lances a partir de R$ 600,00 - GAZ",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSjZsOE1jT2JjRTVpeTRMY2U2Ukd4YlNIc3NwdGlpbEZsc3J2amxYWXVnQ2VEU2p1bXRSRllkQ1poRTlmbFFDRHJiTzVVeUdTTVBhOVNoUGpVLXpBV3ZlM0h1Q2YtVFhUR2pwQnlEdzZveHVHR1BsOWNxbExxNUVaTEJiVWQzWkNud2RwR2I1elJzYm42bU5TTWZ2LUJrajlJR1NlM3hR?oc=5",
+      "published": "Wed, 09 Sep 2026 07:00:00 GMT",
+      "publisher_url": "https://www.gaz.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Prefeitura de Guanambi fará leilão online de 118 lotes de veículos e sucatas; lances começam em R$ 29,25 - Agência Sertão",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQd0c3UFpwZm1fdFBCN0ZJWjhoWkdibFRQSFJBMGg4UWZfMlBrTVV0eFBWajRxT3pLLXB3SHB1N2sySFlCaGE2ZHRLeERWRzhsa3pHYUxMVHZOVDNYVzZKeE1NeWJaRXpGczRCRl8zWld0YUpCNkk5bEY4SEJPSzNJYXRNSG1WLUxfSE1xa21GM3RuR2UwZm1pb25PWTRPMVJ3S09GdkEyWnNadGNqNW1Td01rWjhvWUtRTGViR0o1dS05M29aUEpsdkNGem8wUExrNGh3czZn0gHWAUFVX3lxTFB3RzdQWnBmbV90UEI3RklaOGhaR2JsVFBIUkEwaDhRZl8yUGtNVXR4UFZqNHFPekstcHdIcHU3azJIWUJoYTZkdEt4RFZHOGxrekdhTExUdk5UM1hXNkp4TU15YlpFekZzNEJGXzNaV3RhSkI2STlsRjhIQk9LM0lhdE1IbVYtTF9ITXFrbUYzdG5HZTBmbWlvbk9ZNE8xUndLT0Z2QTJac1p0Y2o1bVN3TWtaOG9ZS1FMZWJHSjV1LTkzb1pQSmx2Q0Z6bzBQTGs0aHdzNmc?oc=5",
+      "published": "Tue, 08 Sep 2026 07:00:00 GMT",
+      "publisher_url": "https://agenciasertao.com",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Leilão do Detran-SP terá 767 veículos com lances a partir de R$ 810 - Dhoje Interior",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNTE1nYzBnN1JmSWpySmNIcnlGOHlORjMwX2xjd3lZMVFNTmxDRmljQXZVN01lTmJjRHlQTzJrMzBRZE9haC1rWTRhNUd2R25iS19JcUVqd0xkSm80LUZhOV8zR1g1Vy1XREtVSWE1WEZUZDE4QWMwMHVlWC1EU2g4WGU2UGtCWHd6NXNocXh3aVVwODAzWHpPMFVLUGVSSUNGcGFiTUY5UUlBNUhLRzU0T0I2cEVkTDA?oc=5",
+      "published": "Mon, 07 Sep 2026 07:00:00 GMT",
+      "publisher_url": "https://jornaldhoje.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Prefeitura de São João do Arraial realiza leilão de veículos e outros bens inservíveis - Jornal ESP",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQdEVCSmhRYnY0Vi1YSDB0cm5HbmRpdElCN3VpQmlKWUt3Z2FqVzRZSDloUmdRYS1iRGlodWVRclJJSVU3bGZtX2F0blpZTTJUZXpXSWRUcTl3XzRmRHNRZUxaREs4d3NxZ0lTZWpfM084bzlad0h2Xy1DcFdzNjIwdThFTzFsVENlR0dOcUJhMG9JN0gxaEFZUE5ld1hXSFVkU3FlM2VxREY3Y0pyM2hrZWhSMlhXeGU0Yk54em1OYzBPY1BkSGc?oc=5",
+      "published": "Thu, 03 Sep 2026 07:00:00 GMT",
+      "publisher_url": "https://jornalesp.com",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Detran realiza leilão de 378 veículos com lances a partir de R$ 50 - G1",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUkhyQ05PSXVNaXZSZlcxRWVESW02U2l6bl9Md2pmVFRkNHlBeWl3YmFGMG9JNktFenZjd1B6d3NfRU9OVTczcDFZSnA4WUVrc19FSEtmaVZuNTJfRklyemZmUmFRY0t5aHlGZjljYlJldmZqRmc2U3RRNXZJY0M2bEI1Y3FyWHd2bmlTd1RGT2lITHh0NkhZSkJKSVVUVlhOcl9rd1ZxTlNlbDk1UFpSMFNrMVJMLTFXOWpvTXpSaEFWUdIB0AFBVV95cUxNUV9EVTRhbU0yallGY2NYcjVocjVQRTFiRm5EbldXRjJKdkVBcGF3U1N1dXJzQlNBNGVPcVYxYVY1NE5RX3Z3S0t1UTlFQi1BSlBYYVRlQ1VISXY1X0J4dzdHN2JnQ2ZPQWdQcnF6aUwxVkxUOGlNYUtZUW5IZDBCaS1BczNIWGZmR0xYbEhZVFIyeE4wY0VXV054b2hLVTRYMGZ6MnB0Skc3cE1BMlkwc1Q5ZjF5WjJWTlJaTzhJRGEtT1ZIWmlHOUFMaVRVSTJu?oc=5",
+      "published": "Thu, 03 Sep 2026 07:00:00 GMT",
+      "publisher_url": "https://g1.globo.com",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Leilão Detran-SP Franca: 733 Veículos em Pregão Online - ISTOÉ DINHEIRO",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBJcnoxTVVQaDZJYmtxZXhPbkRiZTJVYng2bEt5QWdaWXM5aDNhaFhLRGozTHZWZ3hld3lkYm5LSjM1dzdqWkRGRlk0c3U3OF9HYVVONi1pSDJTV3N3VzJwSWFvclV2SVJzQ0RNLVhB?oc=5",
+      "published": "Thu, 03 Sep 2026 07:00:00 GMT",
+      "publisher_url": "https://istoedinheiro.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Leilão Detran-MG: mais de 4.300 veículos com lances em setembro - Vrum",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOU2Qwb0ZsTnZjR2cwVTRtbWR3WUtiazdnSUZqSDZTMXhJRzlDRzM4elA2c211YmRNN3cteTlhTUc5YWltWm12STJ4dnEyZ0xGbjR6SjBwQ2Z4cVNlR2NHLWJDZHptUmtDcEhUUHd4ajc2QUY4VF83NkctZjhwZjI1Y2NXM0FFUEZBa1lyVW9hU1VMS2dzNFpxT3owQW1iaDJzM0VESDc3TGtWWWNHZnhzQXBvODZRZ25JTWlF?oc=5",
+      "published": "Thu, 03 Sep 2026 07:00:00 GMT",
+      "publisher_url": "https://www.vrum.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Leilão de veículos recolhidos em Arcos será realizado no dia 9 de setembro - Jornal Correio Centro Oeste Arcos",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOUmdKcldsNDBRTFNuU2lLU0FEc0x5T3dwU3FidUdjMmY2N2xZUXphMzVMd3NHdFVkMk1Ma0c1aXAtd0JTbFg3U3NfOEhZOFpXRDB6Mzk3UWxfbEZJWC1FcDBuRUthTGxDZFZOWDdPOTBja2VzNy1yNXR6OEItNzZJVy1hUXBHcnEyMmotNjdrd19VbXdaYzB0YVM2X2l6OTF6dG41V3BnemxxR2dlbnplWnRORE1Cdnpx?oc=5",
+      "published": "Wed, 02 Sep 2026 07:00:00 GMT",
+      "publisher_url": "https://www.jornalcco.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Detran realiza leilão eletrônico com 514 veículos e visitação começa nesta terça-feira - ClickPB",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBsUDI4WUdTejktYWVvNDVwSGxlZ1VleWQ1M21iUUxpWkVrd3E0U3BLR2tzUVFIWHhEcXB4YmhRbUtvZFMxTFBWX1N3enNsOWRfOEZabFlUY0F4S0gxZlUwQXJ2WVZwUTZTbDRWUkVtT09tVzg?oc=5",
+      "published": "Tue, 01 Sep 2026 07:00:00 GMT",
+      "publisher_url": "https://www.clickpb.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
       "title": "PRF realiza leilão eletrônico com 106 veículos no Amapá - G1",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQTBTQ3J3TEx2ci14Y2U3T0VKWmd5MHVXWDV3ekFnZVR4WHczY2FqMVBZTXRRSEdUODYweXhzS1I3RExHRFY2S3hUdkVRNkIzQTJObkNGMzBpWl9UUzh4WTNVODJzU3BEOC0tMWtmQU82dmxKeHlHNE5Cem9RMEJZd184UHNldVpmRkJ3UkFPU0FhM09vNEpSZ1cxSEdqYkYzTHdwdTk2WkF5ZTNXcUZz0gG-AUFVX3lxTE9PUHRKc05ZS1Q1dmVIMU9VUUJYMll0bTRBT2JjYWhRWkNOWWdvYTM0OUNVcGFmMmVGVU9XNG92WWRtWmVjRHZBSVRrZkxEVkV0SVJ2WU5IbnNJU0s2U2stZ0tMRmJ2alcwUVFMTVh4SUZfV2t6eFF4MmpDc1VjckY4WXZxOXlybFVaeHVIVUZNdmNEZnBJX2NVVlBwZ0hFRGZuWVpKczY2MG5RaVVZamFvZ0xoSUdQRUZqVkswRVE?oc=5",
       "published": "Tue, 01 Sep 2026 07:00:00 GMT",
       "publisher_url": "https://g1.globo.com",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Detran Alagoas realiza leilão de 581 veículos; veja como participar - TNH1",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNMkhwWWFzWi1DeThSdnZTRGpueXNGWkd3UUFQdE9MZVdabFJ5S3dNem5lVzVsejZFTFg3UnhxV2dCMGs0UXF5X1JBUTdrajcwTXlMZ0RjVXdoTzBpdDNFZWdDOEFZdk9TSVJCcFNvaTZEZ1VZNTI4U1cyMHRvYi1IV0JtdlFyWENZZjRhSmZvcjhDLVc3bDMwTWZPV2RKdFluWDBqNWlR0gGgAUFVX3lxTE1hRUlidUJqOUhJbzl6ZTZHTDc1Q0UwZ2xzZ19SdVpKSEpfNmExMEhZd2VOclk2NEluY0Y1MmM1WGdOamYxZnNlaDVBQXBpMDdMR3RXUzQxWHMtamFhR3ZCNE9pcGhPRy1JQ2NYSXFPTkYtRkhXZ3B6cGpVYnEyVWFTdUxVb3VfX2t6cnUtZkxGT1Rid3J2eEVrXzhzY1RKVlQ?oc=5",
+      "published": "Mon, 31 Aug 2026 07:00:00 GMT",
+      "publisher_url": "https://www.tnh1.com.br",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
@@ -515,10 +866,19 @@
       "status": "unverified"
     },
     {
-      "title": "Detran inclui Santarém em leilão online com 182 carros e motos no Pará; lances partem de R$ 50 - G1",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPaWdDTGFKa212WF84dm5YYk85QWc0aWEwZ0F2VXFFWnh4aE54dDk2SmJBbXFMQ2pqWFlpMWU1MTVNZlhyc1RKMDRMazdXVVpnYlIxU2VSaUVXTXZuWmtkakxYNFpkMTgxTE5PeWdZTHZ0SU9IQVEzUHNvV082ZG96VUlqYVhTTHhqRGRUYTBtUFRWeHoycnVVZ3hYckdJZlRqaWZBZ0tUdEhZbzhvTlBvUGhmSmtSazJudkdGT2hqMVF5bm11TEtieHVpb2I2ZTdJOF9HSTh3dGNYOEtnZXFWdjBiUWp5ZkZ1d3N0UEFR0gH8AUFVX3lxTE4xVVpnZUZTWWZvMzdQQVdCUzgtSmlIamt3amVqUkhEV3VqWFpMVkhHMF9kMDVzRDBpNm5BTG1mQkg0Tl9Ic2RndFZXaW5HTXZIWXpmTHVhR2hyWElUdjBBU2YtMGhHdEt0TW9BdWZ6UHdoOHRzVExMbm15VWt6cWZqUkY3QUZMMi1tdFlvMXFUdl9SbndkSXhDZnpEVVlHbDFkenhjNTJ3cVFLMzNKN3Y1N3ZDVUhvVWVkMDlJTXhURXE1ZnVKMTNsbjdRLVNsLTBZWHpKUllyNVFuT2VQNUlYeE15YjlYUGM0cExZWkVRc2NIdXhIOUFJa1ZMQw?oc=5",
-      "published": "Tue, 25 Aug 2026 07:00:00 GMT",
-      "publisher_url": "https://g1.globo.com",
+      "title": "Leilão do Detran-MS: Jetta e motos 2026 com lances baixos - Campo Grande News",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQUXcwbGtrMmRxemhGeVRib2E5bHVZMk5zS0NvREl4MVBOek53ZjdEUmlHSXBUZUNIZmpWN0VnNGpERTZNRFhNNEtBUHM1MkhyZVJMUlBzRGxMQW43eWVJeGhVQWloVVFrYkc2SzAzak1ST2JIaDMwTXRpeU41M2J1MWJRQ3R4bjl5ZzBRbGpYbmNXTzkxTGxCR2F6Y0FYMVJfSTJCN2h1VTNDc3g5S2tyaVdla2hSMFVLLUHSAboBQVVfeXFMUEdhTFJGWTBVQ1UxdzZnd1ZCdWlHbl9MRmFsNkdnNTRJSzlwWmltTTlhQ3ZZSDZHUzdmYkl6QS1xdEpKVEFPNWJQUmExaFlrM3RzX1NMcHFEci1wdjNLVWlsclZZSlM5MnFOVmFucFJiZng1VmNSRnBldWVEaFFmT2x2d3pFd2wtQWlobmRTN0FlRUU2WDJiUWJPWGVkUGdzUV84UkNPNjFxMTJ2aGNHaWhvZmFsMVRZUjh3?oc=5",
+      "published": "Thu, 27 Aug 2026 07:00:00 GMT",
+      "publisher_url": "https://www.campograndenews.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Jetta avaliado em R$ 46,6 mil tem lance inicial 75% abaixo da tabela em leilão com mais veículos - Midiamax",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOZmlwcFZKbnZ1U3BJVHJTcjUxa2NvWEpkSkFoSl9CaUNnanpaSEJtUVFkRVRMUVVNbURycnh2c3hLR0FCeVZzaWRLLUJ4bzU1Y0FneFJWWEZNaWhtTlVjczh1OHUtaW1nY0JKWW1SZi12UXB6SkJMWm9iYzVDeldxek1ZSl9yS2w2WnduT0R1bWhpUFN5T3ZiM1I2TGloaGxyLTZWa2JiU3I5NU5uQTE5Y25GaDlmWDRTN2V5bzF3Sld5Z0N3YnA3Wg?oc=5",
+      "published": "Thu, 27 Aug 2026 07:00:00 GMT",
+      "publisher_url": "https://midiamax.com.br",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
@@ -528,6 +888,24 @@
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPTUpvTl9sN25BZFpWSm1KaWNHQWdpd1RZX2FIN3JlVFJRWDl5WjRxUUZOVG52OW5MOG1lWTUyRWFQQzEwRzVtY0QxTktMMVhQUUlFck55d1lhSktDOW9Qd3poSVNNM0ZQSlBtNk9GeTc4cF93eFlGOXdYbVVIUkp2VXd1TEhzYWpCMzFxV1lLLXg4dzdEQ1FuQlpoNl9TbUFsOU1PX1VXbw?oc=5",
       "published": "Tue, 25 Aug 2026 07:00:00 GMT",
       "publisher_url": "https://avozdaserra.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Detran inclui Santarém em leilão online com 182 carros e motos no Pará; lances partem de R$ 50 - G1",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPaWdDTGFKa212WF84dm5YYk85QWc0aWEwZ0F2VXFFWnh4aE54dDk2SmJBbXFMQ2pqWFlpMWU1MTVNZlhyc1RKMDRMazdXVVpnYlIxU2VSaUVXTXZuWmtkakxYNFpkMTgxTE5PeWdZTHZ0SU9IQVEzUHNvV082ZG96VUlqYVhTTHhqRGRUYTBtUFRWeHoycnVVZ3hYckdJZlRqaWZBZ0tUdEhZbzhvTlBvUGhmSmtSazJudkdGT2hqMVF5bm11TEtieHVpb2I2ZTdJOF9HSTh3dGNYOEtnZXFWdjBiUWp5ZkZ1d3N0UEFR0gH8AUFVX3lxTE4xVVpnZUZTWWZvMzdQQVdCUzgtSmlIamt3amVqUkhEV3VqWFpMVkhHMF9kMDVzRDBpNm5BTG1mQkg0Tl9Ic2RndFZXaW5HTXZIWXpmTHVhR2hyWElUdjBBU2YtMGhHdEt0TW9BdWZ6UHdoOHRzVExMbm15VWt6cWZqUkY3QUZMMi1tdFlvMXFUdl9SbndkSXhDZnpEVVlHbDFkenhjNTJ3cVFLMzNKN3Y1N3ZDVUhvVWVkMDlJTXhURXE1ZnVKMTNsbjdRLVNsLTBZWHpKUllyNVFuT2VQNUlYeE15YjlYUGM0cExZWkVRc2NIdXhIOUFJa1ZMQw?oc=5",
+      "published": "Tue, 25 Aug 2026 07:00:00 GMT",
+      "publisher_url": "https://g1.globo.com",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Detran-PB realiza leilão com quase mil lotes e veículos a partir de R$ 100 - Vitrine do Cariri",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNSXkyRGxBRVliQVl1NUlMcUR5MHZqYW56NFRrX3hQYTdEMnhGMWoxNmtOU2VHSmpfTHVLa3V4N1hmUU5tTFR0ZUFlODVDSENJTXZSTVNSOEFES0Nqei0xYW0tT3lFV2h1dHkzWjVPZEp6ODF6X3hfVHZqZXlOZnNtaFIxRXh5QUdfb1RXRk5VcEVCQlZtSVpJVFJVUGpGLXhhOFlSMldsZlJ3QVV1dnZ5eGhnbzZHOVF1YVVkMg?oc=5",
+      "published": "Tue, 25 Aug 2026 07:00:00 GMT",
+      "publisher_url": "https://www.vitrinedocariri.com.br",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
@@ -551,10 +929,10 @@
       "status": "unverified"
     },
     {
-      "title": "Leilão do DER-DF: como dar lance on-line e visitar os veículos em Samambaia - soubrasilia.com",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNMzh6Sk9IUldCRXdxdGR2UDZ5RTlXem5RR1p6TGY2VHNfb2dCbzU0TnIxcmowUVh3OThwbHNIcUhpY3VYSWN6MUtuWGpyMDlVanJuTHI5SURjNWhLUTFIZU83RGVVbkpxRy01Nnh0dGpkaVY4b2NqYzlpVk15Umd6SQ?oc=5",
-      "published": "Fri, 21 Aug 2026 07:00:00 GMT",
-      "publisher_url": "https://soubrasilia.com",
+      "title": "Prefeitura da Prata realizará leilão on-line de veículos da frota municipal - Cariri em Ação",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNSkV5cUxyS2pSZjM2X1Z0czM4ZHFzLWhaZ01hc2dTSHByelFUVWxGSVFDUm1PbllOWU5zM0pfVG1ZQklMQ00tcld5SWxQZnR2UW9EREZIQm5ocEhXTktBbWxZX05KRTV3c3hSQWk2ck1Kcmk4M2RmdF9ub2VFdVl5clpJRHJNM21lV0taSFZrbTR6Yjl5Y3pyOU4zNG8zak1LY1dMUlNjdkNud2x5WEF0ZTl5U0tqS3IwU3c?oc=5",
+      "published": "Thu, 20 Aug 2026 07:00:00 GMT",
+      "publisher_url": "https://www.caririemacao.com",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
@@ -569,19 +947,28 @@
       "status": "unverified"
     },
     {
-      "title": "Prefeitura da Prata realizará leilão on-line de veículos da frota municipal - Cariri em Ação",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNSkV5cUxyS2pSZjM2X1Z0czM4ZHFzLWhaZ01hc2dTSHByelFUVWxGSVFDUm1PbllOWU5zM0pfVG1ZQklMQ00tcld5SWxQZnR2UW9EREZIQm5ocEhXTktBbWxZX05KRTV3c3hSQWk2ck1Kcmk4M2RmdF9ub2VFdVl5clpJRHJNM21lV0taSFZrbTR6Yjl5Y3pyOU4zNG8zak1LY1dMUlNjdkNud2x5WEF0ZTl5U0tqS3IwU3c?oc=5",
+      "title": "Cuiabá terá leilão de carros e motos com lances a partir de R$ 1 mil - noveen.com.br",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQT3JQYjQ2THBYVzE0Z1lFMHNSMldEMGV4Y0ZWTVFvR1hXZjNCQlVsdkNrQVFjTkhTbnhha3RYdVB1WURPaF83ejVWdmFWbjRMMzRYVWJFTk9MRm9oOUt5UGpTYTVMeUQyVDREeGRVSEJEbllld3FraGQ2QWhybDljbGJUYWg4ZnYwNkxxbzRjaWRHSlIwYTZtYnpvYUEtUzZac2lSWUxUMkFDTzZwQXJpMg?oc=5",
       "published": "Thu, 20 Aug 2026 07:00:00 GMT",
-      "publisher_url": "https://www.caririemacao.com",
+      "publisher_url": "https://www.noveen.com.br",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
     },
     {
-      "title": "De moto a carro e Kombi: Detran abre leilão com veículos a partir de R$ 1,3 mil - Primeira Página",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZDAwaFBjaVczMzR3ai1jVXZ6WVF3T1FjbzdUZVd5VWNqX1RrU0MwUEJCeG1LOEJ4QmhaSXhRTEROZlV5dFdtTm8tbjhyYXJIeEZtRHNGRFI3TUhKcXlVVW1odERaamVGbHlCSjYzZWsxdGNheGVUb0NUM3pUOEFnTHdaV0RwazQzQ0RSaGU5aXkwcmtqTjA3cFRjSlVzN2c?oc=5",
+      "title": "Leilão de motos tem BMW, Ducati e Triumph com até 30% de desconto - InfoMoney",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSVhKTFpCaklmcC01WkdpUmpvcWVIY0JiTVpzNVM3VEcxc2k4RDQ3Uk93cVJkSTNoNmNtOUtsR1dqb2tGUWpxdk1RVkVSSWZZVlJTR0EzNjdvS3JSYXh1OGNIemNnYkNvbVNiR0JhUGc4Qm1KY2U4QVFiSnhzVDFlUzR2T3RHdXZz0gGOAUFVX3lxTFAycGtucTlmZDBrUzk1a0JpLTRlY0pGODI0X2VEUWZibmtzeDBrOWFkT2d3TlVLOVE2TVNjVUFGWjdiVDZUTktKeFoxblFoWTVweUxTZ0RUdTlrOHh2enlVc2h2TzFyeUY1bVk1QS1pbC1ocGowRUtyaWJ0cXRQRFZHdnBhRXM4ZDN6eGxxMXc?oc=5",
       "published": "Thu, 20 Aug 2026 07:00:00 GMT",
-      "publisher_url": "https://primeirapagina.com.br",
+      "publisher_url": "https://www.infomoney.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Donos de carros e motos poderão retirar veículos de leilão sem pagar taxa municipal em Cuiabá; entenda - G1",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPb0pJbmh2YVlJZmtrNUZ5NkxWdG9vQjNkWjk0SkJpTk96dHJGb2Y5OXpnVkVkTUdudDAtc0RqZ0EwcU1CdFludEl5T2pYX0UyWl9ZeExlOTFuVFl2TnViWkxWdVh4VlBLaENtYS1PM0lGdC1oUmRSNDRsbnF3alI3c0dUcWtzYjMySDVJSl92U3hLV0tvZlNRUlVsVm5qVGFJSWZaVDRZYmFhZS1hYl9XcFpWSVFEZGswc0gzakVBYU9IR3YxWDRqUE1OMk16MUtTQ0FvQk41MGxiMzNTdjNCMzZUZ1NVNnc3dFFEckdnU05pYVRy0gGDAkFVX3lxTE9qTUc1QTByQWx3MjhTc3lYOHN6MXNJS0t2LS1NSUIzbUJzRU1OLVBuVjdCNHkzckJ2eldWVlFEQVFLd0V3NTFiSEZ1cWEybzFaV1daQzdMcHNTSVRMTE5EWlFIYkwxNmhyMW1QNFUtRk5Pek8wWVJrRFNNWGdTVEE5T3RtV3JrRkhqSmFPa3VaUmRxcFpCbHVfYjNLUEJmTEt3NGd3ZDExbDVhNUYxQ1RnbHZkQnoxUU1iYTVFY0tNUXNNU2NmVXMtMDBBakhuR2FnNmQtX3dfU3BIT3VORkxXV014Q1Q3VmhCbnNiUXdERy1WbllOWDlBR0Vra2ZBTnJHV2c?oc=5",
+      "published": "Tue, 18 Aug 2026 07:00:00 GMT",
+      "publisher_url": "https://g1.globo.com",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
@@ -614,15 +1001,6 @@
       "status": "unverified"
     },
     {
-      "title": "Donos de carros e motos poderão retirar veículos de leilão sem pagar taxa municipal em Cuiabá; entenda - G1",
-      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPb0pJbmh2YVlJZmtrNUZ5NkxWdG9vQjNkWjk0SkJpTk96dHJGb2Y5OXpnVkVkTUdudDAtc0RqZ0EwcU1CdFludEl5T2pYX0UyWl9ZeExlOTFuVFl2TnViWkxWdVh4VlBLaENtYS1PM0lGdC1oUmRSNDRsbnF3alI3c0dUcWtzYjMySDVJSl92U3hLV0tvZlNRUlVsVm5qVGFJSWZaVDRZYmFhZS1hYl9XcFpWSVFEZGswc0gzakVBYU9IR3YxWDRqUE1OMk16MUtTQ0FvQk41MGxiMzNTdjNCMzZUZ1NVNnc3dFFEckdnU05pYVRy0gGDAkFVX3lxTE9qTUc1QTByQWx3MjhTc3lYOHN6MXNJS0t2LS1NSUIzbUJzRU1OLVBuVjdCNHkzckJ2eldWVlFEQVFLd0V3NTFiSEZ1cWEybzFaV1daQzdMcHNTSVRMTE5EWlFIYkwxNmhyMW1QNFUtRk5Pek8wWVJrRFNNWGdTVEE5T3RtV3JrRkhqSmFPa3VaUmRxcFpCbHVfYjNLUEJmTEt3NGd3ZDExbDVhNUYxQ1RnbHZkQnoxUU1iYTVFY0tNUXNNU2NmVXMtMDBBakhuR2FnNmQtX3dfU3BIT3VORkxXV014Q1Q3VmhCbnNiUXdERy1WbllOWDlBR0Vra2ZBTnJHV2c?oc=5",
-      "published": "Tue, 18 Aug 2026 07:00:00 GMT",
-      "publisher_url": "https://g1.globo.com",
-      "source_priority": "other",
-      "discovered_by": "news_rss",
-      "status": "unverified"
-    },
-    {
       "title": "Prefeitura de Içara realiza leilão de veículos, máquinas e equipamentos nesta terça-feira (18) - Santa Catarina em Pauta",
       "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQaG9XOFloMXdRSFU0cUZXWm02Y0J5RUI5RS1JNmNVbGZDY2VMX0xXa0Rxd0FZNWhEdHk4WEI1emRQbVFZM0dDSWJSaF9Tdk5rb1pXbWVzV1d1NDJqQkFnZEFQNWs0RHd1UGU0ekhQbVpvTGxDSnktTnY3bnQtOS1tZENyTnB3U2FOSk1ScU1wdVd3bTB5dk81Z2VSNjR5S2diTGwxd045MGNvRGUzZHdGVFAzT2dNY3ZYWFJMcElYbE5uUlJDb3BnYlBvWHZhbzBHeXI1VFNZQnNyUFU?oc=5",
       "published": "Sun, 16 Aug 2026 07:00:00 GMT",
@@ -632,28 +1010,19 @@
       "status": "unverified"
     },
     {
-      "title": "Detran-BA anuncia leilão com 438 veículos em cinco cidades da Bahia - deolhonacidade.net",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTDhXWUhBaEh4a2hob3ZhSFFHZFVPR041QzV2OUFHcUVQWUxNNENGeFZ4QVM0U0x5cHVpdlRsUGFhWVl2NDEyS2ZBMnVLRERLQl9yUV90bE9yVlFRZ1g5WVoxOVluY3k3Vy1SalZEdnJQVjVacEVqdzBaeVNtX1o4NWJKMFNoVUhOVFFHV3lCT2JSc1ZGcUZBX0pESThiajg?oc=5",
-      "published": "Fri, 14 Aug 2026 07:00:00 GMT",
-      "publisher_url": "https://www.deolhonacidade.net",
+      "title": "Leilão do DetranRS oferece veículos e sucatas na terça (18) e na quinta (20) - Rádio Solaris",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQbzFuY0h3c2MwT2pVNWQ5bldmSXZkVnkyS3ZlUkppVll3NlNKUlhSRUhhMjdGLVN3aDU2NFdWclgzUWRUX0hLTzN6U0d4Sms4dld0bk9ZV296MkRUYWt3bW5uN1I1bFZNMGxMcHU4aHh2eGtfc19kYzRKbUZkcDZCV0pWS0QwbzVhNmp3M0lPYkhUc3Z6NXAwbFdyZVNJUE5Wem9V?oc=5",
+      "published": "Thu, 13 Aug 2026 07:00:00 GMT",
+      "publisher_url": "https://radiosolaris.com.br",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
     },
     {
-      "title": "Hytalo Santos: veículos de luxo do influenciador avaliados em mais de R$ 4 milhões vão a leilão na PB; veja lista - G1",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNaVlQeDZIRmJvRkFmeUxwanRNLXdMekpuaWFpMTdJNU4zQVpPYUNLUHY1Ymkwb3FERkx4MHJiX0NUYmNvSDVFT2FFQjcyQUplTVJwTEpIR1NRSlpMSkdJMzhBOXU1YWo5bF8wRFNfdHQxVUx2SmRFQ3VzazdHVkdJWXBXYUppd3lkRC1VNzNoZ1lNREcydzd2LWpPOWtJTVRDZ2VTUUhqT2oxNlJLaHhWOGlB0gHAAUFVX3lxTE1EM2kwVHhJNFlYZ0duN05IUWUwUUFTT1U1QWsxYXZaRHJDUFFyS3N1aUZ6SEhGNGQ3NkItSE52T1Bfb1gxRFJjQ0wtYmQyZjJOSlRzc0pCZXdKU2pQSlFWLW56WnU4eDdycmZWNmNFVVNaQmV1UHo4LTNEbHhZcHBXQ2V3Z2ljQTB0azlmWE1UaFBWR1RlQ3BtRV9WMGZWeE40Yy1fZURQeTh2NWh4SkdNazc4VHQwYmdQVFFDRW5iNg?oc=5",
+      "title": "De Gol a HB20: Leilão do Detran oferece veículos 90% mais baratos que a tabela FIPE em SC - ND Mais",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQYllMZkN5WElNblE2UnhwdnUzcmlpSkozZlc1SDk1aU52enZUUU5VNnBVNHlaSzBzT2xqWG5leEFFTlBIOTdUeW5RcUEtTjJHU2ItNlBjT2xvTHBLY3VaZTF3S0pBZWVGVGdPS0p0cUd4MVlGUTBMS3Y5aDF6cmR1RTVrZ2FDTzhmNGRUOHNKZzlsVmhibkE?oc=5",
       "published": "Wed, 12 Aug 2026 07:00:00 GMT",
-      "publisher_url": "https://g1.globo.com",
-      "source_priority": "other",
-      "discovered_by": "news_rss",
-      "status": "unverified"
-    },
-    {
-      "title": "Leilão do DetranRS oferece veículos e sucatas na proxima semana - Folha de Candelária",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZFh4VWdHMDZDd3ZWQWFHTjdYVmh6ZjNrT3JobVFPSF9TSzVNWkVWOXZoQ1NQYXRqbDh0SkVUYTJqSE1GbVFGSTY5QjVnTVN4VHloSzRjb0FybElEZXI0aXVCU0tEX0F6U3FvcGQ3SUY2VkhFVjNHLUVvZDluWDhIbXlPeEVTV0xta3Y1UEY4cVpEZ1hPaGNYRUo0LWowUXhIdlhBZjF1VXp3cnY0WWxOWER3?oc=5",
-      "published": "Wed, 12 Aug 2026 07:00:00 GMT",
-      "publisher_url": "https://folhadecandelaria.com.br",
+      "publisher_url": "https://ndmais.com.br",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
@@ -677,10 +1046,37 @@
       "status": "unverified"
     },
     {
-      "title": "Prefeitura de Balneário Piçarras realiza leilão on-line de veículos, sucatas e terrenos do IPRESP - nopontosc.com.br",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNaUQzVkpoNEQwWGtrNkprRndCbTQ5SDFZZUxWbUFVUnJER01oSGxtX0p5VDF5dFhxNTZtdFR0Zzk5TkVHcE1NWWFHUEFNa2lsOGV2WW05d2RKWHhjcFMxM3ZjWVBBWlJrcVRGN1RsZmhiOThiUVl1V0YtYTNnMWNhVkc2ZmowMjdMcW1faUJ6WWtYS2RxTUdybG9JVTdiZ1QybkNpTG96Q09RZXhma19rdW9SRkh0Ukg1UjFiNDVkWmUxUFloLXN6a1FGQXhIUQ?oc=5",
-      "published": "Fri, 07 Aug 2026 07:00:00 GMT",
-      "publisher_url": "https://nopontosc.com.br",
+      "title": "Detran-SC faz leilão online de veículos em mais de 20 cidades - SCC10",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQSjRwSGpnYU8yQm9vNTkzbnlnbVhqRHhVbW5UdGQ5NXNKN0p2eFIwc0Y1WHRpMW5oU0t3MFVDU3VxbS1aSzQtbk11SnEtSjM3ZzBDMmVla0JEZFpDZ3RMRWFEZFZvNEFQeXpPVWxjR2d0eHlGMFZoY3hhMUVOWWZOOGFUbHgycjk2SXhwNzA3V082d1h2N3BLdg?oc=5",
+      "published": "Tue, 11 Aug 2026 07:00:00 GMT",
+      "publisher_url": "https://scc10.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Detran-SC faz leilão online de veículos dia 17 de agosto - Atual FM",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQQ2dqaklHSTlGRTVJbDJNV3lXUHhvR2ZreUdMWi05OEUtblNCX1ZWYzR5NGJnWC1sbWQ2S0RNZTlHcU82SWtUX0tzQ05oMHdqWVZacjh3UVFsMmh1WnVCQVpGYS1iSjM5dGtWWTY5UjNBY0VKcjB0TUUyMUQtLXY2UXd2dzNvbHc?oc=5",
+      "published": "Tue, 11 Aug 2026 07:00:00 GMT",
+      "publisher_url": "https://atualfm.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Leilão de veículos tem Mercedes, Amarok e lances a partir de R$ 1 - UOL",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQREg2V3A4U0s2WU94RnM3S0czX0ZzLW45b2FKUjl3V2N3YzMwR3pyOGJqYjJQbE53SDlKOHNJenJzZTJ4UFI4NzdCei1YY3gxSzQyS0dnb3RwSHVrcTNVNEhYUy1xYk5PZjRzNmYzZ1pSbFFLc1JTX3N6MUZkY3d6VHd3Umt0RldILUNKN0ZWdFZLNWE4TXhMb1JiNXc4S0pZVHlHUkZZbGN0YmxEV2FGcG5kTGtjSW8wY3AzUkZqOVh5cUlD?oc=5",
+      "published": "Wed, 05 Aug 2026 07:00:00 GMT",
+      "publisher_url": "https://www.uol.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Centenas de veículos e sucatas vão a leilão no Litoral Norte nesta semana: clique e saiba mais - Litoralmania",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB2Wk9nekVmSlNpUG5La3JWV0ltdUx0RnZuWDV3ZXNQczk3SVowSFZTbXZOWmdBbHphSDZfV0lRWFF4NUlTejV1Q0xaNUNYcmpZeU5VejdfdDlNdHJYVi1PbkstSlhVYVU1bUFNQy16NA?oc=5",
+      "published": "Tue, 04 Aug 2026 17:04:29 GMT",
+      "publisher_url": "https://litoralmania.com.br",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
@@ -713,19 +1109,37 @@
       "status": "unverified"
     },
     {
-      "title": "Leilão do Exército oferece caminhões e veículos militares com lances iniciais a partir de R$ 6 mil - Primeira Página",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPYjBGOXh5Y0pxV044MVROdUtDT3hQZlVONnVVaFEzSHM1TTVpR0NnTnQwbXpfXzJsUWlHcWdteVdWUS1UcDdMMnpzNjlLckN1V0hTNlAzQlR6aXE5ZHJkeTl6RjY0OG41TkUxVEF0WWMtNVFHcHVjelBkWFZBeVZyZzJuVmNqaFF2SlU5Tm5vajdEWmlsNlp0ZnFhU2FtaGZwNnNxZ0c2ZmhXVjZFUGF3ZkQyY09xNHZCM0huWnJCWVVhb0VKV0laMFJUUjlGMWtYanlMV0YxTjYzbXdZTUM0?oc=5",
-      "published": "Thu, 30 Jul 2026 07:00:00 GMT",
-      "publisher_url": "https://primeirapagina.com.br",
+      "title": "Leilão on-line com 595 veículos e sucatas ocorre na quarta - Rádio Guaíba",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQNEMwX19TSWVVa1ZJWGd0Q2tZUy1JX3dxazVRWEcza2lMWDA5Y3c5SFNQN2ZoY3Y3OVM2R0x5RHQzNl9WUmFYTFM2ZEJJNzlaeTNydy1tcjRjRmxDVnVFLU82ZWhhd1ZzTjRwODltMXBYaVU3YVRNWVd4aElQTnhVN3B5NnFTZy1ScTJr?oc=5",
+      "published": "Wed, 29 Jul 2026 13:46:10 GMT",
+      "publisher_url": "https://guaiba.com.br",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
     },
     {
-      "title": "Detran-SP realiza leilão com 590 veículos na região de Rio Preto - Gazeta de Rio Preto",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNb3dTcnNtX29qNkVQQzMzOUNuVjE0U3BMNnMxVWNIRVVDSXMxa2dfcWJVY195VmMzVU1HYXhXMEU2MFJvTy1Ib3VKNkpYVUhMXzJ6d2Y1WHN4Nk5qeVotNlEzU2JnTHpXLVhTenZ1X2hmaDZxQk44Snk1SmZqQVlwNjR3eHN2NjBRcEg0dkRlZFp5bFplcTdSeGVMNFhuVW9sM2hJ?oc=5",
-      "published": "Thu, 30 Jul 2026 07:00:00 GMT",
-      "publisher_url": "https://www.gazetaderiopreto.com.br",
+      "title": "Prefeitura de Rebouças realiza leilão on-line de veículos, máquinas e bens móveis - Folha de Irati",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQS0tUS2RjeE0zUW5BN0xFRm41Nnlrd3ozemhlb3k1REtuemNhdV9PWUFSNEpVN2x2em1VcVd6bC1rR09CNUhsSUZHTjAycVFmak1aZFA4S25wRkNuaGpvNVpleHBMaDNYY1ZfWm9XY1FxVktBbjhVSjNsWGtSeXQtaHgxSjZvOU5QWHR1V3pBTGNNQ3ltS3FkZnNYQ3ZLQ1NqRHdDTWV3NFVmaWx4OVE?oc=5",
+      "published": "Wed, 29 Jul 2026 07:00:00 GMT",
+      "publisher_url": "https://folhadeirati.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Vendas de automóveis em leilão crescem 10% no primeiro semestre de 2026 - Gazeta da Semana",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNjRFM0FMVFZDTnYyY3VnR2I3czlCc2Y2R1I5SkxrX0Y4dWc2YjNTVzdyLTZSV1l5czV6cXpGa0gxRDE2ZDJ4Y3hmTVBHQVYyZUM2TnkxMDgxZFhiSk4tYk1uMGNlNzNJUERqU1ppYTdxS3ptVTFsTmJsV0RfUktSZDBYbUtOMmJSNXZ5QUEwTHg5VkVKRFdGOTNtLVZ2bDFQcERwT0Z2alNzeEpxZC1zTkE2RUNkdw?oc=5",
+      "published": "Tue, 28 Jul 2026 07:00:00 GMT",
+      "publisher_url": "https://gazetadasemana.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Leilão do Detran-SP tem 283 veículos disponíveis no Vale do Paraíba - band.com.br",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxONzRaZzVFODdrRGhoUTZ0d3ZxNlhkR2JHLTdZMHhQTWpMS1dJS1Axbnd5UkpwQnE2QmdzcXVfYUVyQ2RYdElSMXVfU3g3cWpMWnM3NndKZXBnQnZNTHp4aUVPOXBwWUNoVFIzWGhqX192OFRpdFF5SVp4Y2tHWl8zcDJobHpZY0syV0x2dkp2blNwQV81ZWNfVVA4WVVNY19rNU81X193?oc=5",
+      "published": "Thu, 23 Jul 2026 07:00:00 GMT",
+      "publisher_url": "https://www.band.com.br",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
@@ -733,6 +1147,15 @@
     {
       "title": "Detran faz leilão de 280 lotes de veículos e sucatas em Lorena e Roseira, com lances a partir de R$ 810 - G1",
       "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPd0NHYUprTVJ3UzI0dUt0MmtoYnVsT1B5d20ybTdVemNDbFh6RUprZ1hQRHpJbkp5RU0xYU9WeExfdWZsMFVFaHVtNjd0RE9rY2RUTzhhVmkzWHMzSUM4QzdCZkZwWkxyTFRwOGxGeE5kc1lXajlzbERFcC1UZUgxS3BBU0JmV204ZGJ6ZzZIZ2ZBbEVsT2hWSzJmVFo3dF81VzViNkl3aW5oYi1WN2VIYjBKaFQ5UHVpa2lIYnVKVXE1SkVjYXJnMl9ESGNaNVc5M2xRd1BiYUtiTEJLS1ZOUDdxYlBmM19lbnRwdWhCMHFPSWtiakpnZS1Zdzczc3pwcy0w0gGSAkFVX3lxTE4zMlFqMDBlVFo4UXg1LXRjVVd3cndUcjFxMGxtWjJYQ2RVaUt5enoyeFVtbEFYTUZnSFJmTkZfZThSMEdHa0wzWkNQN2NvSEpYRDdMOGNlOENVWkVGaWJqM1EyWjc3cHRtUzU0WGk5MEZDa0N6cFZjUmtLTUMwNDdWSHBfRE01Z3luZDNXdFcxcjJ3ZkF4U3JldDRQaGZxS2hEZFZadUo0WF84S0lITXRxMmlydEZQR0NHVktGQ195VHg2SWE1cUVsZDBOQjFFTVFZZFdyckZ4QWlNdmJMbnJ4OHM0RVRrZlNTWHhJUGh1X2t2UEVYd2gtSVZoWEl5enJrWlZnUGZmSDVMNjZENEljUUE?oc=5",
+      "published": "Tue, 21 Jul 2026 07:00:00 GMT",
+      "publisher_url": "https://g1.globo.com",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Veículos apreendidos no RN vão a leilão online com lances a partir de R$ 50 - G1",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPX1lEMnltTEhrZnJmV0J4UEhyb3B6TlRtX2xvdy1fOW5Kb05IQjZsVGVGX0FWWGhwZzdMeG1pUmE2VThpa3N5dTVPQ0ZlQ2RoWURBeklSd0JMSVdKcnpqMmdXdzBDZHJDLVBELW1uWDdTb3FkM3NtOVFzTXFJVV9HWUVVNlpnb25pRTFkajBSZmdMM2dyU0V6dFZXYTNLRVhwQ3ViVXM0dU80ek1sdDh6d2szbnoyblJ2SFlmZk5fOFdXaUlTYUNhSVh4aXRsbklENGZpSkM4RlAwQU3SAeoBQVVfeXFMUEhvUmJ0Mm85TXR5Tjk2VGpHRndWREhPU3VaR1Nxa0JQd2xQWWhHZHNGNzY5QjJMWHp2LXJqSlBGb2R3NUY5YVRjeFRHUTBaWGw0X2s3UXVVNFFGTVZtczI0b1AzRXlyY3phYTVUa29OaUV0dGNsNGxmSDZrZ0hlSExxVGdzRjNCWlZTTVZhb2swYjFwQ0diTTBISHZISHRXbFI5ekFCd00zMm9veVlDaFpsWU9rcklZLV9qeThOUzZvbFRLNG5qV1FmTklMVmI3Rzc4TUN6NTdBTHJ0bnJHZTZ1MFhsUzVWS09B?oc=5",
       "published": "Tue, 21 Jul 2026 07:00:00 GMT",
       "publisher_url": "https://g1.globo.com",
       "source_priority": "other",
@@ -749,19 +1172,37 @@
       "status": "unverified"
     },
     {
-      "title": "Mais de 90 veículos aptos a rodar vão a leilão em cidade do Paraná - Bem Paraná",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNcmpTOTExNkhUcElpd3NESWZLZFFrVXJtOXNUS09uVmJJMEtQYVdmcU9FYTBPeC0ybTdEZW0wSEhhdl9UY01vb3I2N09HUDE3bW1zbVpBbGU1MkpraHV2a21QUzhkczB2bFdvb0k0NUN2dWRxUWNid19iMEthcXZNYlFPS2hmTmkwUkwyMVJ6U1pUbm9kM0ZCcERWSUN5SjR3WGtSSWJBbGxpb2Y4MXctWEVINkprYVVT0gG-AUFVX3lxTE5xLWU5Z2JXdHVTUkRDQUR5OU1EYVlmTExzTmo0STBJOWxFQV9fUktCZTVwWWRkYlFsbFJwOHJzRHpQMHFJakZQZlhCQ0NKYkV6c0ZQVlo5dm5TOWFYUHUwUlJqdmg0TTh4b25PM1hVVGxJekZYN2pDYk5qYnFTemtWRDVJd3B2VzBIdkFETldxYjVzQ3I3OVdtck5HXzQ0WEcyUHJvTFM4TlJlcURLRnhpTEl6NU1pZC1fd2NLc1E?oc=5",
+      "title": "Detran-PR faz leilão de 95 veículos para circulação em Ponta Grossa; saiba como participar - Banda B",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQRG5LcFNOa1ZiMnpEck53OE56ZlZ2OXdwUTdUekE1R2I4SEw3T3NlOUk5SDJNTGtsbzlpZ1NHeTFfdnpKd0JUNmExdTh0bm9IZU5JLUhIOE54OUVVSURLeUJyRnZ2TDFzRzRTY3dONnZBYXlQakE0c09NdTR5dzdwS0ZFNEZNR1hOdlRJQdIBkgFBVV95cUxOeTM1d25FS0ZFUVdaTkxHVWlUelJJV1JPMkFoMldPN0ZOZDBGM2lYRlgyRDhmeHJSUTB4OEJ6enRDNG9Fdkp3RUd0R2pLOHZoNXVRSEFLZ0hORGZsUEF2OXd2ajUyZkJVTXpYNEo3ZjVEUGNOVmJMTFpwb3VLa3otUUlSTEhBT1NKSXJScTBleWEyZw?oc=5",
       "published": "Sat, 18 Jul 2026 07:00:00 GMT",
-      "publisher_url": "https://www.bemparana.com.br",
+      "publisher_url": "https://www.bandab.com.br",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
     },
     {
-      "title": "Detran-MS abre leilão com 130 lotes de carros e motos em 20 cidades de MS - Midiamax",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNVl9PZVhkeHEzY1Y2WW1PWFFFa1VnbjExaG4zZlJUM0toNWdaODhzMTlfOFZWU2EzQ2FPNzZCMUxBeGZMUlpvWGRUT2NlbU1wUWJmcm50VW40YkJsY2ZDdnR4Q2RheUdXVWZseGtjTERXOGlCZ3A1YlJBWlJxVkphQXRYRHY1YVE5Xzlqbm05MWpmNnhFLWNFR0RKNmtfODQ?oc=5",
+      "title": "Leilão do Detran tem motos com lance a partir de R$1 mil e carros por R$1,6 mil - G1",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOT0J2M3F5cFRWTGdEUGd0Z2R3bnpRS25RNlJULTNtQW9qRmhsNDA2UFhvYUpJcndhUXM2SWFndHhucjN0bkduQmlmaUF2elFWQ05zLWE3UEZCekx4ZFJyRXkxSElWemdaVkJGQnRyUzZVV2NLSy12bS1GTW90cHRQSGhPdm5YQTJoS2RuYkRJdzc1SnBJbXRlRi1YYkU1ZlY2U2ZZd29OQ3BoaGZ1SnlQaTBwa0pBS0JVWmtYb09kcDhrMU8wdWhjZElZZzlkMnJMVWd0SHA4V1NUMzVy0gHrAUFVX3lxTE9rY3pDdzdzSDRZTzUybTIwSkhiSndNb2o5cWRia18tdXZrTEpDX1hlX1NTcXBjT29faENjWFV3RExTM1VwYUw0X3ZMQ0VReDdYX0JLX0tWVzNjYzVhZGNyZktYcVN2cDZDbml1UElRLVdJRHptMF91d3Qzak0tZEplVlgwcTVLZnRuZk93b2J1akdiU1dmZHZtcE1UUmY1bU0xS21mNlBqWHl6UWdxQU1EQXV2ckx4T2k5d2k5YkFiZ2JvYUc4dXNZVDAyWWYtNEktQ3Vid2E1ZDBfYTBscVZ2RUFGTmZGbzRmQ2M?oc=5",
+      "published": "Fri, 17 Jul 2026 07:00:00 GMT",
+      "publisher_url": "https://g1.globo.com",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Araraquara terá leilão de veículos sob novo modelo do Detran-SP - BOM DIA SOROCABA",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPRnpwT01oeU92RWVGMGFGUGdZZmN5R3FLeEZmcUhrVDZmaE1iWHFXOG9NZUMtbHBxQUpwWG9hbUl4VmY2djN0emMtWWw5N2RhODlHaGwtVE8xYTJ1WWk1NTZKT1FvMWMzOEhyd2RqYXRFQWNYVkgxLXBYQ2Q5NzQ4ZVY1UGwxZkRYTGtKQ0l0MzhnYXdyUExiQTVuWVEyaTFVajAxLXV5NUp3TFE?oc=5",
+      "published": "Fri, 17 Jul 2026 07:00:00 GMT",
+      "publisher_url": "https://bomdiasorocaba.com.br",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Prefeitura de Francisco Alves divulga Leilão Eletrônico de Veículos, Equipamentos e Sucatas - Umuarama News",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQYjU0aHh1VFVOTTA4WjlZQ01xVHM5YVZDeDQtV0dDTXZUVVZhVGw5ekc4WkFzNmRqbkItM0FZTmxuMlZpSmVwTVJqTVh6SGMzZExOUk56dld5YnZiQnREME9jVzRyOHdNTTNieVJ3ZmZ6ZlV6bWw2QkRzVExHc0V5eXZJM1hrMXdVQ3ZoY1UwTnc3OTEwSEpTSnFqRzE2NGZrRWNsZFdHSTRRVEQtYVFBZ05fOTFTTGxFaVllZXlrTEFyNkQ4VVg1c0R6UDJFd0FyNGc?oc=5",
       "published": "Wed, 15 Jul 2026 07:00:00 GMT",
-      "publisher_url": "https://midiamax.com.br",
+      "publisher_url": "https://portalumuaramanews.com.br",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
@@ -785,46 +1226,46 @@
       "status": "unverified"
     },
     {
-      "title": "Semob anuncia leilão virtual de 368 veículos apreendidos em João Pessoa - Jornal da Paraíba",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcFE1c1c4MlJvcGI0d3d5aDRNbXBUZUczWTJfa2gzWERLVUpYTUVET0YxMXo2aDZ4SkxkMG9CSzU1M3pJWm15NEU5X0R1Wkx0bDNYd0lid01HWV9RNmRabWZhSU13dU5pMUNoT2FmXzVYd3g4elpsYzF5dDlSd3ByTHRCWGFldGJtQlNjU0hjZXRHZFhWQ21XTjJjUVhBSXVmMXFOSkRVakYyZUlzc092bHd30gG6AUFVX3lxTE1Wc21pbzRoR095QzdrNDdiOE05akc5TmVYYmlKSFlBLXBJRDdYbGYxMnkxc2Jfd2dUUk9YUWJ2dy1YbjFzd3pHLTBNTXRTLXFPeWRQbTA4TWxkeDdzZko1UC1NMlZUeU90U0lyczlsbENtb3hYMVJWVG1LMW11T2x1bGhTYXFJdHFaSVV5RnBxVzlIRE04SW9NZUgzeklTdW5udHFzekJXUGpXODhNT0gzMGRUOUVPTnJFUQ?oc=5",
+      "title": "Prefeitura de João Pessoa realiza leilão de 368 veículos com lances a partir de R$ 50 - Paraíba - Notícia - Portal Ponto PB",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPejFaYTY5Z3U3MTlQTTVsSm5mWi05V2pxaVdWVFdVcXJlLXBlUmNYbFJoc1dyLXNJOFUtaHFMVl9SOXBFcjljdkZmTUpkZWxacEhlYmJuV1BMSVgwdWllNE9nSWJfOFlmRjJaclY3LTE1RFFaXzJUcmNtS3NYSDF2d1FNclY2OC16akJzVWZtaW14UzY0SDlnSFB6Q2hQRVlGOHA4UmNpNms2YmlVZXZPRmtZQVVFVFFENnp3ZE52UGo5QW9GYm0zWkhFX2lXRXZTc3VwVm8yVWZDZw?oc=5",
       "published": "Fri, 10 Jul 2026 07:00:00 GMT",
-      "publisher_url": "https://jornaldaparaiba.com.br",
+      "publisher_url": "https://www.pontopb.com.br",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
     },
     {
-      "title": "Leilão da PRF em SC oferece moto a partir de R$ 250 e outros 646 veículos - 4oito",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZ2lWT3U1T19nTzBUUDVyYmc4Zi1aLVhYc1VUSDlhU1NjSG8wR1hkcmtmc3F6TS1Sb19Xb1hqdk9Fdm5LQWFicWhVb0hIcUdsSURHcFJVX3Uzc0owS2dYbnVRQ3pYN2o4NHJ0YmMtdWg3LWJTMDctZEV6SF91QjFIMEUtQ1ZTY2VtZTI0TFJBOGZ2dVFsQnlvZDR4NklRS0tWcEVfcXo1dmJJZHM4YjVLNw?oc=5",
-      "published": "Wed, 08 Jul 2026 12:38:01 GMT",
-      "publisher_url": "https://www.4oito.com.br",
+      "title": "Leilão de carros apreendidos terá Ferrari, McLaren e outros 498 veículos - Economic News Brasil",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNWFJGV2pRWkZFMDhwTFk5RlFtU0l0YzZSZklhNVdRSVlnUU50ZVFrVVlZN29VMTU0YjFDRHdhMzc3d21zRUR2VmNBaUhOTXF4ZEdIUnp6am1YUEQ0dE0wZ3RYdDE5eklUak5mMkZndGVWVElJYklBSE5obWlJb3hDOXpR?oc=5",
+      "published": "Fri, 10 Jul 2026 07:00:00 GMT",
+      "publisher_url": "https://economicnewsbrasil.com.br",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
     },
     {
-      "title": "Leilão da PRF em Itapema terá carros e motos para lances na próxima semana - radiocidadesc.com.br",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQaXFmT0RTU3FNMFBTWXRqci1SMGVidXhxbm1ycDg5NVNuU1VjanBjdmt4QVBaWklrU3hwczF4VlZaRDJRUTNRaXlUMFo0c29GNVZYTDY2bzFwS1FZQ2wtSnppeGVRXzJ4cW9oalhzcUZPOGZUSEJfMXcwUDRLRm9MTldNNEphN3hJc1l5cUkwUUR0WWxxRG1jcE91bzlkVDZNWHBBN3AwdGZoZlVSLXN6VlpSX0ZTTm8?oc=5",
+      "title": "Prefeitura de João Pessoa realiza leilão de 368 veículos com lances a partir de R$ 50 - Maurílio Júnior",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOaFVRakFja2FLZHRaWmhjRXhKbU5CR21nQWVBajhUVGxSaWZ5Mk1vUXBUclJFcGUtTk5fU1VNZlBjUl95M0NIcndvaS1vWlo4ZGdmd1U1Q1N2VmxCUjJwV3Y3WUVLa2JmWWpSUmI3RmFONU5ESGRacEtkdDgzbjFCeHQ5T3RKY0wwSnlMM3RMNHNDNkdfQUtHaDFxSGZPdURwdWgyMXlTWGkyWTNpYzBnSFNVTDRqMWVuZ3dpRGpCQzI?oc=5",
+      "published": "Thu, 09 Jul 2026 07:00:00 GMT",
+      "publisher_url": "https://mauriliojunior.com",
+      "source_priority": "other",
+      "discovered_by": "news_rss",
+      "status": "unverified"
+    },
+    {
+      "title": "Prefeitura de Castro realiza leilão on-line com 95 lotes de veículos, máquinas e equipamentos inservíveis - Correio dos Campos",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPN0YwQnlCVXhpd0ZlcTJ3Wk1KNlZ2aElkR1NOamtOaVhXdmp0TnYxcV9qa0ZyMm9xd0VQMjU1WHRETnBQQTRiUks2cUxZS2p2by1ZcEpWU01TWFRUdkhkcEw2bjNManBBWDlmNnpkUUF4aFhDeUJQcFVqWi1VMi1DSF9aMi1ycENEQ3ExZ05DUE1NWHRKblZnY0RWOS1ScmJOVW5TRzVpajJMYmpzVVl5ck9TOFdWa0tWTXFXUGk5N1FuVXRxTEEzUkhIWFF4OFdCaE85RG5R?oc=5",
       "published": "Wed, 08 Jul 2026 07:00:00 GMT",
-      "publisher_url": "https://radiocidadesc.com.br",
+      "publisher_url": "https://correiodoscampos.com.br",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
     },
     {
-      "title": "PRF promove leilão de centenas de veículos apreendidos ou abandonados em rodovias federais de SC - Jornal do Comércio",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNV0Ftc2JGTl9xcldNdWVLNm13ZjZTR3o4TVBENDRHdGlMRU1yZ3NJMzNsODBxZmZHTEJneU5MREVoNTBnSDdMa0RHNHNVYV85MVBJZTN3N1BmOXgzc3B0UWJqNE54VGEtbjJESUhWODloQTYwbExBYk1sVzB3eVY2RDl1aGZQeWtyOHhfVTUtcDIzd2lVSzZhdHVCRERLT1VDVnNTUG1DSXYtWGxqVDBlT0JjcEVydTZ5b053QWlrVzEtNzA0cjVUYlZHM20?oc=5",
-      "published": "Tue, 07 Jul 2026 07:00:00 GMT",
-      "publisher_url": "https://jornaljc.com.br",
-      "source_priority": "other",
-      "discovered_by": "news_rss",
-      "status": "unverified"
-    },
-    {
-      "title": "PRF promove leilão de veículos apreendidos e abandonados em rodovias federais de SC - Portal Engeplus",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNQmtxWXZxRHdtNDRwNTBGc1hWU09XN1haSWFsZTRSRC1IX2d5ZmxDMnJYUk1NZ3REYjczR1Ria195WHhmdE55SzlGNTJFSU1MbGRTZEhRV05XQlBBLXluRV80US1ubUhvQnNJczFXVWNmQnBlSl90ZDNSMmxLNUdQV0xoc3JET18tbnliV2p0T1pZNWNxQ0FHSk9relRHSWNTMjZrOTFjeVhTYWUyOEFfbVhYbkNCMkJEVEUw?oc=5",
-      "published": "Tue, 07 Jul 2026 07:00:00 GMT",
-      "publisher_url": "https://engeplus.com.br",
+      "title": "Prefeitura de Castro realiza leilão on-line com 95 lotes de veículos, máquinas e equipamentos inservíveis - Blog do Johnny",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPT0dwdXllay1VZ3NxV1YtX1VZT0w1QWwxYkliM1V4aENmYVN6VUpBZTAwWk45WFdOblc5RHgwcWsxYk9ZUVZlOGp5NGJ3Z29NeUYtTnJQUXlEelBNWjhmaEdfWjVaY0JGNTVXQTlLTHVhdW1JUjBPWkVhRlc4Q1p1TmxTSmNZc1kwemVFdlc1LUEzYUdUd3I4TjdvMHZFYlg5dDJiRmxpQmNKMUs3YTd5cXhaZ2dDNWdfUEVBR1hXV0VFWTUzV3haWVFHelFmX1cwbUd5R0FaYw?oc=5",
+      "published": "Wed, 08 Jul 2026 07:00:00 GMT",
+      "publisher_url": "https://blogdojohnny.com",
       "source_priority": "other",
       "discovered_by": "news_rss",
       "status": "unverified"
