@@ -67,3 +67,10 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 
 **Regra:** a execução ser bem-sucedida não equivale a cobertura nacional completa.
 
+
+## Incidente do workflow — 03/11/2026
+
+- [x] Diagnosticar execução #16: 27 testes Python aprovados, 2 testes de cartões VIP falharam; a coleta nem foi iniciada.
+- [x] Corrigir fixtures com novas linhas reais nos testes VIP (`test_vip_card_uses_single_official_detail_link`, `test_vip_ambiguous_link_stays_calendar`).
+- [ ] Confirmar resultado do workflow `Test auction adapters` disparado pelo commit corretivo e da próxima coleta.
+- [ ] Não interpretar o relatório anterior (41 eventos/19 UFs) como resultado desta execução falha.
