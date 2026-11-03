@@ -20,7 +20,8 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 - [x] Evitar duplicação de eventos com links individuais Freitas/Superbid, mesmo quando os coletores utilizam IDs diferentes (aguarda próxima execução)
 - [x] Extrair IDs e URLs de vendas individuais da Copart quando presentes nas células do calendário; distinguir vendas simultâneas no mesmo pátio e dia (aguarda execução)
 - [x] Identificar links diretos versus links genéricos do calendário na interface e no relatório (aguarda execução)
-- [ ] Obter IDs e URLs individuais dos eventos VIP (sem inventar endereços)
+- [x] Implementar extração conservadora de cartões VIP: data e UFs devem pertencer ao mesmo cartão, URL HTTPS individual apenas quando única e do domínio VIP (aguarda execução)
+- [ ] Confirmar URLs e IDs individuais da VIP após coleta real; manter link de calendário como fallback
 - [x] Tratar links Copart cuja data aparece como «LIVE NOW», aceitando a data apenas quando consta no URL oficial (aguarda execução)
 - [ ] Conferir estabilidade dos novos links Copart na coleta automática
 - [ ] Detectar adiamentos e cancelamentos com o edital original
@@ -34,7 +35,8 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 - [x] Descoberta RSS direcionada para UFs em rodízio até percorrer os 27 entes federativos
 - [x] Fila de triagem recente em `app/review-queue.json`, sem publicação automática de notícias
 - [x] Implementar extração de URL/ID específico da Copart com testes de domínio, data e vendas duplicadas no mesmo pátio
-- [ ] Extrair identificadores e URLs específicos da VIP
+- [x] Adicionar tentativa de extração de URLs individuais da VIP e testes para cartões com links ambíguos ou domínios inválidos (aguarda execução)
+- [ ] Medir taxa de links específicos da VIP na coleta real
 - [x] Implementar um adaptador independente de calendário da Freitas Leiloeiro, validando data/UF na página individual; aguarda execução real
 - [x] Adicionar páginas oficiais específicas da Freitas (dois eventos) e Superbid (um evento), sujeitas à verificação do coletor
 - [ ] Criar adaptadores próprios para outros leiloeiros com calendário público verificável
@@ -56,10 +58,12 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 ## Próximas entregas
 
 1. Executar coleta completa para medir quantos links específicos Copart foram identificados e se dois leilões do mesmo pátio/dia deixaram de ser agrupados.
-2. Inspecionar estruturas de cartões VIP e capturar somente URLs diretas comprovadas, mantendo a agenda como fallback.
+2. Verificar diagnósticos de cartões VIP na execução automática: número de cartões reconhecidos, registros validados e URLs específicas; se não houver URL individual, manter a agenda.
 3. Encontrar fontes alternativas públicas para Aracaju, Curitiba, Pedranópolis e Superbid; não contornar HTTP 403.
 4. Converter notícias de órgãos oficiais em eventos somente após confirmar **data futura, estado, organizador e documento original**.
 5. Auditar a qualidade das UFs associadas aos eventos multiestaduais da VIP.
+
+**Atualização:** parser VIP isolado por cartão publicado em 03/11/2026, ainda sem nova coleta. A página da agenda apresentou redirecionamento em loop na inspeção externa, portanto a captura de URL individual não está confirmada.
 
 **Regra:** a execução ser bem-sucedida não equivale a cobertura nacional completa.
 
