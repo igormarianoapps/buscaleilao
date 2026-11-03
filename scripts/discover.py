@@ -8,7 +8,9 @@ import re
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
+from email.utils import parsedate_to_datetime
+from urllib.parse import urlparse
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -28,6 +30,8 @@ QUERIES = [
 ]
 UA = "BuscaLeilao/0.2 (https://github.com/igormarianoapps/buscaleilao)"
 MAX_ITEMS = 180
+MAX_AGE_DAYS = 120
+
 
 
 def discover(queries=QUERIES):
@@ -50,9 +54,18 @@ def discover(queries=QUERIES):
                     continue
                 if not re.search(r"ve[ií]cul|autom[oó]v|moto|sucata", title, re.I):
                     continue
+                try:
+                    published = parsedate_to_datetime(pub)
+                    if published.tzinfo is None:
+                        published = published.replace(tzinfo=timezone.utc)
+                    if published < datetime.now(timezone.utc) - timedelta(days=MAX_AGE_DAYS):
+                        continue
+                except (TypeError, ValueError, OverflowError):
+                    continue
                 publisher = item.find("source")
                 domain = publisher.attrib.get("url", "") if publisher is not None else ""
-                rank = "official" if re.search(r"(\\.gov\\.br|\\.leg\\.br|\\.jus\\.br|prefeitura)", domain + " " + title,re.I) else "other"
+                host = (urlparse(domain).hostname or "").lower()
+                rank = "official" if (host.endswith(".gov.br") or host.endswith(".leg.br") or host.endswith(".jus.br")) else "other"
                 found[link] = {"title": title[:220], "url": link, "published": pub,
                                "publisher_url": domain, "source_priority": rank,
                                "discovered_by": "news_rss", "status": "unverified"}
@@ -61,7 +74,7 @@ def discover(queries=QUERIES):
         except (OSError, ValueError, ET.ParseError) as exc:
             errors.append({"query": term, "error": str(exc)[:200]})
     results = list(found.values())
-    results.sort(key=lambda x: (x["source_priority"] != "official", x["published"]), reverse=False)
+    results.sort(key=lambda x: (x["source_priority"] != "official", -parsedate_to_datetime(x["published"]).timestamp()))
     return results, errors
 
 
