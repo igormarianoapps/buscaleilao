@@ -137,11 +137,30 @@ def main():
     except Exception as exc:
         platform_events = []
         platform_failures = [{"id":"platforms", "error":str(exc).splitlines()[0][:220]}]
+    # Platform adapters can rediscover the same auction under a different ID.
+    # Deduplicate only by their specific, normalized official detail URL.
+    # Broad agenda/homepage URLs are never strong enough to merge events.
+    from urllib.parse import urlsplit, parse_qs
+    def detail_key(e):
+        url = e.get("source_url") or ""
+        parsed = urlsplit(url)
+        host = (parsed.hostname or "").lower()
+        if "freitasleiloeiro.com.br" in host and parsed.path.lower() == "/leiloes/lotes":
+            auction_id = parse_qs(parsed.query).get("leilaoId", [""])[0]
+            if auction_id.isdigit():
+                return ("freitas", auction_id, e.get("auction_date"))
+        if host == "exchange.superbid.net" and parsed.path.startswith("/evento/"):
+            return ("superbid", parsed.path.rstrip("/").lower(), e.get("auction_date"))
+        return None
     known_ids = {e["id"] for e in events}
+    known_details = {key for e in events if (key := detail_key(e))}
     for item in platform_events:
-        if item["id"] not in known_ids:
+        key = detail_key(item)
+        if item["id"] not in known_ids and (key is None or key not in known_details):
             events.append(item)
             known_ids.add(item["id"])
+            if key is not None:
+                known_details.add(key)
     failures.extend(platform_failures)
     events.sort(key=lambda e:(e["auction_date"],e["auction_time"] or "",e["city"]))
     # Failed validation does not silently carry an unverified event into the feed.
