@@ -4,7 +4,7 @@ import unittest
 from datetime import datetime, timezone
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"scripts"))
-from prioritize_leads import prioritize, explicit_auction_date
+from prioritize_leads import prioritize, explicit_auction_date, merge_review_sources
 
 NOW=datetime(2026,11,3,tzinfo=timezone.utc)
 
@@ -44,6 +44,27 @@ class ReviewTests(unittest.TestCase):
         from email.utils import parsedate_to_datetime
         published=parsedate_to_datetime("Thu, 22 Oct 2026 07:00:00 GMT")
         self.assertIsNone(explicit_auction_date("Leilão veículos dia 5",published))
+
+    def test_pncp_and_rss_review_merged_without_publishing(self):
+        pncp=[{"title":"Leilão de veículos","state":"AC","city":"Rio Branco",
+               "date_hint":"2026-11-18","date_hint_status":"pncp_deadline_unverified",
+               "pncp_control":"123-1-1/2026",
+               "source_url":"https://pncp.gov.br/app/editais/123/2026/1"}]
+        rss=[{"title":"Notícia veículos","news_url":"https://news.google.com/item",
+              "priority":2,"review_status":"needs_official_event_page"}]
+        merged=merge_review_sources(rss,pncp)
+        self.assertEqual(len(merged),2)
+        self.assertEqual(merged[0]["source_kind"],"pncp")
+        self.assertEqual(merged[0]["state_hint"],"AC")
+        self.assertNotIn("auction_date",merged[0])
+        self.assertEqual(merged[1]["source_kind"],"news_rss")
+
+    def test_already_curated_pncp_notice_excluded_from_queue(self):
+        source_url="https://pncp.gov.br/app/editais/123/2026/1"
+        item={"title":"Leilão veículos","source_url":source_url,
+              "date_hint":None}
+        self.assertEqual(merge_review_sources([],[item],
+                         [{"source_url":source_url}]),[])
 
     def test_non_vehicle_rejected(self):
         self.assertEqual(prioritize([{"title":"Leilão de imóveis","published":"Thu, 22 Oct 2026 07:00:00 GMT","url":"https://news.google.com/a"}],NOW),[])
