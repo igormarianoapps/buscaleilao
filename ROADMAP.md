@@ -21,7 +21,9 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 - [x] Extrair IDs e URLs de vendas individuais da Copart quando presentes nas células do calendário; distinguir vendas simultâneas no mesmo pátio e dia (aguarda execução)
 - [x] Identificar links diretos versus links genéricos do calendário na interface e no relatório (aguarda execução)
 - [x] Implementar extração conservadora de cartões VIP: data e UFs devem pertencer ao mesmo cartão, URL HTTPS individual apenas quando única e do domínio VIP (aguarda execução)
-- [ ] Confirmar URLs e IDs individuais da VIP após coleta real; manter link de calendário como fallback
+- [ ] Confirmar URLs e IDs individuais da VIP: coleta de 17h07 registrou zero cartões DOM, mantendo o calendário
+- [x] Ampliar busca de cartões VIP para campos de data e rótulo separados; gerar diagnóstico DOM quando não encontrados (aguarda execução)
+- [x] Respeitar explicitamente bloqueio HTTP 429 sem retry imediato com navegador (aguarda execução)
 - [x] Tratar links Copart cuja data aparece como «LIVE NOW», aceitando a data apenas quando consta no URL oficial (aguarda execução)
 - [ ] Conferir estabilidade dos novos links Copart na coleta automática
 - [ ] Detectar adiamentos e cancelamentos com o edital original
@@ -45,20 +47,21 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 - [ ] Medir cobertura de leiloeiros/prefeituras por UF; não confundir presença em UF com cobertura completa
 - [ ] Encontrar fonte de Curitiba acessível ao coletor (HTTP 403 na última tentativa)
 
-## Última coleta confirmada — 03/11/2026, 16h40 BRT
+## Última coleta confirmada — 03/11/2026, 17h07 BRT
 
-- **41 leilões únicos**, 92 registros estaduais, 19 UFs com pelo menos um evento (70,4% de presença geográfica, não cobertura total).
-- Coleta privada: VIP 15, Copart 9, Freitas 3. Órgãos públicos: 14.
-- **16 de 20** anúncios curados aprovados; falhas independentes em Curitiba (403), Aracaju (evidências ausentes), Pedranópolis (403), Superbid (403).
-- DETRAN-BA, DETRAN-GO e Serranópolis do Iguaçu entraram no feed.
-- Fila de pesquisa: 80 notícias; nenhuma publicada sem validação.
-- `app/source-health.json` foi criado e permite diagnosticar erros por fonte.
-- Código de deduplicação por URL individual atualizado **após** esta coleta; ainda não validado em nova execução.
+- Workflow `Collect verified auctions` executado com sucesso, inclusive testes, browser e publicação.
+- **39 leilões únicos, 91 registros, 18 UFs**, de acordo com o relatório da coleta (redução temporária em relação aos 41 anteriores).
+- **Copart:** 10 eventos, todos com URL individual de venda oficial; exemplos em Goiânia mostram duas vendas distintas no mesmo pátio e dia.
+- **VIP:** 15 eventos, 67 registros multiestaduais, **0 links individuais**. Log: `VIP DOM: 0 candidate card(s)`; fallback da agenda manteve a coleta.
+- Freitas: 3 eventos. Fila RSS: 113 pistas, sem publicação automática.
+- Fontes oficiais: 13/20 validadas; 7 falhas (Curitiba 403, duas PRF-SP timeout, PRF-ES 429, Aracaju sem evidências, Pedranópolis 403, Superbid 403).
+- `direct_event_links=10`, `calendar_links=67`, `curated_source_links=14` no relatório.
+- **Após essa coleta:** busca de cartões VIP ampliada a folhas com data ou rótulo em elementos separados; diagnóstico de estrutura DOM `app/vip-dom-diagnostics.json` quando nenhum cartão for localizado; HTTP 429 passa a aguardar próxima coleta sem nova tentativa via navegador. Alterações aguardam execução.
 
 ## Próximas entregas
 
-1. Executar coleta completa para medir quantos links específicos Copart foram identificados e se dois leilões do mesmo pátio/dia deixaram de ser agrupados.
-2. Verificar diagnósticos de cartões VIP na execução automática: número de cartões reconhecidos, registros validados e URLs específicas; se não houver URL individual, manter a agenda.
+1. Validar o novo detector de cartões VIP e seu diagnóstico DOM; se zero cartões, usar evidências para adaptar o coletor, sem inventar links.
+2. Medir a proporção de links diretos Copart/VIP e manter links de calendário somente onde a URL individual não for observável.
 3. Encontrar fontes alternativas públicas para Aracaju, Curitiba, Pedranópolis e Superbid; não contornar HTTP 403.
 4. Converter notícias de órgãos oficiais em eventos somente após confirmar **data futura, estado, organizador e documento original**.
 5. Auditar a qualidade das UFs associadas aos eventos multiestaduais da VIP.
