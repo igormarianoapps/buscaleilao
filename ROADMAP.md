@@ -57,7 +57,7 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 - [ ] Automatizar conversão de notícias em candidaturas com data, UF, documento e URL original validados
 - [x] Incluir relatório de UFs sem eventos e percentual de presença, sem confundir isso com cobertura de mercado
 - [ ] Medir cobertura de leiloeiros/prefeituras por UF; não confundir presença em UF com cobertura completa
-- [ ] Encontrar fonte de Curitiba acessível ao coletor (HTTP 403 na última tentativa)
+- [x] Identificar catálogo oficial alternativo de Curitiba e substituir fonte bloqueada; acessibilidade automática aguarda coleta
 
 ## Entrega de descoberta — 03/11/2026
 
@@ -77,6 +77,16 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 - [ ] Validar a API PNCP e novos candidatos em coleta completa (arquivo `app/pncp-candidates.json` ainda não publicado).
 - [ ] Validar diagnóstico DOM VIP na coleta completa (arquivo `app/vip-dom-diagnostics.json` ainda não publicado).
 - [ ] Confirmar diretamente os editais PNCP de UFs ausentes antes de promover qualquer evento ao feed.
+
+## Recuperação de fontes — 03/11/2026
+
+- [x] Localizar a página de leilão **003/2026 da Prefeitura de Aracaju** no próprio leiloeiro RJ Leilões, ID 4845. Data 12/11/2026, início 09h30, com veículos entre os 22 lotes. Substituir o anúncio municipal que retornava evidências ausentes por URL individual da plataforma.
+- [x] Substituir a página de Curitiba bloqueada (HTTP 403) pelo **catálogo oficial da Secretaria Municipal de Defesa Social e Trânsito**, com identificação específica do edital 17/2026.
+- [x] Cadastrar editais adicionais de Curitiba: **16/2026 — sucatas inservíveis (11/11 às 9h)** e **18/2026 — veículos e sucatas (25/11 às 9h)**.
+- [x] Evitar inferir número de veículos a partir do número total de lotes; `vehicle_count=null` para fontes sem contagem comprovada.
+- [x] Adicionar testes offline de evidência por edital, horário confirmado de Aracaju e prevenção de confusão entre cidades. Workflow **41712930282 aprovado**.
+- [ ] Verificar recuperação destas fontes em coleta real; não adicionar os três eventos ao total confirmado antes do relatório.
+- [ ] Validar API PNCP em rede e confirmar candidatos reais com documentação original; `app/pncp-candidates.json` ainda não existe na última consulta.
 
 ## Última coleta confirmada — 03/11/2026, 17h07 BRT
 
