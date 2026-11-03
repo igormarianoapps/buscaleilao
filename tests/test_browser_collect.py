@@ -3,7 +3,7 @@ import sys
 import unittest
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"scripts"))
-from browser_collect import parse_copart_rows, parse_copart_linked_rows, copart_detail_url, parse_vip_text, parse_vip_cards, vip_detail_url
+from browser_collect import parse_copart_rows, parse_copart_linked_rows, copart_detail_url, parse_vip_text, parse_vip_cards, vip_detail_url, choose_vip_events
 
 class Tests(unittest.TestCase):
     def test_copart_two_dates_one_yard(self):
@@ -76,6 +76,32 @@ class Tests(unittest.TestCase):
         self.assertIsNone(vip_detail_url("https://evil.example/leilao/12345"))
         self.assertIsNone(vip_detail_url("https://www.vipleiloes.com.br/agenda"))
         self.assertIsNone(vip_detail_url("https://www.vipleiloes.com.br/leilao/12345/lotes/5"))
+
+    def test_vip_partial_cards_do_not_hide_calendar_auctions(self):
+        page=("Início: 03/11/2099 10:00\\nEstados BA-GO\\n"
+              "Início: 04/11/2099 11:00\\nEstados SP")
+        cards=[{"text":"Início: 03/11/2099 10:00\\nEstados BA-GO",
+                "links":["https://www.vipleiloes.com.br/leilao/123"]}]
+        events, mode=choose_vip_events(cards,page)
+        self.assertEqual(mode,"partial_cards_fallback")
+        self.assertEqual(len({e["event_id"] for e in events}),2)
+        self.assertTrue(all(e["source_link_type"]=="calendar" for e in events))
+
+    def test_vip_complete_cards_preserve_direct_links(self):
+        page="Início: 03/11/2099 10:00\\nEstados BA-GO"
+        cards=[{"text":page,"links":["https://www.vipleiloes.com.br/leilao/123"]}]
+        events,mode=choose_vip_events(cards,page)
+        self.assertEqual(mode,"complete_cards")
+        self.assertEqual({e["state"] for e in events},{"BA","GO"})
+        self.assertTrue(all(e["source_link_type"]=="event" for e in events))
+
+    def test_vip_ambiguous_cards_fallback(self):
+        page="Início: 03/11/2099 10:00\\nEstados BA"
+        cards=[{"text":page+"\\nInício: 04/11/2099 10:00\\nEstados SP",
+                "links":["https://www.vipleiloes.com.br/leilao/123"]}]
+        events,mode=choose_vip_events(cards,page)
+        self.assertEqual(mode,"calendar_fallback")
+        self.assertEqual(len(events),1)
 
     def test_vip_rejects_unspecified_uf(self):
         self.assertEqual(parse_vip_text("Seguradoras\nInício: 03/11/2099 10:00\nEstados Não Informado"),[])
