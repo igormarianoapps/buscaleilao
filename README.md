@@ -41,3 +41,7 @@ Os testes automatizados precisam ser aprovados antes da publicação do feed na 
 Consultar o [ROADMAP.md](ROADMAP.md) atualizado: melhorar links e identidade dos eventos, converter mais anúncios em eventos confirmados, adicionar coletores independentes de outros leiloeiros e medir cobertura nacional.
 
 A aplicação FastAPI/SQLite em `app/main.py` é um protótipo separado: o frontend publicado utiliza o feed estático, não a base SQLite.
+
+## Links de leilões (novembro de 2026)
+
+A Copart agora tem extração de URL específica da venda quando a tabela pública disponibiliza o link; caso contrário, permanece o calendário. Eventos distintos do mesmo pátio e dia são separados pelo identificador da venda. A VIP permanece com link da agenda até termos URL específica comprovada. Essas alterações dependem de execução do workflow para validação final.
