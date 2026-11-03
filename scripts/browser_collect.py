@@ -166,6 +166,7 @@ def parse_vip_text(text):
             entry = event(f"{event_id}-{state.lower()}",
                           "Leilão de veículos — VIP Leilões", state,
                           "Local não informado", day, hour, "VIP Leilões", VIP_URL)
+            entry["source_link_type"] = "calendar"
             entry["event_id"] = event_id
             entry["states"] = sorted(set(states))
             results.append(entry)
