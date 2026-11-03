@@ -28,6 +28,26 @@ class SummaryTests(unittest.TestCase):
         self.assertIn("4 candidatos; 1 erros",summary)
         self.assertIn("partial_cards_fallback; 2 cartões",summary)
 
+    def test_stale_collection_report_cannot_count_for_release(self):
+        import json
+        import io
+        from contextlib import redirect_stdout
+        with TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            (root/"collection-report.json").write_text(json.dumps({
+                "checked_at":"2026-10-01T00:00:00+00:00",
+                "unique_events":100,
+                "states_with_events":["GO"]}),encoding="utf-8")
+            with patch.object(status,"ROOT",root),patch.dict(
+                    "os.environ",{"GITHUB_STEP_SUMMARY":str(root/"summary.md")}):
+                output=io.StringIO()
+                with redirect_stdout(output):
+                    status.main()
+            self.assertIn("Não contar esta execução",output.getvalue())
+            self.assertNotIn("Eventos únicos: **100**",output.getvalue())
+            self.assertIn("Não contar esta execução",
+                          (root/"summary.md").read_text(encoding="utf-8"))
+
     def test_stale_file_not_reused_as_new_evidence(self):
         with TemporaryDirectory() as tmp:
             with patch.object(status,"ROOT",Path(tmp)):
