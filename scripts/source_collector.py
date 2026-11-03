@@ -111,7 +111,13 @@ def collect_curated(sources, previous_health=None, checked=None, browser_loader=
         for url in retry_urls:
             txt, err = fallback.get(url,(None,"No browser response"))
             if txt:
-                pages[url] = (txt,None)
+                # Keep valid static evidence when a shared URL supports several
+                # sessions and the browser exposes only part of the page.
+                original, old_error = pages[url]
+                if original and not old_error:
+                    pages[url] = (original + "\\n" + txt, None)
+                else:
+                    pages[url] = (txt, None)
             elif pages[url][0] is None:
                 pages[url] = (None,err)
     events, failed, statuses = [], [], {}
