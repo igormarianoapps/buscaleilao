@@ -1,12 +1,13 @@
 {
-  "checked_at": "2026-11-03T20:07:57+00:00",
-  "verified": 91,
-  "unique_events": 39,
+  "checked_at": "2026-11-03T20:43:27+00:00",
+  "verified": 111,
+  "unique_events": 48,
   "states_with_events": [
     "AM",
     "BA",
     "CE",
     "DF",
+    "ES",
     "GO",
     "MA",
     "MG",
@@ -26,55 +27,40 @@
     "AC",
     "AL",
     "AP",
-    "ES",
     "MS",
     "RN",
     "RR",
     "SE",
     "TO"
   ],
-  "state_presence_percent": 66.7,
+  "state_presence_percent": 70.4,
   "coverage_definition": "Presence of at least one event, not fraction of all auctions discovered",
   "organizers": {
-    "Copart": 10,
+    "Copart": 12,
     "DETRAN Bahia": 1,
     "DETRAN Goiás": 1,
     "Freitas Leiloeiro": 3,
+    "Polícia Rodoviária Federal": 3,
     "Prefeitura de Campina Grande": 1,
     "Prefeitura de Cuiabá — Semob": 3,
+    "Prefeitura de Curitiba": 3,
     "Prefeitura de Fernando Prestes": 1,
     "Prefeitura de Lorena": 1,
     "Prefeitura de Mogi das Cruzes": 1,
     "Prefeitura de Serranópolis do Iguaçu": 1,
     "Prefeitura de Vieiras": 1,
-    "VIP Leilões": 15
+    "VIP Leilões": 16
   },
-  "platform_events": 80,
-  "direct_event_links": 10,
-  "calendar_links": 67,
-  "curated_source_links": 14,
-  "curated_success": 13,
-  "curated_failure": 7,
+  "platform_events": 94,
+  "direct_event_links": 12,
+  "calendar_links": 79,
+  "curated_source_links": 20,
+  "curated_success": 19,
+  "curated_failure": 3,
   "failed": [
     {
-      "id": "curitiba-smdt-17-2026",
-      "error": "HTTP Error 403: Forbidden"
-    },
-    {
-      "id": "prf-sp-2026-11-03",
-      "error": "Page.goto: Timeout 15000ms exceeded."
-    },
-    {
-      "id": "prf-sp-2026-11-04",
-      "error": "Page.goto: Timeout 15000ms exceeded."
-    },
-    {
-      "id": "prf-es-2026-11-04",
-      "error": "HTTP 429"
-    },
-    {
       "id": "aracaju-3-leilao-2026-11-12",
-      "error": "missing evidence: 12 de novembro; 22 lotes; veículos"
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "id": "pedranopolis-sp-006-2026",
