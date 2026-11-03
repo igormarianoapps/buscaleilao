@@ -21,6 +21,7 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 - [x] Extrair IDs e URLs de vendas individuais da Copart quando presentes nas células do calendário; distinguir vendas simultâneas no mesmo pátio e dia (aguarda execução)
 - [x] Identificar links diretos versus links genéricos do calendário na interface e no relatório (aguarda execução)
 - [ ] Obter IDs e URLs individuais dos eventos VIP (sem inventar endereços)
+- [x] Tratar links Copart cuja data aparece como «LIVE NOW», aceitando a data apenas quando consta no URL oficial (aguarda execução)
 - [ ] Conferir estabilidade dos novos links Copart na coleta automática
 - [ ] Detectar adiamentos e cancelamentos com o edital original
 - [ ] Quantidades de veículos apenas quando comprovadas pela fonte
