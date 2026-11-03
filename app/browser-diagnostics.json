@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-03T19:41:43.030255+00:00",
+  "checked_at": "2026-11-03T20:08:54.314838+00:00",
   "results": [
     {
       "source": "Copart sales",
@@ -35,7 +35,7 @@
       "http_status": 200,
       "final_url": "https://www.copart.com.br/auctionCalendar/",
       "title": "Calendário de Leilōes de Veículos - Veículos à Venda Copart Brasil",
-      "html_bytes": 801336,
+      "html_bytes": 800909,
       "text_length": 4837,
       "tables": 2,
       "iframes": 2,
@@ -62,8 +62,8 @@
       "http_status": 200,
       "final_url": "https://www.vipleiloes.com.br/",
       "title": "Leilões de Veículos e Leilões Online | Vip Leilões",
-      "html_bytes": 364157,
-      "text_length": 8565,
+      "html_bytes": 365888,
+      "text_length": 8622,
       "tables": 0,
       "iframes": 10,
       "date_strings": 32,
@@ -89,8 +89,8 @@
       "http_status": 200,
       "final_url": "https://www.vipleiloes.com.br/agenda",
       "title": "VIP Leilões - Agenda de Eventos",
-      "html_bytes": 232366,
-      "text_length": 5661,
+      "html_bytes": 232867,
+      "text_length": 5689,
       "tables": 0,
       "iframes": 2,
       "date_strings": 24,

@@ -1,13 +1,12 @@
 {
-  "checked_at": "2026-11-03T19:40:49+00:00",
-  "verified": 92,
-  "unique_events": 41,
+  "checked_at": "2026-11-03T20:07:57+00:00",
+  "verified": 91,
+  "unique_events": 39,
   "states_with_events": [
     "AM",
     "BA",
     "CE",
     "DF",
-    "ES",
     "GO",
     "MA",
     "MG",
@@ -27,20 +26,20 @@
     "AC",
     "AL",
     "AP",
+    "ES",
     "MS",
     "RN",
     "RR",
     "SE",
     "TO"
   ],
-  "state_presence_percent": 70.4,
+  "state_presence_percent": 66.7,
   "coverage_definition": "Presence of at least one event, not fraction of all auctions discovered",
   "organizers": {
-    "Copart": 9,
+    "Copart": 10,
     "DETRAN Bahia": 1,
     "DETRAN Goiás": 1,
     "Freitas Leiloeiro": 3,
-    "Polícia Rodoviária Federal": 3,
     "Prefeitura de Campina Grande": 1,
     "Prefeitura de Cuiabá — Semob": 3,
     "Prefeitura de Fernando Prestes": 1,
@@ -50,13 +49,28 @@
     "Prefeitura de Vieiras": 1,
     "VIP Leilões": 15
   },
-  "platform_events": 78,
-  "curated_success": 16,
-  "curated_failure": 4,
+  "platform_events": 80,
+  "direct_event_links": 10,
+  "calendar_links": 67,
+  "curated_source_links": 14,
+  "curated_success": 13,
+  "curated_failure": 7,
   "failed": [
     {
       "id": "curitiba-smdt-17-2026",
       "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "prf-sp-2026-11-03",
+      "error": "Page.goto: Timeout 15000ms exceeded."
+    },
+    {
+      "id": "prf-sp-2026-11-04",
+      "error": "Page.goto: Timeout 15000ms exceeded."
+    },
+    {
+      "id": "prf-es-2026-11-04",
+      "error": "HTTP 429"
     },
     {
       "id": "aracaju-3-leilao-2026-11-12",
