@@ -227,21 +227,29 @@ def parse_vip_cards(cards):
     return results
 
 async def extract_vip_cards(page):
-    """Choose the smallest DOM ancestor containing an event and its states."""
+    """Look for the smallest container with one date and its own UF(s).
+
+    Search both label and date leaf nodes, since the site may render them in
+    separate elements. Never treat a list of many auctions as one card.
+    """
     return await page.evaluate("""() => {
-      const marks = Array.from(document.querySelectorAll('body *'))
-        .filter(el => el.children.length === 0 &&
-          /^\\s*In[ií]cio\\s*:?\\s*(?:\\d{2}\\/\\d{2}\\/\\d{4})?\\s*$/i.test(el.textContent || ''));
+      const date = /\\b\\d{2}\\/\\d{2}\\/\\d{4}\\b/g;
+      const start = /In[ií]cio\\s*:?/i;
+      const states = /Estados\\s*:?/i;
+      const leaves = Array.from(document.querySelectorAll('body *')).filter(
+        el => el.children.length === 0 &&
+          (start.test(el.textContent || '') ||
+           /\\d{2}\\/\\d{2}\\/\\d{4}/.test(el.textContent || '')));
       const cards = [], seen = new Set();
-      for (const mark of marks) {
-        let node = mark;
-        for (let n = 0; n < 5 && node; n++, node = node.parentElement) {
-          const text = node.innerText || '';
-          if (text.length > 1300) break;
-          if (/Estados\\s*:?/i.test(text) && /In[ií]cio\\s*:?/i.test(text)) {
+      for (const leaf of leaves.slice(0, 500)) {
+        let node = leaf;
+        for (let depth = 0; depth < 12 && node; depth++, node = node.parentElement) {
+          const text = (node.innerText || '').trim();
+          if (text.length > 1800) break;
+          if (start.test(text) && states.test(text) && (text.match(date) || []).length === 1) {
             if (!seen.has(node)) {
               seen.add(node);
-              cards.push({text, links: Array.from(node.querySelectorAll('a[href]'))
+              cards.push({text, links:Array.from(node.querySelectorAll('a[href]'))
                 .map(a => a.href)});
             }
             break;
