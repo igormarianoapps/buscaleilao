@@ -48,6 +48,8 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 - [x] Integrar descoberta nacional oficial via PNCP (leilões eletrônicos modalidade 1 e presenciais 13); candidatos separados da agenda pública
 - [x] Validar modalidade, objeto veículo, data futura e UF; não publicar diretamente o prazo de propostas como data confirmada do leilão
 - [x] Criar testes de formatos PNCP, rejeição de imóveis/cancelamentos, falhas de API e ambas modalidades (workflow 41711457851 aprovado)
+- [x] Melhorar alcance do PNCP com busca por semanas recentes, evitando limite de páginas do período inteiro; aceitar editais sem data apenas na fila de revisão
+- [x] Unificar fila de revisão PNCP + RSS, registrando origem de cada pista, sem publicação automática
 - [ ] Validar coleta real da API PNCP e converter editais aprovados em eventos públicos
 - [ ] Criar adaptadores próprios para outros leiloeiros com calendário público verificável
 - [x] Priorizar notícias com data explícita futura no título e excluir notícias com data de leilão comprovadamente passada (triagem, sem publicação automática)
@@ -56,6 +58,15 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 - [x] Incluir relatório de UFs sem eventos e percentual de presença, sem confundir isso com cobertura de mercado
 - [ ] Medir cobertura de leiloeiros/prefeituras por UF; não confundir presença em UF com cobertura completa
 - [ ] Encontrar fonte de Curitiba acessível ao coletor (HTTP 403 na última tentativa)
+
+## Entrega de descoberta — 03/11/2026
+
+- [x] Busca PNCP por cinco janelas semanais, nas duas modalidades de leilão (eletrônico/presencial), com paginação limitada e falhas isoladas.
+- [x] Editais PNCP sem prazo explícito são pistas de pesquisa com data desconhecida; não aparecem em `app/events.json`.
+- [x] `app/review-queue.json` reúne notícias RSS e oportunidades PNCP, identifica origem e mostra contadores separados.
+- [x] Evitar repetir candidato PNCP que já conste em `app/sources.json`.
+- [ ] Conferir `app/pncp-candidates.json`, `app/vip-dom-diagnostics.json` e contagens após a próxima coleta real.
+- [ ] Confirmar editais PNCP individualmente e transformar os comprovados em fontes curadas.
 
 ## Última coleta confirmada — 03/11/2026, 17h07 BRT
 
