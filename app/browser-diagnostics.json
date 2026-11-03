@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-02T23:37:17.714102+00:00",
+  "checked_at": "2026-11-03T17:54:02.653969+00:00",
   "results": [
     {
       "source": "Copart sales",
@@ -8,24 +8,24 @@
       "http_status": 200,
       "final_url": "https://www.copart.com.br/salesListResult/",
       "title": "Próximos Leilōes de Venda de Veículos - Copart Brasil",
-      "html_bytes": 501017,
-      "text_length": 1930,
+      "html_bytes": 500286,
+      "text_length": 1765,
       "tables": 1,
       "iframes": 2,
-      "date_strings": 13,
+      "date_strings": 9,
       "examples": [
         "Início",
-        "A visitação no pátio Vila Jaguara ocorrerá na terça-feira, 03/11/2026, dia do leilão, das 8h30 às 10h00. O leilão será realizado de forma on-line. | Venda Seu Veículo De Forma Segu",
         "Pátio do Leilão Data do Leilão Próximo Leilão",
-        "Curitiba - PR 03.11.2026 03.11.2026",
-        "Itaquaquecetuba - SP 03.11.2026 04.11.2026",
-        "Leilão Pátio Porto Seguro - SP 03.11.2026",
+        "Curitiba - PR Ao Vivo 10.11.2026",
+        "Itaquaquecetuba - SP Ao Vivo 04.11.2026",
         "Goiânia - GO 04.11.2026 04.11.2026",
         "Osasco - SP 04.11.2026 05.11.2026",
         "Eusébio - CE 05.11.2026",
         "Vitória de Santo Antão - PE 05.11.2026",
         "Betim - MG 06.11.2026",
-        "Se você está procurando mais detalhes sobre os próximos leilões, aqui é o lugar certo. A lista de vendas ajuda a encontrar todos os nossos leilões e a personalizar a forma como voc"
+        "Leilão Pátio Porto Seguro - SP",
+        "Se você está procurando mais detalhes sobre os próximos leilões, aqui é o lugar certo. A lista de vendas ajuda a encontrar todos os nossos leilões e a personalizar a forma como voc",
+        "Localização dos Pátios"
       ]
     },
     {
@@ -35,14 +35,13 @@
       "http_status": 200,
       "final_url": "https://www.copart.com.br/auctionCalendar/",
       "title": "Calendário de Leilōes de Veículos - Veículos à Venda Copart Brasil",
-      "html_bytes": 806863,
-      "text_length": 4992,
+      "html_bytes": 802381,
+      "text_length": 4859,
       "tables": 2,
       "iframes": 2,
-      "date_strings": 43,
+      "date_strings": 42,
       "examples": [
         "Início",
-        "A visitação no pátio Vila Jaguara ocorrerá na terça-feira, 03/11/2026, dia do leilão, das 8h30 às 10h00. O leilão será realizado de forma on-line. | Venda Seu Veículo De Forma Segu",
         "Leilões em todo o país! Clique no leilão relevante para confirir as listas de vendas dos próximos leilões ao vivo on-line.",
         "Hora do Leilão",
         "02.11.2026 Terça-feira",
@@ -52,7 +51,8 @@
         "06.11.2026 Sábado",
         "07.11.2026 Domingo",
         "08.11.2026",
-        "Leilão Pátio Porto Seguro - SP"
+        "Leilão Pátio Porto Seguro - SP",
+        "Hora do Leilão"
       ]
     },
     {
@@ -62,11 +62,11 @@
       "http_status": 200,
       "final_url": "https://www.vipleiloes.com.br/",
       "title": "Leilões de Veículos e Leilões Online | Vip Leilões",
-      "html_bytes": 334035,
-      "text_length": 8192,
+      "html_bytes": 359918,
+      "text_length": 8498,
       "tables": 0,
-      "iframes": 4,
-      "date_strings": 31,
+      "iframes": 10,
+      "date_strings": 32,
       "examples": [
         "Início: 03/11/2026",
         "Início: 03/11/2026",
@@ -75,11 +75,11 @@
         "Início: 03/11/2026",
         "Início: 03/11/2026",
         "Início: 03/11/2026",
+        "Início: 03/11/2026",
         "Início",
-        "03/11/2026 10:00",
+        "03/11/2026 19:00",
         "Estados",
-        "Leilão Online",
-        "Início"
+        "Leilão Online"
       ]
     },
     {
@@ -89,23 +89,23 @@
       "http_status": 200,
       "final_url": "https://www.vipleiloes.com.br/agenda",
       "title": "VIP Leilões - Agenda de Eventos",
-      "html_bytes": 225884,
-      "text_length": 5500,
+      "html_bytes": 227619,
+      "text_length": 5529,
       "tables": 0,
       "iframes": 2,
       "date_strings": 24,
       "examples": [
         "Tipo de leilão",
         "Início",
-        "03/11/2026 10:00",
-        "Estados",
-        "Leilão Online",
-        "Início",
         "03/11/2026 19:00",
         "Estados",
         "Leilão Online",
         "Início",
         "04/11/2026 10:00",
+        "Estados",
+        "Leilão Online",
+        "Início",
+        "04/11/2026 11:00",
         "Estados"
       ]
     }
