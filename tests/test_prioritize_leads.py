@@ -66,6 +66,22 @@ class ReviewTests(unittest.TestCase):
         self.assertEqual(merge_review_sources([],[item],
                          [{"source_url":source_url}]),[])
 
+    def test_uncovered_states_rank_first_and_large_states_are_capped(self):
+        pncp=[]
+        for i in range(15):
+            pncp.append({"title":f"Veículos edital SP {i}", "state":"SP",
+                         "source_url":f"https://pncp.gov.br/app/editais/999/2026/{i}",
+                         "date_hint":"2026-11-20"})
+        pncp.append({"title":"Veículos edital AC","state":"AC",
+                     "source_url":"https://pncp.gov.br/app/editais/888/2026/1",
+                     "date_hint":"2026-11-20"})
+        result=merge_review_sources([],pncp,uncovered_states=["AC"])
+        self.assertEqual(result[0]["state_hint"],"AC")
+        self.assertTrue(result[0]["coverage_gap"])
+        self.assertEqual(len([x for x in result if x["state_hint"]=="SP"]),10)
+        self.assertEqual(len(result),11)
+        self.assertTrue(all("auction_date" not in item for item in result))
+
     def test_non_vehicle_rejected(self):
         self.assertEqual(prioritize([{"title":"Leilão de imóveis","published":"Thu, 22 Oct 2026 07:00:00 GMT","url":"https://news.google.com/a"}],NOW),[])
 
