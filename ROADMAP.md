@@ -64,6 +64,17 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 
 **Regra operacional:** continuar apenas com P0.1/P0.2 antes de iniciar P0.3/P0.4, mantendo o checklist MVP como fonte de verdade.
 
+## Execução P0.1 — proteção contra dados antigos (03/11/2026)
+
+- [x] Impedir que a fila de revisão reaproveite PNCP/RSS de uma coleta anterior após erro nas etapas experimentais. São admitidos apenas arquivos com `checked_at` recente (até 6h).
+- [x] Acrescentar `rss_fresh` e `pncp_fresh` ao resumo da fila para identificar se a pesquisa foi atualizada.
+- [x] Impedir que o resumo operacional de uma execução falha trate um `collection-report.json` antigo como evidência nova para P0.1/P0.2.
+- [x] Testar descarte de pesquisa antiga e relatório de feed antigo; suíte no GitHub Actions.
+- [ ] **P0.1:** confirmar próxima execução ponta a ponta de `Collect verified auctions`, incluindo publicação e diagnóstico dos candidatos atuais.
+- [ ] **P0.2:** 0/3 execuções completas consecutivas no workflow novo. Testes de adaptadores não contam para a meta.
+
+**Prioridade mantida:** não adicionar fontes ou funcionalidades até validar o pipeline completo (P0.1/P0.2); então auditar eventos/links (P0.3/P0.4).
+
 ## Fase 1 — Motor de coleta e qualidade
 
 - [x] Coletores independentes: erro de uma fonte não interrompe a verificação das outras
