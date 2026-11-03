@@ -23,6 +23,8 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 - [x] Implementar extração conservadora de cartões VIP: data e UFs devem pertencer ao mesmo cartão, URL HTTPS individual apenas quando única e do domínio VIP (aguarda execução)
 - [ ] Confirmar URLs e IDs individuais da VIP: coleta de 17h07 registrou zero cartões DOM, mantendo o calendário
 - [x] Ampliar busca de cartões VIP para campos de data e rótulo separados; gerar diagnóstico DOM quando não encontrados (aguarda execução)
+- [x] Garantir que leitura parcial de cartões VIP não substitua o calendário completo: comparar todos os eventos por data/hora/UF antes de promover links individuais; testes adicionados (aguarda execução real)
+- [x] Gravar diagnóstico VIP também para cartões parciais, não apenas quando nenhum cartão é encontrado
 - [x] Respeitar explicitamente bloqueio HTTP 429 sem retry imediato com navegador (aguarda execução)
 - [x] Tratar links Copart cuja data aparece como «LIVE NOW», aceitando a data apenas quando consta no URL oficial (aguarda execução)
 - [ ] Conferir estabilidade dos novos links Copart na coleta automática
@@ -76,5 +78,5 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 - [x] Diagnosticar execução #16: 27 testes Python aprovados, 2 testes de cartões VIP falharam; a coleta nem foi iniciada.
 - [x] Corrigir fixtures com novas linhas reais nos testes VIP (`test_vip_card_uses_single_official_detail_link`, `test_vip_ambiguous_link_stays_calendar`).
 - [x] Confirmar workflow `Test auction adapters` após correção: execução 41709418273 **sucesso**.
-- [ ] Confirmar próxima execução de `Collect verified auctions` (a anterior não chegou à coleta).
-- [ ] Não interpretar o relatório anterior (41 eventos/19 UFs) como resultado desta execução falha.
+- [x] Confirmar execução de `Collect verified auctions` em 03/11/2026 às 17h07 BRT — sucesso; 39 eventos únicos, 18 UFs.
+- [x] Diferenciar a execução que falhou das coletas bem-sucedidas posteriores.
