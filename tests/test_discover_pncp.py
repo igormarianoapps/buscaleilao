@@ -61,11 +61,28 @@ class PNCPTests(unittest.TestCase):
         self.assertTrue(any("codigoModalidadeContratacao=1" in u for u in urls))
         self.assertTrue(any("codigoModalidadeContratacao=13" in u for u in urls))
 
+    def test_rate_limit_stops_modality_and_keeps_verified_candidates_for_review(self):
+        from urllib.error import HTTPError
+        requests=[]
+        def fake_fetch(url):
+            requests.append(url)
+            if "codigoModalidadeContratacao=13&" in url:
+                raise HTTPError(url,429,"Too Many Requests",None,None)
+            return {"data":[row()],"totalPaginas":1}
+        items,errors,count=discover(
+            datetime(2026,11,3,tzinfo=timezone.utc),fetch=fake_fetch)
+        self.assertEqual(len(items),1)
+        self.assertEqual(len(errors),1)
+        self.assertEqual(errors[0]["modality"],13)
+        self.assertEqual(count,6)
+        self.assertEqual(len([u for u in requests if "codigoModalidadeContratacao=13" in u]),1)
+        self.assertNotIn("auction_date",items[0])
+
     def test_api_failure_is_reported_without_publishing(self):
         def unavailable(_): raise OSError("HTTP 429")
         items,errors,_=discover(
             datetime(2026,11,3,tzinfo=timezone.utc),fetch=unavailable)
         self.assertEqual(items,[])
-        self.assertEqual(len(errors),10)
+        self.assertEqual(len(errors),2)
 
 if __name__=="__main__":unittest.main()
