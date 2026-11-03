@@ -30,7 +30,10 @@ Atualizado: 03/11/2026. Status abaixo indica código publicado, **não** valida�
 - [x] Cadastrar e confirmar no coletor o edital de Campina Grande/PB e três sessões da Semob/Cuiabá-MT (03/11/2026).
 - [x] Criar fila de revisão `app/review-queue.json`, priorizando notícias recentes e fontes governamentais, sem publicá-las como eventos.
 - [x] Cadastrar o leilão municipal de Aracaju/SE (12/11).
-- [ ] Corrigir divergência de evidências de Aracaju (não foi validado em 03/11).
+- [x] Adicionar segunda verificação com navegador para páginas oficiais que não mostram a evidência esperada no HTML estático (Aracaju); **pendente de validar na próxima coleta**.
+- [ ] Confirmar Aracaju em execução real, sem dispensar nenhuma evidência.
+- [x] Revisar candidatos: notícias do Detran-PR (28/10) e Detran-RS (21/10) já estavam vencidas em 03/11 e foram descartadas.
+- [x] Cadastrar DETRAN-GO nº 03/2026, 09/11 às 9h, com 2.189 veículos documentados em fonte oficial (aguardando coleta).
 - [ ] Converter candidatos RSS em eventos a partir de edital/data/UF verificados em escala.
 - [ ] Adicionar conectores confiáveis de outros grandes leiloeiros e órgãos públicos.
 - [ ] Expandir para municípios menores e monitorar cobertura das 27 UFs.
@@ -45,11 +48,11 @@ Atualizado: 03/11/2026. Status abaixo indica código publicado, **não** valida�
 
 ## Próxima entrega
 
-1. Revisar a página de Aracaju e suas evidências antes de qualquer publicação.
-2. Melhorar tolerância a indisponibilidade temporária do DETRAN-BA sem manter eventos não confirmados.
-3. Buscar fonte oficial alternativa acessível de Curitiba sem contornar bloqueios.
-4. Validar editais e datas futuras das 52 pistas priorizadas.
+1. **Rodar testes e coleta** para validar o novo DETRAN-GO, segunda tentativa de leitura do DETRAN-BA e fallback seguro de Aracaju.
+2. Conferir `app/collection-report.json`; nenhum evento deve entrar sem as evidências cadastradas.
+3. Continuar revisão das notícias futuras da fila, evitando leilões já encerrados; localizar URLs individuais nas plataformas.
+4. Curitiba permanece bloqueada por HTTP 403 e depende de fonte oficialmente acessível.
 
-**Nota:** a execução do workflow de testes não foi confirmada separadamente; os números acima são da coleta.
+**Última execução confirmada (anterior a estes commits):** 30 eventos únicos, 18 UFs, 52 notícias priorizadas. Novas alterações ainda não validadas pelo workflow.
 
-Critério de conclusão: só publicar eventos com data e local confirmado por fonte acessível.
+Critério: eventos com data, estado e fonte verificados; não extrapolar número de lotes para número de veículos.
