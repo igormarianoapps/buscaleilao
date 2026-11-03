@@ -187,6 +187,70 @@ def parse_vip_text(text):
             results.append(entry)
     return results
 
+def vip_detail_url(raw):
+    """Allow only likely VIP event-detail links on the official HTTPS domain."""
+    from urllib.parse import urlsplit, urlunsplit
+    try:
+        parts = urlsplit(raw)
+    except ValueError:
+        return None
+    if parts.scheme != "https" or parts.hostname not in ("vipleiloes.com.br", "www.vipleiloes.com.br"):
+        return None
+    route = parts.path.rstrip("/").lower()
+    if not re.search(r"/(?:leilao|leiloes|evento|eventos)/[a-z0-9][a-z0-9/_-]*", route):
+        return None
+    if any(part in route for part in ("/lote/", "/lotes/", "/login/", "/cadastro/")):
+        return None
+    return urlunsplit((parts.scheme, parts.netloc, parts.path, parts.query, ""))
+
+def parse_vip_cards(cards):
+    """Conservative localized DOM card parser, never infer same-day identity."""
+    results = []
+    for card in cards:
+        body = card.get("text", "")
+        if len(body) > 1300 or len(re.findall(r"\bIn[ií]cio\s*:?\s*\d{2}/\d{2}/\d{4}", body, re.I)) != 1:
+            continue
+        parsed = parse_vip_text(body)
+        if not parsed:
+            continue
+        links = {candidate for u in card.get("links", []) if (candidate := vip_detail_url(u))}
+        if len(links) == 1:
+            direct = next(iter(links))
+            identity = hashlib.sha256(direct.encode("utf-8")).hexdigest()[:16]
+            group = f"vip-direct-{identity}"
+            for entry in parsed:
+                entry["id"] = f"{group}-{entry['state'].lower()}"
+                entry["event_id"] = group
+                entry["source_url"] = direct
+                entry["source_link_type"] = "event"
+        results.extend(parsed)
+    return results
+
+async def extract_vip_cards(page):
+    """Choose the smallest DOM ancestor containing an event and its states."""
+    return await page.evaluate("""() => {
+      const marks = Array.from(document.querySelectorAll('body *'))
+        .filter(el => el.children.length === 0 &&
+          /In[ií]cio\\s*:?\\s*\\d{2}\\/\\d{2}\\/\\d{4}/i.test(el.textContent || ''));
+      const cards = [], seen = new Set();
+      for (const mark of marks) {
+        let node = mark;
+        for (let n = 0; n < 5 && node; n++, node = node.parentElement) {
+          const text = node.innerText || '';
+          if (text.length > 1300) break;
+          if (/Estados\\s*:?/i.test(text) && /In[ií]cio\\s*:?/i.test(text)) {
+            if (!seen.has(node)) {
+              seen.add(node);
+              cards.push({text, links: Array.from(node.querySelectorAll('a[href]'))
+                .map(a => a.href)});
+            }
+            break;
+          }
+        }
+      }
+      return cards;
+    }""")
+
 async def collect_browser():
     from playwright.async_api import async_playwright
     all_events, errors = [], []
@@ -210,8 +274,11 @@ async def collect_browser():
                         }))""")
                     found = parse_copart_linked_rows(rows)
                 else:
-                    body = await page.locator("body").inner_text(timeout=10000)
-                    found = parse_vip_text(body)
+                    cards = await extract_vip_cards(page)
+                    found = parse_vip_cards(cards)
+                    if not found:
+                        body = await page.locator("body").inner_text(timeout=10000)
+                        found = parse_vip_text(body)
                 if not found:
                     raise ValueError("Nenhum evento validável extraído da página pública")
                 all_events.extend(found)
