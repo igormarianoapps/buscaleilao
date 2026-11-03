@@ -45,3 +45,9 @@ A aplicação FastAPI/SQLite em `app/main.py` é um protótipo separado: o front
 ## Links de leilões (novembro de 2026)
 
 A Copart agora tem extração de URL específica da venda quando a tabela pública disponibiliza o link; caso contrário, permanece o calendário. Eventos distintos do mesmo pátio e dia são separados pelo identificador da venda. A VIP permanece com link da agenda até termos URL específica comprovada. Essas alterações dependem de execução do workflow para validação final.
+
+## Descoberta nacional por editais do PNCP (experimental)
+
+O pipeline inclui `scripts/discover_pncp.py`, que consulta a API pública oficial do Portal Nacional de Contratações Públicas para leilões eletrônicos (modalidade 1) e presenciais (13). O script pesquisa publicações recentes e seleciona apenas objetos com indício explícito de veículo, situação não cancelada, UF definida e data futura de encerramento de propostas. Os resultados são gravados em `app/pncp-candidates.json`, com identificador de controle PNCP e URL do edital para revisão. **Nenhum candidato é publicado automaticamente em `app/events.json`**: o encerramento das propostas pode não ser a data exata do leilão, e o edital deve ser revisado antes da publicação. A primeira execução em rede ainda não foi confirmada.
+
+A fila RSS também ignora manchetes com data de leilão claramente passada e dá prioridade a datas futuras explícitas, sem tratá-las como confirmação.
