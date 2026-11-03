@@ -54,7 +54,7 @@ class Tests(unittest.TestCase):
         self.assertEqual({r["state"] for r in result},{"BA","GO","MT"})
         self.assertTrue(all(r["vehicle_count"] is None for r in result))
     def test_vip_card_uses_single_official_detail_link(self):
-        card={"text":"Início: 03/11/2099 10:00\\nLotes 83\\nEstados BA-GO-MT\\nTipo Leilão Online",
+        card={"text":"Início: 03/11/2099 10:00\nLotes 83\nEstados BA-GO-MT\nTipo Leilão Online",
               "links":["https://www.vipleiloes.com.br/leilao/12345"]}
         events=parse_vip_cards([card])
         self.assertEqual({e["state"] for e in events},{"BA","GO","MT"})
@@ -63,7 +63,7 @@ class Tests(unittest.TestCase):
         self.assertTrue(all(e["source_url"]==card["links"][0] for e in events))
 
     def test_vip_ambiguous_link_stays_calendar(self):
-        card={"text":"Início: 03/11/2099 10:00\\nEstados SP",
+        card={"text":"Início: 03/11/2099 10:00\nEstados SP",
               "links":["https://www.vipleiloes.com.br/leilao/12345",
                        "https://www.vipleiloes.com.br/leilao/54321"]}
         events=parse_vip_cards([card])
@@ -71,7 +71,7 @@ class Tests(unittest.TestCase):
         self.assertEqual(events[0]["source_link_type"],"calendar")
 
     def test_vip_rejects_entire_page_and_untrusted_links(self):
-        text="Início: 03/11/2099 10:00\\nEstados GO\\nInício: 04/11/2099 10:00\\nEstados SP"
+        text="Início: 03/11/2099 10:00\nEstados GO\nInício: 04/11/2099 10:00\nEstados SP"
         self.assertEqual(parse_vip_cards([{"text":text,"links":[]}]),[])
         self.assertIsNone(vip_detail_url("https://evil.example/leilao/12345"))
         self.assertIsNone(vip_detail_url("https://www.vipleiloes.com.br/agenda"))
