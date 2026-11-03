@@ -67,6 +67,16 @@ class SourceCollectorTests(unittest.TestCase):
         self.assertEqual(events,[])
         self.assertEqual(len(failed),1)
 
+    def test_rate_limit_respected_without_browser_retry(self):
+        with patch("source_collector.fetch_text",side_effect=OSError("HTTP Error 429: Too Many Requests")):
+            def blocked(_):
+                self.fail("HTTP 429 must wait for another scheduled collection")
+            records,failed,_=collect_curated(
+                [source("rate-limit","https://example.org/429")],
+                browser_loader=blocked)
+        self.assertEqual(records,[])
+        self.assertEqual(failed[0]["id"],"rate-limit")
+
     def test_previous_health_tracks_failures(self):
         with patch("source_collector.fetch_text",side_effect=OSError("timeout")):
             _,_,health=collect_curated(
