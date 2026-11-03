@@ -15,7 +15,8 @@ Atualizado: 03/11/2026. Status abaixo indica código publicado, **não** valida�
 - [x] Testar a extração anterior no GitHub Actions: 24 eventos únicos, 17 UFs (relatório 02/11/2026).
 - [x] Validar no GitHub Actions a nova rotina de recuperação por Chromium (03/11/2026): Lorena recuperada; Curitiba continua com timeout.
 - [x] Encontrar página oficial alternativa para Curitiba (Guia Municipal, edital 17/2026); cadastrada, pendente de execução da coleta.
-- [ ] Confirmar recuperação de Curitiba no relatório após o workflow.
+- [x] Verificar tentativa de recuperação de Curitiba: fonte alternativa respondeu HTTP 403; evento segue fora da agenda.
+- [ ] Encontrar fonte pública acessível para Curitiba sem contornar controles de acesso.
 
 ## Fase 2 — Cobertura nacional
 
@@ -26,18 +27,24 @@ Atualizado: 03/11/2026. Status abaixo indica código publicado, **não** valida�
 - [x] Adicionar fontes oficiais DETRAN-BA (25/11) e PRF-ES (04/11): ambas verificadas na coleta de 03/11.
 - [x] Tentar recuperação de falhas temporárias/SSL via navegador sem desativar validação de certificados.
 - [x] Melhorar triagem de RSS: excluir notícias com mais de 120 dias e priorizar somente domínios públicos reais.
-- [x] Cadastrar edital específico de Campina Grande/PB e sessões do leilão da Semob/Cuiabá-MT.
+- [x] Cadastrar e confirmar no coletor o edital de Campina Grande/PB e três sessões da Semob/Cuiabá-MT (03/11/2026).
 - [ ] Converter candidatos RSS em eventos a partir de edital/data/UF verificados em escala.
 - [ ] Adicionar conectores confiáveis de outros grandes leiloeiros e órgãos públicos.
 - [ ] Expandir para municípios menores e monitorar cobertura das 27 UFs.
 - [ ] Medir percentual de fontes acompanhadas; não prometer 100% de cobertura.
 
+## Última execução verificada — 03/11/2026, 15h08 BRT
+
+- 62 registros estaduais; **31 eventos únicos**, distribuídos por 18 UFs.
+- Campina Grande/PB e três sessões de Cuiabá/MT validadas.
+- 125 notícias candidatas (sem publicação automática); 0 erros RSS.
+- Curitiba: HTTP 403 também com navegador; não publicada.
+- Copart e VIP acessíveis.
+
 ## Próxima entrega
 
-1. Executar `Collect verified auctions` para validar a fonte alternativa de Curitiba, Campina Grande e as sessões de Cuiabá.
-2. Conferir `app/collection-report.json`: nenhuma nova fonte deve entrar no feed sem evidência textual presente.
-3. Priorizar links específicos de cada leilão e novos eventos confirmados, principalmente cidades pequenas.
+1. Localizar fonte alternativa de Curitiba **acessível publicamente**, sem desativar verificação TLS nem contornar o HTTP 403.
+2. Triar as 125 pistas, priorizando órgãos oficiais e leilões futuros.
+3. Obter links específicos e identificadores individuais de cada leilão nas grandes plataformas.
 
-**Registro de execução:** a entrega de 03/11/2026 adicionou fontes oficiais alternativas e melhorou a triagem de descobertas. A execução dessas mudanças ainda não foi confirmada.
-
-Critério de conclusão: fonte acessível, evidências sobre data/evento e UF identificadas, sem publicar leads RSS diretamente como eventos.
+Critério de conclusão: apenas eventos cuja data/UF e fonte estejam verificadas entram na agenda.
