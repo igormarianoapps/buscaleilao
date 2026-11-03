@@ -102,7 +102,9 @@ def collect_curated(sources, previous_health=None, checked=None, browser_loader=
     retry_urls = []
     for url, associated in grouped.items():
         content, error = pages[url]
-        if error and ("403" in error or "401" in error):
+        # Respect access denials and explicit server rate limiting. Retry on a
+        # later scheduled run instead of immediately sending a browser request.
+        if error and any(code in error for code in ("401", "403", "429")):
             continue
         if error or any(not all(norm(e) in norm(content) for e in src.get("evidence",[])) for src in associated):
             retry_urls.append(url)
