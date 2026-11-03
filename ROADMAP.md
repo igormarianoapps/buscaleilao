@@ -23,8 +23,10 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 - [x] Implementar extração conservadora de cartões VIP: data e UFs devem pertencer ao mesmo cartão, URL HTTPS individual apenas quando única e do domínio VIP (aguarda execução)
 - [ ] Confirmar URLs e IDs individuais da VIP: coleta de 17h07 registrou zero cartões DOM, mantendo o calendário
 - [x] Ampliar busca de cartões VIP para campos de data e rótulo separados; gerar diagnóstico DOM quando não encontrados (aguarda execução)
-- [x] Garantir que leitura parcial de cartões VIP não substitua o calendário completo: comparar todos os eventos por data/hora/UF antes de promover links individuais; testes adicionados (aguarda execução real)
+- [x] Garantir que leitura parcial de cartões VIP não substitua o calendário completo: comparar todos os eventos por data/hora/UF antes de promover links individuais; testes aprovados, coleta real pendente
 - [x] Gravar diagnóstico VIP também para cartões parciais, não apenas quando nenhum cartão é encontrado
+- [x] Validar novos testes de cobertura VIP (completa, parcial e ambígua): workflow 41710733146 aprovado em 03/11/2026
+- [ ] Confirmar próxima coleta real com detecção de cartões VIP e o novo relatório de diagnóstico, sem perder eventos já verificados
 - [x] Respeitar explicitamente bloqueio HTTP 429 sem retry imediato com navegador (aguarda execução)
 - [x] Tratar links Copart cuja data aparece como «LIVE NOW», aceitando a data apenas quando consta no URL oficial (aguarda execução)
 - [ ] Conferir estabilidade dos novos links Copart na coleta automática
