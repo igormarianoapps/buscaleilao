@@ -55,7 +55,7 @@ async function load(){
       <span>🚗 ${a.vehicle_count===null?"Quantidade não informada":a.vehicle_count+" veículos"}</span></div>
       <p>${escapeHTML(a.organizer)}</p>
       <small>Fonte: ${escapeHTML(sourceLabel(a.source_type))} · Última verificação: ${escapeHTML(a.last_checked_at?new Date(a.last_checked_at).toLocaleString("pt-BR",{timeZone:"America/Sao_Paulo"}):"não informada")}</small><br>
-      <a href="${escapeHTML(a.source_url)}" target="_blank" rel="noopener noreferrer">Consultar fonte do evento ↗</a>
+      <a href="${escapeHTML(a.source_url)}" target="_blank" rel="noopener noreferrer">${a.source_link_type==="event"?"Ver leilão específico ↗":a.source_link_type==="calendar"?"Consultar calendário do leiloeiro ↗":"Consultar fonte do evento ↗"}</a>
       </article>`).join(""):'<div class="empty">Nenhum leilão encontrado na base atual para esses filtros.</div>';
   }catch(e){count.textContent="";freshness.hidden=true;results.textContent="Não foi possível carregar os leilões. Tente novamente.";}
 }
