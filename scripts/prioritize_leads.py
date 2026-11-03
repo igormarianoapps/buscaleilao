@@ -155,15 +155,31 @@ def merge_review_sources(news_items, pncp_items, existing_sources=None, limit=12
             break
     return result
 
+def load_current_candidates(path, now=None, max_age_hours=6):
+    """Do not reuse prior run's PNCP/RSS candidates after a failed refresh.
+
+    This does not validate auction dates. It validates research file freshness.
+    """
+    now=now or datetime.now(timezone.utc)
+    try:
+        payload=json.loads(path.read_text(encoding="utf-8"))
+        stamp=datetime.fromisoformat(str(payload["checked_at"]).replace("Z","+00:00"))
+        if stamp.tzinfo is None or not (timedelta(0) <= now-stamp <= timedelta(hours=max_age_hours)):
+            return [],False
+        candidates=payload.get("candidates",[])
+        if not isinstance(candidates,list):
+            return [],False
+        return candidates,True
+    except (OSError,ValueError,TypeError,KeyError,AttributeError):
+        return [],False
+
 def main():
-    payload = json.loads(INPUT.read_text(encoding="utf-8"))
-    news = prioritize(payload.get("candidates", []))
+    now=datetime.now(timezone.utc)
+    rss_candidates, rss_fresh=load_current_candidates(INPUT,now)
+    news = prioritize(rss_candidates,now)
     pncp_path = ROOT / "app" / "pncp-candidates.json"
     sources_path = ROOT / "app" / "sources.json"
-    try:
-        pncp = json.loads(pncp_path.read_text(encoding="utf-8")).get("candidates",[])
-    except (OSError,ValueError):
-        pncp = []
+    pncp, pncp_fresh=load_current_candidates(pncp_path,now)
     try:
         sources = json.loads(sources_path.read_text(encoding="utf-8"))
     except (OSError,ValueError):
@@ -174,7 +190,8 @@ def main():
     except (OSError,ValueError):
         uncovered=[]
     queue=merge_review_sources(news,pncp,sources,uncovered_states=uncovered)
-    output = {"checked_at":datetime.now(timezone.utc).isoformat(timespec="seconds"),
+    output = {"checked_at":now.isoformat(timespec="seconds"),
+              "rss_fresh":rss_fresh,"pncp_fresh":pncp_fresh,
               "unverified_count":len(queue), "pncp_leads":sum(x["source_kind"]=="pncp" for x in queue),
               "rss_leads":sum(x["source_kind"]=="news_rss" for x in queue),
               "pncp_gap_leads":sum(x.get("coverage_gap",False) for x in queue),
