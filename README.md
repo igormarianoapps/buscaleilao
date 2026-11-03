@@ -1,63 +1,41 @@
-# BuscaLeilão — MVP inicial
+# BuscaLeilão
 
-Agenda nacional de eventos de leilão de veículos (não é catálogo de lotes).
+**Agenda brasileira de leilões de veículos**, não um catálogo de veículos ou lotes. Busca por UF e data, com acesso à fonte responsável pelo anúncio.
 
-## O que já funciona
-- Interface responsiva de busca por UF e data.
-- API FastAPI com endpoint `/api/auctions` e `/api/health`.
-- Persistência local em SQLite para armazenar leilões.
-- Nenhum evento inventado: a base começa vazia.
+Site: https://buscaleilao-nine.vercel.app/
 
-## Rodar localmente
-Requer Python 3.10+.
+## Arquitetura atual
 
-```bash
-python -m venv .venv
-# Windows: .venv\Scripts\activate
-# macOS/Linux: source .venv/bin/activate
-pip install -r requirements.txt
-uvicorn app.main:app --reload
-```
+- `app/index.html` + `app/agenda.mjs`: frontend estático, filtro de UF/data e agrupamento por evento explícito.
+- `app/events.json`: feed **somente com eventos validados** na última coleta.
+- `app/sources.json`: anúncios oficiais curados com evidências específicas de cada evento.
+- `scripts/source_collector.py`: verifica várias fontes com paralelismo limitado, reutiliza URLs repetidas, e isola erros. Para páginas dinâmicas, usa Chromium **sem contornar restrições de acesso**.
+- `scripts/browser_collect.py`: adaptadores experimentais dos calendários públicos Copart e VIP.
+- `scripts/collect.py`: coordena ambos os coletores e publica feed, `app/collection-report.json` e `app/source-health.json`.
+- `scripts/discover.py`: descobre notícias de leilões, incluindo rodízio regional das 27 UFs.
+- `scripts/prioritize_leads.py`: cria `app/review-queue.json` com notícias recentes para verificação. **Nunca publica notícias como leilões.**
+- `.github/workflows/collect.yml`: roda testes Python, atualiza fontes, diagnósticos, descobertas e feed em um único workflow; agenda diária duas vezes.
+- `.github/workflows/test.yml`: testes Python e Node nas alterações de código.
 
-Acesse http://localhost:8000 e a documentação em http://localhost:8000/docs.
+## Regra de confiança
 
-## Próximo passo — prioridade alta
-Criar um pipeline de descoberta e coleta que:
-1. Registre fontes (sites oficiais de prefeituras, DETRANs, diários oficiais e leiloeiros).
-2. Use APIs e HTML quando possível, PDFs com texto extraível quando necessário e browser automatizado apenas para páginas dinâmicas.
-3. Extraia **eventos** e respectivos dados (UF, data, hora, quantidade de veículos se disponível, organizador e link).
-4. Valide contra a fonte original, registre última verificação, deduplique e atualize cancelamentos.
-5. Faça descobertas recorrentes de novas fontes com monitoramento de falhas, respeitando limites e condições de acesso.
+Um evento só entra na agenda se as evidências da fonte corresponderem. Uma fonte que falhar não interrompe as demais, mas o evento que ela não conseguiu confirmar **não permanece como verificado** só porque esteve no feed anterior. Erros HTTP 401/403, bloqueios e problemas HTTPS não são contornados. Horário e quantidade de veículos ficam vazios quando indisponíveis; número de lotes não é automaticamente número de veículos.
 
-**Observação:** este scaffold ainda não realiza coleta na internet. Não afirmar cobertura nacional antes de medir fontes e eventos coletados.
+A presença de eventos em uma UF não significa que todos os leilões daquele estado foram encontrados. Identificadores/links individuais de Copart e VIP ainda requerem melhorias.
 
-## Coleta automática (primeira iteração)
-- Fontes municipais documentadas em `app/sources.json`, com evidências exigidas por fonte.
-- `scripts/collect.py` visita páginas HTML públicas, confere as evidências e publica `app/events.json`.
-- GitHub Actions: `.github/workflows/collect.yml`, duas vezes ao dia ou execução manual em **Actions → Collect verified auctions → Run workflow**.
-- `app/collection-report.json` registra erros e bloqueios. Sites bloqueados não são contornados e eventos sem evidência são ignorados.
-- O frontend consulta `/app/events.json` diretamente; verifique se essa rota é publicada na Vercel.
-- O script ainda **não descobre automaticamente novas fontes**, nem interpreta cancelamentos com precisão; a confirmação de status requer inspeção do edital.
-- O feed começa vazio e só é preenchido após uma execução bem-sucedida do workflow.
+## Operação
 
-## Descoberta automática (experimental)
-`scripts/discover.py` pesquisa RSS público por leilões de veículos. Os links vão para `app/discovery-candidates.json` como **candidatos não verificados** e não aparecem na agenda. Ainda é necessário validar manualmente links, data, quantidade e existência do evento, além de cadastrar coletores por fonte.
+Abra [Collect verified auctions](https://github.com/igormarianoapps/buscaleilao/actions/workflows/collect.yml) e execute o workflow quando necessário. Os seguintes arquivos permitem auditar o resultado:
 
-Não desativar a verificação de SSL para contornar erros de certificado. O site de Lorena permanece como falha reportada até ter uma fonte acessível e confiável.
+- `app/collection-report.json`: quantidade total, eventos únicos, UFs e falhas.
+- `app/source-health.json`: histórico de verificação por fonte, último sucesso e erros consecutivos.
+- `app/browser-diagnostics.json`: acessibilidade e datas visualizadas nos sites de plataforma.
+- `app/review-queue.json`: fila de pesquisa, **não** eventos confirmados.
 
-## Cobertura de leiloeiros privados
-`scripts/platforms.py` inclui adaptadores iniciais para calendários públicos de **Copart** e **VIP Leilões**. Eles extraem eventos, datas e estados, sem consultar lotes individuais. Quantidades de veículos permanecem não informadas quando a fonte divulga apenas lotes. Para leilões multiestaduais, um mesmo evento é indexado em cada UF mencionada. Falhas de acesso aparecem no relatório; não há garantia de cobertura integral ou validação em produção até a execução do workflow.
+Os testes automatizados precisam ser aprovados antes da publicação do feed na rotina de coleta.
 
-A meta é incluir **grandes e pequenos leiloeiros, instituições e órgãos públicos**. A cobertura nacional completa depende do cadastro contínuo de fontes e de validadores confiáveis.
+## Próximas metas
 
-## Diagnóstico de acesso com navegador
-O workflow agora executa `scripts/browser_probe.py` usando Chromium/Playwright, guardando `app/browser-diagnostics.json` (URLs finais, códigos HTTP, quantidade de datas/tabelas e amostras públicas de texto). Esse relatório **não incorpora eventos automaticamente**: permite desenvolver adaptadores com base no HTML realmente renderizado e identificar bloqueios/loops sem contorná-los.
+Consultar o [ROADMAP.md](ROADMAP.md) atualizado: melhorar links e identidade dos eventos, converter mais anúncios em eventos confirmados, adicionar coletores independentes de outros leiloeiros e medir cobertura nacional.
 
-## Coletores Playwright (versão experimental)
-O pipeline principal usa agora `scripts/browser_collect.py` para extrair calendários públicos da Copart e VIP em Chromium. Eventos são filtrados por data futura e UF identificada; quantidades de lotes não são tratadas como quantidades de veículos. O workflow precisa concluir para validar quantos eventos foram coletados. Não há garantia de cobertura total: datas/estados ou identificadores ausentes fazem o evento ser descartado.
-
-## Agenda de eventos únicos
-O frontend agrupa registros da VIP que compartilham dia, horário e categoria, mas são indexados por várias UFs; permite filtrar por qualquer UF incluída. O arquivo bruto `app/events.json` pode ter mais linhas que o número mostrado no app porque inclui indexação por UF. **Limitação:** se dois eventos distintos tiverem a mesma categoria, data e horário na VIP, o agrupamento pode uni-los; a correção definitiva depende da captura do identificador único/link específico de cada evento.
-
-## Plano de ação
-Acompanhe o checklist versionado em [ROADMAP.md](ROADMAP.md). Nesta etapa, agrupamos eventos apenas por identidade explícita e ampliamos fontes governamentais e consultas nacionais. Validar o próximo workflow antes de considerar a execução concluída.
+A aplicação FastAPI/SQLite em `app/main.py` é um protótipo separado: o frontend publicado utiliza o feed estático, não a base SQLite.
