@@ -15,7 +15,7 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 - [ ] **P0.3 — Qualidade dos eventos:** auditar manualmente pelo menos 20 eventos de organizadores e UFs variados; 100% devem ter data futura verificável, UF correta, organizador claro e URL de origem segura. Deduplicação por evento; não inventar hora/veículos.
 - [ ] **P0.4 — Links úteis:** links individuais quando comprovados; onde houver apenas agenda, rotular como agenda e testar se o destino é útil. Não tratar endereço genérico como link do evento.
 - [ ] **P0.5 — Auditoria da experiência:** desktop/mobile, filtros, timezone de Brasília, estados sem resultados, aviso de feed antigo, links externos, acessibilidade básica e ausência de falhas de interface.
-- [ ] **P0.6 — Confiabilidade de publicação:** uma falha na etapa experimental PNCP/RSS não pode impedir a publicação de uma coleta validada; candidatos devem continuar separados de `app/events.json`.
+- [x] **P0.6 — Confiabilidade de publicação (código e testes):** o feed verificado é validado e publicado antes de PNCP/RSS; falhas da descoberta não bloqueiam o feed. **Validação ponta a ponta pendente em P0.1.**
 - [ ] **P0.7 — Lançamento controlado:** testar com 5–10 pessoas e registrar erros de evento, buscas sem resultado, links quebrados e compreensão da proposta antes de abrir divulgação ampla.
 
 ### P1 — Melhorias após o MVP inicial
@@ -38,6 +38,19 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 4. **Piloto com usuários (P0.7)** e decisão de lançamento baseada nos critérios, não em quantidade arbitrária de fontes.
 
 **Definição de pronto:** todos os P0 acima concluídos. P1 não bloqueia o MVP.
+
+## Execução P0 — Etapa 1: estabilização do MVP (03/11/2026)
+
+- [x] Separar publicação do feed validado das tarefas experimentais PNCP/RSS, publicando primeiro `events.json`, `collection-report.json` e `source-health.json`.
+- [x] Tornar diagnóstico, RSS, PNCP e priorização não bloqueantes; guardar seus relatórios em commit separado, apenas quando os arquivos existem.
+- [x] Criar `scripts/validate_feed.py` para impedir publicação de feed vazio, eventos vencidos, UFs inválidas, links não HTTPS, IDs duplicados e divergência entre feed e relatório.
+- [x] Adicionar testes automatizados do gate e da ordem do workflow de publicação; testes GitHub Actions aprovados.
+- [x] Executar testes quando `.github/workflows/collect.yml` mudar.
+- [ ] **P0.1:** obter coleta ponta a ponta bem-sucedida com o workflow novo, incluindo os relatórios do PNCP.
+- [ ] **P0.2:** registrar três coletas completas consecutivas bem-sucedidas e atualizações do feed em até 24h.
+- [ ] Em seguida iniciar auditoria de eventos/links (P0.3/P0.4); não iniciar novos coletores antes disso.
+
+**Referência permanente:** a sequência de entrega do MVP continua P0.1/P0.2/P0.6 → P0.3/P0.4 → P0.5 → P0.7. Novas funcionalidades ficam em P1.
 
 ## Fase 1 — Motor de coleta e qualidade
 
