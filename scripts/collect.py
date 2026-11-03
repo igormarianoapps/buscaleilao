@@ -145,7 +145,7 @@ def main():
         url = e.get("source_url") or ""
         parsed = urlsplit(url)
         host = (parsed.hostname or "").lower()
-        if "freitasleiloeiro.com.br" in host and parsed.path.lower() == "/leiloes/lotes":
+        if host in ("freitasleiloeiro.com.br", "www.freitasleiloeiro.com.br") and parsed.path.lower() == "/leiloes/lotes":
             auction_id = parse_qs(parsed.query).get("leilaoId", [""])[0]
             if auction_id.isdigit():
                 return ("freitas", auction_id, e.get("auction_date"))
