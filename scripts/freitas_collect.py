@@ -25,7 +25,7 @@ def parse_detail(text, url, today=None):
     identifier = official_id(url)
     if not identifier: return None
     today = today or date.today()
-    head = text[:2300]
+    head = text[:8000]
     if not re.search(r"ve[ií]culos|caminh[oõ]es|motocicletas|motos", head, re.I):
         return None
     closing = re.search(
@@ -39,9 +39,9 @@ def parse_detail(text, url, today=None):
         if when < today or hh > 23 or mm > 59: return None
     except ValueError:
         return None
-    location = re.search(r"Local\s+do\s+leil[aã]o\s*:?\s*([^\n]{0,240})", head,re.I)
+    location = re.search(r"Local\s+do\s+leil[aã]o\s*:?\s*(.{0,240})", head,re.I|re.S)
     if not location: return None
-    address = location.group(1).strip()
+    address = location.group(1).split("Condições")[0].split("\n\n")[0].strip()
     state = re.search(r"(?:/|-)\s*([A-Z]{2})\b",address)
     if not state: return None
     uf = state.group(1)
