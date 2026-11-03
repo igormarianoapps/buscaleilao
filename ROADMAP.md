@@ -46,6 +46,8 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 - [x] Implementar um adaptador independente de calendário da Freitas Leiloeiro, validando data/UF na página individual; aguarda execução real
 - [x] Adicionar páginas oficiais específicas da Freitas (dois eventos) e Superbid (um evento), sujeitas à verificação do coletor
 - [ ] Criar adaptadores próprios para outros leiloeiros com calendário público verificável
+- [x] Priorizar notícias com data explícita futura no título e excluir notícias com data de leilão comprovadamente passada (triagem, sem publicação automática)
+- [x] Testar datas de títulos (28/10/2026; “próximo dia 28”; 12 de novembro de 2026) e manter datas apenas como pistas não verificadas — workflow 41711104446 aprovado
 - [ ] Automatizar conversão de notícias em candidaturas com data, UF, documento e URL original validados
 - [x] Incluir relatório de UFs sem eventos e percentual de presença, sem confundir isso com cobertura de mercado
 - [ ] Medir cobertura de leiloeiros/prefeituras por UF; não confundir presença em UF com cobertura completa
@@ -61,6 +63,13 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 - Fontes oficiais: 13/20 validadas; 7 falhas (Curitiba 403, duas PRF-SP timeout, PRF-ES 429, Aracaju sem evidências, Pedranópolis 403, Superbid 403).
 - `direct_event_links=10`, `calendar_links=67`, `curated_source_links=14` no relatório.
 - **Após essa coleta:** busca de cartões VIP ampliada a folhas com data ou rótulo em elementos separados; diagnóstico de estrutura DOM `app/vip-dom-diagnostics.json` quando nenhum cartão for localizado; HTTP 429 passa a aguardar próxima coleta sem nova tentativa via navegador. Alterações aguardam execução.
+
+## Atualização de triagem — 03/11/2026
+
+- Última coleta completa ainda: **39 eventos únicos em 18 UFs**; o novo arquivo `app/vip-dom-diagnostics.json` ainda não foi produzido em coleta real.
+- O pipeline de descoberta passa a despriorizar notícias de leilões já encerrados quando o título identifica data passada, como o caso “próximo dia 28” publicado em outubro.
+- Datas extraídas de manchetes são **somente pistas de revisão** (`date_hint_status=headline_only_unverified`), nunca publicadas diretamente no feed.
+- Testes Python da nova triagem concluíram com sucesso no GitHub Actions: execução `41711104446`.
 
 ## Próximas entregas
 
