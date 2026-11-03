@@ -52,6 +52,18 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 
 **Referência permanente:** a sequência de entrega do MVP continua P0.1/P0.2/P0.6 → P0.3/P0.4 → P0.5 → P0.7. Novas funcionalidades ficam em P1.
 
+## Execução P0.1 — diagnóstico por workflow (03/11/2026)
+
+- [x] Criar `scripts/mvp_run_summary.py`: resumo do GitHub Actions com contagem de eventos, UFs, fontes aprovadas/com falha, links diretos, PNCP, fila de revisão e diagnóstico VIP.
+- [x] Distinguir arquivos gerados na coleta atual de relatórios antigos (janela de 35 minutos); **dados antigos não contam como nova validação**.
+- [x] Executar resumo mesmo quando houver falha, para facilitar investigação do P0.1.
+- [x] Testes de atualização e antiguidade do relatório aprovados no GitHub Actions: execução **41714263734**.
+- [ ] **P0.1:** ainda falta execução completa de `Collect verified auctions` após estas alterações; não marcar como concluído apenas com testes de código.
+- [ ] **P0.2:** 0 de 3 coletas completas consecutivas do workflow atual registradas. Contar somente execuções completas com conclusão `success`.
+- [ ] Verificar após a próxima coleta a recuperação de Aracaju/Curitiba e a geração de candidatos PNCP, sem transformá-los automaticamente em eventos.
+
+**Regra operacional:** continuar apenas com P0.1/P0.2 antes de iniciar P0.3/P0.4, mantendo o checklist MVP como fonte de verdade.
+
 ## Fase 1 — Motor de coleta e qualidade
 
 - [x] Coletores independentes: erro de uma fonte não interrompe a verificação das outras
