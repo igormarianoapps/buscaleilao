@@ -251,5 +251,41 @@
       "9 de novembro",
       "656 carros e 1533 motocicletas"
     ]
+  },
+  {
+    "id": "serranopolis-iguacu-pr-01-2026",
+    "title": "Leilão eletrônico 1/2026 — veículos e bens municipais",
+    "state": "PR",
+    "city": "Serranópolis do Iguaçu",
+    "auction_date": "2026-11-12",
+    "auction_time": "08:30",
+    "vehicle_count": null,
+    "organizer": "Prefeitura de Serranópolis do Iguaçu",
+    "source_type": "municipal",
+    "source_url": "https://serranopolis.pr.gov.br/noticias/6113-governo-municipal-de-serranopolis-do-iguacu-realiza-leilao-eletronico-de-veiculos-maquinas-e-outros-bens",
+    "evidence": [
+      "12 de novembro de 2026",
+      "Leilão Eletrônico nº 1/2026",
+      "8h30",
+      "carros, vans, caminhões"
+    ]
+  },
+  {
+    "id": "pedranopolis-sp-006-2026",
+    "title": "Leilão público online 006/2026 — veículos municipais",
+    "state": "SP",
+    "city": "Pedranópolis",
+    "auction_date": "2026-11-04",
+    "auction_time": "09:00",
+    "vehicle_count": null,
+    "organizer": "Prefeitura de Pedranópolis",
+    "source_type": "municipal",
+    "source_url": "https://www.pedranopolis.sp.gov.br/paginas/portal/licitacoes/licitacoes?exercicio=2026&modalidade=8",
+    "evidence": [
+      "Leilão 006/2026",
+      "04 de novembro de 2026",
+      "09:00 horas",
+      "VEÍCULOS"
+    ]
   }
 ]
