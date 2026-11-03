@@ -29,27 +29,27 @@ Atualizado: 03/11/2026. Status abaixo indica código publicado, **não** valida�
 - [x] Melhorar triagem de RSS: excluir notícias com mais de 120 dias e priorizar somente domínios públicos reais.
 - [x] Cadastrar e confirmar no coletor o edital de Campina Grande/PB e três sessões da Semob/Cuiabá-MT (03/11/2026).
 - [x] Criar fila de revisão `app/review-queue.json`, priorizando notícias recentes e fontes governamentais, sem publicá-las como eventos.
-- [x] Cadastrar o leilão municipal de Aracaju/SE (12/11), pendente de validação automática.
+- [x] Cadastrar o leilão municipal de Aracaju/SE (12/11).
+- [ ] Corrigir divergência de evidências de Aracaju (não foi validado em 03/11).
 - [ ] Converter candidatos RSS em eventos a partir de edital/data/UF verificados em escala.
 - [ ] Adicionar conectores confiáveis de outros grandes leiloeiros e órgãos públicos.
 - [ ] Expandir para municípios menores e monitorar cobertura das 27 UFs.
 - [ ] Medir percentual de fontes acompanhadas; não prometer 100% de cobertura.
 
-## Última execução verificada — 03/11/2026, 15h08 BRT
+## Última execução verificada — 03/11/2026, 15h14 BRT
 
-- 62 registros estaduais; **31 eventos únicos**, distribuídos por 18 UFs.
-- Campina Grande/PB e três sessões de Cuiabá/MT validadas.
-- 125 notícias candidatas (sem publicação automática); 0 erros RSS.
-- Curitiba: HTTP 403 também com navegador; não publicada.
-- Copart e VIP acessíveis.
+- **30 eventos únicos**, 61 registros, 18 UFs.
+- 92 descobertas RSS; 52 pistas priorizadas para revisão; nenhuma publicada automaticamente.
+- Falhas: Curitiba (HTTP 403), DETRAN-BA (timeout), Aracaju (evidências ausentes).
+- Copart e VIP mantiveram coleta de eventos.
 
 ## Próxima entrega
 
-1. Rodar os workflows de testes e coleta para validar **Aracaju/SE** e gerar `app/review-queue.json`.
-2. Avaliar as primeiras descobertas priorizadas da fila, buscando edital oficial e data futura.
-3. Resolver a fonte de Curitiba sem desativar TLS nem contornar bloqueios HTTP.
-4. Melhorar a identificação e links individuais dos leilões Copart/VIP.
+1. Revisar a página de Aracaju e suas evidências antes de qualquer publicação.
+2. Melhorar tolerância a indisponibilidade temporária do DETRAN-BA sem manter eventos não confirmados.
+3. Buscar fonte oficial alternativa acessível de Curitiba sem contornar bloqueios.
+4. Validar editais e datas futuras das 52 pistas priorizadas.
 
-**Último resultado confirmado:** 31 eventos únicos, 18 UFs, 125 candidatos RSS. Os novos commits ainda não foram validados pelo workflow.
+**Nota:** a execução do workflow de testes não foi confirmada separadamente; os números acima são da coleta.
 
 Critério de conclusão: só publicar eventos com data e local confirmado por fonte acessível.
