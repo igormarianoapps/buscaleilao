@@ -74,9 +74,9 @@
     "vehicle_count": 33,
     "organizer": "Prefeitura de Curitiba",
     "source_type": "municipal",
-    "source_url": "https://transito.curitiba.pr.gov.br/patio/leilao-eletronico-de-veiculos/52",
+    "source_url": "https://guia.curitiba.pr.gov.br/evento/leilao-eletronico-de-veiculos-online-vip-leiloes/11812",
     "evidence": [
-      "SMDT Nº 17/2026",
+      "SMDT nº 17/2026",
       "11/11/2026",
       "Itens nº 1 ao nº 33"
     ]
@@ -148,6 +148,74 @@
       "04/11/2026",
       "10h",
       "veículos conservados e sucatas"
+    ]
+  },
+  {
+    "id": "campina-grande-pb-001-2026",
+    "title": "Leilão municipal 001/2026 — veículos, motocicletas, vans e sucatas",
+    "state": "PB",
+    "city": "Campina Grande",
+    "auction_date": "2026-11-04",
+    "auction_time": "10:00",
+    "vehicle_count": null,
+    "organizer": "Prefeitura de Campina Grande",
+    "source_type": "municipal",
+    "source_url": "https://www.marcotulioleiloes.com.br/leiloes/355",
+    "evidence": [
+      "LEILÃO 001/2026 DA PREFEITURA MUNICIPAL DE CAMPINA GRANDE",
+      "04/11/2026",
+      "10:00"
+    ]
+  },
+  {
+    "id": "cuiaba-semob-4-2026-11-04",
+    "title": "4º leilão da Semob — segunda sessão",
+    "state": "MT",
+    "city": "Cuiabá",
+    "auction_date": "2026-11-04",
+    "auction_time": "09:00",
+    "vehicle_count": null,
+    "organizer": "Prefeitura de Cuiabá — Semob",
+    "source_type": "municipal",
+    "source_url": "https://www.cuiaba.mt.gov.br/noticias/semob-realiza-o-4o-leilao-do-ano-com-1-065-veiculos-disponiveis",
+    "evidence": [
+      "4º leilão",
+      "04,",
+      "9h"
+    ]
+  },
+  {
+    "id": "cuiaba-semob-4-2026-11-05",
+    "title": "4º leilão da Semob — terceira sessão",
+    "state": "MT",
+    "city": "Cuiabá",
+    "auction_date": "2026-11-05",
+    "auction_time": "09:00",
+    "vehicle_count": null,
+    "organizer": "Prefeitura de Cuiabá — Semob",
+    "source_type": "municipal",
+    "source_url": "https://www.cuiaba.mt.gov.br/noticias/semob-realiza-o-4o-leilao-do-ano-com-1-065-veiculos-disponiveis",
+    "evidence": [
+      "4º leilão",
+      "Dia 5",
+      "9h"
+    ]
+  },
+  {
+    "id": "cuiaba-semob-4-2026-11-11",
+    "title": "4º leilão da Semob — sessão de lotes não vendidos",
+    "state": "MT",
+    "city": "Cuiabá",
+    "auction_date": "2026-11-11",
+    "auction_time": "09:00",
+    "vehicle_count": null,
+    "organizer": "Prefeitura de Cuiabá — Semob",
+    "source_type": "municipal",
+    "source_url": "https://www.cuiaba.mt.gov.br/noticias/semob-realiza-o-4o-leilao-do-ano-com-1-065-veiculos-disponiveis",
+    "evidence": [
+      "4º leilão",
+      "dia 11",
+      "9h"
     ]
   }
 ]
