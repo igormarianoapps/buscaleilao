@@ -6,16 +6,16 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 
 **Produto:** agenda nacional de **eventos de leilão de veículos**, não catálogo de lotes. Público consegue filtrar por UF e data e consultar a fonte. O produto não promete listar todos os leilões do Brasil.
 
-**Estado em 03/11/2026:** pré-MVP funcional. Última coleta completa confirmada: 39 eventos únicos em 18 UFs, 13/20 fontes curadas verificadas. Testes recentes aprovados, mas nova arquitetura de descoberta PNCP, diagnóstico VIP e fontes recuperadas de Aracaju/Curitiba ainda aguardam execução completa. **Não contabilizar candidatos como eventos.**
+**Estado em 03/11/2026:** pré-MVP funcional. Coleta completa #41715100215 aprovada às 17h43 BRT: **48 eventos únicos, 111 registros, 19 UFs, 19/22 fontes curadas verificadas**, Copart 12, VIP 16, Freitas 3, Curitiba 3. PNCP descobriu 25 candidatos ainda não publicados. **P0.1 concluído; P0.2 em 1/3.**
 
 ### P0 — Bloqueadores para lançamento público
 
-- [ ] **P0.1 — Uma execução ponta a ponta** do workflow atual deve passar por testes, Copart, VIP/Freitas, PNCP, fila de revisão e publicação. Conferir todos os arquivos produzidos e logs, especialmente `app/pncp-candidates.json` e `app/vip-dom-diagnostics.json` (quando houver fallback).
+- [x] **P0.1 — Uma execução ponta a ponta** do workflow atual deve passar por testes, Copart, VIP/Freitas, PNCP, fila de revisão e publicação. Conferir todos os arquivos produzidos e logs, especialmente `app/pncp-candidates.json` e `app/vip-dom-diagnostics.json` (quando houver fallback).
 - [ ] **P0.2 — Estabilidade:** observar 3 coletas completas consecutivas com sucesso do workflow e feed atualizado dentro de 24h; a falha de uma fonte não pode bloquear o feed. Registrar taxa de fontes recuperadas e motivos de falha.
 - [ ] **P0.3 — Qualidade dos eventos:** auditar manualmente pelo menos 20 eventos de organizadores e UFs variados; 100% devem ter data futura verificável, UF correta, organizador claro e URL de origem segura. Deduplicação por evento; não inventar hora/veículos.
 - [ ] **P0.4 — Links úteis:** links individuais quando comprovados; onde houver apenas agenda, rotular como agenda e testar se o destino é útil. Não tratar endereço genérico como link do evento.
 - [ ] **P0.5 — Auditoria da experiência:** desktop/mobile, filtros, timezone de Brasília, estados sem resultados, aviso de feed antigo, links externos, acessibilidade básica e ausência de falhas de interface.
-- [x] **P0.6 — Confiabilidade de publicação (código e testes):** o feed verificado é validado e publicado antes de PNCP/RSS; falhas da descoberta não bloqueiam o feed. **Validação ponta a ponta pendente em P0.1.**
+- [x] **P0.6 — Confiabilidade de publicação (código e testes):** o feed verificado é validado e publicado antes de PNCP/RSS; falhas da descoberta não bloqueiam o feed. **Validação ponta a ponta aprovada na execução #41715100215.**
 - [ ] **P0.7 — Lançamento controlado:** testar com 5–10 pessoas e registrar erros de evento, buscas sem resultado, links quebrados e compreensão da proposta antes de abrir divulgação ampla.
 
 ### P1 — Melhorias após o MVP inicial
@@ -46,8 +46,8 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 - [x] Criar `scripts/validate_feed.py` para impedir publicação de feed vazio, eventos vencidos, UFs inválidas, links não HTTPS, IDs duplicados e divergência entre feed e relatório.
 - [x] Adicionar testes automatizados do gate e da ordem do workflow de publicação; testes GitHub Actions aprovados.
 - [x] Executar testes quando `.github/workflows/collect.yml` mudar.
-- [ ] **P0.1:** obter coleta ponta a ponta bem-sucedida com o workflow novo, incluindo os relatórios do PNCP.
-- [ ] **P0.2:** registrar três coletas completas consecutivas bem-sucedidas e atualizações do feed em até 24h.
+- [x] **P0.1:** coleta completa validada na execução #41715100215, incluindo PNCP, revisão, publicação e resumo.
+- [ ] **P0.2:** 1/3 coletas completas consecutivas bem-sucedidas; faltam duas execuções posteriores com sucesso e feed atualizado em até 24h.
 - [ ] Em seguida iniciar auditoria de eventos/links (P0.3/P0.4); não iniciar novos coletores antes disso.
 
 **Referência permanente:** a sequência de entrega do MVP continua P0.1/P0.2/P0.6 → P0.3/P0.4 → P0.5 → P0.7. Novas funcionalidades ficam em P1.
@@ -58,8 +58,8 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 - [x] Distinguir arquivos gerados na coleta atual de relatórios antigos (janela de 35 minutos); **dados antigos não contam como nova validação**.
 - [x] Executar resumo mesmo quando houver falha, para facilitar investigação do P0.1.
 - [x] Testes de atualização e antiguidade do relatório aprovados no GitHub Actions: execução **41714263734**.
-- [ ] **P0.1:** ainda falta execução completa de `Collect verified auctions` após estas alterações; não marcar como concluído apenas com testes de código.
-- [ ] **P0.2:** 0 de 3 coletas completas consecutivas do workflow atual registradas. Contar somente execuções completas com conclusão `success`.
+- [x] **P0.1:** execução completa de `Collect verified auctions` confirmada (#41715100215), todas as etapas concluídas com sucesso.
+- [ ] **P0.2:** 1/3 coletas completas consecutivas aprovadas (#41715100215). Contar apenas workflow completo, não testes isolados.
 - [ ] Verificar após a próxima coleta a recuperação de Aracaju/Curitiba e a geração de candidatos PNCP, sem transformá-los automaticamente em eventos.
 
 **Regra operacional:** continuar apenas com P0.1/P0.2 antes de iniciar P0.3/P0.4, mantendo o checklist MVP como fonte de verdade.
@@ -70,10 +70,22 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 - [x] Acrescentar `rss_fresh` e `pncp_fresh` ao resumo da fila para identificar se a pesquisa foi atualizada.
 - [x] Impedir que o resumo operacional de uma execução falha trate um `collection-report.json` antigo como evidência nova para P0.1/P0.2.
 - [x] Testar descarte de pesquisa antiga e relatório de feed antigo; suíte no GitHub Actions.
-- [ ] **P0.1:** confirmar próxima execução ponta a ponta de `Collect verified auctions`, incluindo publicação e diagnóstico dos candidatos atuais.
-- [ ] **P0.2:** 0/3 execuções completas consecutivas no workflow novo. Testes de adaptadores não contam para a meta.
+- [x] **P0.1:** execução ponta a ponta confirmada (#41715100215); todos os passos concluídos e arquivos publicados.
+- [ ] **P0.2:** 1/3 execuções completas consecutivas (#41715100215); testes de adaptadores não contam.
 
 **Prioridade mantida:** não adicionar fontes ou funcionalidades até validar o pipeline completo (P0.1/P0.2); então auditar eventos/links (P0.3/P0.4).
+
+## P0.1 validado — execução completa de 03/11/2026, 17h43 BRT
+
+- [x] Workflow **41715100215** concluído com sucesso, incluindo testes, coleta, validação de integridade, publicação do feed, RSS, PNCP, fila de revisão e resumo operacional.
+- [x] **48 eventos únicos**, 111 registros por UF, **19/27 UFs**, Copart 12 eventos, VIP 16, Freitas 3, Curitiba 3.
+- [x] **19 de 22 fontes curadas** verificadas; bloqueadas: Aracaju (403), Pedranópolis (403), Superbid (403).
+- [x] VIP: **24 cartões DOM**, modo `complete_cards`, 79 registros por estado. Sem diagnóstico de erro porque não houve fallback. Links individuais ainda não confirmados.
+- [x] PNCP: **25 candidatos** em `app/pncp-candidates.json`, sem publicação automática; fila de revisão 105 pistas (25 PNCP + 80 RSS).
+- [x] Dados publicados com sucesso. P0.1 passa; **P0.2 = 1/3**, aguardando duas coletas completas posteriores.
+- [x] Ajustar após análise os pedidos PNCP para **não insistir após HTTP 429** (4 erros de limite registrados na primeira coleta; alterações submetidas a testes automatizados).
+- [ ] Confirmar segunda e terceira coletas completas e verificar atualização do feed em até 24 horas entre execuções.
+- [ ] Após P0.2, seguir para auditoria de eventos e links (P0.3/P0.4), sem adicionar novos coletores.
 
 ## Fase 1 — Motor de coleta e qualidade
 
