@@ -7,10 +7,13 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 - [x] Coletores independentes: erro de uma fonte não interrompe a verificação das outras
 - [x] Verificação paralela limitada para anúncios oficiais
 - [x] Uma consulta HTTP por URL: páginas compartilhadas são reaproveitadas
+- [x] Preservar evidências de HTML estático e navegador em fontes com múltiplas sessões; teste de regressão incluído
 - [x] Fallback Chromium para erro de rede ou texto dinâmico, sem desativar HTTPS nem insistir em HTTP 403/401
 - [x] Histórico de saúde por fonte: último sucesso, erro e falhas consecutivas em `app/source-health.json`
 - [x] Não publicar anúncio sem as evidências configuradas; não manter como confirmado um evento indisponível
-- [x] Testes unitários de isolamento, cache de páginas, erro 403, fallback e cancelamento
+- [x] Testes unitários de isolamento, cache de páginas, erro 403, fallback, cancelamento e evidência compartilhada
+- [x] Avisar na interface quando a última coleta passou de 36h ou não tem data confiável
+- [x] Exibir tipo de fonte correto: municipal, estadual, federal ou privada
 - [x] Executar testes Python no workflow de coleta **antes** de atualizar o feed
 - [x] Deduplicação de registros multiestaduais somente com mesmo `event_id`
 - [ ] Validar arquitetura nova e coletor Freitas em execução completa do GitHub Actions
@@ -37,6 +40,8 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 ## Marco de validação
 
 **Última coleta confirmada, antes desta entrega:** 03/11/2026 às 15h14 BRT — 30 eventos únicos, 18 UFs, 52 notícias na fila de revisão. O feed muda a cada execução e datas passadas saem naturalmente.
+
+**Situação na última consulta ao repositório (03/11/2026, após 16h BRT):** ainda não havia novo relatório com a arquitetura atual, e `app/source-health.json` ainda não existia. Nenhum resultado novo foi dado como validado.
 
 **Próxima verificação conjunta:** a ação `Collect verified auctions` executará testes e produzirá feed, relatório e `source-health.json`. Conferir também links específicos de Freitas/Superbid, resultados do novo coletor Freitas, Serranópolis do Iguaçu e Pedranópolis, estabilidade das outras fontes e ausência de publicações sem evidência. Não depende de execução manual após cada commit.
 
