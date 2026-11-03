@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {groupAuctions,filterAuctions} from '../app/agenda.mjs';
+import {groupAuctions,filterAuctions,feedFreshness,sourceLabel} from '../app/agenda.mjs';
 
 const make = (id,state,overrides={}) => ({
   id, state, title:'Leilão', auction_date:'2099-11-03',
@@ -43,4 +43,17 @@ test('date and status filters exclude expired and cancelled',()=>{
 test('similar VIP times without matching identity remain distinct',()=>{
  const items=[make('different-a','GO'),make('different-b','GO')];
  assert.equal(groupAuctions(items).length,2);
+});
+
+test('old collection is clearly marked stale',()=>{
+ const now=Date.parse('2026-11-05T12:00:00Z');
+ assert.equal(feedFreshness('2026-11-03T18:14:35Z',now).status,'stale');
+ assert.equal(feedFreshness('2026-11-05T08:00:00Z',now).status,'fresh');
+ assert.equal(feedFreshness(null,now).status,'unknown');
+});
+test('source provenance is displayed correctly',()=>{
+ assert.equal(sourceLabel('state'),'Órgão estadual');
+ assert.equal(sourceLabel('federal'),'Órgão federal');
+ assert.equal(sourceLabel('municipal'),'Prefeitura / órgão municipal');
+ assert.equal(sourceLabel('private'),'Plataforma / leiloeiro privado');
 });
