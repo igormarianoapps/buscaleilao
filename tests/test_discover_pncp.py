@@ -31,7 +31,15 @@ class PNCPTests(unittest.TestCase):
         self.assertIsNone(candidate(row(objetoCompra="Alienação de imóveis"),now))
         self.assertIsNone(candidate(row(situacaoCompraNome="Cancelada"),now))
         self.assertIsNone(candidate(row(dataEncerramentoProposta="2026-10-19T10:00:00"),now))
-        self.assertIsNone(candidate(row(dataEncerramentoProposta=None),now))
+        self.assertIsNone(candidate(row(dataEncerramentoProposta="2026-10-19T10:00:00"),now))
+
+    def test_undated_pncp_auction_is_research_lead(self):
+        item=candidate(row(dataEncerramentoProposta=None),date(2026,11,3))
+        self.assertIsNotNone(item)
+        self.assertIsNone(item["date_hint"])
+        self.assertEqual(item["date_hint_status"],"missing_auction_date")
+        self.assertEqual(item["review_status"],"needs_edital_confirmation")
+        self.assertNotIn("auction_date",item)
 
     def test_malformed_pncp_control_and_missing_uf_rejected(self):
         self.assertIsNone(official_record_url({"numeroControlePNCP":"123-invalid"}))
@@ -48,7 +56,7 @@ class PNCPTests(unittest.TestCase):
         items,errors,count=discover(
             datetime(2026,11,3,tzinfo=timezone.utc),fetch=fake_fetch)
         self.assertEqual(errors,[])
-        self.assertEqual(count,2)
+        self.assertEqual(count,10)
         self.assertEqual(len(items),2)
         self.assertTrue(any("codigoModalidadeContratacao=1" in u for u in urls))
         self.assertTrue(any("codigoModalidadeContratacao=13" in u for u in urls))
@@ -58,6 +66,6 @@ class PNCPTests(unittest.TestCase):
         items,errors,_=discover(
             datetime(2026,11,3,tzinfo=timezone.utc),fetch=unavailable)
         self.assertEqual(items,[])
-        self.assertEqual(len(errors),2)
+        self.assertEqual(len(errors),10)
 
 if __name__=="__main__":unittest.main()
