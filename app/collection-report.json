@@ -1,12 +1,13 @@
 {
-  "checked_at": "2026-11-03T17:53:20+00:00",
-  "verified": 56,
-  "unique_events": 25,
+  "checked_at": "2026-11-03T18:01:56+00:00",
+  "verified": 58,
+  "unique_events": 27,
   "states_with_events": [
     "AM",
     "BA",
     "CE",
     "DF",
+    "ES",
     "GO",
     "MA",
     "MG",
@@ -23,9 +24,10 @@
   ],
   "organizers": {
     "Copart": 8,
-    "Polícia Rodoviária Federal": 2,
-    "Prefeitura de Curitiba": 1,
+    "DETRAN Bahia": 1,
+    "Polícia Rodoviária Federal": 3,
     "Prefeitura de Fernando Prestes": 1,
+    "Prefeitura de Lorena": 1,
     "Prefeitura de Mogi das Cruzes": 1,
     "Prefeitura de Vieiras": 1,
     "VIP Leilões": 11
@@ -33,8 +35,9 @@
   "platform_events": 50,
   "failed": [
     {
-      "id": "lorena-2026-11-10",
-      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>"
+      "id": "curitiba-smdt-17-2026",
+      "error": "<urlopen error timed out>",
+      "browser_error": "browser retry: Page.goto: Timeout 20000ms exceeded."
     }
   ]
 }
