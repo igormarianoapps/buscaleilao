@@ -287,5 +287,39 @@
       "09:00 horas",
       "VEÍCULOS"
     ]
+  },
+  {
+    "id": "freitas-8152-2026-11-04",
+    "title": "Leilão Freitas — veículos, motos e caminhões (pátio Santa Bárbara)",
+    "state": "SP",
+    "city": "Santa Bárbara d'Oeste",
+    "auction_date": "2026-11-04",
+    "auction_time": "10:00",
+    "vehicle_count": null,
+    "organizer": "Freitas Leiloeiro",
+    "source_type": "private",
+    "source_url": "https://www.freitasleiloeiro.com.br/Leiloes/Lotes?leilaoId=8152",
+    "evidence": [
+      "226 LOTES VEÍCULOS",
+      "04/11/2026",
+      "STA BÁRBARA"
+    ]
+  },
+  {
+    "id": "freitas-8158-2026-11-06",
+    "title": "Leilão Freitas — veículos, motos e caminhões (pátio Utinga)",
+    "state": "SP",
+    "city": "Santo André",
+    "auction_date": "2026-11-06",
+    "auction_time": "10:00",
+    "vehicle_count": null,
+    "organizer": "Freitas Leiloeiro",
+    "source_type": "private",
+    "source_url": "https://www.freitasleiloeiro.com.br/Leiloes/Lotes?leilaoId=8158",
+    "evidence": [
+      "VEÍCULOS - CAMINHÕES - MOTOS",
+      "06/11/2026",
+      "UTINGA"
+    ]
   }
 ]
