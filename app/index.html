@@ -10,7 +10,7 @@ h1{font-size:clamp(30px,5vw,48px);letter-spacing:-1.5px;margin:0 0 14px}p{color:
 label{font-size:13px;font-weight:600;display:grid;gap:7px;flex:1;min-width:170px}
 input,select,button{padding:13px;border-radius:9px;border:1px solid #cfd7e3;font:inherit;background:white}
 button{background:#1749b3;color:white;border:0;cursor:pointer;font-weight:700;align-self:end}
-.topline{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.freshness{margin:0 0 18px;padding:12px 16px;border:1px solid #df9f45;border-radius:10px;background:#fff7ed;color:#873c09;font-size:14px}.freshness[hidden]{display:none}\n.topline{display:flex;align-items:center;justify-content:space-between;gap:8px}
 .cards{display:grid;gap:14px}.card{background:white;border:1px solid #e5e9ef;padding:22px;border-radius:14px}
 .card h2{font-size:19px;margin:7px 0}.meta{display:flex;flex-wrap:wrap;gap:12px;color:#52627a;font-size:14px}
 .tag{font-size:12px;color:#1749b3;font-weight:700}.card a{display:inline-block;margin-top:15px;color:#1749b3;font-weight:700}
@@ -22,14 +22,14 @@ small{color:#64748b}.empty{padding:28px;background:white;border-radius:12px}
 <label>Estado<select name="state"><option value="">Todos os estados</option></select></label>
 <label>Data do leilão<input type="date" name="day"></label>
 <button type="submit">Buscar leilões</button>
-</form><div class="topline"><h2>Próximos leilões</h2><small id="count"></small></div><section id="results" class="cards" aria-live="polite"></section>
+</form><div id="freshness" class="freshness" role="status" hidden></div><div class="topline"><h2>Próximos leilões</h2><small id="count"></small></div><section id="results" class="cards" aria-live="polite"></section>
 <p><small>Agenda atualizada por coleta periódica de fontes públicas. A cobertura ainda é parcial; confirme sempre as informações no site do leiloeiro.</small></p>
 </main><script type="module">
-import {filterAuctions} from "/app/agenda.mjs";
+import {filterAuctions,feedFreshness,sourceLabel} from "/app/agenda.mjs";
 const states="AC AL AP AM BA CE DF ES GO MA MT MS MG PA PB PR PE PI RJ RN RS RO RR SC SP SE TO".split(" ");
 const select=document.querySelector('select[name="state"]');
 states.sort().forEach(s=>select.add(new Option(s,s)));
-const results=document.querySelector("#results"),count=document.querySelector("#count");
+const results=document.querySelector("#results"),count=document.querySelector("#count"),freshness=document.querySelector("#freshness");
 const escapeHTML=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 async function load(){
   results.textContent="Buscando...";
@@ -40,6 +40,9 @@ async function load(){
     const res=await fetch("/app/events.json",{cache:"no-store"});
     if(!res.ok)throw Error("Falha ao consultar a API");
     const feed=await res.json();
+    const freshnessState=feedFreshness(feed.updated_at);
+    freshness.hidden=freshnessState.status==="fresh";
+    freshness.textContent=freshnessState.status==="stale"?"Atenção: a última coleta tem mais de 36 horas. Consulte as fontes antes de participar de um leilão.":"Data da última coleta não disponível. Confirme os eventos na fonte original.";
     const today=new Intl.DateTimeFormat("sv-SE",{timeZone:"America/Sao_Paulo",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());
     const auctions=filterAuctions(feed.events,{state:form.get("state")||"",day:form.get("day")||"",today});
     const n=auctions.length;
@@ -51,10 +54,10 @@ async function load(){
       <span>🕘 ${escapeHTML(a.auction_time||"Não informado")}</span>
       <span>🚗 ${a.vehicle_count===null?"Quantidade não informada":a.vehicle_count+" veículos"}</span></div>
       <p>${escapeHTML(a.organizer)}</p>
-      <small>Fonte: ${escapeHTML(a.source_type==="municipal"?"Municipal":"Plataforma privada")} · Última verificação: ${escapeHTML(a.last_checked_at?new Date(a.last_checked_at).toLocaleString("pt-BR",{timeZone:"America/Sao_Paulo"}):"não informada")}</small><br>
-      <a href="${escapeHTML(a.source_url)}" target="_blank" rel="noopener noreferrer">Abrir fonte oficial ↗</a>
+      <small>Fonte: ${escapeHTML(sourceLabel(a.source_type))} · Última verificação: ${escapeHTML(a.last_checked_at?new Date(a.last_checked_at).toLocaleString("pt-BR",{timeZone:"America/Sao_Paulo"}):"não informada")}</small><br>
+      <a href="${escapeHTML(a.source_url)}" target="_blank" rel="noopener noreferrer">Consultar fonte do evento ↗</a>
       </article>`).join(""):'<div class="empty">Nenhum leilão encontrado na base atual para esses filtros.</div>';
-  }catch(e){count.textContent="";results.textContent="Não foi possível carregar os leilões. Tente novamente.";}
+  }catch(e){count.textContent="";freshness.hidden=true;results.textContent="Não foi possível carregar os leilões. Tente novamente.";}
 }
 document.querySelector("#filters").addEventListener("submit",e=>{e.preventDefault();load()});load();
 </script></body></html>
