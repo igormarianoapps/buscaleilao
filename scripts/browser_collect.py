@@ -94,9 +94,24 @@ def parse_copart_linked_rows(rows):
         day_links = {}
         for link in row.get("links", []):
             match_date = re.search(DATE, link.get("text", ""))
-            if not match_date:
+            if match_date:
+                day = future_date(match_date.group(1))
+            elif re.search(r"\\bLIVE\\s+NOW\\b", link.get("text", ""), re.I):
+                # "LIVE NOW" replaces the date in current-sale cells. The
+                # event detail path itself must independently contain a date.
+                from urllib.parse import urlsplit
+                match_path = re.fullmatch(
+                    r"/saleListResult/[0-9]+/([0-9]{4}-[0-9]{2}-[0-9]{2})/?",
+                    urlsplit(link.get("href", "")).path, re.I)
+                if not match_path:
+                    continue
+                try:
+                    linked_day = date.fromisoformat(match_path.group(1))
+                    day = linked_day.isoformat() if linked_day >= date.today() else None
+                except ValueError:
+                    day = None
+            else:
                 continue
-            day = future_date(match_date.group(1))
             if not day:
                 continue
             trusted = copart_detail_url(link.get("href", ""), day)
