@@ -321,5 +321,22 @@
       "06/11/2026",
       "UTINGA"
     ]
+  },
+  {
+    "id": "superbid-gru-06-2026-11-29",
+    "title": "Leilão de veículos conservados 06/2026 — Guarulhos",
+    "state": "SP",
+    "city": "Guarulhos",
+    "auction_date": "2026-11-29",
+    "auction_time": null,
+    "vehicle_count": null,
+    "organizer": "Superbid Exchange",
+    "source_type": "private",
+    "source_url": "https://exchange.superbid.net/evento/leilao-de-veiculos-conservados-06-2026-gru-797715",
+    "evidence": [
+      "LEILÃO DE VEÍCULOS CONSERVADOS 06/2026 GRU",
+      "29/11/2026",
+      "VEÍCULOS APREENDIDOS"
+    ]
   }
 ]
