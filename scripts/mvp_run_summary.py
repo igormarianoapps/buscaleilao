@@ -28,7 +28,7 @@ def summarize(report,pncp=None,review=None,vip=None):
     if not isinstance(report,dict) or not report.get("checked_at"):
         return "## BuscaLeilão — MVP\n\nNão foi possível ler o relatório da coleta.\n"
     lines=["## BuscaLeilão — coleta do MVP",
-           f"- Relatório de coleta: \`{report['checked_at']}\`",
+           f"- Relatório de coleta: `{report['checked_at']}`",
            f"- Eventos únicos: **{report.get('unique_events','?')}**",
            f"- UFs com eventos: **{len(report.get('states_with_events',[]))}/27**",
            f"- Fontes curadas aprovadas: **{report.get('curated_success','?')}**",
@@ -44,7 +44,7 @@ def summarize(report,pncp=None,review=None,vip=None):
     if report.get("failed"):
         lines+=["","### Fontes com falha"]
         for item in report["failed"][:25]:
-            lines.append(f"- \`{item.get('id','?')}\`: {str(item.get('error','?'))[:170]}")
+            lines.append(f"- `{item.get('id','?')}`: {str(item.get('error','?'))[:170]}")
     return "\n".join(lines)+"\n"
 
 def main():
@@ -65,7 +65,7 @@ def main():
     except (OSError,ValueError,TypeError,KeyError,AttributeError):
         summary=("## BuscaLeilão — execução sem coleta validada\n\n"
                  "O relatório atual não está disponível ou está inválido. "
-                 "**Não contar esta execução para P0.1/P0.2.**\\n")
+                 "**Não contar esta execução para P0.1/P0.2.**\n")
     print(summary)
     target=os.environ.get("GITHUB_STEP_SUMMARY")
     if target:
