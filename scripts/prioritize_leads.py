@@ -97,7 +97,7 @@ def prioritize(items, now=None):
     selected.sort(key=lambda x: (-x["priority"], -parsedate_to_datetime(x["published"]).timestamp()))
     return selected[:80]
 
-def merge_review_sources(news_items, pncp_items, existing_sources=None, limit=120):
+def merge_review_sources(news_items, pncp_items, existing_sources=None, limit=120, uncovered_states=None):
     """Combine official PNCP and RSS research without treating either as events.
 
     Prioritize official future-dated notices and skip cases already present in
@@ -110,6 +110,7 @@ def merge_review_sources(news_items, pncp_items, existing_sources=None, limit=12
     known={normalize_url(s.get("source_url")) for s in (existing_sources or [])}
     merged=[]
     dedup=set()
+    uncovered=set(uncovered_states or [])
     for item in pncp_items:
         url=item.get("source_url")
         if not url or normalize_url(url) in known or url in dedup:
@@ -124,7 +125,8 @@ def merge_review_sources(news_items, pncp_items, existing_sources=None, limit=12
             "city_hint":item.get("city"),
             "date_hint":item.get("date_hint"),
             "date_hint_status":item.get("date_hint_status","missing_auction_date"),
-            "priority":12 if item.get("date_hint") else 9,
+            "priority":(12 if item.get("date_hint") else 9) + (5 if item.get("state") in uncovered else 0),
+            "coverage_gap":item.get("state") in uncovered,
             "review_status":"needs_edital_confirmation",
             "next_step":"Check edital, actual event date, current status and official auction URL",
             "pncp_control":item.get("pncp_control")
@@ -137,8 +139,21 @@ def merge_review_sources(news_items, pncp_items, existing_sources=None, limit=12
         row=dict(item)
         row["source_kind"]="news_rss"
         merged.append(row)
-    return sorted(merged,key=lambda x:(-x.get("priority",0),
-             x.get("date_hint") is None,x.get("title","")))[:limit]
+    ranked=sorted(merged,key=lambda x:(-x.get("priority",0),
+             x.get("date_hint") is None,x.get("title","")))
+    # Cap each state's PNCP entries to avoid crowding out smaller states.
+    result=[]
+    per_state={}
+    for item in ranked:
+        if item.get("source_kind")=="pncp":
+            state=item.get("state_hint")
+            if per_state.get(state,0)>=10:
+                continue
+            per_state[state]=per_state.get(state,0)+1
+        result.append(item)
+        if len(result)>=limit:
+            break
+    return result
 
 def main():
     payload = json.loads(INPUT.read_text(encoding="utf-8"))
@@ -153,10 +168,16 @@ def main():
         sources = json.loads(sources_path.read_text(encoding="utf-8"))
     except (OSError,ValueError):
         sources = []
-    queue = merge_review_sources(news,pncp,sources)
+    report_path=ROOT / "app" / "collection-report.json"
+    try:
+        uncovered=json.loads(report_path.read_text(encoding="utf-8")).get("states_without_events",[])
+    except (OSError,ValueError):
+        uncovered=[]
+    queue=merge_review_sources(news,pncp,sources,uncovered_states=uncovered)
     output = {"checked_at":datetime.now(timezone.utc).isoformat(timespec="seconds"),
               "unverified_count":len(queue), "pncp_leads":sum(x["source_kind"]=="pncp" for x in queue),
               "rss_leads":sum(x["source_kind"]=="news_rss" for x in queue),
+              "pncp_gap_leads":sum(x.get("coverage_gap",False) for x in queue),
               "events_automatically_published":0, "items":queue}
     OUTPUT.write_text(json.dumps(output, ensure_ascii=False, indent=2)+"\n",encoding="utf-8")
     print(f"Review queue: {len(queue)} unverified leads")
