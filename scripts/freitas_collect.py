@@ -33,7 +33,8 @@ def parse_detail(text, url, today=None):
     if not closing: return None
     # Look at the event heading immediately before the closing announcement;
     # the global navigation menu also contains the word "Veículos".
-    heading = head[max(0,closing.start()-260):closing.start()]
+    title_lines = [line.strip() for line in head[:closing.start()].splitlines() if line.strip()]
+    heading = title_lines[-1] if title_lines else ""
     if not re.search(r"ve[ií]culos|caminh[oõ]es|motocicletas|motos", heading, re.I):
         return None
     hh, mm, dd, mo, yyyy = map(int, closing.groups())
