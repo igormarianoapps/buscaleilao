@@ -87,6 +87,17 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 - [ ] Confirmar segunda e terceira coletas completas e verificar atualização do feed em até 24 horas entre execuções.
 - [ ] Após P0.2, seguir para auditoria de eventos e links (P0.3/P0.4), sem adicionar novos coletores.
 
+## P0.2 — Consistência de datas entre coletor e interface (03/11/2026)
+
+- [x] Confirmar na API do GitHub Actions que **a execução #41715100215 permanece como a única coleta completa recente**; P0.2 segue **1/3**, sem contar testes unitários.
+- [x] Centralizar a regra de data no fuso `America/Sao_Paulo` com `scripts/auction_clock.py`.
+- [x] Alinhar Copart, VIP, Freitas, fontes curadas e gate de integridade do feed à data de Brasília, mantendo horários de auditoria em UTC.
+- [x] Criar testes de regressão para 00h30 UTC (ainda dia anterior no Brasil), 03h30 UTC (novo dia no Brasil), datetime sem fuso e validação de eventos na virada; suíte do GitHub Actions **41716845637 aprovada**.
+- [ ] P0.2: validar **mais duas coletas completas consecutivas** com o novo código e atualização do feed dentro de 24 horas; resultado atual continua **1/3**.
+- [ ] Ao atingir 3/3, iniciar P0.3/P0.4 (auditoria de pelo menos 20 eventos e links).
+
+**Regra:** nenhum novo leiloeiro, expansão de escopo ou funcionalidade P1 antes de concluir a estabilidade.
+
 ## Fase 1 — Motor de coleta e qualidade
 
 - [x] Coletores independentes: erro de uma fonte não interrompe a verificação das outras
