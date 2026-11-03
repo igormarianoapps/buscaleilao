@@ -45,6 +45,10 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 - [ ] Medir taxa de links específicos da VIP na coleta real
 - [x] Implementar um adaptador independente de calendário da Freitas Leiloeiro, validando data/UF na página individual; aguarda execução real
 - [x] Adicionar páginas oficiais específicas da Freitas (dois eventos) e Superbid (um evento), sujeitas à verificação do coletor
+- [x] Integrar descoberta nacional oficial via PNCP (leilões eletrônicos modalidade 1 e presenciais 13); candidatos separados da agenda pública
+- [x] Validar modalidade, objeto veículo, data futura e UF; não publicar diretamente o prazo de propostas como data confirmada do leilão
+- [x] Criar testes de formatos PNCP, rejeição de imóveis/cancelamentos, falhas de API e ambas modalidades (workflow 41711457851 aprovado)
+- [ ] Validar coleta real da API PNCP e converter editais aprovados em eventos públicos
 - [ ] Criar adaptadores próprios para outros leiloeiros com calendário público verificável
 - [x] Priorizar notícias com data explícita futura no título e excluir notícias com data de leilão comprovadamente passada (triagem, sem publicação automática)
 - [x] Testar datas de títulos (28/10/2026; “próximo dia 28”; 12 de novembro de 2026) e manter datas apenas como pistas não verificadas — workflow 41711104446 aprovado
@@ -73,13 +77,16 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 
 ## Próximas entregas
 
-1. Validar o novo detector de cartões VIP e seu diagnóstico DOM; se zero cartões, usar evidências para adaptar o coletor, sem inventar links.
-2. Medir a proporção de links diretos Copart/VIP e manter links de calendário somente onde a URL individual não for observável.
-3. Encontrar fontes alternativas públicas para Aracaju, Curitiba, Pedranópolis e Superbid; não contornar HTTP 403.
-4. Converter notícias de órgãos oficiais em eventos somente após confirmar **data futura, estado, organizador e documento original**.
-5. Auditar a qualidade das UFs associadas aos eventos multiestaduais da VIP.
+1. Validar `app/pncp-candidates.json` na próxima coleta e selecionar editais de veículos de municípios ainda não cobertos para confirmação independente.
+2. Validar o novo detector de cartões VIP e seu diagnóstico DOM; se zero cartões, usar evidências para adaptar o coletor, sem inventar links.
+3. Medir a proporção de links diretos Copart/VIP e manter links de calendário somente onde a URL individual não for observável.
+4. Encontrar fontes alternativas públicas para Aracaju, Curitiba, Pedranópolis e Superbid; não contornar HTTP 403.
+5. Converter notícias de órgãos oficiais em eventos somente após confirmar **data futura, estado, organizador e documento original**.
+6. Auditar a qualidade das UFs associadas aos eventos multiestaduais da VIP.
 
 **Atualização:** parser VIP isolado por cartão publicado em 03/11/2026, ainda sem nova coleta. A página da agenda apresentou redirecionamento em loop na inspeção externa, portanto a captura de URL individual não está confirmada.
+
+**Novidade:** adaptador de descoberta da API PNCP oficial publicado em 03/11/2026; testes aprovados, coleta de rede ainda não validada. `app/pncp-candidates.json` será gerado na próxima execução e jamais será misturado automaticamente ao feed verificado.
 
 **Regra:** a execução ser bem-sucedida não equivale a cobertura nacional completa.
 
