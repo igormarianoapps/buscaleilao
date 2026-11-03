@@ -59,6 +59,73 @@ def parse_copart_rows(rows):
             results[key] = event(key, f"Leilão Copart — {city}", state, city, day, None, "Copart", COPART_URL)
     return list(results.values())
 
+def copart_detail_url(url, expected_day):
+    """Accept only a Copart sale-details URL that names this exact auction day."""
+    from urllib.parse import urlsplit, urlunsplit
+    parsed = urlsplit(url)
+    if parsed.scheme != "https" or parsed.hostname not in ("copart.com.br", "www.copart.com.br"):
+        return None
+    match = re.fullmatch(r"/saleListResult/([0-9]+)/([0-9]{4}-[0-9]{2}-[0-9]{2})/?", parsed.path, re.I)
+    if not match or match.group(2) != expected_day:
+        return None
+    # Query parameters may carry verified auction metadata provided by Copart.
+    return urlunsplit((parsed.scheme, parsed.netloc, parsed.path, parsed.query, ""))
+
+def parse_copart_linked_rows(rows):
+    """Extract separate sale IDs; dates without links use the yard-level fallback.
+
+    Each row is {"cells":[yard,current,next,...],
+                 "links":[{"text":"dd.mm.yyyy","href":"https://..."}]}.
+    Never merge distinct Copart sale IDs merely because date and yard match.
+    """
+    results = {}
+    yard_pattern = re.compile(r"^(.{3,75}?)\s*-\s*([A-Z]{2})$")
+    for row in rows:
+        cells = row.get("cells", [])
+        if len(cells) < 2:
+            continue
+        yard = re.sub(r"\s+", " ", cells[0]).strip()
+        matched = yard_pattern.fullmatch(yard)
+        if not matched:
+            continue
+        city, state = matched.groups()
+        if state not in STATES:
+            continue
+        day_links = {}
+        for link in row.get("links", []):
+            match_date = re.search(DATE, link.get("text", ""))
+            if not match_date:
+                continue
+            day = future_date(match_date.group(1))
+            if not day:
+                continue
+            trusted = copart_detail_url(link.get("href", ""), day)
+            if not trusted:
+                continue
+            from urllib.parse import urlsplit
+            sale_id = re.search(r"/saleListResult/([0-9]+)/", urlsplit(trusted).path, re.I).group(1)
+            key = f"copart-{sale_id}-{day}"
+            entry = event(key, f"Leilão Copart — {city}", state, city,
+                          day, None, "Copart", trusted)
+            entry["source_link_type"] = "event"
+            results[key] = entry
+            day_links[day] = True
+        # If a column has no independently confirmed link, expose its
+        # date as a yard-level calendar listing, never a fabricated detail URL.
+        for col in cells[1:3]:
+            matched_date = re.search(DATE, col)
+            if not matched_date:
+                continue
+            day = future_date(matched_date.group(1))
+            if not day or day_links.get(day):
+                continue
+            key = f"copart-{day}-{state.lower()}-{slug(city)}"
+            fallback = event(key, f"Leilão Copart — {city}", state, city,
+                             day, None, "Copart", COPART_URL)
+            fallback["source_link_type"] = "calendar"
+            results[key] = fallback
+    return list(results.values())
+
 def parse_vip_text(text):
     """Only publish a VIP listing if its own block names a future date and UFs.
 
@@ -119,8 +186,13 @@ async def collect_browser():
                 await page.wait_for_timeout(2500)
                 if name == "Copart":
                     rows = await page.locator("table tbody tr").evaluate_all(
-                        "(trs) => trs.map(tr => Array.from(tr.querySelectorAll('td')).map(td => td.innerText.trim()))")
-                    found = parse_copart_rows(rows)
+                        """(trs) => trs.map(tr => ({
+                          cells: Array.from(tr.querySelectorAll('td')).map(td => td.innerText.trim()),
+                          links: Array.from(tr.querySelectorAll('td a[href]')).map(a => ({
+                            text: a.innerText.trim(), href: a.href
+                          }))
+                        }))""")
+                    found = parse_copart_linked_rows(rows)
                 else:
                     body = await page.locator("body").inner_text(timeout=10000)
                     found = parse_vip_text(body)
