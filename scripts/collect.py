@@ -137,7 +137,11 @@ def main():
     except Exception as exc:
         platform_events = []
         platform_failures = [{"id":"platforms", "error":str(exc).splitlines()[0][:220]}]
-    events.extend(platform_events)
+    known_ids = {e["id"] for e in events}
+    for item in platform_events:
+        if item["id"] not in known_ids:
+            events.append(item)
+            known_ids.add(item["id"])
     failures.extend(platform_failures)
     events.sort(key=lambda e:(e["auction_date"],e["auction_time"] or "",e["city"]))
     # Failed validation does not silently carry an unverified event into the feed.
