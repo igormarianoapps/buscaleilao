@@ -66,3 +66,6 @@ jobs:
             git commit -m "data: refresh auction research leads and diagnostics"
             git push
           fi
+      - name: Summarize MVP collection results
+        if: always()
+        run: python scripts/mvp_run_summary.py
