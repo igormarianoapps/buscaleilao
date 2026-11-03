@@ -2,6 +2,43 @@
 
 Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub; execução e cobertura reais dependem do próximo relatório.
 
+## Marco do MVP — critérios de lançamento
+
+**Produto:** agenda nacional de **eventos de leilão de veículos**, não catálogo de lotes. Público consegue filtrar por UF e data e consultar a fonte. O produto não promete listar todos os leilões do Brasil.
+
+**Estado em 03/11/2026:** pré-MVP funcional. Última coleta completa confirmada: 39 eventos únicos em 18 UFs, 13/20 fontes curadas verificadas. Testes recentes aprovados, mas nova arquitetura de descoberta PNCP, diagnóstico VIP e fontes recuperadas de Aracaju/Curitiba ainda aguardam execução completa. **Não contabilizar candidatos como eventos.**
+
+### P0 — Bloqueadores para lançamento público
+
+- [ ] **P0.1 — Uma execução ponta a ponta** do workflow atual deve passar por testes, Copart, VIP/Freitas, PNCP, fila de revisão e publicação. Conferir todos os arquivos produzidos e logs, especialmente `app/pncp-candidates.json` e `app/vip-dom-diagnostics.json` (quando houver fallback).
+- [ ] **P0.2 — Estabilidade:** observar 3 coletas completas consecutivas com sucesso do workflow e feed atualizado dentro de 24h; a falha de uma fonte não pode bloquear o feed. Registrar taxa de fontes recuperadas e motivos de falha.
+- [ ] **P0.3 — Qualidade dos eventos:** auditar manualmente pelo menos 20 eventos de organizadores e UFs variados; 100% devem ter data futura verificável, UF correta, organizador claro e URL de origem segura. Deduplicação por evento; não inventar hora/veículos.
+- [ ] **P0.4 — Links úteis:** links individuais quando comprovados; onde houver apenas agenda, rotular como agenda e testar se o destino é útil. Não tratar endereço genérico como link do evento.
+- [ ] **P0.5 — Auditoria da experiência:** desktop/mobile, filtros, timezone de Brasília, estados sem resultados, aviso de feed antigo, links externos, acessibilidade básica e ausência de falhas de interface.
+- [ ] **P0.6 — Confiabilidade de publicação:** uma falha na etapa experimental PNCP/RSS não pode impedir a publicação de uma coleta validada; candidatos devem continuar separados de `app/events.json`.
+- [ ] **P0.7 — Lançamento controlado:** testar com 5–10 pessoas e registrar erros de evento, buscas sem resultado, links quebrados e compreensão da proposta antes de abrir divulgação ampla.
+
+### P1 — Melhorias após o MVP inicial
+
+- [ ] Extrair links individuais da VIP quando tecnicamente confirmados (agenda funciona como fallback rotulado).
+- [ ] Ampliar leiloeiros pequenos, municipais e novas UFs usando PNCP e editais validados.
+- [ ] Automatizar conferência de adiamentos/cancelamentos quando o edital permitir.
+- [ ] Aumentar cobertura por UF e organizador com metas baseadas em dados observados; nunca prometer exaustividade.
+- [ ] Evoluir triagem de candidatos em cadastros curados auditáveis.
+
+### Fora do escopo do MVP
+
+- Catálogo de lotes e veículos individuais, login, alertas, estimativas de preços, lances, compras e garantia de cobertura de todos os leilões.
+
+### Ordem recomendada
+
+1. **Estabilizar coleta/CI (P0.1, P0.2 e P0.6)**, sem acrescentar novos coletores até cumprir os critérios.
+2. **Auditar qualidade/links (P0.3, P0.4)** e corrigir erros objetivos.
+3. **Testar produto ponta a ponta (P0.5)** em desktop e mobile.
+4. **Piloto com usuários (P0.7)** e decisão de lançamento baseada nos critérios, não em quantidade arbitrária de fontes.
+
+**Definição de pronto:** todos os P0 acima concluídos. P1 não bloqueia o MVP.
+
 ## Fase 1 — Motor de coleta e qualidade
 
 - [x] Coletores independentes: erro de uma fonte não interrompe a verificação das outras
