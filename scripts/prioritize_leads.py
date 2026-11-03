@@ -97,12 +97,67 @@ def prioritize(items, now=None):
     selected.sort(key=lambda x: (-x["priority"], -parsedate_to_datetime(x["published"]).timestamp()))
     return selected[:80]
 
+def merge_review_sources(news_items, pncp_items, existing_sources=None, limit=120):
+    """Combine official PNCP and RSS research without treating either as events.
+
+    Prioritize official future-dated notices and skip cases already present in
+    the curated-source registry. PNCP never supplies an auction_date here.
+    """
+    from urllib.parse import urlsplit
+    def normalize_url(url):
+        p=urlsplit(url or "")
+        return (p.hostname or "").lower(),p.path.rstrip("/").lower()
+    known={normalize_url(s.get("source_url")) for s in (existing_sources or [])}
+    merged=[]
+    dedup=set()
+    for item in pncp_items:
+        url=item.get("source_url")
+        if not url or normalize_url(url) in known or url in dedup:
+            continue
+        dedup.add(url)
+        merged.append({
+            "title":item.get("title","")[:260],
+            "news_url":url,
+            "publisher_url":"https://pncp.gov.br",
+            "source_kind":"pncp",
+            "state_hint":item.get("state"),
+            "city_hint":item.get("city"),
+            "date_hint":item.get("date_hint"),
+            "date_hint_status":item.get("date_hint_status","missing_auction_date"),
+            "priority":12 if item.get("date_hint") else 9,
+            "review_status":"needs_edital_confirmation",
+            "next_step":"Check edital, actual event date, current status and official auction URL",
+            "pncp_control":item.get("pncp_control")
+        })
+    for item in news_items:
+        url=item.get("news_url")
+        if not url or url in dedup:
+            continue
+        dedup.add(url)
+        row=dict(item)
+        row["source_kind"]="news_rss"
+        merged.append(row)
+    return sorted(merged,key=lambda x:(-x.get("priority",0),
+             x.get("date_hint") is None,x.get("title","")))[:limit]
+
 def main():
     payload = json.loads(INPUT.read_text(encoding="utf-8"))
-    queue = prioritize(payload.get("candidates", []))
+    news = prioritize(payload.get("candidates", []))
+    pncp_path = ROOT / "app" / "pncp-candidates.json"
+    sources_path = ROOT / "app" / "sources.json"
+    try:
+        pncp = json.loads(pncp_path.read_text(encoding="utf-8")).get("candidates",[])
+    except (OSError,ValueError):
+        pncp = []
+    try:
+        sources = json.loads(sources_path.read_text(encoding="utf-8"))
+    except (OSError,ValueError):
+        sources = []
+    queue = merge_review_sources(news,pncp,sources)
     output = {"checked_at":datetime.now(timezone.utc).isoformat(timespec="seconds"),
-              "unverified_count":len(queue), "events_automatically_published":0,
-              "items":queue}
+              "unverified_count":len(queue), "pncp_leads":sum(x["source_kind"]=="pncp" for x in queue),
+              "rss_leads":sum(x["source_kind"]=="news_rss" for x in queue),
+              "events_automatically_published":0, "items":queue}
     OUTPUT.write_text(json.dumps(output, ensure_ascii=False, indent=2)+"\n",encoding="utf-8")
     print(f"Review queue: {len(queue)} unverified leads")
 
