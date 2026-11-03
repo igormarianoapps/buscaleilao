@@ -147,9 +147,14 @@ def main():
     by_org = {}
     for a in events:
         by_org.setdefault(a["organizer"],set()).add(a.get("event_id") or a["id"])
+    all_states = set("AC AL AP AM BA CE DF ES GO MA MT MS MG PA PB PR PE PI RJ RN RS RO RR SC SP SE TO".split())
+    present = {state for a in events for state in (a.get("states") or [a["state"]])}
     report = {
         "checked_at":checked,"verified":len(events),"unique_events":len(unique),
-        "states_with_events":sorted({a["state"] for a in events}),
+        "states_with_events":sorted(present),
+        "states_without_events":sorted(all_states - present),
+        "state_presence_percent":round(100 * len(present) / len(all_states),1),
+        "coverage_definition":"Presence of at least one event, not fraction of all auctions discovered",
         "organizers":{k:len(v) for k,v in sorted(by_org.items())},
         "platform_events":len(platform_events),
         "curated_success":health["successful_sources"],
