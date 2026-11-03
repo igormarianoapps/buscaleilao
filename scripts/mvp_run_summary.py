@@ -48,12 +48,24 @@ def summarize(report,pncp=None,review=None,vip=None):
     return "\n".join(lines)+"\n"
 
 def main():
-    report=json.loads((ROOT/"collection-report.json").read_text(encoding="utf-8"))
-    stamp=report["checked_at"]
-    summary=summarize(report,
-        read_current("pncp-candidates.json",stamp),
-        read_current("review-queue.json",stamp),
-        read_current("vip-dom-diagnostics.json",stamp))
+    try:
+        report=json.loads((ROOT/"collection-report.json").read_text(encoding="utf-8"))
+        stamp=report["checked_at"]
+        checked=datetime.fromisoformat(stamp.replace("Z","+00:00"))
+        now=datetime.now(timezone.utc)
+        if checked.tzinfo is None or not (timedelta(0) <= now-checked <= timedelta(hours=2)):
+            summary=("## BuscaLeilão — execução sem coleta nova\n\n"
+                     "O relatório encontrado é de uma execução anterior. "
+                     "**Não contar esta execução para P0.1/P0.2.**\n")
+        else:
+            summary=summarize(report,
+                read_current("pncp-candidates.json",stamp),
+                read_current("review-queue.json",stamp),
+                read_current("vip-dom-diagnostics.json",stamp))
+    except (OSError,ValueError,TypeError,KeyError,AttributeError):
+        summary=("## BuscaLeilão — execução sem coleta validada\n\n"
+                 "O relatório atual não está disponível ou está inválido. "
+                 "**Não contar esta execução para P0.1/P0.2.**\\n")
     print(summary)
     target=os.environ.get("GITHUB_STEP_SUMMARY")
     if target:
