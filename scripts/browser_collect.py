@@ -226,6 +226,26 @@ def parse_vip_cards(cards):
         results.extend(parsed)
     return results
 
+def choose_vip_events(cards, page_text):
+    """Use individual VIP cards only when they cover the entire verified agenda."""
+    from collections import Counter
+    detailed = parse_vip_cards(cards)
+    calendar = parse_vip_text(page_text)
+    def signatures(rows):
+        groups = {}
+        for item in rows:
+            groups.setdefault(item["event_id"],item)
+        return Counter(
+            (item["auction_date"],item["auction_time"],
+             tuple(sorted(item.get("states") or [item["state"]])))
+            for item in groups.values()
+        )
+    if not detailed:
+        return calendar,"calendar_fallback"
+    if signatures(detailed) != signatures(calendar):
+        return calendar,"partial_cards_fallback"
+    return detailed,"complete_cards"
+
 async def extract_vip_cards(page):
     """Look for the smallest container with one date and its own UF(s).
 
@@ -283,40 +303,35 @@ async def collect_browser():
                     found = parse_copart_linked_rows(rows)
                 else:
                     cards = await extract_vip_cards(page)
-                    found = parse_vip_cards(cards)
-                    # Persist a small public-page diagnostic when DOM extraction
-                    # misses all events, rather than guessing event URLs.
-                    if not cards:
+                    body = await page.locator("body").inner_text(timeout=10000)
+                    found, vip_mode = choose_vip_events(cards, body)
+                    if vip_mode != "complete_cards":
+                        # Save minimal public DOM evidence for refining card selectors.
+                        # Do not silently discard events when DOM extraction is partial.
                         import json
                         from pathlib import Path
                         details = await page.evaluate("""() => ({
                           headings: Array.from(document.querySelectorAll('body *'))
                             .filter(el => el.children.length === 0 && /In[ií]cio/i.test(el.textContent || ''))
                             .slice(0, 8).map(el => ({
-                              text: (el.innerText || '').slice(0, 120),
-                              parent: (el.parentElement?.innerText || '').slice(0, 320),
-                              ancestor: (el.parentElement?.parentElement?.innerText || '').slice(0, 550)
+                              text:(el.innerText || '').slice(0, 120),
+                              parent:(el.parentElement?.innerText || '').slice(0, 320),
+                              ancestor:(el.parentElement?.parentElement?.innerText || '').slice(0, 550)
                             })),
-                          auctionLinks: Array.from(document.querySelectorAll('a[href]'))
+                          auctionLinks:Array.from(document.querySelectorAll('a[href]'))
                             .filter(a => /leilao|evento/i.test(a.href))
                             .slice(0, 12).map(a => ({
-                              text: (a.innerText || '').slice(0, 70),
-                              href: a.href
+                              text:(a.innerText || '').slice(0, 70),
+                              href:a.href
                             }))
                         })""")
                         target = Path(__file__).resolve().parents[1] / "app" / "vip-dom-diagnostics.json"
                         target.write_text(json.dumps({
                             "checked_at":datetime.now(timezone.utc).isoformat(timespec="seconds"),
-                            "status":"no_isolated_cards", "details":details
+                            "status":vip_mode, "candidate_cards":len(cards),
+                            "verified_records":len(found),"details":details
                         },ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-                    print(f"VIP DOM: {len(cards)} candidate card(s), {len(found)} verified state record(s)")
-                    if not cards:
-                        # Safe compatibility fallback for deployments where the
-                        # VIP agenda does not expose readable card containers.
-                        body = await page.locator("body").inner_text(timeout=10000)
-                        found = parse_vip_text(body)
-                    elif not found:
-                        raise ValueError("VIP DOM cards found but none passed verification")
+                    print(f"VIP DOM: {len(cards)} card(s), mode={vip_mode}, {len(found)} verified state record(s)")
                 if not found:
                     raise ValueError("Nenhum evento validável extraído da página pública")
                 all_events.extend(found)
