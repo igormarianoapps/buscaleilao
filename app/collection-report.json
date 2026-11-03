@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-11-03T18:08:38+00:00",
-  "verified": 62,
-  "unique_events": 31,
+  "checked_at": "2026-11-03T18:14:35+00:00",
+  "verified": 61,
+  "unique_events": 30,
   "states_with_events": [
     "AM",
     "BA",
@@ -24,7 +24,6 @@
   ],
   "organizers": {
     "Copart": 8,
-    "DETRAN Bahia": 1,
     "Polícia Rodoviária Federal": 3,
     "Prefeitura de Campina Grande": 1,
     "Prefeitura de Cuiabá — Semob": 3,
@@ -40,6 +39,15 @@
       "id": "curitiba-smdt-17-2026",
       "error": "HTTP Error 403: Forbidden",
       "browser_error": "browser retry: HTTP 403"
+    },
+    {
+      "id": "detran-ba-23-2026",
+      "error": "<urlopen error timed out>",
+      "browser_error": "browser retry: Page.goto: Timeout 20000ms exceeded."
+    },
+    {
+      "id": "aracaju-3-leilao-2026-11-12",
+      "error": "missing evidence: 12 de novembro, 22 lotes, veículos"
     }
   ]
 }
