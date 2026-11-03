@@ -16,7 +16,7 @@ Atualizado: 03/11/2026. Status abaixo indica código publicado, **não** valida�
 - [x] Validar no GitHub Actions a nova rotina de recuperação por Chromium (03/11/2026): Lorena recuperada; Curitiba continua com timeout.
 - [x] Encontrar página oficial alternativa para Curitiba (Guia Municipal, edital 17/2026); cadastrada, pendente de execução da coleta.
 - [x] Verificar tentativa de recuperação de Curitiba: fonte alternativa respondeu HTTP 403; evento segue fora da agenda.
-- [ ] Encontrar fonte pública acessível para Curitiba sem contornar controles de acesso.
+- [ ] Encontrar fonte pública acessível para Curitiba sem contornar controles de acesso. Edital 17/2026 confirmado na página municipal, porém o coletor recebe HTTP 403.
 
 ## Fase 2 — Cobertura nacional
 
@@ -28,6 +28,8 @@ Atualizado: 03/11/2026. Status abaixo indica código publicado, **não** valida�
 - [x] Tentar recuperação de falhas temporárias/SSL via navegador sem desativar validação de certificados.
 - [x] Melhorar triagem de RSS: excluir notícias com mais de 120 dias e priorizar somente domínios públicos reais.
 - [x] Cadastrar e confirmar no coletor o edital de Campina Grande/PB e três sessões da Semob/Cuiabá-MT (03/11/2026).
+- [x] Criar fila de revisão `app/review-queue.json`, priorizando notícias recentes e fontes governamentais, sem publicá-las como eventos.
+- [x] Cadastrar o leilão municipal de Aracaju/SE (12/11), pendente de validação automática.
 - [ ] Converter candidatos RSS em eventos a partir de edital/data/UF verificados em escala.
 - [ ] Adicionar conectores confiáveis de outros grandes leiloeiros e órgãos públicos.
 - [ ] Expandir para municípios menores e monitorar cobertura das 27 UFs.
@@ -43,8 +45,11 @@ Atualizado: 03/11/2026. Status abaixo indica código publicado, **não** valida�
 
 ## Próxima entrega
 
-1. Localizar fonte alternativa de Curitiba **acessível publicamente**, sem desativar verificação TLS nem contornar o HTTP 403.
-2. Triar as 125 pistas, priorizando órgãos oficiais e leilões futuros.
-3. Obter links específicos e identificadores individuais de cada leilão nas grandes plataformas.
+1. Rodar os workflows de testes e coleta para validar **Aracaju/SE** e gerar `app/review-queue.json`.
+2. Avaliar as primeiras descobertas priorizadas da fila, buscando edital oficial e data futura.
+3. Resolver a fonte de Curitiba sem desativar TLS nem contornar bloqueios HTTP.
+4. Melhorar a identificação e links individuais dos leilões Copart/VIP.
 
-Critério de conclusão: apenas eventos cuja data/UF e fonte estejam verificadas entram na agenda.
+**Último resultado confirmado:** 31 eventos únicos, 18 UFs, 125 candidatos RSS. Os novos commits ainda não foram validados pelo workflow.
+
+Critério de conclusão: só publicar eventos com data e local confirmado por fonte acessível.
