@@ -2,6 +2,7 @@
 import json
 import sys
 from datetime import date, datetime, timedelta, timezone
+from auction_clock import auction_today
 from pathlib import Path
 from urllib.parse import urlsplit
 
@@ -39,7 +40,7 @@ def validate_feed(feed, report, now=None):
         unique.add(row.get("event_id") or ident)
         try:
             when = date.fromisoformat(row.get("auction_date", ""))
-            if when < now.date():
+            if when < auction_today(now):
                 errors.append(f"Event {index}: expired date")
         except (TypeError, ValueError):
             errors.append(f"Event {index}: invalid auction date")
