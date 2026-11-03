@@ -22,3 +22,21 @@ export function filterAuctions(items,{state='',day='',today=''}={}) {
     (!today || a.auction_date>=today) &&
     (!state || a.states.includes(state)) && (!day || a.auction_date===day));
 }
+
+/** Freshness of the last successful collection, independent of event dates. */
+export function feedFreshness(updatedAt, now = Date.now()) {
+  const timestamp = Date.parse(updatedAt || '');
+  if (!Number.isFinite(timestamp)) return {status:'unknown',ageHours:null};
+  const ageHours = Math.max(0,(now-timestamp)/3600000);
+  return {status:ageHours > 36 ? 'stale':'fresh',ageHours};
+}
+
+/** Use the source's actual provenance, never label all public sites as private. */
+export function sourceLabel(type) {
+  return ({
+    municipal:'Prefeitura / órgão municipal',
+    state:'Órgão estadual',
+    federal:'Órgão federal',
+    private:'Plataforma / leiloeiro privado',
+  })[type] || 'Fonte pública';
+}
