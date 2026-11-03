@@ -71,14 +71,15 @@
     "city": "Curitiba",
     "auction_date": "2026-11-11",
     "auction_time": "09:00",
-    "vehicle_count": 33,
+    "vehicle_count": null,
     "organizer": "Prefeitura de Curitiba",
     "source_type": "municipal",
-    "source_url": "https://guia.curitiba.pr.gov.br/evento/leilao-eletronico-de-veiculos-online-vip-leiloes/11812",
+    "source_url": "https://transito.curitiba.pr.gov.br/patio/leilao-eletronico-de-veiculos/52",
     "evidence": [
-      "SMDT nº 17/2026",
+      "Edital de Leilão Eletrônico SMDT Nº 17/2026",
       "11/11/2026",
-      "Itens nº 1 ao nº 33"
+      "Itens nº 1 ao nº 33",
+      "Veículos em circulação"
     ]
   },
   {
@@ -224,15 +225,16 @@
     "state": "SE",
     "city": "Aracaju",
     "auction_date": "2026-11-12",
-    "auction_time": null,
+    "auction_time": "09:30",
     "vehicle_count": null,
     "organizer": "Prefeitura de Aracaju",
     "source_type": "municipal",
-    "source_url": "https://www.aracaju.se.gov.br/noticias/120050/prefeitura-promovera-leilao-publico-com-22-lotes-de-bens-moveis-e-veiculos",
+    "source_url": "https://rjleiloes.com.br/leilao/4845/lotes?page=1",
     "evidence": [
-      "12 de novembro",
-      "22 lotes",
-      "veículos"
+      "LEILÃO DE VEÍCULOS E BENS DA PREFEITURA MUNICIPAL DE ARACAJU",
+      "12/11/2026",
+      "09:30",
+      "VEICULO"
     ]
   },
   {
@@ -337,6 +339,42 @@
       "LEILÃO DE VEÍCULOS CONSERVADOS 06/2026 GRU",
       "29/11/2026",
       "VEÍCULOS APREENDIDOS"
+    ]
+  },
+  {
+    "id": "curitiba-smdt-16-2026",
+    "title": "Leilão eletrônico SMDT nº 16/2026 — sucatas inservíveis",
+    "state": "PR",
+    "city": "Curitiba",
+    "auction_date": "2026-11-11",
+    "auction_time": "09:00",
+    "vehicle_count": null,
+    "organizer": "Prefeitura de Curitiba",
+    "source_type": "municipal",
+    "source_url": "https://transito.curitiba.pr.gov.br/patio/leilao-eletronico-de-veiculos/52",
+    "evidence": [
+      "Edital de Leilão Eletrônico SMDT Nº 16/2026",
+      "Itens nº 1 ao nº 68",
+      "Sucata Inservível",
+      "11/11/2026"
+    ]
+  },
+  {
+    "id": "curitiba-smdt-18-2026",
+    "title": "Leilão eletrônico SMDT nº 18/2026 — veículos e sucatas",
+    "state": "PR",
+    "city": "Curitiba",
+    "auction_date": "2026-11-25",
+    "auction_time": "09:00",
+    "vehicle_count": null,
+    "organizer": "Prefeitura de Curitiba",
+    "source_type": "municipal",
+    "source_url": "https://transito.curitiba.pr.gov.br/patio/leilao-eletronico-de-veiculos/52",
+    "evidence": [
+      "Edital de Leilão Eletrônico SMDT Nº 18/2026",
+      "25/11/2026",
+      "Itens nº 1 ao nº 42",
+      "Veículos em circulação"
     ]
   }
 ]
