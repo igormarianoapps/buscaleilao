@@ -8,6 +8,7 @@ import re
 import unicodedata
 import urllib.error
 import urllib.request
+import time
 from datetime import date, datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
@@ -49,11 +50,19 @@ def check(source):
         headers={"User-Agent": "BuscaLeilaoBot/0.1 (+https://github.com/igormarianoapps/buscaleilao)",
                  "Accept": "text/html"}
     )
-    with urllib.request.urlopen(request, timeout=18) as response:
-        content_type = response.headers.get("Content-Type", "")
-        if "text/html" not in content_type:
-            raise ValueError("unsupported content type: " + content_type)
-        raw = response.read(2_000_000)
+    raw = None
+    for attempt in range(2):
+        try:
+            with urllib.request.urlopen(request, timeout=18) as response:
+                content_type = response.headers.get("Content-Type", "")
+                if "text/html" not in content_type:
+                    raise ValueError("unsupported content type: " + content_type)
+                raw = response.read(2_000_000)
+            break
+        except (TimeoutError, OSError, urllib.error.URLError):
+            if attempt:
+                raise
+            time.sleep(1)
     parser = TextExtractor()
     parser.feed(raw.decode("utf-8", errors="replace"))
     page = normalize(" ".join(parser.parts))
@@ -120,7 +129,7 @@ def main():
             print("OK:", source["id"])
         except (urllib.error.URLError, TimeoutError, ValueError, OSError) as exc:
             failures.append({"id": source["id"], "error": str(exc)[:300]})
-            if isinstance(exc, (urllib.error.URLError, TimeoutError, OSError)):
+            if isinstance(exc, (urllib.error.URLError, TimeoutError, OSError)) or (isinstance(exc, ValueError) and "missing evidence:" in str(exc)):
                 retry_sources.append(source)
             print("SKIP:", source["id"], str(exc)[:100])
     if retry_sources:
