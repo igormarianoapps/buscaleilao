@@ -29,6 +29,13 @@ class FreitasTests(unittest.TestCase):
         self.assertIsNone(parse_detail(TEXT,URL,today=date(2099,11,5)))
     def test_non_vehicle_rejected(self):
         self.assertIsNone(parse_detail(TEXT.replace("VEÍCULOS - CAMINHÕES - MOTOS - SEMI NOVOS","IMÓVEIS COMERCIAIS"),URL,today=date(2099,11,3)))
+    def test_nav_menu_does_not_turn_real_estate_into_vehicle_event(self):
+        page = ("VEÍCULOS | IMÓVEIS | MATERIAIS\n" +
+                "LEILÃO DE IMÓVEIS COMERCIAIS\n" +
+                "Fechamento a partir das 10h00 do dia 04/11/2099\n" +
+                "Local do leilão: SÃO PAULO / SP")
+        self.assertIsNone(parse_detail(page,URL,today=date(2099,11,3)))
+
     def test_untrusted_domain_rejected(self):
         self.assertIsNone(official_id("https://evil.example/Leiloes/Lotes?leilaoId=8152"))
         self.assertIsNone(official_id("https://www.freitasleiloeiro.com.br/Leiloes/Lotes?leilaoId=abc"))
