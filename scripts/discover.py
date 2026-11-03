@@ -17,24 +17,40 @@ ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "app" / "discovery-candidates.json"
 STATES = ["GO", "SP", "MG", "PR", "RJ", "RS", "SC", "BA", "PE", "CE", "PA", "MT", "MS", "MA", "ES", "DF", "AM", "PB", "RN", "PI", "TO", "RO", "AC", "AL", "AP", "RR", "SE"]
 YEAR = datetime.now(timezone.utc).year
-QUERIES = [
+BASE_QUERIES = [
     f'leilão veículos prefeitura edital {YEAR}',
-    f'leilão veículos detran {YEAR}',
-    f'leilão de veículos municipal {YEAR}',
-    f'leilão veículos leiloeiro {YEAR}',
+    f'leilão de veículos detran {YEAR}',
+    f'leilão veículos municípios interior {YEAR}',
+    f'leilão veículos PRF edital {YEAR}',
     f'leilão carros motos seguradoras {YEAR}',
-    f'leilão veículos prefeitura cidade pequena {YEAR}',
-    f'leilão veículos Polícia Rodoviária Federal edital {YEAR}',
-    f'leilão veículos Freitas Superbid Sodré Guariglia {YEAR}',
-    f'leilão carros veículos edital municípios interior {YEAR}',
+    f'leilão veículos leiloeiro oficial {YEAR}',
 ]
+# Rotate regional discovery across executions. Two daily runs cover all UFs
+# over several days without hitting every government portal every time.
+REGIONS = [
+    ["GO","DF","MT","MS","TO","RO","AC"],
+    ["SP","RJ","MG","ES"],
+    ["PR","SC","RS"],
+    ["BA","SE","AL","PE","PB","RN"],
+    ["CE","PI","MA","PA","AP","AM","RR"],
+]
+def build_queries(now=None):
+    now = now or datetime.now(timezone.utc)
+    batch = (now.toordinal()*2 + (now.hour >= 12)) % len(REGIONS)
+    regional = [f'leilão veículos prefeitura detran {st} {YEAR}' for st in REGIONS[batch]]
+    return BASE_QUERIES + regional
+
+QUERIES = build_queries()
+
 UA = "BuscaLeilao/0.2 (https://github.com/igormarianoapps/buscaleilao)"
 MAX_ITEMS = 180
 MAX_AGE_DAYS = 120
 
 
 
-def discover(queries=QUERIES):
+def discover(queries=None):
+    if queries is None:
+        queries = build_queries()
     found = {}
     errors = []
     for term in queries:
@@ -75,7 +91,7 @@ def discover(queries=QUERIES):
             errors.append({"query": term, "error": str(exc)[:200]})
     results = list(found.values())
     results.sort(key=lambda x: (x["source_priority"] != "official", -parsedate_to_datetime(x["published"]).timestamp()))
-    return results, errors
+    return results[:MAX_ITEMS], errors
 
 
 def main():
