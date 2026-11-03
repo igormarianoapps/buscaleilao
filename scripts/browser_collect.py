@@ -96,7 +96,7 @@ def parse_copart_linked_rows(rows):
             match_date = re.search(DATE, link.get("text", ""))
             if match_date:
                 day = future_date(match_date.group(1))
-            elif re.search(r"\\bLIVE\\s+NOW\\b", link.get("text", ""), re.I):
+            elif re.search(r"\bLIVE\s+NOW\b", link.get("text", ""), re.I):
                 # "LIVE NOW" replaces the date in current-sale cells. The
                 # event detail path itself must independently contain a date.
                 from urllib.parse import urlsplit
