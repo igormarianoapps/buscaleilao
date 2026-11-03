@@ -217,5 +217,22 @@
       "dia 11",
       "9h"
     ]
+  },
+  {
+    "id": "aracaju-3-leilao-2026-11-12",
+    "title": "3º Leilão Público de 2026 — veículos e bens móveis",
+    "state": "SE",
+    "city": "Aracaju",
+    "auction_date": "2026-11-12",
+    "auction_time": null,
+    "vehicle_count": null,
+    "organizer": "Prefeitura de Aracaju",
+    "source_type": "municipal",
+    "source_url": "https://www.aracaju.se.gov.br/noticias/120050/prefeitura-promovera-leilao-publico-com-22-lotes-de-bens-moveis-e-veiculos",
+    "evidence": [
+      "12 de novembro",
+      "22 lotes",
+      "veículos"
+    ]
   }
 ]
