@@ -65,11 +65,49 @@ def check(source):
     return page
 
 
+def retry_with_browser(sources):
+    """Retry temporarily unreachable curated pages using Chromium's normal TLS checks.
+
+    No certificate bypass. Return verified records only.
+    """
+    import asyncio
+    async def run():
+        from playwright.async_api import async_playwright
+        verified, errors = [], []
+        async with async_playwright() as p:
+            browser = await p.chromium.launch(headless=True, args=["--no-sandbox"])
+            context = await browser.new_context(locale="pt-BR", ignore_https_errors=False)
+            for source in sources:
+                try:
+                    page = await context.new_page()
+                    response = await page.goto(
+                        source["source_url"], wait_until="domcontentloaded", timeout=20000
+                    )
+                    if not response or response.status >= 400:
+                        raise ValueError("HTTP " + str(response.status if response else "unknown"))
+                    text = normalize(await page.locator("body").inner_text(timeout=7000))
+                    missing = [e for e in source["evidence"] if normalize(e) not in text]
+                    if missing:
+                        raise ValueError("missing evidence: " + ", ".join(missing))
+                    if "cancelado" in text and "leilao cancelado" in text:
+                        raise ValueError("possible cancellation: manual review required")
+                    verified.append(source)
+                    print("BROWSER RETRY OK:", source["id"])
+                except Exception as exc:
+                    errors.append({"id": source["id"], "error": "browser retry: " + str(exc).splitlines()[0][:200]})
+                finally:
+                    if 'page' in locals():
+                        await page.close()
+            await browser.close()
+        return verified, errors
+    return asyncio.run(run())
+
 def main():
     today = date.today()
     checked = datetime.now(timezone.utc).isoformat(timespec="seconds")
     events = []
     failures = []
+    retry_sources = []
     for source in json.loads(SOURCES.read_text(encoding="utf-8")):
         if date.fromisoformat(source["auction_date"]) < today:
             continue
@@ -81,7 +119,21 @@ def main():
             print("OK:", source["id"])
         except (urllib.error.URLError, TimeoutError, ValueError, OSError) as exc:
             failures.append({"id": source["id"], "error": str(exc)[:300]})
+            if isinstance(exc, (urllib.error.URLError, TimeoutError, OSError)):
+                retry_sources.append(source)
             print("SKIP:", source["id"], str(exc)[:100])
+    if retry_sources:
+        recovered, browser_errors = retry_with_browser(retry_sources)
+        recovered_ids = {s["id"] for s in recovered}
+        failures = [f for f in failures if f["id"] not in recovered_ids]
+        for source in recovered:
+            record = {k: v for k, v in source.items() if k != "evidence"}
+            record.update(status="scheduled", last_checked_at=checked)
+            events.append(record)
+        errors_by_id = {e["id"]: e["error"] for e in browser_errors}
+        for failure in failures:
+            if failure["id"] in errors_by_id:
+                failure["browser_error"] = errors_by_id[failure["id"]]
     platform_events, platform_failures = collect_platforms()
     events.extend(platform_events)
     failures.extend(platform_failures)
