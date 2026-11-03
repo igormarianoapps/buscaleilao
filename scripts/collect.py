@@ -78,6 +78,7 @@ def retry_with_browser(sources):
             browser = await p.chromium.launch(headless=True, args=["--no-sandbox"])
             context = await browser.new_context(locale="pt-BR", ignore_https_errors=False)
             for source in sources:
+                page = None
                 try:
                     page = await context.new_page()
                     response = await page.goto(
@@ -96,7 +97,7 @@ def retry_with_browser(sources):
                 except Exception as exc:
                     errors.append({"id": source["id"], "error": "browser retry: " + str(exc).splitlines()[0][:200]})
                 finally:
-                    if 'page' in locals():
+                    if page is not None:
                         await page.close()
             await browser.close()
         return verified, errors
