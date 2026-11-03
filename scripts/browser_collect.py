@@ -284,6 +284,31 @@ async def collect_browser():
                 else:
                     cards = await extract_vip_cards(page)
                     found = parse_vip_cards(cards)
+                    # Persist a small public-page diagnostic when DOM extraction
+                    # misses all events, rather than guessing event URLs.
+                    if not cards:
+                        import json
+                        from pathlib import Path
+                        details = await page.evaluate("""() => ({
+                          headings: Array.from(document.querySelectorAll('body *'))
+                            .filter(el => el.children.length === 0 && /In[ií]cio/i.test(el.textContent || ''))
+                            .slice(0, 8).map(el => ({
+                              text: (el.innerText || '').slice(0, 120),
+                              parent: (el.parentElement?.innerText || '').slice(0, 320),
+                              ancestor: (el.parentElement?.parentElement?.innerText || '').slice(0, 550)
+                            })),
+                          auctionLinks: Array.from(document.querySelectorAll('a[href]'))
+                            .filter(a => /leilao|evento/i.test(a.href))
+                            .slice(0, 12).map(a => ({
+                              text: (a.innerText || '').slice(0, 70),
+                              href: a.href
+                            }))
+                        })""")
+                        target = Path(__file__).resolve().parents[1] / "app" / "vip-dom-diagnostics.json"
+                        target.write_text(json.dumps({
+                            "checked_at":datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                            "status":"no_isolated_cards", "details":details
+                        },ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
                     print(f"VIP DOM: {len(cards)} candidate card(s), {len(found)} verified state record(s)")
                     if not cards:
                         # Safe compatibility fallback for deployments where the
