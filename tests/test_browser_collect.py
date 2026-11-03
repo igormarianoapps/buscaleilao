@@ -25,6 +25,15 @@ class Tests(unittest.TestCase):
         self.assertEqual({e["id"] for e in events},{"copart-10569-2099-11-04","copart-10570-2099-11-04"})
         self.assertTrue(all(e["source_link_type"]=="event" for e in events))
 
+    def test_copart_live_now_uses_verified_official_url_date(self):
+        row={"cells":["Goiânia - GO","LIVE NOW","","56"],
+             "links":[{"text":"LIVE NOW","href":"https://www.copart.com.br/saleListResult/10569/2099-11-04"}]}
+        # Date extraction is intentionally restricted to future events.
+        events=parse_copart_linked_rows([row])
+        self.assertEqual(len(events),1)
+        self.assertEqual(events[0]["auction_date"],"2099-11-04")
+        self.assertEqual(events[0]["source_link_type"],"event")
+
     def test_copart_unlinked_day_uses_calendar_not_guessed_url(self):
         row={"cells":["Osasco - SP","04.11.2099","05.11.2099","42"],
              "links":[{"text":"04.11.2099","href":"https://www.copart.com.br/saleListResult/8888/2099-11-04"}]}
