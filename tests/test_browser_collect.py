@@ -3,7 +3,7 @@ import sys
 import unittest
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"scripts"))
-from browser_collect import parse_copart_rows, parse_copart_linked_rows, copart_detail_url, parse_vip_text
+from browser_collect import parse_copart_rows, parse_copart_linked_rows, copart_detail_url, parse_vip_text, parse_vip_cards, vip_detail_url
 
 class Tests(unittest.TestCase):
     def test_copart_two_dates_one_yard(self):
@@ -53,6 +53,30 @@ class Tests(unittest.TestCase):
         result=parse_vip_text(sample)
         self.assertEqual({r["state"] for r in result},{"BA","GO","MT"})
         self.assertTrue(all(r["vehicle_count"] is None for r in result))
+    def test_vip_card_uses_single_official_detail_link(self):
+        card={"text":"Início: 03/11/2099 10:00\\nLotes 83\\nEstados BA-GO-MT\\nTipo Leilão Online",
+              "links":["https://www.vipleiloes.com.br/leilao/12345"]}
+        events=parse_vip_cards([card])
+        self.assertEqual({e["state"] for e in events},{"BA","GO","MT"})
+        self.assertEqual(len({e["event_id"] for e in events}),1)
+        self.assertTrue(all(e["source_link_type"]=="event" for e in events))
+        self.assertTrue(all(e["source_url"]==card["links"][0] for e in events))
+
+    def test_vip_ambiguous_link_stays_calendar(self):
+        card={"text":"Início: 03/11/2099 10:00\\nEstados SP",
+              "links":["https://www.vipleiloes.com.br/leilao/12345",
+                       "https://www.vipleiloes.com.br/leilao/54321"]}
+        events=parse_vip_cards([card])
+        self.assertEqual(len(events),1)
+        self.assertEqual(events[0]["source_link_type"],"calendar")
+
+    def test_vip_rejects_entire_page_and_untrusted_links(self):
+        text="Início: 03/11/2099 10:00\\nEstados GO\\nInício: 04/11/2099 10:00\\nEstados SP"
+        self.assertEqual(parse_vip_cards([{"text":text,"links":[]}]),[])
+        self.assertIsNone(vip_detail_url("https://evil.example/leilao/12345"))
+        self.assertIsNone(vip_detail_url("https://www.vipleiloes.com.br/agenda"))
+        self.assertIsNone(vip_detail_url("https://www.vipleiloes.com.br/leilao/12345/lotes/5"))
+
     def test_vip_rejects_unspecified_uf(self):
         self.assertEqual(parse_vip_text("Seguradoras\nInício: 03/11/2099 10:00\nEstados Não Informado"),[])
     def test_past_events_excluded(self):
