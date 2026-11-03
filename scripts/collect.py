@@ -180,11 +180,9 @@ def main():
         "coverage_definition":"Presence of at least one event, not fraction of all auctions discovered",
         "organizers":{k:len(v) for k,v in sorted(by_org.items())},
         "platform_events":len(platform_events),
-        "direct_event_links":sum(
-            bool(e.get("source_link_type") == "event" or
-                 (e.get("source_type") != "private" and e.get("source_url")))
-            for e in events),
+        "direct_event_links":sum(e.get("source_link_type") == "event" for e in events),
         "calendar_links":sum(e.get("source_link_type") == "calendar" for e in events),
+        "curated_source_links":sum(e.get("source_link_type") is None and bool(e.get("source_url")) for e in events),
         "curated_success":health["successful_sources"],
         "curated_failure":health["failed_sources"],
         "failed":failures
