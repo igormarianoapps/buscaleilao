@@ -231,7 +231,7 @@ async def extract_vip_cards(page):
     return await page.evaluate("""() => {
       const marks = Array.from(document.querySelectorAll('body *'))
         .filter(el => el.children.length === 0 &&
-          /In[ií]cio\\s*:?\\s*\\d{2}\\/\\d{2}\\/\\d{4}/i.test(el.textContent || ''));
+          /^\\s*In[ií]cio\\s*:?\\s*(?:\\d{2}\\/\\d{2}\\/\\d{4})?\\s*$/i.test(el.textContent || ''));
       const cards = [], seen = new Set();
       for (const mark of marks) {
         let node = mark;
