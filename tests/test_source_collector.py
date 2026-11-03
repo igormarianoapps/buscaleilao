@@ -26,6 +26,17 @@ class SourceCollectorTests(unittest.TestCase):
         self.assertEqual(health["successful_sources"],1)
         self.assertEqual(health["failed_sources"],1)
 
+    def test_shared_page_preserves_static_and_browser_evidence(self):
+        items=[
+            source("static","https://example.org/shared",["notice A"]),
+            source("dynamic","https://example.org/shared",["notice B"])
+        ]
+        with patch("source_collector.fetch_text",return_value="notice A"):
+            events,failed,_=collect_curated(
+                items,browser_loader=lambda urls:{urls[0]:("notice B",None)})
+        self.assertEqual({e["id"] for e in events},{"static","dynamic"})
+        self.assertEqual(failed,[])
+
     def test_one_failure_does_not_stop_other_sources(self):
         def fetching(url):
             if url.endswith("/blocked"):
