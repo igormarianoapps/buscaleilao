@@ -10,6 +10,7 @@ import urllib.error
 import urllib.request
 import time
 from datetime import date, datetime, timezone
+from auction_clock import auction_today
 from html.parser import HTMLParser
 from pathlib import Path
 from browser_collect import collect_platforms
@@ -115,7 +116,7 @@ def retry_with_browser(sources):
 def main():
     from source_collector import collect_curated, browser_fetch, HEALTH
     import asyncio
-    today = date.today()
+    today = auction_today()
     checked = datetime.now(timezone.utc).isoformat(timespec="seconds")
     sources = [s for s in json.loads(SOURCES.read_text(encoding="utf-8"))
                if date.fromisoformat(s["auction_date"]) >= today]
