@@ -308,7 +308,7 @@ async def collect_browser():
                         target.write_text(json.dumps({
                             "checked_at":datetime.now(timezone.utc).isoformat(timespec="seconds"),
                             "status":"no_isolated_cards", "details":details
-                        },ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+                        },ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
                     print(f"VIP DOM: {len(cards)} candidate card(s), {len(found)} verified state record(s)")
                     if not cards:
                         # Safe compatibility fallback for deployments where the
