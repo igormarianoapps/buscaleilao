@@ -16,7 +16,8 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 - [x] Exibir tipo de fonte correto: municipal, estadual, federal ou privada
 - [x] Executar testes Python no workflow de coleta **antes** de atualizar o feed
 - [x] Deduplicação de registros multiestaduais somente com mesmo `event_id`
-- [ ] Validar arquitetura nova e coletor Freitas em execução completa do GitHub Actions
+- [x] Validar arquitetura nova e coletor Freitas na coleta de 03/11/2026, 16h40 BRT: 41 eventos únicos, 19 UFs e 3 leilões Freitas
+- [x] Evitar duplicação de eventos com links individuais Freitas/Superbid, mesmo quando os coletores utilizam IDs diferentes (aguarda próxima execução)
 - [ ] Links individuais estáveis e IDs originais da Copart e VIP
 - [ ] Detectar adiamentos e cancelamentos com o edital original
 - [ ] Quantidades de veículos apenas quando comprovadas pela fonte
@@ -37,14 +38,22 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 - [ ] Medir cobertura de leiloeiros/prefeituras por UF; não confundir presença em UF com cobertura completa
 - [ ] Encontrar fonte de Curitiba acessível ao coletor (HTTP 403 na última tentativa)
 
-## Marco de validação
+## Última coleta confirmada — 03/11/2026, 16h40 BRT
 
-**Última coleta confirmada, antes desta entrega:** 03/11/2026 às 15h14 BRT — 30 eventos únicos, 18 UFs, 52 notícias na fila de revisão. O feed muda a cada execução e datas passadas saem naturalmente.
+- **41 leilões únicos**, 92 registros estaduais, 19 UFs com pelo menos um evento (70,4% de presença geográfica, não cobertura total).
+- Coleta privada: VIP 15, Copart 9, Freitas 3. Órgãos públicos: 14.
+- **16 de 20** anúncios curados aprovados; falhas independentes em Curitiba (403), Aracaju (evidências ausentes), Pedranópolis (403), Superbid (403).
+- DETRAN-BA, DETRAN-GO e Serranópolis do Iguaçu entraram no feed.
+- Fila de pesquisa: 80 notícias; nenhuma publicada sem validação.
+- `app/source-health.json` foi criado e permite diagnosticar erros por fonte.
+- Código de deduplicação por URL individual atualizado **após** esta coleta; ainda não validado em nova execução.
 
-**Situação na última consulta ao repositório (03/11/2026, após 16h BRT):** ainda não havia novo relatório com a arquitetura atual, e `app/source-health.json` ainda não existia. Nenhum resultado novo foi dado como validado.
+## Próximas entregas
 
-**Próxima verificação conjunta:** a ação `Collect verified auctions` executará testes e produzirá feed, relatório e `source-health.json`. Conferir também links específicos de Freitas/Superbid, resultados do novo coletor Freitas, Serranópolis do Iguaçu e Pedranópolis, estabilidade das outras fontes e ausência de publicações sem evidência. Não depende de execução manual após cada commit.
+1. Obter IDs e links próprios da Copart e VIP, mantendo suas agendas atuais como fallback.
+2. Encontrar fontes alternativas públicas para Aracaju, Curitiba, Pedranópolis e Superbid; não contornar HTTP 403.
+3. Converter notícias de órgãos oficiais em eventos somente após confirmar **data futura, estado, organizador e documento original**.
+4. Auditar a qualidade das UFs associadas aos eventos multiestaduais da VIP.
 
-## Definição de MVP
+**Regra:** a execução ser bem-sucedida não equivale a cobertura nacional completa.
 
-Busca por UF e data; eventos distintos e verificáveis; origem oficial acessível; atualização automática duas vezes ao dia; diagnósticos de falha por fonte; cobertura nacional medida, sem prometer 100% dos leilões.
