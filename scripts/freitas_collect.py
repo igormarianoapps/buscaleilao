@@ -26,13 +26,16 @@ def parse_detail(text, url, today=None):
     if not identifier: return None
     today = today or date.today()
     head = text[:8000]
-    if not re.search(r"ve[ií]culos|caminh[oõ]es|motocicletas|motos", head, re.I):
-        return None
     closing = re.search(
         r"Fechamento\s+a\s+partir\s+das\s+(\d{1,2})h(\d{2})\s+do\s+dia\s+(\d{2})/(\d{2})/(\d{4})",
         head, re.I
     )
     if not closing: return None
+    # Look at the event heading immediately before the closing announcement;
+    # the global navigation menu also contains the word "Veículos".
+    heading = head[max(0,closing.start()-260):closing.start()]
+    if not re.search(r"ve[ií]culos|caminh[oõ]es|motocicletas|motos", heading, re.I):
+        return None
     hh, mm, dd, mo, yyyy = map(int, closing.groups())
     try:
         when = date(yyyy,mo,dd)
