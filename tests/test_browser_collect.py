@@ -78,9 +78,9 @@ class Tests(unittest.TestCase):
         self.assertIsNone(vip_detail_url("https://www.vipleiloes.com.br/leilao/12345/lotes/5"))
 
     def test_vip_partial_cards_do_not_hide_calendar_auctions(self):
-        page=("Início: 03/11/2099 10:00\\nEstados BA-GO\\n"
-              "Início: 04/11/2099 11:00\\nEstados SP")
-        cards=[{"text":"Início: 03/11/2099 10:00\\nEstados BA-GO",
+        page=("Início: 03/11/2099 10:00\nEstados BA-GO\n"
+              "Início: 04/11/2099 11:00\nEstados SP")
+        cards=[{"text":"Início: 03/11/2099 10:00\nEstados BA-GO",
                 "links":["https://www.vipleiloes.com.br/leilao/123"]}]
         events, mode=choose_vip_events(cards,page)
         self.assertEqual(mode,"partial_cards_fallback")
@@ -88,7 +88,7 @@ class Tests(unittest.TestCase):
         self.assertTrue(all(e["source_link_type"]=="calendar" for e in events))
 
     def test_vip_complete_cards_preserve_direct_links(self):
-        page="Início: 03/11/2099 10:00\\nEstados BA-GO"
+        page="Início: 03/11/2099 10:00\nEstados BA-GO"
         cards=[{"text":page,"links":["https://www.vipleiloes.com.br/leilao/123"]}]
         events,mode=choose_vip_events(cards,page)
         self.assertEqual(mode,"complete_cards")
@@ -96,8 +96,8 @@ class Tests(unittest.TestCase):
         self.assertTrue(all(e["source_link_type"]=="event" for e in events))
 
     def test_vip_ambiguous_cards_fallback(self):
-        page="Início: 03/11/2099 10:00\\nEstados BA"
-        cards=[{"text":page+"\\nInício: 04/11/2099 10:00\\nEstados SP",
+        page="Início: 03/11/2099 10:00\nEstados BA"
+        cards=[{"text":page+"\nInício: 04/11/2099 10:00\nEstados SP",
                 "links":["https://www.vipleiloes.com.br/leilao/123"]}]
         events,mode=choose_vip_events(cards,page)
         self.assertEqual(mode,"calendar_fallback")
