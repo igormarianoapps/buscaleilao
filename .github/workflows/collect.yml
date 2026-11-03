@@ -30,11 +30,13 @@ jobs:
         run: python scripts/browser_probe.py
       - name: Discover new auction leads
         run: python scripts/discover.py
+      - name: Prioritize unverified discovery leads
+        run: python scripts/prioritize_leads.py
       - name: Publish verified feed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add app/events.json app/collection-report.json app/discovery-candidates.json
+          git add app/events.json app/collection-report.json app/discovery-candidates.json app/review-queue.json
           if [ -f app/browser-diagnostics.json ]; then git add app/browser-diagnostics.json; fi
           if ! git diff --cached --quiet; then
             git commit -m "data: refresh verified auction feed"
