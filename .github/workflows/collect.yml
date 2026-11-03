@@ -27,23 +27,42 @@ jobs:
           python -m playwright install --with-deps chromium
       - name: Check official sources
         run: python scripts/collect.py
+      - name: Validate verified auction feed
+        run: python scripts/validate_feed.py
+      - name: Publish verified feed first
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/events.json app/collection-report.json app/source-health.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: refresh verified auction feed"
+            git push
+          fi
+      # Discovery is experimental. A failure must not block publishing the
+      # independently validated event feed above.
       - name: Diagnose big auction platforms
         continue-on-error: true
         run: python scripts/browser_probe.py
       - name: Discover new auction leads
+        continue-on-error: true
         run: python scripts/discover.py
       - name: Discover official PNCP auction notices
+        continue-on-error: true
         run: python scripts/discover_pncp.py
       - name: Prioritize unverified discovery leads
+        continue-on-error: true
         run: python scripts/prioritize_leads.py
-      - name: Publish verified feed
+      - name: Publish optional research diagnostics
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add app/events.json app/collection-report.json app/discovery-candidates.json app/review-queue.json app/pncp-candidates.json app/source-health.json
-          if [ -f app/browser-diagnostics.json ]; then git add app/browser-diagnostics.json; fi
-          if [ -f app/vip-dom-diagnostics.json ]; then git add app/vip-dom-diagnostics.json; fi
+          for file in \
+            app/discovery-candidates.json \
+            app/review-queue.json \
+            app/pncp-candidates.json \
+            app/browser-diagnostics.json \
+            app/vip-dom-diagnostics.json; do
+            if [ -f "$file" ]; then git add "$file"; fi
+          done
           if ! git diff --cached --quiet; then
-            git commit -m "data: refresh verified auction feed"
+            git commit -m "data: refresh auction research leads and diagnostics"
             git push
           fi
