@@ -68,6 +68,16 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 - [ ] Conferir `app/pncp-candidates.json`, `app/vip-dom-diagnostics.json` e contagens após a próxima coleta real.
 - [ ] Confirmar editais PNCP individualmente e transformar os comprovados em fontes curadas.
 
+## Melhoria de cobertura — 03/11/2026
+
+- [x] Priorizar editais PNCP dos estados **sem eventos** na última coleta, usando somente a lista real `states_without_events` do relatório.
+- [x] Limitar a 10 candidatos PNCP por UF na fila para evitar que estados grandes monopolizem a revisão.
+- [x] Identificar `coverage_gap` por candidato e totalizar `pncp_gap_leads` no relatório da fila.
+- [x] Testes aprovados no workflow `Test auction adapters` execução **41712403785**.
+- [ ] Validar a API PNCP e novos candidatos em coleta completa (arquivo `app/pncp-candidates.json` ainda não publicado).
+- [ ] Validar diagnóstico DOM VIP na coleta completa (arquivo `app/vip-dom-diagnostics.json` ainda não publicado).
+- [ ] Confirmar diretamente os editais PNCP de UFs ausentes antes de promover qualquer evento ao feed.
+
 ## Última coleta confirmada — 03/11/2026, 17h07 BRT
 
 - Workflow `Collect verified auctions` executado com sucesso, inclusive testes, browser e publicação.
