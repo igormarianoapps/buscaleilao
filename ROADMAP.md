@@ -1,6 +1,6 @@
 # BuscaLeilão — checklist de execução
 
-Atualizado: 02/11/2026. Status abaixo indica código publicado, **não** validação do deploy em produção.
+Atualizado: 03/11/2026. Status abaixo indica código publicado, **não** validação do deploy em produção.
 
 ## Fase 1 — Qualidade dos dados
 
@@ -12,7 +12,8 @@ Atualizado: 02/11/2026. Status abaixo indica código publicado, **não** valida�
 - [ ] Separar corretamente múltiplos leilões semelhantes com dados idênticos e revisar captura de UFs.
 - [ ] Extrair contagem de veículos apenas de campos comprovados.
 - [ ] Identificar e acompanhar cancelamentos, alterações de datas e lotes.
-- [ ] Testar nova extração no GitHub Actions e validar resultados reais.
+- [x] Testar a extração anterior no GitHub Actions: 24 eventos únicos, 17 UFs (relatório 02/11/2026).
+- [ ] Validar no GitHub Actions a nova rotina de recuperação por Chromium (03/11/2026).
 
 ## Fase 2 — Cobertura nacional
 
@@ -20,15 +21,17 @@ Atualizado: 02/11/2026. Status abaixo indica código publicado, **não** valida�
 - [x] Adicionar Curitiba SMDT 17/2026 (PR) como fonte oficial monitorada.
 - [x] Adicionar sessões PRF-SP 03/11 e 04/11/2026 como fontes monitoradas.
 - [x] Ordenar possíveis fontes oficiais para análise, sem publicar candidatos automaticamente.
-- [ ] Converter candidatos RSS em eventos a partir de edital/data/UF verificados.
+- [x] Adicionar fontes oficiais DETRAN-BA (25/11) e PRF-ES (04/11), com evidências a serem confirmadas pelo coletor.
+- [x] Tentar recuperação de falhas temporárias/SSL via navegador sem desativar validação de certificados.
+- [ ] Converter candidatos RSS em eventos a partir de edital/data/UF verificados em escala.
 - [ ] Adicionar conectores confiáveis de outros grandes leiloeiros e órgãos públicos.
 - [ ] Expandir para municípios menores e monitorar cobertura das 27 UFs.
 - [ ] Medir percentual de fontes acompanhadas; não prometer 100% de cobertura.
 
 ## Próxima entrega
 
-1. Rodar **Test auction adapters** e **Collect verified auctions** no GitHub Actions.
-2. Verificar `app/collection-report.json` e corrigir fontes que falharem.
+1. Rodar **Test auction adapters** e **Collect verified auctions** no GitHub Actions novamente para validar as alterações de 03/11.
+2. Verificar `app/collection-report.json` para Lorena, Curitiba, BA e ES; os dois últimos só entram se passarem por verificação textual.
 3. Investigar links individuais/identificadores de Copart e VIP antes de expandir extração automática de novos leiloeiros.
 
 Critério de conclusão: leilões exibidos correspondem a eventos reais, sem atribuição indevida a uma UF, e apontam para a fonte específica sempre que ela estiver disponível.
