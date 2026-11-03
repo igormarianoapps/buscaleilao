@@ -276,9 +276,14 @@ async def collect_browser():
                 else:
                     cards = await extract_vip_cards(page)
                     found = parse_vip_cards(cards)
-                    if not found:
+                    print(f"VIP DOM: {len(cards)} candidate card(s), {len(found)} verified state record(s)")
+                    if not cards:
+                        # Safe compatibility fallback for deployments where the
+                        # VIP agenda does not expose readable card containers.
                         body = await page.locator("body").inner_text(timeout=10000)
                         found = parse_vip_text(body)
+                    elif not found:
+                        raise ValueError("VIP DOM cards found but none passed verification")
                 if not found:
                     raise ValueError("Nenhum evento validável extraído da página pública")
                 all_events.extend(found)
