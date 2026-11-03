@@ -133,6 +133,17 @@ async def collect_browser():
                 print(f"BROWSER {name}: {errors[-1]['error']}")
             finally:
                 await context.close()
+        # Third independent platform: Freitas public calendar and auction pages.
+        # A failure here never blocks Copart or VIP.
+        try:
+            from freitas_collect import collect_freitas_browser
+            freitas_events = await collect_freitas_browser(browser)
+            all_events.extend(freitas_events)
+            print(f"BROWSER Freitas: {len(freitas_events)} event(s) verified")
+        except Exception as exc:
+            errors.append({"id":"Freitas Leiloeiro",
+                           "error":str(exc).splitlines()[0][:250]})
+            print(f"BROWSER Freitas: {errors[-1]['error']}")
         await browser.close()
     return all_events, errors
 
