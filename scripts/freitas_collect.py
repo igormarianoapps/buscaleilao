@@ -5,6 +5,7 @@ date on each original event page before publishing it. No individual lot scrapin
 """
 import re
 from datetime import date, datetime, timezone
+from auction_clock import auction_today
 from urllib.parse import urlparse, parse_qs
 from browser_collect import event
 
@@ -24,7 +25,7 @@ def parse_detail(text, url, today=None):
     """Return a single source-verified event or None; never infer from lot lines."""
     identifier = official_id(url)
     if not identifier: return None
-    today = today or date.today()
+    today = today or auction_today()
     head = text[:8000]
     closing = re.search(
         r"Fechamento\s+a\s+partir\s+das\s+(\d{1,2})h(\d{2})\s+do\s+dia\s+(\d{2})/(\d{2})/(\d{4})",
