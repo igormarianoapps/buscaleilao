@@ -114,5 +114,40 @@
       "10h00min",
       "Edital 01/2026"
     ]
+  },
+  {
+    "id": "detran-ba-23-2026",
+    "title": "Leilão DETRAN-BA nº 23/2026 — veículos conservados e sucatas",
+    "state": "BA",
+    "city": "Salvador e região",
+    "auction_date": "2026-11-25",
+    "auction_time": "09:00",
+    "vehicle_count": null,
+    "organizer": "DETRAN Bahia",
+    "source_type": "state",
+    "source_url": "https://www.ba.gov.br/detran/editais/7742/edital-de-leilao-no-232026-veiculos-conservados-e-sucatas-aproveitaveis",
+    "evidence": [
+      "Edital de Leilão nº 23/2026",
+      "25/11/2026",
+      "09h",
+      "Alagoinhas, Salvador e Santo Antônio de Jesus"
+    ]
+  },
+  {
+    "id": "prf-es-2026-11-04",
+    "title": "Leilão PRF-ES — terceira sessão de veículos e sucatas",
+    "state": "ES",
+    "city": "Vitória e região",
+    "auction_date": "2026-11-04",
+    "auction_time": "10:00",
+    "vehicle_count": null,
+    "organizer": "Polícia Rodoviária Federal",
+    "source_type": "federal",
+    "source_url": "https://www.gov.br/prf/pt-br/assuntos/leiloes-prf/espirito-santo/edital-de-licitacao-no-2-2026-egvr-es",
+    "evidence": [
+      "04/11/2026",
+      "10h",
+      "veículos conservados e sucatas"
+    ]
   }
 ]
