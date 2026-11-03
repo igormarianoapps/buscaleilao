@@ -4,7 +4,7 @@ import unittest
 from datetime import datetime, timezone
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"scripts"))
-from prioritize_leads import prioritize, explicit_auction_date, merge_review_sources
+from prioritize_leads import prioritize, explicit_auction_date, merge_review_sources, load_current_candidates
 
 NOW=datetime(2026,11,3,tzinfo=timezone.utc)
 
@@ -81,6 +81,31 @@ class ReviewTests(unittest.TestCase):
         self.assertEqual(len([x for x in result if x["state_hint"]=="SP"]),10)
         self.assertEqual(len(result),11)
         self.assertTrue(all("auction_date" not in item for item in result))
+
+    def test_stale_research_file_cannot_reenter_queue(self):
+        import json
+        from tempfile import TemporaryDirectory
+        with TemporaryDirectory() as tmp:
+            path=Path(tmp)/"pncp.json"
+            path.write_text(json.dumps({
+                "checked_at":"2026-11-02T12:00:00+00:00",
+                "candidates":[{"title":"Old notice"}]}),encoding="utf-8")
+            items,fresh=load_current_candidates(path,NOW)
+            self.assertEqual(items,[])
+            self.assertFalse(fresh)
+
+    def test_current_research_file_allowed_for_triage_only(self):
+        import json
+        from tempfile import TemporaryDirectory
+        with TemporaryDirectory() as tmp:
+            path=Path(tmp)/"pncp.json"
+            path.write_text(json.dumps({
+                "checked_at":"2026-11-03T00:00:00+00:00",
+                "candidates":[{"title":"Leilão de veículos","source_url":"https://pncp.gov.br/app/editais/123/2026/1"}]}),encoding="utf-8")
+            items,fresh=load_current_candidates(path,NOW)
+            self.assertTrue(fresh)
+            self.assertEqual(len(items),1)
+            self.assertNotIn("auction_date",items[0])
 
     def test_non_vehicle_rejected(self):
         self.assertEqual(prioritize([{"title":"Leilão de imóveis","published":"Thu, 22 Oct 2026 07:00:00 GMT","url":"https://news.google.com/a"}],NOW),[])
