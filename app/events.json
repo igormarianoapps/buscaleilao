@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T18:01:56+00:00",
+  "updated_at": "2026-11-03T18:08:38+00:00",
   "events": [
     {
       "id": "prf-sp-2026-11-03",
@@ -13,10 +13,10 @@
       "source_type": "federal",
       "source_url": "https://www.gov.br/prf/pt-br/assuntos/leiloes-prf/sao-paulo/sp-edital-de-leilao-de-veiculos-conservados-e-sucatas-1",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:01:56+00:00"
+      "last_checked_at": "2026-11-03T18:08:38+00:00"
     },
     {
-      "id": "vip-2026-11-03-1900-829143f95f5c75-am",
+      "id": "vip-2026-11-03-1900-3c82b2aee37cdc-am",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "AM",
       "city": "Local não informado",
@@ -27,8 +27,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-03-1900-829143f95f5c75",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-03-1900-3c82b2aee37cdc",
       "states": [
         "AM",
         "BA",
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-03-1900-829143f95f5c75-ba",
+      "id": "vip-2026-11-03-1900-3c82b2aee37cdc-ba",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "BA",
       "city": "Local não informado",
@@ -57,8 +57,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-03-1900-829143f95f5c75",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-03-1900-3c82b2aee37cdc",
       "states": [
         "AM",
         "BA",
@@ -76,7 +76,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-03-1900-829143f95f5c75-ce",
+      "id": "vip-2026-11-03-1900-3c82b2aee37cdc-ce",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "CE",
       "city": "Local não informado",
@@ -87,8 +87,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-03-1900-829143f95f5c75",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-03-1900-3c82b2aee37cdc",
       "states": [
         "AM",
         "BA",
@@ -106,7 +106,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-03-1900-829143f95f5c75-df",
+      "id": "vip-2026-11-03-1900-3c82b2aee37cdc-df",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "DF",
       "city": "Local não informado",
@@ -117,8 +117,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-03-1900-829143f95f5c75",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-03-1900-3c82b2aee37cdc",
       "states": [
         "AM",
         "BA",
@@ -136,7 +136,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-03-1900-829143f95f5c75-ma",
+      "id": "vip-2026-11-03-1900-3c82b2aee37cdc-ma",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "MA",
       "city": "Local não informado",
@@ -147,8 +147,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-03-1900-829143f95f5c75",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-03-1900-3c82b2aee37cdc",
       "states": [
         "AM",
         "BA",
@@ -166,7 +166,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-03-1900-829143f95f5c75-mg",
+      "id": "vip-2026-11-03-1900-3c82b2aee37cdc-mg",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "MG",
       "city": "Local não informado",
@@ -177,8 +177,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-03-1900-829143f95f5c75",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-03-1900-3c82b2aee37cdc",
       "states": [
         "AM",
         "BA",
@@ -196,7 +196,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-03-1900-829143f95f5c75-mt",
+      "id": "vip-2026-11-03-1900-3c82b2aee37cdc-mt",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "MT",
       "city": "Local não informado",
@@ -207,8 +207,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-03-1900-829143f95f5c75",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-03-1900-3c82b2aee37cdc",
       "states": [
         "AM",
         "BA",
@@ -226,7 +226,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-03-1900-829143f95f5c75-pa",
+      "id": "vip-2026-11-03-1900-3c82b2aee37cdc-pa",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "PA",
       "city": "Local não informado",
@@ -237,8 +237,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-03-1900-829143f95f5c75",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-03-1900-3c82b2aee37cdc",
       "states": [
         "AM",
         "BA",
@@ -256,7 +256,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-03-1900-829143f95f5c75-pe",
+      "id": "vip-2026-11-03-1900-3c82b2aee37cdc-pe",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "PE",
       "city": "Local não informado",
@@ -267,8 +267,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-03-1900-829143f95f5c75",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-03-1900-3c82b2aee37cdc",
       "states": [
         "AM",
         "BA",
@@ -286,7 +286,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-03-1900-829143f95f5c75-pr",
+      "id": "vip-2026-11-03-1900-3c82b2aee37cdc-pr",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "PR",
       "city": "Local não informado",
@@ -297,8 +297,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-03-1900-829143f95f5c75",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-03-1900-3c82b2aee37cdc",
       "states": [
         "AM",
         "BA",
@@ -316,7 +316,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-03-1900-829143f95f5c75-rj",
+      "id": "vip-2026-11-03-1900-3c82b2aee37cdc-rj",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "RJ",
       "city": "Local não informado",
@@ -327,8 +327,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-03-1900-829143f95f5c75",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-03-1900-3c82b2aee37cdc",
       "states": [
         "AM",
         "BA",
@@ -346,7 +346,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-03-1900-829143f95f5c75-rs",
+      "id": "vip-2026-11-03-1900-3c82b2aee37cdc-rs",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "RS",
       "city": "Local não informado",
@@ -357,8 +357,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-03-1900-829143f95f5c75",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-03-1900-3c82b2aee37cdc",
       "states": [
         "AM",
         "BA",
@@ -376,7 +376,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-03-1900-829143f95f5c75-sc",
+      "id": "vip-2026-11-03-1900-3c82b2aee37cdc-sc",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "SC",
       "city": "Local não informado",
@@ -387,8 +387,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-03-1900-829143f95f5c75",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-03-1900-3c82b2aee37cdc",
       "states": [
         "AM",
         "BA",
@@ -417,7 +417,7 @@
       "source_type": "private",
       "source_url": "https://www.copart.com.br/salesListResult/",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:12+00:00"
+      "last_checked_at": "2026-11-03T18:09:23+00:00"
     },
     {
       "id": "copart-2026-11-04-sp-itaquaquecetuba",
@@ -431,7 +431,7 @@
       "source_type": "private",
       "source_url": "https://www.copart.com.br/salesListResult/",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:12+00:00"
+      "last_checked_at": "2026-11-03T18:09:23+00:00"
     },
     {
       "id": "copart-2026-11-04-sp-osasco",
@@ -445,10 +445,38 @@
       "source_type": "private",
       "source_url": "https://www.copart.com.br/salesListResult/",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:12+00:00"
+      "last_checked_at": "2026-11-03T18:09:23+00:00"
     },
     {
-      "id": "vip-2026-11-04-1000-881643bfb12b15-ba",
+      "id": "cuiaba-semob-4-2026-11-04",
+      "title": "4º leilão da Semob — segunda sessão",
+      "state": "MT",
+      "city": "Cuiabá",
+      "auction_date": "2026-11-04",
+      "auction_time": "09:00",
+      "vehicle_count": null,
+      "organizer": "Prefeitura de Cuiabá — Semob",
+      "source_type": "municipal",
+      "source_url": "https://www.cuiaba.mt.gov.br/noticias/semob-realiza-o-4o-leilao-do-ano-com-1-065-veiculos-disponiveis",
+      "status": "scheduled",
+      "last_checked_at": "2026-11-03T18:08:38+00:00"
+    },
+    {
+      "id": "campina-grande-pb-001-2026",
+      "title": "Leilão municipal 001/2026 — veículos, motocicletas, vans e sucatas",
+      "state": "PB",
+      "city": "Campina Grande",
+      "auction_date": "2026-11-04",
+      "auction_time": "10:00",
+      "vehicle_count": null,
+      "organizer": "Prefeitura de Campina Grande",
+      "source_type": "municipal",
+      "source_url": "https://www.marcotulioleiloes.com.br/leiloes/355",
+      "status": "scheduled",
+      "last_checked_at": "2026-11-03T18:08:38+00:00"
+    },
+    {
+      "id": "vip-2026-11-04-1000-a63d6ea911d70f-ba",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "BA",
       "city": "Local não informado",
@@ -459,8 +487,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-04-1000-881643bfb12b15",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-04-1000-a63d6ea911d70f",
       "states": [
         "BA",
         "RS",
@@ -469,7 +497,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-04-1000-881643bfb12b15-rs",
+      "id": "vip-2026-11-04-1000-a63d6ea911d70f-rs",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "RS",
       "city": "Local não informado",
@@ -480,8 +508,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-04-1000-881643bfb12b15",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-04-1000-a63d6ea911d70f",
       "states": [
         "BA",
         "RS",
@@ -490,7 +518,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-04-1000-881643bfb12b15-sc",
+      "id": "vip-2026-11-04-1000-a63d6ea911d70f-sc",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "SC",
       "city": "Local não informado",
@@ -501,8 +529,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-04-1000-881643bfb12b15",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-04-1000-a63d6ea911d70f",
       "states": [
         "BA",
         "RS",
@@ -511,7 +539,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-04-1000-881643bfb12b15-sp",
+      "id": "vip-2026-11-04-1000-a63d6ea911d70f-sp",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "SP",
       "city": "Local não informado",
@@ -522,8 +550,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-04-1000-881643bfb12b15",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-04-1000-a63d6ea911d70f",
       "states": [
         "BA",
         "RS",
@@ -543,7 +571,7 @@
       "source_type": "federal",
       "source_url": "https://www.gov.br/prf/pt-br/assuntos/leiloes-prf/sao-paulo/sp-edital-de-leilao-de-veiculos-conservados-e-sucatas-1",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:01:56+00:00"
+      "last_checked_at": "2026-11-03T18:08:38+00:00"
     },
     {
       "id": "prf-es-2026-11-04",
@@ -557,10 +585,10 @@
       "source_type": "federal",
       "source_url": "https://www.gov.br/prf/pt-br/assuntos/leiloes-prf/espirito-santo/edital-de-licitacao-no-2-2026-egvr-es",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:01:56+00:00"
+      "last_checked_at": "2026-11-03T18:08:38+00:00"
     },
     {
-      "id": "vip-2026-11-04-1100-8a27a6145471e8-pb",
+      "id": "vip-2026-11-04-1100-29caff8ee87e74-pb",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "PB",
       "city": "Local não informado",
@@ -571,14 +599,14 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-04-1100-8a27a6145471e8",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-04-1100-29caff8ee87e74",
       "states": [
         "PB"
       ]
     },
     {
-      "id": "vip-2026-11-04-1200-ffd5aa6a51efe0-ba",
+      "id": "vip-2026-11-04-1200-fb6cd8c9ec4895-ba",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "BA",
       "city": "Local não informado",
@@ -589,8 +617,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-04-1200-ffd5aa6a51efe0",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-04-1200-fb6cd8c9ec4895",
       "states": [
         "BA",
         "MA",
@@ -602,7 +630,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-04-1200-ffd5aa6a51efe0-ma",
+      "id": "vip-2026-11-04-1200-fb6cd8c9ec4895-ma",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "MA",
       "city": "Local não informado",
@@ -613,8 +641,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-04-1200-ffd5aa6a51efe0",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-04-1200-fb6cd8c9ec4895",
       "states": [
         "BA",
         "MA",
@@ -626,7 +654,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-04-1200-ffd5aa6a51efe0-mt",
+      "id": "vip-2026-11-04-1200-fb6cd8c9ec4895-mt",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "MT",
       "city": "Local não informado",
@@ -637,8 +665,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-04-1200-ffd5aa6a51efe0",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-04-1200-fb6cd8c9ec4895",
       "states": [
         "BA",
         "MA",
@@ -650,7 +678,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-04-1200-ffd5aa6a51efe0-pe",
+      "id": "vip-2026-11-04-1200-fb6cd8c9ec4895-pe",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "PE",
       "city": "Local não informado",
@@ -661,8 +689,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-04-1200-ffd5aa6a51efe0",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-04-1200-fb6cd8c9ec4895",
       "states": [
         "BA",
         "MA",
@@ -674,7 +702,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-04-1200-ffd5aa6a51efe0-rs",
+      "id": "vip-2026-11-04-1200-fb6cd8c9ec4895-rs",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "RS",
       "city": "Local não informado",
@@ -685,8 +713,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-04-1200-ffd5aa6a51efe0",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-04-1200-fb6cd8c9ec4895",
       "states": [
         "BA",
         "MA",
@@ -698,7 +726,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-04-1200-ffd5aa6a51efe0-sc",
+      "id": "vip-2026-11-04-1200-fb6cd8c9ec4895-sc",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "SC",
       "city": "Local não informado",
@@ -709,8 +737,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-04-1200-ffd5aa6a51efe0",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-04-1200-fb6cd8c9ec4895",
       "states": [
         "BA",
         "MA",
@@ -722,7 +750,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-04-1200-ffd5aa6a51efe0-sp",
+      "id": "vip-2026-11-04-1200-fb6cd8c9ec4895-sp",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "SP",
       "city": "Local não informado",
@@ -733,8 +761,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-04-1200-ffd5aa6a51efe0",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-04-1200-fb6cd8c9ec4895",
       "states": [
         "BA",
         "MA",
@@ -746,7 +774,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-04-1900-ed3b6770daa35b-ba",
+      "id": "vip-2026-11-04-1900-7331affba80e1e-ba",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "BA",
       "city": "Local não informado",
@@ -757,8 +785,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-04-1900-ed3b6770daa35b",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-04-1900-7331affba80e1e",
       "states": [
         "BA",
         "CE",
@@ -769,7 +797,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-04-1900-ed3b6770daa35b-ce",
+      "id": "vip-2026-11-04-1900-7331affba80e1e-ce",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "CE",
       "city": "Local não informado",
@@ -780,8 +808,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-04-1900-ed3b6770daa35b",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-04-1900-7331affba80e1e",
       "states": [
         "BA",
         "CE",
@@ -792,7 +820,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-04-1900-ed3b6770daa35b-pe",
+      "id": "vip-2026-11-04-1900-7331affba80e1e-pe",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "PE",
       "city": "Local não informado",
@@ -803,8 +831,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-04-1900-ed3b6770daa35b",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-04-1900-7331affba80e1e",
       "states": [
         "BA",
         "CE",
@@ -815,7 +843,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-04-1900-ed3b6770daa35b-pi",
+      "id": "vip-2026-11-04-1900-7331affba80e1e-pi",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "PI",
       "city": "Local não informado",
@@ -826,8 +854,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-04-1900-ed3b6770daa35b",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-04-1900-7331affba80e1e",
       "states": [
         "BA",
         "CE",
@@ -838,7 +866,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-04-1900-ed3b6770daa35b-rs",
+      "id": "vip-2026-11-04-1900-7331affba80e1e-rs",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "RS",
       "city": "Local não informado",
@@ -849,8 +877,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-04-1900-ed3b6770daa35b",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-04-1900-7331affba80e1e",
       "states": [
         "BA",
         "CE",
@@ -861,7 +889,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-04-1900-ed3b6770daa35b-sp",
+      "id": "vip-2026-11-04-1900-7331affba80e1e-sp",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "SP",
       "city": "Local não informado",
@@ -872,8 +900,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-04-1900-ed3b6770daa35b",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-04-1900-7331affba80e1e",
       "states": [
         "BA",
         "CE",
@@ -895,7 +923,7 @@
       "source_type": "private",
       "source_url": "https://www.copart.com.br/salesListResult/",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:12+00:00"
+      "last_checked_at": "2026-11-03T18:09:23+00:00"
     },
     {
       "id": "copart-2026-11-05-sp-osasco",
@@ -909,7 +937,7 @@
       "source_type": "private",
       "source_url": "https://www.copart.com.br/salesListResult/",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:12+00:00"
+      "last_checked_at": "2026-11-03T18:09:23+00:00"
     },
     {
       "id": "copart-2026-11-05-pe-vitoria-de-santo-antao",
@@ -923,7 +951,21 @@
       "source_type": "private",
       "source_url": "https://www.copart.com.br/salesListResult/",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:12+00:00"
+      "last_checked_at": "2026-11-03T18:09:23+00:00"
+    },
+    {
+      "id": "cuiaba-semob-4-2026-11-05",
+      "title": "4º leilão da Semob — terceira sessão",
+      "state": "MT",
+      "city": "Cuiabá",
+      "auction_date": "2026-11-05",
+      "auction_time": "09:00",
+      "vehicle_count": null,
+      "organizer": "Prefeitura de Cuiabá — Semob",
+      "source_type": "municipal",
+      "source_url": "https://www.cuiaba.mt.gov.br/noticias/semob-realiza-o-4o-leilao-do-ano-com-1-065-veiculos-disponiveis",
+      "status": "scheduled",
+      "last_checked_at": "2026-11-03T18:08:38+00:00"
     },
     {
       "id": "fernando-prestes-03-2026",
@@ -937,7 +979,7 @@
       "source_type": "municipal",
       "source_url": "https://www.fernandoprestes.sp.gov.br/portal/editais/0/1/2638",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:01:56+00:00"
+      "last_checked_at": "2026-11-03T18:08:38+00:00"
     },
     {
       "id": "copart-2026-11-06-mg-betim",
@@ -951,10 +993,10 @@
       "source_type": "private",
       "source_url": "https://www.copart.com.br/salesListResult/",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:12+00:00"
+      "last_checked_at": "2026-11-03T18:09:23+00:00"
     },
     {
-      "id": "vip-2026-11-06-0900-16d667a0089fe1-ma",
+      "id": "vip-2026-11-06-0900-5e02cdc9208a59-ma",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "MA",
       "city": "Local não informado",
@@ -965,8 +1007,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-06-0900-16d667a0089fe1",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-06-0900-5e02cdc9208a59",
       "states": [
         "MA"
       ]
@@ -983,10 +1025,10 @@
       "source_type": "municipal",
       "source_url": "https://www.mogidascruzes.sp.gov.br/noticia/no-dia-6-de-novembro-prefeitura-fara-leilao-online-para-venda-de-84-veiculos",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:01:56+00:00"
+      "last_checked_at": "2026-11-03T18:08:38+00:00"
     },
     {
-      "id": "vip-2026-11-06-1400-28ae290523d998-ba",
+      "id": "vip-2026-11-06-1400-7efc4ab005c775-ba",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "BA",
       "city": "Local não informado",
@@ -997,8 +1039,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-06-1400-28ae290523d998",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-06-1400-7efc4ab005c775",
       "states": [
         "BA",
         "PA",
@@ -1008,7 +1050,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-06-1400-28ae290523d998-pa",
+      "id": "vip-2026-11-06-1400-7efc4ab005c775-pa",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "PA",
       "city": "Local não informado",
@@ -1019,8 +1061,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-06-1400-28ae290523d998",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-06-1400-7efc4ab005c775",
       "states": [
         "BA",
         "PA",
@@ -1030,7 +1072,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-06-1400-28ae290523d998-rj",
+      "id": "vip-2026-11-06-1400-7efc4ab005c775-rj",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "RJ",
       "city": "Local não informado",
@@ -1041,8 +1083,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-06-1400-28ae290523d998",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-06-1400-7efc4ab005c775",
       "states": [
         "BA",
         "PA",
@@ -1052,7 +1094,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-06-1400-28ae290523d998-rs",
+      "id": "vip-2026-11-06-1400-7efc4ab005c775-rs",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "RS",
       "city": "Local não informado",
@@ -1063,8 +1105,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-06-1400-28ae290523d998",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-06-1400-7efc4ab005c775",
       "states": [
         "BA",
         "PA",
@@ -1074,7 +1116,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-06-1400-28ae290523d998-sp",
+      "id": "vip-2026-11-06-1400-7efc4ab005c775-sp",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "SP",
       "city": "Local não informado",
@@ -1085,8 +1127,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-06-1400-28ae290523d998",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-06-1400-7efc4ab005c775",
       "states": [
         "BA",
         "PA",
@@ -1096,7 +1138,7 @@
       ]
     },
     {
-      "id": "vip-2026-11-06-1415-98b7f56fc6575d-ma",
+      "id": "vip-2026-11-06-1415-3ef02361053305-ma",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "MA",
       "city": "Local não informado",
@@ -1107,14 +1149,14 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-06-1415-98b7f56fc6575d",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-06-1415-3ef02361053305",
       "states": [
         "MA"
       ]
     },
     {
-      "id": "vip-2026-11-07-0900-8daf2842bb7513-pr",
+      "id": "vip-2026-11-07-0900-25fded14f0ade8-pr",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "PR",
       "city": "Local não informado",
@@ -1125,14 +1167,14 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-07-0900-8daf2842bb7513",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-07-0900-25fded14f0ade8",
       "states": [
         "PR"
       ]
     },
     {
-      "id": "vip-2026-11-09-0930-d3f4da3dcff783-ma",
+      "id": "vip-2026-11-09-0930-445f0e50b248d2-ma",
       "title": "Leilão de veículos — VIP Leilões",
       "state": "MA",
       "city": "Local não informado",
@@ -1143,8 +1185,8 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
-      "event_id": "vip-2026-11-09-0930-d3f4da3dcff783",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
+      "event_id": "vip-2026-11-09-0930-445f0e50b248d2",
       "states": [
         "MA"
       ]
@@ -1161,7 +1203,7 @@
       "source_type": "private",
       "source_url": "https://www.copart.com.br/salesListResult/",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:12+00:00"
+      "last_checked_at": "2026-11-03T18:09:23+00:00"
     },
     {
       "id": "lorena-2026-11-10",
@@ -1175,7 +1217,21 @@
       "source_type": "municipal",
       "source_url": "https://www.lorena.sp.gov.br/wordpress/index.php/2026/10/22/prefeitura-de-lorena-realiza-leilao-de-veiculos-inserviveis-e-sucatas/",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:01:56+00:00"
+      "last_checked_at": "2026-11-03T18:08:38+00:00"
+    },
+    {
+      "id": "cuiaba-semob-4-2026-11-11",
+      "title": "4º leilão da Semob — sessão de lotes não vendidos",
+      "state": "MT",
+      "city": "Cuiabá",
+      "auction_date": "2026-11-11",
+      "auction_time": "09:00",
+      "vehicle_count": null,
+      "organizer": "Prefeitura de Cuiabá — Semob",
+      "source_type": "municipal",
+      "source_url": "https://www.cuiaba.mt.gov.br/noticias/semob-realiza-o-4o-leilao-do-ano-com-1-065-veiculos-disponiveis",
+      "status": "scheduled",
+      "last_checked_at": "2026-11-03T18:08:38+00:00"
     },
     {
       "id": "vip-2026-11-11-0900-b82215d55aa67b-ba",
@@ -1189,7 +1245,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
       "event_id": "vip-2026-11-11-0900-b82215d55aa67b",
       "states": [
         "BA",
@@ -1208,7 +1264,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:03:16+00:00",
+      "last_checked_at": "2026-11-03T18:09:27+00:00",
       "event_id": "vip-2026-11-11-0900-b82215d55aa67b",
       "states": [
         "BA",
@@ -1227,7 +1283,7 @@
       "source_type": "municipal",
       "source_url": "https://vieiras.mg.gov.br/noticias/prefeitura-de-vieiras-realizara-leilao-eletronico-de-bens-moveis-no-dia-13-de-novembro-de-2026",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:01:56+00:00"
+      "last_checked_at": "2026-11-03T18:08:38+00:00"
     },
     {
       "id": "detran-ba-23-2026",
@@ -1241,7 +1297,7 @@
       "source_type": "state",
       "source_url": "https://www.ba.gov.br/detran/editais/7742/edital-de-leilao-no-232026-veiculos-conservados-e-sucatas-aproveitaveis",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T18:01:56+00:00"
+      "last_checked_at": "2026-11-03T18:08:38+00:00"
     }
   ]
 }

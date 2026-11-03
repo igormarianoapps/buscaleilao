@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-11-03T18:01:56+00:00",
-  "verified": 58,
-  "unique_events": 27,
+  "checked_at": "2026-11-03T18:08:38+00:00",
+  "verified": 62,
+  "unique_events": 31,
   "states_with_events": [
     "AM",
     "BA",
@@ -26,6 +26,8 @@
     "Copart": 8,
     "DETRAN Bahia": 1,
     "Polícia Rodoviária Federal": 3,
+    "Prefeitura de Campina Grande": 1,
+    "Prefeitura de Cuiabá — Semob": 3,
     "Prefeitura de Fernando Prestes": 1,
     "Prefeitura de Lorena": 1,
     "Prefeitura de Mogi das Cruzes": 1,
@@ -36,8 +38,8 @@
   "failed": [
     {
       "id": "curitiba-smdt-17-2026",
-      "error": "<urlopen error timed out>",
-      "browser_error": "browser retry: Page.goto: Timeout 20000ms exceeded."
+      "error": "HTTP Error 403: Forbidden",
+      "browser_error": "browser retry: HTTP 403"
     }
   ]
 }
