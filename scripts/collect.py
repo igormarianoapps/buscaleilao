@@ -113,58 +113,51 @@ def retry_with_browser(sources):
     return asyncio.run(run())
 
 def main():
+    from source_collector import collect_curated, browser_fetch, HEALTH
+    import asyncio
     today = date.today()
     checked = datetime.now(timezone.utc).isoformat(timespec="seconds")
-    events = []
-    failures = []
-    retry_sources = []
-    for source in json.loads(SOURCES.read_text(encoding="utf-8")):
-        if date.fromisoformat(source["auction_date"]) < today:
-            continue
+    sources = [s for s in json.loads(SOURCES.read_text(encoding="utf-8"))
+               if date.fromisoformat(s["auction_date"]) >= today]
+    try:
+        old_health = json.loads(HEALTH.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        old_health = {}
+    def browser_loader(urls):
         try:
-            check(source)
-            event = {k: v for k, v in source.items() if k != "evidence"}
-            event.update(status="scheduled", last_checked_at=checked)
-            events.append(event)
-            print("OK:", source["id"])
-        except (urllib.error.URLError, TimeoutError, ValueError, OSError) as exc:
-            failures.append({"id": source["id"], "error": str(exc)[:300]})
-            if isinstance(exc, (urllib.error.URLError, TimeoutError, OSError)) or (isinstance(exc, ValueError) and "missing evidence:" in str(exc)):
-                retry_sources.append(source)
-            print("SKIP:", source["id"], str(exc)[:100])
-    if retry_sources:
-        recovered, browser_errors = retry_with_browser(retry_sources)
-        recovered_ids = {s["id"] for s in recovered}
-        failures = [f for f in failures if f["id"] not in recovered_ids]
-        for source in recovered:
-            record = {k: v for k, v in source.items() if k != "evidence"}
-            record.update(status="scheduled", last_checked_at=checked)
-            events.append(record)
-        errors_by_id = {e["id"]: e["error"] for e in browser_errors}
-        for failure in failures:
-            if failure["id"] in errors_by_id:
-                failure["browser_error"] = errors_by_id[failure["id"]]
-    platform_events, platform_failures = collect_platforms()
+            return asyncio.run(browser_fetch(urls))
+        except Exception as exc:
+            return {url:(None, str(exc).splitlines()[0][:180]) for url in urls}
+    events, failures, health = collect_curated(
+        sources, previous_health=old_health, checked=checked,
+        browser_loader=browser_loader)
+    HEALTH.write_text(json.dumps(health,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    try:
+        platform_events, platform_failures = collect_platforms()
+    except Exception as exc:
+        platform_events = []
+        platform_failures = [{"id":"platforms", "error":str(exc).splitlines()[0][:220]}]
     events.extend(platform_events)
     failures.extend(platform_failures)
-    events.sort(key=lambda e: (e["auction_date"], e["auction_time"] or "", e["city"]))
-    # A failed verification must not leave outdated or unverified events visible.
-    OUTPUT.write_text(json.dumps({"updated_at": checked, "events": events}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    event_keys = {a.get("event_id") or a["id"] for a in events}
-    state_coverage = sorted({a["state"] for a in events})
-    by_organizer = {}
+    events.sort(key=lambda e:(e["auction_date"],e["auction_time"] or "",e["city"]))
+    # Failed validation does not silently carry an unverified event into the feed.
+    OUTPUT.write_text(json.dumps({"updated_at":checked,"events":events},
+        ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    unique = {a.get("event_id") or a["id"] for a in events}
+    by_org = {}
     for a in events:
-        by_organizer.setdefault(a["organizer"], set()).add(a.get("event_id") or a["id"])
+        by_org.setdefault(a["organizer"],set()).add(a.get("event_id") or a["id"])
     report = {
-        "checked_at": checked, "verified": len(events),
-        "unique_events": len(event_keys),
-        "states_with_events": state_coverage,
-        "organizers": {k: len(v) for k, v in sorted(by_organizer.items())},
-        "platform_events": len(platform_events), "failed": failures
+        "checked_at":checked,"verified":len(events),"unique_events":len(unique),
+        "states_with_events":sorted({a["state"] for a in events}),
+        "organizers":{k:len(v) for k,v in sorted(by_org.items())},
+        "platform_events":len(platform_events),
+        "curated_success":health["successful_sources"],
+        "curated_failure":health["failed_sources"],
+        "failed":failures
     }
-    REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Verified {len(events)}; blocked/unconfirmed {len(failures)}")
-
+    REPORT.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    print(f"Confirmed {len(unique)} events; {len(failures)} source errors")
 
 if __name__ == "__main__":
     main()
