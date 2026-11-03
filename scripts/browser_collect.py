@@ -7,6 +7,7 @@ import hashlib
 import re
 import unicodedata
 from datetime import date, datetime, timezone
+from auction_clock import auction_today
 
 COPART_URL = "https://www.copart.com.br/salesListResult/"
 VIP_URL = "https://www.vipleiloes.com.br/agenda"
@@ -17,7 +18,7 @@ def future_date(raw):
     try:
         day, month, year = map(int, re.split(r"[./]", raw))
         d = date(year, month, day)
-        return d.isoformat() if d >= date.today() else None
+        return d.isoformat() if d >= auction_today() else None
     except (ValueError, TypeError):
         return None
 
@@ -107,7 +108,7 @@ def parse_copart_linked_rows(rows):
                     continue
                 try:
                     linked_day = date.fromisoformat(match_path.group(1))
-                    day = linked_day.isoformat() if linked_day >= date.today() else None
+                    day = linked_day.isoformat() if linked_day >= auction_today() else None
                 except ValueError:
                     day = None
             else:
