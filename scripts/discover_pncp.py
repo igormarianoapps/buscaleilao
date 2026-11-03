@@ -88,7 +88,10 @@ def discover(now=None,pages_per_modality=2,fetch=get_page):
     requested=0
     for modality in MODALITIES:
         end=today
+        rate_limited=False
         for week in range(5):
+            if rate_limited:
+                break
             start=max(today-timedelta(days=34),end-timedelta(days=6))
             for page in range(1,pages_per_modality+1):
                 url=build_url(start,end,modality,page)
@@ -108,6 +111,12 @@ def discover(now=None,pages_per_modality=2,fetch=get_page):
                 except (OSError,ValueError,KeyError,TypeError) as exc:
                     errors.append({"modality":modality,"week":week,
                                    "page":page,"error":str(exc)[:220]})
+                    # Respect PNCP's HTTP 429 across the entire modality,
+                    # not just the page, while retaining prior candidates.
+                    from urllib.error import HTTPError
+                    if (isinstance(exc,HTTPError) and exc.code == 429) or (
+                            "HTTP 429" in str(exc) or "Error 429" in str(exc)):
+                        rate_limited=True
                     break
             end=start-timedelta(days=1)
     ordered=sorted(candidates.values(),key=lambda item: (
