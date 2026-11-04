@@ -5,7 +5,7 @@ import {groupAuctions,filterAuctions,feedFreshness,sourceLabel,emptyResultsMessa
 const make = (id,state,overrides={}) => ({
   id, state, title:'Leilão', auction_date:'2099-11-03',
   auction_time:'10:00', organizer:'VIP Leilões', source_type:'private',
-  status:'scheduled', source_url:'https://www.vipleiloes.com.br/agenda',
+  status:'scheduled', source_link_type:'event', source_url:'https://www.vipleiloes.com.br/leilao/123',
   ...overrides
 });
 
@@ -38,6 +38,14 @@ test('date and status filters exclude expired and cancelled',()=>{
   ];
   assert.equal(filterAuctions(items,{today:'2099-11-01',day:'2099-11-03'}).length,1);
   assert.equal(filterAuctions(items,{today:'2100-01-01'}).length,0);
+});
+
+test('calendar-only auctions are excluded from clickable search results',()=>{
+ const rows=[
+   make('generic','GO',{source_link_type:'calendar',source_url:'https://www.vipleiloes.com.br/agenda'}),
+   make('direct','GO',{source_link_type:'event',source_url:'https://www.vipleiloes.com.br/evento/detalhes/123'})
+ ];
+ assert.deepEqual(filterAuctions(rows,{today:'2099-11-01'}).map(x=>x.id),['direct']);
 });
 
 test('similar VIP times without matching identity remain distinct',()=>{
