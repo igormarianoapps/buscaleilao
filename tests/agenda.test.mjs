@@ -58,9 +58,21 @@ test('source provenance is displayed correctly',()=>{
  assert.equal(sourceLabel('private'),'Plataforma / leiloeiro privado');
 });
 
-test('empty state clearly distinguishes state, day and empty feed',()=>{
- assert.match(emptyResultsMessage({state:'GO',day:'2099-11-04'}),/estado e a data/);
+test('date interval is inclusive and accepts either or both bounds',()=>{
+ const items=[
+  make('first','GO',{auction_date:'2099-11-03'}),
+  make('middle','GO',{auction_date:'2099-11-07'}),
+  make('last','GO',{auction_date:'2099-11-10'}),
+  make('past','GO',{auction_date:'2099-11-01'})];
+ assert.deepEqual(filterAuctions(items,{today:'2099-11-03',start:'2099-11-03',end:'2099-11-10'}).map(x=>x.id),['first','middle','last']);
+ assert.deepEqual(filterAuctions(items,{today:'2099-11-03',start:'2099-11-07'}).map(x=>x.id),['middle','last']);
+ assert.deepEqual(filterAuctions(items,{today:'2099-11-03',end:'2099-11-07'}).map(x=>x.id),['first','middle']);
+ assert.deepEqual(filterAuctions(items,{today:'2099-11-03',start:'2099-11-10',end:'2099-11-03'}),[]);
+ assert.deepEqual(filterAuctions(items,{today:'2099-11-03',state:'SP'}),[]);
+});
+test('empty state distinguishes state, period and empty feed',()=>{
+ assert.match(emptyResultsMessage({state:'GO',start:'2099-11-03',end:'2099-11-10'}),/estado e o período/);
  assert.match(emptyResultsMessage({state:'GO'}),/este estado/);
- assert.match(emptyResultsMessage({day:'2099-11-04'}),/esta data/);
+ assert.match(emptyResultsMessage({end:'2099-11-04'}),/período selecionado/);
  assert.match(emptyResultsMessage(),/Nenhum próximo leilão/);
 });
