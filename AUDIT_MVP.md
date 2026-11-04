@@ -82,6 +82,15 @@ Fontes da checagem: [Copart 10570 indexado](https://www.copart.com.br/saleListRe
 
 **Correção de código:** `scripts/validate_feed.py` passa a recusar `source_link_type=event` com URL de calendário, data Copart divergente ou link de domínio não reconhecido. Testes verificam Copart/VIP, sem alterar a agenda pública nem forçar links inacessíveis.
 
+## Terceira rodada — origem indexada versus navegação funcional (04/11/2026)
+
+- **Freitas 8152/SP (candidato a 20º):** a página oficial [Leilão 8152 — veículos em Santa Bárbara d'Oeste](https://www.freitasleiloeiro.com.br/Leiloes/Lotes?leilaoId=8152) aparece no índice público atualizado, com encerramento em 04/11 às 10h, local em SP, leiloeiro Sérgio Villa Nova de Freitas, edital e veículos. No teste de abertura direta do URL **exato**, houve HTTP 403. Portanto, **há comprovação documental, mas não comprovação de navegação acessível**; segue parcial.
+- **VIP agenda:** a URL [vipleiloes.com.br/agenda](https://www.vipleiloes.com.br/agenda) continua produzindo loop de redirecionamento na tentativa de acesso externo. Não substituir por páginas específicas cuja abertura também não foi validada.
+- **Decisão para o MVP:** nenhuma venda é removida apenas porque o verificador externo não consegue navegar; a fonte deve continuar verificada pelo coletor. Entretanto, URL individual comprovada pela estrutura não significa **destino acessível** em navegador do público.
+- **Correção visual implementada:** os links `source_link_type=calendar` agora dizem **"Consultar agenda geral do leiloeiro"** e recebem aviso contextual: o destino **não é o evento**, é necessário localizar data e UF, e a disponibilidade depende do leiloeiro. `app/index.html` e testes `tests/test_calendar_link_ui.py`.
+
+**Progresso formal: 19/20 eventos com acesso externo comprovado.** O 20º (Freitas 8152) tem confirmação documental, mas devolve HTTP 403 ao abrir diretamente. **P0.3/P0.4 ainda não concluídos**, pois os links VIP também carecem de confirmação de utilidade real.
+
 ## Próxima ação
 
 Concluir pelo menos mais um evento distinto com link exato do feed efetivamente acessível, mantendo os cinco links originais problemáticos na lista de riscos do produto. Validar Copart/VIP em navegador real antes de alterar os links publicados. Só fechar P0.3/P0.4 quando houver pelo menos 20 aprovados e uma decisão explícita sobre os links genéricos da VIP.
