@@ -12,6 +12,18 @@ class CalendarLinkUXTests(unittest.TestCase):
         self.assertIn('a.source_link_type==="calendar"?',html)
         self.assertIn("Procure a data e o estado indicados acima.",html)
 
+    def test_html_has_no_literal_newline_escape_artifacts(self):
+        html=HTML.read_text(encoding="utf-8")
+        self.assertNotIn("\\n.topline",html)
+        self.assertNotIn("\\n.link-note",html)
+        self.assertNotIn('</a>\\n',html)
+
+    def test_mobile_layout_and_keyboard_focus_exist(self):
+        html=HTML.read_text(encoding="utf-8")
+        self.assertIn("@media(max-width:600px)",html)
+        self.assertIn(":focus-visible",html)
+        self.assertIn(".filters button{flex-basis:100%",html)
+
     def test_external_links_preserve_security_and_source_type(self):
         html=HTML.read_text(encoding="utf-8")
         self.assertIn('rel="noopener noreferrer"',html)
