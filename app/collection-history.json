@@ -1,6 +1,6 @@
 {
   "note": "Runner reached final recording step; verify each GitHub Actions run conclusion=success before marking P0.2 done.",
-  "consecutive_recorded_runs": 1,
+  "consecutive_recorded_runs": 2,
   "requires_confirmed_workflow_success": true,
   "runs": [
     {
@@ -13,6 +13,17 @@
       "curated_failure": 3,
       "recorded_at": "2026-11-03T20:45:00+00:00",
       "status": "confirmed_success_by_github_actions"
+    },
+    {
+      "run_id": "41814063834",
+      "attempt": 1,
+      "checked_at": "2026-11-04T10:25:42+00:00",
+      "unique_events": 44,
+      "states_with_events": 19,
+      "curated_success": 15,
+      "curated_failure": 6,
+      "recorded_at": "2026-11-04T10:27:44+00:00",
+      "status": "reached_final_recording_step"
     }
   ]
 }
