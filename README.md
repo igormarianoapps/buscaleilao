@@ -6,7 +6,8 @@ Site: https://buscaleilao-nine.vercel.app/
 
 ## Arquitetura atual
 
-- `app/index.html` + `app/agenda.mjs`: frontend estático, filtro de UF/data e agrupamento por evento explícito.
+- `app/index.template.html` + `app/agenda.mjs`: frontend fonte, filtros por UF e intervalo de datas, e agrupamento por evento explícito.
+- `scripts/build_static_page.py`: gera `app/index.html` autossuficiente com o feed verificado e filtros embutidos; evita falhas de caminhos de assets da hospedagem estática. **Editar o template, não apenas o HTML gerado.**
 - `app/events.json`: feed **somente com eventos validados** na última coleta.
 - `app/sources.json`: anúncios oficiais curados com evidências específicas de cada evento.
 - `scripts/source_collector.py`: verifica várias fontes com paralelismo limitado, reutiliza URLs repetidas, e isola erros. Para páginas dinâmicas, usa Chromium **sem contornar restrições de acesso**.
@@ -16,7 +17,8 @@ Site: https://buscaleilao-nine.vercel.app/
 - `scripts/collect.py`: coordena ambos os coletores e publica feed, `app/collection-report.json` e `app/source-health.json`.
 - `scripts/discover.py`: descobre notícias de leilões, incluindo rodízio regional das 27 UFs.
 - `scripts/prioritize_leads.py`: cria `app/review-queue.json` com notícias recentes para verificação. **Nunca publica notícias como leilões.**
-- `.github/workflows/collect.yml`: roda testes Python, atualiza fontes, diagnósticos, descobertas e feed em um único workflow; agenda diária duas vezes.
+- `.github/workflows/collect.yml`: roda testes Python, atualiza fontes, gera HTML autossuficiente, diagnósticos, descobertas e feed em um único workflow; agenda diária duas vezes.
+- `.github/workflows/smoke-public.yml`: testa manualmente a página **publicada** em Chromium, incluindo lista inicial, estados, filtros por período e botão de limpar.
 - `.github/workflows/test.yml`: testes Python e Node nas alterações de código.
 
 ## Regra de confiança
