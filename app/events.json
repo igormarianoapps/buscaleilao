@@ -1896,7 +1896,9 @@
       "source_type": "state",
       "source_url": "https://goias.gov.br/detran/detran-go-realiza-leilao-de-veiculos-de-mais-de-2-mil-veiculos/",
       "status": "scheduled",
-      "last_checked_at": "2026-11-04T10:43:39+00:00"
+      "last_checked_at": "2026-11-04T10:43:39+00:00",
+      "event_url": "https://pmklog.com.br/leilao/evento/leilao-detran/?evento=fa724af3-d396-11f1-a2f8-02420a000014",
+      "event_url_type": "event"
     },
     {
       "id": "vip-2026-11-09-0930-1816d772278721-ma",
