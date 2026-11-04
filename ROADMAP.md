@@ -127,7 +127,7 @@ Atualizado em 04/11/2026. **Implementado** significa código publicado no GitHub
 - [x] GitHub Actions: #41715100215, #41814063834 e #41816001753 concluídos com sucesso, em intervalos inferiores a 24 horas.
 - [x] Última coleta: 47 eventos únicos, 98 registros, 19 UFs, 18 fontes curadas aprovadas e 3 fontes com HTTP 403.
 - [x] Curitiba: três editais novamente verificados; PNCP: 27 candidatos, ainda não publicados.
-- [ ] **P0.3/P0.4 — fase atual:** **18/20 eventos distintos com destino e documentação independentemente conferidos** (15 originais + duas sessões de Cuiabá + PRF-SP). Os cinco links originais problemáticos (3 Copart, 2 VIP) continuam abertos e há um evento Freitas 8152 apenas parcialmente confirmado. Não encerrar P0.4 até decisão sobre acessibilidade dos destinos e rótulo dos links.
+- [ ] **P0.3/P0.4 — fase atual:** **19/20 eventos distintos com destino e documentação conferidos** (15 originais + duas sessões de Cuiabá + PRF-SP + Campina Grande). Os cinco links originais problemáticos (3 Copart, 2 VIP) continuam abertos e há um evento Freitas 8152 apenas parcialmente confirmado. Não encerrar P0.4 até decisão sobre acessibilidade dos destinos e rótulo dos links.
 - [ ] P0.5 — testar interface desktop/mobile após a auditoria.
 - [ ] P0.7 — piloto com usuários depois da interface.
 
@@ -149,10 +149,18 @@ Atualizado em 04/11/2026. **Implementado** significa código publicado no GitHub
 - [x] Validar em fonte pública indexada Copart 10571 (Itaquaquecetuba, 04/11), VIP PR 07/11 e VIP PE 14/11, **sem declarar aprovados links que dão timeout/loop ao abrir**.
 - [ ] Manter as cinco pendências iniciais (Copart 10570/10573/10586 e VIP PR/PE) como risco do produto até navegação real confirmada ou alternativa útil comprovada.
 - [ ] Freitas 8152: página indexada informa evento, mas abertura pelo verificador externo retorna HTTP 403; ainda não aprovado para P0.4.
-- [ ] Auditar mais dois eventos diferentes com fonte e link úteis antes de considerar P0.3/P0.4 concluídos.
+- [ ] Auditar mais um evento diferente com URL exata do feed acessível antes de considerar P0.3/P0.4 concluídos.
 - [ ] Depois iniciar P0.5 — interface desktop/mobile.
 
 **Evidências e critérios:** `AUDIT_MVP.md`. Não criar fonte nova para compensar falha sem necessidade de produto.
+
+## P0.3/P0.4 — Campina Grande aprovada, links restritos mantidos (04/11/2026)
+
+- [x] Conferir URL exata `https://www.marcotulioleiloes.com.br/leiloes/355`, edital da Prefeitura de Campina Grande/PB e data 04/11 às 10h, com lotes de veículos visíveis.
+- [x] Confirmar existência da venda Copart 10577/PE na rota alternativa oficial indexada; **não aprovar a URL exata do feed** sem abertura comprovada.
+- [x] Tentar rotas exatas de Copart 10571, 10577 e Freitas 8152: não acessíveis no verificador; nenhuma das três foi marcada como aprovada.
+- [ ] Amostra atualmente **19/20** com links exatos acessíveis. Falta **1**; os cinco links originais Copart/VIP continuam no registro de riscos.
+- [ ] Não iniciar P0.5 até conclusão ou tratamento explícito das falhas de link P0.4.
 
 ## Fase 1 — Motor de coleta e qualidade
 
