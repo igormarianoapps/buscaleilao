@@ -1,19 +1,6 @@
 {
-  "checked_at": "2026-11-03T20:44:30+00:00",
+  "checked_at": "2026-11-04T10:27:19+00:00",
   "candidates": [
-    {
-      "title": "Alienação de veículos, pertencentes ao patrimônio da Prefeitura Municipal de Bariri, considerados inseríveis para a administração no estado em que se encontram, conforme descrito no Termo de Referencia anexo I do Edital.",
-      "state": "SP",
-      "city": "Bariri",
-      "organizer": "MUNICIPIO DE BARIRI",
-      "date_hint": "2026-11-03",
-      "date_hint_status": "pncp_deadline_unverified",
-      "source_url": "https://pncp.gov.br/app/editais/46181376000140/2026/115",
-      "pncp_control": "46181376000140-1-000115/2026",
-      "review_status": "needs_edital_confirmation",
-      "note": "PNCP proposal deadline is not independently verified auction start date.",
-      "source": "pncp_official_api"
-    },
     {
       "title": "- Leilão de Veículos Apreendidos pela SMTT e DEMUTRAN-  Veículos Aptos a serem Leiloados MEMO nº 215/CGF/2026",
       "state": "SP",
@@ -327,30 +314,12 @@
       "source": "pncp_official_api"
     }
   ],
-  "count": 25,
-  "requests": 11,
+  "count": 24,
+  "requests": 7,
   "errors": [
     {
       "modality": 13,
       "week": 1,
-      "page": 1,
-      "error": "HTTP Error 429: Too Many Requests"
-    },
-    {
-      "modality": 13,
-      "week": 2,
-      "page": 1,
-      "error": "HTTP Error 429: Too Many Requests"
-    },
-    {
-      "modality": 13,
-      "week": 3,
-      "page": 1,
-      "error": "HTTP Error 429: Too Many Requests"
-    },
-    {
-      "modality": 13,
-      "week": 4,
       "page": 1,
       "error": "HTTP Error 429: Too Many Requests"
     }
