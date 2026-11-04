@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {groupAuctions,filterAuctions,feedFreshness,sourceLabel} from '../app/agenda.mjs';
+import {groupAuctions,filterAuctions,feedFreshness,sourceLabel,emptyResultsMessage} from '../app/agenda.mjs';
 
 const make = (id,state,overrides={}) => ({
   id, state, title:'Leilão', auction_date:'2099-11-03',
@@ -56,4 +56,11 @@ test('source provenance is displayed correctly',()=>{
  assert.equal(sourceLabel('federal'),'Órgão federal');
  assert.equal(sourceLabel('municipal'),'Prefeitura / órgão municipal');
  assert.equal(sourceLabel('private'),'Plataforma / leiloeiro privado');
+});
+
+test('empty state clearly distinguishes state, day and empty feed',()=>{
+ assert.match(emptyResultsMessage({state:'GO',day:'2099-11-04'}),/estado e a data/);
+ assert.match(emptyResultsMessage({state:'GO'}),/este estado/);
+ assert.match(emptyResultsMessage({day:'2099-11-04'}),/esta data/);
+ assert.match(emptyResultsMessage(),/Nenhum próximo leilão/);
 });
