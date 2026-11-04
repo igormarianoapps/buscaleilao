@@ -71,10 +71,26 @@ async def browser_fetch(urls):
         for url in urls:
             page = await ctx.new_page()
             try:
-                response = await page.goto(url, wait_until="domcontentloaded", timeout=15000)
+                # Curitiba's official auction catalogue sometimes delays
+                # DOMContentLoaded despite responding to the navigation.
+                # Request commit first, then wait for rendered body text.
+                # No insecure TLS, access-control bypass or stale data reuse.
+                is_curitiba=url.startswith("https://transito.curitiba.pr.gov.br/")
+                response = await page.goto(
+                    url,
+                    wait_until="commit" if is_curitiba else "domcontentloaded",
+                    timeout=25000 if is_curitiba else 15000)
                 if not response or response.status >= 400:
                     raise ValueError(f"HTTP {response.status if response else 'unknown'}")
-                result[url] = (await page.locator("body").inner_text(timeout=5000), None)
+                if is_curitiba:
+                    try:
+                        await page.wait_for_load_state("domcontentloaded",timeout=9000)
+                    except Exception:
+                        # Keep waiting for visible text, validated against
+                        # each edital separately. Never accept incomplete HTML.
+                        pass
+                result[url] = (await page.locator("body").inner_text(
+                    timeout=12000 if is_curitiba else 5000), None)
             except Exception as exc:
                 result[url] = (None, str(exc).splitlines()[0][:180])
             finally:
