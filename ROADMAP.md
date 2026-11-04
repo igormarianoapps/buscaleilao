@@ -127,7 +127,7 @@ Atualizado em 04/11/2026. **Implementado** significa código publicado no GitHub
 - [x] GitHub Actions: #41715100215, #41814063834 e #41816001753 concluídos com sucesso, em intervalos inferiores a 24 horas.
 - [x] Última coleta: 47 eventos únicos, 98 registros, 19 UFs, 18 fontes curadas aprovadas e 3 fontes com HTTP 403.
 - [x] Curitiba: três editais novamente verificados; PNCP: 27 candidatos, ainda não publicados.
-- [ ] **P0.3/P0.4 — fase atual:** auditar 20 eventos e seus links, registrando comprovações e problemas em `AUDIT_MVP.md`.
+- [ ] **P0.3/P0.4 — fase atual:** auditoria iniciada em `AUDIT_MVP.md`: **5/20** eventos com edital/aviso oficial e link conferidos; 1 parcial e 14 aguardando revisão. Não marcar concluída até 20/20.
 - [ ] P0.5 — testar interface desktop/mobile após a auditoria.
 - [ ] P0.7 — piloto com usuários depois da interface.
 
