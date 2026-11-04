@@ -17,10 +17,15 @@ export function groupAuctions(items) {
     (a.auction_time || '99:99').localeCompare(b.auction_time || '99:99') ||
     a.organizer.localeCompare(b.organizer));
 }
-export function filterAuctions(items,{state='',day='',today=''}={}) {
+export function filterAuctions(items,{state='',start='',end='',day='',today=''}={}) {
+  const from=start || day || today;
+  const to=end || day;
+  if (from && to && from>to) return [];
   return groupAuctions(items).filter(a=>a.status==='scheduled' &&
     (!today || a.auction_date>=today) &&
-    (!state || a.states.includes(state)) && (!day || a.auction_date===day));
+    (!state || a.states.includes(state)) &&
+    (!from || a.auction_date>=from) &&
+    (!to || a.auction_date<=to));
 }
 
 /** Freshness of the last successful collection, independent of event dates. */
@@ -42,9 +47,10 @@ export function sourceLabel(type) {
 }
 
 /** Distinguish no upcoming auctions from a filtered-out result. */
-export function emptyResultsMessage({state='',day=''}={}) {
-  if(state && day) return 'Nenhum leilão encontrado para o estado e a data selecionados. Limpe os filtros para consultar outros eventos.';
+export function emptyResultsMessage({state='',start='',end='',day=''}={}) {
+  const hasDate=Boolean(start || end || day);
+  if(state && hasDate) return 'Nenhum leilão encontrado para o estado e o período selecionados. Limpe os filtros para consultar outros eventos.';
   if(state) return 'Nenhum leilão encontrado para este estado. Limpe os filtros para consultar outros eventos.';
-  if(day) return 'Nenhum leilão encontrado para esta data. Limpe os filtros para consultar outros eventos.';
+  if(hasDate) return 'Nenhum leilão encontrado para o período selecionado. Limpe os filtros para consultar outros eventos.';
   return 'Nenhum próximo leilão verificado na base atual. Consulte novamente após a próxima atualização.';
 }
