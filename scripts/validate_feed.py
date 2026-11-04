@@ -9,6 +9,34 @@ from urllib.parse import urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 STATES = set("AC AL AP AM BA CE DF ES GO MA MT MS MG PA PB PR PE PI RJ RN RS RO RR SC SP SE TO".split())
 
+def verify_link_classification(row):
+    """Check that link labels describe URL shape, not assumed browser access."""
+    from browser_collect import copart_detail_url, vip_detail_url, COPART_URL, VIP_URL
+    kind=row.get("source_link_type")
+    if kind not in (None,"event","calendar"):
+        return "unknown link type"
+    if kind is None:
+        return None  # Curated official articles/documents have no such label.
+    url=row.get("source_url") or ""
+    org=row.get("organizer")
+    if kind=="event":
+        if org=="Copart":
+            if copart_detail_url(url,row.get("auction_date")) is None:
+                return "Copart event label requires a matching sale ID and date"
+        elif org=="VIP Leilões":
+            if vip_detail_url(url) is None:
+                return "VIP event label requires an official individual event URL"
+        else:
+            return "event link classification has no verified adapter"
+    else:
+        if org=="Copart" and url.rstrip("/")!=COPART_URL.rstrip("/"):
+            return "Copart calendar link must point to known official calendar"
+        if org=="VIP Leilões" and url.rstrip("/")!=VIP_URL.rstrip("/"):
+            return "VIP calendar link must point to known official calendar"
+        if org not in ("Copart","VIP Leilões"):
+            return "calendar link classification has no verified adapter"
+    return None
+
 def validate_feed(feed, report, now=None):
     now = now or datetime.now(timezone.utc)
     errors = []
@@ -54,6 +82,9 @@ def validate_feed(feed, report, now=None):
             errors.append(f"Event {index}: inconsistent multistate record")
         if not row.get("organizer") or not row.get("title"):
             errors.append(f"Event {index}: missing organizer or title")
+        link_issue=verify_link_classification(row)
+        if link_issue:
+            errors.append(f"Event {index}: {link_issue}")
         url = row.get("source_url") or ""
         parts = urlsplit(url)
         if parts.scheme != "https" or not parts.hostname or parts.username or parts.password:
