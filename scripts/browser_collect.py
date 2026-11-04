@@ -269,36 +269,28 @@ def choose_vip_events(cards, page_text):
     return selected,("complete_direct_links" if not +remaining else "partial_direct_links")
 
 async def extract_vip_cards(page):
-    """Look for the smallest container with one date and its own UF(s).
+    """Extract the full calendar card including the *outer* auction links.
 
-    Search both label and date leaf nodes, since the site may render them in
-    separate elements. Never treat a list of many auctions as one card.
+    VIP puts the date/UF inside .anc-row but the event <a href> in the
+    .card-evento wrapper. Stopping at the smallest matching ancestor loses
+    the direct link and incorrectly falls back to the generic agenda.
     """
     return await page.evaluate("""() => {
-      const date = /\\b\\d{2}\\/\\d{2}\\/\\d{4}\\b/g;
-      const start = /In[ií]cio\\s*:?/i;
-      const states = /Estados\\s*:?/i;
-      const leaves = Array.from(document.querySelectorAll('body *')).filter(
-        el => el.children.length === 0 &&
-          (start.test(el.textContent || '') ||
-           /\\d{2}\\/\\d{2}\\/\\d{4}/.test(el.textContent || '')));
-      const cards = [], seen = new Set();
-      for (const leaf of leaves.slice(0, 500)) {
-        let node = leaf;
-        for (let depth = 0; depth < 12 && node; depth++, node = node.parentElement) {
-          const text = (node.innerText || '').trim();
-          if (text.length > 1800) break;
-          if (start.test(text) && states.test(text) && (text.match(date) || []).length === 1) {
-            if (!seen.has(node)) {
-              seen.add(node);
-              cards.push({text, links:Array.from(node.querySelectorAll('a[href]'))
-                .map(a => a.href)});
-            }
-            break;
-          }
-        }
+      const results=[];
+      const seen=new Set();
+      for(const card of document.querySelectorAll('.card-evento')){
+        const text=(card.innerText||'').trim();
+        if(!text || text.length>1500)continue;
+        const starts=[...text.matchAll(/In[ií]cio\\s*:?\\s*\\d{2}\\/\\d{2}\\/\\d{4}/gi)];
+        if(starts.length!==1 || !/Estados\\s*:?/i.test(text))continue;
+        const hrefs=[...new Set([...card.querySelectorAll('a[href]')]
+          .map(a=>a.href).filter(Boolean))];
+        const key=text+'|'+hrefs.join('|');
+        if(seen.has(key))continue;
+        seen.add(key);
+        results.push({text,links:hrefs});
       }
-      return cards;
+      return results;
     }""")
 
 async def collect_browser():
