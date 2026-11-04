@@ -24,6 +24,25 @@ class CalendarLinkUXTests(unittest.TestCase):
         self.assertIn(":focus-visible",html)
         self.assertIn(".filters button{flex-basis:100%",html)
 
+    def test_filters_do_not_refetch_feed_on_each_search(self):
+        html=HTML.read_text(encoding="utf-8")
+        self.assertEqual(html.count('fetch("/app/events.json"'),1)
+        self.assertIn('filters.addEventListener("submit",e=>{e.preventDefault();applyFilters()})',html)
+        self.assertIn('filters.addEventListener("reset"',html)
+        self.assertIn('let currentFeed=null',html)
+        self.assertIn('emptyResultsMessage({state:form.get("state"),day:form.get("day")})',html)
+
+    def test_page_inline_module_parses_in_node(self):
+        import re
+        import subprocess
+        html=HTML.read_text(encoding="utf-8")
+        match=re.search(r'<script type="module">([\\s\\S]+?)</script>',html)
+        self.assertIsNotNone(match)
+        parsed=subprocess.run(
+            ["node","--check","--input-type=module"],
+            input=match.group(1),text=True,capture_output=True)
+        self.assertEqual(parsed.returncode,0,parsed.stderr)
+
     def test_external_links_preserve_security_and_source_type(self):
         html=HTML.read_text(encoding="utf-8")
         self.assertIn('rel="noopener noreferrer"',html)
