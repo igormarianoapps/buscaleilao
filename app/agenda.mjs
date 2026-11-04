@@ -40,3 +40,11 @@ export function sourceLabel(type) {
     private:'Plataforma / leiloeiro privado',
   })[type] || 'Fonte pública';
 }
+
+/** Distinguish no upcoming auctions from a filtered-out result. */
+export function emptyResultsMessage({state='',day=''}={}) {
+  if(state && day) return 'Nenhum leilão encontrado para o estado e a data selecionados. Limpe os filtros para consultar outros eventos.';
+  if(state) return 'Nenhum leilão encontrado para este estado. Limpe os filtros para consultar outros eventos.';
+  if(day) return 'Nenhum leilão encontrado para esta data. Limpe os filtros para consultar outros eventos.';
+  return 'Nenhum próximo leilão verificado na base atual. Consulte novamente após a próxima atualização.';
+}
