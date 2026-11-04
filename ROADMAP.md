@@ -185,6 +185,20 @@ Atualizado em 04/11/2026. **Implementado** significa código publicado no GitHub
 
 **Não mudar a definição de pronto:** CSS e testes automatizados não substituem auditoria visual e navegação real.
 
+## P0.5 — Filtros, resultados vazios e estados de erro (04/11/2026)
+
+- [x] Corrigir comportamento de busca que fazia nova requisição HTTP a cada alteração de filtros: `app/index.html` agora carrega o feed apenas uma vez por abertura de página e filtra localmente. O horário de Brasília continua sendo calculado a cada pesquisa.
+- [x] Adicionar botão **Limpar filtros** para restaurar UF/data e os resultados da sessão sem nova solicitação à rede.
+- [x] Diferenciar mensagens para ausência de eventos verificados, ausência de eventos na UF, na data, ou em ambos os filtros (`emptyResultsMessage` em `app/agenda.mjs`).
+- [x] Distinguir erro de carregamento / formato inválido do feed de uma busca legítima sem resultados.
+- [x] Garantir estados com `role="status"` e manter os alertas de feed antigo, links em nova aba com `noopener noreferrer` e ordenação de eventos.
+- [x] Testes Node + Python cobrem mensagens por filtro, renderização estática, cache de filtro e **sintaxe de JavaScript inline**; GitHub Actions **#41822399945 aprovado** (corrigido erro inicial na expressão regular do teste).
+- [ ] **P0.5 continua em andamento**: falta validar comportamento visual e navegação reais em desktop/mobile, com teclado, filtros, ausência de resultados e feed vencido.
+- [ ] **P0.3/P0.4 continuam abertos em 19/20** com risco de links externos Copart/VIP, conforme `AUDIT_MVP.md`.
+- [ ] Piloto P0.7 somente após resolver critérios pendentes de lançamento.
+
+**Prioridade preservada:** confiabilidade da agenda e uso sem fricção; não criar novos coletores ou funcionalidades P1 durante o fechamento do MVP.
+
 ## Fase 1 — Motor de coleta e qualidade
 
 - [x] Coletores independentes: erro de uma fonte não interrompe a verificação das outras
