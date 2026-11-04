@@ -6,7 +6,7 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 
 **Produto:** agenda nacional de **eventos de leilão de veículos**, não catálogo de lotes. Público consegue filtrar por UF e data e consultar a fonte. O produto não promete listar todos os leilões do Brasil.
 
-**Estado em 03/11/2026:** pré-MVP funcional. Coleta completa #41715100215 aprovada às 17h43 BRT: **48 eventos únicos, 111 registros, 19 UFs, 19/22 fontes curadas verificadas**, Copart 12, VIP 16, Freitas 3, Curitiba 3. PNCP descobriu 25 candidatos ainda não publicados. **P0.1 concluído; P0.2 em 1/3.**
+**Estado em 03/11/2026:** pré-MVP funcional. Duas coletas completas consecutivas aprovadas: #41715100215 (03/11, 48 eventos, 19 UFs) e #41814063834 (04/11, **44 eventos únicos, 95 registros, 19 UFs, 15/21 fontes curadas verificadas**). **P0.1 concluído; P0.2 em 2/3.** PNCP gerou 24 candidatos ainda não publicados.
 
 ### P0 — Bloqueadores para lançamento público
 
@@ -47,7 +47,7 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 - [x] Adicionar testes automatizados do gate e da ordem do workflow de publicação; testes GitHub Actions aprovados.
 - [x] Executar testes quando `.github/workflows/collect.yml` mudar.
 - [x] **P0.1:** coleta completa validada na execução #41715100215, incluindo PNCP, revisão, publicação e resumo.
-- [ ] **P0.2:** 1/3 coletas completas consecutivas bem-sucedidas; faltam duas execuções posteriores com sucesso e feed atualizado em até 24h.
+- [ ] **P0.2:** 2/3 coletas completas consecutivas bem-sucedidas; falta uma execução posterior com sucesso e feed atualizado dentro de 24h.
 - [ ] Em seguida iniciar auditoria de eventos/links (P0.3/P0.4); não iniciar novos coletores antes disso.
 
 **Referência permanente:** a sequência de entrega do MVP continua P0.1/P0.2/P0.6 → P0.3/P0.4 → P0.5 → P0.7. Novas funcionalidades ficam em P1.
@@ -109,6 +109,18 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 - [ ] Verificar segunda e terceira execuções completas. Não contar o workflow `Test auction adapters` para a meta P0.2.
 
 **Próxima etapa após 3/3:** auditoria de fontes/eventos e links P0.3/P0.4; não ampliar escopo antes.
+
+## P0.2 — Segunda coleta validada, recuperação de Curitiba (04/11/2026)
+
+- [x] Execução manual **#41814063834** concluída com `success` em todas as etapas, incluindo publicação e histórico; intervalo dentro de 24h desde a coleta anterior. **P0.2: 2/3**.
+- [x] Resultado: **44 eventos únicos, 95 registros, 19 UFs**; **15 fontes curadas aprovadas e 6 falhas**. Contagem diminuiu principalmente por 3 editais de Curitiba indisponíveis na coleta.
+- [x] Identificar regressão operacional: os três editais de Curitiba compartilham um catálogo municipal e falharam juntos por `Page.goto: Timeout 15000ms exceeded`. Acessibilidade da fonte varia entre coletas; não manter eventos sem evidência atual.
+- [x] Ajustar fallback Chromium **apenas para o domínio oficial de Curitiba**: `wait_until=commit`, timeout de navegação 25s, aguardar DOM e texto visível. Não contornar bloqueios HTTP, HTTPS ou aceitar evidência parcial.
+- [x] Testes de página compartilhada garantem uma tentativa de browser por URL e impedem validar edital ausente; workflow **#41814652857 aprovado**.
+- [ ] Validar Curitiba na próxima execução completa após a correção e verificar se as demais fontes permanecem estáveis.
+- [ ] **P0.2: 2/3** — confirmar uma terceira coleta completa consecutiva dentro de 24h; depois iniciar P0.3/P0.4.
+
+**Ordem do MVP preservada:** estabilização P0.2 → auditoria dos 20 eventos/links P0.3/P0.4 → interface P0.5 → piloto P0.7.
 
 ## Fase 1 — Motor de coleta e qualidade
 
