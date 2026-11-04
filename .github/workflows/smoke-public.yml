@@ -1,5 +1,8 @@
 name: Smoke public BuscaLeilão site
 on:
+  push:
+    paths:
+      - '.github/workflows/smoke-public.yml'
   workflow_dispatch:
 permissions:
   contents: read
