@@ -228,7 +228,12 @@ def parse_vip_cards(cards):
     return results
 
 def choose_vip_events(cards, page_text):
-    """Use individual VIP cards only when they cover the entire verified agenda."""
+    """Publish only VIP cards with an unambiguous individual auction link.
+
+    A general calendar is discovery evidence, never a user-facing auction
+    destination. A partial set of matched direct links is preferable to
+    publishing links to a generic agenda where users must hunt for vehicles.
+    """
     from collections import Counter
     detailed = parse_vip_cards(cards)
     calendar = parse_vip_text(page_text)
@@ -241,11 +246,27 @@ def choose_vip_events(cards, page_text):
              tuple(sorted(item.get("states") or [item["state"]])))
             for item in groups.values()
         )
-    if not detailed:
-        return calendar,"calendar_fallback"
-    if signatures(detailed) != signatures(calendar):
-        return calendar,"partial_cards_fallback"
-    return detailed,"complete_cards"
+    remaining = signatures(calendar)
+    selected = []
+    seen = set()
+    for item in detailed:
+        if item.get("source_link_type") != "event":
+            continue
+        key = item["event_id"]
+        if key in seen:
+            continue
+        seen.add(key)
+        signature = (item["auction_date"],item["auction_time"],
+                     tuple(sorted(item.get("states") or [item["state"]])))
+        if remaining[signature] <= 0:
+            continue
+        remaining[signature] -= 1
+        selected.extend(row for row in detailed
+                        if row.get("event_id") == key
+                        and row.get("source_link_type") == "event")
+    if not selected:
+        return [],"no_verified_direct_links"
+    return selected,("complete_direct_links" if not +remaining else "partial_direct_links")
 
 async def extract_vip_cards(page):
     """Look for the smallest container with one date and its own UF(s).
@@ -306,7 +327,7 @@ async def collect_browser():
                     cards = await extract_vip_cards(page)
                     body = await page.locator("body").inner_text(timeout=10000)
                     found, vip_mode = choose_vip_events(cards, body)
-                    if vip_mode != "complete_cards":
+                    if vip_mode != "complete_direct_links":
                         # Save minimal public DOM evidence for refining card selectors.
                         # Do not silently discard events when DOM extraction is partial.
                         import json
