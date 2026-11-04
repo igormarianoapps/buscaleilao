@@ -32,7 +32,33 @@ small{color:#64748b}.empty{padding:28px;background:white;border-radius:12px}
 </form><div id="filter-error" class="filter-error" role="alert" hidden></div><div id="freshness" class="freshness" role="status" hidden></div><div class="topline"><h2>Próximos leilões</h2><small id="count"></small></div><section id="results" class="cards" aria-live="polite"></section>
 <p><small>Agenda atualizada por coleta periódica de fontes públicas. A cobertura ainda é parcial; confirme sempre as informações no site do leiloeiro.</small></p>
 </main><script type="module">
-import {filterAuctions,feedFreshness,sourceLabel,emptyResultsMessage} from "./agenda.mjs";
+// Resolve assets both when Vercel serves the repository root and when it serves app/ as root.
+// A static import would stop ALL page code (including state options) if its URL returns 404.
+let filterAuctions,feedFreshness,sourceLabel,emptyResultsMessage;
+async function loadAgendaModule(){
+  const candidates=["/app/agenda.mjs","./agenda.mjs"];
+  for(const url of candidates){
+    try{
+      const module=await import(url);
+      if(typeof module.filterAuctions==="function" &&
+         typeof module.feedFreshness==="function" &&
+         typeof module.emptyResultsMessage==="function")return module;
+    }catch(error){ console.warn("Módulo da agenda indisponível:",url,error); }
+  }
+  throw Error("Não foi possível carregar o módulo de filtros.");
+}
+async function loadVerifiedFeed(){
+  const candidates=["/app/events.json","./events.json"];
+  for(const url of candidates){
+    try{
+      const response=await fetch(url,{cache:"no-store"});
+      if(!response.ok)continue;
+      const data=await response.json();
+      if(data && Array.isArray(data.events))return data;
+    }catch(error){ console.warn("Feed indisponível:",url,error); }
+  }
+  throw Error("Não foi possível carregar os dados de leilões.");
+}
 const states="AC AL AP AM BA CE DF ES GO MA MT MS MG PA PB PR PE PI RJ RN RS RO RR SC SP SE TO".split(" ");
 const select=document.querySelector('select[name="state"]');
 states.sort().forEach(s=>select.add(new Option(s,s)));
@@ -70,10 +96,8 @@ function applyFilters(){
 async function load(){
   results.textContent="Carregando leilões...";
   try{
-    const response=await fetch("./events.json",{cache:"no-store"});
-    if(!response.ok)throw Error("Falha ao carregar feed");
-    const feed=await response.json();
-    if(!feed || !Array.isArray(feed.events))throw Error("Formato inválido do feed");
+    ({filterAuctions,feedFreshness,sourceLabel,emptyResultsMessage}=await loadAgendaModule());
+    const feed=await loadVerifiedFeed();
     currentFeed=feed;
     const freshnessState=feedFreshness(feed.updated_at);
     freshness.hidden=freshnessState.status==="fresh";
@@ -83,7 +107,7 @@ async function load(){
     currentFeed=null;
     count.textContent="";
     freshness.hidden=true;
-    results.textContent="Não foi possível carregar os leilões. Atualize a página para tentar novamente.";
+    results.textContent="Não foi possível carregar os leilões. Verifique a publicação dos arquivos agenda.mjs e events.json e atualize a página.";
   }
 }
 filters.addEventListener("submit",e=>{e.preventDefault();applyFilters()});
