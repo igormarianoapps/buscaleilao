@@ -1,119 +1,116 @@
 {
-  "checked_at": "2026-11-04T10:25:42+00:00",
+  "checked_at": "2026-11-04T10:43:39+00:00",
   "sources": {
     "mogi-2026-11-06": {
       "status": "ok",
-      "last_success_at": "2026-11-04T10:25:42+00:00",
+      "last_success_at": "2026-11-04T10:43:39+00:00",
       "consecutive_failures": 0
     },
     "fernando-prestes-03-2026": {
       "status": "ok",
-      "last_success_at": "2026-11-04T10:25:42+00:00",
+      "last_success_at": "2026-11-04T10:43:39+00:00",
       "consecutive_failures": 0
     },
     "vieiras-001-2026": {
       "status": "ok",
-      "last_success_at": "2026-11-04T10:25:42+00:00",
+      "last_success_at": "2026-11-04T10:43:39+00:00",
       "consecutive_failures": 0
     },
     "lorena-2026-11-10": {
       "status": "ok",
-      "last_success_at": "2026-11-04T10:25:42+00:00",
+      "last_success_at": "2026-11-04T10:43:39+00:00",
       "consecutive_failures": 0
     },
     "curitiba-smdt-17-2026": {
-      "status": "failed",
-      "reason": "Page.goto: Timeout 15000ms exceeded.",
-      "last_success_at": "2026-11-03T20:43:27+00:00",
-      "consecutive_failures": 1
+      "status": "ok",
+      "last_success_at": "2026-11-04T10:43:39+00:00",
+      "consecutive_failures": 0
     },
     "prf-sp-2026-11-04": {
       "status": "ok",
-      "last_success_at": "2026-11-04T10:25:42+00:00",
+      "last_success_at": "2026-11-04T10:43:39+00:00",
       "consecutive_failures": 0
     },
     "detran-ba-23-2026": {
       "status": "ok",
-      "last_success_at": "2026-11-04T10:25:42+00:00",
+      "last_success_at": "2026-11-04T10:43:39+00:00",
       "consecutive_failures": 0
     },
     "prf-es-2026-11-04": {
       "status": "ok",
-      "last_success_at": "2026-11-04T10:25:42+00:00",
+      "last_success_at": "2026-11-04T10:43:39+00:00",
       "consecutive_failures": 0
     },
     "campina-grande-pb-001-2026": {
       "status": "ok",
-      "last_success_at": "2026-11-04T10:25:42+00:00",
+      "last_success_at": "2026-11-04T10:43:39+00:00",
       "consecutive_failures": 0
     },
     "cuiaba-semob-4-2026-11-04": {
       "status": "ok",
-      "last_success_at": "2026-11-04T10:25:42+00:00",
+      "last_success_at": "2026-11-04T10:43:39+00:00",
       "consecutive_failures": 0
     },
     "cuiaba-semob-4-2026-11-05": {
       "status": "ok",
-      "last_success_at": "2026-11-04T10:25:42+00:00",
+      "last_success_at": "2026-11-04T10:43:39+00:00",
       "consecutive_failures": 0
     },
     "cuiaba-semob-4-2026-11-11": {
       "status": "ok",
-      "last_success_at": "2026-11-04T10:25:42+00:00",
+      "last_success_at": "2026-11-04T10:43:39+00:00",
       "consecutive_failures": 0
     },
     "aracaju-3-leilao-2026-11-12": {
       "status": "failed",
       "reason": "HTTP Error 403: Forbidden",
       "last_success_at": null,
-      "consecutive_failures": 4
+      "consecutive_failures": 5
     },
     "detran-go-03-2026-11-09": {
       "status": "ok",
-      "last_success_at": "2026-11-04T10:25:42+00:00",
+      "last_success_at": "2026-11-04T10:43:39+00:00",
       "consecutive_failures": 0
     },
     "serranopolis-iguacu-pr-01-2026": {
       "status": "ok",
-      "last_success_at": "2026-11-04T10:25:42+00:00",
+      "last_success_at": "2026-11-04T10:43:39+00:00",
       "consecutive_failures": 0
     },
     "pedranopolis-sp-006-2026": {
       "status": "failed",
       "reason": "HTTP Error 403: Forbidden",
       "last_success_at": null,
-      "consecutive_failures": 4
+      "consecutive_failures": 5
     },
     "freitas-8152-2026-11-04": {
       "status": "ok",
-      "last_success_at": "2026-11-04T10:25:42+00:00",
+      "last_success_at": "2026-11-04T10:43:39+00:00",
       "consecutive_failures": 0
     },
     "freitas-8158-2026-11-06": {
       "status": "ok",
-      "last_success_at": "2026-11-04T10:25:42+00:00",
+      "last_success_at": "2026-11-04T10:43:39+00:00",
       "consecutive_failures": 0
     },
     "superbid-gru-06-2026-11-29": {
       "status": "failed",
       "reason": "HTTP Error 403: Forbidden",
       "last_success_at": null,
-      "consecutive_failures": 4
+      "consecutive_failures": 5
     },
     "curitiba-smdt-16-2026": {
-      "status": "failed",
-      "reason": "Page.goto: Timeout 15000ms exceeded.",
-      "last_success_at": "2026-11-03T20:43:27+00:00",
-      "consecutive_failures": 1
+      "status": "ok",
+      "last_success_at": "2026-11-04T10:43:39+00:00",
+      "consecutive_failures": 0
     },
     "curitiba-smdt-18-2026": {
-      "status": "failed",
-      "reason": "Page.goto: Timeout 15000ms exceeded.",
-      "last_success_at": "2026-11-03T20:43:27+00:00",
-      "consecutive_failures": 1
+      "status": "ok",
+      "last_success_at": "2026-11-04T10:43:39+00:00",
+      "consecutive_failures": 0
     }
   },
   "source_count": 21,
-  "successful_sources": 15,
-  "failed_sources": 6
+  "successful_sources": 18,
+  "failed_sources": 3
 }
