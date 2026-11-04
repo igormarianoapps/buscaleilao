@@ -237,6 +237,20 @@ Atualizado em 04/11/2026. **Implementado** significa código publicado no GitHub
 
 **Regra:** manter `app/index.template.html` como fonte editável da UI; `app/index.html` é gerado. Mudanças visuais futuras não devem ser feitas apenas no arquivo gerado.
 
+## P0.4 — Links diretos para lotes: VIP e Detran-GO (04/11/2026)
+
+- [x] **Detran-GO 03/2026 (09/11):** localizar página específica da leiloeira [PMKLog](https://pmklog.com.br/leilao/evento/leilao-detran/?evento=fa724af3-d396-11f1-a2f8-02420a000014), com lotes; registrar `event_url` em `app/sources.json` e no feed, preservando o `source_url` da notícia governamental para validação independente. O CTA principal usa `event_url`; link do comunicado fica separado.
+- [x] **VIP Leilões:** encontrar o erro real no DOM com Playwright: data/UF ficam em elementos internos, mas o `href` específico está no contêiner externo `.card-evento`. Corrigir o extrator e provar em execução real **#41827763874**: 24 cartões, 15 leilões com links específicos e 68 registros por UF; incluindo `04/11 14h` com GO e URL oficial `/evento/detalhes/041126bsgo`.
+- [x] Corrigir `choose_vip_events`: só publicar registros VIP com link individual correspondente ao cartão; não utilizar `/agenda` como destino do usuário. Evitar correlacionar eventos por data isolada; exigir assinatura de data, hora e UFs.
+- [x] Atualizar feed já verificado: **14 eventos VIP e 61 registros por UF** tiveram correspondência exata com links diretos; dois grupos permaneceram sem correspondência (06/11 14h com conjunto de UFs divergente; 14/11 09h PE sem cartão capturado) e deixam de aparecer na busca por `source_link_type=calendar` até verificação.
+- [x] `app/index.template.html` privilegia URL de lotes para evento com `event_url` e mantém fonte oficial secundária; aviso/edital sem URL de lotes fica rotulado como tal.
+- [x] Suíte automatizada aprovada em **#41827977258**; o código e `app/index.html` gerado estão no GitHub.
+- [ ] **Deploy bloqueado:** Vercel informou `Deployment rate limited — retry in 24 hours` no status do commit. **Não declarar produção atualizada** até novo deploy bem-sucedido e smoke test em navegador real.
+- [ ] Continuar P0.4: conferir individualmente links VIP com páginas que não exibem lotes (a plataforma pode indicar `Em loteamento`) e substituir demais URLs de notícias por páginas de leiloeiros somente com correspondência documental segura.
+- [ ] P0.5/P0.7 permanecem pendentes; não iniciar ampla divulgação antes do deploy funcional e da auditoria.
+
+**Princípio de produto:** separar fonte de comprovação de link onde ver veículos; não inventar o destino quando só existe uma agenda pública.
+
 ## Fase 1 — Motor de coleta e qualidade
 
 - [x] Coletores independentes: erro de uma fonte não interrompe a verificação das outras
