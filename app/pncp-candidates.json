@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-04T10:27:19+00:00",
+  "checked_at": "2026-11-04T10:44:59+00:00",
   "candidates": [
     {
       "title": "- Leilão de Veículos Apreendidos pela SMTT e DEMUTRAN-  Veículos Aptos a serem Leiloados MEMO nº 215/CGF/2026",
@@ -106,6 +106,19 @@
       "source": "pncp_official_api"
     },
     {
+      "title": "Constitui objeto do presente Termo de Referência a alienação, mediante leilão presencial, de veículos automotores, sucatas, resíduos eletrônicos e demais bens móveis inservíveis pertencentes ao patrimônio do Município de Itamogi/MG, considerados antieconômicos",
+      "state": "MG",
+      "city": "Itamogi",
+      "organizer": "MUNICIPIO DE ITAMOGI",
+      "date_hint": "2026-11-07",
+      "date_hint_status": "pncp_deadline_unverified",
+      "source_url": "https://pncp.gov.br/app/editais/18241380000111/2026/50",
+      "pncp_control": "18241380000111-1-000050/2026",
+      "review_status": "needs_edital_confirmation",
+      "note": "PNCP proposal deadline is not independently verified auction start date.",
+      "source": "pncp_official_api"
+    },
+    {
       "title": "Alienação, através de leilão, de veículos automotores e micro-ônibus e lotes de sucatas e equipamentos diversos do município de Leme do Prado-MG",
       "state": "MG",
       "city": "Leme do Prado",
@@ -166,6 +179,32 @@
       "date_hint_status": "pncp_deadline_unverified",
       "source_url": "https://pncp.gov.br/app/editais/39467292000102/2026/79",
       "pncp_control": "39467292000102-1-000079/2026",
+      "review_status": "needs_edital_confirmation",
+      "note": "PNCP proposal deadline is not independently verified auction start date.",
+      "source": "pncp_official_api"
+    },
+    {
+      "title": "Alienação, por meio de leilão público eletrônico, do tipo maior lance, de bens móveis inservíveis pertencentes ao patrimônio do Município de Ibiam/SC, incluindo veículos, equipamentos, mobiliários, materiais diversos e sucatas, conforme especificações, condiçõ",
+      "state": "SC",
+      "city": "Ibiam",
+      "organizer": "MUNICIPIO DE IBIAM",
+      "date_hint": "2026-11-16",
+      "date_hint_status": "pncp_deadline_unverified",
+      "source_url": "https://pncp.gov.br/app/editais/01612745000174/2026/187",
+      "pncp_control": "01612745000174-1-000187/2026",
+      "review_status": "needs_edital_confirmation",
+      "note": "PNCP proposal deadline is not independently verified auction start date.",
+      "source": "pncp_official_api"
+    },
+    {
+      "title": "Leilão Veicular",
+      "state": "RS",
+      "city": "Montenegro",
+      "organizer": "CONSORCIO INTERMUNICIPAL DO VALE DO RIO CAI (CIS-CAI)",
+      "date_hint": "2026-11-16",
+      "date_hint_status": "pncp_deadline_unverified",
+      "source_url": "https://pncp.gov.br/app/editais/07662324000134/2026/46",
+      "pncp_control": "07662324000134-1-000046/2026",
       "review_status": "needs_edital_confirmation",
       "note": "PNCP proposal deadline is not independently verified auction start date.",
       "source": "pncp_official_api"
@@ -314,16 +353,9 @@
       "source": "pncp_official_api"
     }
   ],
-  "count": 24,
-  "requests": 7,
-  "errors": [
-    {
-      "modality": 13,
-      "week": 1,
-      "page": 1,
-      "error": "HTTP Error 429: Too Many Requests"
-    }
-  ],
+  "count": 27,
+  "requests": 10,
+  "errors": [],
   "events_automatically_published": 0,
   "note": "PNCP auctions are unverified candidates, not public scheduled events."
 }
