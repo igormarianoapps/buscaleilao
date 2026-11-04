@@ -27,6 +27,21 @@
 | 19 | `vip-2026-11-07-0900-2eb73e64869302-pr` | VIP Leilões/PR | **Parcial — evento identificado; acesso pendente** | A própria VIP indexa edital 071126PINHAISPR e página de evento https://www.vipleiloes.com.br/evento/detalhes/071126pinhaispr, com 07/11 09h, PR, 26 lotes. Acesso direto redirecionou em loop no verificador; feed aponta para agenda, não para esse evento |
 | 20 | `vip-2026-11-14-0900-18c4f200a245a5-pe` | VIP Leilões/PE | **Parcial — evento identificado; acesso pendente** | A própria VIP indexa edital 141126CTTUPE e página de evento https://www.vipleiloes.com.br/evento/detalhes/141126cttupe, com 14/11 09h, PE, 13 lotes. Acesso direto redirecionou em loop no verificador; feed aponta para agenda |
 
+## Ampliação controlada da amostra — eventos já presentes no feed (04/11/2026)
+
+Os cinco links originais problemáticos não são aprovados por substituição silenciosa: permanecem documentados na tabela principal. Para cumprir **pelo menos 20 eventos distintos com links úteis**, a auditoria pode incorporar outros eventos já publicados, desde que cada um passe pelo mesmo critério.
+
+| # | Evento ID | Origem/UF | Situação | Evidência e destino |
+|---|---|---|---|---|
+| 21 | `cuiaba-semob-4-2026-11-04` | Cuiabá/MT | **Conferência oficial aprovada** | Notícia municipal acessível confirma a sessão de 04/11 às 9h, lotes 359 a 715; URL específica do evento |
+| 22 | `cuiaba-semob-4-2026-11-05` | Cuiabá/MT | **Conferência oficial aprovada** | Mesma notícia confirma a sessão independente de 05/11 às 9h, lotes 716 a 999; não confundir com a sessão de 04/11 |
+| 23 | `prf-sp-2026-11-04` | PRF São Paulo/SP | **Conferência oficial aprovada** | Edital nº 01/2026 acessível no portal PRF, confirma 03 e 04/11 às 10h, veículos conservados e sucatas; URL oficial |
+| 24 | `freitas-8152-2026-11-04` | Freitas/SP | **Parcial** | Resultado público indexado identifica leilão 8152, 04/11 às 10h em Santa Bárbara d'Oeste; acesso direto ao destino retornou HTTP 403 no verificador, portanto não contar como link aprovado |
+
+Fontes independentes: [Cuiabá — cronograma por sessão](https://www.cuiaba.mt.gov.br/noticias/semob-realiza-o-4o-leilao-do-ano-com-1-065-veiculos-disponiveis), [PRF/SP — edital 01/2026](https://www.gov.br/prf/pt-br/assuntos/leiloes-prf/sao-paulo/sp-edital-de-leilao-de-veiculos-conservados-e-sucatas-1), [Freitas 8152 — acesso ao leilão](https://www.freitasleiloeiro.com.br/Leiloes/Lotes?leilaoId=8152).
+
+**Progresso: 18 eventos distintos com documentação e destino acessível / meta de 20.** Permanecem cinco links originais não aprovados e um candidato adicional com bloqueio HTTP 403. O resultado do mecanismo de pesquisa, sozinho, não comprova navegação real.
+
 ## Evidências externas verificadas nesta rodada
 
 - [DETRAN Goiás — comunicado oficial com 2.189 veículos e início às 9h](https://goias.gov.br/detran/detran-go-realiza-leilao-de-veiculos-de-mais-de-2-mil-veiculos/)
@@ -46,7 +61,7 @@
 - [Leilão de Serranópolis do Iguaçu — aviso municipal](https://serranopolis.pr.gov.br/noticias/6113-governo-municipal-de-serranopolis-do-iguacu-realiza-leilao-eletronico-de-veiculos-maquinas-e-outros-bens)
 - [Editais DETRAN Goiás](https://goias.gov.br/detran/leiloes/) — referência parcial para nº 03/2026.
 
-**Progresso auditado até aqui:** **15/20 conferidos** quanto a data/UF/organizador e utilidade da fonte; **5 pendentes** (3 links Copart não acessíveis na verificação externa, 2 eventos VIP com agenda em loop). A aprovação documental de links oficiais não equivale a teste real em todos os navegadores. A verificação de acesso aos sites por diferentes usuários/navegadores ainda precisa de teste de produto. Não marcar P0.3/P0.4 como concluídos.
+**Progresso auditado até aqui:** **18 eventos distintos totalmente conferidos / meta de 20** após ampliação controlada da amostra (15 originais + 3 adicionais). **Cinco links originais permanecem pendentes** (3 Copart, 2 VIP), além de Freitas 8152 bloqueado no acesso independente. A aprovação documental de links oficiais não equivale a teste real em todos os navegadores. A verificação de acesso aos sites por diferentes usuários/navegadores ainda precisa de teste de produto. Não marcar P0.3/P0.4 como concluídos.
 
 ## Segunda rodada — checagem das cinco pendências (04/11/2026)
 
@@ -66,4 +81,4 @@ Fontes da checagem: [Copart 10570 indexado](https://www.copart.com.br/saleListRe
 
 ## Próxima ação
 
-Resolver as cinco verificações restantes (3 Copart e 2 VIP) por acesso direto/navegador real, sem inferir de URLs a confirmação independente. Depois corrigir o que for comprovadamente inconsistente e iniciar P0.5.
+Concluir pelo menos mais dois eventos distintos com links efetivamente acessíveis, mantendo os cinco links originais problemáticos na lista de riscos do produto. Validar Copart/VIP em navegador real antes de alterar os links publicados. Só fechar P0.3/P0.4 quando houver pelo menos 20 aprovados e uma decisão explícita sobre os links genéricos da VIP.
