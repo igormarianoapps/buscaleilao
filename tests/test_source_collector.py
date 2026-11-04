@@ -85,6 +85,31 @@ class SourceCollectorTests(unittest.TestCase):
         self.assertEqual(health["sources"]["one"]["consecutive_failures"],4)
         self.assertEqual(health["sources"]["one"]["last_success_at"],"2099-01-01")
 
+    def test_curitiba_shared_catalogue_timeout_is_one_retry_and_not_published(self):
+        url="https://transito.curitiba.pr.gov.br/patio/leilao-eletronico-de-veiculos/52"
+        src1=source("curitiba-16",url,["Edital 16/2026","11/11/2099"])
+        src2=source("curitiba-17",url,["Edital 17/2026","11/11/2099"])
+        calls=[]
+        def fallback(urls):
+            calls.extend(urls)
+            return {url:(None,"Page.goto: Timeout 25000ms exceeded.")}
+        with patch("source_collector.fetch_text",side_effect=TimeoutError("connection timed out")):
+            events,failed,_=collect_curated([src1,src2],browser_loader=fallback)
+        self.assertEqual(calls,[url])
+        self.assertEqual(events,[])
+        self.assertEqual({f["id"] for f in failed},{"curitiba-16","curitiba-17"})
+
+    def test_curitiba_partial_page_cannot_validate_all_edital_sessions(self):
+        url="https://transito.curitiba.pr.gov.br/patio/leilao-eletronico-de-veiculos/52"
+        src1=source("curitiba-16",url,["Edital 16/2026"])
+        src2=source("curitiba-17",url,["Edital 17/2026"])
+        with patch("source_collector.fetch_text",side_effect=TimeoutError("timeout")):
+            events,failed,_=collect_curated(
+                [src1,src2],
+                browser_loader=lambda urls:{url:("Edital 16/2026",None)})
+        self.assertEqual([e["id"] for e in events],["curitiba-16"])
+        self.assertEqual([e["id"] for e in failed],["curitiba-17"])
+
     def test_cancellation_rejected(self):
         with self.assertRaises(ValueError):
             validate("Leilão 04/11/2099. Leilão cancelado.", source("a","https://example.org/a"))
