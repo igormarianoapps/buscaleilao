@@ -22,6 +22,8 @@ export function filterAuctions(items,{state='',start='',end='',day='',today=''}=
   const to=end || day;
   if (from && to && from>to) return [];
   return groupAuctions(items).filter(a=>a.status==='scheduled' &&
+    // Never direct users to an unrelated marketplace-wide calendar.
+    a.source_link_type!=='calendar' &&
     (!today || a.auction_date>=today) &&
     (!state || a.states.includes(state)) &&
     (!from || a.auction_date>=from) &&
