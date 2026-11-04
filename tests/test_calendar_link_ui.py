@@ -36,7 +36,7 @@ class CalendarLinkUXTests(unittest.TestCase):
         import re
         import subprocess
         html=HTML.read_text(encoding="utf-8")
-        match=re.search(r'<script type="module">([\\s\\S]+?)</script>',html)
+        match=re.search(r'<script type="module">([\s\S]+?)</script>',html)
         self.assertIsNotNone(match)
         parsed=subprocess.run(
             ["node","--check","--input-type=module"],
