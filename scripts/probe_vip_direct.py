@@ -33,6 +33,19 @@ async def main():
         }""")
         print("VIP RESPONSE",response.status if response else None)
         print(json.dumps(result,ensure_ascii=False,indent=2)[:22000])
+        from browser_collect import extract_vip_cards, choose_vip_events
+        cards=await extract_vip_cards(page)
+        body=await page.locator("body").inner_text(timeout=10000)
+        verified, mode=choose_vip_events(cards,body)
+        print("VIP PARSER",json.dumps({"cards":len(cards),"mode":mode,
+              "direct_events":len({e["event_id"] for e in verified}),
+              "direct_records":len(verified)},ensure_ascii=False))
+        summary={}
+        for e in verified:
+            summary.setdefault(e["event_id"],{
+                "date":e["auction_date"],"time":e["auction_time"],
+                "states":e["states"],"url":e["source_url"]})
+        print("VIP DIRECT SUMMARY",json.dumps(list(summary.values()),ensure_ascii=False))
         await browser.close()
 
 if __name__=="__main__":
