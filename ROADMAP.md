@@ -162,6 +162,17 @@ Atualizado em 04/11/2026. **Implementado** significa código publicado no GitHub
 - [ ] Amostra atualmente **19/20** com links exatos acessíveis. Falta **1**; os cinco links originais Copart/VIP continuam no registro de riscos.
 - [ ] Não iniciar P0.5 até conclusão ou tratamento explícito das falhas de link P0.4.
 
+## P0.4 — Transparência de links genéricos e checagem do 20º evento (04/11/2026)
+
+- [x] Conferir leilão Freitas 8152/SP em resultado do índice da própria plataforma: 04/11 às 10h, Santa Bárbara d'Oeste, veículos, leiloeiro e edital. **Não contabilizar como aprovado**: acesso direto da URL do feed retorna HTTP 403 na verificação externa.
+- [x] Confirmar que `https://www.vipleiloes.com.br/agenda` apresenta loop de redirecionamento na verificação externa; não publicar outra URL sem validação.
+- [x] Melhorar `app/index.html`: indicar nos cards de calendário que a pessoa deve localizar data e UF na **agenda geral**, não em um leilão individual; avisar sobre dependência de disponibilidade do site externo.
+- [x] Adicionar testes `tests/test_calendar_link_ui.py` de rótulos de calendário, escape de URL e segurança dos links externos.
+- [ ] **P0.3/P0.4 seguem 19/20 aprovados**: Freitas 8152 é o candidato mais próximo de completar 20, porém o acesso real ainda está bloqueado; Copart e VIP continuam sob acompanhamento.
+- [ ] Validar pelo menos mais um destino realmente acessível e a navegabilidade de calendários VIP antes de encerrar P0.3/P0.4 e iniciar P0.5.
+
+**Registro de evidências e URLs:** `AUDIT_MVP.md`.
+
 ## Fase 1 — Motor de coleta e qualidade
 
 - [x] Coletores independentes: erro de uma fonte não interrompe a verificação das outras
