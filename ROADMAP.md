@@ -1,17 +1,17 @@
 # BuscaLeilão — checklist do projeto
 
-Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub; execução e cobertura reais dependem do próximo relatório.
+Atualizado em 04/11/2026. **Implementado** significa código publicado no GitHub; execução e cobertura reais dependem do próximo relatório.
 
 ## Marco do MVP — critérios de lançamento
 
 **Produto:** agenda nacional de **eventos de leilão de veículos**, não catálogo de lotes. Público consegue filtrar por UF e data e consultar a fonte. O produto não promete listar todos os leilões do Brasil.
 
-**Estado em 03/11/2026:** pré-MVP funcional. Duas coletas completas consecutivas aprovadas: #41715100215 (03/11, 48 eventos, 19 UFs) e #41814063834 (04/11, **44 eventos únicos, 95 registros, 19 UFs, 15/21 fontes curadas verificadas**). **P0.1 concluído; P0.2 em 2/3.** PNCP gerou 24 candidatos ainda não publicados.
+**Estado em 03/11/2026:** pré-MVP funcional. Três coletas completas consecutivas aprovadas: #41715100215 (03/11, 48 eventos), #41814063834 (04/11, 44 eventos) e #41816001753 (04/11, 47 eventos únicos, 98 registros, 19 UFs, 18/21 fontes curadas verificadas). **P0.1, P0.2 e P0.6 concluídos.** Auditoria P0.3/P0.4 é a próxima fase.
 
 ### P0 — Bloqueadores para lançamento público
 
 - [x] **P0.1 — Uma execução ponta a ponta** do workflow atual deve passar por testes, Copart, VIP/Freitas, PNCP, fila de revisão e publicação. Conferir todos os arquivos produzidos e logs, especialmente `app/pncp-candidates.json` e `app/vip-dom-diagnostics.json` (quando houver fallback).
-- [ ] **P0.2 — Estabilidade:** observar 3 coletas completas consecutivas com sucesso do workflow e feed atualizado dentro de 24h; a falha de uma fonte não pode bloquear o feed. Registrar taxa de fontes recuperadas e motivos de falha.
+- [x] **P0.2 — Estabilidade:** observar 3 coletas completas consecutivas com sucesso do workflow e feed atualizado dentro de 24h; a falha de uma fonte não pode bloquear o feed. Registrar taxa de fontes recuperadas e motivos de falha.
 - [ ] **P0.3 — Qualidade dos eventos:** auditar manualmente pelo menos 20 eventos de organizadores e UFs variados; 100% devem ter data futura verificável, UF correta, organizador claro e URL de origem segura. Deduplicação por evento; não inventar hora/veículos.
 - [ ] **P0.4 — Links úteis:** links individuais quando comprovados; onde houver apenas agenda, rotular como agenda e testar se o destino é útil. Não tratar endereço genérico como link do evento.
 - [ ] **P0.5 — Auditoria da experiência:** desktop/mobile, filtros, timezone de Brasília, estados sem resultados, aviso de feed antigo, links externos, acessibilidade básica e ausência de falhas de interface.
@@ -121,6 +121,15 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 - [ ] **P0.2: 2/3** — confirmar uma terceira coleta completa consecutiva dentro de 24h; depois iniciar P0.3/P0.4.
 
 **Ordem do MVP preservada:** estabilização P0.2 → auditoria dos 20 eventos/links P0.3/P0.4 → interface P0.5 → piloto P0.7.
+
+## P0.2 concluído — três execuções verificadas (04/11/2026)
+
+- [x] GitHub Actions: #41715100215, #41814063834 e #41816001753 concluídos com sucesso, em intervalos inferiores a 24 horas.
+- [x] Última coleta: 47 eventos únicos, 98 registros, 19 UFs, 18 fontes curadas aprovadas e 3 fontes com HTTP 403.
+- [x] Curitiba: três editais novamente verificados; PNCP: 27 candidatos, ainda não publicados.
+- [ ] **P0.3/P0.4 — fase atual:** auditar 20 eventos e seus links, registrando comprovações e problemas em `AUDIT_MVP.md`.
+- [ ] P0.5 — testar interface desktop/mobile após a auditoria.
+- [ ] P0.7 — piloto com usuários depois da interface.
 
 ## Fase 1 — Motor de coleta e qualidade
 
