@@ -13,7 +13,7 @@ button{background:#1749b3;color:white;border:0;cursor:pointer;font-weight:700;al
 .freshness{margin:0 0 18px;padding:12px 16px;border:1px solid #df9f45;border-radius:10px;background:#fff7ed;color:#873c09;font-size:14px}.freshness[hidden]{display:none}\n.topline{display:flex;align-items:center;justify-content:space-between;gap:8px}
 .cards{display:grid;gap:14px}.card{background:white;border:1px solid #e5e9ef;padding:22px;border-radius:14px}
 .card h2{font-size:19px;margin:7px 0}.meta{display:flex;flex-wrap:wrap;gap:12px;color:#52627a;font-size:14px}
-.tag{font-size:12px;color:#1749b3;font-weight:700}.card a{display:inline-block;margin-top:15px;color:#1749b3;font-weight:700}
+.tag{font-size:12px;color:#1749b3;font-weight:700}.card a{display:inline-block;margin-top:15px;color:#1749b3;font-weight:700}\n.link-note{display:block;margin-top:7px;font-size:13px;line-height:1.45;color:#52627a}
 small{color:#64748b}.empty{padding:28px;background:white;border-radius:12px}
 </style></head><body><header><span class="logo">BuscaLeilão</span></header>
 <main><h1>Encontre leilões que você ainda não conhece.</h1>
@@ -55,7 +55,7 @@ async function load(){
       <span>🚗 ${a.vehicle_count===null?"Quantidade não informada":a.vehicle_count+" veículos"}</span></div>
       <p>${escapeHTML(a.organizer)}</p>
       <small>Fonte: ${escapeHTML(sourceLabel(a.source_type))} · Última verificação: ${escapeHTML(a.last_checked_at?new Date(a.last_checked_at).toLocaleString("pt-BR",{timeZone:"America/Sao_Paulo"}):"não informada")}</small><br>
-      <a href="${escapeHTML(a.source_url)}" target="_blank" rel="noopener noreferrer">${a.source_link_type==="event"?"Ver leilão específico ↗":a.source_link_type==="calendar"?"Consultar calendário do leiloeiro ↗":"Consultar fonte do evento ↗"}</a>
+      <a href="${escapeHTML(a.source_url)}" target="_blank" rel="noopener noreferrer">${a.source_link_type==="event"?"Ver leilão específico ↗":a.source_link_type==="calendar"?"Consultar agenda geral do leiloeiro ↗":"Consultar fonte do evento ↗"}</a>\n      ${a.source_link_type==="calendar"?'<small class="link-note">Este link leva à agenda geral, não ao evento. Procure a data e o estado indicados acima. O acesso pode depender da disponibilidade do site do leiloeiro.</small>':""}
       </article>`).join(""):'<div class="empty">Nenhum leilão encontrado na base atual para esses filtros.</div>';
   }catch(e){count.textContent="";freshness.hidden=true;results.textContent="Não foi possível carregar os leilões. Tente novamente.";}
 }
