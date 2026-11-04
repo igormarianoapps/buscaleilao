@@ -173,6 +173,18 @@ Atualizado em 04/11/2026. **Implementado** significa código publicado no GitHub
 
 **Registro de evidências e URLs:** `AUDIT_MVP.md`.
 
+## P0.4 bloqueado externamente; pré-revisão técnica P0.5 (04/11/2026)
+
+- [x] Revalidar Freitas 8152 via conteúdo do índice público; a URL exata do feed ainda devolve HTTP 403 no acesso direto, então não somar como 20º evento.
+- [x] Revalidar loop de redirecionamento VIP na agenda e em duas páginas individuais; não forçar links novos nem declarar que abrem.
+- [x] Corrigir três sequências `\\n` literais em `app/index.html`, que afetavam CSS e HTML dos cartões.
+- [x] Adicionar foco visível para navegação por teclado e ajustes responsivos de formulários/cartões em telas até 600px.
+- [x] Testes de regressão incluídos em `tests/test_calendar_link_ui.py`; GitHub Actions **#41821699242 concluído com sucesso**.
+- [ ] **P0.3/P0.4: 19/20**, aguardando destino 20º acessível e validação de utilidade da VIP.
+- [ ] **P0.5: pré-revisão técnica iniciada**, ainda sem verificação funcional visual em navegadores reais.
+
+**Não mudar a definição de pronto:** CSS e testes automatizados não substituem auditoria visual e navegação real.
+
 ## Fase 1 — Motor de coleta e qualidade
 
 - [x] Coletores independentes: erro de uma fonte não interrompe a verificação das outras
