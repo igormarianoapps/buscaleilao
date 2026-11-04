@@ -224,6 +224,19 @@ Atualizado em 04/11/2026. **Implementado** significa código publicado no GitHub
 
 **Lição do defeito:** não usar importação estática em ponto de entrada cujo caminho depende do diretório publicado; capturar o erro de forma visível.
 
+## P0.5 — Site público recuperado e verificado em Chromium (04/11/2026)
+
+- [x] Diagnóstico confirmado pelo relato do usuário: a página publicada falhava ao carregar `agenda.mjs`/`events.json` via URLs externas e exibia mensagem de erro.
+- [x] Publicar página **autossuficiente** em `app/index.html` com dados verificados embutidos (98 registros, 47 leilões únicos) e filtros incorporados do código central `app/agenda.mjs`.
+- [x] Criar `scripts/build_static_page.py` para gerar HTML a partir de `app/index.template.html`, `app/agenda.mjs` e `app/events.json`; sem requisições de arquivos na inicialização da página.
+- [x] Integrar geração **depois da validação do feed** e publicar `app/index.html` no mesmo commit dos dados; futuras coletas atualizam a página automaticamente.
+- [x] Testes de regressão asseguram que HTML gerado corresponde exatamente ao feed, não publica feed vazio, escapa conteúdo perigoso e executa JS válido.
+- [x] **Teste funcional em produção:** Chromium abriu https://buscaleilao-nine.vercel.app/ com **HTTP 200**, **28 opções no seletor (27 UFs + Todos)**, **47 cards**, **GO com 4 resultados**, **GO com período 04/11–25/11 com 4**, botão Limpar restaurou **47**, **zero erros JS**. GitHub Actions **#41825376777 concluído com sucesso**.
+- [ ] Revisar visualmente uso mobile real e acessibilidade com usuário; P0.5 ainda não finalizado integralmente.
+- [ ] P0.3/P0.4 segue **19/20** devido a links externos não comprovados. P0.7 segue pendente.
+
+**Regra:** manter `app/index.template.html` como fonte editável da UI; `app/index.html` é gerado. Mudanças visuais futuras não devem ser feitas apenas no arquivo gerado.
+
 ## Fase 1 — Motor de coleta e qualidade
 
 - [x] Coletores independentes: erro de uma fonte não interrompe a verificação das outras
