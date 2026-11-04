@@ -24,13 +24,12 @@ class CalendarLinkUXTests(unittest.TestCase):
         self.assertIn(":focus-visible",html)
         self.assertIn(".filters button{flex-basis:100%",html)
 
-    def test_filters_do_not_refetch_feed_on_each_search(self):
+    def test_filters_use_embedded_data_without_network_requests(self):
         html=HTML.read_text(encoding="utf-8")
-        self.assertEqual(html.count('await fetch(url,{cache:"no-store"})'),1)
-        self.assertIn('const candidates=["/app/agenda.mjs","./agenda.mjs"]',html)
-        self.assertIn('const candidates=["/app/events.json","./events.json"]',html)
-        self.assertIn('const module=await import(url)',html)
-        self.assertNotIn('import {filterAuctions,feedFreshness',html)
+        self.assertNotIn('await fetch(',html)
+        self.assertNotIn('await import(',html)
+        self.assertIn('id="embedded-feed" type="application/json"',html)
+        self.assertIn('JSON.parse(document.getElementById("embedded-feed").textContent)',html)
         self.assertIn('filters.addEventListener("submit",e=>{e.preventDefault();applyFilters()})',html)
         self.assertIn('filters.addEventListener("reset"',html)
         self.assertIn('let currentFeed=null',html)
@@ -39,18 +38,17 @@ class CalendarLinkUXTests(unittest.TestCase):
         self.assertIn('name="end"',html)
         self.assertIn('A data inicial não pode ser posterior à data final.',html)
 
-    def test_state_picker_initialization_is_not_blocked_by_import(self):
+    def test_state_picker_has_inline_filter_functions(self):
         html=HTML.read_text(encoding="utf-8")
-        # The dropdown must render even if module import or JSON fetch fail.
         self.assertLess(html.index('states.sort().forEach('),html.index('load();'))
-        self.assertIn('console.warn("Módulo da agenda indisponível:"',html)
-        self.assertIn("Não foi possível carregar o módulo de filtros.",html)
+        self.assertIn('function filterAuctions(',html)
+        self.assertIn('function groupAuctions(',html)
 
     def test_page_inline_module_parses_in_node(self):
         import re
         import subprocess
         html=HTML.read_text(encoding="utf-8")
-        match=re.search(r'<script type="module">([\s\S]+?)</script>',html)
+        match=re.search(r'<script>([\s\S]+?)</script>',html)
         self.assertIsNotNone(match)
         parsed=subprocess.run(
             ["node","--check","--input-type=module"],
