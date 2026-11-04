@@ -69,3 +69,11 @@ jobs:
       - name: Summarize MVP collection results
         if: always()
         run: python scripts/mvp_run_summary.py
+      - name: Record P0.2 collection history
+        run: |
+          python scripts/record_collection_history.py
+          git add app/collection-history.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: record MVP collection stability checkpoint"
+            git push
+          fi
