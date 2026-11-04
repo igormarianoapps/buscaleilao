@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BuscaLeilão — Agenda de leilões de veículos</title>
+<style>
+:root{font-family:Inter,system-ui,Arial,sans-serif;color:#172236;background:#f5f7fa}
+*{box-sizing:border-box}body{margin:0}header{background:white;border-bottom:1px solid #e5e9ef;padding:20px max(20px,calc((100% - 1024px)/2))}
+.logo{font-weight:800;font-size:23px;color:#1749b3}main{max-width:1024px;margin:48px auto;padding:0 20px}
+h1{font-size:clamp(30px,5vw,48px);letter-spacing:-1.5px;margin:0 0 14px}p{color:#64748b}
+.filters{display:flex;flex-wrap:wrap;gap:12px;background:#fff;padding:18px;border:1px solid #e5e9ef;border-radius:14px;margin:28px 0}
+label{font-size:13px;font-weight:600;display:grid;gap:7px;flex:1;min-width:170px}
+input,select,button{padding:13px;border-radius:9px;border:1px solid #cfd7e3;font:inherit;background:white}
+button{background:#1749b3;color:white;border:0;cursor:pointer;font-weight:700;align-self:end}
+button.secondary{background:white;color:#1749b3;border:1px solid #1749b3}
+.filter-error{margin:-14px 0 18px;color:#9a3412;font-size:14px}.filter-error[hidden]{display:none}
+.freshness{margin:0 0 18px;padding:12px 16px;border:1px solid #df9f45;border-radius:10px;background:#fff7ed;color:#873c09;font-size:14px}.freshness[hidden]{display:none}
+.topline{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.cards{display:grid;gap:14px}.card{background:white;border:1px solid #e5e9ef;padding:22px;border-radius:14px}
+.card h2{font-size:19px;margin:7px 0}.meta{display:flex;flex-wrap:wrap;gap:12px;color:#52627a;font-size:14px}
+.tag{font-size:12px;color:#1749b3;font-weight:700}.card a{display:inline-block;margin-top:15px;color:#1749b3;font-weight:700}
+.link-note{display:block;margin-top:7px;font-size:13px;line-height:1.45;color:#52627a}
+small{color:#64748b}.empty{padding:28px;background:white;border-radius:12px}
+:focus-visible{outline:3px solid #0b5bd3;outline-offset:3px}
+@media(max-width:600px){main{margin:28px auto}.filters{padding:14px;gap:12px}.filters label,.filters button{flex-basis:100%;min-width:0}.card{padding:18px}.topline{align-items:baseline}.card h2{font-size:18px}}
+</style></head><body><header><span class="logo">BuscaLeilão</span></header>
+<main><h1>Encontre leilões que você ainda não conhece.</h1>
+<p>Uma agenda de leilões de veículos, incluindo eventos municipais e pouco divulgados.</p>
+<form id="filters" class="filters">
+<label>Estado<select name="state"><option value="">Todos os estados</option></select></label>
+<label>De<input type="date" name="start"></label>
+<label>Até<input type="date" name="end"></label>
+<button type="submit">Buscar leilões</button><button type="reset" class="secondary">Limpar filtros</button>
+</form><div id="filter-error" class="filter-error" role="alert" hidden></div><div id="freshness" class="freshness" role="status" hidden></div><div class="topline"><h2>Próximos leilões</h2><small id="count"></small></div><section id="results" class="cards" aria-live="polite"></section>
+<p><small>Agenda atualizada por coleta periódica de fontes públicas. A cobertura ainda é parcial; confirme sempre as informações no site do leiloeiro.</small></p>
+</main><script id="embedded-feed" type="application/json">__EMBEDDED_FEED__</script>
+<script>
+/* __AGENDA_CODE__ */
+const states="AC AL AP AM BA CE DF ES GO MA MT MS MG PA PB PR PE PI RJ RN RS RO RR SC SP SE TO".split(" ");
+const select=document.querySelector('select[name="state"]');
+states.sort().forEach(s=>select.add(new Option(s,s)));
+const results=document.querySelector("#results"),count=document.querySelector("#count"),freshness=document.querySelector("#freshness"),filterError=document.querySelector("#filter-error");
+const escapeHTML=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+let currentFeed=null;
+const filters=document.querySelector("#filters");
+function applyFilters(){
+  if(!currentFeed)return;
+  const form=new FormData(filters);
+  const start=form.get("start")||"",end=form.get("end")||"";
+  if(start && end && start>end){
+    filterError.textContent="A data inicial não pode ser posterior à data final.";
+    filterError.hidden=false;
+    count.textContent="";
+    results.textContent="Corrija o período selecionado para pesquisar.";
+    return;
+  }
+  filterError.hidden=true;
+  const today=new Intl.DateTimeFormat("sv-SE",{timeZone:"America/Sao_Paulo",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());
+  const auctions=filterAuctions(currentFeed.events,{state:form.get("state")||"",start,end,today});
+  count.textContent=auctions.length+" leilão(ões)";
+  results.innerHTML=auctions.length?auctions.map(a=>`<article class="card">
+      <span class="tag">${escapeHTML(a.city && a.city!=="Local não informado"?a.city+" · ":"")}${escapeHTML(a.states.join(", "))}</span>
+      <h2>${escapeHTML(a.title)}</h2>
+      <div class="meta"><span>📅 ${escapeHTML(a.auction_date.split("-").reverse().join("/"))}</span>
+      <span>🕘 ${escapeHTML(a.auction_time||"Não informado")}</span>
+      <span>🚗 ${a.vehicle_count===null?"Quantidade não informada":a.vehicle_count+" veículos"}</span></div>
+      <p>${escapeHTML(a.organizer)}</p>
+      <small>Fonte: ${escapeHTML(sourceLabel(a.source_type))} · Última verificação: ${escapeHTML(a.last_checked_at?new Date(a.last_checked_at).toLocaleString("pt-BR",{timeZone:"America/Sao_Paulo"}):"não informada")}</small><br>
+      <a href="${escapeHTML(a.source_url)}" target="_blank" rel="noopener noreferrer">${a.source_link_type==="event"?"Ver leilão específico ↗":a.source_link_type==="calendar"?"Consultar agenda geral do leiloeiro ↗":"Consultar fonte do evento ↗"}</a>
+      ${a.source_link_type==="calendar"?'<small class="link-note">Este link leva à agenda geral, não ao evento. Procure a data e o estado indicados acima. O acesso pode depender da disponibilidade do site do leiloeiro.</small>':""}
+      </article>`).join(""):`<div class="empty" role="status">${escapeHTML(emptyResultsMessage({state:form.get("state"),start,end}))}</div>`;
+}
+async function load(){
+  results.textContent="Carregando leilões...";
+  try{
+    const feed=JSON.parse(document.getElementById("embedded-feed").textContent);
+    if(!feed || !Array.isArray(feed.events))throw Error("Dados locais inválidos");
+    currentFeed=feed;
+    const freshnessState=feedFreshness(feed.updated_at);
+    freshness.hidden=freshnessState.status==="fresh";
+    freshness.textContent=freshnessState.status==="stale"?"Atenção: a última coleta tem mais de 36 horas. Consulte as fontes antes de participar de um leilão.":"Data da última coleta não disponível. Confirme os eventos na fonte original.";
+    applyFilters();
+  }catch(e){
+    currentFeed=null;
+    count.textContent="";
+    freshness.hidden=true;
+    results.textContent="Não foi possível ler os leilões publicados. Atualize a página para tentar novamente.";
+  }
+}
+filters.addEventListener("submit",e=>{e.preventDefault();applyFilters()});
+filters.addEventListener("reset",e=>{
+  e.preventDefault();
+  select.value="";
+  filters.querySelector('input[name="start"]').value="";
+  filters.querySelector('input[name="end"]').value="";
+  filterError.hidden=true;
+  applyFilters();
+});
+load();
+</script></body></html>
