@@ -51,6 +51,44 @@ class GateTests(unittest.TestCase):
         feed,report=sample()
         report["unique_events"]=7
         self.assertTrue(validate_feed(feed,report,NOW))
+    def test_copart_calendar_must_not_claim_direct_event_link(self):
+        feed,report=sample()
+        feed["events"][0].update({
+            "organizer":"Copart","auction_date":"2026-11-09",
+            "source_link_type":"event",
+            "source_url":"https://www.copart.com.br/salesListResult/"})
+        self.assertTrue(any("sale ID" in e for e in validate_feed(feed,report,NOW)))
+
+    def test_copart_sale_id_date_mismatch_is_rejected(self):
+        feed,report=sample()
+        feed["events"][0].update({
+            "organizer":"Copart","source_link_type":"event",
+            "source_url":"https://www.copart.com.br/saleListResult/10570/2026-11-04"})
+        self.assertTrue(any("sale ID" in e for e in validate_feed(feed,report,NOW)))
+
+    def test_verified_copart_sale_url_is_correctly_classified(self):
+        feed,report=sample()
+        feed["events"][0].update({
+            "organizer":"Copart","source_link_type":"event",
+            "source_url":"https://www.copart.com.br/saleListResult/10580/2026-11-09"})
+        self.assertEqual(validate_feed(feed,report,NOW),[])
+
+    def test_vip_calendar_and_event_urls_are_distinct(self):
+        feed,report=sample()
+        feed["events"][0].update({
+            "organizer":"VIP Leilões","source_link_type":"event",
+            "source_url":"https://www.vipleiloes.com.br/agenda"})
+        self.assertTrue(any("individual event URL" in e for e in validate_feed(feed,report,NOW)))
+        feed["events"][0]["source_link_type"]="calendar"
+        self.assertEqual(validate_feed(feed,report,NOW),[])
+
+    def test_vip_event_detail_route_may_be_labeled_event(self):
+        feed,report=sample()
+        feed["events"][0].update({
+            "organizer":"VIP Leilões","source_link_type":"event",
+            "source_url":"https://www.vipleiloes.com.br/evento/detalhes/141126cttupe"})
+        self.assertEqual(validate_feed(feed,report,NOW),[])
+
     def test_workflow_publishes_feed_before_optional_discovery(self):
         yaml=(ROOT/".github/workflows/collect.yml").read_text(encoding="utf-8")
         names=["Validate verified auction feed","Publish verified feed first",
