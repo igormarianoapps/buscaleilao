@@ -11,7 +11,7 @@
 | 3 | `curitiba-smdt-18-2026` | Prefeitura de Curitiba/PR | **Conferência de edital e link aprovada** | Edital 18/2026, veículos em circulação, 25/11 9h; catálogo oficial |
 | 4 | `vieiras-001-2026` | Prefeitura de Vieiras/MG | **Conferência de edital e link aprovada** | Aviso municipal confirma 13/11 13h, veículos entre os bens; link oficial da notícia |
 | 5 | `serranopolis-iguacu-pr-01-2026` | Prefeitura de Serranópolis do Iguaçu/PR | **Conferência de edital e link aprovada** | Prefeitura confirma 12/11 8h30 e veículos; link oficial da notícia |
-| 6 | `detran-go-03-2026-11-09` | DETRAN Goiás/GO | **Conferência oficial aprovada** | Portal Detran confirma 09/11 às 9h, edital 03/2026 e 656 carros + 1.533 motos = 2.189 veículos |
+| 6 | `detran-go-03-2026-11-09` | DETRAN Goiás/GO | **Conferência oficial + link direto PMKLog** | Detran confirma 09/11 às 9h, nº 03/2026, 2.189 veículos; CTA principal agora aponta à página específica PMKLog com lotes, mantendo notícia governamental como evidência |
 | 7 | `detran-ba-23-2026` | DETRAN Bahia/BA | **Conferência oficial aprovada** | Portal Detran-BA: edital 23/2026, 25/11 às 9h, Salvador/Alagoinhas/Santo Antônio de Jesus; fonte é edital específico |
 | 8 | `mogi-2026-11-06` | Prefeitura de Mogi das Cruzes/SP | **Conferência oficial aprovada** | Notícia oficial confirma 84 veículos, 06/11 às 10h, leilão online; URL de notícia específica e não portal de lances |
 | 9 | `lorena-2026-11-10` | Prefeitura de Lorena/SP | **Conferência oficial aprovada** | Aviso municipal confirma fechamento em 10/11 às 10h, 63 lotes de veículos/sucatas; site da Destak é mencionado como plataforma, mas o link no feed é notícia oficial |
@@ -101,6 +101,19 @@ Fontes da checagem: [Copart 10570 indexado](https://www.copart.com.br/saleListRe
 - **Critérios ainda pendentes**: comprovar o 20º evento com URL abrindo de fato e verificar UX em navegador desktop/mobile real, incluindo estados vazios, dados vencidos, filtros e acessibilidade.
 
 **Resultado:** amostra **19/20** confirmada; P0.4 bloqueado por navegação externa e P0.5 iniciado apenas tecnicamente.
+
+## Auditoria de destinos úteis — correção concreta (04/11/2026)
+
+**Regra de UX:** a fonte de comprovação pode ser notícia/edital oficial, mas o CTA principal deve abrir o leilão e seus lotes quando existe uma página individual legítima. Não tratar um catálogo geral como leilão específico.
+
+- **DETRAN-GO:** página de consulta a lotes encontrada e conferida: [PMKLog Leilão Detran (09/11/2026, às 9h)](https://pmklog.com.br/leilao/evento/leilao-detran/?evento=fa724af3-d396-11f1-a2f8-02420a000014). O `source_url` governamental continua garantindo a evidência; `event_url` é usado como destino primário. `app/sources.json` foi atualizado para que a próxima coleta preserve esta separação.
+- **VIP Leilões:** teste real do DOM no GitHub Actions [#41827763874](https://github.com/igormarianoapps/buscaleilao/actions/runs/41827763874) identificou `.card-evento` como contêiner que possui data, UF e link individual. O seletor anterior parava antes dos links. Após correção, o parser localizou **15 eventos e 68 registros por UF** com URLs específicas.
+- **VIP Goiás (04/11 às 14h):** o cartão oficial mostra `https://www.vipleiloes.com.br/evento/detalhes/041126bsgo`. Esse é o destino da própria VIP para o evento, embora a quantidade de lotes mostrada na página individual possa variar durante o loteamento; não prometer que o leiloeiro já exibe veículos se a plataforma indica zero.
+- **Feed atualmente publicado no repositório:** 14 eventos VIP com assinatura exata data/hora/UF (61 registros por UF) passaram de link `/agenda` para URL de detalhe. O grupo VIP de 06/11 às 14h teve divergência na lista de UFs entre coleta anterior e agenda atual; o de 14/11 às 9h PE não foi recuperado no teste atual. Ambos seguem sem link público específico aprovado e ficam fora dos resultados da busca até nova validação.
+- **Prevenção de regressão:** a coleta VIP agora só publica cartões com link individual único; a busca ignora entradas `source_link_type=calendar`. A interface distingue `Ver veículos e lotes do leilão` de `Consultar edital ou comunicado oficial`, e permite ver a fonte oficial em link secundário quando diferente do destino de lotes.
+- **Estado de publicação:** todos os ajustes estão no GitHub com testes aprovados em [#41827977258](https://github.com/igormarianoapps/buscaleilao/actions/runs/41827977258). A Vercel informou **limite de deploys com nova tentativa em 24h**; **não marcar como validado no site público** até que o deploy seja refeito e o smoke test confirme os CTAs.
+
+**P0.4 continua em andamento:** há outras fontes municipais/estaduais que só oferecem comunicado ou catálogo, e plataformas externas podem bloquear rotas ou não listar lotes até o loteamento. Auditar o destino individual e preservar a proveniência continuam sendo condições de qualidade.
 
 ## Próxima ação
 
