@@ -38,9 +38,12 @@ Os cinco links originais problemáticos não são aprovados por substituição s
 | 23 | `prf-sp-2026-11-04` | PRF São Paulo/SP | **Conferência oficial aprovada** | Edital nº 01/2026 acessível no portal PRF, confirma 03 e 04/11 às 10h, veículos conservados e sucatas; URL oficial |
 | 24 | `freitas-8152-2026-11-04` | Freitas/SP | **Parcial** | Resultado público indexado identifica leilão 8152, 04/11 às 10h em Santa Bárbara d'Oeste; acesso direto ao destino retornou HTTP 403 no verificador, portanto não contar como link aprovado |
 
-Fontes independentes: [Cuiabá — cronograma por sessão](https://www.cuiaba.mt.gov.br/noticias/semob-realiza-o-4o-leilao-do-ano-com-1-065-veiculos-disponiveis), [PRF/SP — edital 01/2026](https://www.gov.br/prf/pt-br/assuntos/leiloes-prf/sao-paulo/sp-edital-de-leilao-de-veiculos-conservados-e-sucatas-1), [Freitas 8152 — acesso ao leilão](https://www.freitasleiloeiro.com.br/Leiloes/Lotes?leilaoId=8152).
+| 25 | `campina-grande-pb-001-2026` | Marco Túlio Leilões/PB | **Conferência do leiloeiro aprovada** | URL exata do feed `/leiloes/355` abre: leilão 001/2026 da Prefeitura de Campina Grande; veículos, motos, vans; 04/11 às 10h; lotes e edital acessíveis |
+| 26 | `copart-10577-2026-11-05` | Copart/PE | **Parcial — evento confirmado, URL do feed pendente** | Rota alternativa `/saleListResult/auctionId/10577` indexada confirma Vitória de Santo Antão, 05/11 e veículos; rota exata do feed permanece sem validação independente |
 
-**Progresso: 18 eventos distintos com documentação e destino acessível / meta de 20.** Permanecem cinco links originais não aprovados e um candidato adicional com bloqueio HTTP 403. O resultado do mecanismo de pesquisa, sozinho, não comprova navegação real.
+Fontes adicionais: [Campina Grande — página específica](https://www.marcotulioleiloes.com.br/leiloes/355) e [Copart 10577 — rota alternativa](https://www.copart.com.br/saleListResult/auctionId/10577?yardNum=92).\n\nFontes independentes: [Cuiabá — cronograma por sessão](https://www.cuiaba.mt.gov.br/noticias/semob-realiza-o-4o-leilao-do-ano-com-1-065-veiculos-disponiveis), [PRF/SP — edital 01/2026](https://www.gov.br/prf/pt-br/assuntos/leiloes-prf/sao-paulo/sp-edital-de-leilao-de-veiculos-conservados-e-sucatas-1), [Freitas 8152 — acesso ao leilão](https://www.freitasleiloeiro.com.br/Leiloes/Lotes?leilaoId=8152).
+
+**Progresso: 19 eventos distintos com documentação e destino exato do feed acessível / meta de 20.** Permanecem cinco links originais não aprovados e um candidato adicional com bloqueio HTTP 403. O resultado do mecanismo de pesquisa, sozinho, não comprova navegação real.
 
 ## Evidências externas verificadas nesta rodada
 
@@ -61,7 +64,7 @@ Fontes independentes: [Cuiabá — cronograma por sessão](https://www.cuiaba.mt
 - [Leilão de Serranópolis do Iguaçu — aviso municipal](https://serranopolis.pr.gov.br/noticias/6113-governo-municipal-de-serranopolis-do-iguacu-realiza-leilao-eletronico-de-veiculos-maquinas-e-outros-bens)
 - [Editais DETRAN Goiás](https://goias.gov.br/detran/leiloes/) — referência parcial para nº 03/2026.
 
-**Progresso auditado até aqui:** **18 eventos distintos totalmente conferidos / meta de 20** após ampliação controlada da amostra (15 originais + 3 adicionais). **Cinco links originais permanecem pendentes** (3 Copart, 2 VIP), além de Freitas 8152 bloqueado no acesso independente. A aprovação documental de links oficiais não equivale a teste real em todos os navegadores. A verificação de acesso aos sites por diferentes usuários/navegadores ainda precisa de teste de produto. Não marcar P0.3/P0.4 como concluídos.
+**Progresso auditado até aqui:** **19 eventos distintos conferidos / meta de 20** após ampliação controlada da amostra (15 originais + 3 adicionais + Campina Grande). A Copart 10577 possui evidência documental, mas não acesso à URL exata do feed. **Cinco links originais permanecem pendentes** (3 Copart, 2 VIP), além de Freitas 8152 bloqueado no acesso independente. A aprovação documental de links oficiais não equivale a teste real em todos os navegadores. A verificação de acesso aos sites por diferentes usuários/navegadores ainda precisa de teste de produto. Não marcar P0.3/P0.4 como concluídos.
 
 ## Segunda rodada — checagem das cinco pendências (04/11/2026)
 
@@ -81,4 +84,4 @@ Fontes da checagem: [Copart 10570 indexado](https://www.copart.com.br/saleListRe
 
 ## Próxima ação
 
-Concluir pelo menos mais dois eventos distintos com links efetivamente acessíveis, mantendo os cinco links originais problemáticos na lista de riscos do produto. Validar Copart/VIP em navegador real antes de alterar os links publicados. Só fechar P0.3/P0.4 quando houver pelo menos 20 aprovados e uma decisão explícita sobre os links genéricos da VIP.
+Concluir pelo menos mais um evento distinto com link exato do feed efetivamente acessível, mantendo os cinco links originais problemáticos na lista de riscos do produto. Validar Copart/VIP em navegador real antes de alterar os links publicados. Só fechar P0.3/P0.4 quando houver pelo menos 20 aprovados e uma decisão explícita sobre os links genéricos da VIP.
