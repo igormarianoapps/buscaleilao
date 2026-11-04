@@ -51,6 +51,13 @@ class GateTests(unittest.TestCase):
         feed,report=sample()
         report["unique_events"]=7
         self.assertTrue(validate_feed(feed,report,NOW))
+    def test_verified_pmklog_auction_url_allowed_separately_from_official_source(self):
+        feed,report=sample()
+        feed["events"][0]["event_url"]="https://pmklog.com.br/leilao/evento/leilao-detran/?evento=fa724af3-d396-11f1-a2f8-02420a000014"
+        self.assertEqual(validate_feed(feed,report,NOW),[])
+        feed["events"][0]["event_url"]="https://pmklog.example/leilao/evento/leilao-detran/?evento=x"
+        self.assertTrue(any("unverified auction destination" in e for e in validate_feed(feed,report,NOW)))
+
     def test_copart_calendar_must_not_claim_direct_event_link(self):
         feed,report=sample()
         feed["events"][0].update({
