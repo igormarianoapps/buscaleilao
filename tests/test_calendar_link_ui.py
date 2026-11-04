@@ -26,9 +26,11 @@ class CalendarLinkUXTests(unittest.TestCase):
 
     def test_filters_do_not_refetch_feed_on_each_search(self):
         html=HTML.read_text(encoding="utf-8")
-        self.assertEqual(html.count('fetch("./events.json"'),1)
-        self.assertIn('from "./agenda.mjs"',html)
-        self.assertNotIn('from "/app/agenda.mjs"',html)
+        self.assertEqual(html.count('await fetch(url,{cache:"no-store"})'),1)
+        self.assertIn('const candidates=["/app/agenda.mjs","./agenda.mjs"]',html)
+        self.assertIn('const candidates=["/app/events.json","./events.json"]',html)
+        self.assertIn('const module=await import(url)',html)
+        self.assertNotIn('import {filterAuctions,feedFreshness',html)
         self.assertIn('filters.addEventListener("submit",e=>{e.preventDefault();applyFilters()})',html)
         self.assertIn('filters.addEventListener("reset"',html)
         self.assertIn('let currentFeed=null',html)
@@ -36,6 +38,13 @@ class CalendarLinkUXTests(unittest.TestCase):
         self.assertIn('name="start"',html)
         self.assertIn('name="end"',html)
         self.assertIn('A data inicial não pode ser posterior à data final.',html)
+
+    def test_state_picker_initialization_is_not_blocked_by_import(self):
+        html=HTML.read_text(encoding="utf-8")
+        # The dropdown must render even if module import or JSON fetch fail.
+        self.assertLess(html.index('states.sort().forEach('),html.index('load();'))
+        self.assertIn('console.warn("Módulo da agenda indisponível:"',html)
+        self.assertIn("Não foi possível carregar o módulo de filtros.",html)
 
     def test_page_inline_module_parses_in_node(self):
         import re
