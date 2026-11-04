@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-04T10:44:59+00:00",
+  "checked_at": "2026-11-04T18:04:29+00:00",
   "candidates": [
     {
       "title": "- Leilão de Veículos Apreendidos pela SMTT e DEMUTRAN-  Veículos Aptos a serem Leiloados MEMO nº 215/CGF/2026",
@@ -340,6 +340,19 @@
       "source": "pncp_official_api"
     },
     {
+      "title": "REALIZACAO DE LEILAO ELETRONICO ONLINE, PARA A VENDA DE BENS MOVEIS INSERVIVEIS E VEICULOS USADOS PERTENCENTES AO PATRIMONIO DA PREFEITURA DE SAO JOSE DOS CAMPOS",
+      "state": "SP",
+      "city": "São José dos Campos",
+      "organizer": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+      "date_hint": "2026-12-02",
+      "date_hint_status": "pncp_deadline_unverified",
+      "source_url": "https://pncp.gov.br/app/editais/46643466000106/2026/1226",
+      "pncp_control": "46643466000106-1-001226/2026",
+      "review_status": "needs_edital_confirmation",
+      "note": "PNCP proposal deadline is not independently verified auction start date.",
+      "source": "pncp_official_api"
+    },
+    {
       "title": "Alienação de Veículos Automotores Classificados como Recuperáveis e\r\nIrrecuperáveis pertencentes à Administração Pública Estadual.",
       "state": "RS",
       "city": "Porto Alegre",
@@ -353,7 +366,7 @@
       "source": "pncp_official_api"
     }
   ],
-  "count": 27,
+  "count": 28,
   "requests": 10,
   "errors": [],
   "events_automatically_published": 0,
