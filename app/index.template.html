@@ -30,7 +30,7 @@ small{color:#64748b}.empty{padding:28px;background:white;border-radius:12px}
 <label>Até<input type="date" name="end"></label>
 <button type="submit">Buscar leilões</button><button type="reset" class="secondary">Limpar filtros</button>
 </form><div id="filter-error" class="filter-error" role="alert" hidden></div><div id="freshness" class="freshness" role="status" hidden></div><div class="topline"><h2>Próximos leilões</h2><small id="count"></small></div><section id="results" class="cards" aria-live="polite"></section>
-<p><small>Agenda atualizada por coleta periódica de fontes públicas. A cobertura ainda é parcial; confirme sempre as informações no site do leiloeiro.</small></p>
+<p><small>Agenda atualizada por coleta periódica. Leilões de plataformas sem link individual confirmado não aparecem; os avisos oficiais podem levar ao edital, não aos lotes.</small></p>
 </main><script id="embedded-feed" type="application/json">__EMBEDDED_FEED__</script>
 <script>
 /* __AGENDA_CODE__ */
@@ -64,8 +64,8 @@ function applyFilters(){
       <span>🚗 ${a.vehicle_count===null?"Quantidade não informada":a.vehicle_count+" veículos"}</span></div>
       <p>${escapeHTML(a.organizer)}</p>
       <small>Fonte: ${escapeHTML(sourceLabel(a.source_type))} · Última verificação: ${escapeHTML(a.last_checked_at?new Date(a.last_checked_at).toLocaleString("pt-BR",{timeZone:"America/Sao_Paulo"}):"não informada")}</small><br>
-      <a href="${escapeHTML(a.source_url)}" target="_blank" rel="noopener noreferrer">${a.source_link_type==="event"?"Ver leilão específico ↗":a.source_link_type==="calendar"?"Consultar agenda geral do leiloeiro ↗":"Consultar fonte do evento ↗"}</a>
-      ${a.source_link_type==="calendar"?'<small class="link-note">Este link leva à agenda geral, não ao evento. Procure a data e o estado indicados acima. O acesso pode depender da disponibilidade do site do leiloeiro.</small>':""}
+      <a href="${escapeHTML(a.event_url||a.source_url)}" target="_blank" rel="noopener noreferrer">${a.event_url||a.source_link_type==="event"?"Ver veículos e lotes do leilão ↗":"Consultar edital ou comunicado oficial ↗"}</a>
+      ${a.event_url && a.event_url!==a.source_url?`<small class="link-note">Conferido por fonte oficial: <a href="${escapeHTML(a.source_url)}" target="_blank" rel="noopener noreferrer">ver comunicado ou edital ↗</a></small>`:""}
       </article>`).join(""):`<div class="empty" role="status">${escapeHTML(emptyResultsMessage({state:form.get("state"),start,end}))}</div>`;
 }
 async function load(){
