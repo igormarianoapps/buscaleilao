@@ -199,6 +199,19 @@ Atualizado em 04/11/2026. **Implementado** significa código publicado no GitHub
 
 **Prioridade preservada:** confiabilidade da agenda e uso sem fricção; não criar novos coletores ou funcionalidades P1 durante o fechamento do MVP.
 
+## P0.5 — Lista vazia e pesquisa por período (04/11/2026)
+
+- [x] Usuário relatou página sem resultados mesmo com `app/events.json` contendo **98 registros / 47 eventos únicos** na última coleta #41816001753. O problema é compatível com rotas de assets absolutas erradas para o diretório publicado na Vercel; não presumir ausência de leilões.
+- [x] Trocar URLs absolutas `/app/agenda.mjs` e `/app/events.json` pelas relativas `./agenda.mjs` e `./events.json`, válidas quando `app` é a raiz do site ou quando a página é servida de `/app/`.
+- [x] Trocar filtro de data única por **intervalo De / Até**, inclusivo, com ambos os campos opcionais e validação `De <= Até`.
+- [x] Respeitar a data atual em `America/Sao_Paulo` também em intervalos abertos; não reintroduzir eventos vencidos.
+- [x] Atualizar mensagem de pesquisa sem resultados e comportamento do botão Limpar filtros para ambos os campos.
+- [x] Testes Node para limites inclusivos, limites opcionais, filtros de UF e intervalo invertido; testes Python verificam URLs relativas, campos e sintaxe do módulo JS. **GitHub Actions #41823401886 aprovado**.
+- [ ] **Validar na Vercel** com abertura real em desktop/mobile, incluindo feed, scripts, resultados e filtros. A rota incorreta é causa provável; sem inspeção direta da configuração Vercel não afirmar que o problema de produção está definitivamente solucionado.
+- [ ] P0.3/P0.4 continuam 19/20 links comprovados; não bloquear correção da interface por falhas externas VIP/Copart.
+
+**Próximo teste manual:** abrir https://buscaleilao-nine.vercel.app/ após o deploy e conferir lista inicial sem filtros, intervalo de 04/11 a 14/11, UF GO, UF sem registros e erro De > Até.
+
 ## Fase 1 — Motor de coleta e qualidade
 
 - [x] Coletores independentes: erro de uma fonte não interrompe a verificação das outras
