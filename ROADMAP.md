@@ -98,6 +98,18 @@ Atualizado em 03/11/2026. **Implementado** significa código publicado no GitHub
 
 **Regra:** nenhum novo leiloeiro, expansão de escopo ou funcionalidade P1 antes de concluir a estabilidade.
 
+## P0.2 — Histórico verificável de estabilidade (04/11/2026)
+
+- [x] Conferir GitHub Actions: até a consulta de 04/11 pela manhã ainda não houve **segunda execução completa de `Collect verified auctions`**. P0.2 permanece **1/3**.
+- [x] Criar `app/collection-history.json` com ponto inicial **41715100215**, comprovadamente concluído com sucesso: 48 eventos, 19 UFs, verificado em 03/11 às 17h43 BRT.
+- [x] Criar `scripts/record_collection_history.py` para registrar após as etapas de coleta/publicação cada `GITHUB_RUN_ID`, tentativa, horário de verificação, eventos únicos, UFs e saúde das fontes.
+- [x] Calcular sequência de coletas registradas com distância máxima de 24 horas entre atualizações, reiniciando a sequência quando o intervalo for maior; execuções repetidas da mesma tentativa não duplicam a contagem.
+- [x] Manter ressalva explícita: **registro final não equivale a sucesso**; confirmar o estado `conclusion=success` de cada execução no GitHub antes de marcar P0.2.
+- [x] Cobrir o histórico com testes de 3 execuções, intervalo maior que 24h, arquivos antigos, ID inválido e ordem do workflow.
+- [ ] Verificar segunda e terceira execuções completas. Não contar o workflow `Test auction adapters` para a meta P0.2.
+
+**Próxima etapa após 3/3:** auditoria de fontes/eventos e links P0.3/P0.4; não ampliar escopo antes.
+
 ## Fase 1 — Motor de coleta e qualidade
 
 - [x] Coletores independentes: erro de uma fonte não interrompe a verificação das outras
