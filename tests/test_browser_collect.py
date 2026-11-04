@@ -77,21 +77,21 @@ class Tests(unittest.TestCase):
         self.assertIsNone(vip_detail_url("https://www.vipleiloes.com.br/agenda"))
         self.assertIsNone(vip_detail_url("https://www.vipleiloes.com.br/leilao/12345/lotes/5"))
 
-    def test_vip_partial_cards_do_not_hide_calendar_auctions(self):
+    def test_vip_partial_cards_publish_only_direct_destinations(self):
         page=("Início: 03/11/2099 10:00\nEstados BA-GO\n"
               "Início: 04/11/2099 11:00\nEstados SP")
         cards=[{"text":"Início: 03/11/2099 10:00\nEstados BA-GO",
                 "links":["https://www.vipleiloes.com.br/leilao/123"]}]
         events, mode=choose_vip_events(cards,page)
-        self.assertEqual(mode,"partial_cards_fallback")
-        self.assertEqual(len({e["event_id"] for e in events}),2)
-        self.assertTrue(all(e["source_link_type"]=="calendar" for e in events))
+        self.assertEqual(mode,"partial_direct_links")
+        self.assertEqual(len({e["event_id"] for e in events}),1)
+        self.assertTrue(all(e["source_link_type"]=="event" for e in events))
 
     def test_vip_complete_cards_preserve_direct_links(self):
         page="Início: 03/11/2099 10:00\nEstados BA-GO"
         cards=[{"text":page,"links":["https://www.vipleiloes.com.br/leilao/123"]}]
         events,mode=choose_vip_events(cards,page)
-        self.assertEqual(mode,"complete_cards")
+        self.assertEqual(mode,"complete_direct_links")
         self.assertEqual({e["state"] for e in events},{"BA","GO"})
         self.assertTrue(all(e["source_link_type"]=="event" for e in events))
 
@@ -100,8 +100,15 @@ class Tests(unittest.TestCase):
         cards=[{"text":page+"\nInício: 04/11/2099 10:00\nEstados SP",
                 "links":["https://www.vipleiloes.com.br/leilao/123"]}]
         events,mode=choose_vip_events(cards,page)
-        self.assertEqual(mode,"calendar_fallback")
-        self.assertEqual(len(events),1)
+        self.assertEqual(mode,"no_verified_direct_links")
+        self.assertEqual(events,[])
+
+    def test_vip_never_publishes_generic_calendar_card(self):
+        page="Início: 03/11/2099 10:00\\nEstados GO"
+        cards=[{"text":page,"links":["https://www.vipleiloes.com.br/agenda"]}]
+        events,mode=choose_vip_events(cards,page)
+        self.assertEqual(events,[])
+        self.assertEqual(mode,"no_verified_direct_links")
 
     def test_vip_rejects_unspecified_uf(self):
         self.assertEqual(parse_vip_text("Seguradoras\nInício: 03/11/2099 10:00\nEstados Não Informado"),[])
