@@ -212,6 +212,18 @@ Atualizado em 04/11/2026. **Implementado** significa código publicado no GitHub
 
 **Próximo teste manual:** abrir https://buscaleilao-nine.vercel.app/ após o deploy e conferir lista inicial sem filtros, intervalo de 04/11 a 14/11, UF GO, UF sem registros e erro De > Até.
 
+## P0.5 — Correção crítica: estados vazios e feed não carregado (04/11/2026)
+
+- [x] Reproduzir por análise do código a causa provável: `app/index.html` usava `import ... from "./agenda.mjs"` no topo; se Vercel publica `app/index.html` na raiz mas mantém o repositório como raiz, `/agenda.mjs` falha e **toda a execução do módulo é interrompida**, inclusive a população das 27 UFs.
+- [x] Trocar importação estática por importação dinâmica com fallback dos dois layouts possíveis: `/app/agenda.mjs` e `./agenda.mjs`. O seletor de estados é preenchido **antes** da tentativa de carregar o módulo.
+- [x] Aplicar a mesma resolução dupla ao feed, `/app/events.json` e `./events.json`, exigindo HTTP OK e objeto JSON com array `events`, sem assumir que HTTP 200 signifique JSON válido.
+- [x] Exibir mensagem explícita se módulo e feed não forem encontrados; manter intervalo de datas inclusivo De/Até e filtro de UF.
+- [x] Atualizar testes de regressão para os dois layouts, escolha dos estados independente do import e sintaxe JavaScript; **GitHub Actions #41824162450 aprovado**.
+- [ ] **Verificação em produção pendente:** confirmar no navegador a lista de UFs e os cartões reais em https://buscaleilao-nine.vercel.app/ após deploy; testes de código não substituem o comportamento da Vercel.
+- [ ] Continuar P0.5 e os bloqueios externos de P0.4 em 19/20, sem alterar o escopo.
+
+**Lição do defeito:** não usar importação estática em ponto de entrada cujo caminho depende do diretório publicado; capturar o erro de forma visível.
+
 ## Fase 1 — Motor de coleta e qualidade
 
 - [x] Coletores independentes: erro de uma fonte não interrompe a verificação das outras
