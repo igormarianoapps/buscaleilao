@@ -127,9 +127,21 @@ Atualizado em 04/11/2026. **Implementado** significa código publicado no GitHub
 - [x] GitHub Actions: #41715100215, #41814063834 e #41816001753 concluídos com sucesso, em intervalos inferiores a 24 horas.
 - [x] Última coleta: 47 eventos únicos, 98 registros, 19 UFs, 18 fontes curadas aprovadas e 3 fontes com HTTP 403.
 - [x] Curitiba: três editais novamente verificados; PNCP: 27 candidatos, ainda não publicados.
-- [ ] **P0.3/P0.4 — fase atual:** auditoria de `AUDIT_MVP.md` avançou para **15/20** eventos comprovados em páginas de órgãos oficiais/leiloeiros; **5 pendentes** (3 Copart inacessíveis para checagem externa e 2 VIP com redirecionamento da agenda). Não encerrar até 20/20 e links úteis confirmados.
+- [ ] **P0.3/P0.4 — fase atual:** **15/20 verificações completas**; segunda rodada localizou os detalhes específicos de 2 eventos VIP e corroborou venda Copart 10570, mas o acesso aos links permanece não comprovado. Falta testar 3 URLs Copart e 2 VIP em navegador real. Os testes automatizados agora impedem links de calendário rotulados como venda específica.
 - [ ] P0.5 — testar interface desktop/mobile após a auditoria.
 - [ ] P0.7 — piloto com usuários depois da interface.
+
+## P0.3/P0.4 — Auditoria de links, segunda rodada (04/11/2026)
+
+- [x] Encontrar fontes públicas da Copart e links individuais indexados da VIP para eventos da amostra, preservando o estado parcial quando o destino não abre.
+- [x] VIP PR 07/11 09h: edital `071126PINHAISPR`, página `/evento/detalhes/071126pinhaispr`, 26 lotes; acesso em verificador externo apresenta loop.
+- [x] VIP PE 14/11 09h: edital `141126CTTUPE`, página `/evento/detalhes/141126cttupe`, 13 lotes; acesso em verificador externo apresenta loop.
+- [x] Copart GO 10570 04/11: resultado indexado com venda específica, mas acesso à URL original do feed ainda não validado; CE 10573 confirmado apenas em calendário por data/UF; PR 10586 ainda não corroborado individualmente.
+- [x] Endurecer gate de publicação: `source_link_type=event` precisa ser URL individual comprovável pela estrutura oficial (Copart ID + data, VIP rota individual). Proibir rotular calendário como evento. Testes aprovados no workflow **41817984600**.
+- [ ] **P0.3/P0.4: 15/20 completas**; cinco links exigem teste de navegação efetiva, sem considerar conteúdo indexado como garantia de acesso.
+- [ ] Só avançar à experiência P0.5 depois de resolver as cinco pendências ou substituí-las por outros eventos auditados com links úteis (mantendo amostra variada).
+
+**Detalhamento e evidências:** `AUDIT_MVP.md`. Não inferir cobertura de mercado a partir das 19 UFs.
 
 ## Fase 1 — Motor de coleta e qualidade
 
