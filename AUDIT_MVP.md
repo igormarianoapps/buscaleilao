@@ -21,11 +21,11 @@
 | 13 | `freitas-8158-2026-11-06` | Freitas/SP | **Conferência do leiloeiro aprovada** | Página individual 8158 mostra veículos e lotes em 06/11 às 10h; calendário confirma Pátio Utinga |
 | 14 | `freitas-8162-2026-11-09` | Freitas/SP | **Conferência do leiloeiro aprovada** | Página individual 8162 confirma fechamento 09/11 às 10h, online, local São Paulo/SP; visitação de alguns lotes no RJ não altera UF do evento |
 | 15 | `copart-10569-2026-11-04` | Copart/GO | **Conferência da plataforma aprovada** | Página individual /saleListResult/10569/2026-11-04 mostra lista de venda Goiânia-GO, data 04/11 e lotes; URL não é calendário genérico |
-| 16 | `copart-10570-2026-11-04` | Copart/GO | **Pendente** | URL tem ID de venda 10570 distinto de 10569, mas página específica não abriu na verificação externa; não contar como comprovada |
-| 17 | `copart-10573-2026-11-05` | Copart/CE | **Pendente** | URL da venda 10573 não acessível na verificação externa; conferir página específica |
-| 18 | `copart-10586-2026-11-10` | Copart/PR | **Pendente** | URL da venda 10586 não acessível na verificação externa; conferir página específica |
-| 19 | `vip-2026-11-07-0900-2eb73e64869302-pr` | VIP Leilões/PR | **Pendente** | Agenda VIP em loop de redirecionamento na consulta externa; link é calendário, não evento; necessita teste real de navegação |
-| 20 | `vip-2026-11-14-0900-18c4f200a245a5-pe` | VIP Leilões/PE | **Pendente** | Agenda VIP em loop de redirecionamento na consulta externa; data/UF exigem verificação humana e teste do link |
+| 16 | `copart-10570-2026-11-04` | Copart/GO | **Parcial — evento corroborado, link pendente** | Resultado indexado da própria Copart mostra venda 10570 em Goiânia, 04/11, leiloeiro Ygor Ferreira Brasil; destino exato do feed não abriu no teste externo. Não considerar usabilidade do link aprovada |
+| 17 | `copart-10573-2026-11-05` | Copart/CE | **Parcial — data/local corroborados, ID/link pendentes** | Calendário oficial Copart confirma Eusébio-CE em 05/11, mas não comprova venda individual 10573 nem sua abertura |
+| 18 | `copart-10586-2026-11-10` | Copart/PR | **Pendente — link individual** | A página do ID 10586 não abriu; calendário indexado consultado não confirmou independentemente a venda de 10/11. Não substituir automaticamente por inventário geral de Curitiba |
+| 19 | `vip-2026-11-07-0900-2eb73e64869302-pr` | VIP Leilões/PR | **Parcial — evento identificado; acesso pendente** | A própria VIP indexa edital 071126PINHAISPR e página de evento https://www.vipleiloes.com.br/evento/detalhes/071126pinhaispr, com 07/11 09h, PR, 26 lotes. Acesso direto redirecionou em loop no verificador; feed aponta para agenda, não para esse evento |
+| 20 | `vip-2026-11-14-0900-18c4f200a245a5-pe` | VIP Leilões/PE | **Parcial — evento identificado; acesso pendente** | A própria VIP indexa edital 141126CTTUPE e página de evento https://www.vipleiloes.com.br/evento/detalhes/141126cttupe, com 14/11 09h, PE, 13 lotes. Acesso direto redirecionou em loop no verificador; feed aponta para agenda |
 
 ## Evidências externas verificadas nesta rodada
 
@@ -47,6 +47,22 @@
 - [Editais DETRAN Goiás](https://goias.gov.br/detran/leiloes/) — referência parcial para nº 03/2026.
 
 **Progresso auditado até aqui:** **15/20 conferidos** quanto a data/UF/organizador e utilidade da fonte; **5 pendentes** (3 links Copart não acessíveis na verificação externa, 2 eventos VIP com agenda em loop). A aprovação documental de links oficiais não equivale a teste real em todos os navegadores. A verificação de acesso aos sites por diferentes usuários/navegadores ainda precisa de teste de produto. Não marcar P0.3/P0.4 como concluídos.
+
+## Segunda rodada — checagem das cinco pendências (04/11/2026)
+
+A validação independente identificou **três eventos anteriormente pendentes com evidência adicional de existência**, mas não resolveu a usabilidade dos respectivos destinos:
+
+- **Copart 10570/GO:** resultado da plataforma identifica venda, local e data; o URL exato do feed segue sem confirmação de abertura independente.
+- **Copart 10573/CE:** calendário oficial confirma data/local do leilão; o ID de venda específico ainda precisa ser validado.
+- **Copart 10586/PR:** somente a origem de coleta automatizada informa venda; não promover sem acesso e evidência independente.
+- **VIP PR 07/11:** página individual identificada por busca pública em `/evento/detalhes/071126pinhaispr`; data, UF e natureza veicular constatadas no conteúdo indexado. Redirecionamento em loop impede validar a navegação ao vivo.
+- **VIP PE 14/11:** página individual identificada por busca pública em `/evento/detalhes/141126cttupe`; data, UF e lotes de veículos constatados no conteúdo indexado. Redirecionamento em loop impede validar a navegação ao vivo.
+
+Fontes da checagem: [Copart 10570 indexado](https://www.copart.com.br/saleListResult/auctionId/10570?auctioneer=Ygor+Ferreira+Brasil+-+Juceg+074%2F20%3Fpage%3D3&from=&liveAuction=false&location=Goi%C3%A2nia+-+GO&saleDate=1793808000000&yardNum=56), [calendário Copart](https://www.copart.com.br/salesListResult), [VIP PR](https://www.vipleiloes.com.br/evento/detalhes/071126pinhaispr), [VIP PE](https://www.vipleiloes.com.br/evento/detalhes/141126cttupe), [agenda VIP indexada na página principal](https://www.vipleiloes.com.br/).
+
+**Status formal permanece 15/20 completos:** links que falham ao abrir ou não conduzem ao evento não atendem P0.4. Dois eventos VIP e dois Copart têm corroboração parcial; um Copart continua sem conferência independente. Não substituir por URLs supostas ou declarar P0.3/P0.4 completos.
+
+**Correção de código:** `scripts/validate_feed.py` passa a recusar `source_link_type=event` com URL de calendário, data Copart divergente ou link de domínio não reconhecido. Testes verificam Copart/VIP, sem alterar a agenda pública nem forçar links inacessíveis.
 
 ## Próxima ação
 
