@@ -1,423 +1,6 @@
 {
-  "updated_at": "2026-11-03T20:43:27+00:00",
+  "updated_at": "2026-11-04T10:25:42+00:00",
   "events": [
-    {
-      "id": "prf-sp-2026-11-03",
-      "title": "Leilão de veículos e sucatas — PRF São Paulo (sessão 1)",
-      "state": "SP",
-      "city": "São Paulo",
-      "auction_date": "2026-11-03",
-      "auction_time": "10:00",
-      "vehicle_count": null,
-      "organizer": "Polícia Rodoviária Federal",
-      "source_type": "federal",
-      "source_url": "https://www.gov.br/prf/pt-br/assuntos/leiloes-prf/sao-paulo/sp-edital-de-leilao-de-veiculos-conservados-e-sucatas-1",
-      "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:27+00:00"
-    },
-    {
-      "id": "vip-2026-11-03-1900-ce20c9019af513-am",
-      "title": "Leilão de veículos — VIP Leilões",
-      "state": "AM",
-      "city": "Local não informado",
-      "auction_date": "2026-11-03",
-      "auction_time": "19:00",
-      "vehicle_count": null,
-      "organizer": "VIP Leilões",
-      "source_type": "private",
-      "source_url": "https://www.vipleiloes.com.br/agenda",
-      "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
-      "source_link_type": "calendar",
-      "event_id": "vip-2026-11-03-1900-ce20c9019af513",
-      "states": [
-        "AM",
-        "BA",
-        "CE",
-        "DF",
-        "MA",
-        "MG",
-        "MT",
-        "PA",
-        "PE",
-        "PR",
-        "RJ",
-        "RS",
-        "SC"
-      ]
-    },
-    {
-      "id": "vip-2026-11-03-1900-ce20c9019af513-ba",
-      "title": "Leilão de veículos — VIP Leilões",
-      "state": "BA",
-      "city": "Local não informado",
-      "auction_date": "2026-11-03",
-      "auction_time": "19:00",
-      "vehicle_count": null,
-      "organizer": "VIP Leilões",
-      "source_type": "private",
-      "source_url": "https://www.vipleiloes.com.br/agenda",
-      "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
-      "source_link_type": "calendar",
-      "event_id": "vip-2026-11-03-1900-ce20c9019af513",
-      "states": [
-        "AM",
-        "BA",
-        "CE",
-        "DF",
-        "MA",
-        "MG",
-        "MT",
-        "PA",
-        "PE",
-        "PR",
-        "RJ",
-        "RS",
-        "SC"
-      ]
-    },
-    {
-      "id": "vip-2026-11-03-1900-ce20c9019af513-ce",
-      "title": "Leilão de veículos — VIP Leilões",
-      "state": "CE",
-      "city": "Local não informado",
-      "auction_date": "2026-11-03",
-      "auction_time": "19:00",
-      "vehicle_count": null,
-      "organizer": "VIP Leilões",
-      "source_type": "private",
-      "source_url": "https://www.vipleiloes.com.br/agenda",
-      "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
-      "source_link_type": "calendar",
-      "event_id": "vip-2026-11-03-1900-ce20c9019af513",
-      "states": [
-        "AM",
-        "BA",
-        "CE",
-        "DF",
-        "MA",
-        "MG",
-        "MT",
-        "PA",
-        "PE",
-        "PR",
-        "RJ",
-        "RS",
-        "SC"
-      ]
-    },
-    {
-      "id": "vip-2026-11-03-1900-ce20c9019af513-df",
-      "title": "Leilão de veículos — VIP Leilões",
-      "state": "DF",
-      "city": "Local não informado",
-      "auction_date": "2026-11-03",
-      "auction_time": "19:00",
-      "vehicle_count": null,
-      "organizer": "VIP Leilões",
-      "source_type": "private",
-      "source_url": "https://www.vipleiloes.com.br/agenda",
-      "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
-      "source_link_type": "calendar",
-      "event_id": "vip-2026-11-03-1900-ce20c9019af513",
-      "states": [
-        "AM",
-        "BA",
-        "CE",
-        "DF",
-        "MA",
-        "MG",
-        "MT",
-        "PA",
-        "PE",
-        "PR",
-        "RJ",
-        "RS",
-        "SC"
-      ]
-    },
-    {
-      "id": "vip-2026-11-03-1900-ce20c9019af513-ma",
-      "title": "Leilão de veículos — VIP Leilões",
-      "state": "MA",
-      "city": "Local não informado",
-      "auction_date": "2026-11-03",
-      "auction_time": "19:00",
-      "vehicle_count": null,
-      "organizer": "VIP Leilões",
-      "source_type": "private",
-      "source_url": "https://www.vipleiloes.com.br/agenda",
-      "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
-      "source_link_type": "calendar",
-      "event_id": "vip-2026-11-03-1900-ce20c9019af513",
-      "states": [
-        "AM",
-        "BA",
-        "CE",
-        "DF",
-        "MA",
-        "MG",
-        "MT",
-        "PA",
-        "PE",
-        "PR",
-        "RJ",
-        "RS",
-        "SC"
-      ]
-    },
-    {
-      "id": "vip-2026-11-03-1900-ce20c9019af513-mg",
-      "title": "Leilão de veículos — VIP Leilões",
-      "state": "MG",
-      "city": "Local não informado",
-      "auction_date": "2026-11-03",
-      "auction_time": "19:00",
-      "vehicle_count": null,
-      "organizer": "VIP Leilões",
-      "source_type": "private",
-      "source_url": "https://www.vipleiloes.com.br/agenda",
-      "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
-      "source_link_type": "calendar",
-      "event_id": "vip-2026-11-03-1900-ce20c9019af513",
-      "states": [
-        "AM",
-        "BA",
-        "CE",
-        "DF",
-        "MA",
-        "MG",
-        "MT",
-        "PA",
-        "PE",
-        "PR",
-        "RJ",
-        "RS",
-        "SC"
-      ]
-    },
-    {
-      "id": "vip-2026-11-03-1900-ce20c9019af513-mt",
-      "title": "Leilão de veículos — VIP Leilões",
-      "state": "MT",
-      "city": "Local não informado",
-      "auction_date": "2026-11-03",
-      "auction_time": "19:00",
-      "vehicle_count": null,
-      "organizer": "VIP Leilões",
-      "source_type": "private",
-      "source_url": "https://www.vipleiloes.com.br/agenda",
-      "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
-      "source_link_type": "calendar",
-      "event_id": "vip-2026-11-03-1900-ce20c9019af513",
-      "states": [
-        "AM",
-        "BA",
-        "CE",
-        "DF",
-        "MA",
-        "MG",
-        "MT",
-        "PA",
-        "PE",
-        "PR",
-        "RJ",
-        "RS",
-        "SC"
-      ]
-    },
-    {
-      "id": "vip-2026-11-03-1900-ce20c9019af513-pa",
-      "title": "Leilão de veículos — VIP Leilões",
-      "state": "PA",
-      "city": "Local não informado",
-      "auction_date": "2026-11-03",
-      "auction_time": "19:00",
-      "vehicle_count": null,
-      "organizer": "VIP Leilões",
-      "source_type": "private",
-      "source_url": "https://www.vipleiloes.com.br/agenda",
-      "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
-      "source_link_type": "calendar",
-      "event_id": "vip-2026-11-03-1900-ce20c9019af513",
-      "states": [
-        "AM",
-        "BA",
-        "CE",
-        "DF",
-        "MA",
-        "MG",
-        "MT",
-        "PA",
-        "PE",
-        "PR",
-        "RJ",
-        "RS",
-        "SC"
-      ]
-    },
-    {
-      "id": "vip-2026-11-03-1900-ce20c9019af513-pe",
-      "title": "Leilão de veículos — VIP Leilões",
-      "state": "PE",
-      "city": "Local não informado",
-      "auction_date": "2026-11-03",
-      "auction_time": "19:00",
-      "vehicle_count": null,
-      "organizer": "VIP Leilões",
-      "source_type": "private",
-      "source_url": "https://www.vipleiloes.com.br/agenda",
-      "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
-      "source_link_type": "calendar",
-      "event_id": "vip-2026-11-03-1900-ce20c9019af513",
-      "states": [
-        "AM",
-        "BA",
-        "CE",
-        "DF",
-        "MA",
-        "MG",
-        "MT",
-        "PA",
-        "PE",
-        "PR",
-        "RJ",
-        "RS",
-        "SC"
-      ]
-    },
-    {
-      "id": "vip-2026-11-03-1900-ce20c9019af513-pr",
-      "title": "Leilão de veículos — VIP Leilões",
-      "state": "PR",
-      "city": "Local não informado",
-      "auction_date": "2026-11-03",
-      "auction_time": "19:00",
-      "vehicle_count": null,
-      "organizer": "VIP Leilões",
-      "source_type": "private",
-      "source_url": "https://www.vipleiloes.com.br/agenda",
-      "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
-      "source_link_type": "calendar",
-      "event_id": "vip-2026-11-03-1900-ce20c9019af513",
-      "states": [
-        "AM",
-        "BA",
-        "CE",
-        "DF",
-        "MA",
-        "MG",
-        "MT",
-        "PA",
-        "PE",
-        "PR",
-        "RJ",
-        "RS",
-        "SC"
-      ]
-    },
-    {
-      "id": "vip-2026-11-03-1900-ce20c9019af513-rj",
-      "title": "Leilão de veículos — VIP Leilões",
-      "state": "RJ",
-      "city": "Local não informado",
-      "auction_date": "2026-11-03",
-      "auction_time": "19:00",
-      "vehicle_count": null,
-      "organizer": "VIP Leilões",
-      "source_type": "private",
-      "source_url": "https://www.vipleiloes.com.br/agenda",
-      "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
-      "source_link_type": "calendar",
-      "event_id": "vip-2026-11-03-1900-ce20c9019af513",
-      "states": [
-        "AM",
-        "BA",
-        "CE",
-        "DF",
-        "MA",
-        "MG",
-        "MT",
-        "PA",
-        "PE",
-        "PR",
-        "RJ",
-        "RS",
-        "SC"
-      ]
-    },
-    {
-      "id": "vip-2026-11-03-1900-ce20c9019af513-rs",
-      "title": "Leilão de veículos — VIP Leilões",
-      "state": "RS",
-      "city": "Local não informado",
-      "auction_date": "2026-11-03",
-      "auction_time": "19:00",
-      "vehicle_count": null,
-      "organizer": "VIP Leilões",
-      "source_type": "private",
-      "source_url": "https://www.vipleiloes.com.br/agenda",
-      "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
-      "source_link_type": "calendar",
-      "event_id": "vip-2026-11-03-1900-ce20c9019af513",
-      "states": [
-        "AM",
-        "BA",
-        "CE",
-        "DF",
-        "MA",
-        "MG",
-        "MT",
-        "PA",
-        "PE",
-        "PR",
-        "RJ",
-        "RS",
-        "SC"
-      ]
-    },
-    {
-      "id": "vip-2026-11-03-1900-ce20c9019af513-sc",
-      "title": "Leilão de veículos — VIP Leilões",
-      "state": "SC",
-      "city": "Local não informado",
-      "auction_date": "2026-11-03",
-      "auction_time": "19:00",
-      "vehicle_count": null,
-      "organizer": "VIP Leilões",
-      "source_type": "private",
-      "source_url": "https://www.vipleiloes.com.br/agenda",
-      "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
-      "source_link_type": "calendar",
-      "event_id": "vip-2026-11-03-1900-ce20c9019af513",
-      "states": [
-        "AM",
-        "BA",
-        "CE",
-        "DF",
-        "MA",
-        "MG",
-        "MT",
-        "PA",
-        "PE",
-        "PR",
-        "RJ",
-        "RS",
-        "SC"
-      ]
-    },
     {
       "id": "copart-10569-2026-11-04",
       "title": "Leilão Copart — Goiânia",
@@ -430,7 +13,7 @@
       "source_type": "private",
       "source_url": "https://www.copart.com.br/saleListResult/10569/2026-11-04?location=Goi%C3%A2nia%20-%20GO&saleDate=1793793600000&liveAuction=false&from=/salesListResult&auctioneer=Claudio%20Moreira%20Santos%20-%20Juceg%20071/19&yardNum=56",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:41+00:00",
+      "last_checked_at": "2026-11-04T10:26:20+00:00",
       "source_link_type": "event"
     },
     {
@@ -445,7 +28,7 @@
       "source_type": "private",
       "source_url": "https://www.copart.com.br/saleListResult/10570/2026-11-04?location=Goi%C3%A2nia%20-%20GO&saleDate=1793808000000&from=/salesListResult&auctioneer=Ygor%20Ferreira%20Brasil%20-%20Juceg%20074/20&yardNum=56",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:41+00:00",
+      "last_checked_at": "2026-11-04T10:26:20+00:00",
       "source_link_type": "event"
     },
     {
@@ -460,7 +43,7 @@
       "source_type": "private",
       "source_url": "https://www.copart.com.br/saleListResult/10571/2026-11-04?location=Itaquaquecetuba%20-%20SP&saleDate=1793808000000&liveAuction=false&from=/salesListResult&auctioneer=Wendell%20F%C3%A9lix%20-%20Jucesp%20759&yardNum=46",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:41+00:00",
+      "last_checked_at": "2026-11-04T10:26:20+00:00",
       "source_link_type": "event"
     },
     {
@@ -475,7 +58,7 @@
       "source_type": "private",
       "source_url": "https://www.copart.com.br/saleListResult/10572/2026-11-04?location=Osasco%20-%20SP&saleDate=1793827800000&liveAuction=false&from=/salesListResult&auctioneer=Luciana%20de%20C%C3%A1ssia%20dos%20Santos%20do%20Carmo%20-%20Jucesp%201136&yardNum=1",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:41+00:00",
+      "last_checked_at": "2026-11-04T10:26:20+00:00",
       "source_link_type": "event"
     },
     {
@@ -490,7 +73,7 @@
       "source_type": "municipal",
       "source_url": "https://www.cuiaba.mt.gov.br/noticias/semob-realiza-o-4o-leilao-do-ano-com-1-065-veiculos-disponiveis",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:27+00:00"
+      "last_checked_at": "2026-11-04T10:25:42+00:00"
     },
     {
       "id": "campina-grande-pb-001-2026",
@@ -504,7 +87,7 @@
       "source_type": "municipal",
       "source_url": "https://www.marcotulioleiloes.com.br/leiloes/355",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:27+00:00"
+      "last_checked_at": "2026-11-04T10:25:42+00:00"
     },
     {
       "id": "vip-2026-11-04-1000-dc870004919d82-ba",
@@ -518,7 +101,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1000-dc870004919d82",
       "states": [
@@ -540,7 +123,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1000-dc870004919d82",
       "states": [
@@ -562,7 +145,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1000-dc870004919d82",
       "states": [
@@ -584,7 +167,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1000-dc870004919d82",
       "states": [
@@ -606,7 +189,7 @@
       "source_type": "private",
       "source_url": "https://www.freitasleiloeiro.com.br/Leiloes/Lotes?leilaoId=8152",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:27+00:00"
+      "last_checked_at": "2026-11-04T10:25:42+00:00"
     },
     {
       "id": "prf-sp-2026-11-04",
@@ -620,7 +203,7 @@
       "source_type": "federal",
       "source_url": "https://www.gov.br/prf/pt-br/assuntos/leiloes-prf/sao-paulo/sp-edital-de-leilao-de-veiculos-conservados-e-sucatas-1",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:27+00:00"
+      "last_checked_at": "2026-11-04T10:25:42+00:00"
     },
     {
       "id": "prf-es-2026-11-04",
@@ -634,7 +217,7 @@
       "source_type": "federal",
       "source_url": "https://www.gov.br/prf/pt-br/assuntos/leiloes-prf/espirito-santo/edital-de-licitacao-no-2-2026-egvr-es",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:27+00:00"
+      "last_checked_at": "2026-11-04T10:25:42+00:00"
     },
     {
       "id": "vip-2026-11-04-1100-2243ce6ea5afd9-pb",
@@ -648,7 +231,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1100-2243ce6ea5afd9",
       "states": [
@@ -667,7 +250,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1200-c96ae9bfba3106",
       "states": [
@@ -693,7 +276,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1200-c96ae9bfba3106",
       "states": [
@@ -719,7 +302,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1200-c96ae9bfba3106",
       "states": [
@@ -745,7 +328,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1200-c96ae9bfba3106",
       "states": [
@@ -771,7 +354,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1200-c96ae9bfba3106",
       "states": [
@@ -797,7 +380,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1200-c96ae9bfba3106",
       "states": [
@@ -823,7 +406,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1200-c96ae9bfba3106",
       "states": [
@@ -849,7 +432,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1200-c96ae9bfba3106",
       "states": [
@@ -875,7 +458,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1400-d8a7354b83b097",
       "states": [
@@ -907,7 +490,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1400-d8a7354b83b097",
       "states": [
@@ -939,7 +522,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1400-d8a7354b83b097",
       "states": [
@@ -971,7 +554,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1400-d8a7354b83b097",
       "states": [
@@ -1003,7 +586,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1400-d8a7354b83b097",
       "states": [
@@ -1035,7 +618,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1400-d8a7354b83b097",
       "states": [
@@ -1067,7 +650,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1400-d8a7354b83b097",
       "states": [
@@ -1099,7 +682,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1400-d8a7354b83b097",
       "states": [
@@ -1131,7 +714,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1400-d8a7354b83b097",
       "states": [
@@ -1163,7 +746,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1400-d8a7354b83b097",
       "states": [
@@ -1195,7 +778,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1400-d8a7354b83b097",
       "states": [
@@ -1227,7 +810,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1400-d8a7354b83b097",
       "states": [
@@ -1259,7 +842,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1400-d8a7354b83b097",
       "states": [
@@ -1291,7 +874,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1400-d8a7354b83b097",
       "states": [
@@ -1323,7 +906,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1900-41f65464b5f568",
       "states": [
@@ -1347,7 +930,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1900-41f65464b5f568",
       "states": [
@@ -1371,7 +954,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1900-41f65464b5f568",
       "states": [
@@ -1395,7 +978,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1900-41f65464b5f568",
       "states": [
@@ -1419,7 +1002,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1900-41f65464b5f568",
       "states": [
@@ -1443,7 +1026,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-04-1900-41f65464b5f568",
       "states": [
@@ -1467,7 +1050,7 @@
       "source_type": "private",
       "source_url": "https://www.copart.com.br/saleListResult/10573/2026-11-05?location=Eus%C3%A9bio%20-%20CE&saleDate=1793887200000&liveAuction=false&from=/salesListResult&auctioneer=Georgia%20de%20Souza%20Castelo%20-%20Jucec%2024/2016&yardNum=103",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:41+00:00",
+      "last_checked_at": "2026-11-04T10:26:20+00:00",
       "source_link_type": "event"
     },
     {
@@ -1482,7 +1065,7 @@
       "source_type": "private",
       "source_url": "https://www.copart.com.br/saleListResult/10574/2026-11-05?location=Itaquaquecetuba%20-%20SP&saleDate=1793880000000&from=/salesListResult&auctioneer=Wendell%20F%C3%A9lix%20-%20Jucesp%20759&yardNum=46",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:41+00:00",
+      "last_checked_at": "2026-11-04T10:26:20+00:00",
       "source_link_type": "event"
     },
     {
@@ -1497,7 +1080,7 @@
       "source_type": "private",
       "source_url": "https://www.copart.com.br/saleListResult/10576/2026-11-05?location=Osasco%20-%20SP&saleDate=1793914200000&from=/salesListResult&auctioneer=Luciana%20de%20C%C3%A1ssia%20dos%20Santos%20do%20Carmo%20-%20Jucesp%201136&yardNum=1",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:41+00:00",
+      "last_checked_at": "2026-11-04T10:26:20+00:00",
       "source_link_type": "event"
     },
     {
@@ -1512,7 +1095,7 @@
       "source_type": "private",
       "source_url": "https://www.copart.com.br/saleListResult/10577/2026-11-05?location=Vit%C3%B3ria%20de%20Santo%20Ant%C3%A3o%20-%20PE&saleDate=1793878200000&liveAuction=false&from=/salesListResult&auctioneer=Adriano%20Santos%20Venceslau%20da%20Silva%20-%20Jucepe%2032/99&yardNum=92",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:41+00:00",
+      "last_checked_at": "2026-11-04T10:26:20+00:00",
       "source_link_type": "event"
     },
     {
@@ -1527,7 +1110,7 @@
       "source_type": "municipal",
       "source_url": "https://www.cuiaba.mt.gov.br/noticias/semob-realiza-o-4o-leilao-do-ano-com-1-065-veiculos-disponiveis",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:27+00:00"
+      "last_checked_at": "2026-11-04T10:25:42+00:00"
     },
     {
       "id": "fernando-prestes-03-2026",
@@ -1541,7 +1124,7 @@
       "source_type": "municipal",
       "source_url": "https://www.fernandoprestes.sp.gov.br/portal/editais/0/1/2638",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:27+00:00"
+      "last_checked_at": "2026-11-04T10:25:42+00:00"
     },
     {
       "id": "vip-2026-11-05-1000-14b9f70bd2ac4e-ba",
@@ -1555,7 +1138,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-05-1000-14b9f70bd2ac4e",
       "states": [
@@ -1580,7 +1163,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-05-1000-14b9f70bd2ac4e",
       "states": [
@@ -1605,7 +1188,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-05-1000-14b9f70bd2ac4e",
       "states": [
@@ -1630,7 +1213,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-05-1000-14b9f70bd2ac4e",
       "states": [
@@ -1655,7 +1238,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-05-1000-14b9f70bd2ac4e",
       "states": [
@@ -1680,7 +1263,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-05-1000-14b9f70bd2ac4e",
       "states": [
@@ -1705,7 +1288,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-05-1000-14b9f70bd2ac4e",
       "states": [
@@ -1730,7 +1313,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-05-1200-79eb5eed23c587",
       "states": [
@@ -1753,7 +1336,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-05-1200-79eb5eed23c587",
       "states": [
@@ -1776,7 +1359,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-05-1200-79eb5eed23c587",
       "states": [
@@ -1799,7 +1382,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-05-1200-79eb5eed23c587",
       "states": [
@@ -1822,7 +1405,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-05-1200-79eb5eed23c587",
       "states": [
@@ -1845,7 +1428,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-05-1400-6534085f1b6162",
       "states": [
@@ -1866,7 +1449,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-05-1400-6534085f1b6162",
       "states": [
@@ -1887,7 +1470,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-05-1400-6534085f1b6162",
       "states": [
@@ -1908,7 +1491,7 @@
       "source_type": "private",
       "source_url": "https://www.copart.com.br/saleListResult/10580/2026-11-06?location=Betim%20-%20MG&saleDate=1793977200000&liveAuction=false&from=/salesListResult&auctioneer=Raphael%20E%20de%20Faria%20-%20Jucemg%20991&yardNum=48",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:41+00:00",
+      "last_checked_at": "2026-11-04T10:26:20+00:00",
       "source_link_type": "event"
     },
     {
@@ -1923,7 +1506,7 @@
       "source_type": "private",
       "source_url": "https://www.copart.com.br/saleListResult/10581/2026-11-06?location=Vit%C3%B3ria%20de%20Santo%20Ant%C3%A3o%20-%20PE&saleDate=1793964600000&from=/salesListResult&auctioneer=Adriano%20Santos%20Venceslau%20da%20Silva%20-%20Jucepe%2032/99&yardNum=92",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:41+00:00",
+      "last_checked_at": "2026-11-04T10:26:20+00:00",
       "source_link_type": "event"
     },
     {
@@ -1938,7 +1521,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-06-0900-1cdc9a6ddd1ea5",
       "states": [
@@ -1957,7 +1540,7 @@
       "source_type": "municipal",
       "source_url": "https://www.mogidascruzes.sp.gov.br/noticia/no-dia-6-de-novembro-prefeitura-fara-leilao-online-para-venda-de-84-veiculos",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:27+00:00"
+      "last_checked_at": "2026-11-04T10:25:42+00:00"
     },
     {
       "id": "freitas-8158-2026-11-06",
@@ -1971,7 +1554,7 @@
       "source_type": "private",
       "source_url": "https://www.freitasleiloeiro.com.br/Leiloes/Lotes?leilaoId=8158",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:27+00:00"
+      "last_checked_at": "2026-11-04T10:25:42+00:00"
     },
     {
       "id": "vip-2026-11-06-1400-5238e1cca1761b-ba",
@@ -1985,7 +1568,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-06-1400-5238e1cca1761b",
       "states": [
@@ -2008,7 +1591,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-06-1400-5238e1cca1761b",
       "states": [
@@ -2031,7 +1614,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-06-1400-5238e1cca1761b",
       "states": [
@@ -2054,7 +1637,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-06-1400-5238e1cca1761b",
       "states": [
@@ -2077,7 +1660,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-06-1400-5238e1cca1761b",
       "states": [
@@ -2100,7 +1683,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-06-1415-875c34d5a079a6",
       "states": [
@@ -2119,7 +1702,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-06-1900-4a0ef1d821fd3a",
       "states": [
@@ -2144,7 +1727,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-06-1900-4a0ef1d821fd3a",
       "states": [
@@ -2169,7 +1752,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-06-1900-4a0ef1d821fd3a",
       "states": [
@@ -2194,7 +1777,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-06-1900-4a0ef1d821fd3a",
       "states": [
@@ -2219,7 +1802,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-06-1900-4a0ef1d821fd3a",
       "states": [
@@ -2244,7 +1827,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-06-1900-4a0ef1d821fd3a",
       "states": [
@@ -2269,7 +1852,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-06-1900-4a0ef1d821fd3a",
       "states": [
@@ -2294,7 +1877,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-07-0900-2eb73e64869302",
       "states": [
@@ -2313,7 +1896,7 @@
       "source_type": "state",
       "source_url": "https://goias.gov.br/detran/detran-go-realiza-leilao-de-veiculos-de-mais-de-2-mil-veiculos/",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:27+00:00"
+      "last_checked_at": "2026-11-04T10:25:42+00:00"
     },
     {
       "id": "vip-2026-11-09-0930-1816d772278721-ma",
@@ -2327,7 +1910,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-09-0930-1816d772278721",
       "states": [
@@ -2346,7 +1929,7 @@
       "source_type": "private",
       "source_url": "https://www.freitasleiloeiro.com.br/Leiloes/Lotes?leilaoId=8162",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:55+00:00"
+      "last_checked_at": "2026-11-04T10:26:34+00:00"
     },
     {
       "id": "copart-10586-2026-11-10",
@@ -2360,7 +1943,7 @@
       "source_type": "private",
       "source_url": "https://www.copart.com.br/saleListResult/10586/2026-11-10?location=Curitiba%20-%20PR&saleDate=1794317400000&liveAuction=false&from=/salesListResult&auctioneer=Luiz%20Rafael%20L%20de%20Lima%20-%20Jucepar%2020/315-L&yardNum=53",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:41+00:00",
+      "last_checked_at": "2026-11-04T10:26:20+00:00",
       "source_link_type": "event"
     },
     {
@@ -2375,7 +1958,7 @@
       "source_type": "private",
       "source_url": "https://www.copart.com.br/saleListResult/10587/2026-11-10?location=Curitiba%20-%20PR&saleDate=1794330000000&from=/salesListResult&auctioneer=Lucas%20Eduardo%20Dalcanale%20-%20Jucepar%2020/319L&yardNum=53",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:41+00:00",
+      "last_checked_at": "2026-11-04T10:26:20+00:00",
       "source_link_type": "event"
     },
     {
@@ -2390,7 +1973,7 @@
       "source_type": "municipal",
       "source_url": "https://www.lorena.sp.gov.br/wordpress/index.php/2026/10/22/prefeitura-de-lorena-realiza-leilao-de-veiculos-inserviveis-e-sucatas/",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:27+00:00"
+      "last_checked_at": "2026-11-04T10:25:42+00:00"
     },
     {
       "id": "cuiaba-semob-4-2026-11-11",
@@ -2404,35 +1987,7 @@
       "source_type": "municipal",
       "source_url": "https://www.cuiaba.mt.gov.br/noticias/semob-realiza-o-4o-leilao-do-ano-com-1-065-veiculos-disponiveis",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:27+00:00"
-    },
-    {
-      "id": "curitiba-smdt-17-2026",
-      "title": "Leilão eletrônico SMDT nº 17/2026 — veículos em circulação",
-      "state": "PR",
-      "city": "Curitiba",
-      "auction_date": "2026-11-11",
-      "auction_time": "09:00",
-      "vehicle_count": null,
-      "organizer": "Prefeitura de Curitiba",
-      "source_type": "municipal",
-      "source_url": "https://transito.curitiba.pr.gov.br/patio/leilao-eletronico-de-veiculos/52",
-      "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:27+00:00"
-    },
-    {
-      "id": "curitiba-smdt-16-2026",
-      "title": "Leilão eletrônico SMDT nº 16/2026 — sucatas inservíveis",
-      "state": "PR",
-      "city": "Curitiba",
-      "auction_date": "2026-11-11",
-      "auction_time": "09:00",
-      "vehicle_count": null,
-      "organizer": "Prefeitura de Curitiba",
-      "source_type": "municipal",
-      "source_url": "https://transito.curitiba.pr.gov.br/patio/leilao-eletronico-de-veiculos/52",
-      "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:27+00:00"
+      "last_checked_at": "2026-11-04T10:25:42+00:00"
     },
     {
       "id": "vip-2026-11-11-0900-90eafa70bebec7-ba",
@@ -2446,7 +2001,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-11-0900-90eafa70bebec7",
       "states": [
@@ -2466,7 +2021,7 @@
       "source_type": "private",
       "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:44+00:00",
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
       "source_link_type": "calendar",
       "event_id": "vip-2026-11-11-0900-90eafa70bebec7",
       "states": [
@@ -2486,7 +2041,7 @@
       "source_type": "municipal",
       "source_url": "https://serranopolis.pr.gov.br/noticias/6113-governo-municipal-de-serranopolis-do-iguacu-realiza-leilao-eletronico-de-veiculos-maquinas-e-outros-bens",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:27+00:00"
+      "last_checked_at": "2026-11-04T10:25:42+00:00"
     },
     {
       "id": "vieiras-001-2026",
@@ -2500,21 +2055,26 @@
       "source_type": "municipal",
       "source_url": "https://vieiras.mg.gov.br/noticias/prefeitura-de-vieiras-realizara-leilao-eletronico-de-bens-moveis-no-dia-13-de-novembro-de-2026",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:27+00:00"
+      "last_checked_at": "2026-11-04T10:25:42+00:00"
     },
     {
-      "id": "curitiba-smdt-18-2026",
-      "title": "Leilão eletrônico SMDT nº 18/2026 — veículos e sucatas",
-      "state": "PR",
-      "city": "Curitiba",
-      "auction_date": "2026-11-25",
+      "id": "vip-2026-11-14-0900-18c4f200a245a5-pe",
+      "title": "Leilão de veículos — VIP Leilões",
+      "state": "PE",
+      "city": "Local não informado",
+      "auction_date": "2026-11-14",
       "auction_time": "09:00",
       "vehicle_count": null,
-      "organizer": "Prefeitura de Curitiba",
-      "source_type": "municipal",
-      "source_url": "https://transito.curitiba.pr.gov.br/patio/leilao-eletronico-de-veiculos/52",
+      "organizer": "VIP Leilões",
+      "source_type": "private",
+      "source_url": "https://www.vipleiloes.com.br/agenda",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:27+00:00"
+      "last_checked_at": "2026-11-04T10:26:23+00:00",
+      "source_link_type": "calendar",
+      "event_id": "vip-2026-11-14-0900-18c4f200a245a5",
+      "states": [
+        "PE"
+      ]
     },
     {
       "id": "detran-ba-23-2026",
@@ -2528,7 +2088,7 @@
       "source_type": "state",
       "source_url": "https://www.ba.gov.br/detran/editais/7742/edital-de-leilao-no-232026-veiculos-conservados-e-sucatas-aproveitaveis",
       "status": "scheduled",
-      "last_checked_at": "2026-11-03T20:43:27+00:00"
+      "last_checked_at": "2026-11-04T10:25:42+00:00"
     }
   ]
 }

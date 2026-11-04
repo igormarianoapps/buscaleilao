@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-11-03T20:43:27+00:00",
-  "verified": 111,
-  "unique_events": 48,
+  "checked_at": "2026-11-04T10:25:42+00:00",
+  "verified": 95,
+  "unique_events": 44,
   "states_with_events": [
     "AM",
     "BA",
@@ -40,10 +40,9 @@
     "DETRAN Bahia": 1,
     "DETRAN Goiás": 1,
     "Freitas Leiloeiro": 3,
-    "Polícia Rodoviária Federal": 3,
+    "Polícia Rodoviária Federal": 2,
     "Prefeitura de Campina Grande": 1,
     "Prefeitura de Cuiabá — Semob": 3,
-    "Prefeitura de Curitiba": 3,
     "Prefeitura de Fernando Prestes": 1,
     "Prefeitura de Lorena": 1,
     "Prefeitura de Mogi das Cruzes": 1,
@@ -51,13 +50,17 @@
     "Prefeitura de Vieiras": 1,
     "VIP Leilões": 16
   },
-  "platform_events": 94,
+  "platform_events": 82,
   "direct_event_links": 12,
-  "calendar_links": 79,
-  "curated_source_links": 20,
-  "curated_success": 19,
-  "curated_failure": 3,
+  "calendar_links": 67,
+  "curated_source_links": 16,
+  "curated_success": 15,
+  "curated_failure": 6,
   "failed": [
+    {
+      "id": "curitiba-smdt-17-2026",
+      "error": "Page.goto: Timeout 15000ms exceeded."
+    },
     {
       "id": "aracaju-3-leilao-2026-11-12",
       "error": "HTTP Error 403: Forbidden"
@@ -69,6 +72,14 @@
     {
       "id": "superbid-gru-06-2026-11-29",
       "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "curitiba-smdt-16-2026",
+      "error": "Page.goto: Timeout 15000ms exceeded."
+    },
+    {
+      "id": "curitiba-smdt-18-2026",
+      "error": "Page.goto: Timeout 15000ms exceeded."
     }
   ]
 }
