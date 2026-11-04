@@ -26,11 +26,16 @@ class CalendarLinkUXTests(unittest.TestCase):
 
     def test_filters_do_not_refetch_feed_on_each_search(self):
         html=HTML.read_text(encoding="utf-8")
-        self.assertEqual(html.count('fetch("/app/events.json"'),1)
+        self.assertEqual(html.count('fetch("./events.json"'),1)
+        self.assertIn('from "./agenda.mjs"',html)
+        self.assertNotIn('from "/app/agenda.mjs"',html)
         self.assertIn('filters.addEventListener("submit",e=>{e.preventDefault();applyFilters()})',html)
         self.assertIn('filters.addEventListener("reset"',html)
         self.assertIn('let currentFeed=null',html)
-        self.assertIn('emptyResultsMessage({state:form.get("state"),day:form.get("day")})',html)
+        self.assertIn('emptyResultsMessage({state:form.get("state"),start,end})',html)
+        self.assertIn('name="start"',html)
+        self.assertIn('name="end"',html)
+        self.assertIn('A data inicial não pode ser posterior à data final.',html)
 
     def test_page_inline_module_parses_in_node(self):
         import re
