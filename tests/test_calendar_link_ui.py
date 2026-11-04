@@ -7,10 +7,10 @@ HTML=(Path(__file__).resolve().parents[1]/"app/index.html")
 class CalendarLinkUXTests(unittest.TestCase):
     def test_calendar_is_not_described_as_specific_auction(self):
         html=HTML.read_text(encoding="utf-8")
-        self.assertIn("Consultar agenda geral do leiloeiro",html)
-        self.assertIn("Este link leva à agenda geral, não ao evento.",html)
-        self.assertIn('a.source_link_type==="calendar"?',html)
-        self.assertIn("Procure a data e o estado indicados acima.",html)
+        self.assertIn("Ver veículos e lotes do leilão",html)
+        self.assertIn("Consultar edital ou comunicado oficial",html)
+        self.assertIn("a.event_url||a.source_url",html)
+        self.assertIn("ver comunicado ou edital",html)
 
     def test_html_has_no_literal_newline_escape_artifacts(self):
         html=HTML.read_text(encoding="utf-8")
@@ -59,7 +59,8 @@ class CalendarLinkUXTests(unittest.TestCase):
         html=HTML.read_text(encoding="utf-8")
         self.assertIn('rel="noopener noreferrer"',html)
         self.assertIn('target="_blank"',html)
-        self.assertIn('a.source_link_type==="event"?"Ver leilão específico',html)
+        self.assertIn("Ver veículos e lotes do leilão",html)
+        self.assertIn("escapeHTML(a.event_url||a.source_url)",html)
         self.assertIn("escapeHTML(a.source_url)",html)
 
 if __name__=="__main__":
