@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - '.github/workflows/diagnose-vip.yml'
+      - 'scripts/probe_vip_direct.py'
   workflow_dispatch:
 permissions:
   contents: read
