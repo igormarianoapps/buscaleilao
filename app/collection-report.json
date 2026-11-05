@@ -1,13 +1,12 @@
 {
-  "checked_at": "2026-11-04T18:03:02+00:00",
-  "verified": 103,
-  "unique_events": 46,
+  "checked_at": "2026-11-05T18:05:46+00:00",
+  "verified": 123,
+  "unique_events": 48,
   "states_with_events": [
     "AM",
     "BA",
     "CE",
     "DF",
-    "ES",
     "GO",
     "MA",
     "MG",
@@ -26,6 +25,7 @@
     "AC",
     "AL",
     "AP",
+    "ES",
     "MS",
     "PB",
     "RN",
@@ -33,40 +33,31 @@
     "SE",
     "TO"
   ],
-  "state_presence_percent": 66.7,
+  "state_presence_percent": 63.0,
   "coverage_definition": "Presence of at least one event, not fraction of all auctions discovered",
   "organizers": {
     "Copart": 11,
     "DETRAN Bahia": 1,
     "DETRAN Goiás": 1,
-    "Freitas Leiloeiro": 4,
-    "Polícia Rodoviária Federal": 2,
-    "Prefeitura de Cuiabá — Semob": 3,
+    "Freitas Leiloeiro": 5,
+    "Prefeitura de Cuiabá — Semob": 2,
     "Prefeitura de Curitiba": 3,
     "Prefeitura de Fernando Prestes": 1,
     "Prefeitura de Lorena": 1,
     "Prefeitura de Mogi das Cruzes": 1,
     "Prefeitura de Serranópolis do Iguaçu": 1,
     "Prefeitura de Vieiras": 1,
-    "VIP Leilões": 16
+    "VIP Leilões": 20
   },
-  "platform_events": 87,
-  "direct_event_links": 84,
+  "platform_events": 111,
+  "direct_event_links": 106,
   "calendar_links": 0,
-  "curated_source_links": 19,
-  "curated_success": 17,
-  "curated_failure": 4,
+  "curated_source_links": 17,
+  "curated_success": 13,
+  "curated_failure": 2,
   "failed": [
     {
-      "id": "campina-grande-pb-001-2026",
-      "error": "missing evidence: LEILÃO 001/2026 DA PREFEITURA MUNICIPAL DE CAMPINA GRANDE; 04/11/2026; 10:00"
-    },
-    {
       "id": "aracaju-3-leilao-2026-11-12",
-      "error": "HTTP Error 403: Forbidden"
-    },
-    {
-      "id": "pedranopolis-sp-006-2026",
       "error": "HTTP Error 403: Forbidden"
     },
     {
