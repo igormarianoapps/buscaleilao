@@ -1,32 +1,6 @@
 {
-  "checked_at": "2026-11-04T18:04:29+00:00",
+  "checked_at": "2026-11-05T18:07:45+00:00",
   "candidates": [
-    {
-      "title": "- Leilão de Veículos Apreendidos pela SMTT e DEMUTRAN-  Veículos Aptos a serem Leiloados MEMO nº 215/CGF/2026",
-      "state": "SP",
-      "city": "Carapicuíba",
-      "organizer": "MUNICIPIO DE CARAPICUIBA",
-      "date_hint": "2026-11-04",
-      "date_hint_status": "pncp_deadline_unverified",
-      "source_url": "https://pncp.gov.br/app/editais/44892693000140/2026/244",
-      "pncp_control": "44892693000140-1-000244/2026",
-      "review_status": "needs_edital_confirmation",
-      "note": "PNCP proposal deadline is not independently verified auction start date.",
-      "source": "pncp_official_api"
-    },
-    {
-      "title": "Realização de Leilão Público por plataforma eletrônica ON-LINE www.mjleiloes.com.br, para alienação de bens móveis inservíveis (ociosos, antieconômicos, irrecuperáveis, veículos, máquinas e equipamentos), pertencentes ao patrimônio da Prefeitura de Porto Ferre",
-      "state": "SP",
-      "city": "Porto Ferreira",
-      "organizer": "MUNICIPIO DE PORTO FERREIRA",
-      "date_hint": "2026-11-04",
-      "date_hint_status": "pncp_deadline_unverified",
-      "source_url": "https://pncp.gov.br/app/editais/45339363000194/2026/312",
-      "pncp_control": "45339363000194-1-000312/2026",
-      "review_status": "needs_edital_confirmation",
-      "note": "PNCP proposal deadline is not independently verified auction start date.",
-      "source": "pncp_official_api"
-    },
     {
       "title": "“Alienação de veículos da frota municipal, considerados economicamente inviáveis para conserto e improdutivos para uso permanente no serviço público, os quais são inservíveis para atendimento das ações programáticas da municipalidade, conforme a Lei Municipal ",
       "state": "MG",
@@ -353,6 +327,19 @@
       "source": "pncp_official_api"
     },
     {
+      "title": "Alienação de 5 (cinco) veículos automotores do Poder Judiciário de Santa Catarina (PJSC)",
+      "state": "SC",
+      "city": "Florianópolis",
+      "organizer": "SANTA CATARINA TRIBUNAL DE JUSTICA",
+      "date_hint": "2026-12-03",
+      "date_hint_status": "pncp_deadline_unverified",
+      "source_url": "https://pncp.gov.br/app/editais/83845701000159/2026/73",
+      "pncp_control": "83845701000159-1-000073/2026",
+      "review_status": "needs_edital_confirmation",
+      "note": "PNCP proposal deadline is not independently verified auction start date.",
+      "source": "pncp_official_api"
+    },
+    {
       "title": "Alienação de Veículos Automotores Classificados como Recuperáveis e\r\nIrrecuperáveis pertencentes à Administração Pública Estadual.",
       "state": "RS",
       "city": "Porto Alegre",
@@ -366,7 +353,7 @@
       "source": "pncp_official_api"
     }
   ],
-  "count": 28,
+  "count": 27,
   "requests": 10,
   "errors": [],
   "events_automatically_published": 0,
