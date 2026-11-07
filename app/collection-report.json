@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-11-06T17:32:40+00:00",
-  "verified": 155,
-  "unique_events": 48,
+  "checked_at": "2026-11-07T16:29:51+00:00",
+  "verified": 142,
+  "unique_events": 47,
   "states_with_events": [
     "AL",
     "AM",
@@ -36,23 +36,22 @@
   "state_presence_percent": 66.7,
   "coverage_definition": "Presence of at least one event, not fraction of all auctions discovered",
   "organizers": {
-    "Copart": 12,
+    "Copart": 13,
     "DETRAN Bahia": 1,
     "DETRAN Goiás": 1,
-    "Freitas Leiloeiro": 5,
+    "Freitas Leiloeiro": 4,
     "Prefeitura de Cuiabá — Semob": 1,
     "Prefeitura de Curitiba": 3,
     "Prefeitura de Lorena": 1,
-    "Prefeitura de Mogi das Cruzes": 1,
     "Prefeitura de Serranópolis do Iguaçu": 1,
     "Prefeitura de Vieiras": 1,
     "VIP Leilões": 21
   },
-  "platform_events": 145,
-  "direct_event_links": 140,
+  "platform_events": 133,
+  "direct_event_links": 129,
   "calendar_links": 0,
-  "curated_source_links": 15,
-  "curated_success": 11,
+  "curated_source_links": 13,
+  "curated_success": 9,
   "curated_failure": 2,
   "failed": [
     {
