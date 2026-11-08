@@ -1,19 +1,6 @@
 {
-  "checked_at": "2026-11-07T16:30:49+00:00",
+  "checked_at": "2026-11-08T16:44:31+00:00",
   "candidates": [
-    {
-      "title": "Alienação de mobiliário em geral e veículos do Corpo de Bombeiros Militar do Espírito Santo (CBMES).relacionadas em Anexo II os lotes, cuja descrição, valor de avaliação e preço mínimo de arrematação constam em anexo e integram o presente Edital, no Anexo I se",
-      "state": "ES",
-      "city": "Vitória",
-      "organizer": "CORPO DE BOMBEIROS MILITAR DO ESTADO DO ESPIRITO SANTO",
-      "date_hint": "2026-11-07",
-      "date_hint_status": "pncp_deadline_unverified",
-      "source_url": "https://pncp.gov.br/app/editais/02133636000137/2026/53",
-      "pncp_control": "02133636000137-1-000053/2026",
-      "review_status": "needs_edital_confirmation",
-      "note": "PNCP proposal deadline is not independently verified auction start date.",
-      "source": "pncp_official_api"
-    },
     {
       "title": "Alienação, através de leilão, de veículos automotores e micro-ônibus e lotes de sucatas e equipamentos diversos do município de Leme do Prado-MG",
       "state": "MG",
@@ -327,7 +314,7 @@
       "source": "pncp_official_api"
     }
   ],
-  "count": 25,
+  "count": 24,
   "requests": 7,
   "errors": [
     {
