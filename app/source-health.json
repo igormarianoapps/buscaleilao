@@ -1,61 +1,61 @@
 {
-  "checked_at": "2026-11-07T16:29:51+00:00",
+  "checked_at": "2026-11-08T16:43:35+00:00",
   "sources": {
     "vieiras-001-2026": {
       "status": "ok",
-      "last_success_at": "2026-11-07T16:29:51+00:00",
+      "last_success_at": "2026-11-08T16:43:35+00:00",
       "consecutive_failures": 0
     },
     "lorena-2026-11-10": {
       "status": "ok",
-      "last_success_at": "2026-11-07T16:29:51+00:00",
+      "last_success_at": "2026-11-08T16:43:35+00:00",
       "consecutive_failures": 0
     },
     "curitiba-smdt-17-2026": {
       "status": "ok",
-      "last_success_at": "2026-11-07T16:29:51+00:00",
+      "last_success_at": "2026-11-08T16:43:35+00:00",
       "consecutive_failures": 0
     },
     "detran-ba-23-2026": {
       "status": "ok",
-      "last_success_at": "2026-11-07T16:29:51+00:00",
+      "last_success_at": "2026-11-08T16:43:35+00:00",
       "consecutive_failures": 0
     },
     "cuiaba-semob-4-2026-11-11": {
       "status": "ok",
-      "last_success_at": "2026-11-07T16:29:51+00:00",
+      "last_success_at": "2026-11-08T16:43:35+00:00",
       "consecutive_failures": 0
     },
     "aracaju-3-leilao-2026-11-12": {
       "status": "failed",
       "reason": "HTTP Error 403: Forbidden",
       "last_success_at": null,
-      "consecutive_failures": 9
+      "consecutive_failures": 10
     },
     "detran-go-03-2026-11-09": {
       "status": "ok",
-      "last_success_at": "2026-11-07T16:29:51+00:00",
+      "last_success_at": "2026-11-08T16:43:35+00:00",
       "consecutive_failures": 0
     },
     "serranopolis-iguacu-pr-01-2026": {
       "status": "ok",
-      "last_success_at": "2026-11-07T16:29:51+00:00",
+      "last_success_at": "2026-11-08T16:43:35+00:00",
       "consecutive_failures": 0
     },
     "superbid-gru-06-2026-11-29": {
       "status": "failed",
       "reason": "HTTP Error 403: Forbidden",
       "last_success_at": null,
-      "consecutive_failures": 9
+      "consecutive_failures": 10
     },
     "curitiba-smdt-16-2026": {
       "status": "ok",
-      "last_success_at": "2026-11-07T16:29:51+00:00",
+      "last_success_at": "2026-11-08T16:43:35+00:00",
       "consecutive_failures": 0
     },
     "curitiba-smdt-18-2026": {
       "status": "ok",
-      "last_success_at": "2026-11-07T16:29:51+00:00",
+      "last_success_at": "2026-11-08T16:43:35+00:00",
       "consecutive_failures": 0
     }
   },

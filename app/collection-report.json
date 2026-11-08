@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-11-07T16:29:51+00:00",
-  "verified": 142,
+  "checked_at": "2026-11-08T16:43:35+00:00",
+  "verified": 145,
   "unique_events": 47,
   "states_with_events": [
     "AL",
@@ -47,8 +47,8 @@
     "Prefeitura de Vieiras": 1,
     "VIP Leilões": 21
   },
-  "platform_events": 133,
-  "direct_event_links": 129,
+  "platform_events": 136,
+  "direct_event_links": 132,
   "calendar_links": 0,
   "curated_source_links": 13,
   "curated_success": 9,
