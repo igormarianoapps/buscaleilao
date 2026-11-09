@@ -90,6 +90,17 @@
       "curated_failure": 2,
       "recorded_at": "2026-11-08T16:44:32+00:00",
       "status": "reached_final_recording_step"
+    },
+    {
+      "run_id": "42696554126",
+      "attempt": 1,
+      "checked_at": "2026-11-09T20:52:08+00:00",
+      "unique_events": 43,
+      "states_with_events": 18,
+      "curated_success": 9,
+      "curated_failure": 2,
+      "recorded_at": "2026-11-09T20:53:40+00:00",
+      "status": "reached_final_recording_step"
     }
   ]
 }
