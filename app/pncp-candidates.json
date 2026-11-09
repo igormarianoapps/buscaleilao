@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-08T16:44:31+00:00",
+  "checked_at": "2026-11-09T20:53:38+00:00",
   "candidates": [
     {
       "title": "Alienação, através de leilão, de veículos automotores e micro-ônibus e lotes de sucatas e equipamentos diversos do município de Leme do Prado-MG",
@@ -197,6 +197,19 @@
       "source": "pncp_official_api"
     },
     {
+      "title": "Veículos Automotores, Componentes e Acessórios",
+      "state": "BA",
+      "city": "Salvador",
+      "organizer": "DEPARTAMENTO ESTADUAL DE TRANSITO",
+      "date_hint": "2026-11-27",
+      "date_hint_status": "pncp_deadline_unverified",
+      "source_url": "https://pncp.gov.br/app/editais/13195920000154/2026/89",
+      "pncp_control": "13195920000154-1-000089/2026",
+      "review_status": "needs_edital_confirmation",
+      "note": "PNCP proposal deadline is not independently verified auction start date.",
+      "source": "pncp_official_api"
+    },
+    {
       "title": "ALIENACAO DE BENS MOVEIS VEICULOS  MAQUINAS  MATERIAIS E EQUIPAMENTOS INSERVIVEIS DE PROPRIEDADE DA PREFEITURA MUNICIPAL DE CRUZALIA SP",
       "state": "SP",
       "city": "Cruzália",
@@ -205,6 +218,19 @@
       "date_hint_status": "pncp_deadline_unverified",
       "source_url": "https://pncp.gov.br/app/editais/46179966000139/2026/33",
       "pncp_control": "46179966000139-1-000033/2026",
+      "review_status": "needs_edital_confirmation",
+      "note": "PNCP proposal deadline is not independently verified auction start date.",
+      "source": "pncp_official_api"
+    },
+    {
+      "title": "ALIENAÇÃO DE BENS MÓVEIS INSERVÍVEIS – VEÍCULOS, MÁQUINAS E SUCATAS, pertencentes ao patrimônio municipal",
+      "state": "PR",
+      "city": "Brasilândia do Sul",
+      "organizer": "MUNICIPIO DE BRASILANDIA DO SUL",
+      "date_hint": "2026-12-01",
+      "date_hint_status": "pncp_deadline_unverified",
+      "source_url": "https://pncp.gov.br/app/editais/95640520000175/2026/58",
+      "pncp_control": "95640520000175-1-000058/2026",
       "review_status": "needs_edital_confirmation",
       "note": "PNCP proposal deadline is not independently verified auction start date.",
       "source": "pncp_official_api"
@@ -231,6 +257,19 @@
       "date_hint_status": "pncp_deadline_unverified",
       "source_url": "https://pncp.gov.br/app/editais/46643466000106/2026/1226",
       "pncp_control": "46643466000106-1-001226/2026",
+      "review_status": "needs_edital_confirmation",
+      "note": "PNCP proposal deadline is not independently verified auction start date.",
+      "source": "pncp_official_api"
+    },
+    {
+      "title": "LEILÃO ELETRÔNICO DE BENS MÓVEIS INSERVÍVEIS PARA PREFEITURA MUNICIPAS DE NUPORANGA/SP (VEÍCULOS)",
+      "state": "SP",
+      "city": "Nuporanga",
+      "organizer": "MUNICIPIO DE NUPORANGA",
+      "date_hint": "2026-12-02",
+      "date_hint_status": "pncp_deadline_unverified",
+      "source_url": "https://pncp.gov.br/app/editais/46754388000117/2026/27",
+      "pncp_control": "46754388000117-1-000027/2026",
       "review_status": "needs_edital_confirmation",
       "note": "PNCP proposal deadline is not independently verified auction start date.",
       "source": "pncp_official_api"
@@ -314,8 +353,8 @@
       "source": "pncp_official_api"
     }
   ],
-  "count": 24,
-  "requests": 7,
+  "count": 27,
+  "requests": 8,
   "errors": [
     {
       "modality": 13,
