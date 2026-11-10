@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-09T20:53:38+00:00",
+  "checked_at": "2026-11-10T17:57:19+00:00",
   "rss_fresh": true,
   "pncp_fresh": true,
-  "unverified_count": 57,
-  "pncp_leads": 27,
-  "rss_leads": 30,
+  "unverified_count": 51,
+  "pncp_leads": 24,
+  "rss_leads": 27,
   "pncp_gap_leads": 1,
   "events_automatically_published": 0,
   "items": [
@@ -189,21 +189,6 @@
       "pncp_control": "78103884000105-1-000159/2026"
     },
     {
-      "title": "Alienação, através de leilão, de veículos automotores e micro-ônibus e lotes de sucatas e equipamentos diversos do município de Leme do Prado-MG",
-      "news_url": "https://pncp.gov.br/app/editais/01587109000130/2026/33",
-      "publisher_url": "https://pncp.gov.br",
-      "source_kind": "pncp",
-      "state_hint": "MG",
-      "city_hint": "Leme do Prado",
-      "date_hint": "2026-11-09",
-      "date_hint_status": "pncp_deadline_unverified",
-      "priority": 12,
-      "coverage_gap": false,
-      "review_status": "needs_edital_confirmation",
-      "next_step": "Check edital, actual event date, current status and official auction URL",
-      "pncp_control": "01587109000130-1-000033/2026"
-    },
-    {
       "title": "Alienação, mediante leilão público, de bens móveis inservíveis pertencentes ao patrimônio e à frota da Prefeitura Municipal de São Francisco/SP, conforme avaliação realizada pela Comissão Especial de Avaliação e Inventariante, designada pela Portaria nº 2436/2",
       "news_url": "https://pncp.gov.br/app/editais/46603395000118/2026/59",
       "publisher_url": "https://pncp.gov.br",
@@ -294,21 +279,6 @@
       "pncp_control": "46754388000117-1-000027/2026"
     },
     {
-      "title": "LEILÃO PÚBLICO PARA ALIENAÇÃO DE BENS CONSIDERADOS INSERVÍVEIS, CLASSIFICADOS COMO ANTIECONÔMICOS PERTENCENTES AO PATRIMÔNIO DO MUNICÍPIO DE GUARACI-PR, CONFORME ESPECIFICAÇÕES DESCRITAS NO TERMO DE AVALIAÇÃO DE BENS MÓVEIS INSERVÍVEIS OU ANTIECONOMICO, ELABOR",
-      "news_url": "https://pncp.gov.br/app/editais/75845537000151/2026/136",
-      "publisher_url": "https://pncp.gov.br",
-      "source_kind": "pncp",
-      "state_hint": "PR",
-      "city_hint": "Guaraci",
-      "date_hint": "2026-11-09",
-      "date_hint_status": "pncp_deadline_unverified",
-      "priority": 12,
-      "coverage_gap": false,
-      "review_status": "needs_edital_confirmation",
-      "next_step": "Check edital, actual event date, current status and official auction URL",
-      "pncp_control": "75845537000151-1-000136/2026"
-    },
-    {
       "title": "Leilão Eletrônico destinado à alienação onerosa de bens móveis, consistentes em veículos automotores pertencentes ao Município de Sacramento/MG, considerados inservíveis, antieconômicos ou desnecessários às atividades da Administração Pública Municipal.",
       "news_url": "https://pncp.gov.br/app/editais/18140764000148/2026/115",
       "publisher_url": "https://pncp.gov.br",
@@ -352,21 +322,6 @@
       "review_status": "needs_edital_confirmation",
       "next_step": "Check edital, actual event date, current status and official auction URL",
       "pncp_control": "01409580000138-1-001683/2026"
-    },
-    {
-      "title": "O presente Edital tem por objeto a alienação de veículos CONSERVADOS e SUCATAS que se encontram nos Pátios de Custódia nos municípios constantes do Anexo I deste Edital. O anexo II constará a planilha com a descrição dos veículos e trará o valor de sua avaliaç",
-      "news_url": "https://pncp.gov.br/app/editais/34060183000152/2026/46",
-      "publisher_url": "https://pncp.gov.br",
-      "source_kind": "pncp",
-      "state_hint": "SC",
-      "city_hint": "Florianópolis",
-      "date_hint": "2026-11-09",
-      "date_hint_status": "pncp_deadline_unverified",
-      "priority": 12,
-      "coverage_gap": false,
-      "review_status": "needs_edital_confirmation",
-      "next_step": "Check edital, actual event date, current status and official auction URL",
-      "pncp_control": "34060183000152-1-000046/2026"
     },
     {
       "title": "REALIZACAO DE LEILAO ELETRONICO ONLINE, PARA A VENDA DE BENS MOVEIS INSERVIVEIS E VEICULOS USADOS PERTENCENTES AO PATRIMONIO DA PREFEITURA DE SAO JOSE DOS CAMPOS",
@@ -462,13 +417,13 @@
       "source_kind": "news_rss"
     },
     {
-      "title": "SMTT de Delmiro Gouveia realizará leilão de veículos no dia 27 de novembro - Cadaminuto",
-      "news_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQMkppRmpLNENFczhESlpDaXp1V3BLa2VaVFdUXzNXVWtWSzFpLVUtb1YtWTVDZUZHb2ZVY0ktWVlmbDF3R0NhNUM5c1lJd21nSl9zRzdxTUY3YTF5QlJOZTRHeEE4UzZnY01Wa2hmdlM5SkZGRm1fWFNNeHRKX1A1OHlMakhvS3dKaFRhWGZRVmlPY3JYbE5WcTU3Q2NJVVhIWndKNWkydkMwLVM5MWpQZUp6czc3cXdnQk5wTkdxQko?oc=5",
-      "publisher_url": "https://www.cadaminuto.com.br",
-      "published": "Mon, 09 Nov 2026 11:45:07 GMT",
-      "priority": 7,
-      "date_hint": "2026-11-27",
-      "date_hint_status": "headline_only_unverified",
+      "title": "Detran-SP realiza leilão de motos em Ubatuba no dia 25 de fevereiro - Prefeitura de Ubatuba",
+      "news_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5sS3ZnZk5NTXNYazVJNm5GdFdBRXJCMEVOVFdSOFAxNFpOUHdpOThoVExDSk1saFR5UlpEb3hfdG9wTWFsa1ZZa21za1FwZEg0OFdhcFRsLVlpYWo3bmtrMUZlZEhzUTdnWnc?oc=5",
+      "publisher_url": "https://www.ubatuba.sp.gov.br",
+      "published": "Mon, 09 Nov 2026 13:09:40 GMT",
+      "priority": 6,
+      "date_hint": null,
+      "date_hint_status": "not_available",
       "review_status": "needs_official_event_page",
       "next_step": "Locate original notice and verify future date, location, event type and source",
       "source_kind": "news_rss"
@@ -478,6 +433,18 @@
       "news_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPRlZxTnpmS0JYckJtMTQ0NVJYN2pycVo5dkFGZm5pTUVTdkJlbm5Ud1VRSmNTc3dZcVpESlptakFYbWlTWC1MUkdaMXc1bGlNUVp1QVF1c2hyTm9DZXJXNGhjUVliRlY3YTNLQzBnaHdpUllFZWdScnZMd2RjdlRFOHloUXZvSVFDRW9BRnExUGV5TFVObFpqZktyMVl5U3IwelhYUW9qaGdpeHBGOHhXazBDMWxDTXZySEZMUUJTdWNCME1PUDNKbmZR?oc=5",
       "publisher_url": "https://www.lorena.sp.gov.br",
       "published": "Thu, 22 Oct 2026 07:00:00 GMT",
+      "priority": 6,
+      "date_hint": null,
+      "date_hint_status": "not_available",
+      "review_status": "needs_official_event_page",
+      "next_step": "Locate original notice and verify future date, location, event type and source",
+      "source_kind": "news_rss"
+    },
+    {
+      "title": "Prefeitura de Petrolina promove leilão online de veículos e sucatas - Prefeitura de Petrolina - PE",
+      "news_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPX2dzVFlkcHljSWJKNVl4WXFYM3pBQm1aeGYta0xNVGhYYjdRbXRaVUgyTDhDcjlsVGdfWlRtT0U1bFhBX3daVENhQmVrNTQ0WlNPRjJTNEFDVlVTX3VzS2c0cFdkb2l1c2FMSHNrZHdjd2k0WWdQa1F4V2s0WUMzWlhvWlNXdTJlLWJKbGpKMXVPb0UydXFJN0RvdXM?oc=5",
+      "publisher_url": "https://petrolina.pe.gov.br",
+      "published": "Tue, 10 Nov 2026 14:30:00 GMT",
       "priority": 6,
       "date_hint": null,
       "date_hint_status": "not_available",
@@ -546,10 +513,10 @@
       "source_kind": "news_rss"
     },
     {
-      "title": "Marituba realiza leilão on-line de veículos apreendidos pela SETRAN - Prefeitura Municipal de Marituba - PA",
-      "news_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNZHBQUkQxUnNBeTZXaWdaNzgtUF8zaDZsd0puSzIySDNQaUd5b0UzRkFRSnNmSXcxVFdYbEp0bzg1X1RQLTl0WEQtX2tLY0Jua3V4RXhZSWxCRWdmMUZkN0h2UWpMU2lKNEtsRzlVamNHTWNjV0VEd1RzR2pjM1dvMlA4VTVoOWRQd2s2blpVRm9WWjVRN1ZvMTZ3amZKazVsUnc?oc=5",
-      "publisher_url": "https://marituba.pa.gov.br",
-      "published": "Wed, 09 Sep 2026 07:00:00 GMT",
+      "title": "Leilão online oferta 30 veículos apreendidos em fiscalizações de trânsito - Prefeitura de Curitiba",
+      "news_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRm5FUkJ0UWlpWkh3WlV4WXM1VG5rSFBMODdHQm9jQWZFYVo2NkwwTE9QSEtnOG5zd0FRaXhZaElYbmxHS2NRSmpHcGpRQXVXVVU0UUg5YjJhMXhKaDFkT2RnVXA1NGtTWUQ2NTBueVJrOEFMZ3FDVGlvazlXQ0xFMm5EZnl2Zkk0enpweWFWbmFyY1F5Y0N1TFpJOEg1X25OZFBIODRMb0NVYjdpMS1ial9tVktDTHg3WEl3?oc=5",
+      "publisher_url": "https://www.curitiba.pr.gov.br",
+      "published": "Sat, 19 Sep 2026 07:00:00 GMT",
       "priority": 5,
       "date_hint": null,
       "date_hint_status": "not_available",
@@ -582,11 +549,11 @@
       "source_kind": "news_rss"
     },
     {
-      "title": "Carros inteiros e prontos para rodar: Copart organiza leilão exclusivo de veículos de bancos e seguradoras - Gazeta da Semana",
-      "news_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOenBIRldpNEhqb2lxbnYyX2d0OXJucFIxR25lSW85ZjNGVWx6SDAwN1RKSUNPdjg5Rk1sMUZFWnRzc0czMmZFUUMzaDZiUUlJSG50b3FUd25WZHhxcGM1QUhvZlBqYXVUSDZCdXNjQ1FUekVoXy1VbUJwVUpydGFubTlWWm4zTVd5UlJFVmdsbEtTOU8wYTdqNXYzTHdJZ3A0R09peDd3TkdCalktb21Gd3dad1poQTdaVlBISFVTTUJiRG13NWxPVDlaT2pXX0F3Z25jTXhHcUgtVk9xMmxacnI2MlQ?oc=5",
-      "publisher_url": "https://gazetadasemana.com.br",
-      "published": "Mon, 19 Oct 2026 07:00:00 GMT",
-      "priority": 1,
+      "title": "Detran-MG realizará leilão de 52 veículos recolhidos em Arcos - Jornal Correio Centro Oeste Arcos",
+      "news_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQT3JOQl81ZzNOWEZSSC1TMFFzWFBIbDcyQ0xtY05rZEpZOW9WVlI4Z2VkTUdqNHFXX3QzOWphbnlySWRHTnVHbnVvT1BUdS0tRElDX1ZZX21Ra3JDVV9zN1Z3b2VJVUxNZWxkdkkzMDhXeHJyQmgxZjhER09scU0yMTdRSjJVTjZCSWhlSndDNFNNbHVG?oc=5",
+      "publisher_url": "https://www.jornalcco.com.br",
+      "published": "Tue, 01 Sep 2026 07:00:00 GMT",
+      "priority": 2,
       "date_hint": null,
       "date_hint_status": "not_available",
       "review_status": "needs_official_event_page",
@@ -666,6 +633,18 @@
       "source_kind": "news_rss"
     },
     {
+      "title": "Leilão oferece mais de 80 veículos com lances a partir de R$ 2,5 mil em Mogi das Cruzes - G1",
+      "news_url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQYi1FQzM2OEJfeVZUY3lCZkEwYURza0JiUWZ4NFJHaHVuUnpUelh2amQ3ZFJ3Mlp0Y200UF9tSzNxZnFIdV9jNDBncmlKWXA2VGxDdFloc3kwczlDejlWMmtFMk8yQ00yS0NzdUtOczBvMlZoTEh5dmFBWHhpcTg3Ml9wRThTR2VTQzNJYW16ZTNtbWoxd2VQMlNCWVh1dEtoZFRrdF8xeXNjeGVpSHlwVzVKVDZiakZoWDNiRnBoNmdPT0xZVjJab2VTa0dkR0RRekpobkVIVnJsckU0QU9UVnIzbW9PbkxYejIwQzNB0gH8AUFVX3lxTFBsbjlfWlhnWG5LZmc0UnNvNDA4U1VsSWpyZzkzZ3Z0MnU5Y0ZFMHI4b0U0M2tnRHdBTEI1Y1ZzeTZYYWVRd0t6WU9TY3IxV2phYTdYN3htdG5mVmR1S1Q1Z2JBOVMySnZWbHRaekVrWjlXZlptTGtYZzZTY2k1YjV5TVNGMDc1Mjd3V29RcXpSeWVDRTVGeEdoeUF2RGE4YWcyRzl4WDh3bHhfeEFRTFVRMFRYRElWR1hCOXhqVWREbkw2WkE5dzlkQzNyVXRhZ1ZyaG8yR1JUY09aa2trdTg4Z1Q0TFhCRk9aMGJ0MjBScC1VUTVlcGJQdjNMdQ?oc=5",
+      "publisher_url": "https://g1.globo.com",
+      "published": "Wed, 21 Oct 2026 07:00:00 GMT",
+      "priority": 1,
+      "date_hint": null,
+      "date_hint_status": "not_available",
+      "review_status": "needs_official_event_page",
+      "next_step": "Locate original notice and verify future date, location, event type and source",
+      "source_kind": "news_rss"
+    },
+    {
       "title": "UFPB realiza leilão eletrônico de 62 lotes de veículos e outros bens inservíveis - Universidade Federal da Paraíba (UFPB)",
       "news_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOTmQ3U3FGNnZXRk5BbTBKb240LVN6TzNwZG5OSElwZEJqWnFFblJtbzFFZHI5NjRhVUx3bi00MzMtQ09WdHRPdGtfWFEtXzFpcGRDUDhSVDdUaUpiMklkckxGYVhZOG1vMnZQRTV2UlMwaVNWQjlaME9VZlVfUm95N1dheDRGMDFJQWV1UExFMzMwTC1NczNQMmh4NGMyRHRmbEFFakI2S3BjXzdLM3Nj?oc=5",
       "publisher_url": "https://www.ufpb.br",
@@ -678,34 +657,10 @@
       "source_kind": "news_rss"
     },
     {
-      "title": "Detran-PI realiza leilão online com 49 veículos neste sábado (29) - GP1",
-      "news_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQenJXdXZoaXMtQmswOW5qRTBhLThYeENnQTV3QmZmNGV4eE5JRVpBeWEwYU4ycUdqLWtBUW51d1BLVFFZcDNlcWRxWGlfYUpieFpxQzJYZ250OGpjSVlXV1FJMFVicl9yUTN0XzlYWTZSbjFVbHRfRzZFbEk1dC1hUksxZWw2QzV2dTV5WGQ2WUJ4OEZLZS1CNDlfbGJzS1hqZmtsYXcxSHlUdll6ZjZyMUVveWJ6MFZ3UWxaWXJrc9IBxAFBVV95cUxPTFVMWTgzcXZoaWNGeFRpVnRnbFBqQWxLVjJBRWZZc2xrWlJyM2lxUGYyX1hLbElvU25zX2NvT3ozdjR5UjRxMXBaZmQ1dmMycDI4SEpRNm5KT1RocldrRGJwRzFTOXJ0MWJWeW94SF85cVN4ZmE2VGpCOFpISnBvZFphMzdwMllOc21PSnktdkl4Z0ttS0pQbXl1SnA0QWFnU3g0Ym5hMGdOakI2QzhMTVd4Vzk4a0dmTmxJc3p6VFphMUdX?oc=5",
-      "publisher_url": "https://www.gp1.com.br",
-      "published": "Fri, 28 Aug 2026 07:00:00 GMT",
-      "priority": 0,
-      "date_hint": null,
-      "date_hint_status": "not_available",
-      "review_status": "needs_official_event_page",
-      "next_step": "Locate original notice and verify future date, location, event type and source",
-      "source_kind": "news_rss"
-    },
-    {
-      "title": "Detran-PI realiza leilão online de veículos neste sábado (29); veja como participar - Portal O Dia",
-      "news_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOYVo3bmdFdDA0ajZWbDJMLTFRWVhQYWhPTjYyTG0xWWhOM2hQbVA1eE5lTjFYTlpFaGhyNW9kbjFBaV9HZ2xoZVV3YldOQWpqeWJnQ2tLOVZuZ2xQSXdPSmNqSnM2blVUT2RoSS10QkxHbHlTSzRGRHNsbE1sc3VRR1dHZEVTcVJvci1YZ0E0QnB2ZWEybjl5aWpSMDVfUk5PaXZpRE8tRXh6TmNVN2tneE5OSk5CcUUyMUlsd3d3ZG13MHZPT1h3c2Rn?oc=5",
-      "publisher_url": "https://portalodia.com",
-      "published": "Fri, 28 Aug 2026 14:58:32 GMT",
-      "priority": 0,
-      "date_hint": null,
-      "date_hint_status": "not_available",
-      "review_status": "needs_official_event_page",
-      "next_step": "Locate original notice and verify future date, location, event type and source",
-      "source_kind": "news_rss"
-    },
-    {
-      "title": "Leilão do Detran-PI tem motos a partir de R$ 800 e caminhonetes a partir de R$ 18 mil; confira - Campo Maior em Foco",
-      "news_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQRl83OUxLaTMtNEFCMFluM3laMkFnNEx4OGJkcTVfVkJUaXAtYjg3N3VndDhvNGVoYlY3ei0zRTFnR1dSLXJsTHFUdVhrX0c4VjVIOFY1el92LVZ0ckpyY0luSmZPUTUyUkdmOW9fX3Q3WWpiXzRva0YwaGNPMGZ3a1FGRVFZaGNLeUxMX3kyZXFXUzRJbjNzMS1ZUzRNSVlHMkxFU3pWVTNPQWVMZDBKekM1WmhHSlR3eHMwMjFjb2J5NWpoSFQ3aE9YUncyVjJ6RU5hVkdiMHg2dw?oc=5",
-      "publisher_url": "https://www.campomaioremfoco.com.br",
-      "published": "Fri, 28 Aug 2026 07:00:00 GMT",
+      "title": "Carros inteiros e prontos para rodar: Copart organiza leilão exclusivo de veículos de bancos e seguradoras - Gazeta da Semana",
+      "news_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOenBIRldpNEhqb2lxbnYyX2d0OXJucFIxR25lSW85ZjNGVWx6SDAwN1RKSUNPdjg5Rk1sMUZFWnRzc0czMmZFUUMzaDZiUUlJSG50b3FUd25WZHhxcGM1QUhvZlBqYXVUSDZCdXNjQ1FUekVoXy1VbUJwVUpydGFubTlWWm4zTVd5UlJFVmdsbEtTOU8wYTdqNXYzTHdJZ3A0R09peDd3TkdCalktb21Gd3dad1poQTdaVlBISFVTTUJiRG13NWxPVDlaT2pXX0F3Z25jTXhHcUgtVk9xMmxacnI2MlQ?oc=5",
+      "publisher_url": "https://gazetadasemana.com.br",
+      "published": "Mon, 19 Oct 2026 07:00:00 GMT",
       "priority": 0,
       "date_hint": null,
       "date_hint_status": "not_available",
@@ -730,42 +685,6 @@
       "news_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQTBTQ3J3TEx2ci14Y2U3T0VKWmd5MHVXWDV3ekFnZVR4WHczY2FqMVBZTXRRSEdUODYweXhzS1I3RExHRFY2S3hUdkVRNkIzQTJObkNGMzBpWl9UUzh4WTNVODJzU3BEOC0tMWtmQU82dmxKeHlHNE5Cem9RMEJZd184UHNldVpmRkJ3UkFPU0FhM09vNEpSZ1cxSEdqYkYzTHdwdTk2WkF5ZTNXcUZz0gG-AUFVX3lxTE9PUHRKc05ZS1Q1dmVIMU9VUUJYMll0bTRBT2JjYWhRWkNOWWdvYTM0OUNVcGFmMmVGVU9XNG92WWRtWmVjRHZBSVRrZkxEVkV0SVJ2WU5IbnNJU0s2U2stZ0tMRmJ2alcwUVFMTVh4SUZfV2t6eFF4MmpDc1VjckY4WXZxOXlybFVaeHVIVUZNdmNEZnBJX2NVVlBwZ0hFRGZuWVpKczY2MG5RaVVZamFvZ0xoSUdQRUZqVkswRVE?oc=5",
       "publisher_url": "https://g1.globo.com",
       "published": "Tue, 01 Sep 2026 07:00:00 GMT",
-      "priority": 0,
-      "date_hint": null,
-      "date_hint_status": "not_available",
-      "review_status": "needs_official_event_page",
-      "next_step": "Locate original notice and verify future date, location, event type and source",
-      "source_kind": "news_rss"
-    },
-    {
-      "title": "Prefeitura de Garopaba realiza leilão de veículos com lances a partir de R$ 11 mil - garopaba.sc",
-      "news_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMUw2SDVIQ3JUaFNSSV9oR1dya3dFZkJ4djAtdk1KSXJwbjlhTzkzWkMyZGV0WEpTcDRvdjZOUlhRbzRzc09DSzQ0Sm9HM3FGQnZKRXhtWWFnM0NiMmVoN05QZWdlLXNBOHRLYUVXbm9OS2M2VHkwaWdseDVONktlQTV6dkJfdl8xZlhJMU5CZ2ZHNFpod0RNZFlaUVQ0YlRDREZLQmNzYjh0azN5SXV3?oc=5",
-      "publisher_url": "https://garopaba.sc",
-      "published": "Tue, 13 Oct 2026 07:00:00 GMT",
-      "priority": 0,
-      "date_hint": null,
-      "date_hint_status": "not_available",
-      "review_status": "needs_official_event_page",
-      "next_step": "Locate original notice and verify future date, location, event type and source",
-      "source_kind": "news_rss"
-    },
-    {
-      "title": "Prefeitura de São Gabriel realiza leilão online de veículos, máquinas, equipamentos e sucatas - Coluna Ponto de Vista",
-      "news_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOQnNJYkg3Z1BpRVJvbm8yRU1YbC1Ua0c0VGRGNmc5ZFNONXF0ZGFqRTNxS3ZCXzdsQVhGdHRqTllsbkthRnMtUW5hdXJZWXctMjF4RHU3bG1rbmVWd3FYbW1YX1RUcEYxVlB1ZXNIQ0s5d1ZFUVJNN0lGZXk0WkhLTjRHa09ZZEgw?oc=5",
-      "publisher_url": "https://www.colunapontodevista.com",
-      "published": "Thu, 10 Sep 2026 07:00:00 GMT",
-      "priority": 0,
-      "date_hint": null,
-      "date_hint_status": "not_available",
-      "review_status": "needs_official_event_page",
-      "next_step": "Locate original notice and verify future date, location, event type and source",
-      "source_kind": "news_rss"
-    },
-    {
-      "title": "Veículos a partir de R$ 150? Carros e motos vão a leilão do Detran em SC; veja como participar - G1",
-      "news_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNelhOTXZJd1ZNSXVZbm1FNzh5cHVlY0V2eHZEbXZLY09oZHJLVjdiX29yaFBCTDZ2WlVfUjJvSzJkTnBNZGJsb09qczVNRzQyVndqeEZ4ZHZmUTZaTUVEeHdMMVNKcWhhNGlpWFdOLUdRZmtRbWRrZFNYUVk3enV1RERmOTZWUUt6OEFCdHhULUJYQ3VCZUFGZFlZSdIBqgFBVV95cUxNQ2hBWklxYUxjY1B6S1ZhN0JZd1Z1MDQ5MGdaZ2VMVU1ld3lJb25uYkNfazZIU1hZTUhKa3FmREZReE5nU1FfVWN1NlJfVVREdnl1NWZyMDJHVGxQRVpHc0Q3UjlFQUVxQ1lpNE5UbzVNaGNheU9aVWlING52UmRIMEJVSFlCTDVodkRGYTV6WHBzejQtSEpoMWt3RkNNTkQ0cHhUMVRoRFNuQQ?oc=5",
-      "publisher_url": "https://g1.globo.com",
-      "published": "Mon, 14 Sep 2026 07:00:00 GMT",
       "priority": 0,
       "date_hint": null,
       "date_hint_status": "not_available",

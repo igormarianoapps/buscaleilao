@@ -1,45 +1,6 @@
 {
-  "checked_at": "2026-11-09T20:53:38+00:00",
+  "checked_at": "2026-11-10T17:57:19+00:00",
   "candidates": [
-    {
-      "title": "Alienação, através de leilão, de veículos automotores e micro-ônibus e lotes de sucatas e equipamentos diversos do município de Leme do Prado-MG",
-      "state": "MG",
-      "city": "Leme do Prado",
-      "organizer": "MUNICIPIO DE LEME DO PRADO",
-      "date_hint": "2026-11-09",
-      "date_hint_status": "pncp_deadline_unverified",
-      "source_url": "https://pncp.gov.br/app/editais/01587109000130/2026/33",
-      "pncp_control": "01587109000130-1-000033/2026",
-      "review_status": "needs_edital_confirmation",
-      "note": "PNCP proposal deadline is not independently verified auction start date.",
-      "source": "pncp_official_api"
-    },
-    {
-      "title": "O presente Edital tem por objeto a alienação de veículos CONSERVADOS e SUCATAS que se encontram nos Pátios de Custódia nos municípios constantes do Anexo I deste Edital. O anexo II constará a planilha com a descrição dos veículos e trará o valor de sua avaliaç",
-      "state": "SC",
-      "city": "Florianópolis",
-      "organizer": "DEPARTAMENTO ESTADUAL DE TRANSITO",
-      "date_hint": "2026-11-09",
-      "date_hint_status": "pncp_deadline_unverified",
-      "source_url": "https://pncp.gov.br/app/editais/34060183000152/2026/46",
-      "pncp_control": "34060183000152-1-000046/2026",
-      "review_status": "needs_edital_confirmation",
-      "note": "PNCP proposal deadline is not independently verified auction start date.",
-      "source": "pncp_official_api"
-    },
-    {
-      "title": "LEILÃO PÚBLICO PARA ALIENAÇÃO DE BENS CONSIDERADOS INSERVÍVEIS, CLASSIFICADOS COMO ANTIECONÔMICOS PERTENCENTES AO PATRIMÔNIO DO MUNICÍPIO DE GUARACI-PR, CONFORME ESPECIFICAÇÕES DESCRITAS NO TERMO DE AVALIAÇÃO DE BENS MÓVEIS INSERVÍVEIS OU ANTIECONOMICO, ELABOR",
-      "state": "PR",
-      "city": "Guaraci",
-      "organizer": "MUNICIPIO DE GUARACI",
-      "date_hint": "2026-11-09",
-      "date_hint_status": "pncp_deadline_unverified",
-      "source_url": "https://pncp.gov.br/app/editais/75845537000151/2026/136",
-      "pncp_control": "75845537000151-1-000136/2026",
-      "review_status": "needs_edital_confirmation",
-      "note": "PNCP proposal deadline is not independently verified auction start date.",
-      "source": "pncp_official_api"
-    },
     {
       "title": "ALIENAÇÃO DE 01 (UM) VEÍCULO CHEVROLET TRAILBLAZER PRE D4A, PLACA RBL5F27, ANO DE FABRICAÇÃO/MODELO 2020/2020, COR BRANCA, COMBUSTÍVEL DIESEL, DE PROPRIEDADE DA UNIRV – UNIVERSIDADE DE RIO VERDE",
       "state": "GO",
@@ -353,7 +314,7 @@
       "source": "pncp_official_api"
     }
   ],
-  "count": 27,
+  "count": 24,
   "requests": 8,
   "errors": [
     {
