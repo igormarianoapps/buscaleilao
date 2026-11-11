@@ -1,0 +1,258 @@
+[
+  {
+    "id": "leilo",
+    "name": "Leilo",
+    "state_hint": "GO",
+    "batch": 1,
+    "discovery_url": "https://leilo.com.br/leilao/",
+    "allowed_hosts": [
+      "leilo.com.br",
+      "www.leilo.com.br"
+    ],
+    "source_kind": "private_auctioneer",
+    "monitor_enabled": true,
+    "requires_individual_event_link": true,
+    "status": "candidate_adapter",
+    "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event."
+  },
+  {
+    "id": "mcleilao",
+    "name": "MC Leilão",
+    "state_hint": "GO",
+    "batch": 1,
+    "discovery_url": "https://www.mcleilao.com.br/",
+    "allowed_hosts": [
+      "mcleilao.com.br",
+      "www.mcleilao.com.br"
+    ],
+    "source_kind": "private_auctioneer",
+    "monitor_enabled": true,
+    "requires_individual_event_link": true,
+    "status": "candidate_adapter",
+    "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event."
+  },
+  {
+    "id": "flex",
+    "name": "Flex Leilões",
+    "state_hint": "DF",
+    "batch": 1,
+    "discovery_url": "https://www.flexleiloes.com.br/",
+    "allowed_hosts": [
+      "flexleiloes.com.br",
+      "www.flexleiloes.com.br"
+    ],
+    "source_kind": "private_auctioneer",
+    "monitor_enabled": true,
+    "requires_individual_event_link": true,
+    "status": "candidate_adapter",
+    "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event."
+  },
+  {
+    "id": "parque",
+    "name": "Parque dos Leilões",
+    "state_hint": "DF",
+    "batch": 1,
+    "discovery_url": "https://www.parquedosleiloes.com.br/leiloes",
+    "allowed_hosts": [
+      "parquedosleiloes.com.br",
+      "www.parquedosleiloes.com.br"
+    ],
+    "source_kind": "private_auctioneer",
+    "monitor_enabled": true,
+    "requires_individual_event_link": true,
+    "status": "candidate_adapter",
+    "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event."
+  },
+  {
+    "id": "sodre",
+    "name": "Sodré Santoro",
+    "state_hint": "SP",
+    "batch": 2,
+    "discovery_url": "https://www.sodresantoro.com.br/",
+    "allowed_hosts": [
+      "sodresantoro.com.br",
+      "www.sodresantoro.com.br"
+    ],
+    "source_kind": "private_auctioneer",
+    "monitor_enabled": true,
+    "requires_individual_event_link": true,
+    "status": "candidate_adapter",
+    "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event."
+  },
+  {
+    "id": "copart",
+    "name": "Copart",
+    "state_hint": "SP",
+    "batch": 4,
+    "discovery_url": "https://www.copart.com.br/salesListResult/",
+    "allowed_hosts": [
+      "copart.com.br",
+      "www.copart.com.br"
+    ],
+    "source_kind": "private_auctioneer",
+    "monitor_enabled": true,
+    "requires_individual_event_link": true,
+    "status": "existing_adapter",
+    "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event."
+  },
+  {
+    "id": "loop",
+    "name": "Loop Brasil",
+    "state_hint": "SP",
+    "batch": 2,
+    "discovery_url": "https://www.loopbrasil.com/",
+    "allowed_hosts": [
+      "loopbrasil.com",
+      "www.loopbrasil.com"
+    ],
+    "source_kind": "private_auctioneer",
+    "monitor_enabled": true,
+    "requires_individual_event_link": true,
+    "status": "candidate_adapter",
+    "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event."
+  },
+  {
+    "id": "freitas",
+    "name": "Freitas Leiloeiro",
+    "state_hint": "SP",
+    "batch": 4,
+    "discovery_url": "https://www.freitasleiloeiro.com.br/",
+    "allowed_hosts": [
+      "freitasleiloeiro.com.br",
+      "www.freitasleiloeiro.com.br"
+    ],
+    "source_kind": "private_auctioneer",
+    "monitor_enabled": true,
+    "requires_individual_event_link": true,
+    "status": "existing_adapter",
+    "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event."
+  },
+  {
+    "id": "milan",
+    "name": "Milan Leilões",
+    "state_hint": "SP",
+    "batch": 2,
+    "discovery_url": "https://www.milanleiloes.com.br/",
+    "allowed_hosts": [
+      "milanleiloes.com.br",
+      "www.milanleiloes.com.br"
+    ],
+    "source_kind": "private_auctioneer",
+    "monitor_enabled": true,
+    "requires_individual_event_link": true,
+    "status": "candidate_adapter",
+    "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event."
+  },
+  {
+    "id": "vip",
+    "name": "VIP Leilões",
+    "state_hint": "SP",
+    "batch": 4,
+    "discovery_url": "https://www.vipleiloes.com.br/agenda",
+    "allowed_hosts": [
+      "vipleiloes.com.br",
+      "www.vipleiloes.com.br"
+    ],
+    "source_kind": "private_auctioneer",
+    "monitor_enabled": true,
+    "requires_individual_event_link": true,
+    "status": "existing_adapter",
+    "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event."
+  },
+  {
+    "id": "hisa",
+    "name": "Hisa Leilões",
+    "state_hint": "SP",
+    "batch": 2,
+    "discovery_url": "https://hisaleiloes.com.br/",
+    "allowed_hosts": [
+      "hisaleiloes.com.br",
+      "www.hisaleiloes.com.br"
+    ],
+    "source_kind": "private_auctioneer",
+    "monitor_enabled": true,
+    "requires_individual_event_link": true,
+    "status": "candidate_adapter",
+    "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event."
+  },
+  {
+    "id": "bolsa",
+    "name": "Bolsa de Leilões",
+    "state_hint": "SP",
+    "batch": 2,
+    "discovery_url": "https://www.bolsadeleiloes.com.br/",
+    "allowed_hosts": [
+      "bolsadeleiloes.com.br",
+      "www.bolsadeleiloes.com.br"
+    ],
+    "source_kind": "private_auctioneer",
+    "monitor_enabled": true,
+    "requires_individual_event_link": true,
+    "status": "candidate_adapter",
+    "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event."
+  },
+  {
+    "id": "vardana",
+    "name": "Vardana Leilões",
+    "state_hint": "PR",
+    "batch": 3,
+    "discovery_url": "https://www.vardanaleiloes.com.br/vardana/index",
+    "allowed_hosts": [
+      "vardanaleiloes.com.br",
+      "www.vardanaleiloes.com.br"
+    ],
+    "source_kind": "private_auctioneer",
+    "monitor_enabled": true,
+    "requires_individual_event_link": true,
+    "status": "candidate_adapter",
+    "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event."
+  },
+  {
+    "id": "claudio",
+    "name": "Claudio Kuss Leilões",
+    "state_hint": "PR",
+    "batch": 3,
+    "discovery_url": "https://www.claudiokussleiloes.com.br/?acao=home",
+    "allowed_hosts": [
+      "claudiokussleiloes.com.br",
+      "www.claudiokussleiloes.com.br"
+    ],
+    "source_kind": "private_auctioneer",
+    "monitor_enabled": true,
+    "requires_individual_event_link": true,
+    "status": "candidate_adapter",
+    "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event."
+  },
+  {
+    "id": "palacio",
+    "name": "Palácio dos Leilões",
+    "state_hint": "MG",
+    "batch": 3,
+    "discovery_url": "https://www.palaciodosleiloes.com.br/site/leilao.php",
+    "allowed_hosts": [
+      "palaciodosleiloes.com.br",
+      "www.palaciodosleiloes.com.br"
+    ],
+    "source_kind": "private_auctioneer",
+    "monitor_enabled": true,
+    "requires_individual_event_link": true,
+    "status": "candidate_adapter",
+    "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event."
+  },
+  {
+    "id": "rogerio",
+    "name": "Rogério Menezes",
+    "state_hint": "RJ",
+    "batch": 3,
+    "discovery_url": "https://www.rogeriomenezes.com.br/leiloes",
+    "allowed_hosts": [
+      "rogeriomenezes.com.br",
+      "www.rogeriomenezes.com.br"
+    ],
+    "source_kind": "private_auctioneer",
+    "monitor_enabled": true,
+    "requires_individual_event_link": true,
+    "status": "candidate_adapter",
+    "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event."
+  }
+]
