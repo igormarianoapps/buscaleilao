@@ -85,6 +85,10 @@ def validate_feed(feed, report, now=None):
         from auction_security import valid_destination
         if row.get('destination_verified') is not True or not valid_destination(row):
             errors.append(f'Event {index}: destination failed approval gate')
+        from auction_links import destination_status
+        allowed, reason = destination_status(row)
+        if not allowed or row.get("link_verified") is not True:
+            errors.append(f"Event {index}: destination not admitted: {reason}")
         link_issue=verify_link_classification(row)
         if link_issue:
             errors.append(f"Event {index}: {link_issue}")
