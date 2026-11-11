@@ -13,21 +13,10 @@
       "source_type": "private",
       "source_url": "https://www.freitasleiloeiro.com.br/Leiloes/Lotes?leilaoId=8167",
       "status": "scheduled",
-      "last_checked_at": "2026-11-10T17:56:35+00:00"
-    },
-    {
-      "id": "lorena-2026-11-10",
-      "title": "Leilão de veículos e sucatas municipais",
-      "state": "SP",
-      "city": "Lorena",
-      "auction_date": "2026-11-10",
-      "auction_time": "10:00",
-      "vehicle_count": null,
-      "organizer": "Prefeitura de Lorena",
-      "source_type": "municipal",
-      "source_url": "https://www.lorena.sp.gov.br/wordpress/index.php/2026/10/22/prefeitura-de-lorena-realiza-leilao-de-veiculos-inserviveis-e-sucatas/",
-      "status": "scheduled",
-      "last_checked_at": "2026-11-10T17:55:39+00:00"
+      "last_checked_at": "2026-11-10T17:56:35+00:00",
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-8d0565bcc449e598-am",
@@ -55,7 +44,10 @@
         "RJ",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-8d0565bcc449e598-ba",
@@ -83,7 +75,10 @@
         "RJ",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-8d0565bcc449e598-go",
@@ -111,7 +106,10 @@
         "RJ",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-8d0565bcc449e598-ma",
@@ -139,7 +137,10 @@
         "RJ",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-8d0565bcc449e598-mg",
@@ -167,7 +168,10 @@
         "RJ",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-8d0565bcc449e598-pa",
@@ -195,7 +199,10 @@
         "RJ",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-8d0565bcc449e598-pr",
@@ -223,7 +230,10 @@
         "RJ",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-8d0565bcc449e598-rj",
@@ -251,7 +261,10 @@
         "RJ",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-8d0565bcc449e598-sc",
@@ -279,7 +292,10 @@
         "RJ",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-8d0565bcc449e598-sp",
@@ -307,7 +323,10 @@
         "RJ",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "copart-10592-2026-11-11",
@@ -322,7 +341,10 @@
       "source_url": "https://www.copart.com.br/saleListResult/10592/2026-11-11?location=Eus%C3%A9bio%20-%20CE&saleDate=1794402000000&liveAuction=false&from=/salesListResult&auctioneer=Georgia%20de%20Souza%20Castelo%20-%20Jucec%2024/2016&yardNum=103",
       "status": "scheduled",
       "last_checked_at": "2026-11-10T17:56:26+00:00",
-      "source_link_type": "event"
+      "source_link_type": "event",
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "copart-10588-2026-11-11",
@@ -337,7 +359,10 @@
       "source_url": "https://www.copart.com.br/saleListResult/10588/2026-11-11?location=Goi%C3%A2nia%20-%20GO&saleDate=1794398400000&liveAuction=false&from=/salesListResult&auctioneer=Claudio%20Moreira%20Santos%20-%20Juceg%20071/19&yardNum=56",
       "status": "scheduled",
       "last_checked_at": "2026-11-10T17:56:26+00:00",
-      "source_link_type": "event"
+      "source_link_type": "event",
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "copart-10590-2026-11-11",
@@ -352,7 +377,10 @@
       "source_url": "https://www.copart.com.br/saleListResult/10590/2026-11-11?location=Itaquaquecetuba%20-%20SP&saleDate=1794412800000&liveAuction=false&from=/salesListResult&auctioneer=Jose%20Carlos%20Chagas%20-%20Jucesp%20940&yardNum=46",
       "status": "scheduled",
       "last_checked_at": "2026-11-10T17:56:26+00:00",
-      "source_link_type": "event"
+      "source_link_type": "event",
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "copart-10591-2026-11-11",
@@ -367,21 +395,28 @@
       "source_url": "https://www.copart.com.br/saleListResult/10591/2026-11-11?location=Osasco%20-%20SP&saleDate=1794430800000&liveAuction=false&from=/salesListResult&auctioneer=Wendell%20F%C3%A9lix%20-%20Jucesp%20759&yardNum=1",
       "status": "scheduled",
       "last_checked_at": "2026-11-10T17:56:26+00:00",
-      "source_link_type": "event"
+      "source_link_type": "event",
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "cuiaba-semob-4-2026-11-11",
-      "title": "4º leilão da Semob — sessão de lotes não vendidos",
+      "title": "4º leilão da Semob — sessão 4 (sucatas aproveitáveis)",
       "state": "MT",
       "city": "Cuiabá",
       "auction_date": "2026-11-11",
-      "auction_time": "09:00",
+      "auction_time": "10:00",
       "vehicle_count": null,
       "organizer": "Prefeitura de Cuiabá — Semob",
       "source_type": "municipal",
       "source_url": "https://www.cuiaba.mt.gov.br/noticias/semob-realiza-o-4o-leilao-do-ano-com-1-065-veiculos-disponiveis",
       "status": "scheduled",
-      "last_checked_at": "2026-11-10T17:55:39+00:00"
+      "last_checked_at": "2026-11-10T17:55:39+00:00",
+      "event_url": "https://www.focoleiloes.com.br/leilao/497/lotes",
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-cc0c3875ecf807de-pr",
@@ -400,7 +435,10 @@
       "event_id": "vip-direct-cc0c3875ecf807de",
       "states": [
         "PR"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-ae5e49a7d8c732c6-ba",
@@ -420,7 +458,10 @@
       "states": [
         "BA",
         "PR"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-ae5e49a7d8c732c6-pr",
@@ -440,7 +481,10 @@
       "states": [
         "BA",
         "PR"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "freitas-8168-2026-11-11",
@@ -454,7 +498,10 @@
       "source_type": "private",
       "source_url": "https://www.freitasleiloeiro.com.br/Leiloes/Lotes?leilaoId=8168",
       "status": "scheduled",
-      "last_checked_at": "2026-11-10T17:56:36+00:00"
+      "last_checked_at": "2026-11-10T17:56:36+00:00",
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-e26b1f8c8d9db4fb-ba",
@@ -481,7 +528,10 @@
         "RS",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-e26b1f8c8d9db4fb-ce",
@@ -508,7 +558,10 @@
         "RS",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-e26b1f8c8d9db4fb-go",
@@ -535,7 +588,10 @@
         "RS",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-e26b1f8c8d9db4fb-ma",
@@ -562,7 +618,10 @@
         "RS",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-e26b1f8c8d9db4fb-pe",
@@ -589,7 +648,10 @@
         "RS",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-e26b1f8c8d9db4fb-pi",
@@ -616,7 +678,10 @@
         "RS",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-e26b1f8c8d9db4fb-rs",
@@ -643,7 +708,10 @@
         "RS",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-e26b1f8c8d9db4fb-sc",
@@ -670,7 +738,10 @@
         "RS",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-e26b1f8c8d9db4fb-sp",
@@ -697,7 +768,10 @@
         "RS",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-e851bfc7fe221413-ba",
@@ -722,7 +796,10 @@
         "RO",
         "RS",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-e851bfc7fe221413-df",
@@ -747,7 +824,10 @@
         "RO",
         "RS",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-e851bfc7fe221413-go",
@@ -772,7 +852,10 @@
         "RO",
         "RS",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-e851bfc7fe221413-pe",
@@ -797,7 +880,10 @@
         "RO",
         "RS",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-e851bfc7fe221413-ro",
@@ -822,7 +908,10 @@
         "RO",
         "RS",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-e851bfc7fe221413-rs",
@@ -847,7 +936,10 @@
         "RO",
         "RS",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-e851bfc7fe221413-sc",
@@ -872,7 +964,10 @@
         "RO",
         "RS",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-676d0a4207f4c35c-ba",
@@ -897,7 +992,10 @@
         "RS",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-676d0a4207f4c35c-go",
@@ -922,7 +1020,10 @@
         "RS",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-676d0a4207f4c35c-pe",
@@ -947,7 +1048,10 @@
         "RS",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-676d0a4207f4c35c-pr",
@@ -972,7 +1076,10 @@
         "RS",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-676d0a4207f4c35c-rs",
@@ -997,7 +1104,10 @@
         "RS",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-676d0a4207f4c35c-sc",
@@ -1022,7 +1132,10 @@
         "RS",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-676d0a4207f4c35c-sp",
@@ -1047,7 +1160,10 @@
         "RS",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-5a8be76070ae76c7-am",
@@ -1080,7 +1196,10 @@
         "RO",
         "RS",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-5a8be76070ae76c7-ba",
@@ -1113,7 +1232,10 @@
         "RO",
         "RS",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-5a8be76070ae76c7-ce",
@@ -1146,7 +1268,10 @@
         "RO",
         "RS",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-5a8be76070ae76c7-df",
@@ -1179,7 +1304,10 @@
         "RO",
         "RS",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-5a8be76070ae76c7-go",
@@ -1212,7 +1340,10 @@
         "RO",
         "RS",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-5a8be76070ae76c7-ma",
@@ -1245,7 +1376,10 @@
         "RO",
         "RS",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-5a8be76070ae76c7-mg",
@@ -1278,7 +1412,10 @@
         "RO",
         "RS",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-5a8be76070ae76c7-mt",
@@ -1311,7 +1448,10 @@
         "RO",
         "RS",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-5a8be76070ae76c7-pa",
@@ -1344,7 +1484,10 @@
         "RO",
         "RS",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-5a8be76070ae76c7-pe",
@@ -1377,7 +1520,10 @@
         "RO",
         "RS",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-5a8be76070ae76c7-pr",
@@ -1410,7 +1556,10 @@
         "RO",
         "RS",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-5a8be76070ae76c7-rj",
@@ -1443,7 +1592,10 @@
         "RO",
         "RS",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-5a8be76070ae76c7-ro",
@@ -1476,7 +1628,10 @@
         "RO",
         "RS",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-5a8be76070ae76c7-rs",
@@ -1509,7 +1664,10 @@
         "RO",
         "RS",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-5a8be76070ae76c7-sp",
@@ -1542,7 +1700,10 @@
         "RO",
         "RS",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-a5383cd730b5ba6c-ba",
@@ -1566,7 +1727,10 @@
         "PI",
         "RS",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-a5383cd730b5ba6c-ma",
@@ -1590,7 +1754,10 @@
         "PI",
         "RS",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-a5383cd730b5ba6c-pe",
@@ -1614,7 +1781,10 @@
         "PI",
         "RS",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-a5383cd730b5ba6c-pi",
@@ -1638,7 +1808,10 @@
         "PI",
         "RS",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-a5383cd730b5ba6c-rs",
@@ -1662,7 +1835,10 @@
         "PI",
         "RS",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-a5383cd730b5ba6c-sp",
@@ -1686,7 +1862,10 @@
         "PI",
         "RS",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "copart-10589-2026-11-12",
@@ -1701,7 +1880,10 @@
       "source_url": "https://www.copart.com.br/saleListResult/10589/2026-11-12?location=Goi%C3%A2nia%20-%20GO&saleDate=1794499200000&from=/salesListResult&auctioneer=Ygor%20Ferreira%20Brasil%20-%20Juceg%20074/20&yardNum=56",
       "status": "scheduled",
       "last_checked_at": "2026-11-10T17:56:26+00:00",
-      "source_link_type": "event"
+      "source_link_type": "event",
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "copart-10593-2026-11-12",
@@ -1716,7 +1898,10 @@
       "source_url": "https://www.copart.com.br/saleListResult/10593/2026-11-12?location=Itaquaquecetuba%20-%20SP&saleDate=1794484800000&from=/salesListResult&auctioneer=Jose%20Carlos%20Chagas%20-%20Jucesp%20940&yardNum=46",
       "status": "scheduled",
       "last_checked_at": "2026-11-10T17:56:26+00:00",
-      "source_link_type": "event"
+      "source_link_type": "event",
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "copart-10595-2026-11-12",
@@ -1731,7 +1916,10 @@
       "source_url": "https://www.copart.com.br/saleListResult/10595/2026-11-12?location=Osasco%20-%20SP&saleDate=1794519000000&from=/salesListResult&auctioneer=Jose%20Carlos%20Chagas%20-%20Jucesp%20940&yardNum=1",
       "status": "scheduled",
       "last_checked_at": "2026-11-10T17:56:26+00:00",
-      "source_link_type": "event"
+      "source_link_type": "event",
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "copart-10596-2026-11-12",
@@ -1746,21 +1934,10 @@
       "source_url": "https://www.copart.com.br/saleListResult/10596/2026-11-12?location=Vit%C3%B3ria%20de%20Santo%20Ant%C3%A3o%20-%20PE&saleDate=1794483000000&liveAuction=false&from=/salesListResult&auctioneer=Pedro%20Dantas%20Venceslau%20-%20Jucepe%2033/2014&yardNum=92",
       "status": "scheduled",
       "last_checked_at": "2026-11-10T17:56:26+00:00",
-      "source_link_type": "event"
-    },
-    {
-      "id": "serranopolis-iguacu-pr-01-2026",
-      "title": "Leilão eletrônico 1/2026 — veículos e bens municipais",
-      "state": "PR",
-      "city": "Serranópolis do Iguaçu",
-      "auction_date": "2026-11-12",
-      "auction_time": "08:30",
-      "vehicle_count": null,
-      "organizer": "Prefeitura de Serranópolis do Iguaçu",
-      "source_type": "municipal",
-      "source_url": "https://serranopolis.pr.gov.br/noticias/6113-governo-municipal-de-serranopolis-do-iguacu-realiza-leilao-eletronico-de-veiculos-maquinas-e-outros-bens",
-      "status": "scheduled",
-      "last_checked_at": "2026-11-10T17:55:39+00:00"
+      "source_link_type": "event",
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-0a4eb4e882c4f68c-ba",
@@ -1786,7 +1963,10 @@
         "RJ",
         "RO",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-0a4eb4e882c4f68c-go",
@@ -1812,7 +1992,10 @@
         "RJ",
         "RO",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-0a4eb4e882c4f68c-ma",
@@ -1838,7 +2021,10 @@
         "RJ",
         "RO",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-0a4eb4e882c4f68c-pa",
@@ -1864,7 +2050,10 @@
         "RJ",
         "RO",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-0a4eb4e882c4f68c-pe",
@@ -1890,7 +2079,10 @@
         "RJ",
         "RO",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-0a4eb4e882c4f68c-rj",
@@ -1916,7 +2108,10 @@
         "RJ",
         "RO",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-0a4eb4e882c4f68c-ro",
@@ -1942,7 +2137,10 @@
         "RJ",
         "RO",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-0a4eb4e882c4f68c-sc",
@@ -1968,7 +2166,10 @@
         "RJ",
         "RO",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-161a559fc261cc11-ba",
@@ -1988,7 +2189,10 @@
       "states": [
         "BA",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-161a559fc261cc11-sc",
@@ -2008,7 +2212,10 @@
       "states": [
         "BA",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-7c9f45adca7a0b98-am",
@@ -2041,7 +2248,10 @@
         "RO",
         "RS",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-7c9f45adca7a0b98-ba",
@@ -2074,7 +2284,10 @@
         "RO",
         "RS",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-7c9f45adca7a0b98-ce",
@@ -2107,7 +2320,10 @@
         "RO",
         "RS",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-7c9f45adca7a0b98-df",
@@ -2140,7 +2356,10 @@
         "RO",
         "RS",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-7c9f45adca7a0b98-go",
@@ -2173,7 +2392,10 @@
         "RO",
         "RS",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-7c9f45adca7a0b98-ma",
@@ -2206,7 +2428,10 @@
         "RO",
         "RS",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-7c9f45adca7a0b98-mt",
@@ -2239,7 +2464,10 @@
         "RO",
         "RS",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-7c9f45adca7a0b98-pa",
@@ -2272,7 +2500,10 @@
         "RO",
         "RS",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-7c9f45adca7a0b98-pe",
@@ -2305,7 +2536,10 @@
         "RO",
         "RS",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-7c9f45adca7a0b98-pi",
@@ -2338,7 +2572,10 @@
         "RO",
         "RS",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-7c9f45adca7a0b98-pr",
@@ -2371,7 +2608,10 @@
         "RO",
         "RS",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-7c9f45adca7a0b98-rj",
@@ -2404,7 +2644,10 @@
         "RO",
         "RS",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-7c9f45adca7a0b98-ro",
@@ -2437,7 +2680,10 @@
         "RO",
         "RS",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-7c9f45adca7a0b98-rs",
@@ -2470,7 +2716,10 @@
         "RO",
         "RS",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-7c9f45adca7a0b98-sc",
@@ -2503,7 +2752,10 @@
         "RO",
         "RS",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-d0eb392a1f463076-am",
@@ -2530,7 +2782,10 @@
         "PR",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-d0eb392a1f463076-ce",
@@ -2557,7 +2812,10 @@
         "PR",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-d0eb392a1f463076-go",
@@ -2584,7 +2842,10 @@
         "PR",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-d0eb392a1f463076-ma",
@@ -2611,7 +2872,10 @@
         "PR",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-d0eb392a1f463076-pa",
@@ -2638,7 +2902,10 @@
         "PR",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-d0eb392a1f463076-pe",
@@ -2665,7 +2932,10 @@
         "PR",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-d0eb392a1f463076-pr",
@@ -2692,7 +2962,10 @@
         "PR",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-d0eb392a1f463076-sc",
@@ -2719,7 +2992,10 @@
         "PR",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-d0eb392a1f463076-sp",
@@ -2746,7 +3022,10 @@
         "PR",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "copart-10599-2026-11-13",
@@ -2761,7 +3040,10 @@
       "source_url": "https://www.copart.com.br/saleListResult/10599/2026-11-13?location=Betim%20-%20MG&saleDate=1794582000000&liveAuction=false&from=/salesListResult&auctioneer=Raphael%20E%20de%20Faria%20-%20Jucemg%20991&yardNum=48",
       "status": "scheduled",
       "last_checked_at": "2026-11-10T17:56:26+00:00",
-      "source_link_type": "event"
+      "source_link_type": "event",
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "copart-10600-2026-11-13",
@@ -2776,7 +3058,10 @@
       "source_url": "https://www.copart.com.br/saleListResult/10600/2026-11-13?location=Vit%C3%B3ria%20de%20Santo%20Ant%C3%A3o%20-%20PE&saleDate=1794569400000&from=/salesListResult&auctioneer=Pedro%20Dantas%20Venceslau%20-%20Jucepe%2033/2014&yardNum=92",
       "status": "scheduled",
       "last_checked_at": "2026-11-10T17:56:26+00:00",
-      "source_link_type": "event"
+      "source_link_type": "event",
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-f93a04c2fa519b62-ma",
@@ -2795,7 +3080,10 @@
       "event_id": "vip-direct-f93a04c2fa519b62",
       "states": [
         "MA"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "freitas-8169-2026-11-13",
@@ -2809,21 +3097,10 @@
       "source_type": "private",
       "source_url": "https://www.freitasleiloeiro.com.br/Leiloes/Lotes?leilaoId=8169",
       "status": "scheduled",
-      "last_checked_at": "2026-11-10T17:56:37+00:00"
-    },
-    {
-      "id": "vieiras-001-2026",
-      "title": "Leilão eletrônico nº 001/2026 — veículos e outros bens",
-      "state": "MG",
-      "city": "Vieiras",
-      "auction_date": "2026-11-13",
-      "auction_time": "13:00",
-      "vehicle_count": null,
-      "organizer": "Prefeitura de Vieiras",
-      "source_type": "municipal",
-      "source_url": "https://vieiras.mg.gov.br/noticias/prefeitura-de-vieiras-realizara-leilao-eletronico-de-bens-moveis-no-dia-13-de-novembro-de-2026",
-      "status": "scheduled",
-      "last_checked_at": "2026-11-10T17:55:39+00:00"
+      "last_checked_at": "2026-11-10T17:56:37+00:00",
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-795313d5ff5fd466-ma",
@@ -2846,7 +3123,10 @@
         "PA",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-795313d5ff5fd466-mt",
@@ -2869,7 +3149,10 @@
         "PA",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-795313d5ff5fd466-pa",
@@ -2892,7 +3175,10 @@
         "PA",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-795313d5ff5fd466-sc",
@@ -2915,7 +3201,10 @@
         "PA",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-795313d5ff5fd466-sp",
@@ -2938,7 +3227,10 @@
         "PA",
         "SC",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-66c97bc33faaa505-ma",
@@ -2957,7 +3249,10 @@
       "event_id": "vip-direct-66c97bc33faaa505",
       "states": [
         "MA"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-abd0fe23f0674db5-pe",
@@ -2976,7 +3271,10 @@
       "event_id": "vip-direct-abd0fe23f0674db5",
       "states": [
         "PE"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-a04cd110e5981e0a-go",
@@ -2996,7 +3294,10 @@
       "states": [
         "GO",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-a04cd110e5981e0a-sp",
@@ -3016,7 +3317,10 @@
       "states": [
         "GO",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-1f73ea9fe45f6930-am",
@@ -3040,7 +3344,10 @@
         "PE",
         "RO",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-1f73ea9fe45f6930-mt",
@@ -3064,7 +3371,10 @@
         "PE",
         "RO",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-1f73ea9fe45f6930-pa",
@@ -3088,7 +3398,10 @@
         "PE",
         "RO",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-1f73ea9fe45f6930-pe",
@@ -3112,7 +3425,10 @@
         "PE",
         "RO",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-1f73ea9fe45f6930-ro",
@@ -3136,7 +3452,10 @@
         "PE",
         "RO",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-1f73ea9fe45f6930-sp",
@@ -3160,7 +3479,10 @@
         "PE",
         "RO",
         "SP"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-0fdceddd1871cb9f-ma",
@@ -3181,7 +3503,10 @@
         "MA",
         "PA",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-0fdceddd1871cb9f-pa",
@@ -3202,7 +3527,10 @@
         "MA",
         "PA",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "vip-direct-0fdceddd1871cb9f-sc",
@@ -3223,7 +3551,10 @@
         "MA",
         "PA",
         "SC"
-      ]
+      ],
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     },
     {
       "id": "copart-10605-2026-11-17",
@@ -3238,21 +3569,10 @@
       "source_url": "https://www.copart.com.br/saleListResult/10605/2026-11-17?location=Curitiba%20-%20PR&saleDate=1794922200000&from=/salesListResult&auctioneer=Lucas%20Eduardo%20Dalcanale%20-%20Jucepar%2020/319L&yardNum=53",
       "status": "scheduled",
       "last_checked_at": "2026-11-10T17:56:26+00:00",
-      "source_link_type": "event"
-    },
-    {
-      "id": "detran-ba-23-2026",
-      "title": "Leilão DETRAN-BA nº 23/2026 — veículos conservados e sucatas",
-      "state": "BA",
-      "city": "Salvador e região",
-      "auction_date": "2026-11-25",
-      "auction_time": "09:00",
-      "vehicle_count": null,
-      "organizer": "DETRAN Bahia",
-      "source_type": "state",
-      "source_url": "https://www.ba.gov.br/detran/editais/7742/edital-de-leilao-no-232026-veiculos-conservados-e-sucatas-aproveitaveis",
-      "status": "scheduled",
-      "last_checked_at": "2026-11-10T17:55:39+00:00"
+      "source_link_type": "event",
+      "link_verified": true,
+      "destination_verified": true,
+      "link_review": "trusted_route"
     }
   ]
 }
