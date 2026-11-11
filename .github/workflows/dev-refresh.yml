@@ -1,0 +1,42 @@
+name: Refresh development research
+on:
+  push:
+    branches: [develop]
+    paths:
+      - '.github/workflows/dev-refresh.yml'
+permissions:
+  contents: write
+jobs:
+  refresh:
+    if: "github.event.head_commit.message == 'ci: refresh development research'"
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: develop
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Regression tests before review queue
+        run: |
+          node --test tests/agenda.test.mjs
+          python -m unittest discover -s tests -v
+      - name: Rebuild official portal candidates with noise filtering
+        run: python scripts/portal_watch.py
+      - name: Refresh triage queue from current candidates only
+        run: python scripts/prioritize_leads.py
+      - name: Audit coverage without inventing event confirmations
+        run: python scripts/coverage_audit.py
+      - name: Save research files to develop only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/portal-candidates.json app/review-queue.json app/coverage-audit.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: filtered official portal research leads"
+            git push origin HEAD:develop
+          fi
