@@ -1,0 +1,83 @@
+{
+  "snapshot_checked_at": "2026-11-11T18:53:14+00:00",
+  "unique_events": 46,
+  "event_rows": 134,
+  "states_with_events": [
+    "AM",
+    "BA",
+    "CE",
+    "DF",
+    "GO",
+    "MA",
+    "MG",
+    "MT",
+    "PA",
+    "PE",
+    "PI",
+    "PR",
+    "RJ",
+    "RO",
+    "RS",
+    "SC",
+    "SP"
+  ],
+  "states_without_events": [
+    "AC",
+    "AL",
+    "AP",
+    "ES",
+    "MS",
+    "PB",
+    "RN",
+    "RR",
+    "SE",
+    "TO"
+  ],
+  "events_by_state": {
+    "AM": 4,
+    "BA": 9,
+    "CE": 6,
+    "DF": 3,
+    "GO": 8,
+    "MA": 9,
+    "MG": 16,
+    "MT": 7,
+    "PA": 7,
+    "PE": 13,
+    "PI": 6,
+    "PR": 6,
+    "RJ": 4,
+    "RO": 6,
+    "RS": 6,
+    "SC": 8,
+    "SP": 16
+  },
+  "events_by_organizer": {
+    "Copart": 10,
+    "Detran MG": 12,
+    "Freitas Leiloeiro": 4,
+    "Prefeitura de Cuiabá — Semob": 1,
+    "VIP Leilões": 19
+  },
+  "rows_by_destination_host": {
+    "leilao.transito.mg.gov.br": 12,
+    "www.copart.com.br": 10,
+    "www.focoleiloes.com.br": 1,
+    "www.freitasleiloeiro.com.br": 4,
+    "www.vipleiloes.com.br": 19
+  },
+  "source_registry_total": 10,
+  "registry_states": [
+    "GO",
+    "MG",
+    "MT",
+    "PR",
+    "SP"
+  ],
+  "registry_sources_checked": 10,
+  "registry_sources_reachable": 10,
+  "unverified_portal_leads": 49,
+  "review_queue_items": 99,
+  "coverage_definition": "States with >=1 distinct event, not percentage of national auctions; registry entries are research sources, not active collectors or verified events",
+  "generated_at": "2026-11-11T18:54:26+00:00"
+}

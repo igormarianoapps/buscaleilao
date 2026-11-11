@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-10T17:57:19+00:00",
+  "checked_at": "2026-11-11T18:54:26+00:00",
   "candidates": [
     {
       "title": "ALIENAÇÃO DE 01 (UM) VEÍCULO CHEVROLET TRAILBLAZER PRE D4A, PLACA RBL5F27, ANO DE FABRICAÇÃO/MODELO 2020/2020, COR BRANCA, COMBUSTÍVEL DIESEL, DE PROPRIEDADE DA UNIRV – UNIVERSIDADE DE RIO VERDE",
@@ -23,6 +23,32 @@
       "date_hint_status": "pncp_deadline_unverified",
       "source_url": "https://pncp.gov.br/app/editais/39467292000102/2026/79",
       "pncp_control": "39467292000102-1-000079/2026",
+      "review_status": "needs_edital_confirmation",
+      "note": "PNCP proposal deadline is not independently verified auction start date.",
+      "source": "pncp_official_api"
+    },
+    {
+      "title": "Alienação, por meio de leilão público eletrônico, do tipo maior lance, de bens móveis inservíveis pertencentes ao patrimônio do Município de Ibiam/SC, incluindo veículos, equipamentos, mobiliários, materiais diversos e sucatas, conforme especificações, condiçõ",
+      "state": "SC",
+      "city": "Ibiam",
+      "organizer": "MUNICIPIO DE IBIAM",
+      "date_hint": "2026-11-16",
+      "date_hint_status": "pncp_deadline_unverified",
+      "source_url": "https://pncp.gov.br/app/editais/01612745000174/2026/187",
+      "pncp_control": "01612745000174-1-000187/2026",
+      "review_status": "needs_edital_confirmation",
+      "note": "PNCP proposal deadline is not independently verified auction start date.",
+      "source": "pncp_official_api"
+    },
+    {
+      "title": "Leilão Veicular",
+      "state": "RS",
+      "city": "Montenegro",
+      "organizer": "CONSORCIO INTERMUNICIPAL DO VALE DO RIO CAI (CIS-CAI)",
+      "date_hint": "2026-11-16",
+      "date_hint_status": "pncp_deadline_unverified",
+      "source_url": "https://pncp.gov.br/app/editais/07662324000134/2026/46",
+      "pncp_control": "07662324000134-1-000046/2026",
       "review_status": "needs_edital_confirmation",
       "note": "PNCP proposal deadline is not independently verified auction start date.",
       "source": "pncp_official_api"
@@ -210,6 +236,19 @@
       "source": "pncp_official_api"
     },
     {
+      "title": "ALIENAÇÃO, MEDIANTE LEILÃO PÚBLICO, DE BENS MÓVEIS INSERVÍVEIS PERTENCENTES AO PATRIMÔNIO E À FROTA DA PREFEITURA MUNICIPAL DE TERRA ROXA, ESTADO DE SÃO PAULO",
+      "state": "SP",
+      "city": "Terra Roxa",
+      "organizer": "MUNICIPIO DE TERRA ROXA",
+      "date_hint": "2026-12-02",
+      "date_hint_status": "pncp_deadline_unverified",
+      "source_url": "https://pncp.gov.br/app/editais/45709896000110/2026/48",
+      "pncp_control": "45709896000110-1-000048/2026",
+      "review_status": "needs_edital_confirmation",
+      "note": "PNCP proposal deadline is not independently verified auction start date.",
+      "source": "pncp_official_api"
+    },
+    {
       "title": "REALIZACAO DE LEILAO ELETRONICO ONLINE, PARA A VENDA DE BENS MOVEIS INSERVIVEIS E VEICULOS USADOS PERTENCENTES AO PATRIMONIO DA PREFEITURA DE SAO JOSE DOS CAMPOS",
       "state": "SP",
       "city": "São José dos Campos",
@@ -262,6 +301,19 @@
       "source": "pncp_official_api"
     },
     {
+      "title": "ALIENAÇÃO DE 23 BENS MÓVEIS DECLARADOS INSERVÍVEIS – VEÍCULOS, ÔNIBUS, AMBULÂNCIAS, CAMINHÕES, MÁQUINAS E EQUIPAMENTOS – PELO MAIOR LANCE POR LOTE .",
+      "state": "PR",
+      "city": "Altamira do Paraná",
+      "organizer": "MUNICIPIO DE ALTAMIRA DO PARANA",
+      "date_hint": "2026-12-03",
+      "date_hint_status": "pncp_deadline_unverified",
+      "source_url": "https://pncp.gov.br/app/editais/78069143000147/2026/116",
+      "pncp_control": "78069143000147-1-000116/2026",
+      "review_status": "needs_edital_confirmation",
+      "note": "PNCP proposal deadline is not independently verified auction start date.",
+      "source": "pncp_official_api"
+    },
+    {
       "title": "Alienação de 5 (cinco) veículos automotores do Poder Judiciário de Santa Catarina (PJSC)",
       "state": "SC",
       "city": "Florianópolis",
@@ -275,6 +327,19 @@
       "source": "pncp_official_api"
     },
     {
+      "title": "Alienação onerosa, mediante licitação na modalidade LEILÃO ELETRÔNICO, de BENS IMÓVEIS URBANOS DOMINICAIS E BENS MÓVEIS INSERVÍVEIS - VEÍCULOS, MÁQUINAS E EQUIPAMENTOS de propriedade do Município de Nova Esperança, que, após análise individual de sua situação ",
+      "state": "PR",
+      "city": "Nova Esperança",
+      "organizer": "MUNICIPIO DE NOVA ESPERANCA",
+      "date_hint": "2026-12-04",
+      "date_hint_status": "pncp_deadline_unverified",
+      "source_url": "https://pncp.gov.br/app/editais/75730994000109/2026/418",
+      "pncp_control": "75730994000109-1-000418/2026",
+      "review_status": "needs_edital_confirmation",
+      "note": "PNCP proposal deadline is not independently verified auction start date.",
+      "source": "pncp_official_api"
+    },
+    {
       "title": "Alienação de bens móveis inservíveis compostos de veículos, máquinas e equipamentos e em geral, de propriedade deste município.",
       "state": "SC",
       "city": "Treze de Maio",
@@ -283,6 +348,19 @@
       "date_hint_status": "pncp_deadline_unverified",
       "source_url": "https://pncp.gov.br/app/editais/82928672000126/2026/51",
       "pncp_control": "82928672000126-1-000051/2026",
+      "review_status": "needs_edital_confirmation",
+      "note": "PNCP proposal deadline is not independently verified auction start date.",
+      "source": "pncp_official_api"
+    },
+    {
+      "title": "LEILÃO PÚBLICO DE BENS MÓVEIS INSERVÍVEL A ADMINISTRAÇÃO, COMO VEÍCULOS PESADOS E LEVES, UTILITÁRIOS E SUCATAS DIVERSAS",
+      "state": "GO",
+      "city": "Davinópolis",
+      "organizer": "MUNICIPIO DE DAVINOPOLIS",
+      "date_hint": "2026-12-07",
+      "date_hint_status": "pncp_deadline_unverified",
+      "source_url": "https://pncp.gov.br/app/editais/01130277000100/2026/94",
+      "pncp_control": "01130277000100-1-000094/2026",
       "review_status": "needs_edital_confirmation",
       "note": "PNCP proposal deadline is not independently verified auction start date.",
       "source": "pncp_official_api"
@@ -314,16 +392,9 @@
       "source": "pncp_official_api"
     }
   ],
-  "count": 24,
-  "requests": 8,
-  "errors": [
-    {
-      "modality": 13,
-      "week": 1,
-      "page": 1,
-      "error": "HTTP Error 429: Too Many Requests"
-    }
-  ],
+  "count": 30,
+  "requests": 10,
+  "errors": [],
   "events_automatically_published": 0,
   "note": "PNCP auctions are unverified candidates, not public scheduled events."
 }

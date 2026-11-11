@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-11-10T17:55:39+00:00",
-  "verified": 125,
-  "unique_events": 34,
+  "checked_at": "2026-11-11T18:53:14+00:00",
+  "verified": 134,
+  "unique_events": 46,
   "states_with_events": [
     "AM",
     "BA",
@@ -9,15 +9,15 @@
     "DF",
     "GO",
     "MA",
-    "MT",
     "MG",
+    "MT",
     "PA",
-    "PR",
     "PE",
     "PI",
+    "PR",
     "RJ",
-    "RS",
     "RO",
+    "RS",
     "SC",
     "SP"
   ],
@@ -33,25 +33,25 @@
     "SE",
     "TO"
   ],
-  "state_presence_percent": 63,
+  "state_presence_percent": 63.0,
   "coverage_definition": "Presence of at least one event, not fraction of all auctions discovered",
   "organizers": {
-    "Copart": 11,
-    "Freitas Leiloeiro": 3,
+    "Copart": 10,
+    "Detran MG": 12,
+    "Freitas Leiloeiro": 4,
     "Prefeitura de Cuiabá — Semob": 1,
     "VIP Leilões": 19
   },
-  "platform_events": 124,
-  "direct_event_links": 125,
+  "platform_events": 121,
+  "direct_event_links": 134,
   "calendar_links": 0,
   "curated_source_links": 1,
-  "curated_success": 5,
-  "curated_failure": 5,
+  "curated_success": 7,
+  "curated_failure": 2,
+  "quarantined_links": 6,
+  "official_state_events": 12,
+  "new_discoveries": 23,
   "failed": [
-    {
-      "id": "curitiba-smdt-17-2026",
-      "error": "Page.goto: Timeout 25000ms exceeded."
-    },
     {
       "id": "aracaju-3-leilao-2026-11-12",
       "error": "HTTP Error 403: Forbidden"
@@ -61,30 +61,28 @@
       "error": "HTTP Error 403: Forbidden"
     },
     {
-      "id": "curitiba-smdt-16-2026",
-      "error": "Page.goto: Timeout 25000ms exceeded."
-    },
-    {
-      "id": "curitiba-smdt-18-2026",
-      "error": "Page.goto: Timeout 25000ms exceeded."
-    },
-    {
-      "id": "lorena-2026-11-10",
-      "error": "not approved individual auction destination"
-    },
-    {
-      "id": "serranopolis-iguacu-pr-01-2026",
-      "error": "not approved individual auction destination"
-    },
-    {
       "id": "vieiras-001-2026",
-      "error": "not approved individual auction destination"
+      "error": "quarantined: missing direct auction destination"
+    },
+    {
+      "id": "curitiba-smdt-17-2026",
+      "error": "quarantined: missing direct auction destination"
     },
     {
       "id": "detran-ba-23-2026",
-      "error": "not approved individual auction destination"
+      "error": "quarantined: missing direct auction destination"
+    },
+    {
+      "id": "serranopolis-iguacu-pr-01-2026",
+      "error": "quarantined: missing direct auction destination"
+    },
+    {
+      "id": "curitiba-smdt-16-2026",
+      "error": "quarantined: missing direct auction destination"
+    },
+    {
+      "id": "curitiba-smdt-18-2026",
+      "error": "quarantined: missing direct auction destination"
     }
-  ],
-  "quarantined_links": 4,
-  "snapshot_review": "Historical Nov 10 collection, reviewed against direct-link policy for preview only; no new source fetch was performed"
+  ]
 }
