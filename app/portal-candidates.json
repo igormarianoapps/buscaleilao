@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-11-11T18:54:14+00:00",
+  "checked_at": "2026-11-11T18:56:56+00:00",
   "sources_checked": 10,
   "sources_reachable": 10,
-  "candidates_count": 49,
+  "candidates_count": 15,
   "events_automatically_published": 0,
   "source_statuses": [
     {
@@ -13,42 +13,42 @@
     {
       "id": "mg-patrimonio",
       "status": "ok",
-      "candidates": 30
+      "candidates": 11
     },
     {
       "id": "pr-curitiba",
       "status": "ok",
-      "candidates": 3
+      "candidates": 1
     },
     {
       "id": "go-detran",
       "status": "ok",
-      "candidates": 3
+      "candidates": 1
     },
     {
       "id": "mt-cuiaba",
       "status": "ok",
-      "candidates": 3
+      "candidates": 0
     },
     {
       "id": "sp-mogi",
       "status": "ok",
-      "candidates": 2
+      "candidates": 0
     },
     {
       "id": "sp-fernando-prestes",
       "status": "ok",
-      "candidates": 1
+      "candidates": 0
     },
     {
       "id": "mg-ibia",
       "status": "ok",
-      "candidates": 5
+      "candidates": 1
     },
     {
       "id": "mg-vieiras",
       "status": "ok",
-      "candidates": 2
+      "candidates": 1
     },
     {
       "id": "pr-serranopolis",
@@ -57,56 +57,6 @@
     }
   ],
   "candidates": [
-    {
-      "title": "Ir para o conteúdo principal",
-      "source_url": "https://www.mg.gov.br/planejamento/pagina/gestao-governamental/logistica-e-patrimonio/leiloes#main-content",
-      "source_kind": "official_portal",
-      "state_hint": "MG",
-      "source_registry_id": "mg-patrimonio",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "1 Ir para o Conteúdo",
-      "source_url": "https://www.mg.gov.br/planejamento/pagina/gestao-governamental/logistica-e-patrimonio/leiloes#main",
-      "source_kind": "official_portal",
-      "state_hint": "MG",
-      "source_registry_id": "mg-patrimonio",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "2 Ir para o menu",
-      "source_url": "https://www.mg.gov.br/planejamento/pagina/gestao-governamental/logistica-e-patrimonio/leiloes#block-mainnavigation",
-      "source_kind": "official_portal",
-      "state_hint": "MG",
-      "source_registry_id": "mg-patrimonio",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "3 Ir para a busca",
-      "source_url": "https://www.mg.gov.br/planejamento/pagina/gestao-governamental/logistica-e-patrimonio/leiloes#edit-termo-buscado",
-      "source_kind": "official_portal",
-      "state_hint": "MG",
-      "source_registry_id": "mg-patrimonio",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "4 Ir para o rodapé",
-      "source_url": "https://www.mg.gov.br/planejamento/pagina/gestao-governamental/logistica-e-patrimonio/leiloes#block-rodape",
-      "source_kind": "official_portal",
-      "state_hint": "MG",
-      "source_registry_id": "mg-patrimonio",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
     {
       "title": "Edital Leilão 011/2026 - Veículos",
       "source_url": "https://www.mg.gov.br/system/files/media/planejamento/documento_detalhado/2026/logistica-e-patrimonio/leiloes/edital_leilao_011_2026.pdf",
@@ -128,38 +78,8 @@
       "date_hint_status": "not_verified"
     },
     {
-      "title": "Código de Rastreamento - Envio dos CRV's - Leilão 010/2026",
-      "source_url": "https://www.mg.gov.br/system/files/media/planejamento/documento_detalhado/2026/logistica-e-patrimonio/leiloes/rastreamento-leilao-10-2026.pdf",
-      "source_kind": "official_portal",
-      "state_hint": "MG",
-      "source_registry_id": "mg-patrimonio",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "Edital Leilão 009/2026 - Aeronaves Oficiais",
-      "source_url": "https://www.mg.gov.br/system/files/media/planejamento/documento_detalhado/2026/logistica-e-patrimonio/leiloes/edital-de-leilao-009-2026.pdf",
-      "source_kind": "official_portal",
-      "state_hint": "MG",
-      "source_registry_id": "mg-patrimonio",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
       "title": "Edital Leilão 008/2026 - Veículos e Materiais",
       "source_url": "https://www.mg.gov.br/system/files/media/planejamento/documento_detalhado/2026/logistica-e-patrimonio/leiloes/sei_govmg-135911461-edital-de-leilao.pdf",
-      "source_kind": "official_portal",
-      "state_hint": "MG",
-      "source_registry_id": "mg-patrimonio",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "Código de Rastreamento - Envio dos CRV's - Leilão 008/2026",
-      "source_url": "https://www.mg.gov.br/system/files/media/planejamento/documento_detalhado/2026/logistica-e-patrimonio/leiloes/envio-dos-crvs-leilao-08_2026.pdf",
       "source_kind": "official_portal",
       "state_hint": "MG",
       "source_registry_id": "mg-patrimonio",
@@ -178,28 +98,8 @@
       "date_hint_status": "not_verified"
     },
     {
-      "title": "Código de Rastreamento - Envio dos CRV's - Leilão 007/2026",
-      "source_url": "https://www.mg.gov.br/system/files/media/planejamento/documento_detalhado/2026/logistica-e-patrimonio/leiloes/envio-dos-crvs-leilao-07_2026.pdf",
-      "source_kind": "official_portal",
-      "state_hint": "MG",
-      "source_registry_id": "mg-patrimonio",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
       "title": "Edital Leilão 006/2026 - Veículos e Materiais",
       "source_url": "https://www.mg.gov.br/system/files/media/planejamento/documento_detalhado/2026/sei_govmg-134779713-edital-de-leilao_0.pdf",
-      "source_kind": "official_portal",
-      "state_hint": "MG",
-      "source_registry_id": "mg-patrimonio",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "Código de Rastreamento - Envio dos CRV's - Leilão 006/2026",
-      "source_url": "https://www.mg.gov.br/system/files/media/planejamento/documento_detalhado/2026/logistica-e-patrimonio/leiloes/rastreio-leilao-006-2026.pdf",
       "source_kind": "official_portal",
       "state_hint": "MG",
       "source_registry_id": "mg-patrimonio",
@@ -218,38 +118,8 @@
       "date_hint_status": "not_verified"
     },
     {
-      "title": "Código de Rastreamento - Envio dos CRV's - Leilão 005/2026",
-      "source_url": "https://www.mg.gov.br/system/files/media/planejamento/documento_detalhado/2026/codigo-rastreamento-leilao-005-2026-pag-2-corrigida.pdf",
-      "source_kind": "official_portal",
-      "state_hint": "MG",
-      "source_registry_id": "mg-patrimonio",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "Código de Rastreamento - Envio dos CRV's - Leilão 005/2026",
-      "source_url": "https://www.mg.gov.br/system/files/media/planejamento/documento_detalhado/2026/logistica-e-patrimonio/leiloes/codigo_rastreamento_leilao_005_2026.pdf",
-      "source_kind": "official_portal",
-      "state_hint": "MG",
-      "source_registry_id": "mg-patrimonio",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
       "title": "Edital Leilão 004/2026 - Veículos",
       "source_url": "https://www.mg.gov.br/system/files/media/planejamento/documento_detalhado/2026/logistica-e-patrimonio/leiloes/sei_govmg_132968162_edital_leilao_004_2026.pdf",
-      "source_kind": "official_portal",
-      "state_hint": "MG",
-      "source_registry_id": "mg-patrimonio",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "Código de Rastreamento - Envio dos CRV's - Leilão 004/2026",
-      "source_url": "https://www.mg.gov.br/system/files/media/planejamento/documento_detalhado/2026/logistica-e-patrimonio/leiloes/doc-rastreamento-crvs.pdf",
       "source_kind": "official_portal",
       "state_hint": "MG",
       "source_registry_id": "mg-patrimonio",
@@ -268,28 +138,8 @@
       "date_hint_status": "not_verified"
     },
     {
-      "title": "Código de Rastreamento - Envio dos CRV's - Leilão 003/2026",
-      "source_url": "https://www.mg.gov.br/system/files/media/planejamento/documento_detalhado/2026/rastreamento-leilao-003-2026.pdf",
-      "source_kind": "official_portal",
-      "state_hint": "MG",
-      "source_registry_id": "mg-patrimonio",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
       "title": "Edital Leilão 002/2026 - Veículos",
       "source_url": "https://www.mg.gov.br/system/files/media/documento_detalhado/2026-01/SEI_GOVMG%20-%20131097094%20-%20Edital%20de%20Leil%C3%A3o%20002%202026.pdf",
-      "source_kind": "official_portal",
-      "state_hint": "MG",
-      "source_registry_id": "mg-patrimonio",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "Código de Rastreamento - Envio dos CRV's - Leilão 002/2026",
-      "source_url": "https://www.mg.gov.br/system/files/media/planejamento/documento_detalhado/2026/logistica-e-patrimonio/leiloes/codigo-de-rastreamento.pdf",
       "source_kind": "official_portal",
       "state_hint": "MG",
       "source_registry_id": "mg-patrimonio",
@@ -308,71 +158,11 @@
       "date_hint_status": "not_verified"
     },
     {
-      "title": "Código de Rastreamento - Envio dos CRV's - Leilão 001/2026",
-      "source_url": "https://www.mg.gov.br/system/files/media/planejamento/documento_detalhado/2026/logistica-e-patrimonio/leiloes/rastreamento_crvs.pdf",
+      "title": "clique aqui",
+      "source_url": "https://www.mg.gov.br/system/files/media/planejamento/documento_detalhado/2023/publicacao-do-leilao-11_alt.pdf",
       "source_kind": "official_portal",
       "state_hint": "MG",
       "source_registry_id": "mg-patrimonio",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "LEILÕES 2025",
-      "source_url": "https://www.mg.gov.br/planejamento/pagina/gestao-governamental/logistica-e-patrimonio/leiloes#leiloes-2025",
-      "source_kind": "official_portal",
-      "state_hint": "MG",
-      "source_registry_id": "mg-patrimonio",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "Edital Leilão 017/2025 - Veículos e Materiais",
-      "source_url": "https://www.mg.gov.br/system/files/media/documento_detalhado/2025-12/SEI_GOVMG%20-%20129270376%20-%20Edital%20de%20Leil%C3%A3o%20017%202025.pdf",
-      "source_kind": "official_portal",
-      "state_hint": "MG",
-      "source_registry_id": "mg-patrimonio",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "Edital Leilão 016/2025 - Veículos e Materiais",
-      "source_url": "https://www.mg.gov.br/system/files/media/documento_detalhado/2025-12/Edital%2016%20com%20Errata.pdf",
-      "source_kind": "official_portal",
-      "state_hint": "MG",
-      "source_registry_id": "mg-patrimonio",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "Edital Leilão 015/2025 - Aeronaves",
-      "source_url": "https://www.mg.gov.br/system/files/media/documento_detalhado/2025-11/SEI_GOVMG%20-%20127653535%20-%20Edital%20de%20Leil%C3%A3o%20015%202025.pdf",
-      "source_kind": "official_portal",
-      "state_hint": "MG",
-      "source_registry_id": "mg-patrimonio",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "Ir para conteúdo",
-      "source_url": "https://transito.curitiba.pr.gov.br/patio/leilao-eletronico-de-veiculos/52#conteudoAcessibilidade",
-      "source_kind": "official_portal",
-      "state_hint": "PR",
-      "source_registry_id": "pr-curitiba",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "Skip Navigation Links",
-      "source_url": "https://transito.curitiba.pr.gov.br/patio/leilao-eletronico-de-veiculos/52#ucMenuPrincipal_menuPortal_SkipLink",
-      "source_kind": "official_portal",
-      "state_hint": "PR",
-      "source_registry_id": "pr-curitiba",
       "review_status": "needs_edital_and_individual_lot_link",
       "date_hint": null,
       "date_hint_status": "not_verified"
@@ -388,131 +178,11 @@
       "date_hint_status": "not_verified"
     },
     {
-      "title": "Leilões",
-      "source_url": "https://goias.gov.br/detran/leiloes/",
-      "source_kind": "official_portal",
-      "state_hint": "GO",
-      "source_registry_id": "go-detran",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "Credenciamento para Examinadores Externos do Detran-GO",
-      "source_url": "https://goias.gov.br/detran/wp-content/uploads/sites/8/2024/04/EDITAL-DE-PROCESSO-DE-CREDENCIAMENTO-PARA-EXAMINADORES-EXTERNOS-DO-DETRAN-GO-No-01-2024.pdf",
-      "source_kind": "official_portal",
-      "state_hint": "GO",
-      "source_registry_id": "go-detran",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "Documento de leilão",
+      "title": "Detran-GO realiza leilão de veículos de mais de 2 mil veículos",
       "source_url": "https://goias.gov.br/detran/detran-go-realiza-leilao-de-veiculos-de-mais-de-2-mil-veiculos/",
       "source_kind": "official_portal",
       "state_hint": "GO",
       "source_registry_id": "go-detran",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "Conteúdo",
-      "source_url": "https://www.cuiaba.mt.gov.br/noticias/semob-realiza-o-4o-leilao-do-ano-com-1-065-veiculos-disponiveis#content",
-      "source_kind": "official_portal",
-      "state_hint": "MT",
-      "source_registry_id": "mt-cuiaba",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "Menu",
-      "source_url": "https://www.cuiaba.mt.gov.br/noticias/semob-realiza-o-4o-leilao-do-ano-com-1-065-veiculos-disponiveis#navbar",
-      "source_kind": "official_portal",
-      "state_hint": "MT",
-      "source_registry_id": "mt-cuiaba",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "Busca",
-      "source_url": "https://www.cuiaba.mt.gov.br/noticias/semob-realiza-o-4o-leilao-do-ano-com-1-065-veiculos-disponiveis#search",
-      "source_kind": "official_portal",
-      "state_hint": "MT",
-      "source_registry_id": "mt-cuiaba",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "Imprimir",
-      "source_url": "https://www.mogidascruzes.sp.gov.br/noticia/no-dia-6-de-novembro-prefeitura-fara-leilao-online-para-venda-de-84-veiculos?imprimir=1",
-      "source_kind": "official_portal",
-      "state_hint": "SP",
-      "source_registry_id": "sp-mogi",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "Últimas notícias",
-      "source_url": "https://www.mogidascruzes.sp.gov.br/noticia/no-dia-6-de-novembro-prefeitura-fara-leilao-online-para-venda-de-84-veiculos#right-tab-noticias",
-      "source_kind": "official_portal",
-      "state_hint": "SP",
-      "source_registry_id": "sp-mogi",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "08/10/2026                                                                                         \n\n                                                                                         \n                                                 ",
-      "source_url": "https://www.fernandoprestes.sp.gov.br/portal/download/licitacoes-anexos/RBxxjT/",
-      "source_kind": "official_portal",
-      "state_hint": "SP",
-      "source_registry_id": "sp-fernando-prestes",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "Ir para o conteúdo",
-      "source_url": "https://www.ibia.mg.gov.br/edital-de-licitacao/leilao-001-2026/#content",
-      "source_kind": "official_portal",
-      "state_hint": "MG",
-      "source_registry_id": "mg-ibia",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "Ir para o menu",
-      "source_url": "https://www.ibia.mg.gov.br/edital-de-licitacao/leilao-001-2026/#menu",
-      "source_kind": "official_portal",
-      "state_hint": "MG",
-      "source_registry_id": "mg-ibia",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "Ir para a busca",
-      "source_url": "https://www.ibia.mg.gov.br/edital-de-licitacao/leilao-001-2026/#busca",
-      "source_kind": "official_portal",
-      "state_hint": "MG",
-      "source_registry_id": "mg-ibia",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "Ir para o rodapé",
-      "source_url": "https://www.ibia.mg.gov.br/edital-de-licitacao/leilao-001-2026/#rodape",
-      "source_kind": "official_portal",
-      "state_hint": "MG",
-      "source_registry_id": "mg-ibia",
       "review_status": "needs_edital_and_individual_lot_link",
       "date_hint": null,
       "date_hint_status": "not_verified"
@@ -530,16 +200,6 @@
     {
       "title": "Leilão Nº 001/2026",
       "source_url": "https://vieiras.mg.gov.br/processos-licitatorios/439-leilao-no-001-2026",
-      "source_kind": "official_portal",
-      "state_hint": "MG",
-      "source_registry_id": "mg-vieiras",
-      "review_status": "needs_edital_and_individual_lot_link",
-      "date_hint": null,
-      "date_hint_status": "not_verified"
-    },
-    {
-      "title": "EDITAL Nº 09/2026",
-      "source_url": "https://vieiras.mg.gov.br/processos-licitatorios/412-edital-no-09-2026",
       "source_kind": "official_portal",
       "state_hint": "MG",
       "source_registry_id": "mg-vieiras",

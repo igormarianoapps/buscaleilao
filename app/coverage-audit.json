@@ -76,8 +76,8 @@
   ],
   "registry_sources_checked": 10,
   "registry_sources_reachable": 10,
-  "unverified_portal_leads": 49,
-  "review_queue_items": 99,
+  "unverified_portal_leads": 15,
+  "review_queue_items": 72,
   "coverage_definition": "States with >=1 distinct event, not percentage of national auctions; registry entries are research sources, not active collectors or verified events",
-  "generated_at": "2026-11-11T18:54:26+00:00"
+  "generated_at": "2026-11-11T18:56:57+00:00"
 }
