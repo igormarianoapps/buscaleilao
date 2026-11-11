@@ -18,7 +18,7 @@ class PlatformReviewTests(unittest.TestCase):
     item={"url_kind":"candidate_direct","category_hint":"unknown"}
     x=build({"platforms":{"flex":{"candidates":[item]*25}}})
     self.assertEqual(x["candidates_count"],0)
-    self.assertNotIn("auction_date",x["items"][0])
+    self.assertEqual(x["items"],[])
 if __name__=="__main__":unittest.main()
 
 class UnknownCandidateTests(unittest.TestCase):
