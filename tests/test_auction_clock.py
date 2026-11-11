@@ -26,9 +26,10 @@ class AuctionClockTests(unittest.TestCase):
         now=datetime(2026,11,4,0,30,tzinfo=timezone.utc)
         stamp="2026-11-04T00:28:00+00:00"
         feed={"updated_at":stamp,"events":[{
-            "id":"go-event","title":"Leilão de veículos","state":"GO",
-            "auction_date":"2026-11-03","organizer":"Detran",
-            "source_url":"https://goias.gov.br/evento"}]}
+            "id":"copart-go-2026-11-03","title":"Leilão de veículos","state":"GO",
+            "auction_date":"2026-11-03","organizer":"Copart",
+            "source_link_type":"event","link_verified":True,"destination_verified":True,
+            "source_url":"https://www.copart.com.br/saleListResult/10580/2026-11-03"}]}
         report={"checked_at":stamp,"verified":1,"unique_events":1}
         self.assertEqual(validate_feed(feed,report,now),[])
 
