@@ -1,13 +1,14 @@
 {
-  "checked_at": "2026-11-11T21:06:19+00:00",
+  "checked_at": "2026-11-11T21:11:56+00:00",
   "total": 16,
-  "reachable": 12,
-  "candidate_links": 72,
+  "reachable": 13,
+  "candidate_links": 87,
   "published": 0,
   "platforms": {
     "leilo": {
       "status": "reachable",
-      "final_url": "https://leilo.com.br/leilao/",
+      "scanned_pages": 1,
+      "pages_reached": 1,
       "links": [
         {
           "candidate_kind": "individual_lot",
@@ -237,18 +238,23 @@
       ],
       "candidates": 25,
       "mode": "public_browser",
-      "publication_allowed": false
+      "publication_allowed": false,
+      "errors": []
     },
     "mcleilao": {
-      "status": "blocked_or_unavailable",
-      "error": "redirected outside first-party host",
+      "status": "reachable",
+      "scanned_pages": 2,
+      "pages_reached": 2,
       "links": [],
       "candidates": 0,
-      "publication_allowed": false
+      "mode": "public_browser",
+      "publication_allowed": false,
+      "errors": []
     },
     "flex": {
       "status": "reachable",
-      "final_url": "https://www.flexleiloes.com.br/",
+      "scanned_pages": 1,
+      "pages_reached": 1,
       "links": [
         {
           "candidate_kind": "possible_event",
@@ -289,11 +295,13 @@
       ],
       "candidates": 4,
       "mode": "public_browser",
-      "publication_allowed": false
+      "publication_allowed": false,
+      "errors": []
     },
     "parque": {
       "status": "reachable",
-      "final_url": "https://www.parquedosleiloes.com.br/leiloes",
+      "scanned_pages": 1,
+      "pages_reached": 1,
       "links": [
         {
           "candidate_kind": "possible_event",
@@ -406,11 +414,13 @@
       ],
       "candidates": 12,
       "mode": "public_browser",
-      "publication_allowed": false
+      "publication_allowed": false,
+      "errors": []
     },
     "sodre": {
       "status": "reachable",
-      "final_url": "https://www.sodresantoro.com.br/",
+      "scanned_pages": 2,
+      "pages_reached": 2,
       "links": [
         {
           "candidate_kind": "possible_event",
@@ -636,31 +646,55 @@
           "state_hint": "SP",
           "status": "unverified_candidate",
           "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "Leilão Toyota",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=toyota",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "Leilão Hyundai",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=hyundai",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
         }
       ],
-      "candidates": 25,
+      "candidates": 27,
       "mode": "public_browser",
-      "publication_allowed": false
+      "publication_allowed": false,
+      "errors": []
     },
     "copart": {
       "status": "reachable",
-      "final_url": "https://www.copart.com.br/salesListResult/",
+      "scanned_pages": 1,
+      "pages_reached": 1,
       "links": [],
       "candidates": 0,
       "mode": "public_browser",
-      "publication_allowed": false
+      "publication_allowed": false,
+      "errors": []
     },
     "loop": {
       "status": "reachable",
-      "final_url": "https://loopbrasil.com/",
+      "scanned_pages": 1,
+      "pages_reached": 1,
       "links": [],
       "candidates": 0,
       "mode": "public_browser",
-      "publication_allowed": false
+      "publication_allowed": false,
+      "errors": []
     },
     "freitas": {
       "status": "reachable",
-      "final_url": "https://www.freitasleiloeiro.com.br/",
+      "scanned_pages": 1,
+      "pages_reached": 1,
       "links": [
         {
           "candidate_kind": "generic_category",
@@ -692,40 +726,59 @@
       ],
       "candidates": 3,
       "mode": "public_browser",
-      "publication_allowed": false
+      "publication_allowed": false,
+      "errors": []
     },
     "milan": {
       "status": "blocked_or_unavailable",
-      "error": "HTTP 403",
-      "links": [],
-      "candidates": 0,
-      "publication_allowed": false
-    },
-    "vip": {
-      "status": "reachable",
-      "final_url": "https://www.vipleiloes.com.br/agenda",
+      "scanned_pages": 1,
+      "pages_reached": 0,
       "links": [],
       "candidates": 0,
       "mode": "public_browser",
-      "publication_allowed": false
+      "publication_allowed": false,
+      "errors": [
+        "HTTP 403"
+      ]
+    },
+    "vip": {
+      "status": "reachable",
+      "scanned_pages": 1,
+      "pages_reached": 1,
+      "links": [],
+      "candidates": 0,
+      "mode": "public_browser",
+      "publication_allowed": false,
+      "errors": []
     },
     "hisa": {
       "status": "blocked_or_unavailable",
-      "error": "HTTP 403",
+      "scanned_pages": 1,
+      "pages_reached": 0,
       "links": [],
       "candidates": 0,
-      "publication_allowed": false
+      "mode": "public_browser",
+      "publication_allowed": false,
+      "errors": [
+        "HTTP 403"
+      ]
     },
     "bolsa": {
       "status": "blocked_or_unavailable",
-      "error": "HTTP 403",
+      "scanned_pages": 1,
+      "pages_reached": 0,
       "links": [],
       "candidates": 0,
-      "publication_allowed": false
+      "mode": "public_browser",
+      "publication_allowed": false,
+      "errors": [
+        "HTTP 403"
+      ]
     },
     "vardana": {
       "status": "reachable",
-      "final_url": "https://www.vardanaleiloes.com.br/vardana/index",
+      "scanned_pages": 1,
+      "pages_reached": 1,
       "links": [
         {
           "candidate_kind": "possible_event",
@@ -748,11 +801,13 @@
       ],
       "candidates": 2,
       "mode": "public_browser",
-      "publication_allowed": false
+      "publication_allowed": false,
+      "errors": []
     },
     "claudio": {
       "status": "reachable",
-      "final_url": "https://www.claudiokussleiloes.com.br/?acao=home",
+      "scanned_pages": 1,
+      "pages_reached": 1,
       "links": [
         {
           "candidate_kind": "possible_event",
@@ -766,23 +821,146 @@
       ],
       "candidates": 1,
       "mode": "public_browser",
-      "publication_allowed": false
+      "publication_allowed": false,
+      "errors": []
     },
     "palacio": {
       "status": "reachable",
-      "final_url": "https://www.palaciodosleiloes.com.br/site/leilao.php",
-      "links": [],
-      "candidates": 0,
+      "scanned_pages": 3,
+      "pages_reached": 3,
+      "links": [
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "palacio",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Materiais outlet mix e outros comitentes \n                 Leilão 8882  231 eletrodomestico  Aberto para lance",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8882",
+          "state_hint": "MG",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "palacio",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Motocicletas recuperadas de financiamento do banco pan \n                 Leilão 8902  109 veiculo  Aberto para lan",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8902",
+          "state_hint": "MG",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "palacio",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Veículos sinistrados e sucatas \n                 Leilão 8903  251 veiculo  Aberto para lance",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8903",
+          "state_hint": "MG",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "palacio",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Veículos no estado que se encontram da movida - leilão virtual \n                 Leilão 8909  165 veiculo  Aberto ",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8909",
+          "state_hint": "MG",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "palacio",
+          "title": "13 LEILÃO \n                  Sexta-Feira \n                 13/11 Veículos sinistrados e sucatas \n                 Leilão 8905  4 veiculo  Aberto para lance",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8905",
+          "state_hint": "MG",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "palacio",
+          "title": "13 LEILÃO \n                  Sexta-Feira \n                 13/11 Veículos em bom estado recuperados de financiamento \n                 Leilão 8906  51 veiculo  Aberto para lance",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8906",
+          "state_hint": "MG",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "palacio",
+          "title": "14 LEILÃO \n                  Sábado \n                 14/11 Leilão de venda exclusiva de veículos premium \n                 Leilão 8874  138 veiculo  Aberto para lance",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8874",
+          "state_hint": "MG",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "palacio",
+          "title": "16 LEILÃO \n                  Segunda-Feira \n                 16/11 Leilão virtual - materiais diversos e outros comitentes \n                 Leilão 8899  69 eletrodomestico  Aberto",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8899",
+          "state_hint": "MG",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "palacio",
+          "title": "17 LEILÃO \n                  Terça-Feira \n                 17/11 Materiais diversos, outlet mix e outros comitentes \n                 Leilão 8908  54 eletrodomestico  Aberto para l",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8908",
+          "state_hint": "MG",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "palacio",
+          "title": "18 LEILÃO \n                  Quarta-Feira \n                 18/11 Veículos em bom estado e caminhões e equipamentos da csn \n                 Leilão 8893  37 veiculo  Aberto para la",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8893",
+          "state_hint": "MG",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "palacio",
+          "title": "23 LEILÃO \n                  Segunda-Feira \n                 23/11 Peças de veículos em catalão/ go \n                 Leilão 8856  529 eletrodomestico  Aberto para lance",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8856",
+          "state_hint": "MG",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "palacio",
+          "title": "25 LEILÃO \n                  Quarta-Feira \n                 25/11 Veículos em bom estado e caminhões, máquinas e equipamentos da vale s.a \n                 Leilão 8898  12 veiculo ",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8898",
+          "state_hint": "MG",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "palacio",
+          "title": "09 LEILÃO \n                  Quarta-Feira \n                 09/12 Helicópteros da vale s.a e veículos em bom estado recuperados de financiamento \n                 Leilão 8907  1 ve",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8907",
+          "state_hint": "MG",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        }
+      ],
+      "candidates": 13,
       "mode": "public_browser",
-      "publication_allowed": false
+      "publication_allowed": false,
+      "errors": []
     },
     "rogerio": {
       "status": "reachable",
-      "final_url": "https://www.rogeriomenezes.com.br/leiloes",
+      "scanned_pages": 1,
+      "pages_reached": 1,
       "links": [],
       "candidates": 0,
       "mode": "public_browser",
-      "publication_allowed": false
+      "publication_allowed": false,
+      "errors": []
     }
   }
 }

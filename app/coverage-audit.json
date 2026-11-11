@@ -1,5 +1,5 @@
 {
-  "snapshot_checked_at": "2026-11-11T21:07:04+00:00",
+  "snapshot_checked_at": "2026-11-11T21:12:46+00:00",
   "unique_events": 51,
   "event_rows": 161,
   "states_with_events": [
@@ -88,5 +88,5 @@
   "unverified_portal_leads": 15,
   "review_queue_items": 72,
   "coverage_definition": "States with >=1 distinct event, not percentage of national auctions; registry entries are research sources, not active collectors or verified events",
-  "generated_at": "2026-11-11T21:08:15+00:00"
+  "generated_at": "2026-11-11T21:13:54+00:00"
 }

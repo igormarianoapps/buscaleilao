@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-11-11T21:06:19+00:00",
+  "checked_at": "2026-11-11T21:11:56+00:00",
   "total": 16,
   "reachable": 15,
-  "candidate_links": 84,
+  "candidate_links": 99,
   "published": 0,
   "platforms": {
     "leilo": {
@@ -242,7 +242,7 @@
     "mcleilao": {
       "availability": "reachable",
       "http_status": "reachable",
-      "browser_status": "blocked_or_unavailable",
+      "browser_status": "reachable",
       "discovered_links": 0,
       "candidate_events": [],
       "publication_allowed": false
@@ -413,7 +413,7 @@
       "availability": "reachable",
       "http_status": "unreachable",
       "browser_status": "reachable",
-      "discovered_links": 25,
+      "discovered_links": 27,
       "candidate_events": [
         {
           "candidate_kind": "possible_event",
@@ -636,6 +636,24 @@
           "platform_id": "sodre",
           "title": "Leilão Iveco",
           "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=iveco",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "Leilão Toyota",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=toyota",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "Leilão Hyundai",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=hyundai",
           "state_hint": "SP",
           "status": "unverified_candidate",
           "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
@@ -886,8 +904,126 @@
       "availability": "reachable",
       "http_status": "reachable",
       "browser_status": "reachable",
-      "discovered_links": 0,
-      "candidate_events": [],
+      "discovered_links": 13,
+      "candidate_events": [
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "palacio",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Materiais outlet mix e outros comitentes \n                 Leilão 8882  231 eletrodomestico  Aberto para lance",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8882",
+          "state_hint": "MG",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "palacio",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Motocicletas recuperadas de financiamento do banco pan \n                 Leilão 8902  109 veiculo  Aberto para lan",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8902",
+          "state_hint": "MG",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "palacio",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Veículos sinistrados e sucatas \n                 Leilão 8903  251 veiculo  Aberto para lance",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8903",
+          "state_hint": "MG",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "palacio",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Veículos no estado que se encontram da movida - leilão virtual \n                 Leilão 8909  165 veiculo  Aberto ",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8909",
+          "state_hint": "MG",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "palacio",
+          "title": "13 LEILÃO \n                  Sexta-Feira \n                 13/11 Veículos sinistrados e sucatas \n                 Leilão 8905  4 veiculo  Aberto para lance",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8905",
+          "state_hint": "MG",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "palacio",
+          "title": "13 LEILÃO \n                  Sexta-Feira \n                 13/11 Veículos em bom estado recuperados de financiamento \n                 Leilão 8906  51 veiculo  Aberto para lance",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8906",
+          "state_hint": "MG",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "palacio",
+          "title": "14 LEILÃO \n                  Sábado \n                 14/11 Leilão de venda exclusiva de veículos premium \n                 Leilão 8874  138 veiculo  Aberto para lance",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8874",
+          "state_hint": "MG",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "palacio",
+          "title": "16 LEILÃO \n                  Segunda-Feira \n                 16/11 Leilão virtual - materiais diversos e outros comitentes \n                 Leilão 8899  69 eletrodomestico  Aberto",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8899",
+          "state_hint": "MG",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "palacio",
+          "title": "17 LEILÃO \n                  Terça-Feira \n                 17/11 Materiais diversos, outlet mix e outros comitentes \n                 Leilão 8908  54 eletrodomestico  Aberto para l",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8908",
+          "state_hint": "MG",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "palacio",
+          "title": "18 LEILÃO \n                  Quarta-Feira \n                 18/11 Veículos em bom estado e caminhões e equipamentos da csn \n                 Leilão 8893  37 veiculo  Aberto para la",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8893",
+          "state_hint": "MG",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "palacio",
+          "title": "23 LEILÃO \n                  Segunda-Feira \n                 23/11 Peças de veículos em catalão/ go \n                 Leilão 8856  529 eletrodomestico  Aberto para lance",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8856",
+          "state_hint": "MG",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "palacio",
+          "title": "25 LEILÃO \n                  Quarta-Feira \n                 25/11 Veículos em bom estado e caminhões, máquinas e equipamentos da vale s.a \n                 Leilão 8898  12 veiculo ",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8898",
+          "state_hint": "MG",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "palacio",
+          "title": "09 LEILÃO \n                  Quarta-Feira \n                 09/12 Helicópteros da vale s.a e veículos em bom estado recuperados de financiamento \n                 Leilão 8907  1 ve",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8907",
+          "state_hint": "MG",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        }
+      ],
       "publication_allowed": false
     },
     "rogerio": {

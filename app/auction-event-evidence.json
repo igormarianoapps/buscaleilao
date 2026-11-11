@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-11-11T21:07:04+00:00",
+  "checked_at": "2026-11-11T21:12:46+00:00",
   "sources_attempted": 16,
   "events_published": 0,
-  "pages_checked": 35,
-  "pages_extracted": 25,
+  "pages_checked": 40,
+  "pages_extracted": 30,
   "platforms": {
     "leilo": {
       "sites_scanned": 5,
@@ -531,8 +531,10 @@
         {
           "platform_id": "vardana",
           "candidate_url": "https://www.vardanaleiloes.com.br/vardana/veiculos.php?lei=1085",
-          "date_mentions": [],
-          "vehicle_text_found": false,
+          "date_mentions": [
+            "2026-11-12"
+          ],
+          "vehicle_text_found": true,
           "nonvehicle_text_found": false,
           "lot_mentions": 109,
           "status": "unconfirmed_event",
@@ -594,9 +596,95 @@
       "verified_events": 0
     },
     "palacio": {
-      "sites_scanned": 0,
-      "extracted": 0,
-      "unverified_evidence": [],
+      "sites_scanned": 5,
+      "extracted": 5,
+      "unverified_evidence": [
+        {
+          "platform_id": "palacio",
+          "candidate_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8882",
+          "date_mentions": [],
+          "vehicle_text_found": false,
+          "nonvehicle_text_found": false,
+          "lot_mentions": 0,
+          "status": "unconfirmed_event",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        },
+        {
+          "platform_id": "palacio",
+          "candidate_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8902",
+          "date_mentions": [],
+          "vehicle_text_found": false,
+          "nonvehicle_text_found": false,
+          "lot_mentions": 0,
+          "status": "unconfirmed_event",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        },
+        {
+          "platform_id": "palacio",
+          "candidate_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8903",
+          "date_mentions": [],
+          "vehicle_text_found": false,
+          "nonvehicle_text_found": false,
+          "lot_mentions": 0,
+          "status": "unconfirmed_event",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        },
+        {
+          "platform_id": "palacio",
+          "candidate_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8909",
+          "date_mentions": [],
+          "vehicle_text_found": false,
+          "nonvehicle_text_found": false,
+          "lot_mentions": 0,
+          "status": "unconfirmed_event",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        },
+        {
+          "platform_id": "palacio",
+          "candidate_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8905",
+          "date_mentions": [],
+          "vehicle_text_found": false,
+          "nonvehicle_text_found": false,
+          "lot_mentions": 0,
+          "status": "unconfirmed_event",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        }
+      ],
       "errors": [],
       "verified_events": 0
     },
