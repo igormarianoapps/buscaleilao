@@ -1,0 +1,59 @@
+"""Fail-closed auction destination policy. Review is per specific auction, not per domain alone."""
+from urllib.parse import urlsplit, parse_qs
+import re
+
+# Curated organizers require both independently corroborated official notice
+# and an individually approved event destination. No generic domain whitelist.
+APPROVED_CURATED = {
+    "cuiaba-semob-4-2026-11-11": (
+        "www.cuiaba.mt.gov.br",
+        "https://www.focoleiloes.com.br/leilao/497/lotes",
+        "Prefeitura de Cuiabá — Semob",
+        "2026-11-11",
+    ),
+    "detran-go-03-2026-11-09": (
+        "goias.gov.br",
+        "https://pmklog.com.br/leilao/evento/leilao-detran/?evento=fa724af3-d396-11f1-a2f8-02420a000014",
+        "DETRAN Goiás",
+        "2026-11-09",
+    ),
+}
+def normalized_url(url):
+    if not isinstance(url,str) or not url or any(c.isspace() for c in url):
+        return None
+    try:
+        p=urlsplit(url)
+        if (p.scheme!='https' or not p.hostname or p.username or p.password
+                or p.port not in (None,443) or p.fragment or '\\' in url):
+            return None
+        if not re.fullmatch(r'[a-z0-9.-]+',p.hostname) or '..' in p.hostname:
+            return None
+        return p
+    except ValueError:
+        return None
+
+def valid_destination(row):
+    """Reject news, homepages, typosquatting, unreviewed sources and calendars."""
+    original=normalized_url(row.get('source_url'))
+    target=normalized_url(row.get('event_url') or row.get('source_url'))
+    if not original or not target: return False
+    org=row.get('organizer')
+    if org=='Copart':
+        from browser_collect import copart_detail_url
+        return (not row.get('event_url') and row.get('source_link_type')=='event'
+                and target.hostname in ('copart.com.br','www.copart.com.br')
+                and copart_detail_url(row['source_url'],row.get('auction_date')) is not None)
+    if org=='VIP Leilões':
+        from browser_collect import vip_detail_url
+        return (not row.get('event_url') and row.get('source_link_type')=='event'
+                and target.hostname in ('vipleiloes.com.br','www.vipleiloes.com.br')
+                and vip_detail_url(row['source_url']) is not None)
+    if org=='Freitas Leiloeiro':
+        from freitas_collect import official_id
+        return not row.get('event_url') and official_id(row['source_url']) is not None
+    approved=APPROVED_CURATED.get(row.get('id'))
+    if approved is None: return False
+    source_host,direct,approved_org,approved_date=approved
+    return (original.hostname==source_host and row.get('event_url')==direct
+            and row.get('organizer')==approved_org
+            and row.get('auction_date')==approved_date)
