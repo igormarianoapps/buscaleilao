@@ -14,7 +14,7 @@ STAMP="2026-11-03T16:59:00+00:00"
 def sample():
     row={"id":"one","title":"Leilão de veículos","state":"GO","city":"Goiânia",
          "auction_date":"2026-11-09","auction_time":None,"organizer":"Copart",
-         "source_link_type":"event","link_verified":True,
+         "source_link_type":"event","link_verified":True,"destination_verified":True,
          "source_url":"https://www.copart.com.br/saleListResult/10580/2026-11-09"}
     return {"updated_at":STAMP,"events":[row]}, {"checked_at":STAMP,
         "verified":1,"unique_events":1}
@@ -54,7 +54,9 @@ class GateTests(unittest.TestCase):
         self.assertTrue(validate_feed(feed,report,NOW))
     def test_verified_pmklog_auction_url_allowed_separately_from_official_source(self):
         feed,report=sample()
-        feed["events"][0]["organizer"]="Detran"
+        feed["events"][0].update({"id":"detran-go-03-2026-11-09",
+            "organizer":"DETRAN Goiás","source_type":"state",
+            "source_url":"https://goias.gov.br/detran/detran-go-realiza-leilao-de-veiculos-de-mais-de-2-mil-veiculos/"})
         feed["events"][0]["source_link_type"]=None
         feed["events"][0]["event_url"]="https://pmklog.com.br/leilao/evento/leilao-detran/?evento=fa724af3-d396-11f1-a2f8-02420a000014"
         self.assertEqual(validate_feed(feed,report,NOW),[])
