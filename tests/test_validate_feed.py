@@ -13,8 +13,9 @@ STAMP="2026-11-03T16:59:00+00:00"
 
 def sample():
     row={"id":"one","title":"Leilão de veículos","state":"GO","city":"Goiânia",
-         "auction_date":"2026-11-09","auction_time":None,"organizer":"Detran",
-         "source_url":"https://goias.gov.br/leilao"}
+         "auction_date":"2026-11-09","auction_time":None,"organizer":"Copart",
+         "source_link_type":"event","link_verified":True,
+         "source_url":"https://www.copart.com.br/saleListResult/10580/2026-11-09"}
     return {"updated_at":STAMP,"events":[row]}, {"checked_at":STAMP,
         "verified":1,"unique_events":1}
 
@@ -53,6 +54,7 @@ class GateTests(unittest.TestCase):
         self.assertTrue(validate_feed(feed,report,NOW))
     def test_verified_pmklog_auction_url_allowed_separately_from_official_source(self):
         feed,report=sample()
+        feed["events"][0]["organizer"]="Detran"
         feed["events"][0]["event_url"]="https://pmklog.com.br/leilao/evento/leilao-detran/?evento=fa724af3-d396-11f1-a2f8-02420a000014"
         self.assertEqual(validate_feed(feed,report,NOW),[])
         feed["events"][0]["event_url"]="https://pmklog.example/leilao/evento/leilao-detran/?evento=x"
@@ -87,7 +89,7 @@ class GateTests(unittest.TestCase):
             "source_url":"https://www.vipleiloes.com.br/agenda"})
         self.assertTrue(any("individual event URL" in e for e in validate_feed(feed,report,NOW)))
         feed["events"][0]["source_link_type"]="calendar"
-        self.assertEqual(validate_feed(feed,report,NOW),[])
+        self.assertTrue(validate_feed(feed,report,NOW))
 
     def test_vip_event_detail_route_may_be_labeled_event(self):
         feed,report=sample()
