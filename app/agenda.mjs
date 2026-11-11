@@ -17,17 +17,22 @@ export function groupAuctions(items) {
     (a.auction_time || '99:99').localeCompare(b.auction_time || '99:99') ||
     a.organizer.localeCompare(b.organizer));
 }
-export function filterAuctions(items,{state='',start='',end='',day='',today=''}={}) {
+export function normalizeSearch(value) {
+  return String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/\s+/g, ' ');
+}
+export function filterAuctions(items,{state='',start='',end='',day='',today='',keyword=''}={}) {
   const from=start || day || today;
   const to=end || day;
   if (from && to && from>to) return [];
   return groupAuctions(items).filter(a=>a.status==='scheduled' &&
     // Never direct users to an unrelated marketplace-wide calendar.
-    a.source_link_type!=='calendar' &&
+    a.destination_verified===true &&
+    Boolean(a.event_url || a.source_url) &&
     (!today || a.auction_date>=today) &&
     (!state || a.states.includes(state)) &&
     (!from || a.auction_date>=from) &&
-    (!to || a.auction_date<=to));
+    (!to || a.auction_date<=to) &&
+    (!keyword || normalizeSearch([a.title,a.city,a.organizer,a.id,a.event_id,...a.states].join(' ')).includes(normalizeSearch(keyword))));
 }
 
 /** Freshness of the last successful collection, independent of event dates. */
@@ -49,7 +54,8 @@ export function sourceLabel(type) {
 }
 
 /** Distinguish no upcoming auctions from a filtered-out result. */
-export function emptyResultsMessage({state='',start='',end='',day=''}={}) {
+export function emptyResultsMessage({state='',start='',end='',day='',keyword=''}={}) {
+  if(keyword) return 'Nenhum leilão encontrado para esta palavra-chave e os filtros selecionados.';
   const hasDate=Boolean(start || end || day);
   if(state && hasDate) return 'Nenhum leilão encontrado para o estado e o período selecionados. Limpe os filtros para consultar outros eventos.';
   if(state) return 'Nenhum leilão encontrado para este estado. Limpe os filtros para consultar outros eventos.';
