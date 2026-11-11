@@ -29,7 +29,10 @@
     "monitor_enabled": true,
     "requires_individual_event_link": true,
     "status": "candidate_adapter",
-    "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event."
+    "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event.",
+    "additional_discovery_urls": [
+      "https://www.mcleilao.com.br/#/home"
+    ]
   },
   {
     "id": "flex",
@@ -77,7 +80,10 @@
     "monitor_enabled": true,
     "requires_individual_event_link": true,
     "status": "candidate_adapter",
-    "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event."
+    "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event.",
+    "additional_discovery_urls": [
+      "https://www.sodresantoro.com.br/leilao"
+    ]
   },
   {
     "id": "copart",
@@ -237,7 +243,11 @@
     "monitor_enabled": true,
     "requires_individual_event_link": true,
     "status": "candidate_adapter",
-    "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event."
+    "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event.",
+    "additional_discovery_urls": [
+      "https://www.palaciodosleiloes.com.br/site/index.php?categoria_pesquisa=2",
+      "https://www.palaciodosleiloes.com.br/site/index.php"
+    ]
   },
   {
     "id": "rogerio",
