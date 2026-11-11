@@ -71,7 +71,7 @@ def classify(row,site,today=None):
     uf=None
     for found in UF_IN_LOCATION.finditer(raw):
         if found.group(1).lower().strip() not in ("leilao",):
-            candidate=found.group(2)
+            candidate=found.group(1)
             if candidate in STATES:uf=candidate
     reasons=[]
     if category!="vehicle":reasons.append("vehicle_category_not_confirmed")
