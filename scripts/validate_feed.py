@@ -39,6 +39,16 @@ def verify_link_classification(row):
             from bolsa_collect import detail_id
             if detail_id(url) is None:
                 return "Bolsa de Leilões requires an individual event URL"
+        elif org=="Leilo":
+            from leilo_collect import event_slug
+            if event_slug(url) is None:
+                return "Leilo requires a first-party lot-bearing edition page"
+        elif org in ("Parque dos Leilões","Flex Leilões","Hisa Leilões"):
+            from secondary_collect import trusted_url
+            site={"Parque dos Leilões":"parque","Flex Leilões":"flex",
+                  "Hisa Leilões":"hisa"}[org]
+            if not trusted_url(site,url):
+                return "Auction platform requires its own direct lot/event URL"
         else:
             return "event link classification has no verified adapter"
     else:

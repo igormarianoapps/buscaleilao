@@ -56,6 +56,9 @@ jobs:
       - name: Discover official regional auction portals
         continue-on-error: true
         run: python scripts/portal_watch.py
+      - name: Classify platform research candidates
+        continue-on-error: true
+        run: python scripts/platform_triage.py
       - name: Monitor sixteen private auction platforms
         continue-on-error: true
         run: python scripts/auction_platform_watch.py
@@ -79,6 +82,7 @@ jobs:
             app/portal-candidates.json \
             app/coverage-audit.json \
             app/auction-platform-diagnostics.json \
+            app/platform-triage.json \
             app/fontes.html; do
             if [ -f "$file" ]; then git add "$file"; fi
           done

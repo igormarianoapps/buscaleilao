@@ -67,6 +67,23 @@ def valid_destination(row):
         return (not row.get("event_url") and row.get("source_type")=="private"
                 and row.get("source_link_type")=="event"
                 and detail_id(row.get("source_url")) is not None)
+    if org=='Leilo':
+        from leilo_collect import event_slug
+        slug=event_slug(row.get("source_url"))
+        key=row.get("event_id") or row.get("id") or ""
+        date=row.get("auction_date") or ""
+        hour=(row.get("auction_time") or "").replace(":","")
+        return (bool(slug) and not row.get("event_url")
+                and row.get("source_type")=="private"
+                and row.get("source_link_type")=="event"
+                and key==f"leilo-{slug}-{date}-{hour}")
+    if org in ("Parque dos Leilões","Flex Leilões","Hisa Leilões"):
+        from secondary_collect import trusted_url
+        adapter={"Parque dos Leilões":"parque","Flex Leilões":"flex",
+                 "Hisa Leilões":"hisa"}[org]
+        return (not row.get("event_url") and row.get("source_type")=="private"
+                and row.get("source_link_type")=="event"
+                and trusted_url(adapter,row.get("source_url")))
     if org=='Freitas Leiloeiro':
         from freitas_collect import official_id
         return not row.get('event_url') and official_id(row['source_url']) is not None

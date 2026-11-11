@@ -49,6 +49,22 @@ def destination_status(row):
                   row.get("source_link_type")=="event" and
                   not row.get("event_url") and
                   detail_id(url) is not None)
+        elif host in ("leilo.com.br","www.leilo.com.br"):
+            from leilo_collect import event_slug
+            ok=bool(row.get("organizer")=="Leilo" and
+                    row.get("source_type")=="private" and
+                    row.get("source_link_type")=="event" and
+                    not row.get("event_url") and event_slug(url))
+        elif host in ("parquedosleiloes.com.br","www.parquedosleiloes.com.br",
+                      "flexleiloes.com.br","www.flexleiloes.com.br",
+                      "hisaleiloes.com.br","www.hisaleiloes.com.br"):
+            from secondary_collect import trusted_url
+            org=row.get("organizer")
+            key={"Parque dos Leilões":"parque","Flex Leilões":"flex",
+                 "Hisa Leilões":"hisa"}.get(org)
+            ok=bool(key and trusted_url(key,url) and
+                    row.get("source_link_type")=="event" and
+                    row.get("source_type")=="private" and not row.get("event_url"))
         elif host in ("pmklog.com.br", "www.pmklog.com.br"):
             q = parse_qs(p.query)
             ok = path == "/leilao/evento/leilao-detran" and len(q.get("evento", [])) == 1 and bool(re.fullmatch(r"[a-fA-F0-9-]{36}", q["evento"][0])) and bool(row.get("event_url"))

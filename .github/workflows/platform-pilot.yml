@@ -31,6 +31,8 @@ jobs:
           node --test tests/agenda.test.mjs
       - name: Monitor all sixteen requested sites
         run: python scripts/auction_platform_watch.py
+      - name: Classify new platform candidates without publishing them
+        run: python scripts/platform_triage.py
       - name: Install browser for collection
         run: |
           python -m pip install playwright==1.56.0
@@ -52,7 +54,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for f in app/auction-platform-diagnostics.json app/events.json app/index.html app/fontes.html app/collection-report.json app/coverage-audit.json app/source-health.json app/quarantine-report.json; do
+          for f in app/auction-platform-diagnostics.json app/platform-triage.json app/events.json app/index.html app/fontes.html app/collection-report.json app/coverage-audit.json app/source-health.json app/quarantine-report.json; do
             if [ -f "$f" ]; then git add "$f"; fi
           done
           if ! git diff --cached --quiet; then

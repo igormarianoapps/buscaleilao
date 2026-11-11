@@ -194,6 +194,26 @@ def main():
             events.append(item)
             known_ids.add(item["id"])
     failures.extend(bolsa_errors)
+    try:
+        from leilo_collect import collect_leilo
+        leilo_events,leilo_errors=collect_leilo(today=today)
+    except Exception as exc:
+        leilo_events,leilo_errors=[],[{"id":"leilo","error":str(exc)[:180]}]
+    for item in leilo_events:
+        if item["id"] not in known_ids:
+            events.append(item)
+            known_ids.add(item["id"])
+    failures.extend(leilo_errors)
+    try:
+        from secondary_collect import collect_secondary
+        other_events,other_errors=collect_secondary(today=today)
+    except Exception as exc:
+        other_events,other_errors=[],[{"id":"secondary","error":str(exc)[:180]}]
+    for item in other_events:
+        if item["id"] not in known_ids:
+            events.append(item)
+            known_ids.add(item["id"])
+    failures.extend(other_errors)
     # Preserve a discovered-at timestamp only for newly observed identities.
     try:
         previous=json.loads(OUTPUT.read_text(encoding="utf-8")).get("events",[])
@@ -266,6 +286,10 @@ def main():
         "regional_private_events":sum(e.get("organizer") in ("Vardana Leilões","Claudio Kuss Leilões") for e in events),
         "regional_adapter_failures":len(regional_errors),
         "bolsa_events":sum(e.get("organizer")=="Bolsa de Leilões" for e in events),
+        "leilo_events":len({e.get("event_id") or e["id"] for e in events if e.get("organizer")=="Leilo"}),
+        "secondary_events":sum(e.get("organizer") in ("Parque dos Leilões","Flex Leilões","Hisa Leilões") for e in events),
+        "leilo_errors":len(leilo_errors),
+        "secondary_errors":len(other_errors),
         "new_discoveries":len({e.get("event_id") or e["id"] for e in events if e.get("first_seen_at")==checked}),
         "failed":failures
     }
