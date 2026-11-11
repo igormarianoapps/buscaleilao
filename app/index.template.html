@@ -26,7 +26,6 @@ small{color:#64748b}.empty{padding:28px;background:white;border-radius:12px}
 <p>Uma agenda de leilões de veículos, incluindo eventos municipais e pouco divulgados.</p>
 <form id="filters" class="filters">
 <label class="keyword-label">Palavra-chave<input type="search" name="keyword" placeholder="Ex.: Semob, Goiânia, motos" autocomplete="off"></label>
-<label>Palavra-chave<input type="search" name="keyword" placeholder="Cidade, leiloeiro ou edital" maxlength="120" autocomplete="off"></label>
 <label>Estado<select name="state"><option value="">Todos os estados</option></select></label>
 <label>De<input type="date" name="start"></label>
 <label>Até<input type="date" name="end"></label>
@@ -91,7 +90,6 @@ filters.addEventListener("submit",e=>{e.preventDefault();applyFilters()});
 filters.addEventListener("reset",e=>{
   e.preventDefault();
   select.value="";
-  filters.querySelector('input[name="keyword"]').value="";
   filters.querySelector('input[name="keyword"]').value="";
   filters.querySelector('input[name="start"]').value="";
   filters.querySelector('input[name="end"]').value="";
