@@ -1,11 +1,11 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {groupAuctions,filterAuctions,feedFreshness,sourceLabel,emptyResultsMessage} from '../app/agenda.mjs';
+import {groupAuctions,filterAuctions,feedFreshness,sourceLabel,emptyResultsMessage,normalizeSearch} from '../app/agenda.mjs';
 
 const make = (id,state,overrides={}) => ({
   id, state, title:'Leilão', auction_date:'2099-11-03',
   auction_time:'10:00', organizer:'VIP Leilões', source_type:'private',
-  status:'scheduled', source_link_type:'event', source_url:'https://www.vipleiloes.com.br/leilao/123',
+  status:'scheduled', destination_verified:true, source_link_type:'event', source_url:'https://www.vipleiloes.com.br/leilao/123',
   ...overrides
 });
 
@@ -83,4 +83,15 @@ test('empty state distinguishes state, period and empty feed',()=>{
  assert.match(emptyResultsMessage({state:'GO'}),/este estado/);
  assert.match(emptyResultsMessage({end:'2099-11-04'}),/período selecionado/);
  assert.match(emptyResultsMessage(),/Nenhum próximo leilão/);
+});
+
+test('keyword searches title city organizer and id without accents',()=>{
+ const items=[make('semob-123','MT',{title:'Leilão de motocicletas',organizer:'Prefeitura de Cuiabá',city:'Cuiabá'}),make('outro','GO',{title:'Carros',city:'Goiânia'})];
+ assert.equal(normalizeSearch('  Goiânia  '),'goiania');
+ assert.deepEqual(filterAuctions(items,{today:'2099-11-01',keyword:'cuiaba'}).map(a=>a.id),['semob-123']);
+ assert.deepEqual(filterAuctions(items,{today:'2099-11-01',keyword:'MOTOCICLETAS'}).map(a=>a.id),['semob-123']);
+ assert.deepEqual(filterAuctions(items,{today:'2099-11-01',state:'GO',keyword:'Cuiabá'}),[]);
+});
+test('unapproved destination never enters the results',()=>{
+ assert.deepEqual(filterAuctions([make('notice','GO',{destination_verified:false})],{today:'2099-11-01'}),[]);
 });
