@@ -93,12 +93,8 @@ def validate_feed(feed, report, now=None):
         if link_issue:
             errors.append(f"Event {index}: {link_issue}")
         event_url = row.get("event_url")
-        if event_url is not None:
-            destination = urlsplit(event_url)
-            if (destination.scheme != "https" or
-                not valid_destination(row) or
-                destination.username or destination.password):
-                errors.append(f"Event {index}: unverified auction destination")
+        if event_url is not None and (not allowed or not row.get("link_verified")):
+            errors.append(f"Event {index}: unverified auction destination")
         url = row.get("source_url") or ""
         parts = urlsplit(url)
         if parts.scheme != "https" or not parts.hostname or parts.username or parts.password:
