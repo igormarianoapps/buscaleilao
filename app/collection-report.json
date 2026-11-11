@@ -1,7 +1,7 @@
 {
   "checked_at": "2026-11-10T17:55:39+00:00",
-  "verified": 129,
-  "unique_events": 38,
+  "verified": 125,
+  "unique_events": 34,
   "states_with_events": [
     "AM",
     "BA",
@@ -9,15 +9,15 @@
     "DF",
     "GO",
     "MA",
-    "MG",
     "MT",
+    "MG",
     "PA",
+    "PR",
     "PE",
     "PI",
-    "PR",
     "RJ",
-    "RO",
     "RS",
+    "RO",
     "SC",
     "SP"
   ],
@@ -33,22 +33,18 @@
     "SE",
     "TO"
   ],
-  "state_presence_percent": 63.0,
+  "state_presence_percent": 63,
   "coverage_definition": "Presence of at least one event, not fraction of all auctions discovered",
   "organizers": {
     "Copart": 11,
-    "DETRAN Bahia": 1,
     "Freitas Leiloeiro": 3,
     "Prefeitura de Cuiabá — Semob": 1,
-    "Prefeitura de Lorena": 1,
-    "Prefeitura de Serranópolis do Iguaçu": 1,
-    "Prefeitura de Vieiras": 1,
     "VIP Leilões": 19
   },
   "platform_events": 124,
-  "direct_event_links": 121,
+  "direct_event_links": 125,
   "calendar_links": 0,
-  "curated_source_links": 8,
+  "curated_source_links": 1,
   "curated_success": 5,
   "curated_failure": 5,
   "failed": [
@@ -71,6 +67,24 @@
     {
       "id": "curitiba-smdt-18-2026",
       "error": "Page.goto: Timeout 25000ms exceeded."
+    },
+    {
+      "id": "lorena-2026-11-10",
+      "error": "not approved individual auction destination"
+    },
+    {
+      "id": "serranopolis-iguacu-pr-01-2026",
+      "error": "not approved individual auction destination"
+    },
+    {
+      "id": "vieiras-001-2026",
+      "error": "not approved individual auction destination"
+    },
+    {
+      "id": "detran-ba-23-2026",
+      "error": "not approved individual auction destination"
     }
-  ]
+  ],
+  "quarantined_links": 4,
+  "snapshot_review": "Historical Nov 10 collection, reviewed against direct-link policy for preview only; no new source fetch was performed"
 }
