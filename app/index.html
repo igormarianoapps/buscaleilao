@@ -16,7 +16,7 @@ button.secondary{background:white;color:#1749b3;border:1px solid #1749b3}
 .topline{display:flex;align-items:center;justify-content:space-between;gap:8px}
 .cards{display:grid;gap:14px}.card{background:white;border:1px solid #e5e9ef;padding:22px;border-radius:14px}
 .card h2{font-size:19px;margin:7px 0}.meta{display:flex;flex-wrap:wrap;gap:12px;color:#52627a;font-size:14px}
-.tag{font-size:12px;color:#1749b3;font-weight:700}.card a{display:inline-block;margin-top:15px;color:#1749b3;font-weight:700}
+.tag{font-size:12px;color:#1749b3;font-weight:700}.new-tag{font-size:11px;font-weight:800;color:#11643d;background:#e4f7ed;border-radius:5px;padding:3px 7px;margin-left:7px}.card a{display:inline-block;margin-top:15px;color:#1749b3;font-weight:700}
 .link-note{display:block;margin-top:7px;font-size:13px;line-height:1.45;color:#52627a}
 small{color:#64748b}.empty{padding:28px;background:white;border-radius:12px}
 :focus-visible{outline:3px solid #0b5bd3;outline-offset:3px}
@@ -75,6 +75,13 @@ function filterAuctions(items,{state='',start='',end='',day='',today='',keyword=
     (!keyword || normalizeSearch([a.title,a.city,a.organizer,a.id,a.event_id,a.auction_number,...a.states].join(' ')).includes(normalizeSearch(keyword))));
 }
 
+/** Newly discovered here means first verified by our own collector, not a new listing on the auctioneer website. */
+function isRecentlyDiscovered(a, now=Date.now()) {
+  if (!a || !a.first_seen_at || a.destination_verified!==true) return false;
+  const time=Date.parse(a.first_seen_at);
+  return Number.isFinite(time) && now>=time && now-time<=72*3600000;
+}
+
 /** Freshness of the last successful collection, independent of event dates. */
 function feedFreshness(updatedAt, now = Date.now()) {
   const timestamp = Date.parse(updatedAt || '');
@@ -127,10 +134,10 @@ function applyFilters(){
   count.textContent=auctions.length+" leilão(ões)";
   results.innerHTML=auctions.length?auctions.map(a=>`<article class="card">
       <span class="tag">${escapeHTML(a.city && a.city!=="Local não informado"?a.city+" · ":"")}${escapeHTML(a.states.join(", "))}</span>
-      <h2>${escapeHTML(a.title)}</h2>
-      <div class="meta"><span>📅 ${escapeHTML(a.auction_date.split("-").reverse().join("/"))}</span>
+      <h2>${escapeHTML(a.title)}${isRecentlyDiscovered(a)?'<span class="new-tag" title="Descoberto e confirmado recentemente pelo BuscaLeilão">Novo na agenda</span>':""}</h2>
+      <div class="meta"><span>📅 ${escapeHTML(a.date_kind==="closing"?"Encerramento de lances: ":"Data: ")}${escapeHTML(a.auction_date.split("-").reverse().join("/"))}</span>
       <span>🕘 ${escapeHTML(a.auction_time||"Não informado")}</span>
-      <span>🚗 ${a.vehicle_count===null?"Quantidade não informada":a.vehicle_count+" veículos"}</span></div>
+      <span>🚗 ${Number.isInteger(a.vehicle_count)&&a.vehicle_count>=0?escapeHTML(a.vehicle_count+" veículos"):"Quantidade não informada"}</span></div>
       <p>${escapeHTML(a.organizer)}</p>
       <small>Fonte: ${escapeHTML(sourceLabel(a.source_type))} · Última verificação: ${escapeHTML(a.last_checked_at?new Date(a.last_checked_at).toLocaleString("pt-BR",{timeZone:"America/Sao_Paulo"}):"não informada")}</small><br>
       <a href="${escapeHTML(auctionDestination(a))}" target="_blank" rel="noopener noreferrer">Ver veículos e lotes do leilão ↗</a>

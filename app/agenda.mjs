@@ -39,6 +39,13 @@ export function filterAuctions(items,{state='',start='',end='',day='',today='',k
     (!keyword || normalizeSearch([a.title,a.city,a.organizer,a.id,a.event_id,a.auction_number,...a.states].join(' ')).includes(normalizeSearch(keyword))));
 }
 
+/** Newly discovered here means first verified by our own collector, not a new listing on the auctioneer website. */
+export function isRecentlyDiscovered(a, now=Date.now()) {
+  if (!a || !a.first_seen_at || a.destination_verified!==true) return false;
+  const time=Date.parse(a.first_seen_at);
+  return Number.isFinite(time) && now>=time && now-time<=72*3600000;
+}
+
 /** Freshness of the last successful collection, independent of event dates. */
 export function feedFreshness(updatedAt, now = Date.now()) {
   const timestamp = Date.parse(updatedAt || '');

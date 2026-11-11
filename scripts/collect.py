@@ -163,22 +163,61 @@ def main():
             if key is not None:
                 known_details.add(key)
     failures.extend(platform_failures)
+    # Independently discover official state auction pages containing real lots.
+    try:
+        from mg_detran_collect import collect_mg
+        mg_events, mg_failures = collect_mg(today=today)
+    except Exception as exc:
+        mg_events, mg_failures = [], [{"id":"mg-detran","error":str(exc)[:180]}]
+    for event in mg_events:
+        if event["id"] not in known_ids:
+            events.append(event)
+            known_ids.add(event["id"])
+    failures.extend(mg_failures)
+    # Preserve a discovered-at timestamp only for newly observed identities.
+    try:
+        previous=json.loads(OUTPUT.read_text(encoding="utf-8")).get("events",[])
+    except (OSError,ValueError):
+        previous=[]
+    known_first={}
+    known_previous_ids=set()
+    for event in previous:
+        key=(event.get("organizer"),event.get("event_id") or event.get("id"))
+        known_previous_ids.add(key)
+        if event.get("first_seen_at"):
+            known_first[key]=event["first_seen_at"]
     from auction_links import certify_links
-    certify_links(events)
-    quarantined = [e for e in events if not e.get("link_verified")]
-    events = [e for e in events if e.get("link_verified")]
-    failures.extend({"id":e["id"], "error":"quarantined: "+e.get("link_review_reason","unverified destination")} for e in quarantined)
-    # Publish only independently approved event-level destinations.
-    # Unverified official notices remain research leads, never user-facing links.
     from auction_security import valid_destination
-    safe_events = []
+    certify_links(events)
+    safe_events, quarantined=[],[]
     for item in events:
-        if valid_destination(item):
-            item['destination_verified'] = True
-            safe_events.append(item)
+        key=(item.get("organizer"),item.get("event_id") or item.get("id"))
+        if (item.get("status") != "scheduled" or
+                date.fromisoformat(item["auction_date"]) < today):
+            reason="expired, canceled or not scheduled"
+        elif not item.get("link_verified"):
+            reason=item.get("link_review_reason","unapproved event URL")
+        elif not valid_destination(item):
+            reason="individual event not corroborated by trusted source"
         else:
-            failures.append({'id':item['id'],'error':'Individual auction destination not approved; quarantined'})
-    events = safe_events
+            reason=None
+        if reason:
+            quarantined.append({"id":item.get("id"),"organizer":item.get("organizer"),
+                                "source_url":item.get("source_url"),"reason":reason})
+            failures.append({"id":item.get("id"),"error":"quarantined: "+reason})
+            continue
+        item["destination_verified"]=True
+        item["link_review"]="approved"
+        if key in known_first:
+            item["first_seen_at"]=known_first[key]
+        elif key not in known_previous_ids:
+            item["first_seen_at"]=checked
+        safe_events.append(item)
+    events=safe_events
+    quarantine_path=ROOT/"app/quarantine-report.json"
+    quarantine_path.write_text(json.dumps({"checked_at":checked,
+        "quarantined":quarantined,"total":len(quarantined)},
+        ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     events.sort(key=lambda e:(e["auction_date"],e["auction_time"] or "",e["city"]))
     # Failed validation does not silently carry an unverified event into the feed.
     OUTPUT.write_text(json.dumps({"updated_at":checked,"events":events},
@@ -203,6 +242,8 @@ def main():
         "curated_success":health["successful_sources"],
         "curated_failure":health["failed_sources"],
         "quarantined_links":len(quarantined),
+        "official_state_events":sum(e.get("organizer")=="Detran MG" for e in events),
+        "new_discoveries":len({e.get("event_id") or e["id"] for e in events if e.get("first_seen_at")==checked}),
         "failed":failures
     }
     REPORT.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")

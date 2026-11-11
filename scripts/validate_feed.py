@@ -26,6 +26,10 @@ def verify_link_classification(row):
         elif org=="VIP Leilões":
             if vip_detail_url(url) is None:
                 return "VIP event label requires an official individual event URL"
+        elif org=="Detran MG":
+            from mg_detran_collect import detail_identity
+            if detail_identity(url) is None or row.get("date_kind")!="closing":
+                return "Detran MG requires a direct official lot link"
         else:
             return "event link classification has no verified adapter"
     else:

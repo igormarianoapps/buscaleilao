@@ -48,6 +48,14 @@ def valid_destination(row):
         return (not row.get('event_url') and row.get('source_link_type')=='event'
                 and target.hostname in ('vipleiloes.com.br','www.vipleiloes.com.br')
                 and vip_detail_url(row['source_url']) is not None)
+    if org=='Detran MG':
+        from mg_detran_collect import detail_identity
+        return (not row.get('event_url')
+                and row.get('source_link_type')=='event'
+                and row.get('source_type')=='state'
+                and row.get('date_kind')=='closing'
+                and detail_identity(row.get('source_url')) is not None
+                and bool(re.fullmatch(r"\d{1,6}/20\d{2}",row.get('auction_number') or "")))
     if org=='Freitas Leiloeiro':
         from freitas_collect import official_id
         return not row.get('event_url') and official_id(row['source_url']) is not None

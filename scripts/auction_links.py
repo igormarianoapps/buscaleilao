@@ -26,6 +26,13 @@ def destination_status(row):
         elif host in ("www.freitasleiloeiro.com.br", "freitasleiloeiro.com.br"):
             q = parse_qs(p.query, strict_parsing=True)
             ok = path.lower() == "/leiloes/lotes" and len(q) == 1 and len(q.get("leilaoId", [])) == 1 and q["leilaoId"][0].isdigit() and row.get("organizer") == "Freitas Leiloeiro"
+        elif host == "leilao.transito.mg.gov.br":
+            from mg_detran_collect import detail_identity
+            ok = (row.get("organizer") == "Detran MG" and
+                  row.get("source_type") == "state" and
+                  row.get("date_kind") == "closing" and
+                  detail_identity(url) is not None and
+                  row.get("source_link_type") == "event")
         elif host in ("pmklog.com.br", "www.pmklog.com.br"):
             q = parse_qs(p.query)
             ok = path == "/leilao/evento/leilao-detran" and len(q.get("evento", [])) == 1 and bool(re.fullmatch(r"[a-fA-F0-9-]{36}", q["evento"][0])) and bool(row.get("event_url"))
