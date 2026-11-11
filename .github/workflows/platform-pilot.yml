@@ -42,6 +42,7 @@ jobs:
       - name: Build static website and coverage audit
         run: |
           python scripts/build_static_page.py
+          python scripts/build_sources_page.py
           python scripts/coverage_audit.py
       - name: Run full tests on generated page
         run: |
@@ -51,7 +52,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for f in app/auction-platform-diagnostics.json app/events.json app/index.html app/collection-report.json app/coverage-audit.json app/source-health.json app/quarantine-report.json; do
+          for f in app/auction-platform-diagnostics.json app/events.json app/index.html app/fontes.html app/collection-report.json app/coverage-audit.json app/source-health.json app/quarantine-report.json; do
             if [ -f "$f" ]; then git add "$f"; fi
           done
           if ! git diff --cached --quiet; then
