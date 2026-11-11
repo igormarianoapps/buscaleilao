@@ -5,7 +5,7 @@ import {groupAuctions,filterAuctions,feedFreshness,sourceLabel,emptyResultsMessa
 const make = (id,state,overrides={}) => ({
   id, state, title:'Leilão', auction_date:'2099-11-03',
   auction_time:'10:00', organizer:'VIP Leilões', source_type:'private',
-  status:'scheduled', destination_verified:true, source_link_type:'event', link_verified:true, source_url:'https://www.vipleiloes.com.br/leilao/123',
+  status:'scheduled', link_verified:true, source_link_type:'event', link_verified:true, source_url:'https://www.vipleiloes.com.br/leilao/123',
   ...overrides
 });
 
@@ -93,7 +93,7 @@ test('keyword searches title city organizer and id without accents',()=>{
  assert.deepEqual(filterAuctions(items,{today:'2099-11-01',state:'GO',keyword:'Cuiabá'}),[]);
 });
 test('unapproved destination never enters the results',()=>{
- assert.deepEqual(filterAuctions([make('notice','GO',{destination_verified:false})],{today:'2099-11-01'}),[]);
+ assert.deepEqual(filterAuctions([make('notice','GO',{link_verified:false})],{today:'2099-11-01'}),[]);
 });
 
 test('keyword searches city, organizer, accents, event id and combines with UF/date',()=>{
