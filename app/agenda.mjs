@@ -20,20 +20,23 @@ export function groupAuctions(items) {
 export function normalizeSearch(value) {
   return String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/\s+/g, ' ');
 }
+export function auctionDestination(a) {
+  if (!a || a.link_verified !== true) return null;
+  const url = a.event_url || (a.source_link_type === 'event' || a.organizer === 'Freitas Leiloeiro' ? a.source_url : '');
+  if (typeof url !== 'string' || !/^https:\/\/[^\s]+$/i.test(url)) return null;
+  return url;
+}
 export function filterAuctions(items,{state='',start='',end='',day='',today='',keyword=''}={}) {
   const from=start || day || today;
   const to=end || day;
   if (from && to && from>to) return [];
   return groupAuctions(items).filter(a=>a.status==='scheduled' &&
-    // Never direct users to an unrelated marketplace-wide calendar.
-    a.destination_verified===true &&
-    Boolean(a.event_url || a.source_url) &&
+    Boolean(auctionDestination(a)) &&
     (!today || a.auction_date>=today) &&
     (!state || a.states.includes(state)) &&
-    (!searchText(keyword) || searchText([a.title,a.city,a.organizer,a.id,a.event_id,a.auction_number].join(' ')).includes(searchText(keyword))) &&
     (!from || a.auction_date>=from) &&
     (!to || a.auction_date<=to) &&
-    (!keyword || normalizeSearch([a.title,a.city,a.organizer,a.id,a.event_id,...a.states].join(' ')).includes(normalizeSearch(keyword))));
+    (!keyword || normalizeSearch([a.title,a.city,a.organizer,a.id,a.event_id,a.auction_number,...a.states].join(' ')).includes(normalizeSearch(keyword))));
 }
 
 /** Freshness of the last successful collection, independent of event dates. */
@@ -58,7 +61,6 @@ export function sourceLabel(type) {
 export function emptyResultsMessage({state='',start='',end='',day='',keyword=''}={}) {
   if(keyword) return 'Nenhum leilão encontrado para esta palavra-chave e os filtros selecionados.';
   const hasDate=Boolean(start || end || day);
-  if(keyword) return 'Nenhum leilão corresponde à palavra-chave e aos filtros selecionados. Experimente outro termo ou limpe os filtros.';
   if(state && hasDate) return 'Nenhum leilão encontrado para o estado e o período selecionados. Limpe os filtros para consultar outros eventos.';
   if(state) return 'Nenhum leilão encontrado para este estado. Limpe os filtros para consultar outros eventos.';
   if(hasDate) return 'Nenhum leilão encontrado para o período selecionado. Limpe os filtros para consultar outros eventos.';
