@@ -48,3 +48,8 @@ def auctions(state: str | None = Query(default=None, min_length=2, max_length=2)
 @app.get("/")
 def home():
     return FileResponse(Path(__file__).with_name("index.html"))
+
+
+@app.get("/fontes")
+def sources_directory():
+    return FileResponse(Path(__file__).with_name("fontes.html"))

@@ -31,11 +31,13 @@ jobs:
         run: python scripts/validate_feed.py
       - name: Build standalone public page from validated feed
         run: python scripts/build_static_page.py
+      - name: Build source directory
+        run: python scripts/build_sources_page.py
       - name: Publish verified feed first
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add app/events.json app/collection-report.json app/source-health.json app/index.html
+          git add app/events.json app/collection-report.json app/source-health.json app/index.html app/fontes.html
           if ! git diff --cached --quiet; then
             git commit -m "data: refresh verified auction feed"
             git push
