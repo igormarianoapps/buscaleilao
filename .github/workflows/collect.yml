@@ -54,6 +54,9 @@ jobs:
       - name: Discover official regional auction portals
         continue-on-error: true
         run: python scripts/portal_watch.py
+      - name: Monitor sixteen private auction platforms
+        continue-on-error: true
+        run: python scripts/auction_platform_watch.py
       - name: Prioritize unverified discovery leads
         continue-on-error: true
         run: python scripts/prioritize_leads.py
@@ -70,7 +73,8 @@ jobs:
             app/browser-diagnostics.json \
             app/vip-dom-diagnostics.json \
             app/portal-candidates.json \
-            app/coverage-audit.json; do
+            app/coverage-audit.json \
+            app/auction-platform-diagnostics.json; do
             if [ -f "$file" ]; then git add "$file"; fi
           done
           if ! git diff --cached --quiet; then

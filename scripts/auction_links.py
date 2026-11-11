@@ -33,6 +33,15 @@ def destination_status(row):
                   row.get("date_kind") == "closing" and
                   detail_identity(url) is not None and
                   row.get("source_link_type") == "event")
+        elif host in ("vardanaleiloes.com.br","www.vardanaleiloes.com.br",
+                      "claudiokussleiloes.com.br","www.claudiokussleiloes.com.br"):
+            from regional_collect import strict_url
+            site = ("vardana" if row.get("organizer")=="Vardana Leilões" else
+                    "claudio" if row.get("organizer")=="Claudio Kuss Leilões" else None)
+            ok = bool(site and strict_url(site,url) and
+                      row.get("source_link_type")=="event" and
+                      row.get("source_type")=="private" and
+                      row.get("state")=="PR" and not row.get("event_url"))
         elif host in ("pmklog.com.br", "www.pmklog.com.br"):
             q = parse_qs(p.query)
             ok = path == "/leilao/evento/leilao-detran" and len(q.get("evento", [])) == 1 and bool(re.fullmatch(r"[a-fA-F0-9-]{36}", q["evento"][0])) and bool(row.get("event_url"))

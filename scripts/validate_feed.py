@@ -30,6 +30,11 @@ def verify_link_classification(row):
             from mg_detran_collect import detail_identity
             if detail_identity(url) is None or row.get("date_kind")!="closing":
                 return "Detran MG requires a direct official lot link"
+        elif org in ("Vardana Leilões","Claudio Kuss Leilões"):
+            from regional_collect import strict_url
+            site="vardana" if org=="Vardana Leilões" else "claudio"
+            if not strict_url(site,url):
+                return "Regional auction needs a specific first-party lot page"
         else:
             return "event link classification has no verified adapter"
     else:
