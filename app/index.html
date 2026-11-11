@@ -57,7 +57,7 @@ function normalizeSearch(value) {
   return String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/\s+/g, ' ');
 }
 function auctionDestination(a) {
-  if (!a || a.link_verified !== true) return null;
+  if (!a || a.link_verified !== true || a.destination_verified !== true) return null;
   const url = a.event_url || (a.source_link_type === 'event' || a.organizer === 'Freitas Leiloeiro' ? a.source_url : '');
   if (typeof url !== 'string' || !/^https:\/\/[^\s]+$/i.test(url)) return null;
   return url;
