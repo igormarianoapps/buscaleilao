@@ -13,7 +13,7 @@ jobs:
   pilot:
     if: "github.event.head_commit.message == 'ci: run auction platform integration pilot'"
     runs-on: ubuntu-latest
-    timeout-minutes: 26
+    timeout-minutes: 36
     steps:
       - uses: actions/checkout@v4
         with:
@@ -39,6 +39,11 @@ jobs:
         run: |
           python -m pip install playwright==1.56.0
           python -m playwright install --with-deps chromium
+      - name: Attempt browser extraction from each of the sixteen public platforms
+        run: |
+          python scripts/auction_browser_discovery.py
+          python scripts/auction_discovery_combine.py
+          python scripts/auction_candidate_evidence.py
       - name: Collect auction feed from verified platforms
         run: python scripts/collect.py
       - name: Verify published feed trust gate
@@ -57,7 +62,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for f in app/auction-platform-diagnostics.json app/platform-triage.json app/platform-review-queue.json app/platform-quality.json app/events.json app/index.html app/fontes.html app/collection-report.json app/coverage-audit.json app/source-health.json app/quarantine-report.json; do
+          for f in app/auction-platform-diagnostics.json app/auction-browser-diagnostics.json app/auction-discovery-combined.json app/auction-event-evidence.json app/platform-triage.json app/platform-review-queue.json app/platform-quality.json app/events.json app/index.html app/fontes.html app/collection-report.json app/coverage-audit.json app/source-health.json app/quarantine-report.json; do
             if [ -f "$f" ]; then git add "$f"; fi
           done
           if ! git diff --cached --quiet; then
