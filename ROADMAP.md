@@ -1,5 +1,23 @@
 # BuscaLeilão — checklist do projeto
 
+## Ciclo de desenvolvimento — 11/11/2026 (branch develop, sem deploy)
+
+- [x] Criada branch `develop` a partir de `main`; `main` permanece intacta pelas mudanças deste ciclo.
+- [x] Previews automáticos desabilitados no projeto Vercel `buscaleilao` para evitar consumo de deploys durante os commits.
+- [x] Filtros por palavra-chave (título, cidade, organizador e identificador), combinados com UF e intervalo; busca tolerante a acentos.
+- [x] Link público exige página específica de lotes; avisos oficiais e editais são evidência, não destino de clique.
+- [x] Coleta passa por duas camadas de aprovação: identificação da rota exata e política de evento/organizador/domínio; itens não aprovados vão para quarentena.
+- [x] Casos de teste para falso domínio, HTTPS enganoso, página de notícia, rota genérica, associação incorreta e busca.
+- [ ] Confirmar execução verde do CI e nova coleta de desenvolvimento sem escrever no feed da `main`.
+- [ ] Auditar ao vivo uma amostra diversificada de destinos, status e redirecionamentos. Conferência estrutural não substitui checagem de leiloeiro habilitado nem garante ausência de fraude.
+- [ ] Gerar `app/index.html` com feed validado em desenvolvimento, testar desktop e mobile.
+- [ ] Aprovação do usuário para merge em `main` e um único deploy posterior.
+
+**Exemplo Semob:** aviso municipal e destino individual `https://www.focoleiloes.com.br/leilao/497/lotes`. A sessão de 11/11 às 10h não deve ser apresentada como nova oportunidade após seu encerramento.
+
+---
+
+
 Atualizado em 04/11/2026. **Implementado** significa código publicado no GitHub; execução e cobertura reais dependem do próximo relatório.
 
 ## Marco do MVP — critérios de lançamento
