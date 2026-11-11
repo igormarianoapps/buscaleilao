@@ -21,7 +21,16 @@ async def main():
         page.on("pageerror",lambda exc:errors.append(str(exc)))
         response=await page.goto(URL,wait_until="domcontentloaded",timeout=45000)
         assert response is not None and response.status==200, "Preview is not HTTP 200"
-        await page.wait_for_function("document.querySelector('#count')?.textContent?.includes('leilão')",timeout=15000)
+        try:
+            await page.wait_for_function("document.querySelector('#count')?.textContent?.includes('leilão')",timeout=15000)
+        except Exception:
+            print("DEBUG FINAL URL:",page.url)
+            print("DEBUG TITLE:",await page.title())
+            print("DEBUG COUNT ELEMENTS:",await page.locator("#count").count())
+            print("DEBUG RESULTS:",(await page.locator("#results").all_text_contents())[:2])
+            print("DEBUG JS ERRORS:",errors[:5])
+            print("DEBUG HTML START:",(await page.content())[:750])
+            raise
         count=await page.locator(".card").count()
         assert count>0,"No upcoming verified auctions in preview"
         assert await page.locator('select[name="state"] option').count()==28
