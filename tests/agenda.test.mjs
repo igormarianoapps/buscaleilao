@@ -5,7 +5,7 @@ import {groupAuctions,filterAuctions,feedFreshness,sourceLabel,emptyResultsMessa
 const make = (id,state,overrides={}) => ({
   id, state, title:'Leilão', auction_date:'2099-11-03',
   auction_time:'10:00', organizer:'VIP Leilões', source_type:'private',
-  status:'scheduled', destination_verified:true, source_link_type:'event', source_url:'https://www.vipleiloes.com.br/leilao/123',
+  status:'scheduled', destination_verified:true, source_link_type:'event', link_verified:true, source_url:'https://www.vipleiloes.com.br/leilao/123',
   ...overrides
 });
 
@@ -94,4 +94,18 @@ test('keyword searches title city organizer and id without accents',()=>{
 });
 test('unapproved destination never enters the results',()=>{
  assert.deepEqual(filterAuctions([make('notice','GO',{destination_verified:false})],{today:'2099-11-01'}),[]);
+});
+
+test('keyword searches city, organizer, accents, event id and combines with UF/date',()=>{
+ const items=[make('cuiaba-123','MT',{city:'Cuiabá',title:'Leilão Semob',organizer:'Prefeitura de Cuiabá'}),
+ make('goiania-456','GO',{city:'Goiânia',title:'Leilão Detran'})];
+ assert.deepEqual(filterAuctions(items,{today:'2099-11-01',keyword:'cuiaba',state:'MT'}).map(x=>x.id),['cuiaba-123']);
+ assert.deepEqual(filterAuctions(items,{today:'2099-11-01',keyword:'SEMob',state:'GO'}),[]);
+ assert.deepEqual(filterAuctions(items,{today:'2099-11-01',keyword:'goiania-456'}).map(x=>x.id),['goiania-456']);
+});
+test('unverified links and links to news never appear, even on HTTPS',()=>{
+ const items=[make('news','MT',{source_link_type:undefined,source_url:'https://prefeitura.gov.br/noticias/leilao'}),
+ make('unverified','MT',{link_verified:false}),
+ make('with_event_url','MT',{source_link_type:undefined,link_verified:true,event_url:'https://www.focoleiloes.com.br/leilao/497/lotes'})];
+ assert.deepEqual(filterAuctions(items,{today:'2099-11-01'}).map(x=>x.id),['with_event_url']);
 });
