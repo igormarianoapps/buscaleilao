@@ -5,6 +5,7 @@ public event page, (2) an independently matching future date on the lot page,
 and (3) actual vehicle lot entries. Otherwise it is not published.
 """
 import re
+import unicodedata
 import urllib.parse
 import urllib.request
 from datetime import date,datetime,timezone
@@ -107,7 +108,8 @@ def candidates(site,html,today=None):
     seen=set()
     text=parser.parts
     for href,label,index in parser.links:
-        if not re.search(config["label"],label,re.I):
+        normalized_label="".join(ch for ch in unicodedata.normalize("NFD",label.lower()) if not unicodedata.combining(ch))
+        if not re.search(config["label"],normalized_label,re.I):
             continue
         full=urllib.parse.urljoin(config["home"],href or "")
         if not strict_url(site,full) or full in seen:
@@ -156,7 +158,7 @@ def verified_lots(site,html,iso):
 
 def collect_regionals(today=None,loader=fetch):
     today=today or auction_today()
-    rows,errors=[]
+    rows,errors=[],[]
     for site,config in CONFIG.items():
         try:
             main=loader(site,config["home"])
