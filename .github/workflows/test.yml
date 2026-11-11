@@ -5,6 +5,8 @@ on:
       - 'scripts/**'
       - 'app/agenda.mjs'
       - 'app/index.html'
+      - 'app/index.template.html'
+      - 'app/sources.json'
       - 'tests/**'
       - '.github/workflows/test.yml'
       - '.github/workflows/collect.yml'
