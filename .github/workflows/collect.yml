@@ -59,6 +59,8 @@ jobs:
       - name: Monitor sixteen private auction platforms
         continue-on-error: true
         run: python scripts/auction_platform_watch.py
+      - name: Refresh source directory after platform scan
+        run: python scripts/build_sources_page.py
       - name: Prioritize unverified discovery leads
         continue-on-error: true
         run: python scripts/prioritize_leads.py
@@ -76,7 +78,8 @@ jobs:
             app/vip-dom-diagnostics.json \
             app/portal-candidates.json \
             app/coverage-audit.json \
-            app/auction-platform-diagnostics.json; do
+            app/auction-platform-diagnostics.json \
+            app/fontes.html; do
             if [ -f "$file" ]; then git add "$file"; fi
           done
           if ! git diff --cached --quiet; then
