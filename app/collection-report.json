@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-11-11T19:59:38+00:00",
-  "verified": 150,
-  "unique_events": 51,
+  "checked_at": "2026-11-11T20:04:52+00:00",
+  "verified": 149,
+  "unique_events": 50,
   "states_with_events": [
     "AM",
     "BA",
@@ -37,7 +37,7 @@
   "coverage_definition": "Presence of at least one event, not fraction of all auctions discovered",
   "organizers": {
     "Bolsa de Leilões": 1,
-    "Copart": 12,
+    "Copart": 11,
     "Detran MG": 12,
     "Freitas Leiloeiro": 3,
     "Leilo": 3,
@@ -45,13 +45,13 @@
     "VIP Leilões": 18,
     "Vardana Leilões": 1
   },
-  "platform_events": 137,
-  "direct_event_links": 150,
+  "platform_events": 136,
+  "direct_event_links": 149,
   "calendar_links": 0,
   "curated_source_links": 1,
-  "curated_success": 4,
-  "curated_failure": 5,
-  "quarantined_links": 3,
+  "curated_success": 7,
+  "curated_failure": 2,
+  "quarantined_links": 6,
   "official_state_events": 12,
   "regional_private_events": 1,
   "regional_adapter_failures": 2,
@@ -59,13 +59,9 @@
   "leilo_events": 3,
   "secondary_events": 0,
   "leilo_errors": 0,
-  "secondary_errors": 11,
-  "new_discoveries": 4,
+  "secondary_errors": 0,
+  "new_discoveries": 0,
   "failed": [
-    {
-      "id": "curitiba-smdt-17-2026",
-      "error": "Page.goto: Timeout 25000ms exceeded."
-    },
     {
       "id": "aracaju-3-leilao-2026-11-12",
       "error": "HTTP Error 403: Forbidden"
@@ -73,14 +69,6 @@
     {
       "id": "superbid-gru-06-2026-11-29",
       "error": "HTTP Error 403: Forbidden"
-    },
-    {
-      "id": "curitiba-smdt-16-2026",
-      "error": "Page.goto: Timeout 25000ms exceeded."
-    },
-    {
-      "id": "curitiba-smdt-18-2026",
-      "error": "Page.goto: Timeout 25000ms exceeded."
     },
     {
       "id": "vardana:https://www.vardanaleiloes.com.br/vardana/veiculos.php?lei=1086",
@@ -91,51 +79,11 @@
       "error": "lot page not confirmed / no published lots"
     },
     {
-      "id": "flex:https://www.flexleiloes.com.br/lotes/2978",
-      "error": "unexpected redirect: blocked"
-    },
-    {
-      "id": "flex:https://www.flexleiloes.com.br/lotes/2963",
-      "error": "unexpected redirect: blocked"
-    },
-    {
-      "id": "flex:https://www.flexleiloes.com.br/lotes/2979",
-      "error": "unexpected redirect: blocked"
-    },
-    {
-      "id": "flex:https://www.flexleiloes.com.br/lotes/2991",
-      "error": "unexpected redirect: blocked"
-    },
-    {
-      "id": "flex:https://www.flexleiloes.com.br/lotes/2981",
-      "error": "unexpected redirect: blocked"
-    },
-    {
-      "id": "flex:https://www.flexleiloes.com.br/lotes/2984",
-      "error": "unexpected redirect: blocked"
-    },
-    {
-      "id": "flex:https://www.flexleiloes.com.br/lotes/2992",
-      "error": "unexpected redirect: blocked"
-    },
-    {
-      "id": "flex:https://www.flexleiloes.com.br/lotes/2990",
-      "error": "unexpected redirect: blocked"
-    },
-    {
-      "id": "flex:https://www.flexleiloes.com.br/lotes/2987",
-      "error": "unexpected redirect: blocked"
-    },
-    {
-      "id": "flex:https://www.flexleiloes.com.br/lotes/2988",
-      "error": "unexpected redirect: blocked"
-    },
-    {
-      "id": "flex:https://www.flexleiloes.com.br/lotes/2994",
-      "error": "unexpected redirect: blocked"
-    },
-    {
       "id": "vieiras-001-2026",
+      "error": "quarantined: missing direct auction destination"
+    },
+    {
+      "id": "curitiba-smdt-17-2026",
       "error": "quarantined: missing direct auction destination"
     },
     {
@@ -144,6 +92,14 @@
     },
     {
       "id": "serranopolis-iguacu-pr-01-2026",
+      "error": "quarantined: missing direct auction destination"
+    },
+    {
+      "id": "curitiba-smdt-16-2026",
+      "error": "quarantined: missing direct auction destination"
+    },
+    {
+      "id": "curitiba-smdt-18-2026",
       "error": "quarantined: missing direct auction destination"
     }
   ]
