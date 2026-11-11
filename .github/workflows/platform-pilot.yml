@@ -1,0 +1,60 @@
+name: Auction platform integration pilot
+on:
+  push:
+    branches: [develop]
+    paths:
+      - '.github/workflows/platform-pilot.yml'
+permissions:
+  contents: write
+concurrency:
+  group: buscaleilao-platform-pilot
+  cancel-in-progress: false
+jobs:
+  pilot:
+    if: "github.event.head_commit.message == 'ci: run auction platform integration pilot'"
+    runs-on: ubuntu-latest
+    timeout-minutes: 24
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: develop
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax and regression tests
+        run: |
+          python -m compileall -q scripts app tests
+          python -m unittest discover -s tests -v
+          node --test tests/agenda.test.mjs
+      - name: Monitor all sixteen requested sites
+        run: python scripts/auction_platform_watch.py
+      - name: Install browser for collection
+        run: |
+          python -m pip install playwright==1.56.0
+          python -m playwright install --with-deps chromium
+      - name: Collect auction feed from verified platforms
+        run: python scripts/collect.py
+      - name: Verify published feed trust gate
+        run: python scripts/validate_feed.py
+      - name: Build static website and coverage audit
+        run: |
+          python scripts/build_static_page.py
+          python scripts/coverage_audit.py
+      - name: Run full tests on generated page
+        run: |
+          python -m unittest discover -s tests -v
+          node --test tests/agenda.test.mjs
+      - name: Save results to develop only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for f in app/auction-platform-diagnostics.json app/events.json app/index.html app/collection-report.json app/coverage-audit.json app/source-health.json app/quarantine-report.json; do
+            if [ -f "$f" ]; then git add "$f"; fi
+          done
+          if ! git diff --cached --quiet; then
+            git commit -m "data: private platform pilot results"
+            git push origin HEAD:develop
+          fi
