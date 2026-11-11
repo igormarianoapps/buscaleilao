@@ -12,9 +12,10 @@ def approved_count(site,events):
         if host in site.get("allowed_hosts",[]) and e.get("link_verified") is True and e.get("destination_verified") is True:
             keys.add((e.get("organizer"),e.get("event_id") or e.get("id")))
     return len(keys)
-def render(sites,diag=None,events=None):
+def render(sites,diag=None,events=None,discovery=None):
     diag=(diag or {}).get("platforms",{})
     events=events or []
+    discovery=(discovery or {}).get("platforms",{})
     body=[]
     for batch,name in TITLES.items():
         body.append('<section><h2>'+html.escape(name)+'</h2><div class="cards">')
@@ -25,13 +26,18 @@ def render(sites,diag=None,events=None):
                 continue
             count=approved_count(site,events)
             condition=diag.get(site["id"],{}).get("status")
+            broad=discovery.get(site["id"],{})
+            if broad.get("availability")=="reachable":condition="reachable"
+            if broad.get("availability")=="unavailable":condition="unreachable"
             status=(f"{count} leilão(ões) confirmado(s)" if count else
                 "Monitorado, sem eventos confirmados" if condition=="reachable" else
                 "Acesso à coleta indisponível" if condition=="unreachable" else
                 "Aguardando diagnóstico")
+            lead_count=broad.get("discovered_links",0)
+            research=(f"{lead_count} links em análise" if lead_count else "Sem links individuais identificados")
             body.append('<article class="source"><h3>'+html.escape(site["name"])+
               '</h3><p>'+html.escape(parts.hostname)+'</p><small>'+html.escape(status)+
-              '</small><a href="'+html.escape(url,quote=True)+
+              '</small><small>'+html.escape(research)+'</small><a href="'+html.escape(url,quote=True)+
               '" target="_blank" rel="noopener noreferrer">Abrir site da fonte</a></article>')
         body.append("</div></section>")
     return '''<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
@@ -59,6 +65,7 @@ def main():
     sites=load("auction-platforms.json",[])
     diag=load("auction-platform-diagnostics.json",{})
     feed=load("events.json",{})
-    (ROOT/"app/fontes.html").write_text(render(sites,diag,feed.get("events",[]))+"\n",encoding="utf-8")
+    combined=load("auction-discovery-combined.json",{})
+    (ROOT/"app/fontes.html").write_text(render(sites,diag,feed.get("events",[]),combined)+"\n",encoding="utf-8")
     print("Built monitoring directory:",len(sites),"platforms")
 if __name__=="__main__":main()

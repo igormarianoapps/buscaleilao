@@ -19,3 +19,13 @@ class TestSources(unittest.TestCase):
               "allowed_hosts":["safe.example"]}
         self.assertNotIn("<script>",render([site]))
 if __name__=="__main__":unittest.main()
+
+
+class BrowserDiscoverySourceStatusTests(unittest.TestCase):
+ def test_source_count_does_not_imply_verified_auction(self):
+    sample={"id":"palacio","name":"Palácio","batch":3,"discovery_url":"https://www.palaciodosleiloes.com.br/site/index.php","allowed_hosts":["www.palaciodosleiloes.com.br"]}
+    page=render([sample],{"platforms":{"palacio":{"status":"unreachable"}}},[],
+      {"platforms":{"palacio":{"availability":"reachable","discovered_links":13}}})
+    self.assertIn("13 links em análise",page)
+    self.assertIn("Monitorado, sem eventos confirmados",page)
+    self.assertNotIn("13 leilão(ões)",page)
