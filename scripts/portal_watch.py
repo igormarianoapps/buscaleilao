@@ -69,10 +69,29 @@ def candidate_links(source, html):
                 parsed.username or parsed.password or parsed.port not in (None,443)):
             continue
         # An auction headline/link is a research lead, not proof of vehicles.
-        identity = normalize(label + " " + parsed.path)
-        if not re.search(r"leilao|leiloes|edital", identity):
+        # Navigation fragments, print links and search controls are not leads.
+        origin = urllib.parse.urlsplit(source["url"])
+        if parsed.fragment or (parsed.path == origin.path and parsed.query != origin.query):
             continue
         if target.rstrip("/") == source["url"].rstrip("/") or target in seen:
+            continue
+        label_text = normalize(label)
+        leaf = normalize(parsed.path.rstrip("/").split("/")[-1])
+        if not label_text or any(word in label_text for word in (
+                "ir para", "skip navigation", "rastreamento",
+                "credenciamento", "imprimir", "aeronave")):
+            continue
+        if label_text in ("leiloes", "leilao", "editais", "edital"):
+            continue
+        # Require event-specific evidence in the link text or filename:
+        # the source page path alone often contains the word "leiloes".
+        if not (re.search(r"leilao", label_text) or
+                re.search(r"leilao", leaf) or
+                (re.search(r"edital", label_text) and
+                 re.search(r"veicul|moto|sucata", label_text))):
+            continue
+        years = [int(y) for y in re.findall(r"\b20\d{2}\b", label_text + " " + leaf)]
+        if years and max(years) < datetime.now(timezone.utc).year:
             continue
         seen.add(target)
         result.append({"title": (label or "Documento de leilão")[:240],

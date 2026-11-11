@@ -113,3 +113,10 @@ test('unverified links and links to news never appear, even on HTTPS',()=>{
 test('per-event approval is required even when the URL shape is trusted',()=>{
  assert.deepEqual(filterAuctions([make('structural','GO',{destination_verified:false})],{today:'2099-11-01'}),[]);
 });
+
+test('multiword keyword query finds terms across organizer and city',()=>{
+ const items=[make('one','GO',{organizer:'Prefeitura de Goiânia',title:'Leilão de motos'}),
+ make('two','SP',{organizer:'VIP Leilões',title:'Carros usados'})];
+ assert.deepEqual(filterAuctions(items,{today:'2099-11-01',keyword:'motos goiania'}).map(x=>x.id),['one']);
+ assert.deepEqual(filterAuctions(items,{today:'2099-11-01',keyword:'vip sp'}).map(x=>x.id),['two']);
+});

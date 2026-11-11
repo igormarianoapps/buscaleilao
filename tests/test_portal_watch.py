@@ -26,6 +26,18 @@ class PortalTests(unittest.TestCase):
         self.assertEqual(rows[0]["state_hint"],"PR")
         self.assertNotIn("auction_date",rows[0])
         self.assertNotIn("event_url",rows[0])
+    def test_rejects_page_fragments_print_navigation_and_old_years(self):
+        src=dict(SRC,id="mg-patrimonio",url="https://www.mg.gov.br/planejamento/pagina/gestao-governamental/logistica-e-patrimonio/leiloes",host="www.mg.gov.br",state="MG")
+        html=('<a href="#main">Ir para o conteúdo principal</a>'
+              '<a href="?imprimir=1">Imprimir</a>'
+              '<a href="/leiloes/edital-2025.pdf">Edital Leilão 011/2025 - Veículos</a>'
+              '<a href="/leiloes/edital-2026.pdf">Edital Leilão 011/2026 - Veículos</a>'
+              '<a href="/credenciamento-2026.pdf">Credenciamento de examinadores</a>')
+        rows=candidate_links(src,html)
+        self.assertEqual(len(rows),1)
+        self.assertIn("2026",rows[0]["title"])
+        self.assertNotIn("#",rows[0]["source_url"])
+
     def test_failures_isolated_and_not_published(self):
         bad=dict(SRC,id="broken",url="https://transito.curitiba.pr.gov.br/error")
         def load(src):

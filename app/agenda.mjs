@@ -36,7 +36,8 @@ export function filterAuctions(items,{state='',start='',end='',day='',today='',k
     (!state || a.states.includes(state)) &&
     (!from || a.auction_date>=from) &&
     (!to || a.auction_date<=to) &&
-    (!keyword || normalizeSearch([a.title,a.city,a.organizer,a.id,a.event_id,a.auction_number,...a.states].join(' ')).includes(normalizeSearch(keyword))));
+    (!keyword || normalizeSearch(keyword).split(' ').every(term=>
+      normalizeSearch([a.title,a.city,a.organizer,a.id,a.event_id,a.auction_number,...a.states].join(' ')).includes(term))));
 }
 
 /** Newly discovered here means first verified by our own collector, not a new listing on the auctioneer website. */
