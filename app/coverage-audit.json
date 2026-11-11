@@ -1,7 +1,7 @@
 {
-  "snapshot_checked_at": "2026-11-11T19:22:19+00:00",
-  "unique_events": 47,
-  "event_rows": 127,
+  "snapshot_checked_at": "2026-11-11T19:29:10+00:00",
+  "unique_events": 48,
+  "event_rows": 128,
   "states_with_events": [
     "AM",
     "BA",
@@ -40,7 +40,7 @@
     "DF": 3,
     "GO": 7,
     "MA": 8,
-    "MG": 16,
+    "MG": 17,
     "MT": 7,
     "PA": 7,
     "PE": 12,
@@ -53,6 +53,7 @@
     "SP": 15
   },
   "events_by_organizer": {
+    "Bolsa de Leilões": 1,
     "Copart": 12,
     "Detran MG": 12,
     "Freitas Leiloeiro": 3,
@@ -62,6 +63,7 @@
   },
   "rows_by_destination_host": {
     "leilao.transito.mg.gov.br": 12,
+    "www.bolsadeleiloes.com.br": 1,
     "www.copart.com.br": 12,
     "www.focoleiloes.com.br": 1,
     "www.freitasleiloeiro.com.br": 3,
@@ -81,5 +83,5 @@
   "unverified_portal_leads": 15,
   "review_queue_items": 72,
   "coverage_definition": "States with >=1 distinct event, not percentage of national auctions; registry entries are research sources, not active collectors or verified events",
-  "generated_at": "2026-11-11T19:23:40+00:00"
+  "generated_at": "2026-11-11T19:30:00+00:00"
 }

@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-11-11T19:22:19+00:00",
-  "verified": 127,
-  "unique_events": 47,
+  "checked_at": "2026-11-11T19:29:10+00:00",
+  "verified": 128,
+  "unique_events": 48,
   "states_with_events": [
     "AM",
     "BA",
@@ -36,6 +36,7 @@
   "state_presence_percent": 63.0,
   "coverage_definition": "Presence of at least one event, not fraction of all auctions discovered",
   "organizers": {
+    "Bolsa de Leilões": 1,
     "Copart": 12,
     "Detran MG": 12,
     "Freitas Leiloeiro": 3,
@@ -43,22 +44,19 @@
     "VIP Leilões": 18,
     "Vardana Leilões": 1
   },
-  "platform_events": 114,
-  "direct_event_links": 127,
+  "platform_events": 115,
+  "direct_event_links": 128,
   "calendar_links": 0,
   "curated_source_links": 1,
-  "curated_success": 6,
-  "curated_failure": 3,
-  "quarantined_links": 5,
+  "curated_success": 7,
+  "curated_failure": 2,
+  "quarantined_links": 6,
   "official_state_events": 12,
   "regional_private_events": 1,
   "regional_adapter_failures": 2,
-  "new_discoveries": 3,
+  "bolsa_events": 1,
+  "new_discoveries": 1,
   "failed": [
-    {
-      "id": "detran-ba-23-2026",
-      "error": "Page.goto: Timeout 15000ms exceeded."
-    },
     {
       "id": "aracaju-3-leilao-2026-11-12",
       "error": "HTTP Error 403: Forbidden"
@@ -81,6 +79,10 @@
     },
     {
       "id": "curitiba-smdt-17-2026",
+      "error": "quarantined: missing direct auction destination"
+    },
+    {
+      "id": "detran-ba-23-2026",
       "error": "quarantined: missing direct auction destination"
     },
     {

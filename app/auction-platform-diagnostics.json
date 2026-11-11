@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-11T19:22:01+00:00",
+  "checked_at": "2026-11-11T19:28:46+00:00",
   "platforms_total": 16,
   "reachable": 13,
   "unverified_candidates": 55,
@@ -140,7 +140,7 @@
         },
         {
           "platform_id": "hisa",
-          "title": "Eletrônico   76   lotes  HISA REVERSA     Eletrônico 76 LOTES   SAO CAETANO DO SUL, SP   Data: 13/11/2026 às 14:00   Leilão: 2542   76 lotes",
+          "title": "Eletrônico   77   lotes  HISA REVERSA     Eletrônico 77 LOTES   SAO CAETANO DO SUL, SP   Data: 13/11/2026 às 14:00   Leilão: 2542   77 lotes",
           "source_url": "https://hisaleiloes.com.br/leilao/2542",
           "state_hint": "SP",
           "status": "unverified_candidate",
@@ -181,46 +181,6 @@
           "platform_id": "leilo",
           "title": "LOTE 34 AM chevron_left chevron_right play_arrow Recuperado de Financiamento CHEVROLET/CLASSIC LS (2P/4P) favorite calendar_today  13/14  233.598 km location_on Manaus/AM R$ 12.000",
           "source_url": "https://leilo.com.br/lote/0b82e2b4-0efd-424b-9843-043d011a39ce/",
-          "state_hint": "GO",
-          "status": "unverified_candidate",
-          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
-        },
-        {
-          "platform_id": "leilo",
-          "title": "LOTE 194 AM chevron_left chevron_right play_arrow Recuperado de Financiamento RENAULT/KWID ZEN 2 (4P) favorite calendar_today  22/23  60.047 km location_on Manaus/AM R$ 23.000,00 L",
-          "source_url": "https://leilo.com.br/lote/47aff570-0f6f-47b4-8adf-42b6fb6fd4d6/",
-          "state_hint": "GO",
-          "status": "unverified_candidate",
-          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
-        },
-        {
-          "platform_id": "leilo",
-          "title": "LOTE 195 PA chevron_left chevron_right play_arrow 360° Recuperado de Financiamento NISSAN/VERSA SV FLEX (4P) favorite calendar_today  12/13  121.599 km location_on Benevides/PA R$ ",
-          "source_url": "https://leilo.com.br/lote/e940b4ff-6c1c-4d86-a87a-0d1c103913b8/",
-          "state_hint": "GO",
-          "status": "unverified_candidate",
-          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
-        },
-        {
-          "platform_id": "leilo",
-          "title": "LOTE 196 PA chevron_left chevron_right play_arrow Recuperado de Financiamento BULL/BASHAM BM-T 180 favorite calendar_today  25/25  9.208 km location_on Benevides/PA R$ 6.000,00 per",
-          "source_url": "https://leilo.com.br/lote/a36bfa8f-c559-4a19-bade-bbf8182245df/",
-          "state_hint": "GO",
-          "status": "unverified_candidate",
-          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
-        },
-        {
-          "platform_id": "leilo",
-          "title": "LOTE 197 AM chevron_left chevron_right play_arrow Recuperado de Financiamento HONDA/CG 160 TITAN favorite calendar_today  23/24  107.076 km location_on Manaus/AM R$ 8.300,00 person",
-          "source_url": "https://leilo.com.br/lote/cb2fda99-719c-4091-916d-9d48a2e05d9c/",
-          "state_hint": "GO",
-          "status": "unverified_candidate",
-          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
-        },
-        {
-          "platform_id": "leilo",
-          "title": "LOTE 198 AM chevron_left chevron_right play_arrow Recuperado de Financiamento BYD/DOLPHIN MINI GS5EV (4P) favorite calendar_today  25/26  76.525 km location_on Manaus/AM R$ 81.100,",
-          "source_url": "https://leilo.com.br/lote/a2221c6f-617b-4ee8-975f-7b799d0852c3/",
           "state_hint": "GO",
           "status": "unverified_candidate",
           "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
@@ -373,6 +333,46 @@
           "platform_id": "leilo",
           "title": "LOTE 217 AM chevron_left chevron_right play_arrow Recuperado de Financiamento YAMAHA/YBR 150 FACTOR favorite calendar_today  25/25  18.837 km location_on Manaus/AM R$ 9.000,00 Lanc",
           "source_url": "https://leilo.com.br/lote/b19d77a7-be6b-4e79-a4ce-b192592610d8/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 218 AM chevron_left chevron_right play_arrow Recuperado de Financiamento YAMAHA/YBR 150 FACTOR ED favorite calendar_today  24/24  24.939 km location_on Manaus/AM R$ 8.800,00 L",
+          "source_url": "https://leilo.com.br/lote/e084b196-b8c4-41cb-b361-3aa6a31f3557/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 219 PA chevron_left chevron_right play_arrow Recuperado de Financiamento JTZ/DR160 S favorite calendar_today  25/26  18.530 km location_on Benevides/PA R$ 10.900,00 person Lan",
+          "source_url": "https://leilo.com.br/lote/0246cea3-8833-46ab-a585-8b4c2b8e90cf/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 220 AM chevron_left chevron_right play_arrow Recuperado de Financiamento PEUGEOT/307 PRESENCE PACK (4P) favorite calendar_today  09/10  177.369 km location_on Manaus/AM R$ 3.0",
+          "source_url": "https://leilo.com.br/lote/54e6b081-c924-4588-a2b4-be196b57d112/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 221 PA chevron_left chevron_right play_arrow Recuperado de Financiamento YAMAHA/FLUO 125 favorite calendar_today  23/24  27.107 km location_on Benevides/PA R$ 8.200,00 person ",
+          "source_url": "https://leilo.com.br/lote/3a5a2b7a-43b0-4e2f-82f4-4e6938d16b7c/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 223 AM chevron_left chevron_right play_arrow Recuperado de Financiamento NISSAN/VERSA SV (2P/4P) favorite calendar_today  15/16  209.976 km location_on Manaus/AM R$ 23.000,00 ",
+          "source_url": "https://leilo.com.br/lote/95a782fb-091a-46e0-8963-a2f0f9f16512/",
           "state_hint": "GO",
           "status": "unverified_candidate",
           "review_status": "needs_event_date_lot_url_and_auctioneer_verification"

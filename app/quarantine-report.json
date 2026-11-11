@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-11T19:22:19+00:00",
+  "checked_at": "2026-11-11T19:29:10+00:00",
   "quarantined": [
     {
       "id": "vieiras-001-2026",
@@ -11,6 +11,12 @@
       "id": "curitiba-smdt-17-2026",
       "organizer": "Prefeitura de Curitiba",
       "source_url": "https://transito.curitiba.pr.gov.br/patio/leilao-eletronico-de-veiculos/52",
+      "reason": "missing direct auction destination"
+    },
+    {
+      "id": "detran-ba-23-2026",
+      "organizer": "DETRAN Bahia",
+      "source_url": "https://www.ba.gov.br/detran/editais/7742/edital-de-leilao-no-232026-veiculos-conservados-e-sucatas-aproveitaveis",
       "reason": "missing direct auction destination"
     },
     {
@@ -32,5 +38,5 @@
       "reason": "missing direct auction destination"
     }
   ],
-  "total": 5
+  "total": 6
 }
