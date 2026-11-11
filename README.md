@@ -64,3 +64,12 @@ A Copart agora tem extração de URL específica da venda quando a tabela públi
 O pipeline inclui `scripts/discover_pncp.py`, que consulta a API pública oficial do Portal Nacional de Contratações Públicas para leilões eletrônicos (modalidade 1) e presenciais (13). O script pesquisa publicações recentes e seleciona apenas objetos com indício explícito de veículo, situação não cancelada, UF definida e data futura de encerramento de propostas. Os resultados são gravados em `app/pncp-candidates.json`, com identificador de controle PNCP e URL do edital para revisão. **Nenhum candidato é publicado automaticamente em `app/events.json`**: o encerramento das propostas pode não ser a data exata do leilão, e o edital deve ser revisado antes da publicação. A primeira execução em rede ainda não foi confirmada.
 
 A fila RSS também ignora manchetes com data de leilão claramente passada e dá prioridade a datas futuras explícitas, sem tratá-las como confirmação.
+
+## Integração dos 16 sites — controles de qualidade
+
+- `scripts/leilo_collect.py`: agrega lotes da edição atual de leilões de veículos, utiliza a UF de cada lote e revalida data e hora; URLs de lotes isolados não são eventos.
+- `scripts/secondary_collect.py`: adapta Parque dos Leilões, Flex e Hisa. Publica apenas se confirmar data, endereço ou localização do evento e lotes veiculares na página individual.
+- `scripts/platform_triage.py` e `scripts/platform_review.py`: classificam notícias, categorias, lotes isolados e candidatos sem promoção automática para a agenda.
+- `scripts/platform_quality.py`: registra por site disponibilidade, eventos distintos confirmados, candidatos, rejeições e limitações; os dados ficam em `app/platform-quality.json`.
+- **Regra de segurança:** coletor e rota oficial específica precisam concordar; lista de domínios não certifica o leiloeiro. Consulte registros oficiais antes de participar.
+- As fontes que não liberam dados verificáveis permanecem monitoradas, mas não são declaradas como integrações completas.

@@ -12,7 +12,7 @@
     "source_kind": "private_auctioneer",
     "monitor_enabled": true,
     "requires_individual_event_link": true,
-    "status": "candidate_adapter",
+    "status": "verified_adapter",
     "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event."
   },
   {
@@ -44,7 +44,7 @@
     "source_kind": "private_auctioneer",
     "monitor_enabled": true,
     "requires_individual_event_link": true,
-    "status": "candidate_adapter",
+    "status": "strict_adapter_pending_events",
     "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event."
   },
   {
@@ -60,7 +60,7 @@
     "source_kind": "private_auctioneer",
     "monitor_enabled": true,
     "requires_individual_event_link": true,
-    "status": "candidate_adapter",
+    "status": "strict_adapter_pending_events",
     "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event."
   },
   {
@@ -172,7 +172,7 @@
     "source_kind": "private_auctioneer",
     "monitor_enabled": true,
     "requires_individual_event_link": true,
-    "status": "candidate_adapter",
+    "status": "strict_adapter_pending_events",
     "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event."
   },
   {
@@ -188,7 +188,7 @@
     "source_kind": "private_auctioneer",
     "monitor_enabled": true,
     "requires_individual_event_link": true,
-    "status": "candidate_adapter",
+    "status": "verified_adapter",
     "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event."
   },
   {
@@ -204,7 +204,7 @@
     "source_kind": "private_auctioneer",
     "monitor_enabled": true,
     "requires_individual_event_link": true,
-    "status": "candidate_adapter",
+    "status": "verified_adapter",
     "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event."
   },
   {
@@ -220,7 +220,7 @@
     "source_kind": "private_auctioneer",
     "monitor_enabled": true,
     "requires_individual_event_link": true,
-    "status": "candidate_adapter",
+    "status": "verified_adapter",
     "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event."
   },
   {

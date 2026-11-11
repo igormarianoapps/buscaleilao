@@ -56,14 +56,15 @@ jobs:
       - name: Discover official regional auction portals
         continue-on-error: true
         run: python scripts/portal_watch.py
-      - name: Classify platform research candidates
-        continue-on-error: true
-        run: python scripts/platform_triage.py
       - name: Monitor sixteen private auction platforms
         continue-on-error: true
         run: python scripts/auction_platform_watch.py
-      - name: Refresh source directory after platform scan
-        run: python scripts/build_sources_page.py
+      - name: Classify private auction leads
+        continue-on-error: true
+        run: python scripts/platform_triage.py
+      - name: Prepare platform review queue
+        continue-on-error: true
+        run: python scripts/platform_review.py
       - name: Prioritize unverified discovery leads
         continue-on-error: true
         run: python scripts/prioritize_leads.py
@@ -71,6 +72,9 @@ jobs:
         if: always()
         continue-on-error: true
         run: python scripts/coverage_audit.py
+      - name: Audit per-platform data quality
+        continue-on-error: true
+        run: python scripts/platform_quality.py
       - name: Publish optional research diagnostics
         run: |
           for file in \
@@ -83,6 +87,8 @@ jobs:
             app/coverage-audit.json \
             app/auction-platform-diagnostics.json \
             app/platform-triage.json \
+            app/platform-review-queue.json \
+            app/platform-quality.json \
             app/fontes.html; do
             if [ -f "$file" ]; then git add "$file"; fi
           done
