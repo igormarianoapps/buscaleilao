@@ -19,7 +19,7 @@ REGISTRY=ROOT/"app"/"auction-platforms.json"
 REPORT=ROOT/"app"/"auction-platform-diagnostics.json"
 UA="BuscaLeilaoBot/0.7 (+https://github.com/igormarianoapps/buscaleilao)"
 STATES=set("AC AL AP AM BA CE DF ES GO MA MT MS MG PA PB PR PE PI RJ RN RS RO RR SC SP SE TO".split())
-DETAIL=re.compile(r"(?:leilao|leiloes|evento|eventos|pregao|detalhes|relacao-lista|relacao-foto|veiculos\.php)",re.I)
+DETAIL=re.compile(r"(?:leilao|leiloes|evento|eventos|pregao|detalhes|relacao-lista|relacao-foto|veiculos\.php|/lotes/[0-9]+)",re.I)
 NOISE=re.compile(r"(?:login|cadastro|usuario|entrar|minha.conta|politica|contato|sobre|imovel|terreno|apartamento|curso|faq|facebook|instagram|whatsapp|youtube|trabalhe)",re.I)
 
 def clean(value):
@@ -84,8 +84,17 @@ def candidates(site,markup):
             continue
         if url in seen:
             continue
+        # Known lot pages from Leilo are evidence of vehicles, not an event URL.
+        # A category search in Freitas is not an individual auction either.
+        from urllib.parse import urlsplit as _split
+        kind = ("individual_lot" if site["id"]=="leilo" and
+                re.fullmatch(r"/lote/[0-9a-f-]{36}/?",_split(url).path,re.I)
+                else "generic_category" if site["id"]=="freitas" and
+                _split(url).path.lower()=="/leiloes/pesquisar"
+                else "possible_event")
         seen.add(url)
         result.append({
+            "candidate_kind":kind,
             "platform_id":site["id"],"title":label[:180],
             "source_url":url,
             "state_hint":site["state_hint"],
