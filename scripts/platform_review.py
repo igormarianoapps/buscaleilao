@@ -11,7 +11,7 @@ def build(triage,now=None):
         for c in site.get("candidates",[]):
             if c.get("url_kind") in ("individual_lot_not_auction","generic_category_not_auction"):
                 continue
-            if c.get("category_hint")=="non_vehicle":
+            if c.get("category_hint")!="vehicle":
                 continue
             if recorded>=8:break
             result.append({

@@ -20,3 +20,8 @@ class PlatformReviewTests(unittest.TestCase):
     self.assertEqual(x["candidates_count"],8)
     self.assertNotIn("auction_date",x["items"][0])
 if __name__=="__main__":unittest.main()
+
+class UnknownCandidateTests(unittest.TestCase):
+ def test_unknown_categories_stay_in_diagnostics_not_actionable_queue(self):
+    x=build({"platforms":{"parque":{"candidates":[{"url_kind":"candidate_direct","category_hint":"unknown"}]}}})
+    self.assertEqual(x["candidates_count"],0)

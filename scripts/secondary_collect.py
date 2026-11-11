@@ -126,10 +126,28 @@ def parse_event(site,card,detail,url,today=None):
 def get_page(site,url):
     if url!=SITES[site][1] and not trusted_url(site,url):
         raise ValueError("untrusted event URL")
+    class CanonicalRedirect(urllib.request.HTTPRedirectHandler):
+        def __init__(self):
+            self.count=0
+        def redirect_request(self,req,fp,code,msg,headers,newurl):
+            self.count+=1
+            initial=urllib.parse.urlsplit(req.full_url)
+            target=urllib.parse.urlsplit(newurl)
+            # Only permit the same individual auction path with an optional
+            # trailing slash, on the same approved host.
+            if (self.count>2 or target.scheme!="https" or
+                target.hostname!=initial.hostname or
+                target.path.rstrip("/")!=initial.path.rstrip("/") or
+                target.query!=initial.query or target.fragment or
+                not trusted_url(site,newurl)):
+                raise ValueError("redirect outside identical first-party auction")
+            return super().redirect_request(req,fp,code,msg,headers,newurl)
     req=urllib.request.Request(url,headers={"Accept":"text/html",
         "User-Agent":"BuscaLeilaoBot/0.7 (+https://github.com/igormarianoapps/buscaleilao)"})
-    with urllib.request.build_opener(NoRedirect).open(req,timeout=11) as resp:
+    with urllib.request.build_opener(CanonicalRedirect()).open(req,timeout=11) as resp:
         if "html" not in resp.headers.get("Content-Type","").lower():raise ValueError("not HTML")
+        if url!=SITES[site][1] and not trusted_url(site,resp.geturl()):
+            raise ValueError("unexpected final URL")
         return resp.read(2_000_001).decode("utf-8","replace")
 
 def collect_secondary(today=None,loader=get_page):

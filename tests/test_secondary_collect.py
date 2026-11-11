@@ -37,3 +37,9 @@ class SecondaryTests(unittest.TestCase):
     self.assertEqual(data,[])
     self.assertTrue(any(x["id"]=="hisa" for x in errors))
 if __name__=="__main__":unittest.main()
+
+class FlexCanonicalRedirectTests(unittest.TestCase):
+ def test_only_exact_lot_url_is_approved(self):
+    from secondary_collect import trusted_url
+    self.assertTrue(trusted_url("flex","https://www.flexleiloes.com.br/lotes/2991/"))
+    self.assertFalse(trusted_url("flex","https://www.flexleiloes.com.br/lotes/2992/redirect"))

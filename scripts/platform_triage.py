@@ -10,7 +10,7 @@ from urllib.parse import urlsplit
 
 ROOT=Path(__file__).resolve().parents[1]
 STATES=set("AC AL AP AM BA CE DF ES GO MA MT MS MG PA PB PR PE PI RJ RN RS RO RR SC SP SE TO".split())
-NONVEHICLES=re.compile(r"\b(?:imoveis?|apartamentos?|terrenos?|galpoes?|eletrodomesticos?|eletronicos?|geladeiras?|moveis?|mobiliario|aeronaves?|pneus|vestuario|joias)\b")
+NONVEHICLES=re.compile(r"\b(?:imoveis?|apartamentos?|terrenos?|galpoes?|eletrodomesticos?|eletronicos?|geladeiras?|refrigeradores?|fogoes?|moveis?|mobiliario|aeronaves?|pneus|vestuario|joias)\b")
 VEHICLES=re.compile(r"\b(?:veiculos?|automoveis?|carros?|motos?|motocicletas?|caminhoes?|onibus|caminhonetes?|frotas?)\b")
 DATE_BR=re.compile(r"\b(\d{2})/(\d{2})/(20\d{2})\b")
 DATETIME_BR=re.compile(r"\b(\d{2})/(\d{2})/(20\d{2})\s+(?:às|as|-\s*)\s*(\d{1,2})[:h](\d{2})")
