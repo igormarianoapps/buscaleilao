@@ -82,6 +82,9 @@ def validate_feed(feed, report, now=None):
             errors.append(f"Event {index}: inconsistent multistate record")
         if not row.get("organizer") or not row.get("title"):
             errors.append(f"Event {index}: missing organizer or title")
+        from auction_security import valid_destination
+        if row.get('destination_verified') is not True or not valid_destination(row):
+            errors.append(f'Event {index}: destination failed approval gate')
         link_issue=verify_link_classification(row)
         if link_issue:
             errors.append(f"Event {index}: {link_issue}")
@@ -89,9 +92,7 @@ def validate_feed(feed, report, now=None):
         if event_url is not None:
             destination = urlsplit(event_url)
             if (destination.scheme != "https" or
-                destination.hostname not in ("pmklog.com.br","www.pmklog.com.br") or
-                destination.path.rstrip("/") != "/leilao/evento/leilao-detran" or
-                "evento=" not in (destination.query or "") or
+                not valid_destination(row) or
                 destination.username or destination.password):
                 errors.append(f"Event {index}: unverified auction destination")
         url = row.get("source_url") or ""
