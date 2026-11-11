@@ -1,0 +1,1174 @@
+{
+  "generated_at": "2026-11-11T19:59:13+00:00",
+  "platforms_total": 16,
+  "events_automatically_published": 0,
+  "platforms": {
+    "leilo": {
+      "name": "Leilo",
+      "batch": 1,
+      "access_status": "reachable",
+      "access_error": null,
+      "candidates_total": 25,
+      "vehicle_candidates": 0,
+      "dated_vehicle_candidates": 0,
+      "individual_lot_only": 25,
+      "not_vehicle": 0,
+      "candidates": [
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 34 AM chevron_left chevron_right play_arrow Recuperado de Financiamento CHEVROLET/CLASSIC LS (2P/4P) favorite calendar_today  13/14  233.598 km location_on Manaus/AM R$ 12.000",
+          "source_url": "https://leilo.com.br/lote/0b82e2b4-0efd-424b-9843-043d011a39ce/",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": "AM",
+          "url_kind": "individual_lot_not_auction",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "individual_lot_not_auction",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 217 AM chevron_left chevron_right play_arrow Recuperado de Financiamento YAMAHA/YBR 150 FACTOR favorite calendar_today  25/25  18.837 km location_on Manaus/AM R$ 9.000,00 pers",
+          "source_url": "https://leilo.com.br/lote/b19d77a7-be6b-4e79-a4ce-b192592610d8/",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": "AM",
+          "url_kind": "individual_lot_not_auction",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "individual_lot_not_auction",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 218 AM chevron_left chevron_right play_arrow Recuperado de Financiamento YAMAHA/YBR 150 FACTOR ED favorite calendar_today  24/24  24.939 km location_on Manaus/AM R$ 8.800,00 L",
+          "source_url": "https://leilo.com.br/lote/e084b196-b8c4-41cb-b361-3aa6a31f3557/",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": "AM",
+          "url_kind": "individual_lot_not_auction",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "individual_lot_not_auction",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 219 PA chevron_left chevron_right play_arrow Recuperado de Financiamento JTZ/DR160 S favorite calendar_today  25/26  18.530 km location_on Benevides/PA R$ 10.900,00 person Lan",
+          "source_url": "https://leilo.com.br/lote/0246cea3-8833-46ab-a585-8b4c2b8e90cf/",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": "PA",
+          "url_kind": "individual_lot_not_auction",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "individual_lot_not_auction",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 220 AM chevron_left chevron_right play_arrow Recuperado de Financiamento PEUGEOT/307 PRESENCE PACK (4P) favorite calendar_today  09/10  177.369 km location_on Manaus/AM R$ 3.0",
+          "source_url": "https://leilo.com.br/lote/54e6b081-c924-4588-a2b4-be196b57d112/",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": "AM",
+          "url_kind": "individual_lot_not_auction",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "individual_lot_not_auction",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 221 PA chevron_left chevron_right play_arrow Recuperado de Financiamento YAMAHA/FLUO 125 favorite calendar_today  23/24  27.107 km location_on Benevides/PA R$ 8.200,00 person ",
+          "source_url": "https://leilo.com.br/lote/3a5a2b7a-43b0-4e2f-82f4-4e6938d16b7c/",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": "PA",
+          "url_kind": "individual_lot_not_auction",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "individual_lot_not_auction",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 223 AM chevron_left chevron_right play_arrow Recuperado de Financiamento NISSAN/VERSA SV (2P/4P) favorite calendar_today  15/16  209.976 km location_on Manaus/AM R$ 23.000,00 ",
+          "source_url": "https://leilo.com.br/lote/95a782fb-091a-46e0-8963-a2f0f9f16512/",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": "AM",
+          "url_kind": "individual_lot_not_auction",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "individual_lot_not_auction",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 224 PA chevron_left chevron_right play_arrow Recuperado de Financiamento SHINERAY/SHI 175 favorite calendar_today  25/25  24.186 km location_on Benevides/PA R$ 7.000,00 Lance ",
+          "source_url": "https://leilo.com.br/lote/03e43c97-7fc3-43ca-845e-63db5fc14b3a/",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": "PA",
+          "url_kind": "individual_lot_not_auction",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "individual_lot_not_auction",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 226 PA chevron_left chevron_right play_arrow Recuperado de Financiamento HONDA/NXR160 BROS ESDD favorite calendar_today  23/23 location_on Benevides/PA R$ 12.300,00 person Lan",
+          "source_url": "https://leilo.com.br/lote/6d800344-3d42-4265-8d92-e8e9ad0c3533/",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": "PA",
+          "url_kind": "individual_lot_not_auction",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "individual_lot_not_auction",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 227 PA chevron_left chevron_right play_arrow Recuperado de Financiamento NISSAN/MARCH S FLEX (4P) favorite calendar_today  12/13  145.225 km location_on Benevides/PA R$ 15.000",
+          "source_url": "https://leilo.com.br/lote/70fec89d-7d86-44f5-9efc-7c490e600f9b/",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": "PA",
+          "url_kind": "individual_lot_not_auction",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "individual_lot_not_auction",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 228 PA chevron_left chevron_right play_arrow Recuperado de Financiamento HONDA/CG 160 TITAN favorite calendar_today  25/25  23.771 km location_on Benevides/PA R$ 14.500,00 per",
+          "source_url": "https://leilo.com.br/lote/bb62b96f-468d-46ef-886f-414e46e11538/",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": "PA",
+          "url_kind": "individual_lot_not_auction",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "individual_lot_not_auction",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 229 AM chevron_left chevron_right play_arrow Recuperado de Financiamento YAMAHA/YBR 150 FACTOR favorite calendar_today  26/26  3.579 km location_on Manaus/AM R$ 10.000,00 pers",
+          "source_url": "https://leilo.com.br/lote/c77ff6d9-cb16-4aae-afbf-24d269bf1424/",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": "AM",
+          "url_kind": "individual_lot_not_auction",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "individual_lot_not_auction",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 230 PA chevron_left chevron_right play_arrow Recuperado de Financiamento CHEVROLET/S10 LTZ DD4A favorite calendar_today  13/14  Sem acesso ao KM location_on Benevides/PA R$ 44",
+          "source_url": "https://leilo.com.br/lote/791b28f4-49f1-400c-b82d-9883fe7817a1/",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": "PA",
+          "url_kind": "individual_lot_not_auction",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "individual_lot_not_auction",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 231 AM chevron_left chevron_right play_arrow Recuperado de Financiamento RENAULT/KWID ZEN 1.0 MECANICO (4P) favorite calendar_today  19/20  106.554 km location_on Manaus/AM R$",
+          "source_url": "https://leilo.com.br/lote/3bf752d0-2f8f-4b5a-aab9-98d9ac390fce/",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": "AM",
+          "url_kind": "individual_lot_not_auction",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "individual_lot_not_auction",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 232 AM chevron_left chevron_right play_arrow Recuperado de Financiamento YAMAHA/YBR 150 FACTOR ED favorite calendar_today  23/24  155.458 km location_on Manaus/AM R$ 8.000,00 ",
+          "source_url": "https://leilo.com.br/lote/f4020780-76ee-4a3a-b425-3e586770f313/",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": "AM",
+          "url_kind": "individual_lot_not_auction",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "individual_lot_not_auction",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 233 PA chevron_left chevron_right play_arrow Recuperado de Financiamento CITROEN/C3 PICASSO EXC A favorite calendar_today  14/15  152.976 km location_on Benevides/PA R$ 24.000",
+          "source_url": "https://leilo.com.br/lote/1c9d280a-80ae-4f55-b3b9-c807b0ed488d/",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": "PA",
+          "url_kind": "individual_lot_not_auction",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "individual_lot_not_auction",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 234 PA chevron_left chevron_right play_arrow Recuperado de Financiamento VOLKSWAGEN/NOVO FOX COMFORTLINE MB (4P/2P) favorite calendar_today  14/15  151.599 km location_on Bene",
+          "source_url": "https://leilo.com.br/lote/962173a4-0f50-4117-9894-743c53cc48e8/",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "individual_lot_not_auction",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "individual_lot_not_auction",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 235 AM chevron_left chevron_right play_arrow Recuperado de Financiamento FORD/KA HATCH SE 1.0 C (4P) favorite calendar_today  19/19 location_on Manaus/AM R$ 23.000,00 Lance In",
+          "source_url": "https://leilo.com.br/lote/0977e53f-624e-47e4-b1f3-048380744fe2/",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": "AM",
+          "url_kind": "individual_lot_not_auction",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "individual_lot_not_auction",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 236 PA chevron_left chevron_right play_arrow Recuperado de Financiamento SHINERAY/SHI 250 6B favorite calendar_today  25/26  13.895 km location_on Benevides/PA R$ 7.400,00 per",
+          "source_url": "https://leilo.com.br/lote/557e7d26-3f8c-4ba5-a39e-7f0925d8dd74/",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": "PA",
+          "url_kind": "individual_lot_not_auction",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "individual_lot_not_auction",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 238 PA chevron_left chevron_right play_arrow Recuperado de Financiamento FIAT/STRADA WORKING CABINE DUPLA favorite calendar_today  13/13  147.966 km location_on Benevides/PA R",
+          "source_url": "https://leilo.com.br/lote/839456a5-f7b1-45bc-86c7-538371f37084/",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": "PA",
+          "url_kind": "individual_lot_not_auction",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "individual_lot_not_auction",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 239 PA chevron_left chevron_right play_arrow Recuperado de Financiamento HAOJUE/JTZ/DK160 favorite calendar_today  24/25  49.968 km location_on Benevides/PA R$ 4.300,00 person",
+          "source_url": "https://leilo.com.br/lote/24567f6c-ae11-4d43-82b2-698409854423/",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": "PA",
+          "url_kind": "individual_lot_not_auction",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "individual_lot_not_auction",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 240 AM chevron_left chevron_right play_arrow Recuperado de Financiamento SHINERAY/XY250-5A favorite calendar_today  25/25  13.628 km location_on Manaus/AM R$ 8.000,00 person L",
+          "source_url": "https://leilo.com.br/lote/f0fa6c46-014e-41e1-873f-176ef8022c75/",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": "AM",
+          "url_kind": "individual_lot_not_auction",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "individual_lot_not_auction",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 241 PA chevron_left chevron_right play_arrow Recuperado de Financiamento SHINERAY/SHI 150 favorite calendar_today  26/26  4.141 km location_on Benevides/PA R$ 6.600,00 person ",
+          "source_url": "https://leilo.com.br/lote/1d70d3e5-501b-4fe2-a35b-502ce17c7dab/",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": "PA",
+          "url_kind": "individual_lot_not_auction",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "individual_lot_not_auction",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 242 PA chevron_left chevron_right play_arrow Recuperado de Financiamento SHINERAY/SHI 150 favorite calendar_today  26/26  51 km location_on Benevides/PA R$ 6.900,00 person Lan",
+          "source_url": "https://leilo.com.br/lote/3e9abf50-fa48-4004-bd57-54467ce69300/",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": "PA",
+          "url_kind": "individual_lot_not_auction",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "individual_lot_not_auction",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "leilo",
+          "title": "LOTE 243 AM chevron_left chevron_right play_arrow Recuperado de Financiamento BMW/320I PG51 (4P) favorite calendar_today  09/10  KM ilegível location_on Manaus/AM R$ 11.000,00 Lanc",
+          "source_url": "https://leilo.com.br/lote/ca80a54b-9e35-45fa-aeb9-084ee428ade2/",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": "AM",
+          "url_kind": "individual_lot_not_auction",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "individual_lot_not_auction",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        }
+      ]
+    },
+    "mcleilao": {
+      "name": "MC Leilão",
+      "batch": 1,
+      "access_status": "reachable",
+      "access_error": null,
+      "candidates_total": 0,
+      "vehicle_candidates": 0,
+      "dated_vehicle_candidates": 0,
+      "individual_lot_only": 0,
+      "not_vehicle": 0,
+      "candidates": []
+    },
+    "flex": {
+      "name": "Flex Leilões",
+      "batch": 1,
+      "access_status": "reachable",
+      "access_error": null,
+      "candidates_total": 0,
+      "vehicle_candidates": 0,
+      "dated_vehicle_candidates": 0,
+      "individual_lot_only": 0,
+      "not_vehicle": 0,
+      "candidates": []
+    },
+    "parque": {
+      "name": "Parque dos Leilões",
+      "batch": 1,
+      "access_status": "reachable",
+      "access_error": null,
+      "candidates_total": 12,
+      "vehicle_candidates": 0,
+      "dated_vehicle_candidates": 0,
+      "individual_lot_only": 0,
+      "not_vehicle": 0,
+      "candidates": [
+        {
+          "platform_id": "parque",
+          "title": "Detalhes",
+          "source_url": "https://www.parquedosleiloes.com.br/leilao/1522/detalhes",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "parque",
+          "title": "Detalhes",
+          "source_url": "https://www.parquedosleiloes.com.br/leilao/1521/detalhes",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "parque",
+          "title": "Detalhes",
+          "source_url": "https://www.parquedosleiloes.com.br/leilao/1519/detalhes",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "parque",
+          "title": "Detalhes",
+          "source_url": "https://www.parquedosleiloes.com.br/leilao/1518/detalhes",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "parque",
+          "title": "Detalhes",
+          "source_url": "https://www.parquedosleiloes.com.br/leilao/1512/detalhes",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "parque",
+          "title": "Detalhes",
+          "source_url": "https://www.parquedosleiloes.com.br/leilao/1516/detalhes",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "parque",
+          "title": "Detalhes",
+          "source_url": "https://www.parquedosleiloes.com.br/leilao/1513/detalhes",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "parque",
+          "title": "Detalhes",
+          "source_url": "https://www.parquedosleiloes.com.br/leilao/1509/detalhes",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "parque",
+          "title": "Detalhes",
+          "source_url": "https://www.parquedosleiloes.com.br/leilao/1511/detalhes",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "parque",
+          "title": "Detalhes",
+          "source_url": "https://www.parquedosleiloes.com.br/leilao/1508/detalhes",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "parque",
+          "title": "Detalhes",
+          "source_url": "https://www.parquedosleiloes.com.br/leilao/1506/detalhes",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "parque",
+          "title": "Detalhes",
+          "source_url": "https://www.parquedosleiloes.com.br/leilao/1505/detalhes",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        }
+      ]
+    },
+    "sodre": {
+      "name": "Sodré Santoro",
+      "batch": 2,
+      "access_status": "unreachable",
+      "access_error": "HTTP Error 403: Forbidden",
+      "candidates_total": 0,
+      "vehicle_candidates": 0,
+      "dated_vehicle_candidates": 0,
+      "individual_lot_only": 0,
+      "not_vehicle": 0,
+      "candidates": []
+    },
+    "copart": {
+      "name": "Copart",
+      "batch": 4,
+      "access_status": "reachable",
+      "access_error": null,
+      "candidates_total": 0,
+      "vehicle_candidates": 0,
+      "dated_vehicle_candidates": 0,
+      "individual_lot_only": 0,
+      "not_vehicle": 0,
+      "candidates": []
+    },
+    "loop": {
+      "name": "Loop Brasil",
+      "batch": 2,
+      "access_status": "reachable",
+      "access_error": null,
+      "candidates_total": 0,
+      "vehicle_candidates": 0,
+      "dated_vehicle_candidates": 0,
+      "individual_lot_only": 0,
+      "not_vehicle": 0,
+      "candidates": []
+    },
+    "freitas": {
+      "name": "Freitas Leiloeiro",
+      "batch": 4,
+      "access_status": "reachable",
+      "access_error": null,
+      "candidates_total": 3,
+      "vehicle_candidates": 3,
+      "dated_vehicle_candidates": 0,
+      "individual_lot_only": 0,
+      "not_vehicle": 0,
+      "candidates": [
+        {
+          "platform_id": "freitas",
+          "title": "Veículos",
+          "source_url": "https://www.freitasleiloeiro.com.br/Leiloes/Pesquisar?query=&categoria=1",
+          "category_hint": "vehicle",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "generic_category_not_auction",
+          "status": "needs_review",
+          "review_reasons": [
+            "event_date_unverified_or_expired",
+            "generic_category_not_auction",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "freitas",
+          "title": "VEÍCULOS",
+          "source_url": "https://www.freitasleiloeiro.com.br/Leiloes/Pesquisar?Categoria=1&TipoLoteId=1",
+          "category_hint": "vehicle",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "generic_category_not_auction",
+          "status": "needs_review",
+          "review_reasons": [
+            "event_date_unverified_or_expired",
+            "generic_category_not_auction",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "freitas",
+          "title": "MOTOS",
+          "source_url": "https://www.freitasleiloeiro.com.br/Leiloes/Pesquisar?Categoria=1&TipoLoteId=3",
+          "category_hint": "vehicle",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "generic_category_not_auction",
+          "status": "needs_review",
+          "review_reasons": [
+            "event_date_unverified_or_expired",
+            "generic_category_not_auction",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        }
+      ]
+    },
+    "milan": {
+      "name": "Milan Leilões",
+      "batch": 2,
+      "access_status": "unreachable",
+      "access_error": "HTTP Error 403: Forbidden",
+      "candidates_total": 0,
+      "vehicle_candidates": 0,
+      "dated_vehicle_candidates": 0,
+      "individual_lot_only": 0,
+      "not_vehicle": 0,
+      "candidates": []
+    },
+    "vip": {
+      "name": "VIP Leilões",
+      "batch": 4,
+      "access_status": "unreachable",
+      "access_error": "redirect outside approved platform hosts",
+      "candidates_total": 0,
+      "vehicle_candidates": 0,
+      "dated_vehicle_candidates": 0,
+      "individual_lot_only": 0,
+      "not_vehicle": 0,
+      "candidates": []
+    },
+    "hisa": {
+      "name": "Hisa Leilões",
+      "batch": 2,
+      "access_status": "reachable",
+      "access_error": null,
+      "candidates_total": 5,
+      "vehicle_candidates": 0,
+      "dated_vehicle_candidates": 0,
+      "individual_lot_only": 0,
+      "not_vehicle": 5,
+      "candidates": [
+        {
+          "platform_id": "hisa",
+          "title": "Eletrônico   118   lotes  ITENS DIVERSOS - PNEUS, ELETRODOMÉSTICOS, RODAS, VESTUÁRIO     Eletrônico 118 LOTES   SAO CAETANO DO SUL, SP   Data: 13/11/2026 às 11:00   Leilão: 2534   ",
+          "source_url": "https://hisaleiloes.com.br/leilao/2534",
+          "category_hint": "non_vehicle",
+          "date_hint": "2026-11-13",
+          "time_hint": "11:00",
+          "state_hint_verified_from_event": "SP",
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "hisa",
+          "title": "Eletrônico   80   lotes  HISA REVERSA     Eletrônico 80 LOTES   SAO CAETANO DO SUL, SP   Data: 13/11/2026 às 14:00   Leilão: 2542   80 lotes",
+          "source_url": "https://hisaleiloes.com.br/leilao/2542",
+          "category_hint": "non_vehicle",
+          "date_hint": "2026-11-13",
+          "time_hint": "14:00",
+          "state_hint_verified_from_event": "SP",
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "hisa",
+          "title": "Eletrônico   2   lotes  MÓVEIS DIVERSOS     Eletrônico 2 LOTES   EXTREMA, MG   Data: 19/11/2026 às 17:00   Leilão: 2539   2 lotes",
+          "source_url": "https://hisaleiloes.com.br/leilao/2539",
+          "category_hint": "non_vehicle",
+          "date_hint": "2026-11-19",
+          "time_hint": "17:00",
+          "state_hint_verified_from_event": "MG",
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "hisa",
+          "title": "Eletrônico   36   lotes  ITENS DIVERSOS - ELETRODOMÉSTICOS     Eletrônico 36 LOTES   SAO CAETANO DO SUL, SP   Data: 25/11/2026 às 14:00   Leilão: 2541   36 lotes",
+          "source_url": "https://hisaleiloes.com.br/leilao/2541",
+          "category_hint": "non_vehicle",
+          "date_hint": "2026-11-25",
+          "time_hint": "14:00",
+          "state_hint_verified_from_event": "SP",
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "hisa",
+          "title": "Eletrônico  ASSURANT     Eletrônico   SAO CAETANO DO SUL, SP   Data: 26/11/2026 às 15:00   Leilão: 2538",
+          "source_url": "https://hisaleiloes.com.br/leilao/2538",
+          "category_hint": "non_vehicle",
+          "date_hint": "2026-11-26",
+          "time_hint": "15:00",
+          "state_hint_verified_from_event": "SP",
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        }
+      ]
+    },
+    "bolsa": {
+      "name": "Bolsa de Leilões",
+      "batch": 2,
+      "access_status": "reachable",
+      "access_error": null,
+      "candidates_total": 7,
+      "vehicle_candidates": 1,
+      "dated_vehicle_candidates": 1,
+      "individual_lot_only": 0,
+      "not_vehicle": 5,
+      "candidates": [
+        {
+          "platform_id": "bolsa",
+          "title": "Leilão 911  BELO HORIZONTE/MG    314 Lotes IMPERDIVEL! LEILÃO DE ELETRODOMÉSTICOS EM BH #34 - CONFIRAM !!!!  IMPERDIVEL! LEILÃO DE ELETRODOMÉSTICOS EM BH #34 - CONFIRAM !!!!   Data",
+          "source_url": "https://www.bolsadeleiloes.com.br/leilao/911",
+          "category_hint": "non_vehicle",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": "MG",
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "bolsa",
+          "title": "Leilão 924  CONTAGEM/MG   GRANDE LEILÃO DE ELETRODOMÉSTICOS DIVERSOS. CONTAGEM - MG #35  GRANDE LEILÃO DE ELETRODOMÉSTICOS DIVERSOS. CONTAGEM - MG #35   Data 16/11/2026 às 10:00:00",
+          "source_url": "https://www.bolsadeleiloes.com.br/leilao/924",
+          "category_hint": "non_vehicle",
+          "date_hint": "2026-11-16",
+          "time_hint": "10:00",
+          "state_hint_verified_from_event": "MG",
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "bolsa",
+          "title": "Leilão 906  BELO HORIZONTE/MG    143 Lotes LEILÃO DE ELETRÔNICOS E DIVERSOS - CONFIRAM !  LEILÃO DE ELETRÔNICOS E DIVERSOS - CONFIRAM !   Data 17/11/2026 às 10:00:00  ONLINE ABERTO",
+          "source_url": "https://www.bolsadeleiloes.com.br/leilao/906",
+          "category_hint": "non_vehicle",
+          "date_hint": "2026-11-17",
+          "time_hint": "10:00",
+          "state_hint_verified_from_event": "MG",
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "bolsa",
+          "title": "Leilão 917  CAMACARI/BA    178 Lotes LEILÃO DE ELETRODOMÉSTICOS BA #36 - CONFIRAM !  LEILÃO DE ELETRODOMÉSTICOS BA #36 - CONFIRAM !   Data 17/11/2026 às 11:00:00  ONLINE ABERTO PAR",
+          "source_url": "https://www.bolsadeleiloes.com.br/leilao/917",
+          "category_hint": "non_vehicle",
+          "date_hint": "2026-11-17",
+          "time_hint": "11:00",
+          "state_hint_verified_from_event": "BA",
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "bolsa",
+          "title": "Leilão 923  DUQUE DE CAXIAS/RJ   SUPER LEILÃO DE ELETRODOMÉSTICOS NO RJ  #37- NÃO PERCAM!  SUPER LEILÃO DE ELETRODOMÉSTICOS NO RJ  #37- NÃO PERCAM!   Data 23/11/2026 às 10:00:00  O",
+          "source_url": "https://www.bolsadeleiloes.com.br/leilao/923",
+          "category_hint": "non_vehicle",
+          "date_hint": "2026-11-23",
+          "time_hint": "10:00",
+          "state_hint_verified_from_event": "RJ",
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "bolsa",
+          "title": "Leilão 931  JUNDIAI/SP    247 Lotes LEILÃO... REFRIGERADORES, FOGÕES E MUITO MAIS ... JUNDIAÍ - SP #152  LEILÃO... REFRIGERADORES, FOGÕES E MUITO MAIS ... JUNDIAÍ - SP #152   Data ",
+          "source_url": "https://www.bolsadeleiloes.com.br/leilao/931",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": "SP",
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "bolsa",
+          "title": "Leilão 920  BELO HORIZONTE/MG    31 Lotes Grande Leilão de Veículos Banco SANTANDER  Grande Leilão de Veículos Banco SANTANDER   Data 23/11/2026 às 13:00:00  ONLINE ABERTO PARA LAN",
+          "source_url": "https://www.bolsadeleiloes.com.br/leilao/920",
+          "category_hint": "vehicle",
+          "date_hint": "2026-11-23",
+          "time_hint": "13:00",
+          "state_hint_verified_from_event": "MG",
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        }
+      ]
+    },
+    "vardana": {
+      "name": "Vardana Leilões",
+      "batch": 3,
+      "access_status": "reachable",
+      "access_error": null,
+      "candidates_total": 2,
+      "vehicle_candidates": 0,
+      "dated_vehicle_candidates": 0,
+      "individual_lot_only": 0,
+      "not_vehicle": 0,
+      "candidates": [
+        {
+          "platform_id": "vardana",
+          "title": "VER RELAÇÃO DE LOTES",
+          "source_url": "https://www.vardanaleiloes.com.br/vardana/veiculos.php?lei=1085",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "vardana",
+          "title": "VER RELAÇÃO DE LOTES",
+          "source_url": "https://www.vardanaleiloes.com.br/vardana/veiculos.php?lei=1086",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        }
+      ]
+    },
+    "claudio": {
+      "name": "Claudio Kuss Leilões",
+      "batch": 3,
+      "access_status": "reachable",
+      "access_error": null,
+      "candidates_total": 1,
+      "vehicle_candidates": 0,
+      "dated_vehicle_candidates": 0,
+      "individual_lot_only": 0,
+      "not_vehicle": 0,
+      "candidates": [
+        {
+          "platform_id": "claudio",
+          "title": "Acessar leilão",
+          "source_url": "https://www.claudiokussleiloes.com.br/relacao-foto/902",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        }
+      ]
+    },
+    "palacio": {
+      "name": "Palácio dos Leilões",
+      "batch": 3,
+      "access_status": "reachable",
+      "access_error": null,
+      "candidates_total": 0,
+      "vehicle_candidates": 0,
+      "dated_vehicle_candidates": 0,
+      "individual_lot_only": 0,
+      "not_vehicle": 0,
+      "candidates": []
+    },
+    "rogerio": {
+      "name": "Rogério Menezes",
+      "batch": 3,
+      "access_status": "reachable",
+      "access_error": null,
+      "candidates_total": 0,
+      "vehicle_candidates": 0,
+      "dated_vehicle_candidates": 0,
+      "individual_lot_only": 0,
+      "not_vehicle": 0,
+      "candidates": []
+    }
+  }
+}

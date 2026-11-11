@@ -1,7 +1,7 @@
 {
-  "snapshot_checked_at": "2026-11-11T19:29:10+00:00",
-  "unique_events": 48,
-  "event_rows": 128,
+  "snapshot_checked_at": "2026-11-11T19:59:38+00:00",
+  "unique_events": 51,
+  "event_rows": 150,
   "states_with_events": [
     "AM",
     "BA",
@@ -10,8 +10,10 @@
     "GO",
     "MA",
     "MG",
+    "MS",
     "MT",
     "PA",
+    "PB",
     "PE",
     "PI",
     "PR",
@@ -19,50 +21,53 @@
     "RO",
     "RS",
     "SC",
-    "SP"
+    "SP",
+    "TO"
   ],
   "states_without_events": [
     "AC",
     "AL",
     "AP",
     "ES",
-    "MS",
-    "PB",
     "RN",
     "RR",
-    "SE",
-    "TO"
+    "SE"
   ],
   "events_by_state": {
-    "AM": 4,
-    "BA": 8,
-    "CE": 6,
-    "DF": 3,
-    "GO": 7,
-    "MA": 8,
+    "AM": 6,
+    "BA": 9,
+    "CE": 7,
+    "DF": 6,
+    "GO": 10,
+    "MA": 9,
     "MG": 17,
-    "MT": 7,
-    "PA": 7,
+    "MS": 1,
+    "MT": 9,
+    "PA": 9,
+    "PB": 1,
     "PE": 12,
     "PI": 5,
-    "PR": 7,
+    "PR": 8,
     "RJ": 4,
     "RO": 6,
-    "RS": 5,
+    "RS": 7,
     "SC": 7,
-    "SP": 15
+    "SP": 16,
+    "TO": 1
   },
   "events_by_organizer": {
     "Bolsa de Leilões": 1,
     "Copart": 12,
     "Detran MG": 12,
     "Freitas Leiloeiro": 3,
+    "Leilo": 3,
     "Prefeitura de Cuiabá — Semob": 1,
     "VIP Leilões": 18,
     "Vardana Leilões": 1
   },
   "rows_by_destination_host": {
     "leilao.transito.mg.gov.br": 12,
+    "leilo.com.br": 3,
     "www.bolsadeleiloes.com.br": 1,
     "www.copart.com.br": 12,
     "www.focoleiloes.com.br": 1,
@@ -83,5 +88,5 @@
   "unverified_portal_leads": 15,
   "review_queue_items": 72,
   "coverage_definition": "States with >=1 distinct event, not percentage of national auctions; registry entries are research sources, not active collectors or verified events",
-  "generated_at": "2026-11-11T19:30:00+00:00"
+  "generated_at": "2026-11-11T20:01:33+00:00"
 }
