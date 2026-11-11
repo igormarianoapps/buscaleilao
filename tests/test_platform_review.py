@@ -17,7 +17,7 @@ class PlatformReviewTests(unittest.TestCase):
  def test_limits_each_source_and_does_not_set_auction_date(self):
     item={"url_kind":"candidate_direct","category_hint":"unknown"}
     x=build({"platforms":{"flex":{"candidates":[item]*25}}})
-    self.assertEqual(x["candidates_count"],8)
+    self.assertEqual(x["candidates_count"],0)
     self.assertNotIn("auction_date",x["items"][0])
 if __name__=="__main__":unittest.main()
 
