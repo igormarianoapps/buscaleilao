@@ -163,6 +163,11 @@ def main():
             if key is not None:
                 known_details.add(key)
     failures.extend(platform_failures)
+    from auction_links import certify_links
+    certify_links(events)
+    quarantined = [e for e in events if not e.get("link_verified")]
+    events = [e for e in events if e.get("link_verified")]
+    failures.extend({"id":e["id"], "error":"quarantined: "+e.get("link_review_reason","unverified destination")} for e in quarantined)
     # Publish only independently approved event-level destinations.
     # Unverified official notices remain research leads, never user-facing links.
     from auction_security import valid_destination
@@ -197,6 +202,7 @@ def main():
         "curated_source_links":sum(bool(e.get("event_url")) for e in events),
         "curated_success":health["successful_sources"],
         "curated_failure":health["failed_sources"],
+        "quarantined_links":len(quarantined),
         "failed":failures
     }
     REPORT.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
