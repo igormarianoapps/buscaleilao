@@ -30,6 +30,7 @@ export function filterAuctions(items,{state='',start='',end='',day='',today='',k
     Boolean(a.event_url || a.source_url) &&
     (!today || a.auction_date>=today) &&
     (!state || a.states.includes(state)) &&
+    (!searchText(keyword) || searchText([a.title,a.city,a.organizer,a.id,a.event_id,a.auction_number].join(' ')).includes(searchText(keyword))) &&
     (!from || a.auction_date>=from) &&
     (!to || a.auction_date<=to) &&
     (!keyword || normalizeSearch([a.title,a.city,a.organizer,a.id,a.event_id,...a.states].join(' ')).includes(normalizeSearch(keyword))));
@@ -57,6 +58,7 @@ export function sourceLabel(type) {
 export function emptyResultsMessage({state='',start='',end='',day='',keyword=''}={}) {
   if(keyword) return 'Nenhum leilão encontrado para esta palavra-chave e os filtros selecionados.';
   const hasDate=Boolean(start || end || day);
+  if(keyword) return 'Nenhum leilão corresponde à palavra-chave e aos filtros selecionados. Experimente outro termo ou limpe os filtros.';
   if(state && hasDate) return 'Nenhum leilão encontrado para o estado e o período selecionados. Limpe os filtros para consultar outros eventos.';
   if(state) return 'Nenhum leilão encontrado para este estado. Limpe os filtros para consultar outros eventos.';
   if(hasDate) return 'Nenhum leilão encontrado para o período selecionado. Limpe os filtros para consultar outros eventos.';
