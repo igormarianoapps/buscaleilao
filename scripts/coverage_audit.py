@@ -15,9 +15,10 @@ def audit(feed, registry, queue=None, portal=None):
     host_counts=Counter()
     for event in events:
         identity=(event.get("organizer"),event.get("event_id") or event.get("id"))
-        if identity not in identities:
-            organizer_counts[event.get("organizer","unknown")]+=1
-            identities.add(identity)
+        if identity in identities:
+            continue  # Multistate feed rows for one event must not inflate coverage.
+        identities.add(identity)
+        organizer_counts[event.get("organizer","unknown")]+=1
         host=urlsplit(event.get("event_url") or event.get("source_url") or "").hostname
         if host: host_counts[host]+=1
         for state in set(event.get("states") or [event.get("state")]):
