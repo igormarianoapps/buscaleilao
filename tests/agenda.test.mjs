@@ -5,7 +5,7 @@ import {groupAuctions,filterAuctions,feedFreshness,sourceLabel,emptyResultsMessa
 const make = (id,state,overrides={}) => ({
   id, state, title:'Leilão', auction_date:'2099-11-03',
   auction_time:'10:00', organizer:'VIP Leilões', source_type:'private',
-  status:'scheduled', link_verified:true, source_link_type:'event', link_verified:true, source_url:'https://www.vipleiloes.com.br/leilao/123',
+  status:'scheduled', destination_verified:true, source_link_type:'event', link_verified:true, source_url:'https://www.vipleiloes.com.br/leilao/123',
   ...overrides
 });
 
@@ -108,4 +108,8 @@ test('unverified links and links to news never appear, even on HTTPS',()=>{
  make('unverified','MT',{link_verified:false}),
  make('with_event_url','MT',{source_link_type:undefined,link_verified:true,event_url:'https://www.focoleiloes.com.br/leilao/497/lotes'})];
  assert.deepEqual(filterAuctions(items,{today:'2099-11-01'}).map(x=>x.id),['with_event_url']);
+});
+
+test('per-event approval is required even when the URL shape is trusted',()=>{
+ assert.deepEqual(filterAuctions([make('structural','GO',{destination_verified:false})],{today:'2099-11-01'}),[]);
 });
