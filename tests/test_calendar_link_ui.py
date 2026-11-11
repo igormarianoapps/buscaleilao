@@ -8,9 +8,10 @@ class CalendarLinkUXTests(unittest.TestCase):
     def test_calendar_is_not_described_as_specific_auction(self):
         html=HTML.read_text(encoding="utf-8")
         self.assertIn("Ver veículos e lotes do leilão",html)
-        self.assertIn("Consultar edital ou comunicado oficial",html)
-        self.assertIn("a.event_url||a.source_url",html)
-        self.assertIn("ver comunicado ou edital",html)
+        # UI must never offer government articles as the auction destination.
+        self.assertIn("auctionDestination(a)",html)
+        self.assertNotIn('href="${escapeHTML(a.event_url||a.source_url)}"',html)
+        self.assertNotIn("Consultar edital ou comunicado oficial",html)
 
     def test_html_has_no_literal_newline_escape_artifacts(self):
         html=HTML.read_text(encoding="utf-8")
@@ -33,7 +34,8 @@ class CalendarLinkUXTests(unittest.TestCase):
         self.assertIn('filters.addEventListener("submit",e=>{e.preventDefault();applyFilters()})',html)
         self.assertIn('filters.addEventListener("reset"',html)
         self.assertIn('let currentFeed=null',html)
-        self.assertIn('emptyResultsMessage({state:form.get("state"),start,end})',html)
+        self.assertIn('emptyResultsMessage({state:form.get("state"),start,end,keyword:form.get("keyword")})',html)
+        self.assertIn('name="keyword"',html)
         self.assertIn('name="start"',html)
         self.assertIn('name="end"',html)
         self.assertIn('A data inicial não pode ser posterior à data final.',html)
@@ -60,8 +62,10 @@ class CalendarLinkUXTests(unittest.TestCase):
         self.assertIn('rel="noopener noreferrer"',html)
         self.assertIn('target="_blank"',html)
         self.assertIn("Ver veículos e lotes do leilão",html)
-        self.assertIn("escapeHTML(a.event_url||a.source_url)",html)
-        self.assertIn("escapeHTML(a.source_url)",html)
+        self.assertIn("escapeHTML(auctionDestination(a))",html)
+        self.assertIn("function auctionDestination(a)",html)
+        self.assertIn("a.destination_verified !== true",html)
+        self.assertIn("a.link_verified !== true",html)
 
 if __name__=="__main__":
     unittest.main()
