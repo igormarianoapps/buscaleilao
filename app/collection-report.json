@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-11-11T18:53:14+00:00",
-  "verified": 134,
-  "unique_events": 46,
+  "checked_at": "2026-11-11T19:22:19+00:00",
+  "verified": 127,
+  "unique_events": 47,
   "states_with_events": [
     "AM",
     "BA",
@@ -36,22 +36,29 @@
   "state_presence_percent": 63.0,
   "coverage_definition": "Presence of at least one event, not fraction of all auctions discovered",
   "organizers": {
-    "Copart": 10,
+    "Copart": 12,
     "Detran MG": 12,
-    "Freitas Leiloeiro": 4,
+    "Freitas Leiloeiro": 3,
     "Prefeitura de Cuiabá — Semob": 1,
-    "VIP Leilões": 19
+    "VIP Leilões": 18,
+    "Vardana Leilões": 1
   },
-  "platform_events": 121,
-  "direct_event_links": 134,
+  "platform_events": 114,
+  "direct_event_links": 127,
   "calendar_links": 0,
   "curated_source_links": 1,
-  "curated_success": 7,
-  "curated_failure": 2,
-  "quarantined_links": 6,
+  "curated_success": 6,
+  "curated_failure": 3,
+  "quarantined_links": 5,
   "official_state_events": 12,
-  "new_discoveries": 23,
+  "regional_private_events": 1,
+  "regional_adapter_failures": 2,
+  "new_discoveries": 3,
   "failed": [
+    {
+      "id": "detran-ba-23-2026",
+      "error": "Page.goto: Timeout 15000ms exceeded."
+    },
     {
       "id": "aracaju-3-leilao-2026-11-12",
       "error": "HTTP Error 403: Forbidden"
@@ -61,15 +68,19 @@
       "error": "HTTP Error 403: Forbidden"
     },
     {
+      "id": "vardana:https://www.vardanaleiloes.com.br/vardana/veiculos.php?lei=1086",
+      "error": "lot page not confirmed / no published lots"
+    },
+    {
+      "id": "claudio:https://www.claudiokussleiloes.com.br/relacao-foto/902",
+      "error": "lot page not confirmed / no published lots"
+    },
+    {
       "id": "vieiras-001-2026",
       "error": "quarantined: missing direct auction destination"
     },
     {
       "id": "curitiba-smdt-17-2026",
-      "error": "quarantined: missing direct auction destination"
-    },
-    {
-      "id": "detran-ba-23-2026",
       "error": "quarantined: missing direct auction destination"
     },
     {
