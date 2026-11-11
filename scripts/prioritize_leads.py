@@ -97,7 +97,7 @@ def prioritize(items, now=None):
     selected.sort(key=lambda x: (-x["priority"], -parsedate_to_datetime(x["published"]).timestamp()))
     return selected[:80]
 
-def merge_review_sources(news_items, pncp_items, existing_sources=None, limit=120, uncovered_states=None):
+def merge_review_sources(news_items, pncp_items, existing_sources=None, limit=120, uncovered_states=None, portal_items=None):
     """Combine official PNCP and RSS research without treating either as events.
 
     Prioritize official future-dated notices and skip cases already present in
@@ -130,6 +130,22 @@ def merge_review_sources(news_items, pncp_items, existing_sources=None, limit=12
             "review_status":"needs_edital_confirmation",
             "next_step":"Check edital, actual event date, current status and official auction URL",
             "pncp_control":item.get("pncp_control")
+        })
+    for item in (portal_items or []):
+        url=item.get("source_url")
+        if not url or normalize_url(url) in known or url in dedup:
+            continue
+        dedup.add(url)
+        state=item.get("state_hint")
+        merged.append({
+            "title":item.get("title","")[:260], "news_url":url,
+            "publisher_url":url, "source_kind":"official_portal",
+            "state_hint":state, "priority":10+(5 if state in uncovered else 0),
+            "coverage_gap":state in uncovered,
+            "review_status":"needs_edital_and_individual_lot_link",
+            "date_hint":None, "date_hint_status":"not_verified",
+            "source_registry_id":item.get("source_registry_id"),
+            "next_step":"Verify event date, vehicle category, authorized auctioneer and direct lot URL"
         })
     for item in news_items:
         url=item.get("news_url")
@@ -189,11 +205,13 @@ def main():
         uncovered=json.loads(report_path.read_text(encoding="utf-8")).get("states_without_events",[])
     except (OSError,ValueError):
         uncovered=[]
-    queue=merge_review_sources(news,pncp,sources,uncovered_states=uncovered)
+    portals,portal_fresh=load_current_candidates(ROOT/"app"/"portal-candidates.json",now)
+    queue=merge_review_sources(news,pncp,sources,uncovered_states=uncovered,portal_items=portals)
     output = {"checked_at":now.isoformat(timespec="seconds"),
-              "rss_fresh":rss_fresh,"pncp_fresh":pncp_fresh,
+              "rss_fresh":rss_fresh,"pncp_fresh":pncp_fresh,"portal_fresh":portal_fresh,
               "unverified_count":len(queue), "pncp_leads":sum(x["source_kind"]=="pncp" for x in queue),
               "rss_leads":sum(x["source_kind"]=="news_rss" for x in queue),
+              "portal_leads":sum(x["source_kind"]=="official_portal" for x in queue),
               "pncp_gap_leads":sum(x.get("coverage_gap",False) for x in queue),
               "events_automatically_published":0, "items":queue}
     OUTPUT.write_text(json.dumps(output, ensure_ascii=False, indent=2)+"\n",encoding="utf-8")

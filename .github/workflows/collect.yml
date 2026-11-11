@@ -51,9 +51,16 @@ jobs:
       - name: Discover official PNCP auction notices
         continue-on-error: true
         run: python scripts/discover_pncp.py
+      - name: Discover official regional auction portals
+        continue-on-error: true
+        run: python scripts/portal_watch.py
       - name: Prioritize unverified discovery leads
         continue-on-error: true
         run: python scripts/prioritize_leads.py
+      - name: Audit source coverage and discovery gaps
+        if: always()
+        continue-on-error: true
+        run: python scripts/coverage_audit.py
       - name: Publish optional research diagnostics
         run: |
           for file in \
@@ -61,7 +68,9 @@ jobs:
             app/review-queue.json \
             app/pncp-candidates.json \
             app/browser-diagnostics.json \
-            app/vip-dom-diagnostics.json; do
+            app/vip-dom-diagnostics.json \
+            app/portal-candidates.json \
+            app/coverage-audit.json; do
             if [ -f "$file" ]; then git add "$file"; fi
           done
           if ! git diff --cached --quiet; then

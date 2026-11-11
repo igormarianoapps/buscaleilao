@@ -1,0 +1,102 @@
+[
+  {
+    "id": "mg-detran",
+    "state": "MG",
+    "kind": "state",
+    "name": "Portal de leilões do trânsito de Minas Gerais",
+    "url": "https://leilao.transito.mg.gov.br/",
+    "host": "leilao.transito.mg.gov.br",
+    "status": "discovery_only",
+    "review_required": true
+  },
+  {
+    "id": "mg-patrimonio",
+    "state": "MG",
+    "kind": "state",
+    "name": "Leilões da Secretaria de Planejamento de Minas Gerais",
+    "url": "https://www.mg.gov.br/planejamento/pagina/gestao-governamental/logistica-e-patrimonio/leiloes",
+    "host": "www.mg.gov.br",
+    "status": "discovery_only",
+    "review_required": true
+  },
+  {
+    "id": "pr-curitiba",
+    "state": "PR",
+    "kind": "municipal",
+    "name": "Leilões de veículos de Curitiba",
+    "url": "https://transito.curitiba.pr.gov.br/patio/leilao-eletronico-de-veiculos/52",
+    "host": "transito.curitiba.pr.gov.br",
+    "status": "discovery_only",
+    "review_required": true
+  },
+  {
+    "id": "go-detran",
+    "state": "GO",
+    "kind": "state",
+    "name": "Detran Goiás",
+    "url": "https://goias.gov.br/detran/",
+    "host": "goias.gov.br",
+    "status": "discovery_only",
+    "review_required": true
+  },
+  {
+    "id": "mt-cuiaba",
+    "state": "MT",
+    "kind": "municipal",
+    "name": "Prefeitura de Cuiabá - Semob",
+    "url": "https://www.cuiaba.mt.gov.br/noticias/semob-realiza-o-4o-leilao-do-ano-com-1-065-veiculos-disponiveis",
+    "host": "www.cuiaba.mt.gov.br",
+    "status": "discovery_only",
+    "review_required": true
+  },
+  {
+    "id": "sp-mogi",
+    "state": "SP",
+    "kind": "municipal",
+    "name": "Prefeitura de Mogi das Cruzes",
+    "url": "https://www.mogidascruzes.sp.gov.br/noticia/no-dia-6-de-novembro-prefeitura-fara-leilao-online-para-venda-de-84-veiculos",
+    "host": "www.mogidascruzes.sp.gov.br",
+    "status": "discovery_only",
+    "review_required": true
+  },
+  {
+    "id": "sp-fernando-prestes",
+    "state": "SP",
+    "kind": "municipal",
+    "name": "Editais de Fernando Prestes",
+    "url": "https://www.fernandoprestes.sp.gov.br/portal/editais/0/1/2638",
+    "host": "www.fernandoprestes.sp.gov.br",
+    "status": "discovery_only",
+    "review_required": true
+  },
+  {
+    "id": "mg-ibia",
+    "state": "MG",
+    "kind": "municipal",
+    "name": "Prefeitura de Ibiá",
+    "url": "https://www.ibia.mg.gov.br/edital-de-licitacao/leilao-001-2026/",
+    "host": "www.ibia.mg.gov.br",
+    "status": "discovery_only",
+    "review_required": true
+  },
+  {
+    "id": "mg-vieiras",
+    "state": "MG",
+    "kind": "municipal",
+    "name": "Prefeitura de Vieiras",
+    "url": "https://vieiras.mg.gov.br/processos-licitatorios",
+    "host": "vieiras.mg.gov.br",
+    "status": "discovery_only",
+    "review_required": true
+  },
+  {
+    "id": "pr-serranopolis",
+    "state": "PR",
+    "kind": "municipal",
+    "name": "Prefeitura de Serranópolis do Iguaçu",
+    "url": "https://serranopolis.pr.gov.br/noticias/6113-governo-municipal-de-serranopolis-do-iguacu-realiza-leilao-eletronico-de-veiculos-maquinas-e-outros-bens",
+    "host": "serranopolis.pr.gov.br",
+    "status": "discovery_only",
+    "review_required": true
+  }
+]
