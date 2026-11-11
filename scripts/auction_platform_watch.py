@@ -103,10 +103,20 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
 def fetch(site):
     if not host_ok(site,site["discovery_url"]):
         raise ValueError("untrusted discovery host")
-    opener=urllib.request.build_opener(NoRedirect)
+    class ApprovedRedirect(urllib.request.HTTPRedirectHandler):
+        def __init__(self):
+            self.hops=0
+        def redirect_request(self,req,fp,code,msg,headers,newurl):
+            self.hops+=1
+            if self.hops>3 or not host_ok(site,newurl):
+                raise ValueError("redirect outside approved platform hosts")
+            return super().redirect_request(req,fp,code,msg,headers,newurl)
+    opener=urllib.request.build_opener(ApprovedRedirect())
     request=urllib.request.Request(site["discovery_url"],headers={
         "User-Agent":UA,"Accept":"text/html"})
     with opener.open(request,timeout=10) as response:
+        if not host_ok(site,response.geturl()):
+            raise ValueError("source changed to unapproved host")
         if "html" not in response.headers.get("Content-Type","").lower():
             raise ValueError("non-HTML response")
         return response.read(2_000_001).decode("utf-8","replace")
