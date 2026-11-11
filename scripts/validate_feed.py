@@ -35,6 +35,10 @@ def verify_link_classification(row):
             site="vardana" if org=="Vardana Leilões" else "claudio"
             if not strict_url(site,url):
                 return "Regional auction needs a specific first-party lot page"
+        elif org=="Bolsa de Leilões":
+            from bolsa_collect import detail_id
+            if detail_id(url) is None:
+                return "Bolsa de Leilões requires an individual event URL"
         else:
             return "event link classification has no verified adapter"
     else:

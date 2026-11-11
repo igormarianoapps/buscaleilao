@@ -184,6 +184,16 @@ def main():
             events.append(item)
             known_ids.add(item["id"])
     failures.extend(regional_errors)
+    try:
+        from bolsa_collect import collect_bolsa
+        bolsa_events,bolsa_errors=collect_bolsa(today=today)
+    except Exception as exc:
+        bolsa_events,bolsa_errors=[],[{"id":"bolsa","error":str(exc)[:160]}]
+    for item in bolsa_events:
+        if item["id"] not in known_ids:
+            events.append(item)
+            known_ids.add(item["id"])
+    failures.extend(bolsa_errors)
     # Preserve a discovered-at timestamp only for newly observed identities.
     try:
         previous=json.loads(OUTPUT.read_text(encoding="utf-8")).get("events",[])
@@ -255,6 +265,7 @@ def main():
         "official_state_events":sum(e.get("organizer")=="Detran MG" for e in events),
         "regional_private_events":sum(e.get("organizer") in ("Vardana Leilões","Claudio Kuss Leilões") for e in events),
         "regional_adapter_failures":len(regional_errors),
+        "bolsa_events":sum(e.get("organizer")=="Bolsa de Leilões" for e in events),
         "new_discoveries":len({e.get("event_id") or e["id"] for e in events if e.get("first_seen_at")==checked}),
         "failed":failures
     }

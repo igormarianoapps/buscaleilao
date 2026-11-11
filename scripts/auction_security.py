@@ -62,6 +62,11 @@ def valid_destination(row):
         return (not row.get("event_url") and row.get("source_type")=="private"
                 and row.get("source_link_type")=="event"
                 and row.get("state")=="PR" and strict_url(site,row.get("source_url")))
+    if org=="Bolsa de Leilões":
+        from bolsa_collect import detail_id
+        return (not row.get("event_url") and row.get("source_type")=="private"
+                and row.get("source_link_type")=="event"
+                and detail_id(row.get("source_url")) is not None)
     if org=='Freitas Leiloeiro':
         from freitas_collect import official_id
         return not row.get('event_url') and official_id(row['source_url']) is not None

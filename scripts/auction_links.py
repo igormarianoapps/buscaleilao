@@ -42,6 +42,13 @@ def destination_status(row):
                       row.get("source_link_type")=="event" and
                       row.get("source_type")=="private" and
                       row.get("state")=="PR" and not row.get("event_url"))
+        elif host in ("www.bolsadeleiloes.com.br","bolsadeleiloes.com.br"):
+            from bolsa_collect import detail_id
+            ok = (row.get("organizer")=="Bolsa de Leilões" and
+                  row.get("source_type")=="private" and
+                  row.get("source_link_type")=="event" and
+                  not row.get("event_url") and
+                  detail_id(url) is not None)
         elif host in ("pmklog.com.br", "www.pmklog.com.br"):
             q = parse_qs(p.query)
             ok = path == "/leilao/evento/leilao-detran" and len(q.get("evento", [])) == 1 and bool(re.fullmatch(r"[a-fA-F0-9-]{36}", q["evento"][0])) and bool(row.get("event_url"))
