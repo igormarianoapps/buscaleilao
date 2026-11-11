@@ -1,0 +1,33 @@
+name: Rebuild source monitoring directory
+on:
+  push:
+    branches: [develop]
+    paths:
+      - '.github/workflows/refresh-source-directory.yml'
+permissions:
+  contents: write
+jobs:
+  refresh:
+    if: "github.event.head_commit.message == 'ci: rebuild nominated source directory'"
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: develop
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run source, security, and collection regression tests
+        run: python -m unittest discover -s tests -v
+      - name: Rebuild static source monitoring directory
+        run: python scripts/build_sources_page.py
+      - name: Save updated directory only on develop
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/fontes.html
+          if ! git diff --cached --quiet; then
+            git commit -m "data: display sixteen-site browser discovery coverage"
+            git push origin HEAD:develop
+          fi
