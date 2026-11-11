@@ -204,11 +204,11 @@
   },
   {
     "id": "cuiaba-semob-4-2026-11-11",
-    "title": "4º leilão da Semob — sessão de lotes não vendidos",
+    "title": "4º leilão da Semob — sessão 4 (sucatas aproveitáveis)",
     "state": "MT",
     "city": "Cuiabá",
     "auction_date": "2026-11-11",
-    "auction_time": "09:00",
+    "auction_time": "10:00",
     "vehicle_count": null,
     "organizer": "Prefeitura de Cuiabá — Semob",
     "source_type": "municipal",
@@ -217,7 +217,8 @@
       "4º leilão",
       "dia 11",
       "9h"
-    ]
+    ],
+    "event_url": "https://www.focoleiloes.com.br/leilao/497/lotes"
   },
   {
     "id": "aracaju-3-leilao-2026-11-12",
