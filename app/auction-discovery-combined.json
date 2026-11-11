@@ -1,0 +1,902 @@
+{
+  "checked_at": "2026-11-11T21:06:19+00:00",
+  "total": 16,
+  "reachable": 15,
+  "candidate_links": 84,
+  "published": 0,
+  "platforms": {
+    "leilo": {
+      "availability": "reachable",
+      "http_status": "reachable",
+      "browser_status": "reachable",
+      "discovered_links": 25,
+      "candidate_events": [
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 1 CE chevron_left chevron_right play_arrow Recuperado de Financiamento IVECO/S-WAY 480 favorite calendar_today  25/25  105.091 km location_on Eusébio/CE R$ 393.000,00 person L",
+          "source_url": "https://leilo.com.br/lote/13dbdbea-628d-49ea-9284-5f40976f575f/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 3 TO Recuperado de Financiamento IVECO/STRALIS 800S48TZ favorite calendar_today  21/22  521.088 km location_on Palmas/TO R$ 246.000,00 Lance Inicial Leilão: 13/11/2026 Sex 13/",
+          "source_url": "https://leilo.com.br/lote/c10c3e7b-4eee-491e-8154-f81527b1b8fc/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 4 GO chevron_left chevron_right play_arrow Frota VOLKSWAGEN/17.280 CRM 4X2 favorite calendar_today  15/16  529.937 km location_on Goiânia/GO R$ 130.700,00 Lance Inicial Leilão",
+          "source_url": "https://leilo.com.br/lote/ab9ba48d-0441-4f18-9a71-e2b9168192c3/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 5 PA chevron_left chevron_right play_arrow IVECO/TECTOR 260E30ID favorite calendar_today  22/22 location_on Benevides/PA R$ 182.000,00 Lance Inicial Leilão: 13/11/2026 Sex 13/",
+          "source_url": "https://leilo.com.br/lote/6c91a7a5-9756-4bc2-804e-350c2366469f/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 7 PA chevron_left chevron_right Recuperado de Financiamento MOTONIVELADORA 205HP  favorite calendar_today  20/20  3.983 km location_on Benevides/PA R$ 295.000,00 Lance Inicial",
+          "source_url": "https://leilo.com.br/lote/58697d63-13ac-4400-8b22-3692d931b1d2/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 8 GO Recuperado de Financiamento DAF/XF FTT 530 SUPER SPACE CABINE favorite calendar_today  22/22  347.362 km location_on Aparecida de Goiânia/GO R$ 278.000,00 Lance Inicial L",
+          "source_url": "https://leilo.com.br/lote/ab05de54-5db9-4c68-a1b7-424cd38a388c/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 10 TO  NEW HOLLAND ESCAVADEIRA EVO 245 favorite calendar_today  20/20 location_on Gurupi/TO R$ 280.000,00 Lance Inicial Leilão: 13/11/2026 Sex 13/11 Sex • 09:30 person_raised_",
+          "source_url": "https://leilo.com.br/lote/8eb6329a-0e0b-4e05-8c32-66340733022c/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 11 GO chevron_left chevron_right play_arrow LEILOSHOP VOLKSWAGEN/MASCA ROMA favorite calendar_today  18/19  541.944 km location_on Aparecida de Goiânia/GO R$ 275.000,00 person",
+          "source_url": "https://leilo.com.br/lote/df2a5d7a-3558-4256-93bf-a7c3216a2344/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 12 RS chevron_left chevron_right play_arrow IVECO/STRALIS 600S44T favorite calendar_today  21/22  536.984 km location_on Alvorada/RS R$ 208.000,00 Lance Inicial Leilão: 13/11/",
+          "source_url": "https://leilo.com.br/lote/c464120a-025d-4f6e-a262-9edf0a7b095d/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 15 GO chevron_left chevron_right Recuperado de Financiamento FACCHINI/SRF RT favorite calendar_today  21/22 location_on Aparecida de Goiânia/GO R$ 60.000,00 Lance Inicial Leil",
+          "source_url": "https://leilo.com.br/lote/1568b189-5e02-4c61-b381-9228dfc4daf8/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 16 GO chevron_left chevron_right Recuperado de Financiamento FACCHINI/SRF RT favorite calendar_today  21/22 location_on Aparecida de Goiânia/GO R$ 60.000,00 Lance Inicial Leil",
+          "source_url": "https://leilo.com.br/lote/430e45c6-fb82-4ff8-9412-6d088d60aaad/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 17 GO chevron_left chevron_right play_arrow Frota VOLKSWAGEN/17.280 CRM 4X2 favorite calendar_today  15/16  501.178 km location_on Goiânia/GO R$ 118.000,00 Lance Inicial Leilã",
+          "source_url": "https://leilo.com.br/lote/aecab81d-b8e1-4e35-b39d-3e5ffc607a95/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 18 DF chevron_left chevron_right play_arrow LEILOSHOP FORD/TRANSIT 460 B favorite calendar_today  23/24  146.419 km location_on Taguatinga/DF R$ 136.000,00 person Lance de M**",
+          "source_url": "https://leilo.com.br/lote/5ccab54d-431c-4a3d-a63f-8b002483b3bf/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 20 MA chevron_left chevron_right Recuperado de Financiamento NEW HOLLAND/W130B favorite calendar_today  21/21  4.238 km location_on São Luís/MA R$ 280.000,00 Lance Inicial Lei",
+          "source_url": "https://leilo.com.br/lote/aee55136-6da8-44f1-adea-c864d1d87616/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 21 GO chevron_left chevron_right play_arrow LEILOSHOP IVECO/TECTOR 11-190 favorite calendar_today  21/22  109.040 km location_on Aparecida de Goiânia/GO R$ 198.000,00 person L",
+          "source_url": "https://leilo.com.br/lote/75264422-28de-485b-8eba-7a7ca5153a97/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 23 SP Recuperado de Financiamento FACCHINI/SEMI REBOQUE FACCHINI QRLO favorite calendar_today  21/22 location_on São Carlos/SP R$ 60.000,00 Lance Inicial Leilão: 13/11/2026 Se",
+          "source_url": "https://leilo.com.br/lote/a105f246-99c4-44b3-ab67-2e490faa837d/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 24 SP Recuperado de Financiamento FACCHINI/SRF LO favorite calendar_today  21/22 location_on São Carlos/SP R$ 60.000,00 Lance Inicial Leilão: 13/11/2026 Sex 13/11 Sex • 09:30 ",
+          "source_url": "https://leilo.com.br/lote/76e5fe31-fb19-4fa5-8860-cd79a32463a8/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 25 MS chevron_left chevron_right LEILOSHOP IVECO/STRALIS 600S56T favorite calendar_today  13/14  438.170 km location_on Campo Grande/MS R$ 149.000,00 Lance Inicial Leilão: 13/",
+          "source_url": "https://leilo.com.br/lote/41259d5a-c0f5-4ed3-a703-17e16bb1a1aa/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 26 GO chevron_left chevron_right play_arrow LEILOSHOP MOTONIVELADORA - CATERPILLAR/12H VHP favorite calendar_today  05/05  13.068 km location_on Goiania/GO R$ 150.000,00 Lance",
+          "source_url": "https://leilo.com.br/lote/b8216768-b1e5-4e91-8186-c0e61610c9a4/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 29 GO chevron_left chevron_right Recuperado de Financiamento ALFASTEEL/SRASBS 2EIXO favorite calendar_today  21/21 location_on Aparecida de Goiânia/GO R$ 120.000,00 Lance Inic",
+          "source_url": "https://leilo.com.br/lote/01d1c8f7-35fd-438d-8177-d37cfc7c150f/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 30 GO chevron_left chevron_right Recuperado de Financiamento ALFASTEEL/REBASDY favorite calendar_today  21/21 location_on Aparecida de Goiânia/GO R$ 120.000,00 Lance Inicial L",
+          "source_url": "https://leilo.com.br/lote/9b275746-0f93-4523-9535-1c1350838c45/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 31 GO chevron_left chevron_right Recuperado de Financiamento ALFASTEEL/SRASBS 2EIXO favorite calendar_today  21/21 location_on Aparecida de Goiânia/GO R$ 120.000,00 Lance Inic",
+          "source_url": "https://leilo.com.br/lote/1f09859e-7f6b-4871-9b45-d79a80ccdaac/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 32 GO chevron_left chevron_right Frota VARREDEIRA  SWEEPY BEACHTECH favorite location_on Goiânia/GO R$ 5.000,00 Lance Inicial Leilão: 13/11/2026 Sex 13/11 Sex • 09:30 person_r",
+          "source_url": "https://leilo.com.br/lote/02376958-f2e5-4cdb-bc41-3bcc9e2bb7db/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 33 GO chevron_left chevron_right play_arrow Frota VOLKSWAGEN/17.280 CRM 4X2 favorite calendar_today  15/16  471.035 km location_on Goiânia/GO R$ 118.000,00 Lance Inicial Leilã",
+          "source_url": "https://leilo.com.br/lote/415b6166-e7a1-45bd-b74a-7091a324bec5/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 35 TO MANIPULADOR TELESCOPIO - MANITTU MXT 840 favorite calendar_today  22/22 location_on Gurupi/TO R$ 120.000,00 Lance Inicial Leilão: 13/11/2026 Sex 13/11 Sex • 09:30 person",
+          "source_url": "https://leilo.com.br/lote/3d3c7c0a-4ef3-4db5-a6d7-55fd497e3826/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        }
+      ],
+      "publication_allowed": false
+    },
+    "mcleilao": {
+      "availability": "reachable",
+      "http_status": "reachable",
+      "browser_status": "blocked_or_unavailable",
+      "discovered_links": 0,
+      "candidate_events": [],
+      "publication_allowed": false
+    },
+    "flex": {
+      "availability": "reachable",
+      "http_status": "reachable",
+      "browser_status": "reachable",
+      "discovered_links": 4,
+      "candidate_events": [
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "flex",
+          "title": "Leilão de Veículos\n \n04 Veículos \n                         \n                             \n                         \n                         DATA: 24/11/2026 - 10h00 \n             ",
+          "source_url": "https://www.flexleiloes.com.br/lotes/2991",
+          "state_hint": "DF",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "flex",
+          "title": "03 Autoclaves - 30 litros Modelo LS \n                         \n                             \n                         \n                         1º LEILÃO: 25/11/2026 - 14h00 Lance ",
+          "source_url": "https://www.flexleiloes.com.br/lotes/2981",
+          "state_hint": "DF",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "flex",
+          "title": "Brasília/DF - SIA Galpão | 2.000m² \n                         \n                             \n                         \n                         1º LEILÃO: 10/12/2026 - 10h00 Lance M",
+          "source_url": "https://www.flexleiloes.com.br/lotes/2990",
+          "state_hint": "DF",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "flex",
+          "title": "I/AUDI A4 2.0 TFSI  2013/2013 \n                         \n                             \n                         \n                         1º LEILÃO: 01/02/2027 - 16h40 Lance Mínimo",
+          "source_url": "https://www.flexleiloes.com.br/lotes/2994",
+          "state_hint": "DF",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        }
+      ],
+      "publication_allowed": false
+    },
+    "parque": {
+      "availability": "reachable",
+      "http_status": "reachable",
+      "browser_status": "reachable",
+      "discovered_links": 12,
+      "candidate_events": [
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "parque",
+          "title": "Detalhes",
+          "source_url": "https://www.parquedosleiloes.com.br/leilao/1522/detalhes",
+          "state_hint": "DF",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "parque",
+          "title": "Detalhes",
+          "source_url": "https://www.parquedosleiloes.com.br/leilao/1521/detalhes",
+          "state_hint": "DF",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "parque",
+          "title": "Detalhes",
+          "source_url": "https://www.parquedosleiloes.com.br/leilao/1519/detalhes",
+          "state_hint": "DF",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "parque",
+          "title": "Detalhes",
+          "source_url": "https://www.parquedosleiloes.com.br/leilao/1518/detalhes",
+          "state_hint": "DF",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "parque",
+          "title": "Detalhes",
+          "source_url": "https://www.parquedosleiloes.com.br/leilao/1512/detalhes",
+          "state_hint": "DF",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "parque",
+          "title": "Detalhes",
+          "source_url": "https://www.parquedosleiloes.com.br/leilao/1516/detalhes",
+          "state_hint": "DF",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "parque",
+          "title": "Detalhes",
+          "source_url": "https://www.parquedosleiloes.com.br/leilao/1513/detalhes",
+          "state_hint": "DF",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "parque",
+          "title": "Detalhes",
+          "source_url": "https://www.parquedosleiloes.com.br/leilao/1509/detalhes",
+          "state_hint": "DF",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "parque",
+          "title": "Detalhes",
+          "source_url": "https://www.parquedosleiloes.com.br/leilao/1511/detalhes",
+          "state_hint": "DF",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "parque",
+          "title": "Detalhes",
+          "source_url": "https://www.parquedosleiloes.com.br/leilao/1508/detalhes",
+          "state_hint": "DF",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "parque",
+          "title": "Detalhes",
+          "source_url": "https://www.parquedosleiloes.com.br/leilao/1506/detalhes",
+          "state_hint": "DF",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "parque",
+          "title": "Detalhes",
+          "source_url": "https://www.parquedosleiloes.com.br/leilao/1505/detalhes",
+          "state_hint": "DF",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        }
+      ],
+      "publication_allowed": false
+    },
+    "sodre": {
+      "availability": "reachable",
+      "http_status": "unreachable",
+      "browser_status": "reachable",
+      "discovered_links": 25,
+      "candidate_events": [
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "Como comprar Saiba como participar de um leilão",
+          "source_url": "https://www.sodresantoro.com.br/atendimento/como-comprar",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "leilão de casas",
+          "source_url": "https://www.sodresantoro.com.br/imoveis/lotes?lot_category=casa",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "Leilão de Imóveis",
+          "source_url": "https://www.sodresantoro.com.br/imoveis",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "Leilão Curitiba",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_location=curitiba+i/pr",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "Leilão de Móveis",
+          "source_url": "https://www.sodresantoro.com.br/materiais/lotes?lot_category=moveis+para+escritório__móveis+para+comércio__móveis+p/+casa",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "Leilão de Máquinas",
+          "source_url": "https://www.sodresantoro.com.br/materiais/lotes?lot_category=maquinas+operatrizes",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "Leilão de Veículos",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "Leilão de Materiais",
+          "source_url": "https://www.sodresantoro.com.br/materiais/lotes",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "Leilão de Informática",
+          "source_url": "https://www.sodresantoro.com.br/materiais/lotes?lot_category=informatica",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "Leilão de Motores",
+          "source_url": "https://www.sodresantoro.com.br/materiais/lotes?lot_category=motores",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "Leilão de Sucatas",
+          "source_url": "https://www.sodresantoro.com.br/materiais/lotes?lot_category=sucata",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "Leilão de Eletrodomésticos",
+          "source_url": "https://www.sodresantoro.com.br/materiais/lotes?lot_category=eletrodomesticos",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "Leilão de Celulares",
+          "source_url": "https://www.sodresantoro.com.br/materiais/lotes?lot_subcategory=celulares+e+smartphones",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "Leilão Judicial",
+          "source_url": "https://www.sodresantoro.com.br/judiciais/lotes",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "Leilão Volkswagen",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=volkswagen",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "Leilão Fiat",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=fiat",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "Leilão BMW",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=bmw",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "Leilão Ford",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=ford",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "Leilão Chevrolet",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=chevrolet",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "Leilão Honda",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=honda",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "Leilão Citroën",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=citroen",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "Leilão Mercedes",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=mercedes",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "Leilão Mitsubishi",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=mitsubishi",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "Leilão Volvo",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=volvo",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "sodre",
+          "title": "Leilão Iveco",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=iveco",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        }
+      ],
+      "publication_allowed": false
+    },
+    "copart": {
+      "availability": "reachable",
+      "http_status": "reachable",
+      "browser_status": "reachable",
+      "discovered_links": 0,
+      "candidate_events": [],
+      "publication_allowed": false
+    },
+    "loop": {
+      "availability": "reachable",
+      "http_status": "reachable",
+      "browser_status": "reachable",
+      "discovered_links": 0,
+      "candidate_events": [],
+      "publication_allowed": false
+    },
+    "freitas": {
+      "availability": "reachable",
+      "http_status": "reachable",
+      "browser_status": "reachable",
+      "discovered_links": 3,
+      "candidate_events": [
+        {
+          "candidate_kind": "generic_category",
+          "platform_id": "freitas",
+          "title": "Veículos",
+          "source_url": "https://www.freitasleiloeiro.com.br/Leiloes/Pesquisar?query=&categoria=1",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "generic_category",
+          "platform_id": "freitas",
+          "title": "VEÍCULOS",
+          "source_url": "https://www.freitasleiloeiro.com.br/Leiloes/Pesquisar?Categoria=1&TipoLoteId=1",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "generic_category",
+          "platform_id": "freitas",
+          "title": "MOTOS",
+          "source_url": "https://www.freitasleiloeiro.com.br/Leiloes/Pesquisar?Categoria=1&TipoLoteId=3",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        }
+      ],
+      "publication_allowed": false
+    },
+    "milan": {
+      "availability": "unavailable",
+      "http_status": "unreachable",
+      "browser_status": "blocked_or_unavailable",
+      "discovered_links": 0,
+      "candidate_events": [],
+      "publication_allowed": false
+    },
+    "vip": {
+      "availability": "reachable",
+      "http_status": "unreachable",
+      "browser_status": "reachable",
+      "discovered_links": 0,
+      "candidate_events": [],
+      "publication_allowed": false
+    },
+    "hisa": {
+      "availability": "reachable",
+      "http_status": "reachable",
+      "browser_status": "blocked_or_unavailable",
+      "discovered_links": 5,
+      "candidate_events": [
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "hisa",
+          "title": "Eletrônico   118   lotes  ITENS DIVERSOS - PNEUS, ELETRODOMÉSTICOS, RODAS, VESTUÁRIO     Eletrônico 118 LOTES   SAO CAETANO DO SUL, SP   Data: 13/11/2026 às 11:00   Leilão: 2534   ",
+          "source_url": "https://hisaleiloes.com.br/leilao/2534",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "hisa",
+          "title": "Eletrônico   82   lotes  HISA REVERSA     Eletrônico 82 LOTES   SAO CAETANO DO SUL, SP   Data: 13/11/2026 às 14:00   Leilão: 2542   82 lotes",
+          "source_url": "https://hisaleiloes.com.br/leilao/2542",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "hisa",
+          "title": "Eletrônico   2   lotes  MÓVEIS DIVERSOS     Eletrônico 2 LOTES   EXTREMA, MG   Data: 19/11/2026 às 17:00   Leilão: 2539   2 lotes",
+          "source_url": "https://hisaleiloes.com.br/leilao/2539",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "hisa",
+          "title": "Eletrônico   36   lotes  ITENS DIVERSOS - ELETRODOMÉSTICOS     Eletrônico 36 LOTES   SAO CAETANO DO SUL, SP   Data: 25/11/2026 às 14:00   Leilão: 2541   36 lotes",
+          "source_url": "https://hisaleiloes.com.br/leilao/2541",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "hisa",
+          "title": "Eletrônico  ASSURANT     Eletrônico   SAO CAETANO DO SUL, SP   Data: 26/11/2026 às 15:00   Leilão: 2538",
+          "source_url": "https://hisaleiloes.com.br/leilao/2538",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        }
+      ],
+      "publication_allowed": false
+    },
+    "bolsa": {
+      "availability": "reachable",
+      "http_status": "reachable",
+      "browser_status": "blocked_or_unavailable",
+      "discovered_links": 7,
+      "candidate_events": [
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "bolsa",
+          "title": "Leilão 911  BELO HORIZONTE/MG    314 Lotes IMPERDIVEL! LEILÃO DE ELETRODOMÉSTICOS EM BH #34 - CONFIRAM !!!!  IMPERDIVEL! LEILÃO DE ELETRODOMÉSTICOS EM BH #34 - CONFIRAM !!!!   Data",
+          "source_url": "https://www.bolsadeleiloes.com.br/leilao/911",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "bolsa",
+          "title": "Leilão 924  CONTAGEM/MG   GRANDE LEILÃO DE ELETRODOMÉSTICOS DIVERSOS. CONTAGEM - MG #35  GRANDE LEILÃO DE ELETRODOMÉSTICOS DIVERSOS. CONTAGEM - MG #35   Data 16/11/2026 às 10:00:00",
+          "source_url": "https://www.bolsadeleiloes.com.br/leilao/924",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "bolsa",
+          "title": "Leilão 906  BELO HORIZONTE/MG    143 Lotes LEILÃO DE ELETRÔNICOS E DIVERSOS - CONFIRAM !  LEILÃO DE ELETRÔNICOS E DIVERSOS - CONFIRAM !   Data 17/11/2026 às 10:00:00  ONLINE ABERTO",
+          "source_url": "https://www.bolsadeleiloes.com.br/leilao/906",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "bolsa",
+          "title": "Leilão 917  CAMACARI/BA    178 Lotes LEILÃO DE ELETRODOMÉSTICOS BA #36 - CONFIRAM !  LEILÃO DE ELETRODOMÉSTICOS BA #36 - CONFIRAM !   Data 17/11/2026 às 11:00:00  ONLINE ABERTO PAR",
+          "source_url": "https://www.bolsadeleiloes.com.br/leilao/917",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "bolsa",
+          "title": "Leilão 923  DUQUE DE CAXIAS/RJ   SUPER LEILÃO DE ELETRODOMÉSTICOS NO RJ  #37- NÃO PERCAM!  SUPER LEILÃO DE ELETRODOMÉSTICOS NO RJ  #37- NÃO PERCAM!   Data 23/11/2026 às 10:00:00  O",
+          "source_url": "https://www.bolsadeleiloes.com.br/leilao/923",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "bolsa",
+          "title": "Leilão 931  JUNDIAI/SP    247 Lotes LEILÃO... REFRIGERADORES, FOGÕES E MUITO MAIS ... JUNDIAÍ - SP #152  LEILÃO... REFRIGERADORES, FOGÕES E MUITO MAIS ... JUNDIAÍ - SP #152   Data ",
+          "source_url": "https://www.bolsadeleiloes.com.br/leilao/931",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "bolsa",
+          "title": "Leilão 920  BELO HORIZONTE/MG    31 Lotes Grande Leilão de Veículos Banco SANTANDER  Grande Leilão de Veículos Banco SANTANDER   Data 23/11/2026 às 13:00:00  ONLINE ABERTO PARA LAN",
+          "source_url": "https://www.bolsadeleiloes.com.br/leilao/920",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        }
+      ],
+      "publication_allowed": false
+    },
+    "vardana": {
+      "availability": "reachable",
+      "http_status": "reachable",
+      "browser_status": "reachable",
+      "discovered_links": 2,
+      "candidate_events": [
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "vardana",
+          "title": "VER RELAÇÃO DE LOTES",
+          "source_url": "https://www.vardanaleiloes.com.br/vardana/veiculos.php?lei=1085",
+          "state_hint": "PR",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "vardana",
+          "title": "VER RELAÇÃO DE LOTES",
+          "source_url": "https://www.vardanaleiloes.com.br/vardana/veiculos.php?lei=1086",
+          "state_hint": "PR",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        }
+      ],
+      "publication_allowed": false
+    },
+    "claudio": {
+      "availability": "reachable",
+      "http_status": "reachable",
+      "browser_status": "reachable",
+      "discovered_links": 1,
+      "candidate_events": [
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "claudio",
+          "title": "Acessar leilão",
+          "source_url": "https://www.claudiokussleiloes.com.br/relacao-foto/902",
+          "state_hint": "PR",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        }
+      ],
+      "publication_allowed": false
+    },
+    "palacio": {
+      "availability": "reachable",
+      "http_status": "reachable",
+      "browser_status": "reachable",
+      "discovered_links": 0,
+      "candidate_events": [],
+      "publication_allowed": false
+    },
+    "rogerio": {
+      "availability": "reachable",
+      "http_status": "reachable",
+      "browser_status": "reachable",
+      "discovered_links": 0,
+      "candidate_events": [],
+      "publication_allowed": false
+    }
+  }
+}

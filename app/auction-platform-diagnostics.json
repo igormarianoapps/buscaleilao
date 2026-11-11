@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-11T20:04:33+00:00",
+  "checked_at": "2026-11-11T21:05:45+00:00",
   "platforms_total": 16,
   "reachable": 13,
   "unverified_candidates": 55,
@@ -153,7 +153,7 @@
         {
           "candidate_kind": "possible_event",
           "platform_id": "hisa",
-          "title": "Eletrônico   81   lotes  HISA REVERSA     Eletrônico 81 LOTES   SAO CAETANO DO SUL, SP   Data: 13/11/2026 às 14:00   Leilão: 2542   81 lotes",
+          "title": "Eletrônico   82   lotes  HISA REVERSA     Eletrônico 82 LOTES   SAO CAETANO DO SUL, SP   Data: 13/11/2026 às 14:00   Leilão: 2542   82 lotes",
           "source_url": "https://hisaleiloes.com.br/leilao/2542",
           "state_hint": "SP",
           "status": "unverified_candidate",
@@ -193,150 +193,6 @@
       "status": "reachable",
       "candidate_count": 25,
       "candidate_events": [
-        {
-          "candidate_kind": "individual_lot",
-          "platform_id": "leilo",
-          "title": "LOTE 34 AM chevron_left chevron_right play_arrow Recuperado de Financiamento CHEVROLET/CLASSIC LS (2P/4P) favorite calendar_today  13/14  233.598 km location_on Manaus/AM R$ 12.000",
-          "source_url": "https://leilo.com.br/lote/0b82e2b4-0efd-424b-9843-043d011a39ce/",
-          "state_hint": "GO",
-          "status": "unverified_candidate",
-          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
-        },
-        {
-          "candidate_kind": "individual_lot",
-          "platform_id": "leilo",
-          "title": "LOTE 233 PA chevron_left chevron_right play_arrow Recuperado de Financiamento CITROEN/C3 PICASSO EXC A favorite calendar_today  14/15  152.976 km location_on Benevides/PA R$ 24.000",
-          "source_url": "https://leilo.com.br/lote/1c9d280a-80ae-4f55-b3b9-c807b0ed488d/",
-          "state_hint": "GO",
-          "status": "unverified_candidate",
-          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
-        },
-        {
-          "candidate_kind": "individual_lot",
-          "platform_id": "leilo",
-          "title": "LOTE 234 PA chevron_left chevron_right play_arrow Recuperado de Financiamento VOLKSWAGEN/NOVO FOX COMFORTLINE MB (4P/2P) favorite calendar_today  14/15  151.599 km location_on Bene",
-          "source_url": "https://leilo.com.br/lote/962173a4-0f50-4117-9894-743c53cc48e8/",
-          "state_hint": "GO",
-          "status": "unverified_candidate",
-          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
-        },
-        {
-          "candidate_kind": "individual_lot",
-          "platform_id": "leilo",
-          "title": "LOTE 235 AM chevron_left chevron_right play_arrow Recuperado de Financiamento FORD/KA HATCH SE 1.0 C (4P) favorite calendar_today  19/19 location_on Manaus/AM R$ 23.000,00 Lance In",
-          "source_url": "https://leilo.com.br/lote/0977e53f-624e-47e4-b1f3-048380744fe2/",
-          "state_hint": "GO",
-          "status": "unverified_candidate",
-          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
-        },
-        {
-          "candidate_kind": "individual_lot",
-          "platform_id": "leilo",
-          "title": "LOTE 236 PA chevron_left chevron_right play_arrow Recuperado de Financiamento SHINERAY/SHI 250 6B favorite calendar_today  25/26  13.895 km location_on Benevides/PA R$ 7.400,00 per",
-          "source_url": "https://leilo.com.br/lote/557e7d26-3f8c-4ba5-a39e-7f0925d8dd74/",
-          "state_hint": "GO",
-          "status": "unverified_candidate",
-          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
-        },
-        {
-          "candidate_kind": "individual_lot",
-          "platform_id": "leilo",
-          "title": "LOTE 238 PA chevron_left chevron_right play_arrow Recuperado de Financiamento FIAT/STRADA WORKING CABINE DUPLA favorite calendar_today  13/13  147.966 km location_on Benevides/PA R",
-          "source_url": "https://leilo.com.br/lote/839456a5-f7b1-45bc-86c7-538371f37084/",
-          "state_hint": "GO",
-          "status": "unverified_candidate",
-          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
-        },
-        {
-          "candidate_kind": "individual_lot",
-          "platform_id": "leilo",
-          "title": "LOTE 239 PA chevron_left chevron_right play_arrow Recuperado de Financiamento HAOJUE/JTZ/DK160 favorite calendar_today  24/25  49.968 km location_on Benevides/PA R$ 4.300,00 person",
-          "source_url": "https://leilo.com.br/lote/24567f6c-ae11-4d43-82b2-698409854423/",
-          "state_hint": "GO",
-          "status": "unverified_candidate",
-          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
-        },
-        {
-          "candidate_kind": "individual_lot",
-          "platform_id": "leilo",
-          "title": "LOTE 240 AM chevron_left chevron_right play_arrow Recuperado de Financiamento SHINERAY/XY250-5A favorite calendar_today  25/25  13.628 km location_on Manaus/AM R$ 8.000,00 person L",
-          "source_url": "https://leilo.com.br/lote/f0fa6c46-014e-41e1-873f-176ef8022c75/",
-          "state_hint": "GO",
-          "status": "unverified_candidate",
-          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
-        },
-        {
-          "candidate_kind": "individual_lot",
-          "platform_id": "leilo",
-          "title": "LOTE 241 PA chevron_left chevron_right play_arrow Recuperado de Financiamento SHINERAY/SHI 150 favorite calendar_today  26/26  4.141 km location_on Benevides/PA R$ 6.600,00 person ",
-          "source_url": "https://leilo.com.br/lote/1d70d3e5-501b-4fe2-a35b-502ce17c7dab/",
-          "state_hint": "GO",
-          "status": "unverified_candidate",
-          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
-        },
-        {
-          "candidate_kind": "individual_lot",
-          "platform_id": "leilo",
-          "title": "LOTE 242 PA chevron_left chevron_right play_arrow Recuperado de Financiamento SHINERAY/SHI 150 favorite calendar_today  26/26  51 km location_on Benevides/PA R$ 6.900,00 person Lan",
-          "source_url": "https://leilo.com.br/lote/3e9abf50-fa48-4004-bd57-54467ce69300/",
-          "state_hint": "GO",
-          "status": "unverified_candidate",
-          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
-        },
-        {
-          "candidate_kind": "individual_lot",
-          "platform_id": "leilo",
-          "title": "LOTE 243 AM chevron_left chevron_right play_arrow Recuperado de Financiamento BMW/320I PG51 (4P) favorite calendar_today  09/10  KM ilegível location_on Manaus/AM R$ 11.000,00 Lanc",
-          "source_url": "https://leilo.com.br/lote/ca80a54b-9e35-45fa-aeb9-084ee428ade2/",
-          "state_hint": "GO",
-          "status": "unverified_candidate",
-          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
-        },
-        {
-          "candidate_kind": "individual_lot",
-          "platform_id": "leilo",
-          "title": "LOTE 244 PA chevron_left chevron_right play_arrow Recuperado de Financiamento YAMAHA/YZF R-15 ABS favorite calendar_today  25/26  12.604 km location_on Benevides/PA R$ 11.300,00 pe",
-          "source_url": "https://leilo.com.br/lote/bfa33790-ad95-4415-a752-641106416747/",
-          "state_hint": "GO",
-          "status": "unverified_candidate",
-          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
-        },
-        {
-          "candidate_kind": "individual_lot",
-          "platform_id": "leilo",
-          "title": "LOTE 246 AM chevron_left chevron_right play_arrow Recuperado de Financiamento DAFRA/APACHE 200 favorite calendar_today  23/24  9.110 km location_on Manaus/AM R$ 6.000,00 person Lan",
-          "source_url": "https://leilo.com.br/lote/d3c4f0af-36f3-4316-863d-3389eda3f1ed/",
-          "state_hint": "GO",
-          "status": "unverified_candidate",
-          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
-        },
-        {
-          "candidate_kind": "individual_lot",
-          "platform_id": "leilo",
-          "title": "LOTE 247 AM chevron_left chevron_right play_arrow Recuperado de Financiamento SHINERAY/XY125-6A favorite calendar_today  25/25  12.382 km location_on Manaus/AM R$ 5.600,00 person L",
-          "source_url": "https://leilo.com.br/lote/dca04875-89c9-497e-bbee-41847844fb7a/",
-          "state_hint": "GO",
-          "status": "unverified_candidate",
-          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
-        },
-        {
-          "candidate_kind": "individual_lot",
-          "platform_id": "leilo",
-          "title": "LOTE 250 PA chevron_left chevron_right play_arrow Recuperado de Financiamento NISSAN/LIVINA favorite calendar_today  09/10 location_on Benevides/PA R$ 1.900,00 person Lance de P***",
-          "source_url": "https://leilo.com.br/lote/de728bfc-0d42-40be-a815-c0ecfe59dc1c/",
-          "state_hint": "GO",
-          "status": "unverified_candidate",
-          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
-        },
-        {
-          "candidate_kind": "individual_lot",
-          "platform_id": "leilo",
-          "title": "LOTE 254 AM chevron_left chevron_right play_arrow Recuperado de Financiamento SHINERAY/XY250-5A favorite calendar_today  25/26  19.071 km location_on Manaus/AM R$ 8.000,00 person L",
-          "source_url": "https://leilo.com.br/lote/01b394ea-82ea-4aaf-9a60-d2675c8e2a53/",
-          "state_hint": "GO",
-          "status": "unverified_candidate",
-          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
-        },
         {
           "candidate_kind": "individual_lot",
           "platform_id": "leilo",
@@ -414,6 +270,150 @@
           "platform_id": "leilo",
           "title": "LOTE 12 RS chevron_left chevron_right play_arrow IVECO/STRALIS 600S44T favorite calendar_today  21/22  536.984 km location_on Alvorada/RS R$ 208.000,00 Lance Inicial Leilão: 13/11/",
           "source_url": "https://leilo.com.br/lote/c464120a-025d-4f6e-a262-9edf0a7b095d/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 15 GO chevron_left chevron_right Recuperado de Financiamento FACCHINI/SRF RT favorite calendar_today  21/22 location_on Aparecida de Goiânia/GO R$ 60.000,00 Lance Inicial Leil",
+          "source_url": "https://leilo.com.br/lote/1568b189-5e02-4c61-b381-9228dfc4daf8/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 16 GO chevron_left chevron_right Recuperado de Financiamento FACCHINI/SRF RT favorite calendar_today  21/22 location_on Aparecida de Goiânia/GO R$ 60.000,00 Lance Inicial Leil",
+          "source_url": "https://leilo.com.br/lote/430e45c6-fb82-4ff8-9412-6d088d60aaad/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 17 GO chevron_left chevron_right play_arrow Frota VOLKSWAGEN/17.280 CRM 4X2 favorite calendar_today  15/16  501.178 km location_on Goiânia/GO R$ 118.000,00 Lance Inicial Leilã",
+          "source_url": "https://leilo.com.br/lote/aecab81d-b8e1-4e35-b39d-3e5ffc607a95/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 18 DF chevron_left chevron_right play_arrow LEILOSHOP FORD/TRANSIT 460 B favorite calendar_today  23/24  146.419 km location_on Taguatinga/DF R$ 136.000,00 person Lance de M**",
+          "source_url": "https://leilo.com.br/lote/5ccab54d-431c-4a3d-a63f-8b002483b3bf/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 20 MA chevron_left chevron_right Recuperado de Financiamento NEW HOLLAND/W130B favorite calendar_today  21/21  4.238 km location_on São Luís/MA R$ 280.000,00 Lance Inicial Lei",
+          "source_url": "https://leilo.com.br/lote/aee55136-6da8-44f1-adea-c864d1d87616/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 21 GO chevron_left chevron_right play_arrow LEILOSHOP IVECO/TECTOR 11-190 favorite calendar_today  21/22  109.040 km location_on Aparecida de Goiânia/GO R$ 198.000,00 person L",
+          "source_url": "https://leilo.com.br/lote/75264422-28de-485b-8eba-7a7ca5153a97/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 23 SP Recuperado de Financiamento FACCHINI/SEMI REBOQUE FACCHINI QRLO favorite calendar_today  21/22 location_on São Carlos/SP R$ 60.000,00 Lance Inicial Leilão: 13/11/2026 Se",
+          "source_url": "https://leilo.com.br/lote/a105f246-99c4-44b3-ab67-2e490faa837d/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 24 SP Recuperado de Financiamento FACCHINI/SRF LO favorite calendar_today  21/22 location_on São Carlos/SP R$ 60.000,00 Lance Inicial Leilão: 13/11/2026 Sex 13/11 Sex • 09:30 ",
+          "source_url": "https://leilo.com.br/lote/76e5fe31-fb19-4fa5-8860-cd79a32463a8/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 25 MS chevron_left chevron_right LEILOSHOP IVECO/STRALIS 600S56T favorite calendar_today  13/14  438.170 km location_on Campo Grande/MS R$ 149.000,00 Lance Inicial Leilão: 13/",
+          "source_url": "https://leilo.com.br/lote/41259d5a-c0f5-4ed3-a703-17e16bb1a1aa/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 26 GO chevron_left chevron_right play_arrow LEILOSHOP MOTONIVELADORA - CATERPILLAR/12H VHP favorite calendar_today  05/05  13.068 km location_on Goiania/GO R$ 150.000,00 Lance",
+          "source_url": "https://leilo.com.br/lote/b8216768-b1e5-4e91-8186-c0e61610c9a4/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 29 GO chevron_left chevron_right Recuperado de Financiamento ALFASTEEL/SRASBS 2EIXO favorite calendar_today  21/21 location_on Aparecida de Goiânia/GO R$ 120.000,00 Lance Inic",
+          "source_url": "https://leilo.com.br/lote/01d1c8f7-35fd-438d-8177-d37cfc7c150f/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 30 GO chevron_left chevron_right Recuperado de Financiamento ALFASTEEL/REBASDY favorite calendar_today  21/21 location_on Aparecida de Goiânia/GO R$ 120.000,00 Lance Inicial L",
+          "source_url": "https://leilo.com.br/lote/9b275746-0f93-4523-9535-1c1350838c45/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 31 GO chevron_left chevron_right Recuperado de Financiamento ALFASTEEL/SRASBS 2EIXO favorite calendar_today  21/21 location_on Aparecida de Goiânia/GO R$ 120.000,00 Lance Inic",
+          "source_url": "https://leilo.com.br/lote/1f09859e-7f6b-4871-9b45-d79a80ccdaac/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 32 GO chevron_left chevron_right Frota VARREDEIRA  SWEEPY BEACHTECH favorite location_on Goiânia/GO R$ 5.000,00 Lance Inicial Leilão: 13/11/2026 Sex 13/11 Sex • 09:30 person_r",
+          "source_url": "https://leilo.com.br/lote/02376958-f2e5-4cdb-bc41-3bcc9e2bb7db/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 33 GO chevron_left chevron_right play_arrow Frota VOLKSWAGEN/17.280 CRM 4X2 favorite calendar_today  15/16  471.035 km location_on Goiânia/GO R$ 118.000,00 Lance Inicial Leilã",
+          "source_url": "https://leilo.com.br/lote/415b6166-e7a1-45bd-b74a-7091a324bec5/",
+          "state_hint": "GO",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "individual_lot",
+          "platform_id": "leilo",
+          "title": "LOTE 35 TO MANIPULADOR TELESCOPIO - MANITTU MXT 840 favorite calendar_today  22/22 location_on Gurupi/TO R$ 120.000,00 Lance Inicial Leilão: 13/11/2026 Sex 13/11 Sex • 09:30 person",
+          "source_url": "https://leilo.com.br/lote/3d3c7c0a-4ef3-4db5-a6d7-55fd497e3826/",
           "state_hint": "GO",
           "status": "unverified_candidate",
           "review_status": "needs_event_date_lot_url_and_auctioneer_verification"

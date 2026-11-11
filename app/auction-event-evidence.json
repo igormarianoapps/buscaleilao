@@ -1,0 +1,611 @@
+{
+  "checked_at": "2026-11-11T21:07:04+00:00",
+  "sources_attempted": 16,
+  "events_published": 0,
+  "pages_checked": 35,
+  "pages_extracted": 25,
+  "platforms": {
+    "leilo": {
+      "sites_scanned": 5,
+      "extracted": 5,
+      "unverified_evidence": [
+        {
+          "platform_id": "leilo",
+          "candidate_url": "https://leilo.com.br/lote/13dbdbea-628d-49ea-9284-5f40976f575f/",
+          "date_mentions": [
+            "2026-11-12",
+            "2026-11-13"
+          ],
+          "vehicle_text_found": false,
+          "nonvehicle_text_found": false,
+          "lot_mentions": 19,
+          "status": "unconfirmed_event",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        },
+        {
+          "platform_id": "leilo",
+          "candidate_url": "https://leilo.com.br/lote/c10c3e7b-4eee-491e-8154-f81527b1b8fc/",
+          "date_mentions": [
+            "2026-11-12",
+            "2026-11-13"
+          ],
+          "vehicle_text_found": false,
+          "nonvehicle_text_found": false,
+          "lot_mentions": 20,
+          "status": "unconfirmed_event",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        },
+        {
+          "platform_id": "leilo",
+          "candidate_url": "https://leilo.com.br/lote/ab9ba48d-0441-4f18-9a71-e2b9168192c3/",
+          "date_mentions": [
+            "2026-11-13"
+          ],
+          "vehicle_text_found": false,
+          "nonvehicle_text_found": false,
+          "lot_mentions": 21,
+          "status": "unconfirmed_event",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        },
+        {
+          "platform_id": "leilo",
+          "candidate_url": "https://leilo.com.br/lote/6c91a7a5-9756-4bc2-804e-350c2366469f/",
+          "date_mentions": [
+            "2026-11-12",
+            "2026-11-13"
+          ],
+          "vehicle_text_found": false,
+          "nonvehicle_text_found": false,
+          "lot_mentions": 22,
+          "status": "unconfirmed_event",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        },
+        {
+          "platform_id": "leilo",
+          "candidate_url": "https://leilo.com.br/lote/58697d63-13ac-4400-8b22-3692d931b1d2/",
+          "date_mentions": [
+            "2026-11-12",
+            "2026-11-13"
+          ],
+          "vehicle_text_found": true,
+          "nonvehicle_text_found": false,
+          "lot_mentions": 23,
+          "status": "unconfirmed_event",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        }
+      ],
+      "errors": [],
+      "verified_events": 0
+    },
+    "mcleilao": {
+      "sites_scanned": 0,
+      "extracted": 0,
+      "unverified_evidence": [],
+      "errors": [],
+      "verified_events": 0
+    },
+    "flex": {
+      "sites_scanned": 4,
+      "extracted": 4,
+      "unverified_evidence": [
+        {
+          "platform_id": "flex",
+          "candidate_url": "https://www.flexleiloes.com.br/lotes/2991/",
+          "date_mentions": [],
+          "vehicle_text_found": false,
+          "nonvehicle_text_found": false,
+          "lot_mentions": 0,
+          "status": "unconfirmed_event",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        },
+        {
+          "platform_id": "flex",
+          "candidate_url": "https://www.flexleiloes.com.br/lotes/2981/",
+          "date_mentions": [],
+          "vehicle_text_found": false,
+          "nonvehicle_text_found": false,
+          "lot_mentions": 0,
+          "status": "unconfirmed_event",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        },
+        {
+          "platform_id": "flex",
+          "candidate_url": "https://www.flexleiloes.com.br/lotes/2990/",
+          "date_mentions": [],
+          "vehicle_text_found": false,
+          "nonvehicle_text_found": false,
+          "lot_mentions": 0,
+          "status": "unconfirmed_event",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        },
+        {
+          "platform_id": "flex",
+          "candidate_url": "https://www.flexleiloes.com.br/lotes/2994/",
+          "date_mentions": [],
+          "vehicle_text_found": false,
+          "nonvehicle_text_found": false,
+          "lot_mentions": 0,
+          "status": "unconfirmed_event",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        }
+      ],
+      "errors": [],
+      "verified_events": 0
+    },
+    "parque": {
+      "sites_scanned": 5,
+      "extracted": 5,
+      "unverified_evidence": [
+        {
+          "platform_id": "parque",
+          "candidate_url": "https://www.parquedosleiloes.com.br/leilao/1522/detalhes",
+          "date_mentions": [],
+          "vehicle_text_found": true,
+          "nonvehicle_text_found": true,
+          "lot_mentions": 2,
+          "status": "unconfirmed_event",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        },
+        {
+          "platform_id": "parque",
+          "candidate_url": "https://www.parquedosleiloes.com.br/leilao/1521/detalhes",
+          "date_mentions": [],
+          "vehicle_text_found": true,
+          "nonvehicle_text_found": false,
+          "lot_mentions": 3,
+          "status": "unavailable_or_expired",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        },
+        {
+          "platform_id": "parque",
+          "candidate_url": "https://www.parquedosleiloes.com.br/leilao/1519/detalhes",
+          "date_mentions": [],
+          "vehicle_text_found": true,
+          "nonvehicle_text_found": true,
+          "lot_mentions": 1,
+          "status": "unavailable_or_expired",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        },
+        {
+          "platform_id": "parque",
+          "candidate_url": "https://www.parquedosleiloes.com.br/leilao/1518/detalhes",
+          "date_mentions": [],
+          "vehicle_text_found": true,
+          "nonvehicle_text_found": true,
+          "lot_mentions": 2,
+          "status": "unavailable_or_expired",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        },
+        {
+          "platform_id": "parque",
+          "candidate_url": "https://www.parquedosleiloes.com.br/leilao/1512/detalhes",
+          "date_mentions": [],
+          "vehicle_text_found": true,
+          "nonvehicle_text_found": true,
+          "lot_mentions": 1,
+          "status": "unavailable_or_expired",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        }
+      ],
+      "errors": [],
+      "verified_events": 0
+    },
+    "sodre": {
+      "sites_scanned": 5,
+      "extracted": 5,
+      "unverified_evidence": [
+        {
+          "platform_id": "sodre",
+          "candidate_url": "https://www.sodresantoro.com.br/atendimento/como-comprar",
+          "date_mentions": [],
+          "vehicle_text_found": true,
+          "nonvehicle_text_found": true,
+          "lot_mentions": 0,
+          "status": "unconfirmed_event",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        },
+        {
+          "platform_id": "sodre",
+          "candidate_url": "https://www.sodresantoro.com.br/imoveis/lotes?lot_category=casa",
+          "date_mentions": [],
+          "vehicle_text_found": true,
+          "nonvehicle_text_found": true,
+          "lot_mentions": 0,
+          "status": "unconfirmed_event",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        },
+        {
+          "platform_id": "sodre",
+          "candidate_url": "https://www.sodresantoro.com.br/imoveis",
+          "date_mentions": [],
+          "vehicle_text_found": true,
+          "nonvehicle_text_found": true,
+          "lot_mentions": 0,
+          "status": "unconfirmed_event",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        },
+        {
+          "platform_id": "sodre",
+          "candidate_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_location=curitiba+i/pr",
+          "date_mentions": [],
+          "vehicle_text_found": true,
+          "nonvehicle_text_found": true,
+          "lot_mentions": 0,
+          "status": "unconfirmed_event",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        },
+        {
+          "platform_id": "sodre",
+          "candidate_url": "https://www.sodresantoro.com.br/materiais/lotes?lot_category=moveis+para+escrit%C3%B3rio__m%C3%B3veis+para+com%C3%A9rcio__m%C3%B3veis+p/+casa",
+          "date_mentions": [],
+          "vehicle_text_found": true,
+          "nonvehicle_text_found": true,
+          "lot_mentions": 0,
+          "status": "unconfirmed_event",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        }
+      ],
+      "errors": [],
+      "verified_events": 0
+    },
+    "copart": {
+      "sites_scanned": 0,
+      "extracted": 0,
+      "unverified_evidence": [],
+      "errors": [],
+      "verified_events": 0
+    },
+    "loop": {
+      "sites_scanned": 0,
+      "extracted": 0,
+      "unverified_evidence": [],
+      "errors": [],
+      "verified_events": 0
+    },
+    "freitas": {
+      "sites_scanned": 3,
+      "extracted": 3,
+      "unverified_evidence": [
+        {
+          "platform_id": "freitas",
+          "candidate_url": "https://www.freitasleiloeiro.com.br/Leiloes/Pesquisar?query=&categoria=1",
+          "date_mentions": [],
+          "vehicle_text_found": true,
+          "nonvehicle_text_found": false,
+          "lot_mentions": 0,
+          "status": "unconfirmed_event",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        },
+        {
+          "platform_id": "freitas",
+          "candidate_url": "https://www.freitasleiloeiro.com.br/Leiloes/Pesquisar?Categoria=1&TipoLoteId=1",
+          "date_mentions": [],
+          "vehicle_text_found": true,
+          "nonvehicle_text_found": false,
+          "lot_mentions": 0,
+          "status": "unconfirmed_event",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        },
+        {
+          "platform_id": "freitas",
+          "candidate_url": "https://www.freitasleiloeiro.com.br/Leiloes/Pesquisar?Categoria=1&TipoLoteId=3",
+          "date_mentions": [],
+          "vehicle_text_found": true,
+          "nonvehicle_text_found": false,
+          "lot_mentions": 0,
+          "status": "unconfirmed_event",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        }
+      ],
+      "errors": [],
+      "verified_events": 0
+    },
+    "milan": {
+      "sites_scanned": 0,
+      "extracted": 0,
+      "unverified_evidence": [],
+      "errors": [],
+      "verified_events": 0
+    },
+    "vip": {
+      "sites_scanned": 0,
+      "extracted": 0,
+      "unverified_evidence": [],
+      "errors": [],
+      "verified_events": 0
+    },
+    "hisa": {
+      "sites_scanned": 5,
+      "extracted": 0,
+      "unverified_evidence": [],
+      "errors": [
+        {
+          "url": "https://hisaleiloes.com.br/leilao/2534",
+          "reason": "HTTP 403"
+        },
+        {
+          "url": "https://hisaleiloes.com.br/leilao/2542",
+          "reason": "HTTP 403"
+        },
+        {
+          "url": "https://hisaleiloes.com.br/leilao/2539",
+          "reason": "HTTP 403"
+        },
+        {
+          "url": "https://hisaleiloes.com.br/leilao/2541",
+          "reason": "HTTP 403"
+        },
+        {
+          "url": "https://hisaleiloes.com.br/leilao/2538",
+          "reason": "HTTP 403"
+        }
+      ],
+      "verified_events": 0
+    },
+    "bolsa": {
+      "sites_scanned": 5,
+      "extracted": 0,
+      "unverified_evidence": [],
+      "errors": [
+        {
+          "url": "https://www.bolsadeleiloes.com.br/leilao/911",
+          "reason": "HTTP 403"
+        },
+        {
+          "url": "https://www.bolsadeleiloes.com.br/leilao/924",
+          "reason": "HTTP 403"
+        },
+        {
+          "url": "https://www.bolsadeleiloes.com.br/leilao/906",
+          "reason": "HTTP 403"
+        },
+        {
+          "url": "https://www.bolsadeleiloes.com.br/leilao/917",
+          "reason": "HTTP 403"
+        },
+        {
+          "url": "https://www.bolsadeleiloes.com.br/leilao/923",
+          "reason": "HTTP 403"
+        }
+      ],
+      "verified_events": 0
+    },
+    "vardana": {
+      "sites_scanned": 2,
+      "extracted": 2,
+      "unverified_evidence": [
+        {
+          "platform_id": "vardana",
+          "candidate_url": "https://www.vardanaleiloes.com.br/vardana/veiculos.php?lei=1085",
+          "date_mentions": [],
+          "vehicle_text_found": false,
+          "nonvehicle_text_found": false,
+          "lot_mentions": 109,
+          "status": "unconfirmed_event",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        },
+        {
+          "platform_id": "vardana",
+          "candidate_url": "https://www.vardanaleiloes.com.br/vardana/veiculos.php?lei=1086",
+          "date_mentions": [],
+          "vehicle_text_found": false,
+          "nonvehicle_text_found": false,
+          "lot_mentions": 0,
+          "status": "unconfirmed_event",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        }
+      ],
+      "errors": [],
+      "verified_events": 0
+    },
+    "claudio": {
+      "sites_scanned": 1,
+      "extracted": 1,
+      "unverified_evidence": [
+        {
+          "platform_id": "claudio",
+          "candidate_url": "https://www.claudiokussleiloes.com.br/relacao-foto/902",
+          "date_mentions": [
+            "2026-11-17"
+          ],
+          "vehicle_text_found": true,
+          "nonvehicle_text_found": false,
+          "lot_mentions": 0,
+          "status": "unconfirmed_event",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        }
+      ],
+      "errors": [],
+      "verified_events": 0
+    },
+    "palacio": {
+      "sites_scanned": 0,
+      "extracted": 0,
+      "unverified_evidence": [],
+      "errors": [],
+      "verified_events": 0
+    },
+    "rogerio": {
+      "sites_scanned": 0,
+      "extracted": 0,
+      "unverified_evidence": [],
+      "errors": [],
+      "verified_events": 0
+    }
+  }
+}
