@@ -11,7 +11,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   pilot:
-    if: github.event.head_commit.message == 'ci: run one-time development collector pilot'
+    if: "github.event.head_commit.message == 'ci: run one-time development collector pilot'"
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
