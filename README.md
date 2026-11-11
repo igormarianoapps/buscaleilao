@@ -4,6 +4,17 @@
 
 Site: https://buscaleilao-nine.vercel.app/
 
+## Catálogo de plataformas (branch develop, novembro/2026)
+
+O registro `app/auction-platforms.json` acompanha os **16 sites indicados pelo usuário**, distribuídos entre Centro-Oeste, São Paulo, Sul/Sudeste e integrações já existentes. O monitor `scripts/auction_platform_watch.py` registra disponibilidade e **candidatos não verificados** em `app/auction-platform-diagnostics.json` — esses candidatos **não entram em `events.json`**.
+
+- **Integrações já existentes:** Copart, Freitas e VIP, sujeitas à validação de URL individual em cada coleta.
+- **Novos coletores com publicação restrita a eventos confirmados:** Vardana (`scripts/regional_collect.py`) e Bolsa de Leilões (`scripts/bolsa_collect.py`). A Claudio Kuss é verificada pelo mesmo coletor regional, mas eventos sem lotes publicados não são anunciados.
+- **Outras plataformas:** Leilo, MC Leilão, Flex, Parque dos Leilões, Sodré Santoro, Loop Brasil, Milan, Hisa, Palácio dos Leilões e Rogério Menezes. Cada uma tem domínio monitorado, mas ainda necessita de extrator por evento com evidência de data e lotes para publicação automática. Algumas restringem acesso de robôs; esse bloqueio é respeitado.
+- **Diretório público `/fontes`:** lista os 16 sites e explica as diferenças entre fonte monitorada e leilão verificado.
+
+**Importante:** um domínio na lista não comprova que o leiloeiro esteja habilitado. Os eventos podem ocorrer em outras UFs; nunca classificar pelo estado da sede do site. A aprovação é feita por **evento e link**, não apenas por domínio. O monitoramento não deve ser confundido com cobertura integral da agenda.
+
 ## Arquitetura atual
 
 - `app/index.template.html` + `app/agenda.mjs`: frontend fonte, filtros por UF e intervalo de datas, e agrupamento por evento explícito.
