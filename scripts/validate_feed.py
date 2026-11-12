@@ -50,6 +50,10 @@ def verify_link_classification(row):
                   "Hisa Leilões":"hisa"}[org]
             if not trusted_url(site,url):
                 return "Auction platform requires its own direct lot/event URL"
+        elif org=="Rogério Menezes":
+            from rogerio_collect import detail_id
+            if detail_id(url) is None:
+                return "Rogério Menezes requires an individual first-party event URL"
         elif org=="Loop Leilões":
             from loop_collect import event_id
             if event_id(url) is None:
