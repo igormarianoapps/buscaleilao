@@ -65,6 +65,12 @@ def destination_status(row):
             ok=bool(key and trusted_url(key,url) and
                     row.get("source_link_type")=="event" and
                     row.get("source_type")=="private" and not row.get("event_url"))
+        elif host in ("rogeriomenezes.com.br","www.rogeriomenezes.com.br"):
+            from rogerio_collect import detail_id
+            ok=bool(row.get("organizer")=="Rogério Menezes" and
+                    row.get("source_type")=="private" and
+                    row.get("source_link_type")=="event" and
+                    not row.get("event_url") and detail_id(url))
         elif host in ("loopleiloes.com.br","www.loopleiloes.com.br"):
             from loop_collect import event_id
             ok=bool(row.get("organizer")=="Loop Leilões" and
