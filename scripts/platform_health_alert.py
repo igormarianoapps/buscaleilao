@@ -89,7 +89,9 @@ def main():
     path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(f"Platform health: {data['sources_reachable']}/{data['total_sources']} reachable, "
         f"{data['sources_with_events']} with events; {data['warning_count']} warnings")
-    for warning in data["warnings"]:\n        print("::warning::" + warning.replace("\\n", " ")[:220])\n    summary=os.environ.get("GITHUB_STEP_SUMMARY")
+    for warning in data["warnings"]:
+        print("::warning::" + warning.replace("\n", " ")[:220])
+    summary=os.environ.get("GITHUB_STEP_SUMMARY")
     if summary:
         with open(summary,"a",encoding="utf-8") as file:
             file.write(f"\n## Saúde dos coletores\n\n"
