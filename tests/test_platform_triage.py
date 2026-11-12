@@ -35,3 +35,22 @@ class TriageTests(unittest.TestCase):
     self.assertEqual(data["platforms_total"],1)
     self.assertEqual(data["platforms"]["parque"]["candidates_total"],0)
 if __name__=="__main__":unittest.main()
+
+
+class CombinedPlatformCases(unittest.TestCase):
+ def test_palacio_numeric_first_party_event_route_is_research_only(self):
+    site={"id":"palacio","name":"Palácio","batch":3,"allowed_hosts":["www.palaciodosleiloes.com.br"]}
+    row={"title":"Leilão 8905 Veículos sinistrados e sucatas 13/11",
+         "source_url":"https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8905"}
+    hit=classify(row,site,today=date(2026,11,12))
+    self.assertEqual(hit["url_kind"],"candidate_direct")
+    self.assertIsNone(hit["date_hint"])  # No invented year.
+    self.assertFalse(hit["published"])
+    self.assertIsNone(classify({"title":"Veículos","source_url":"https://evil.example/site/index.php?leilao_pesquisa=8905"},site))
+ def test_combined_report_contains_new_browser_only_candidates(self):
+    site={"id":"palacio","name":"Palácio","batch":3,"allowed_hosts":["www.palaciodosleiloes.com.br"]}
+    diag={"platforms":{"palacio":{"availability":"reachable","candidate_events":[
+        {"title":"Leilão 8906 veículos","source_url":"https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8906"}]}}}
+    result=summarize([site],diag,today=date(2026,11,12))
+    self.assertEqual(result["platforms"]["palacio"]["candidates_total"],1)
+    self.assertEqual(result["platforms"]["palacio"]["access_status"],"reachable")

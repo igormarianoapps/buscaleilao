@@ -26,6 +26,7 @@ DIRECT={
     "vip":r"/evento/detalhes/[a-z0-9_-]+/?",
     "copart":r"/saleListResult/[0-9]+/20[0-9]{2}-[0-9]{2}-[0-9]{2}/?",
     "freitas":r"/Leiloes/Lotes",
+    "palacio":r"/site/index\\.php",
 }
 def normalize(value):
     x=unicodedata.normalize("NFD",str(value or "")).casefold()
@@ -39,8 +40,11 @@ def classify(row,site,today=None):
     hosts=set(site.get("allowed_hosts",[]))
     if p.scheme!="https" or p.hostname not in hosts or p.username or p.password or p.fragment:
         return None
-    if not re.fullmatch(DIRECT.get(site["id"],r"(?!)"),p.path,re.I) or (
-        site["id"] not in ("vardana","freitas") and p.query):
+    special_palacio=(site["id"]=="palacio" and
+        re.fullmatch(r"/site/index\\.php",p.path,re.I) and
+        re.fullmatch(r"leilao_pesquisa=[0-9]{1,10}",p.query or ""))
+    if not special_palacio and (not re.fullmatch(DIRECT.get(site["id"],r"(?!)"),p.path,re.I) or (
+        site["id"] not in ("vardana","freitas") and p.query)):
         url_kind="not_direct_event"
     elif site["id"]=="leilo":
         # Recurring event pages need corroboration of that *edition* and its lots.
@@ -95,7 +99,7 @@ def summarize(sites,diagnostics,today=None):
                if (x:=classify(row,site,today=today))]
         result["platforms"][site["id"]]={
             "name":site["name"],"batch":site["batch"],
-            "access_status":raw.get("status","not_checked"),
+            "access_status":raw.get("availability",raw.get("status","not_checked")),
             "access_error":raw.get("error"),
             "candidates_total":len(found),
             "vehicle_candidates":sum(x["category_hint"]=="vehicle" for x in found),
@@ -107,7 +111,11 @@ def summarize(sites,diagnostics,today=None):
     return result
 def main():
     sites=json.loads((ROOT/"app/auction-platforms.json").read_text(encoding="utf-8"))
-    diagnostic=json.loads((ROOT/"app/auction-platform-diagnostics.json").read_text(encoding="utf-8"))
+    path=ROOT/"app/auction-discovery-combined.json"
+    if path.exists():
+        diagnostic=json.loads(path.read_text(encoding="utf-8"))
+    else:
+        diagnostic=json.loads((ROOT/"app/auction-platform-diagnostics.json").read_text(encoding="utf-8"))
     payload=summarize(sites,diagnostic)
     (ROOT/"app/platform-triage.json").write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print("Platform triage:",len(sites),"sources,",
