@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T14:49:03+00:00",
+  "generated_at": "2026-11-12T14:58:53+00:00",
   "candidates_count": 11,
   "events_automatically_published": 0,
   "items": [
@@ -32,7 +32,7 @@
     },
     {
       "platform_id": "palacio",
-      "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Motocicletas recuperadas de financiamento do banco pan \n                 Leilão 8902  70 veiculo  Em andamento",
+      "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Motocicletas recuperadas de financiamento do banco pan \n                 Leilão 8902  66 veiculo  Em andamento",
       "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8902",
       "category_hint": "vehicle",
       "date_hint": null,
@@ -47,7 +47,7 @@
     },
     {
       "platform_id": "palacio",
-      "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Veículos sinistrados e sucatas \n                 Leilão 8903  204 veiculo  Em andamento",
+      "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Veículos sinistrados e sucatas \n                 Leilão 8903  196 veiculo  Em andamento",
       "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8903",
       "category_hint": "vehicle",
       "date_hint": null,
@@ -77,7 +77,7 @@
     },
     {
       "platform_id": "palacio",
-      "title": "13 LEILÃO \n                  Sexta-Feira \n                 13/11 Veículos sinistrados e sucatas \n                 Leilão 8905  210 veiculo  Aberto para lance",
+      "title": "13 LEILÃO \n                  Sexta-Feira \n                 13/11 Veículos sinistrados e sucatas \n                 Leilão 8905  213 veiculo  Aberto para lance",
       "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8905",
       "category_hint": "vehicle",
       "date_hint": null,

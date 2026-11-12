@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-12T14:47:05+00:00",
+  "checked_at": "2026-11-12T14:56:52+00:00",
   "platforms_total": 17,
   "reachable": 13,
   "unverified_candidates": 57,
@@ -180,7 +180,7 @@
         {
           "candidate_kind": "possible_event",
           "platform_id": "hisa",
-          "title": "Eletrônico   2   lotes  ELETRODOMÉSTICOS     Eletrônico 2 LOTES   SAO CAETANO DO SUL, SP   Data: 26/11/2026 às 14:00   Leilão: 2543   2 lotes",
+          "title": "Eletrônico   4   lotes  ELETRODOMÉSTICOS     Eletrônico 4 LOTES   SAO CAETANO DO SUL, SP   Data: 26/11/2026 às 14:00   Leilão: 2543   4 lotes",
           "source_url": "https://hisaleiloes.com.br/leilao/2543",
           "state_hint": "SP",
           "status": "unverified_candidate",

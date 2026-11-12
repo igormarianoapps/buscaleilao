@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-11-12T14:51:40+00:00",
-  "verified": 161,
+  "checked_at": "2026-11-12T15:01:31+00:00",
+  "verified": 164,
   "unique_events": 48,
   "states_with_events": [
     "AM",
@@ -37,15 +37,15 @@
   "coverage_definition": "Presence of at least one event, not fraction of all auctions discovered",
   "organizers": {
     "Bolsa de Leilões": 1,
-    "Copart": 11,
+    "Copart": 10,
     "Detran MG": 12,
     "Freitas Leiloeiro": 4,
     "Leilo": 3,
-    "VIP Leilões": 16,
+    "VIP Leilões": 17,
     "Vardana Leilões": 1
   },
-  "platform_events": 149,
-  "direct_event_links": 161,
+  "platform_events": 152,
+  "direct_event_links": 164,
   "calendar_links": 0,
   "curated_source_links": 0,
   "curated_success": 3,
@@ -61,7 +61,7 @@
   "palacio_events": 0,
   "loop_events": 0,
   "leilo_errors": 0,
-  "secondary_errors": 31,
+  "secondary_errors": 36,
   "new_discoveries": 0,
   "failed": [
     {
@@ -93,6 +93,26 @@
       "error": "not published: no_verified_future_event_date"
     },
     {
+      "id": "parque:https://www.parquedosleiloes.com.br/leilao/1517/detalhes",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "parque:https://www.parquedosleiloes.com.br/leilao/1512/detalhes",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "parque:https://www.parquedosleiloes.com.br/leilao/1520/detalhes",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "parque:https://www.parquedosleiloes.com.br/leilao/1523/detalhes",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "parque:https://www.parquedosleiloes.com.br/leilao/1524/detalhes",
+      "error": "not published: event_or_lot_location_unverified"
+    },
+    {
       "id": "parque:https://www.parquedosleiloes.com.br/leilao/1519/detalhes",
       "error": "not published: not_vehicle_category"
     },
@@ -101,8 +121,8 @@
       "error": "not published: not_vehicle_category"
     },
     {
-      "id": "parque:https://www.parquedosleiloes.com.br/leilao/1512/detalhes",
-      "error": "not published: not_vehicle_category"
+      "id": "parque:https://www.parquedosleiloes.com.br/leilao/1515/detalhes",
+      "error": "not published: no_verified_future_event_date"
     },
     {
       "id": "parque:https://www.parquedosleiloes.com.br/leilao/1516/detalhes",
@@ -113,16 +133,16 @@
       "error": "not published: no_verified_future_event_date"
     },
     {
-      "id": "parque:https://www.parquedosleiloes.com.br/leilao/1509/detalhes",
-      "error": "not published: not_vehicle_category"
-    },
-    {
       "id": "parque:https://www.parquedosleiloes.com.br/leilao/1511/detalhes",
       "error": "not published: not_vehicle_category"
     },
     {
       "id": "parque:https://www.parquedosleiloes.com.br/leilao/1508/detalhes",
       "error": "not published: no_verified_future_event_date"
+    },
+    {
+      "id": "parque:https://www.parquedosleiloes.com.br/leilao/1509/detalhes",
+      "error": "not published: not_vehicle_category"
     },
     {
       "id": "parque:https://www.parquedosleiloes.com.br/leilao/1506/detalhes",
@@ -146,7 +166,7 @@
     },
     {
       "id": "flex:https://www.flexleiloes.com.br/lotes/2991",
-      "error": "not published: not_vehicle_category"
+      "error": "not published: event_or_lot_location_unverified"
     },
     {
       "id": "flex:https://www.flexleiloes.com.br/lotes/2981",

@@ -1,12 +1,16 @@
 {
-  "first_unique": 48,
+  "first_unique": 49,
   "second_unique": 48,
-  "first_rows": 161,
-  "second_rows": 161,
+  "first_rows": 164,
+  "second_rows": 164,
   "added": [],
-  "removed": [],
-  "changed_state_membership": [],
+  "removed": [
+    "('Copart', 'copart-10589-2026-11-12')"
+  ],
+  "changed_state_membership": [
+    "('VIP Leilões', 'vip-direct-37ada4bc01d5a0e3')"
+  ],
   "changed_event_details": [],
   "duplicate_ids": 0,
-  "stable": true
+  "stable": false
 }

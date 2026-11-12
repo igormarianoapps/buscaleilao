@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-12T14:54:15+00:00",
-  "feed_checked_at": "2026-11-12T14:51:40+00:00",
+  "generated_at": "2026-11-12T15:04:07+00:00",
+  "feed_checked_at": "2026-11-12T15:01:31+00:00",
   "platforms_total": 17,
   "per_platform": {
     "leilo": {
@@ -31,7 +31,7 @@
       "quarantined": 0,
       "sample_errors": [],
       "source_error": null,
-      "checked_at": "2026-11-12T14:47:05+00:00"
+      "checked_at": "2026-11-12T14:56:52+00:00"
     },
     "mcleilao": {
       "name": "MC Leilão",
@@ -46,7 +46,7 @@
       "quarantined": 0,
       "sample_errors": [],
       "source_error": null,
-      "checked_at": "2026-11-12T14:47:05+00:00"
+      "checked_at": "2026-11-12T14:56:52+00:00"
     },
     "flex": {
       "name": "Flex Leilões",
@@ -63,11 +63,11 @@
         "not published: not_vehicle_category",
         "not published: not_vehicle_category",
         "not published: not_vehicle_category",
-        "not published: not_vehicle_category",
+        "not published: event_or_lot_location_unverified",
         "not published: not_vehicle_category"
       ],
       "source_error": null,
-      "checked_at": "2026-11-12T14:47:05+00:00"
+      "checked_at": "2026-11-12T14:56:52+00:00"
     },
     "parque": {
       "name": "Parque dos Leilões",
@@ -88,7 +88,7 @@
         "not published: not_vehicle_category"
       ],
       "source_error": null,
-      "checked_at": "2026-11-12T14:47:05+00:00"
+      "checked_at": "2026-11-12T14:56:52+00:00"
     },
     "sodre": {
       "name": "Sodré Santoro",
@@ -103,14 +103,14 @@
       "quarantined": 0,
       "sample_errors": [],
       "source_error": "HTTP Error 403: Forbidden",
-      "checked_at": "2026-11-12T14:47:05+00:00"
+      "checked_at": "2026-11-12T14:56:52+00:00"
     },
     "copart": {
       "name": "Copart",
       "batch": 4,
       "availability": "reachable",
       "integration_status": "verified_events",
-      "verified_events": 11,
+      "verified_events": 10,
       "states_with_verified_events": [
         "CE",
         "GO",
@@ -125,7 +125,7 @@
       "quarantined": 0,
       "sample_errors": [],
       "source_error": null,
-      "checked_at": "2026-11-12T14:47:05+00:00"
+      "checked_at": "2026-11-12T14:56:52+00:00"
     },
     "loop": {
       "name": "Loop Brasil",
@@ -142,7 +142,7 @@
         "HTTP Error 429: Too Many Requests"
       ],
       "source_error": "HTTP Error 429: Too Many Requests",
-      "checked_at": "2026-11-12T14:47:05+00:00"
+      "checked_at": "2026-11-12T14:56:52+00:00"
     },
     "freitas": {
       "name": "Freitas Leiloeiro",
@@ -159,7 +159,7 @@
       "quarantined": 0,
       "sample_errors": [],
       "source_error": null,
-      "checked_at": "2026-11-12T14:47:05+00:00"
+      "checked_at": "2026-11-12T14:56:52+00:00"
     },
     "milan": {
       "name": "Milan Leilões",
@@ -174,14 +174,14 @@
       "quarantined": 0,
       "sample_errors": [],
       "source_error": "HTTP Error 403: Forbidden",
-      "checked_at": "2026-11-12T14:47:05+00:00"
+      "checked_at": "2026-11-12T14:56:52+00:00"
     },
     "vip": {
       "name": "VIP Leilões",
       "batch": 4,
       "availability": "reachable",
       "integration_status": "verified_events",
-      "verified_events": 16,
+      "verified_events": 17,
       "states_with_verified_events": [
         "AM",
         "BA",
@@ -201,13 +201,13 @@
         "SC",
         "SP"
       ],
-      "unverified_leads": 1,
+      "unverified_leads": 2,
       "vehicle_candidates": 0,
       "lot_only_candidates": 0,
       "quarantined": 0,
       "sample_errors": [],
       "source_error": "redirect outside approved platform hosts",
-      "checked_at": "2026-11-12T14:47:05+00:00"
+      "checked_at": "2026-11-12T14:56:52+00:00"
     },
     "hisa": {
       "name": "Hisa Leilões",
@@ -228,7 +228,7 @@
         "not published: not_vehicle_category"
       ],
       "source_error": null,
-      "checked_at": "2026-11-12T14:47:05+00:00"
+      "checked_at": "2026-11-12T14:56:52+00:00"
     },
     "bolsa": {
       "name": "Bolsa de Leilões",
@@ -245,7 +245,7 @@
       "quarantined": 0,
       "sample_errors": [],
       "source_error": null,
-      "checked_at": "2026-11-12T14:47:05+00:00"
+      "checked_at": "2026-11-12T14:56:52+00:00"
     },
     "vardana": {
       "name": "Vardana Leilões",
@@ -264,7 +264,7 @@
         "lot page not confirmed / no published lots"
       ],
       "source_error": null,
-      "checked_at": "2026-11-12T14:47:05+00:00"
+      "checked_at": "2026-11-12T14:56:52+00:00"
     },
     "claudio": {
       "name": "Claudio Kuss Leilões",
@@ -281,7 +281,7 @@
         "lot page not confirmed / no published lots"
       ],
       "source_error": null,
-      "checked_at": "2026-11-12T14:47:05+00:00"
+      "checked_at": "2026-11-12T14:56:52+00:00"
     },
     "palacio": {
       "name": "Palácio dos Leilões",
@@ -290,7 +290,7 @@
       "integration_status": "monitoring_no_verified_vehicle_event",
       "verified_events": 0,
       "states_with_verified_events": [],
-      "unverified_leads": 16,
+      "unverified_leads": 17,
       "vehicle_candidates": 9,
       "lot_only_candidates": 0,
       "quarantined": 0,
@@ -302,7 +302,7 @@
         "not published: event date, individual vehicle lots or lot city/UF not independently confirmed"
       ],
       "source_error": null,
-      "checked_at": "2026-11-12T14:47:05+00:00"
+      "checked_at": "2026-11-12T14:56:52+00:00"
     },
     "rogerio": {
       "name": "Rogério Menezes",
@@ -317,7 +317,7 @@
       "quarantined": 0,
       "sample_errors": [],
       "source_error": null,
-      "checked_at": "2026-11-12T14:47:05+00:00"
+      "checked_at": "2026-11-12T14:56:52+00:00"
     },
     "pmklog": {
       "name": "PMKLog",
@@ -332,7 +332,7 @@
       "quarantined": 0,
       "sample_errors": [],
       "source_error": null,
-      "checked_at": "2026-11-12T14:47:05+00:00"
+      "checked_at": "2026-11-12T14:56:52+00:00"
     }
   },
   "disclaimer": "A monitored domain does not prove auctioneer legitimacy. An admitted event requires specific URL and evidence. Zero verified events may be legitimate.",

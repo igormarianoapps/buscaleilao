@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-11-12T14:49:03+00:00",
+  "checked_at": "2026-11-12T14:58:53+00:00",
   "sources_attempted": 17,
   "events_published": 0,
-  "pages_checked": 42,
+  "pages_checked": 43,
   "pages_extracted": 31,
   "platforms": {
     "leilo": {
@@ -462,12 +462,16 @@
       "verified_events": 0
     },
     "vip": {
-      "sites_scanned": 1,
+      "sites_scanned": 2,
       "extracted": 0,
       "unverified_evidence": [],
       "errors": [
         {
           "url": "https://www.vipleiloes.com.br/evento/detalhes/121126bspi",
+          "reason": "HTTP 403"
+        },
+        {
+          "url": "https://www.vipleiloes.com.br/evento/detalhes/121126bsma",
           "reason": "HTTP 403"
         }
       ],

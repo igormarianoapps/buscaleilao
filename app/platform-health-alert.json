@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-12T14:54:15+00:00",
+  "checked_at": "2026-11-12T15:04:07+00:00",
   "total_sources": 17,
   "sources_reachable": 15,
   "sources_with_events": 6,
@@ -44,7 +44,7 @@
     },
     "copart": {
       "reachable": true,
-      "verified_events": 11,
+      "verified_events": 10,
       "candidates": 0,
       "condition": "verified_events"
     },
@@ -68,8 +68,8 @@
     },
     "vip": {
       "reachable": true,
-      "verified_events": 16,
-      "candidates": 1,
+      "verified_events": 17,
+      "candidates": 2,
       "condition": "verified_events"
     },
     "hisa": {
@@ -99,7 +99,7 @@
     "palacio": {
       "reachable": true,
       "verified_events": 0,
-      "candidates": 16,
+      "candidates": 17,
       "condition": "candidates_unverified"
     },
     "rogerio": {

@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-11-12T14:48:05+00:00",
+  "checked_at": "2026-11-12T14:57:57+00:00",
   "total": 17,
   "reachable": 13,
-  "candidate_links": 92,
+  "candidate_links": 94,
   "published": 0,
   "platforms": {
     "leilo": {
@@ -758,9 +758,18 @@
           "state_hint": "SP",
           "status": "unverified_candidate",
           "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "vip",
+          "title": "Financeiras e Seguradoras \n\n                             \n\n                                 \n                                                 \n                                     ",
+          "source_url": "https://www.vipleiloes.com.br/evento/detalhes/121126bsma",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
         }
       ],
-      "candidates": 1,
+      "candidates": 2,
       "mode": "public_browser",
       "publication_allowed": false,
       "errors": []
@@ -846,7 +855,7 @@
         {
           "candidate_kind": "possible_event",
           "platform_id": "palacio",
-          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Materiais outlet mix e outros comitentes \n                 Leilão 8882  133 eletrodomestico  Em andamento",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Materiais outlet mix e outros comitentes \n                 Leilão 8882  120 eletrodomestico  Em andamento",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8882",
           "state_hint": "MG",
           "status": "unverified_candidate",
@@ -855,7 +864,7 @@
         {
           "candidate_kind": "possible_event",
           "platform_id": "palacio",
-          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Motocicletas recuperadas de financiamento do banco pan \n                 Leilão 8902  70 veiculo  Em andamento",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Motocicletas recuperadas de financiamento do banco pan \n                 Leilão 8902  66 veiculo  Em andamento",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8902",
           "state_hint": "MG",
           "status": "unverified_candidate",
@@ -864,7 +873,7 @@
         {
           "candidate_kind": "possible_event",
           "platform_id": "palacio",
-          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Veículos sinistrados e sucatas \n                 Leilão 8903  204 veiculo  Em andamento",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Veículos sinistrados e sucatas \n                 Leilão 8903  196 veiculo  Em andamento",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8903",
           "state_hint": "MG",
           "status": "unverified_candidate",
@@ -882,7 +891,7 @@
         {
           "candidate_kind": "possible_event",
           "platform_id": "palacio",
-          "title": "13 LEILÃO \n                  Sexta-Feira \n                 13/11 Veículos sinistrados e sucatas \n                 Leilão 8905  210 veiculo  Aberto para lance",
+          "title": "13 LEILÃO \n                  Sexta-Feira \n                 13/11 Veículos sinistrados e sucatas \n                 Leilão 8905  213 veiculo  Aberto para lance",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8905",
           "state_hint": "MG",
           "status": "unverified_candidate",
@@ -909,7 +918,7 @@
         {
           "candidate_kind": "possible_event",
           "platform_id": "palacio",
-          "title": "16 LEILÃO \n                  Segunda-Feira \n                 16/11 Leilão virtual - materiais diversos e outros comitentes \n                 Leilão 8899  145 eletrodomestico  Abert",
+          "title": "16 LEILÃO \n                  Segunda-Feira \n                 16/11 Leilão virtual - materiais diversos e outros comitentes \n                 Leilão 8899  146 eletrodomestico  Abert",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8899",
           "state_hint": "MG",
           "status": "unverified_candidate",
@@ -918,7 +927,7 @@
         {
           "candidate_kind": "possible_event",
           "platform_id": "palacio",
-          "title": "17 LEILÃO \n                  Terça-Feira \n                 17/11 Materiais diversos, outlet mix e outros comitentes \n                 Leilão 8908  83 eletrodomestico  Aberto para l",
+          "title": "17 LEILÃO \n                  Terça-Feira \n                 17/11 Materiais diversos, outlet mix e outros comitentes \n                 Leilão 8908  85 eletrodomestico  Aberto para l",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8908",
           "state_hint": "MG",
           "status": "unverified_candidate",
@@ -986,9 +995,18 @@
           "state_hint": "MG",
           "status": "unverified_candidate",
           "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "palacio",
+          "title": "EDITAL LEILÃO HELICÓPTERO AIRBUS BK117C2 (EC145)",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/documents/17944953646af5d38460e5c.pdf",
+          "state_hint": "MG",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
         }
       ],
-      "candidates": 16,
+      "candidates": 17,
       "mode": "public_browser",
       "publication_allowed": false,
       "errors": []
