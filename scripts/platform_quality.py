@@ -9,8 +9,9 @@ from datetime import datetime,timezone
 from pathlib import Path
 from urllib.parse import urlsplit
 ROOT=Path(__file__).resolve().parents[1]
-def audit(sites,diagnostics,triage,feed,quarantine,report):
+def audit(sites,diagnostics,triage,feed,quarantine,report,combined=None):
     rows=feed.get("events",[])
+    combined=(combined or {}).get("platforms",{})
     errors=report.get("failed",[])
     result={"generated_at":datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "feed_checked_at":feed.get("updated_at"),
@@ -35,7 +36,8 @@ def audit(sites,diagnostics,triage,feed,quarantine,report):
             str(x.get("id","")).lower().startswith(ident)]
         quarantine_count=sum(1 for x in quarantine.get("quarantined",[]) if
             str(x.get("id","")).lower().startswith(ident))
-        availability=diag.get("status","not_checked")
+        combined_row=combined.get(ident,{})
+        availability=combined_row.get("availability",diag.get("status","not_checked"))
         status=("verified_events" if verified else
                 "access_limited" if availability=="unreachable" else
                 "monitoring_no_verified_vehicle_event")
@@ -43,7 +45,7 @@ def audit(sites,diagnostics,triage,feed,quarantine,report):
             "name":site["name"],"batch":site["batch"],"availability":availability,
             "integration_status":status,"verified_events":len(verified),
             "states_with_verified_events":sorted(s for s in states if s),
-            "unverified_leads":tri.get("candidates_total",diag.get("candidate_count",0)),
+            "unverified_leads":tri.get("candidates_total",combined_row.get("discovered_links",diag.get("candidate_count",0))),
             "vehicle_candidates":tri.get("vehicle_candidates",0),
             "lot_only_candidates":tri.get("individual_lot_only",0),
             "quarantined":quarantine_count,
@@ -64,7 +66,8 @@ def main():
                  load("platform-triage.json",{}),
                  load("events.json",{}),
                  load("quarantine-report.json",{}),
-                 load("collection-report.json",{}))
+                 load("collection-report.json",{}),
+                 load("auction-discovery-combined.json",{}))
     path=ROOT/"app/platform-quality.json"
     path.write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(f"Platform quality: {result['platforms_with_verified_events']}/{result['platforms_total']} sites with admitted events")

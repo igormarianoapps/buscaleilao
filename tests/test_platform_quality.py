@@ -22,3 +22,13 @@ class PlatformQualityTests(unittest.TestCase):
     q=audit([site],{}, {},{"events":[{"id":"h","source_url":"https://hisaleiloes.com.br/leilao/4","link_verified":True}]},{},{})
     self.assertEqual(q["per_platform"]["hisa"]["verified_events"],0)
 if __name__=="__main__":unittest.main()
+
+class CombinedHealthTests(unittest.TestCase):
+ def test_browser_access_supersedes_http_block_and_is_not_event_proof(self):
+    site={"id":"sodre","name":"Sodré","batch":2,"allowed_hosts":["www.sodresantoro.com.br"]}
+    report=audit([site],{"platforms":{"sodre":{"status":"unreachable"}}},
+        {},{"events":[]},{},{},
+        {"platforms":{"sodre":{"availability":"reachable","discovered_links":27}}})
+    self.assertEqual(report["platforms_reachable"],1)
+    self.assertEqual(report["per_platform"]["sodre"]["verified_events"],0)
+    self.assertEqual(report["per_platform"]["sodre"]["integration_status"],"monitoring_no_verified_vehicle_event")
