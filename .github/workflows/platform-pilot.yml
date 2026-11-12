@@ -1,5 +1,5 @@
 name: Auction platform integration pilot
-# Manual audit trigger: verify phase 1 resilience, alerts and double collection on develop.
+# Manual audit trigger: verify phase 2 seventeen-source coverage and evidence gate on develop.
 on:
   push:
     branches: [develop]
