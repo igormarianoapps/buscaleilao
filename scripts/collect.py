@@ -241,6 +241,18 @@ def main():
             events.append(item)
             known_ids.add(item["id"])
     failures.extend(loop_errors)
+    # Rogério Menezes publishes no current auction in its public agenda, but
+    # the independent adapter is ready to validate newly announced editions.
+    try:
+        from rogerio_collect import collect_rogerio
+        rogerio_events, rogerio_errors = collect_rogerio(today=today)
+    except Exception as exc:
+        rogerio_events, rogerio_errors = [], [{"id":"rogerio","error":str(exc)[:180]}]
+    for item in rogerio_events:
+        if item["id"] not in known_ids:
+            events.append(item)
+            known_ids.add(item["id"])
+    failures.extend(rogerio_errors)
     # Preserve a discovered-at timestamp only for newly observed identities.
     try:
         previous=json.loads(OUTPUT.read_text(encoding="utf-8")).get("events",[])
