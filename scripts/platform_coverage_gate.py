@@ -69,6 +69,9 @@ def assess(sites, quality, feed, combined, evidence=None, checked_at=None):
         "sites_with_verified_events": sum(row["verified_events"] > 0 for row in rows),
         "sites_with_no_verified_events": sum(row["verified_events"] == 0 for row in rows),
         "full_integration_complete": all(row["state"] == "events_verified" for row in rows),
+        "priority_four": ["flex", "parque", "palacio", "hisa"],
+        "priority_four_verified": sum(row["state"] == "events_verified" and row["id"] in ("flex", "parque", "palacio", "hisa") for row in rows),
+        "priority_four_complete": all(any(row["id"] == key and row["state"] == "events_verified" for row in rows) for key in ("flex", "parque", "palacio", "hisa")),
         "event_count_unique": len({event.get("event_id") or event.get("id")
                                   for event in feed.get("events", [])}),
         "note": "No events can mean no active vehicle auctions, missing evidence, or blocked access. Site monitoring is not event extraction.",
