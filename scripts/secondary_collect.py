@@ -25,6 +25,7 @@ SITES={
            {"hisaleiloes.com.br","www.hisaleiloes.com.br"},
            r"/leilao/[0-9]{1,10}/?")
 }
+PUBLIC_INDEXES={"parque":{"https://www.parquedosleiloes.com.br/","https://www.parquedosleiloes.com.br/leiloes"}}
 UF=set("AC AL AP AM BA CE DF ES GO MA MT MS MG PA PB PR PE PI RJ RN RS RO RR SC SP SE TO".split())
 PT_MONTHS={"jan":1,"fev":2,"mar":3,"abr":4,"mai":5,"jun":6,
            "jul":7,"ago":8,"set":9,"out":10,"nov":11,"dez":12}
@@ -178,7 +179,7 @@ def parse_event(site,card,detail,url,today=None):
         "last_checked_at":datetime.now(timezone.utc).isoformat(timespec="seconds")}
 
 def get_page(site,url):
-    if url!=SITES[site][1] and not trusted_url(site,url):
+    if url not in PUBLIC_INDEXES.get(site,{SITES[site][1]}) and not trusted_url(site,url):
         raise ValueError("untrusted event URL")
     class CanonicalRedirect(urllib.request.HTTPRedirectHandler):
         def __init__(self):
@@ -200,7 +201,7 @@ def get_page(site,url):
         "User-Agent":"BuscaLeilaoBot/0.7 (+https://github.com/igormarianoapps/buscaleilao)"})
     with urllib.request.build_opener(CanonicalRedirect()).open(req,timeout=11) as resp:
         if "html" not in resp.headers.get("Content-Type","").lower():raise ValueError("not HTML")
-        if url!=SITES[site][1] and not trusted_url(site,resp.geturl()):
+        if url not in PUBLIC_INDEXES.get(site,{SITES[site][1]}) and not trusted_url(site,resp.geturl()):
             raise ValueError("unexpected final URL")
         return resp.read(2_000_001).decode("utf-8","replace")
 
@@ -235,17 +236,18 @@ def collect_secondary(today=None, loader=get_page, discovery_path=None):
             errors.append({"id": "secondary:discovery", "error": str(exc)[:160]})
     for site, (name, home, hosts, pattern) in SITES.items():
         unique = {}
-        try:
-            doc = VisibleLinks()
-            doc.feed(loader(site, home))
-            for raw, label, idx in doc.links:
-                url = urllib.parse.urljoin(home, raw or "")
-                if trusted_url(site, url):
-                    unique.setdefault(url, label)
-                if len(unique) >= 20:
-                    break
-        except Exception as exc:
-            errors.append({"id": site + ":index", "error": str(exc)[:160]})
+        for index_url in sorted(PUBLIC_INDEXES.get(site,{home})):
+            try:
+                doc = VisibleLinks()
+                doc.feed(loader(site, index_url))
+                for raw,label,idx in doc.links:
+                    url = urllib.parse.urljoin(index_url, raw or "")
+                    if trusted_url(site,url):
+                        unique.setdefault(url,label)
+                    if len(unique)>=20:
+                        break
+            except Exception as exc:
+                errors.append({"id":site+":index","error":str(exc)[:160]})
         # Use cached discovery solely as a URL index, including when the home
         # page is blocked or partially rendered. Every detail is fetched live.
         for url, label in fallback_candidates(site, combined).items():
