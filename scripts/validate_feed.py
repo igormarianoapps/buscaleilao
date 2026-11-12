@@ -1,5 +1,6 @@
 """Fail-closed integrity gate before publishing the customer-facing auction feed."""
 import json
+import re
 import sys
 from datetime import date, datetime, timedelta, timezone
 from auction_clock import auction_today
@@ -72,6 +73,64 @@ def verify_link_classification(row):
             return "calendar link classification has no verified adapter"
     return None
 
+def validate_event_groups(rows):
+    """Reject inconsistent multi-state projections and competing event identities.
+
+    One auction can have several state rows, but each state appears once and
+    shared metadata must describe the same auction. This is a consistency
+    gate, not independent proof that a live auction exists.
+    """
+    issues = []
+    by_event = {}
+    by_destination = {}
+    for index, row in enumerate(rows):
+        if not isinstance(row, dict):
+            continue
+        identity = row.get("event_id") or row.get("id")
+        if not isinstance(identity, str) or not identity:
+            continue
+        state = row.get("state")
+        by_event.setdefault(identity, []).append((index, row))
+        # Identical destination, organizer and date with two different event
+        # identities is almost always a duplicated auction card.
+        url = row.get("event_url") or row.get("source_url")
+        if isinstance(url, str) and url and row.get("organizer") and row.get("auction_date"):
+            key = (row["organizer"], row["auction_date"], url)
+            old = by_destination.setdefault(key, identity)
+            if old != identity:
+                issues.append(f"Event {index}: same auction URL and date used by distinct event IDs")
+        tm = row.get("auction_time")
+        if tm is not None and (
+            not isinstance(tm, str) or not re.fullmatch(r"(?:[01][0-9]|2[0-3]):[0-5][0-9]", tm)
+        ):
+            issues.append(f"Event {index}: invalid auction time")
+        count = row.get("vehicle_count")
+        if count is not None and (type(count) is not int or count < 0):
+            issues.append(f"Event {index}: invalid vehicle count")
+        if row.get("status") not in (None, "scheduled"):
+            issues.append(f"Event {index}: auction is not scheduled")
+        states = row.get("states")
+        if isinstance(states, list) and len(states) != len(set(states)):
+            issues.append(f"Event {index}: repeated state in multistate list")
+    for identity, group in by_event.items():
+        if len(group) < 2:
+            continue
+        first = group[0][1]
+        seen_states = set()
+        for index, row in group:
+            state = row.get("state")
+            if state in seen_states:
+                issues.append(f"Event {index}: duplicate state for event {identity}")
+            seen_states.add(state)
+            for key in ("organizer", "auction_date", "auction_time",
+                        "source_url", "event_url", "title"):
+                if row.get(key) != first.get(key):
+                    issues.append(f"Event {index}: conflicting {key} for event {identity}")
+            if set(row.get("states") or []) != set(first.get("states") or []):
+                issues.append(f"Event {index}: inconsistent state list for event {identity}")
+    return issues
+
+
 def validate_feed(feed, report, now=None):
     now = now or datetime.now(timezone.utc)
     errors = []
@@ -134,6 +193,7 @@ def validate_feed(feed, report, now=None):
         parts = urlsplit(url)
         if parts.scheme != "https" or not parts.hostname or parts.username or parts.password:
             errors.append(f"Event {index}: untrusted source URL")
+    errors.extend(validate_event_groups(rows))
     if report.get("verified") != len(rows):
         errors.append("Report event count disagrees with feed")
     if report.get("unique_events") != len(unique):
