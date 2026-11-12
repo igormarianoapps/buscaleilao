@@ -48,6 +48,45 @@ class GateTests(unittest.TestCase):
         feed["events"].append(another)
         report["verified"]=2
         self.assertEqual(validate_feed(feed,report,NOW),[])
+    def test_rejects_conflicting_multistate_data(self):
+        feed, report = sample()
+        feed["events"][0].update({"id":"one-go", "event_id":"one", "states":["GO","DF"]})
+        other = dict(feed["events"][0], id="one-df", state="DF", auction_time="15:00")
+        feed["events"].append(other)
+        report["verified"] = 2
+        self.assertTrue(any("conflicting auction_time" in e
+                            for e in validate_feed(feed,report,NOW)))
+
+    def test_rejects_duplicate_state_across_event_rows(self):
+        feed, report = sample()
+        feed["events"][0].update({"id":"one-go", "event_id":"one", "states":["GO","DF"]})
+        feed["events"].append(dict(feed["events"][0],id="one-go-again"))
+        report["verified"] = 2
+        self.assertTrue(any("duplicate state" in e
+                            for e in validate_feed(feed,report,NOW)))
+
+    def test_rejects_different_ids_for_same_auction_url_and_date(self):
+        feed, report = sample()
+        feed["events"].append(dict(feed["events"][0],id="two"))
+        report["verified"] = 2
+        report["unique_events"] = 2
+        self.assertTrue(any("same auction URL and date" in e
+                            for e in validate_feed(feed,report,NOW)))
+
+    def test_rejects_malformed_optional_values(self):
+        for key, value, expected in [
+            ("auction_time", "25:99", "invalid auction time"),
+            ("vehicle_count", -1, "invalid vehicle count"),
+            ("vehicle_count", True, "invalid vehicle count"),
+            ("states", ["GO", "GO"], "repeated state"),
+            ("status", "cancelled", "not scheduled"),
+        ]:
+            with self.subTest(field=key, value=value):
+                feed, report = sample()
+                feed["events"][0][key] = value
+                self.assertTrue(any(expected in e
+                                    for e in validate_feed(feed,report,NOW)))
+
     def test_report_mismatch_rejected(self):
         feed,report=sample()
         report["unique_events"]=7
