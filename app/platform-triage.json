@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T13:53:57+00:00",
+  "generated_at": "2026-11-12T14:18:16+00:00",
   "platforms_total": 17,
   "events_automatically_published": 0,
   "platforms": {
@@ -1439,11 +1439,11 @@
       "batch": 2,
       "access_status": "reachable",
       "access_error": null,
-      "candidates_total": 5,
+      "candidates_total": 6,
       "vehicle_candidates": 0,
       "dated_vehicle_candidates": 0,
       "individual_lot_only": 0,
-      "not_vehicle": 5,
+      "not_vehicle": 6,
       "candidates": [
         {
           "platform_id": "hisa",
@@ -1499,6 +1499,22 @@
           "source_url": "https://hisaleiloes.com.br/leilao/2541",
           "category_hint": "non_vehicle",
           "date_hint": "2026-11-25",
+          "time_hint": "14:00",
+          "state_hint_verified_from_event": "SP",
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "hisa",
+          "title": "Eletrônico  ELETRODOMÉSTICOS     Eletrônico   SAO CAETANO DO SUL, SP   Data: 26/11/2026 às 14:00   Leilão: 2543",
+          "source_url": "https://hisaleiloes.com.br/leilao/2543",
+          "category_hint": "non_vehicle",
+          "date_hint": "2026-11-26",
           "time_hint": "14:00",
           "state_hint_verified_from_event": "SP",
           "url_kind": "candidate_direct",
@@ -1738,7 +1754,7 @@
       "batch": 3,
       "access_status": "reachable",
       "access_error": null,
-      "candidates_total": 15,
+      "candidates_total": 16,
       "vehicle_candidates": 9,
       "dated_vehicle_candidates": 0,
       "individual_lot_only": 0,
@@ -1746,7 +1762,7 @@
       "candidates": [
         {
           "platform_id": "palacio",
-          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Materiais outlet mix e outros comitentes \n                 Leilão 8882  182 eletrodomestico  Em andamento",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Materiais outlet mix e outros comitentes \n                 Leilão 8882  163 eletrodomestico  Em andamento",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8882",
           "category_hint": "non_vehicle",
           "date_hint": null,
@@ -1764,7 +1780,7 @@
         },
         {
           "platform_id": "palacio",
-          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Motocicletas recuperadas de financiamento do banco pan \n                 Leilão 8902  89 veiculo  Em andamento",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Motocicletas recuperadas de financiamento do banco pan \n                 Leilão 8902  83 veiculo  Em andamento",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8902",
           "category_hint": "vehicle",
           "date_hint": null,
@@ -1781,7 +1797,7 @@
         },
         {
           "platform_id": "palacio",
-          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Veículos sinistrados e sucatas \n                 Leilão 8903  231 veiculo  Em andamento",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Veículos sinistrados e sucatas \n                 Leilão 8903  218 veiculo  Em andamento",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8903",
           "category_hint": "vehicle",
           "date_hint": null,
@@ -1866,7 +1882,7 @@
         },
         {
           "platform_id": "palacio",
-          "title": "16 LEILÃO \n                  Segunda-Feira \n                 16/11 Leilão virtual - materiais diversos e outros comitentes \n                 Leilão 8899  140 eletrodomestico  Abert",
+          "title": "16 LEILÃO \n                  Segunda-Feira \n                 16/11 Leilão virtual - materiais diversos e outros comitentes \n                 Leilão 8899  141 eletrodomestico  Abert",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8899",
           "category_hint": "non_vehicle",
           "date_hint": null,
@@ -1973,6 +1989,24 @@
           "platform_id": "palacio",
           "title": "Edital do leilão 8902 data 12/11/2026",
           "source_url": "https://www.palaciodosleiloes.com.br/site/documents/leiloes/8902.pdf",
+          "category_hint": "unknown",
+          "date_hint": "2026-11-12",
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "palacio",
+          "title": "Edital do leilão 8903 data 12/11/2026",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/documents/leiloes/8903.pdf",
           "category_hint": "unknown",
           "date_hint": "2026-11-12",
           "time_hint": null,

@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-11-12T13:52:18+00:00",
+  "checked_at": "2026-11-12T14:16:24+00:00",
   "platforms_total": 17,
   "reachable": 13,
-  "unverified_candidates": 56,
+  "unverified_candidates": 57,
   "events_automatically_published": 0,
   "platforms": {
     "bolsa": {
@@ -139,7 +139,7 @@
     },
     "hisa": {
       "status": "reachable",
-      "candidate_count": 5,
+      "candidate_count": 6,
       "candidate_events": [
         {
           "candidate_kind": "possible_event",
@@ -173,6 +173,15 @@
           "platform_id": "hisa",
           "title": "Eletrônico   36   lotes  ITENS DIVERSOS - ELETRODOMÉSTICOS     Eletrônico 36 LOTES   SAO CAETANO DO SUL, SP   Data: 25/11/2026 às 14:00   Leilão: 2541   36 lotes",
           "source_url": "https://hisaleiloes.com.br/leilao/2541",
+          "state_hint": "SP",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "hisa",
+          "title": "Eletrônico  ELETRODOMÉSTICOS     Eletrônico   SAO CAETANO DO SUL, SP   Data: 26/11/2026 às 14:00   Leilão: 2543",
+          "source_url": "https://hisaleiloes.com.br/leilao/2543",
           "state_hint": "SP",
           "status": "unverified_candidate",
           "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
