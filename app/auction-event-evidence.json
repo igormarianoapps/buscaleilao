@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-11T21:12:46+00:00",
+  "checked_at": "2026-11-12T10:54:20+00:00",
   "sources_attempted": 16,
   "events_published": 0,
   "pages_checked": 40,
@@ -531,10 +531,8 @@
         {
           "platform_id": "vardana",
           "candidate_url": "https://www.vardanaleiloes.com.br/vardana/veiculos.php?lei=1085",
-          "date_mentions": [
-            "2026-11-12"
-          ],
-          "vehicle_text_found": true,
+          "date_mentions": [],
+          "vehicle_text_found": false,
           "nonvehicle_text_found": false,
           "lot_mentions": 109,
           "status": "unconfirmed_event",

@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-11-11T21:12:46+00:00",
-  "verified": 161,
-  "unique_events": 51,
+  "checked_at": "2026-11-12T10:55:33+00:00",
+  "verified": 154,
+  "unique_events": 49,
   "states_with_events": [
     "AM",
     "BA",
@@ -41,17 +41,16 @@
     "Detran MG": 12,
     "Freitas Leiloeiro": 4,
     "Leilo": 3,
-    "Prefeitura de Cuiabá — Semob": 1,
-    "VIP Leilões": 18,
+    "VIP Leilões": 17,
     "Vardana Leilões": 1
   },
-  "platform_events": 148,
-  "direct_event_links": 161,
+  "platform_events": 142,
+  "direct_event_links": 154,
   "calendar_links": 0,
-  "curated_source_links": 1,
-  "curated_success": 7,
+  "curated_source_links": 0,
+  "curated_success": 4,
   "curated_failure": 2,
-  "quarantined_links": 6,
+  "quarantined_links": 4,
   "official_state_events": 12,
   "regional_private_events": 1,
   "regional_adapter_failures": 2,
@@ -83,19 +82,11 @@
       "error": "quarantined: missing direct auction destination"
     },
     {
-      "id": "curitiba-smdt-17-2026",
-      "error": "quarantined: missing direct auction destination"
-    },
-    {
       "id": "detran-ba-23-2026",
       "error": "quarantined: missing direct auction destination"
     },
     {
       "id": "serranopolis-iguacu-pr-01-2026",
-      "error": "quarantined: missing direct auction destination"
-    },
-    {
-      "id": "curitiba-smdt-16-2026",
       "error": "quarantined: missing direct auction destination"
     },
     {

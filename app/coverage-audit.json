@@ -1,7 +1,7 @@
 {
-  "snapshot_checked_at": "2026-11-11T21:12:46+00:00",
-  "unique_events": 51,
-  "event_rows": 161,
+  "snapshot_checked_at": "2026-11-12T10:55:33+00:00",
+  "unique_events": 49,
+  "event_rows": 154,
   "states_with_events": [
     "AM",
     "BA",
@@ -35,22 +35,22 @@
   ],
   "events_by_state": {
     "AM": 7,
-    "BA": 10,
+    "BA": 9,
     "CE": 8,
     "DF": 6,
     "GO": 11,
-    "MA": 10,
+    "MA": 9,
     "MG": 18,
     "MS": 1,
-    "MT": 9,
+    "MT": 8,
     "PA": 10,
     "PB": 1,
-    "PE": 13,
-    "PI": 5,
+    "PE": 11,
+    "PI": 4,
     "PR": 8,
     "RJ": 5,
     "RO": 6,
-    "RS": 8,
+    "RS": 7,
     "SC": 8,
     "SP": 16,
     "TO": 1
@@ -61,8 +61,7 @@
     "Detran MG": 12,
     "Freitas Leiloeiro": 4,
     "Leilo": 3,
-    "Prefeitura de Cuiabá — Semob": 1,
-    "VIP Leilões": 18,
+    "VIP Leilões": 17,
     "Vardana Leilões": 1
   },
   "rows_by_destination_host": {
@@ -70,10 +69,9 @@
     "leilo.com.br": 3,
     "www.bolsadeleiloes.com.br": 1,
     "www.copart.com.br": 11,
-    "www.focoleiloes.com.br": 1,
     "www.freitasleiloeiro.com.br": 4,
     "www.vardanaleiloes.com.br": 1,
-    "www.vipleiloes.com.br": 18
+    "www.vipleiloes.com.br": 17
   },
   "source_registry_total": 10,
   "registry_states": [
@@ -88,5 +86,5 @@
   "unverified_portal_leads": 15,
   "review_queue_items": 72,
   "coverage_definition": "States with >=1 distinct event, not percentage of national auctions; registry entries are research sources, not active collectors or verified events",
-  "generated_at": "2026-11-11T21:13:54+00:00"
+  "generated_at": "2026-11-12T10:56:48+00:00"
 }

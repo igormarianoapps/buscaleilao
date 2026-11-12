@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-11-11T21:11:56+00:00",
+  "checked_at": "2026-11-12T10:53:31+00:00",
   "total": 16,
   "reachable": 15,
-  "candidate_links": 99,
+  "candidate_links": 100,
   "published": 0,
   "platforms": {
     "leilo": {
@@ -140,7 +140,7 @@
         {
           "candidate_kind": "individual_lot",
           "platform_id": "leilo",
-          "title": "LOTE 21 GO chevron_left chevron_right play_arrow LEILOSHOP IVECO/TECTOR 11-190 favorite calendar_today  21/22  109.040 km location_on Aparecida de Goiânia/GO R$ 198.000,00 person L",
+          "title": "LOTE 21 GO chevron_left chevron_right play_arrow LEILOSHOP IVECO/TECTOR 11-190 favorite calendar_today  21/22  109.040 km location_on Aparecida de Goiânia/GO R$ 200.000,00 person L",
           "source_url": "https://leilo.com.br/lote/75264422-28de-485b-8eba-7a7ca5153a97/",
           "state_hint": "GO",
           "status": "unverified_candidate",
@@ -904,7 +904,7 @@
       "availability": "reachable",
       "http_status": "reachable",
       "browser_status": "reachable",
-      "discovered_links": 13,
+      "discovered_links": 14,
       "candidate_events": [
         {
           "candidate_kind": "possible_event",
@@ -936,7 +936,7 @@
         {
           "candidate_kind": "possible_event",
           "platform_id": "palacio",
-          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Veículos no estado que se encontram da movida - leilão virtual \n                 Leilão 8909  165 veiculo  Aberto ",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Veículos no estado que se encontram da movida - leilão virtual \n                 Leilão 8909  165 veiculo  Em anda",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8909",
           "state_hint": "MG",
           "status": "unverified_candidate",
@@ -945,7 +945,7 @@
         {
           "candidate_kind": "possible_event",
           "platform_id": "palacio",
-          "title": "13 LEILÃO \n                  Sexta-Feira \n                 13/11 Veículos sinistrados e sucatas \n                 Leilão 8905  4 veiculo  Aberto para lance",
+          "title": "13 LEILÃO \n                  Sexta-Feira \n                 13/11 Veículos sinistrados e sucatas \n                 Leilão 8905  154 veiculo  Aberto para lance",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8905",
           "state_hint": "MG",
           "status": "unverified_candidate",
@@ -954,7 +954,7 @@
         {
           "candidate_kind": "possible_event",
           "platform_id": "palacio",
-          "title": "13 LEILÃO \n                  Sexta-Feira \n                 13/11 Veículos em bom estado recuperados de financiamento \n                 Leilão 8906  51 veiculo  Aberto para lance",
+          "title": "13 LEILÃO \n                  Sexta-Feira \n                 13/11 Veículos em bom estado recuperados de financiamento \n                 Leilão 8906  91 veiculo  Aberto para lance",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8906",
           "state_hint": "MG",
           "status": "unverified_candidate",
@@ -1019,6 +1019,15 @@
           "platform_id": "palacio",
           "title": "09 LEILÃO \n                  Quarta-Feira \n                 09/12 Helicópteros da vale s.a e veículos em bom estado recuperados de financiamento \n                 Leilão 8907  1 ve",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8907",
+          "state_hint": "MG",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        },
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "palacio",
+          "title": "Edital do leilão 8909 data 12/11/2026",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/documents/leiloes/8909.pdf",
           "state_hint": "MG",
           "status": "unverified_candidate",
           "review_status": "needs_event_date_lot_url_and_auctioneer_verification"

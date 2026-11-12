@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-11T21:11:05+00:00",
-  "candidates_count": 1,
+  "generated_at": "2026-11-12T10:52:41+00:00",
+  "candidates_count": 11,
   "events_automatically_published": 0,
   "items": [
     {
@@ -12,6 +12,156 @@
       "state_hint": "MG",
       "status": "pending_manual_or_adapter_validation",
       "review_reasons": [
+        "requires_live_lot_page_and_auctioneer_identity_verification"
+      ],
+      "next_step": "Check first-party event status, exact date, vehicle lots, actual state and authorized auctioneer; never auto-publish this research lead"
+    },
+    {
+      "platform_id": "flex",
+      "title": "Leilão de Veículos\n \n04 Veículos \n                         \n                             \n                         \n                         DATA: 24/11/2026 - 10h00 \n             ",
+      "source_url": "https://www.flexleiloes.com.br/lotes/2991",
+      "category_hint": "vehicle",
+      "date_hint": "2026-11-24",
+      "state_hint": null,
+      "status": "pending_manual_or_adapter_validation",
+      "review_reasons": [
+        "event_location_unverified",
+        "requires_live_lot_page_and_auctioneer_identity_verification"
+      ],
+      "next_step": "Check first-party event status, exact date, vehicle lots, actual state and authorized auctioneer; never auto-publish this research lead"
+    },
+    {
+      "platform_id": "palacio",
+      "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Motocicletas recuperadas de financiamento do banco pan \n                 Leilão 8902  109 veiculo  Aberto para lan",
+      "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8902",
+      "category_hint": "vehicle",
+      "date_hint": null,
+      "state_hint": null,
+      "status": "pending_manual_or_adapter_validation",
+      "review_reasons": [
+        "event_date_unverified_or_expired",
+        "event_location_unverified",
+        "requires_live_lot_page_and_auctioneer_identity_verification"
+      ],
+      "next_step": "Check first-party event status, exact date, vehicle lots, actual state and authorized auctioneer; never auto-publish this research lead"
+    },
+    {
+      "platform_id": "palacio",
+      "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Veículos sinistrados e sucatas \n                 Leilão 8903  251 veiculo  Aberto para lance",
+      "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8903",
+      "category_hint": "vehicle",
+      "date_hint": null,
+      "state_hint": null,
+      "status": "pending_manual_or_adapter_validation",
+      "review_reasons": [
+        "event_date_unverified_or_expired",
+        "event_location_unverified",
+        "requires_live_lot_page_and_auctioneer_identity_verification"
+      ],
+      "next_step": "Check first-party event status, exact date, vehicle lots, actual state and authorized auctioneer; never auto-publish this research lead"
+    },
+    {
+      "platform_id": "palacio",
+      "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Veículos no estado que se encontram da movida - leilão virtual \n                 Leilão 8909  165 veiculo  Aberto ",
+      "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8909",
+      "category_hint": "vehicle",
+      "date_hint": null,
+      "state_hint": null,
+      "status": "pending_manual_or_adapter_validation",
+      "review_reasons": [
+        "event_date_unverified_or_expired",
+        "event_location_unverified",
+        "requires_live_lot_page_and_auctioneer_identity_verification"
+      ],
+      "next_step": "Check first-party event status, exact date, vehicle lots, actual state and authorized auctioneer; never auto-publish this research lead"
+    },
+    {
+      "platform_id": "palacio",
+      "title": "13 LEILÃO \n                  Sexta-Feira \n                 13/11 Veículos sinistrados e sucatas \n                 Leilão 8905  4 veiculo  Aberto para lance",
+      "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8905",
+      "category_hint": "vehicle",
+      "date_hint": null,
+      "state_hint": null,
+      "status": "pending_manual_or_adapter_validation",
+      "review_reasons": [
+        "event_date_unverified_or_expired",
+        "event_location_unverified",
+        "requires_live_lot_page_and_auctioneer_identity_verification"
+      ],
+      "next_step": "Check first-party event status, exact date, vehicle lots, actual state and authorized auctioneer; never auto-publish this research lead"
+    },
+    {
+      "platform_id": "palacio",
+      "title": "13 LEILÃO \n                  Sexta-Feira \n                 13/11 Veículos em bom estado recuperados de financiamento \n                 Leilão 8906  51 veiculo  Aberto para lance",
+      "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8906",
+      "category_hint": "vehicle",
+      "date_hint": null,
+      "state_hint": null,
+      "status": "pending_manual_or_adapter_validation",
+      "review_reasons": [
+        "event_date_unverified_or_expired",
+        "event_location_unverified",
+        "requires_live_lot_page_and_auctioneer_identity_verification"
+      ],
+      "next_step": "Check first-party event status, exact date, vehicle lots, actual state and authorized auctioneer; never auto-publish this research lead"
+    },
+    {
+      "platform_id": "palacio",
+      "title": "14 LEILÃO \n                  Sábado \n                 14/11 Leilão de venda exclusiva de veículos premium \n                 Leilão 8874  138 veiculo  Aberto para lance",
+      "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8874",
+      "category_hint": "vehicle",
+      "date_hint": null,
+      "state_hint": null,
+      "status": "pending_manual_or_adapter_validation",
+      "review_reasons": [
+        "event_date_unverified_or_expired",
+        "event_location_unverified",
+        "requires_live_lot_page_and_auctioneer_identity_verification"
+      ],
+      "next_step": "Check first-party event status, exact date, vehicle lots, actual state and authorized auctioneer; never auto-publish this research lead"
+    },
+    {
+      "platform_id": "palacio",
+      "title": "18 LEILÃO \n                  Quarta-Feira \n                 18/11 Veículos em bom estado e caminhões e equipamentos da csn \n                 Leilão 8893  37 veiculo  Aberto para la",
+      "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8893",
+      "category_hint": "vehicle",
+      "date_hint": null,
+      "state_hint": null,
+      "status": "pending_manual_or_adapter_validation",
+      "review_reasons": [
+        "event_date_unverified_or_expired",
+        "event_location_unverified",
+        "requires_live_lot_page_and_auctioneer_identity_verification"
+      ],
+      "next_step": "Check first-party event status, exact date, vehicle lots, actual state and authorized auctioneer; never auto-publish this research lead"
+    },
+    {
+      "platform_id": "palacio",
+      "title": "25 LEILÃO \n                  Quarta-Feira \n                 25/11 Veículos em bom estado e caminhões, máquinas e equipamentos da vale s.a \n                 Leilão 8898  12 veiculo ",
+      "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8898",
+      "category_hint": "vehicle",
+      "date_hint": null,
+      "state_hint": null,
+      "status": "pending_manual_or_adapter_validation",
+      "review_reasons": [
+        "event_date_unverified_or_expired",
+        "event_location_unverified",
+        "requires_live_lot_page_and_auctioneer_identity_verification"
+      ],
+      "next_step": "Check first-party event status, exact date, vehicle lots, actual state and authorized auctioneer; never auto-publish this research lead"
+    },
+    {
+      "platform_id": "sodre",
+      "title": "Leilão de Veículos",
+      "source_url": "https://www.sodresantoro.com.br/veiculos/lotes",
+      "category_hint": "vehicle",
+      "date_hint": null,
+      "state_hint": null,
+      "status": "pending_manual_or_adapter_validation",
+      "review_reasons": [
+        "event_date_unverified_or_expired",
+        "not_direct_event",
+        "event_location_unverified",
         "requires_live_lot_page_and_auctioneer_identity_verification"
       ],
       "next_step": "Check first-party event status, exact date, vehicle lots, actual state and authorized auctioneer; never auto-publish this research lead"

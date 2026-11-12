@@ -1,16 +1,10 @@
 {
-  "checked_at": "2026-11-11T21:12:46+00:00",
+  "checked_at": "2026-11-12T10:55:33+00:00",
   "quarantined": [
     {
       "id": "vieiras-001-2026",
       "organizer": "Prefeitura de Vieiras",
       "source_url": "https://vieiras.mg.gov.br/noticias/prefeitura-de-vieiras-realizara-leilao-eletronico-de-bens-moveis-no-dia-13-de-novembro-de-2026",
-      "reason": "missing direct auction destination"
-    },
-    {
-      "id": "curitiba-smdt-17-2026",
-      "organizer": "Prefeitura de Curitiba",
-      "source_url": "https://transito.curitiba.pr.gov.br/patio/leilao-eletronico-de-veiculos/52",
       "reason": "missing direct auction destination"
     },
     {
@@ -26,17 +20,11 @@
       "reason": "missing direct auction destination"
     },
     {
-      "id": "curitiba-smdt-16-2026",
-      "organizer": "Prefeitura de Curitiba",
-      "source_url": "https://transito.curitiba.pr.gov.br/patio/leilao-eletronico-de-veiculos/52",
-      "reason": "missing direct auction destination"
-    },
-    {
       "id": "curitiba-smdt-18-2026",
       "organizer": "Prefeitura de Curitiba",
       "source_url": "https://transito.curitiba.pr.gov.br/patio/leilao-eletronico-de-veiculos/52",
       "reason": "missing direct auction destination"
     }
   ],
-  "total": 6
+  "total": 4
 }

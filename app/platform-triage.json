@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T21:11:05+00:00",
+  "generated_at": "2026-11-12T10:52:41+00:00",
   "platforms_total": 16,
   "events_automatically_published": 0,
   "platforms": {
@@ -472,12 +472,79 @@
       "batch": 1,
       "access_status": "reachable",
       "access_error": null,
-      "candidates_total": 0,
-      "vehicle_candidates": 0,
-      "dated_vehicle_candidates": 0,
+      "candidates_total": 4,
+      "vehicle_candidates": 1,
+      "dated_vehicle_candidates": 1,
       "individual_lot_only": 0,
       "not_vehicle": 0,
-      "candidates": []
+      "candidates": [
+        {
+          "platform_id": "flex",
+          "title": "Leilão de Veículos\n \n04 Veículos \n                         \n                             \n                         \n                         DATA: 24/11/2026 - 10h00 \n             ",
+          "source_url": "https://www.flexleiloes.com.br/lotes/2991",
+          "category_hint": "vehicle",
+          "date_hint": "2026-11-24",
+          "time_hint": "10:00",
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "flex",
+          "title": "03 Autoclaves - 30 litros Modelo LS \n                         \n                             \n                         \n                         1º LEILÃO: 25/11/2026 - 14h00 Lance ",
+          "source_url": "https://www.flexleiloes.com.br/lotes/2981",
+          "category_hint": "unknown",
+          "date_hint": "2026-11-25",
+          "time_hint": "14:00",
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "flex",
+          "title": "Brasília/DF - SIA Galpão | 2.000m² \n                         \n                             \n                         \n                         1º LEILÃO: 10/12/2026 - 10h00 Lance M",
+          "source_url": "https://www.flexleiloes.com.br/lotes/2990",
+          "category_hint": "unknown",
+          "date_hint": "2026-12-10",
+          "time_hint": "10:00",
+          "state_hint_verified_from_event": "DF",
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "flex",
+          "title": "I/AUDI A4 2.0 TFSI  2013/2013 \n                         \n                             \n                         \n                         1º LEILÃO: 01/02/2027 - 16h40 Lance Mínimo",
+          "source_url": "https://www.flexleiloes.com.br/lotes/2994",
+          "category_hint": "unknown",
+          "date_hint": "2027-02-01",
+          "time_hint": "16:40",
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        }
+      ]
     },
     "parque": {
       "name": "Parque dos Leilões",
@@ -711,14 +778,527 @@
     "sodre": {
       "name": "Sodré Santoro",
       "batch": 2,
-      "access_status": "unreachable",
-      "access_error": "HTTP Error 403: Forbidden",
-      "candidates_total": 0,
-      "vehicle_candidates": 0,
+      "access_status": "reachable",
+      "access_error": null,
+      "candidates_total": 27,
+      "vehicle_candidates": 1,
       "dated_vehicle_candidates": 0,
       "individual_lot_only": 0,
-      "not_vehicle": 0,
-      "candidates": []
+      "not_vehicle": 3,
+      "candidates": [
+        {
+          "platform_id": "sodre",
+          "title": "Como comprar Saiba como participar de um leilão",
+          "source_url": "https://www.sodresantoro.com.br/atendimento/como-comprar",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "sodre",
+          "title": "leilão de casas",
+          "source_url": "https://www.sodresantoro.com.br/imoveis/lotes?lot_category=casa",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "sodre",
+          "title": "Leilão de Imóveis",
+          "source_url": "https://www.sodresantoro.com.br/imoveis",
+          "category_hint": "non_vehicle",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "sodre",
+          "title": "Leilão Curitiba",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_location=curitiba+i/pr",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "sodre",
+          "title": "Leilão de Móveis",
+          "source_url": "https://www.sodresantoro.com.br/materiais/lotes?lot_category=moveis+para+escritório__móveis+para+comércio__móveis+p/+casa",
+          "category_hint": "non_vehicle",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "sodre",
+          "title": "Leilão de Máquinas",
+          "source_url": "https://www.sodresantoro.com.br/materiais/lotes?lot_category=maquinas+operatrizes",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "sodre",
+          "title": "Leilão de Veículos",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes",
+          "category_hint": "vehicle",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "event_date_unverified_or_expired",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "sodre",
+          "title": "Leilão de Materiais",
+          "source_url": "https://www.sodresantoro.com.br/materiais/lotes",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "sodre",
+          "title": "Leilão de Informática",
+          "source_url": "https://www.sodresantoro.com.br/materiais/lotes?lot_category=informatica",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "sodre",
+          "title": "Leilão de Motores",
+          "source_url": "https://www.sodresantoro.com.br/materiais/lotes?lot_category=motores",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "sodre",
+          "title": "Leilão de Sucatas",
+          "source_url": "https://www.sodresantoro.com.br/materiais/lotes?lot_category=sucata",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "sodre",
+          "title": "Leilão de Eletrodomésticos",
+          "source_url": "https://www.sodresantoro.com.br/materiais/lotes?lot_category=eletrodomesticos",
+          "category_hint": "non_vehicle",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "sodre",
+          "title": "Leilão de Celulares",
+          "source_url": "https://www.sodresantoro.com.br/materiais/lotes?lot_subcategory=celulares+e+smartphones",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "sodre",
+          "title": "Leilão Judicial",
+          "source_url": "https://www.sodresantoro.com.br/judiciais/lotes",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "sodre",
+          "title": "Leilão Volkswagen",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=volkswagen",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "sodre",
+          "title": "Leilão Fiat",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=fiat",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "sodre",
+          "title": "Leilão BMW",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=bmw",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "sodre",
+          "title": "Leilão Ford",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=ford",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "sodre",
+          "title": "Leilão Chevrolet",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=chevrolet",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "sodre",
+          "title": "Leilão Honda",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=honda",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "sodre",
+          "title": "Leilão Citroën",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=citroen",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "sodre",
+          "title": "Leilão Mercedes",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=mercedes",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "sodre",
+          "title": "Leilão Mitsubishi",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=mitsubishi",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "sodre",
+          "title": "Leilão Volvo",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=volvo",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "sodre",
+          "title": "Leilão Iveco",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=iveco",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "sodre",
+          "title": "Leilão Toyota",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=toyota",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "sodre",
+          "title": "Leilão Hyundai",
+          "source_url": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=hyundai",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        }
+      ]
     },
     "copart": {
       "name": "Copart",
@@ -814,8 +1394,8 @@
     "milan": {
       "name": "Milan Leilões",
       "batch": 2,
-      "access_status": "unreachable",
-      "access_error": "HTTP Error 403: Forbidden",
+      "access_status": "unavailable",
+      "access_error": null,
       "candidates_total": 0,
       "vehicle_candidates": 0,
       "dated_vehicle_candidates": 0,
@@ -826,8 +1406,8 @@
     "vip": {
       "name": "VIP Leilões",
       "batch": 4,
-      "access_status": "unreachable",
-      "access_error": "redirect outside approved platform hosts",
+      "access_status": "reachable",
+      "access_error": null,
       "candidates_total": 0,
       "vehicle_candidates": 0,
       "dated_vehicle_candidates": 0,
@@ -1139,12 +1719,238 @@
       "batch": 3,
       "access_status": "reachable",
       "access_error": null,
-      "candidates_total": 0,
-      "vehicle_candidates": 0,
+      "candidates_total": 13,
+      "vehicle_candidates": 9,
       "dated_vehicle_candidates": 0,
       "individual_lot_only": 0,
-      "not_vehicle": 0,
-      "candidates": []
+      "not_vehicle": 4,
+      "candidates": [
+        {
+          "platform_id": "palacio",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Materiais outlet mix e outros comitentes \n                 Leilão 8882  231 eletrodomestico  Aberto para lance",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8882",
+          "category_hint": "non_vehicle",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "palacio",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Motocicletas recuperadas de financiamento do banco pan \n                 Leilão 8902  109 veiculo  Aberto para lan",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8902",
+          "category_hint": "vehicle",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "palacio",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Veículos sinistrados e sucatas \n                 Leilão 8903  251 veiculo  Aberto para lance",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8903",
+          "category_hint": "vehicle",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "palacio",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Veículos no estado que se encontram da movida - leilão virtual \n                 Leilão 8909  165 veiculo  Aberto ",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8909",
+          "category_hint": "vehicle",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "palacio",
+          "title": "13 LEILÃO \n                  Sexta-Feira \n                 13/11 Veículos sinistrados e sucatas \n                 Leilão 8905  4 veiculo  Aberto para lance",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8905",
+          "category_hint": "vehicle",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "palacio",
+          "title": "13 LEILÃO \n                  Sexta-Feira \n                 13/11 Veículos em bom estado recuperados de financiamento \n                 Leilão 8906  51 veiculo  Aberto para lance",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8906",
+          "category_hint": "vehicle",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "palacio",
+          "title": "14 LEILÃO \n                  Sábado \n                 14/11 Leilão de venda exclusiva de veículos premium \n                 Leilão 8874  138 veiculo  Aberto para lance",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8874",
+          "category_hint": "vehicle",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "palacio",
+          "title": "16 LEILÃO \n                  Segunda-Feira \n                 16/11 Leilão virtual - materiais diversos e outros comitentes \n                 Leilão 8899  69 eletrodomestico  Aberto",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8899",
+          "category_hint": "non_vehicle",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "palacio",
+          "title": "17 LEILÃO \n                  Terça-Feira \n                 17/11 Materiais diversos, outlet mix e outros comitentes \n                 Leilão 8908  54 eletrodomestico  Aberto para l",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8908",
+          "category_hint": "non_vehicle",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "palacio",
+          "title": "18 LEILÃO \n                  Quarta-Feira \n                 18/11 Veículos em bom estado e caminhões e equipamentos da csn \n                 Leilão 8893  37 veiculo  Aberto para la",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8893",
+          "category_hint": "vehicle",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "palacio",
+          "title": "23 LEILÃO \n                  Segunda-Feira \n                 23/11 Peças de veículos em catalão/ go \n                 Leilão 8856  529 eletrodomestico  Aberto para lance",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8856",
+          "category_hint": "non_vehicle",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "palacio",
+          "title": "25 LEILÃO \n                  Quarta-Feira \n                 25/11 Veículos em bom estado e caminhões, máquinas e equipamentos da vale s.a \n                 Leilão 8898  12 veiculo ",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8898",
+          "category_hint": "vehicle",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        },
+        {
+          "platform_id": "palacio",
+          "title": "09 LEILÃO \n                  Quarta-Feira \n                 09/12 Helicópteros da vale s.a e veículos em bom estado recuperados de financiamento \n                 Leilão 8907  1 ve",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8907",
+          "category_hint": "vehicle",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        }
+      ]
     },
     "rogerio": {
       "name": "Rogério Menezes",

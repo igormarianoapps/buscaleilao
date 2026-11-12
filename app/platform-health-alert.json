@@ -1,0 +1,94 @@
+{
+  "checked_at": "2026-11-12T10:56:48+00:00",
+  "total_sources": 16,
+  "sources_reachable": 15,
+  "sources_with_events": 6,
+  "unique_feed_events": 49,
+  "feed_fresh": true,
+  "warning_count": 1,
+  "warnings": [
+    "milan: no authorized public connection"
+  ],
+  "sources": {
+    "leilo": {
+      "reachable": true,
+      "verified_events": 3,
+      "candidates": 25
+    },
+    "mcleilao": {
+      "reachable": true,
+      "verified_events": 0,
+      "candidates": 0
+    },
+    "flex": {
+      "reachable": true,
+      "verified_events": 0,
+      "candidates": 4
+    },
+    "parque": {
+      "reachable": true,
+      "verified_events": 0,
+      "candidates": 12
+    },
+    "sodre": {
+      "reachable": true,
+      "verified_events": 0,
+      "candidates": 27
+    },
+    "copart": {
+      "reachable": true,
+      "verified_events": 11,
+      "candidates": 0
+    },
+    "loop": {
+      "reachable": true,
+      "verified_events": 0,
+      "candidates": 0
+    },
+    "freitas": {
+      "reachable": true,
+      "verified_events": 4,
+      "candidates": 3
+    },
+    "milan": {
+      "reachable": false,
+      "verified_events": 0,
+      "candidates": 0
+    },
+    "vip": {
+      "reachable": true,
+      "verified_events": 17,
+      "candidates": 0
+    },
+    "hisa": {
+      "reachable": true,
+      "verified_events": 0,
+      "candidates": 5
+    },
+    "bolsa": {
+      "reachable": true,
+      "verified_events": 1,
+      "candidates": 7
+    },
+    "vardana": {
+      "reachable": true,
+      "verified_events": 1,
+      "candidates": 2
+    },
+    "claudio": {
+      "reachable": true,
+      "verified_events": 0,
+      "candidates": 1
+    },
+    "palacio": {
+      "reachable": true,
+      "verified_events": 0,
+      "candidates": 14
+    },
+    "rogerio": {
+      "reachable": true,
+      "verified_events": 0,
+      "candidates": 0
+    }
+  }
+}
