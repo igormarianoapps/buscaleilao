@@ -51,15 +51,39 @@ def validate(text, source):
         raise ValueError("possible cancellation (requires review)")
     return True
 
-def fetch_text(url):
-    request = urllib.request.Request(url, headers={"User-Agent":UA,"Accept":"text/html"})
+def _single_fetch_text(url):
+    request = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "text/html"})
     with urllib.request.urlopen(request, timeout=12) as response:
-        if "html" not in response.headers.get("Content-Type","").lower():
+        if "html" not in response.headers.get("Content-Type", "").lower():
             raise ValueError("Not a public HTML page")
         raw = response.read(2_000_000)
     reader = VisibleText()
     reader.feed(raw.decode("utf-8", errors="replace"))
     return " ".join(reader.parts)
+
+
+def _temporary_failure(exc):
+    """Retry only transport failures and transient server errors, never access restrictions."""
+    if isinstance(exc, urllib.error.HTTPError):
+        return exc.code in (500, 502, 503, 504)
+    if isinstance(exc, (TimeoutError, ConnectionError)):
+        return True
+    if isinstance(exc, urllib.error.URLError):
+        return True
+    return False
+
+
+def fetch_text(url, attempts=2, pause=time.sleep):
+    """Bounded retry with backoff; 401/403/429 and invalid pages fail closed."""
+    if not isinstance(attempts, int) or not 1 <= attempts <= 3:
+        raise ValueError("attempts must be between 1 and 3")
+    for index in range(attempts):
+        try:
+            return _single_fetch_text(url)
+        except (OSError, ValueError) as exc:
+            if index + 1 >= attempts or not _temporary_failure(exc):
+                raise
+            pause(min(2 ** index, 2))
 
 async def browser_fetch(urls):
     """One browser context, independent pages; normal HTTPS verification."""
