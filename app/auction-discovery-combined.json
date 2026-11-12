@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-12T13:06:10+00:00",
+  "checked_at": "2026-11-12T13:13:09+00:00",
   "total": 17,
   "reachable": 15,
   "candidate_links": 102,
@@ -77,7 +77,7 @@
         {
           "candidate_kind": "individual_lot",
           "platform_id": "leilo",
-          "title": "LOTE 11 GO chevron_left chevron_right play_arrow LEILOSHOP VOLKSWAGEN/MASCA ROMA favorite calendar_today  18/19  541.944 km location_on Aparecida de Goiânia/GO R$ 275.000,00 person",
+          "title": "LOTE 11 GO chevron_left chevron_right play_arrow LEILOSHOP VOLKSWAGEN/MASCA ROMA favorite calendar_today  18/19  541.944 km location_on Aparecida de Goiânia/GO R$ 278.000,00 person",
           "source_url": "https://leilo.com.br/lote/df2a5d7a-3558-4256-93bf-a7c3216a2344/",
           "state_hint": "GO",
           "status": "unverified_candidate",
@@ -919,7 +919,7 @@
         {
           "candidate_kind": "possible_event",
           "platform_id": "palacio",
-          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Materiais outlet mix e outros comitentes \n                 Leilão 8882  228 eletrodomestico  Em andamento",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Materiais outlet mix e outros comitentes \n                 Leilão 8882  221 eletrodomestico  Em andamento",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8882",
           "state_hint": "MG",
           "status": "unverified_candidate",
@@ -928,7 +928,7 @@
         {
           "candidate_kind": "possible_event",
           "platform_id": "palacio",
-          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Motocicletas recuperadas de financiamento do banco pan \n                 Leilão 8902  108 veiculo  Em andamento",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Motocicletas recuperadas de financiamento do banco pan \n                 Leilão 8902  107 veiculo  Em andamento",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8902",
           "state_hint": "MG",
           "status": "unverified_candidate",
@@ -991,7 +991,7 @@
         {
           "candidate_kind": "possible_event",
           "platform_id": "palacio",
-          "title": "17 LEILÃO \n                  Terça-Feira \n                 17/11 Materiais diversos, outlet mix e outros comitentes \n                 Leilão 8908  64 eletrodomestico  Aberto para l",
+          "title": "17 LEILÃO \n                  Terça-Feira \n                 17/11 Materiais diversos, outlet mix e outros comitentes \n                 Leilão 8908  65 eletrodomestico  Aberto para l",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8908",
           "state_hint": "MG",
           "status": "unverified_candidate",

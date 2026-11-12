@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-11-12T13:08:25+00:00",
-  "verified": 155,
+  "checked_at": "2026-11-12T13:15:54+00:00",
+  "verified": 161,
   "unique_events": 49,
   "states_with_events": [
     "AM",
@@ -44,13 +44,13 @@
     "VIP Leilões": 17,
     "Vardana Leilões": 1
   },
-  "platform_events": 143,
-  "direct_event_links": 155,
+  "platform_events": 149,
+  "direct_event_links": 161,
   "calendar_links": 0,
   "curated_source_links": 0,
-  "curated_success": 4,
-  "curated_failure": 2,
-  "quarantined_links": 4,
+  "curated_success": 3,
+  "curated_failure": 3,
+  "quarantined_links": 3,
   "official_state_events": 12,
   "regional_private_events": 1,
   "regional_adapter_failures": 2,
@@ -62,7 +62,7 @@
   "loop_events": 0,
   "leilo_errors": 0,
   "secondary_errors": 0,
-  "new_discoveries": 1,
+  "new_discoveries": 0,
   "failed": [
     {
       "id": "aracaju-3-leilao-2026-11-12",
@@ -71,6 +71,10 @@
     {
       "id": "superbid-gru-06-2026-11-29",
       "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "curitiba-smdt-18-2026",
+      "error": "Page.goto: Timeout 25000ms exceeded."
     },
     {
       "id": "vardana:https://www.vardanaleiloes.com.br/vardana/veiculos.php?lei=1086",
@@ -94,10 +98,6 @@
     },
     {
       "id": "serranopolis-iguacu-pr-01-2026",
-      "error": "quarantined: missing direct auction destination"
-    },
-    {
-      "id": "curitiba-smdt-18-2026",
       "error": "quarantined: missing direct auction destination"
     }
   ]

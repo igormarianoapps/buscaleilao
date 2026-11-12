@@ -1,10 +1,8 @@
 {
-  "first_unique": 48,
+  "first_unique": 49,
   "second_unique": 49,
-  "added": [
-    "('Copart', 'copart-10615-2026-11-19')"
-  ],
+  "added": [],
   "removed": [],
   "duplicate_ids": 0,
-  "stable": false
+  "stable": true
 }
