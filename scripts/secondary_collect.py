@@ -178,35 +178,50 @@ def fallback_candidates(site,combined):
         if len(unique)>=20:break
     return unique
 
-def collect_secondary(today=None,loader=get_page):
-    today=today or auction_today()
-    found,errors=[],[]
-    for site,(name,home,hosts,pattern) in SITES.items():
+def collect_secondary(today=None, loader=get_page, discovery_path=None):
+    """Merge current first-party links with previously discovered direct URLs.
+
+    A blocked homepage must not prevent independently rechecking event URLs.
+    Discovery data never bypasses parse_event's date, location or lot checks.
+    """
+    today = today or auction_today()
+    found, errors = [], []
+    path = Path(discovery_path) if discovery_path else (
+        Path(__file__).resolve().parents[1] / "app/auction-discovery-combined.json"
+    )
+    combined = {}
+    if loader is get_page or discovery_path is not None:
         try:
-            doc=VisibleLinks();doc.feed(loader(site,home))
-            unique={}
-            for raw,label,idx in doc.links:
-                url=urllib.parse.urljoin(home,raw or "")
-                if trusted_url(site,url):
-                    # Parque's "Detalhes" links have context on the details page.
-                    unique.setdefault(url,label)
-                if len(unique)>=20:break
-            if not unique and loader is get_page:
-                path=Path(__file__).resolve().parents[1]/"app/auction-discovery-combined.json"
-                try:
-                    diagnostic=json.loads(path.read_text(encoding="utf-8"))
-                    unique=fallback_candidates(site,diagnostic)
-                except (OSError,ValueError):
-                    unique={}
-            if not unique:
-                errors.append({"id":site,"error":"no first-party auction detail URLs"})
-            for url,label in unique.items():
-                try:
-                    item=parse_event(site,label,loader(site,url),url,today)
-                    if item:found.append(item)
-                except Exception as e:
-                    errors.append({"id":site+":"+url,"error":str(e)[:160]})
-        except Exception as e:
-            errors.append({"id":site,"error":str(e)[:160]})
-    dedup={r["id"]:r for r in found}
-    return list(dedup.values()),errors
+            combined = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, ValueError) as exc:
+            errors.append({"id": "secondary:discovery", "error": str(exc)[:160]})
+    for site, (name, home, hosts, pattern) in SITES.items():
+        unique = {}
+        try:
+            doc = VisibleLinks()
+            doc.feed(loader(site, home))
+            for raw, label, idx in doc.links:
+                url = urllib.parse.urljoin(home, raw or "")
+                if trusted_url(site, url):
+                    unique.setdefault(url, label)
+                if len(unique) >= 20:
+                    break
+        except Exception as exc:
+            errors.append({"id": site + ":index", "error": str(exc)[:160]})
+        # Use cached discovery solely as a URL index, including when the home
+        # page is blocked or partially rendered. Every detail is fetched live.
+        for url, label in fallback_candidates(site, combined).items():
+            if len(unique) >= 25:
+                break
+            unique.setdefault(url, label)
+        if not unique:
+            errors.append({"id": site, "error": "no first-party auction detail URLs"})
+        for url, label in unique.items():
+            try:
+                item = parse_event(site, label, loader(site, url), url, today)
+                if item:
+                    found.append(item)
+            except Exception as exc:
+                errors.append({"id": site + ":" + url, "error": str(exc)[:160]})
+    dedup = {row["id"]: row for row in found}
+    return list(dedup.values()), errors
