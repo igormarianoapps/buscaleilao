@@ -1,5 +1,5 @@
 name: Auction platform integration pilot
-# Manual audit trigger: refresh all 17 sources after collector and save-race fixes.
+# Manual audit trigger: four selected sources Flex Parque Palacio Hisa proof audit.
 on:
   push:
     branches: [develop]
