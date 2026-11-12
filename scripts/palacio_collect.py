@@ -53,7 +53,7 @@ def extract_event(html,url,today=None):
     if len(states)!=1:return None
     state=next(iter(states))
     city=next(city.strip().title() for city,uf in places if uf.upper()==state)
-    lots=set(re.findall(r"\b(?:Lote|Sequ[eê]ncia)\s*:\s*(\d{1,6})\b",body,re.I))
+    lots=set(re.findall(r"\bLote\s*:\s*(\d{1,6})\b",body,re.I))
     if len(lots)<2:return None
     key=f"palacio-{aid}-{when.isoformat()}"
     return {"id":key,"event_id":key,
