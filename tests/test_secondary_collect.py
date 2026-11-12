@@ -36,6 +36,28 @@ class SecondaryTests(unittest.TestCase):
     data,errors=collect_secondary(date(2026,11,11),loader)
     self.assertEqual(data,[])
     self.assertTrue(any(x["id"]=="hisa" for x in errors))
+
+class RejectionReasonsTests(unittest.TestCase):
+ def test_future_flex_without_verified_lot_location(self):
+    from secondary_collect import rejection_reason
+    label="Leilão de Veículos 04 Veículos DATA: 24/11/2026 - 10h00"
+    detail="<p>042 RENAULT SANDERO 091 FIAT UNO 095 FORD RANGER</p>"
+    reason=rejection_reason("flex",label,detail,"https://www.flexleiloes.com.br/lotes/2991",date(2026,11,12))
+    self.assertEqual(reason,"event_or_lot_location_unverified")
+ def test_parque_nonvehicle_auction(self):
+    from secondary_collect import rejection_reason
+    reason=rejection_reason("parque","Detalhes",
+      "<h1>LEILÃO DE EQUIPAMENTOS</h1>Data 13 de nov de 2026 às 10:00 Categoria BENS E EQUIPAMENTOS",
+      "https://www.parquedosleiloes.com.br/leilao/1522/detalhes",date(2026,11,12))
+    self.assertEqual(reason,"not_vehicle_category")
+ def test_hisa_unpublished_lots(self):
+    from secondary_collect import rejection_reason
+    label="CARROS E MOTOS Data: 26/11/2026 às 15:00 SAO CAETANO DO SUL, SP"
+    html="<h2>LOTES EM BREVE</h2> Data 26/11/2026"
+    url="https://hisaleiloes.com.br/leilao/2538"
+    self.assertEqual(rejection_reason("hisa",label,html,url,date(2026,11,12)),"lots_not_published")
+    self.assertIsNone(parse_event("hisa",label,html,url,date(2026,11,12)))
+
 if __name__=="__main__":unittest.main()
 
 class FlexCanonicalRedirectTests(unittest.TestCase):
