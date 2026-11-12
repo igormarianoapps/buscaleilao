@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-12T12:28:34+00:00",
+  "checked_at": "2026-11-12T12:35:37+00:00",
   "total": 17,
   "reachable": 13,
   "candidate_links": 90,
@@ -909,7 +909,7 @@
         {
           "candidate_kind": "possible_event",
           "platform_id": "palacio",
-          "title": "16 LEILÃO \n                  Segunda-Feira \n                 16/11 Leilão virtual - materiais diversos e outros comitentes \n                 Leilão 8899  79 eletrodomestico  Aberto",
+          "title": "16 LEILÃO \n                  Segunda-Feira \n                 16/11 Leilão virtual - materiais diversos e outros comitentes \n                 Leilão 8899  82 eletrodomestico  Aberto",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8899",
           "state_hint": "MG",
           "status": "unverified_candidate",
