@@ -18,6 +18,17 @@ class SecondaryTests(unittest.TestCase):
     self.assertIsNone(parse_event("parque","Detalhes",html,url,date(2026,11,11)))
     html="<h1>BANCOS E FINANCEIRAS VEICULOS</h1>Data 10 de nov de 2026 às 13:00 Categoria VEICULOS 1lote FORD BRASÍLIA/DF"
     self.assertIsNone(parse_event("parque","Detalhes",html,url,date(2026,11,11)))
+ def test_parque_court_title_without_vehicles_word(self):
+    url="https://www.parquedosleiloes.com.br/leilao/1524/detalhes"
+    detail=("<h1>2ª VARA DE BRASÍLIA - 2ª PRAÇA</h1> "
+            "Data 12 de nov de 2026 às 14:00 Categoria VEICULOS "
+            "Local do Bem: Asa Norte/DF 1lote FIAT PALIO EDX")
+    item=parse_event("parque","Detalhes",detail,url,date(2026,11,12))
+    self.assertIsNotNone(item)
+    self.assertEqual(item["state"],"DF")
+    self.assertIsNone(parse_event("parque","Detalhes",
+        detail.replace("Categoria VEICULOS","Categoria BENS E EQUIPAMENTOS"),
+        url,date(2026,11,12)))
  def test_flex_requires_explicit_location(self):
     url="https://www.flexleiloes.com.br/lotes/2991/"
     label="Leilão de Veículos 04 Veículos DATA: 24/11/2026 - 10h00"
