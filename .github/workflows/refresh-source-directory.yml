@@ -28,6 +28,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add app/fontes.html
           if ! git diff --cached --quiet; then
-            git commit -m "data: display sixteen-site browser discovery coverage"
+            git commit -m "data: display seventeen monitored auction platforms"
             git push origin HEAD:develop
           fi
