@@ -1,5 +1,5 @@
 name: Auction platform integration pilot
-# Manual audit trigger: verify PMKLog and Rogerio adapters against live public event lists.
+# Manual audit trigger: refresh all 17 sources after collector and save-race fixes.
 on:
   push:
     branches: [develop]
@@ -76,5 +76,7 @@ jobs:
           done
           if ! git diff --cached --quiet; then
             git commit -m "data: private platform pilot results"
+            git fetch origin develop
+            git rebase origin/develop
             git push origin HEAD:develop
           fi
