@@ -123,6 +123,17 @@
       "curated_failure": 2,
       "recorded_at": "2026-11-11T17:58:43+00:00",
       "status": "reached_final_recording_step"
+    },
+    {
+      "run_id": "43279179612",
+      "attempt": 1,
+      "checked_at": "2026-11-12T18:23:10+00:00",
+      "unique_events": 34,
+      "states_with_events": 17,
+      "curated_success": 4,
+      "curated_failure": 2,
+      "recorded_at": "2026-11-12T18:25:55+00:00",
+      "status": "reached_final_recording_step"
     }
   ]
 }
