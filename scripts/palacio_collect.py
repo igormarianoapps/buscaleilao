@@ -83,8 +83,12 @@ def collect_palacio(today=None,loader=fetch,discovery_path=None):
     found,errors=[],[]
     for url in urls:
         try:
-            item=extract_event(loader(url),url,today)
-            if item:found.append(item)
+            html=loader(url)
+            item=extract_event(html,url,today)
+            if item:
+                found.append(item)
+            else:
+                errors.append({"id":"palacio:"+url,"error":"not published: event date, individual vehicle lots or lot city/UF not independently confirmed"})
         except Exception as e:errors.append({"id":"palacio:"+url,"error":str(e)[:170]})
     if not urls:errors.append({"id":"palacio","error":"no first-party auction detail URLs discovered"})
     return found,errors
