@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-12T12:35:37+00:00",
+  "checked_at": "2026-11-12T13:06:10+00:00",
   "total": 17,
   "reachable": 15,
   "candidate_links": 102,
@@ -919,7 +919,7 @@
         {
           "candidate_kind": "possible_event",
           "platform_id": "palacio",
-          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Materiais outlet mix e outros comitentes \n                 Leilão 8882  230 eletrodomestico  Em andamento",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Materiais outlet mix e outros comitentes \n                 Leilão 8882  228 eletrodomestico  Em andamento",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8882",
           "state_hint": "MG",
           "status": "unverified_candidate",
@@ -982,7 +982,7 @@
         {
           "candidate_kind": "possible_event",
           "platform_id": "palacio",
-          "title": "16 LEILÃO \n                  Segunda-Feira \n                 16/11 Leilão virtual - materiais diversos e outros comitentes \n                 Leilão 8899  82 eletrodomestico  Aberto",
+          "title": "16 LEILÃO \n                  Segunda-Feira \n                 16/11 Leilão virtual - materiais diversos e outros comitentes \n                 Leilão 8899  89 eletrodomestico  Aberto",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8899",
           "state_hint": "MG",
           "status": "unverified_candidate",
@@ -991,7 +991,7 @@
         {
           "candidate_kind": "possible_event",
           "platform_id": "palacio",
-          "title": "17 LEILÃO \n                  Terça-Feira \n                 17/11 Materiais diversos, outlet mix e outros comitentes \n                 Leilão 8908  59 eletrodomestico  Aberto para l",
+          "title": "17 LEILÃO \n                  Terça-Feira \n                 17/11 Materiais diversos, outlet mix e outros comitentes \n                 Leilão 8908  64 eletrodomestico  Aberto para l",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8908",
           "state_hint": "MG",
           "status": "unverified_candidate",
