@@ -30,4 +30,29 @@ class PMKTests(unittest.TestCase):
           "Leilão recorrente Próxima edição No momento, não há uma nova edição prevista.")
     self.assertEqual(result,[])
     self.assertEqual(errors,[])
+
+class PMKIndexRecoveryTests(unittest.TestCase):
+ def test_secondary_calendar_finds_new_active_edition(self):
+    new="https://pmklog.com.br/leilao/evento/leilao-veiculos/?evento=fa724af3-d396-11f1-a2f8-02420a000015"
+    seen=[]
+    def loader(url):
+        seen.append(url)
+        if url=="https://pmklog.com.br/":raise OSError("homepage offline")
+        if url=="https://pmklog.com.br/leilao/":
+            return f'<a href="{new}">Leilão de veículos</a>'
+        if url=="https://pmklog.com.br/nossos-leiloes":return ""
+        if url==new:
+            return ("Lote 1 GO Fiat Palio 20/11/2026 Lote 2 GO Honda CG 20/11/2026 "
+                    "Próxima edição 20/11/2026 às 09h00 PÁTIO ANÁPOLIS/GO")
+        return "Próxima edição No momento, não há uma nova edição prevista."
+    events,errors=collect_pmklog(date(2026,11,12),loader)
+    self.assertEqual(len(events),1)
+    self.assertEqual(events[0]["source_url"],new)
+    self.assertTrue(any(e["id"].startswith("pmklog:index") for e in errors))
+    self.assertIn("https://pmklog.com.br/nossos-leiloes",seen)
+ def test_only_trusted_edition_links_from_secondary_index(self):
+    from pmklog_collect import discover_urls
+    links=discover_urls('<a href="https://evil.example/leilao/evento/leilao-carro/?evento=fa724af3-d396-11f1-a2f8-02420a000015">Fraud</a>')
+    self.assertEqual(links,[KNOWN])
+
 if __name__=="__main__":unittest.main()
