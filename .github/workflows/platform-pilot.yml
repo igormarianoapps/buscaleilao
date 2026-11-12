@@ -48,6 +48,12 @@ jobs:
         run: python scripts/collect.py
       - name: Verify published feed trust gate
         run: python scripts/validate_feed.py
+      - name: Repeat live collection and compare event identities
+        run: |
+          cp app/events.json /tmp/buscaleilao_first_feed.json
+          python scripts/collect.py
+          python scripts/validate_feed.py
+          python scripts/compare_collections.py /tmp/buscaleilao_first_feed.json app/events.json
       - name: Build static website and coverage audit
         run: |
           python scripts/build_static_page.py
@@ -63,7 +69,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for f in app/auction-platform-diagnostics.json app/auction-browser-diagnostics.json app/auction-discovery-combined.json app/auction-event-evidence.json app/platform-health-alert.json app/platform-triage.json app/platform-review-queue.json app/platform-quality.json app/events.json app/index.html app/fontes.html app/collection-report.json app/coverage-audit.json app/source-health.json app/quarantine-report.json; do
+          for f in app/auction-platform-diagnostics.json app/auction-browser-diagnostics.json app/auction-discovery-combined.json app/auction-event-evidence.json app/platform-health-alert.json app/collection-consistency.json app/platform-triage.json app/platform-review-queue.json app/platform-quality.json app/events.json app/index.html app/fontes.html app/collection-report.json app/coverage-audit.json app/source-health.json app/quarantine-report.json; do
             if [ -f "$f" ]; then git add "$f"; fi
           done
           if ! git diff --cached --quiet; then
