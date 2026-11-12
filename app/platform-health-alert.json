@@ -1,12 +1,13 @@
 {
-  "checked_at": "2026-11-12T10:56:48+00:00",
-  "total_sources": 16,
+  "checked_at": "2026-11-12T12:31:48+00:00",
+  "total_sources": 17,
   "sources_reachable": 15,
   "sources_with_events": 6,
-  "unique_feed_events": 49,
+  "unique_feed_events": 48,
   "feed_fresh": true,
-  "warning_count": 1,
+  "warning_count": 2,
   "warnings": [
+    "loop: no authorized public connection",
     "milan: no authorized public connection"
   ],
   "sources": {
@@ -37,11 +38,11 @@
     },
     "copart": {
       "reachable": true,
-      "verified_events": 11,
+      "verified_events": 10,
       "candidates": 0
     },
     "loop": {
-      "reachable": true,
+      "reachable": false,
       "verified_events": 0,
       "candidates": 0
     },
@@ -58,7 +59,7 @@
     "vip": {
       "reachable": true,
       "verified_events": 17,
-      "candidates": 0
+      "candidates": 1
     },
     "hisa": {
       "reachable": true,
@@ -89,6 +90,11 @@
       "reachable": true,
       "verified_events": 0,
       "candidates": 0
+    },
+    "pmklog": {
+      "reachable": true,
+      "verified_events": 0,
+      "candidates": 1
     }
   }
 }

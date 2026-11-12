@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-11-12T10:55:33+00:00",
-  "verified": 154,
-  "unique_events": 49,
+  "checked_at": "2026-11-12T12:30:41+00:00",
+  "verified": 153,
+  "unique_events": 48,
   "states_with_events": [
     "AM",
     "BA",
@@ -37,15 +37,15 @@
   "coverage_definition": "Presence of at least one event, not fraction of all auctions discovered",
   "organizers": {
     "Bolsa de Leilões": 1,
-    "Copart": 11,
+    "Copart": 10,
     "Detran MG": 12,
     "Freitas Leiloeiro": 4,
     "Leilo": 3,
     "VIP Leilões": 17,
     "Vardana Leilões": 1
   },
-  "platform_events": 142,
-  "direct_event_links": 154,
+  "platform_events": 141,
+  "direct_event_links": 153,
   "calendar_links": 0,
   "curated_source_links": 0,
   "curated_success": 4,
@@ -57,8 +57,11 @@
   "bolsa_events": 1,
   "leilo_events": 3,
   "secondary_events": 0,
+  "pmklog_events": 0,
+  "palacio_events": 0,
+  "loop_events": 0,
   "leilo_errors": 0,
-  "secondary_errors": 0,
+  "secondary_errors": 1,
   "new_discoveries": 0,
   "failed": [
     {
@@ -76,6 +79,14 @@
     {
       "id": "claudio:https://www.claudiokussleiloes.com.br/relacao-foto/902",
       "error": "lot page not confirmed / no published lots"
+    },
+    {
+      "id": "flex",
+      "error": "no first-party auction detail URLs"
+    },
+    {
+      "id": "loop",
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "id": "vieiras-001-2026",

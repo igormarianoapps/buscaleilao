@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-12T10:52:41+00:00",
-  "platforms_total": 16,
+  "generated_at": "2026-11-12T12:29:25+00:00",
+  "platforms_total": 17,
   "events_automatically_published": 0,
   "platforms": {
     "leilo": {
@@ -121,7 +121,7 @@
         },
         {
           "platform_id": "leilo",
-          "title": "LOTE 10 TO  NEW HOLLAND ESCAVADEIRA EVO 245 favorite calendar_today  20/20 location_on Gurupi/TO R$ 280.000,00 Lance Inicial Leilão: 13/11/2026 Sex 13/11 Sex • 09:30 person_raised_",
+          "title": "LOTE 10 TO  NEW HOLLAND ESCAVADEIRA EVO 245 favorite calendar_today  20/20 location_on Gurupi/TO R$ 180.000,00 Lance Inicial Leilão: 13/11/2026 Sex 13/11 Sex • 09:30 person_raised_",
           "source_url": "https://leilo.com.br/lote/8eb6329a-0e0b-4e05-8c32-66340733022c/",
           "category_hint": "unknown",
           "date_hint": "2026-11-13",
@@ -227,7 +227,7 @@
         },
         {
           "platform_id": "leilo",
-          "title": "LOTE 18 DF chevron_left chevron_right play_arrow LEILOSHOP FORD/TRANSIT 460 B favorite calendar_today  23/24  146.419 km location_on Taguatinga/DF R$ 136.000,00 person Lance de M**",
+          "title": "LOTE 18 DF chevron_left chevron_right play_arrow LEILOSHOP FORD/TRANSIT 460 B favorite calendar_today  23/24  146.419 km location_on Taguatinga/DF R$ 137.000,00 person Lance de L**",
           "source_url": "https://leilo.com.br/lote/5ccab54d-431c-4a3d-a63f-8b002483b3bf/",
           "category_hint": "unknown",
           "date_hint": null,
@@ -263,7 +263,7 @@
         },
         {
           "platform_id": "leilo",
-          "title": "LOTE 21 GO chevron_left chevron_right play_arrow LEILOSHOP IVECO/TECTOR 11-190 favorite calendar_today  21/22  109.040 km location_on Aparecida de Goiânia/GO R$ 198.000,00 person L",
+          "title": "LOTE 21 GO chevron_left chevron_right play_arrow LEILOSHOP IVECO/TECTOR 11-190 favorite calendar_today  21/22  109.040 km location_on Aparecida de Goiânia/GO R$ 202.000,00 person L",
           "source_url": "https://leilo.com.br/lote/75264422-28de-485b-8eba-7a7ca5153a97/",
           "category_hint": "unknown",
           "date_hint": null,
@@ -1315,7 +1315,7 @@
     "loop": {
       "name": "Loop Brasil",
       "batch": 2,
-      "access_status": "reachable",
+      "access_status": "unavailable",
       "access_error": null,
       "candidates_total": 0,
       "vehicle_candidates": 0,
@@ -1408,12 +1408,31 @@
       "batch": 4,
       "access_status": "reachable",
       "access_error": null,
-      "candidates_total": 0,
+      "candidates_total": 1,
       "vehicle_candidates": 0,
       "dated_vehicle_candidates": 0,
       "individual_lot_only": 0,
       "not_vehicle": 0,
-      "candidates": []
+      "candidates": [
+        {
+          "platform_id": "vip",
+          "title": "Financeiras, Seguradoras e Locadoras \n\n                             \n\n                                 \n                                                 \n                          ",
+          "source_url": "https://www.vipleiloes.com.br/evento/detalhes/121126bspi",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "candidate_direct",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        }
+      ]
     },
     "hisa": {
       "name": "Hisa Leilões",
@@ -1719,7 +1738,7 @@
       "batch": 3,
       "access_status": "reachable",
       "access_error": null,
-      "candidates_total": 13,
+      "candidates_total": 14,
       "vehicle_candidates": 9,
       "dated_vehicle_candidates": 0,
       "individual_lot_only": 0,
@@ -1727,7 +1746,7 @@
       "candidates": [
         {
           "platform_id": "palacio",
-          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Materiais outlet mix e outros comitentes \n                 Leilão 8882  231 eletrodomestico  Aberto para lance",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Materiais outlet mix e outros comitentes \n                 Leilão 8882  230 eletrodomestico  Em andamento",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8882",
           "category_hint": "non_vehicle",
           "date_hint": null,
@@ -1745,7 +1764,7 @@
         },
         {
           "platform_id": "palacio",
-          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Motocicletas recuperadas de financiamento do banco pan \n                 Leilão 8902  109 veiculo  Aberto para lan",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Motocicletas recuperadas de financiamento do banco pan \n                 Leilão 8902  108 veiculo  Em andamento",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8902",
           "category_hint": "vehicle",
           "date_hint": null,
@@ -1762,7 +1781,7 @@
         },
         {
           "platform_id": "palacio",
-          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Veículos sinistrados e sucatas \n                 Leilão 8903  251 veiculo  Aberto para lance",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Veículos sinistrados e sucatas \n                 Leilão 8903  250 veiculo  Em andamento",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8903",
           "category_hint": "vehicle",
           "date_hint": null,
@@ -1779,7 +1798,7 @@
         },
         {
           "platform_id": "palacio",
-          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Veículos no estado que se encontram da movida - leilão virtual \n                 Leilão 8909  165 veiculo  Aberto ",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Veículos no estado que se encontram da movida - leilão virtual \n                 Leilão 8909  165 veiculo  Em anda",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8909",
           "category_hint": "vehicle",
           "date_hint": null,
@@ -1796,7 +1815,7 @@
         },
         {
           "platform_id": "palacio",
-          "title": "13 LEILÃO \n                  Sexta-Feira \n                 13/11 Veículos sinistrados e sucatas \n                 Leilão 8905  4 veiculo  Aberto para lance",
+          "title": "13 LEILÃO \n                  Sexta-Feira \n                 13/11 Veículos sinistrados e sucatas \n                 Leilão 8905  209 veiculo  Aberto para lance",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8905",
           "category_hint": "vehicle",
           "date_hint": null,
@@ -1813,7 +1832,7 @@
         },
         {
           "platform_id": "palacio",
-          "title": "13 LEILÃO \n                  Sexta-Feira \n                 13/11 Veículos em bom estado recuperados de financiamento \n                 Leilão 8906  51 veiculo  Aberto para lance",
+          "title": "13 LEILÃO \n                  Sexta-Feira \n                 13/11 Veículos em bom estado recuperados de financiamento \n                 Leilão 8906  103 veiculo  Aberto para lance",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8906",
           "category_hint": "vehicle",
           "date_hint": null,
@@ -1830,7 +1849,7 @@
         },
         {
           "platform_id": "palacio",
-          "title": "14 LEILÃO \n                  Sábado \n                 14/11 Leilão de venda exclusiva de veículos premium \n                 Leilão 8874  138 veiculo  Aberto para lance",
+          "title": "14 LEILÃO \n                  Sábado \n                 14/11 Leilão de venda exclusiva de veículos premium \n                 Leilão 8874  142 veiculo  Aberto para lance",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8874",
           "category_hint": "vehicle",
           "date_hint": null,
@@ -1847,7 +1866,7 @@
         },
         {
           "platform_id": "palacio",
-          "title": "16 LEILÃO \n                  Segunda-Feira \n                 16/11 Leilão virtual - materiais diversos e outros comitentes \n                 Leilão 8899  69 eletrodomestico  Aberto",
+          "title": "16 LEILÃO \n                  Segunda-Feira \n                 16/11 Leilão virtual - materiais diversos e outros comitentes \n                 Leilão 8899  79 eletrodomestico  Aberto",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8899",
           "category_hint": "non_vehicle",
           "date_hint": null,
@@ -1865,7 +1884,7 @@
         },
         {
           "platform_id": "palacio",
-          "title": "17 LEILÃO \n                  Terça-Feira \n                 17/11 Materiais diversos, outlet mix e outros comitentes \n                 Leilão 8908  54 eletrodomestico  Aberto para l",
+          "title": "17 LEILÃO \n                  Terça-Feira \n                 17/11 Materiais diversos, outlet mix e outros comitentes \n                 Leilão 8908  59 eletrodomestico  Aberto para l",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8908",
           "category_hint": "non_vehicle",
           "date_hint": null,
@@ -1949,6 +1968,24 @@
             "requires_live_lot_page_and_auctioneer_identity_verification"
           ],
           "published": false
+        },
+        {
+          "platform_id": "palacio",
+          "title": "Edital do leilão 8909 data 12/11/2026",
+          "source_url": "https://www.palaciodosleiloes.com.br/site/documents/leiloes/8909.pdf",
+          "category_hint": "unknown",
+          "date_hint": "2026-11-12",
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
         }
       ]
     },
@@ -1963,6 +2000,38 @@
       "individual_lot_only": 0,
       "not_vehicle": 0,
       "candidates": []
+    },
+    "pmklog": {
+      "name": "PMKLog",
+      "batch": 1,
+      "access_status": "reachable",
+      "access_error": null,
+      "candidates_total": 1,
+      "vehicle_candidates": 0,
+      "dated_vehicle_candidates": 0,
+      "individual_lot_only": 0,
+      "not_vehicle": 0,
+      "candidates": [
+        {
+          "platform_id": "pmklog",
+          "title": "Todos os lotes",
+          "source_url": "https://pmklog.com.br/leilao/",
+          "category_hint": "unknown",
+          "date_hint": null,
+          "time_hint": null,
+          "state_hint_verified_from_event": null,
+          "url_kind": "not_direct_event",
+          "status": "needs_review",
+          "review_reasons": [
+            "vehicle_category_not_confirmed",
+            "event_date_unverified_or_expired",
+            "not_direct_event",
+            "event_location_unverified",
+            "requires_live_lot_page_and_auctioneer_identity_verification"
+          ],
+          "published": false
+        }
+      ]
     }
   }
 }

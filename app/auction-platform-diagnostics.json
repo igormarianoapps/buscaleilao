@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-11-12T10:52:41+00:00",
-  "platforms_total": 16,
+  "checked_at": "2026-11-12T12:27:34+00:00",
+  "platforms_total": 17,
   "reachable": 13,
-  "unverified_candidates": 55,
+  "unverified_candidates": 56,
   "events_automatically_published": 0,
   "platforms": {
     "bolsa": {
@@ -250,7 +250,7 @@
         {
           "candidate_kind": "individual_lot",
           "platform_id": "leilo",
-          "title": "LOTE 10 TO  NEW HOLLAND ESCAVADEIRA EVO 245 favorite calendar_today  20/20 location_on Gurupi/TO R$ 280.000,00 Lance Inicial Leilão: 13/11/2026 Sex 13/11 Sex • 09:30 person_raised_",
+          "title": "LOTE 10 TO  NEW HOLLAND ESCAVADEIRA EVO 245 favorite calendar_today  20/20 location_on Gurupi/TO R$ 180.000,00 Lance Inicial Leilão: 13/11/2026 Sex 13/11 Sex • 09:30 person_raised_",
           "source_url": "https://leilo.com.br/lote/8eb6329a-0e0b-4e05-8c32-66340733022c/",
           "state_hint": "GO",
           "status": "unverified_candidate",
@@ -304,7 +304,7 @@
         {
           "candidate_kind": "individual_lot",
           "platform_id": "leilo",
-          "title": "LOTE 18 DF chevron_left chevron_right play_arrow LEILOSHOP FORD/TRANSIT 460 B favorite calendar_today  23/24  146.419 km location_on Taguatinga/DF R$ 136.000,00 person Lance de M**",
+          "title": "LOTE 18 DF chevron_left chevron_right play_arrow LEILOSHOP FORD/TRANSIT 460 B favorite calendar_today  23/24  146.419 km location_on Taguatinga/DF R$ 137.000,00 person Lance de L**",
           "source_url": "https://leilo.com.br/lote/5ccab54d-431c-4a3d-a63f-8b002483b3bf/",
           "state_hint": "GO",
           "status": "unverified_candidate",
@@ -322,7 +322,7 @@
         {
           "candidate_kind": "individual_lot",
           "platform_id": "leilo",
-          "title": "LOTE 21 GO chevron_left chevron_right play_arrow LEILOSHOP IVECO/TECTOR 11-190 favorite calendar_today  21/22  109.040 km location_on Aparecida de Goiânia/GO R$ 200.000,00 person L",
+          "title": "LOTE 21 GO chevron_left chevron_right play_arrow LEILOSHOP IVECO/TECTOR 11-190 favorite calendar_today  21/22  109.040 km location_on Aparecida de Goiânia/GO R$ 202.000,00 person L",
           "source_url": "https://leilo.com.br/lote/75264422-28de-485b-8eba-7a7ca5153a97/",
           "state_hint": "GO",
           "status": "unverified_candidate",
@@ -422,10 +422,10 @@
       "note": "Candidate links are not verified auctions"
     },
     "loop": {
-      "status": "reachable",
+      "status": "unreachable",
       "candidate_count": 0,
       "candidate_events": [],
-      "note": "Candidate links are not verified auctions"
+      "error": "HTTP Error 429: Too Many Requests"
     },
     "mcleilao": {
       "status": "reachable",
@@ -554,6 +554,22 @@
           "title": "Detalhes",
           "source_url": "https://www.parquedosleiloes.com.br/leilao/1505/detalhes",
           "state_hint": "DF",
+          "status": "unverified_candidate",
+          "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
+        }
+      ],
+      "note": "Candidate links are not verified auctions"
+    },
+    "pmklog": {
+      "status": "reachable",
+      "candidate_count": 1,
+      "candidate_events": [
+        {
+          "candidate_kind": "possible_event",
+          "platform_id": "pmklog",
+          "title": "Todos os lotes",
+          "source_url": "https://pmklog.com.br/leilao/",
+          "state_hint": "GO",
           "status": "unverified_candidate",
           "review_status": "needs_event_date_lot_url_and_auctioneer_verification"
         }

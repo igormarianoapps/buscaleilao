@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-11-12T10:54:20+00:00",
-  "sources_attempted": 16,
+  "checked_at": "2026-11-12T12:29:25+00:00",
+  "sources_attempted": 17,
   "events_published": 0,
-  "pages_checked": 40,
-  "pages_extracted": 30,
+  "pages_checked": 42,
+  "pages_extracted": 31,
   "platforms": {
     "leilo": {
       "sites_scanned": 5,
@@ -462,10 +462,15 @@
       "verified_events": 0
     },
     "vip": {
-      "sites_scanned": 0,
+      "sites_scanned": 1,
       "extracted": 0,
       "unverified_evidence": [],
-      "errors": [],
+      "errors": [
+        {
+          "url": "https://www.vipleiloes.com.br/evento/detalhes/121126bspi",
+          "reason": "HTTP 403"
+        }
+      ],
       "verified_events": 0
     },
     "hisa": {
@@ -690,6 +695,31 @@
       "sites_scanned": 0,
       "extracted": 0,
       "unverified_evidence": [],
+      "errors": [],
+      "verified_events": 0
+    },
+    "pmklog": {
+      "sites_scanned": 1,
+      "extracted": 1,
+      "unverified_evidence": [
+        {
+          "platform_id": "pmklog",
+          "candidate_url": "https://pmklog.com.br/leilao/",
+          "date_mentions": [],
+          "vehicle_text_found": true,
+          "nonvehicle_text_found": false,
+          "lot_mentions": 1,
+          "status": "unconfirmed_event",
+          "approved_for_publication": false,
+          "requirements_missing": [
+            "matching_individual_event_identity",
+            "date_and_time_corroboration",
+            "lot_list_corroboration",
+            "verified_vehicle_location",
+            "auctioneer_registration_check"
+          ]
+        }
+      ],
       "errors": [],
       "verified_events": 0
     }
