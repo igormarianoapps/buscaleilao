@@ -11,7 +11,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 18
+    timeout-minutes: 35
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -59,6 +59,12 @@ jobs:
       - name: Monitor sixteen private auction platforms
         continue-on-error: true
         run: python scripts/auction_platform_watch.py
+      - name: Check JavaScript-rendered first-party auction listings
+        continue-on-error: true
+        run: |
+          python scripts/auction_browser_discovery.py
+          python scripts/auction_discovery_combine.py
+          python scripts/auction_candidate_evidence.py
       - name: Classify private auction leads
         continue-on-error: true
         run: python scripts/platform_triage.py
@@ -75,6 +81,13 @@ jobs:
       - name: Audit per-platform data quality
         continue-on-error: true
         run: python scripts/platform_quality.py
+      - name: Rebuild source directory with current discovery diagnostics
+        continue-on-error: true
+        run: python scripts/build_sources_page.py
+      - name: Monitor collector health and report failures
+        if: always()
+        continue-on-error: true
+        run: python scripts/platform_health_alert.py
       - name: Publish optional research diagnostics
         run: |
           for file in \
@@ -86,6 +99,10 @@ jobs:
             app/portal-candidates.json \
             app/coverage-audit.json \
             app/auction-platform-diagnostics.json \
+            app/auction-browser-diagnostics.json \
+            app/auction-discovery-combined.json \
+            app/auction-event-evidence.json \
+            app/platform-health-alert.json \
             app/platform-triage.json \
             app/platform-review-queue.json \
             app/platform-quality.json \

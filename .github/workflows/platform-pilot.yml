@@ -54,6 +54,7 @@ jobs:
           python scripts/build_sources_page.py
           python scripts/coverage_audit.py
           python scripts/platform_quality.py
+          python scripts/platform_health_alert.py
       - name: Run full tests on generated page
         run: |
           python -m unittest discover -s tests -v
@@ -62,7 +63,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for f in app/auction-platform-diagnostics.json app/auction-browser-diagnostics.json app/auction-discovery-combined.json app/auction-event-evidence.json app/platform-triage.json app/platform-review-queue.json app/platform-quality.json app/events.json app/index.html app/fontes.html app/collection-report.json app/coverage-audit.json app/source-health.json app/quarantine-report.json; do
+          for f in app/auction-platform-diagnostics.json app/auction-browser-diagnostics.json app/auction-discovery-combined.json app/auction-event-evidence.json app/platform-health-alert.json app/platform-triage.json app/platform-review-queue.json app/platform-quality.json app/events.json app/index.html app/fontes.html app/collection-report.json app/coverage-audit.json app/source-health.json app/quarantine-report.json; do
             if [ -f "$f" ]; then git add "$f"; fi
           done
           if ! git diff --cached --quiet; then
