@@ -33,6 +33,25 @@ class SecondaryLiveFallbackTests(unittest.TestCase):
             self.assertIn(("flex", URL), visited)
             self.assertTrue(any(e["id"] == "flex:index" for e in errors))
 
+    def test_flex_prefers_full_vehicle_card_over_generic_homepage_link(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "discovery.json"
+            path.write_text(json.dumps({"platforms":{"flex":{"candidate_events":[{
+                "source_url":URL,
+                "title":"Brasília/DF Leilão de Veículos DATA: 24/11/2026 - 10h00"
+            }]}}}),encoding="utf-8")
+            def loader(site,url):
+                if site != "flex":
+                    return ""
+                if url == SITES["flex"][1]:
+                    return '<a href="/lotes/2991/">Detalhes</a>'
+                if url == URL:
+                    return "<p>042 RENAULT SANDERO 091 FIAT UNO 095 FORD RANGER</p>"
+                return ""
+            rows,errors=collect_secondary(date(2026,11,12),loader,path)
+            self.assertEqual(len(rows),1)
+            self.assertEqual(rows[0]["state"],"DF")
+
     def test_expired_cached_event_is_rejected(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "discovery.json"
