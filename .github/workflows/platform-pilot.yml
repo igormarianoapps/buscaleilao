@@ -1,5 +1,5 @@
 name: Auction platform integration pilot
-# Manual audit trigger: four selected sources Flex Parque Palacio Hisa proof audit.
+# Manual audit trigger: final live test of corrected Flex Parque Palacio Hisa collectors.
 on:
   push:
     branches: [develop]
