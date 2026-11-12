@@ -19,4 +19,25 @@ class CollectionConsistencyTests(unittest.TestCase):
     x={"events":[{"id":"dup"},{"id":"dup"}]}
     r=compare({"events":[{"id":"unique"}]},x)
     self.assertEqual(r["duplicate_ids"],1)
+
+class DetailedConsistencyTests(unittest.TestCase):
+ def test_state_membership_changes_even_if_event_ids_do_not(self):
+    before={"events":[{"id":"a-GO","event_id":"a","organizer":"Leilo",
+                       "state":"GO","states":["GO"]}]}
+    after={"events":[{"id":"a-GO","event_id":"a","organizer":"Leilo",
+                      "state":"GO","states":["GO","PA"]},
+                     {"id":"a-PA","event_id":"a","organizer":"Leilo",
+                      "state":"PA","states":["GO","PA"]}]}
+    report=compare(before,after)
+    self.assertEqual(report["first_unique"],1)
+    self.assertEqual(report["second_unique"],1)
+    self.assertFalse(report["stable"])
+    self.assertEqual(len(report["changed_state_membership"]),1)
+ def test_same_id_changed_date_is_not_stable(self):
+    before={"events":[{"id":"a","organizer":"X","auction_date":"2026-11-19"}]}
+    after={"events":[{"id":"a","organizer":"X","auction_date":"2026-11-20"}]}
+    report=compare(before,after)
+    self.assertFalse(report["stable"])
+    self.assertEqual(len(report["changed_event_details"]),1)
+
 if __name__=="__main__":unittest.main()
