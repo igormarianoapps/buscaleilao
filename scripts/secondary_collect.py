@@ -94,6 +94,44 @@ def lot_evidence(text,site):
     return bool(re.search(r"\b(?:Lote\s*[01]?\d+|\d{1,2}\s*lote)\b",text,re.I)
                 and BRANDS.search(text))
 
+def rejection_reason(site,card,detail,url,today=None):
+    """Give operators a source-specific reason without approving any candidate."""
+    if not trusted_url(site,url):
+        return "unapproved_individual_url"
+    body=VisibleLinks()
+    body.feed(detail[:2_000_000])
+    text=body.text
+    header=text[:1700]
+    label=" ".join(card.split())
+    if site=="hisa" and re.search(r"LOTES EM BREVE|SEM LOTES",header[:360],re.I):
+        return "lots_not_published"
+    if site=="parque":
+        if not re.search(r"Categoria\s+VE[IÍ]CULOS",header,re.I):
+            return "not_vehicle_category"
+        if not TITLE_VEHICLES.search(header):
+            return "vehicle_category_unconfirmed"
+        when=event_date(header,today)
+        location=place(header[:1500])
+    elif site=="hisa":
+        if not TITLE_VEHICLES.search(label[:240]) or NONVEHICLES.search(label[:240]):
+            return "not_vehicle_category"
+        when=event_date(label,today)
+        if when and when[0][8:]+"/"+when[0][5:7]+"/"+when[0][:4] not in text[:2000]:
+            return "event_date_not_confirmed_on_detail"
+        location=place(label[:250])
+    else:
+        if not TITLE_VEHICLES.search(label[:220]) or NONVEHICLES.search(label[:220]):
+            return "not_vehicle_category"
+        when=event_date(label,today)
+        location=place(label[:300]) or verified_lot_location(header)
+    if not when:return "no_verified_future_event_date"
+    if not location:return "event_or_lot_location_unverified"
+    if not lot_evidence(text,site):return "vehicle_lots_not_confirmed"
+    if re.search(r"^(?:Encerrado|Cancelado|Suspenso)\b",header,re.I):
+        return "event_inactive"
+    return "other_unverified_event_evidence"
+
+
 def parse_event(site,card,detail,url,today=None):
     if not trusted_url(site,url):return None
     today=today or auction_today()
@@ -109,6 +147,8 @@ def parse_event(site,card,detail,url,today=None):
         when=event_date(header,today)
         location=place(header[:1500])
     elif site=="hisa":
+        if re.search(r"LOTES EM BREVE|SEM LOTES|CANCELADO|ENCERRADO",header[:360],re.I):
+            return None
         if not TITLE_VEHICLES.search(label[:240]):
             return None
         if NONVEHICLES.search(label[:240]):
@@ -218,9 +258,12 @@ def collect_secondary(today=None, loader=get_page, discovery_path=None):
             errors.append({"id": site, "error": "no first-party auction detail URLs"})
         for url, label in unique.items():
             try:
-                item = parse_event(site, label, loader(site, url), url, today)
+                detail = loader(site, url)
+                item = parse_event(site, label, detail, url, today)
                 if item:
                     found.append(item)
+                else:
+                    errors.append({"id":site+":"+url,"error":"not published: "+rejection_reason(site,label,detail,url,today)})
             except Exception as exc:
                 errors.append({"id": site + ":" + url, "error": str(exc)[:160]})
     dedup = {row["id"]: row for row in found}
