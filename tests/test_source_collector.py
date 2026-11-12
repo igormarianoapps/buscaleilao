@@ -114,5 +114,33 @@ class SourceCollectorTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             validate("Leilão 04/11/2099. Leilão cancelado.", source("a","https://example.org/a"))
 
+class FetchRetryTests(unittest.TestCase):
+    def test_retries_transient_timeout_once(self):
+        from source_collector import fetch_text
+        waits=[]
+        with patch("source_collector._single_fetch_text",
+                   side_effect=[TimeoutError("timeout"),"verified"]) as fetch:
+            self.assertEqual(fetch_text("https://example.org", pause=waits.append),"verified")
+        self.assertEqual(fetch.call_count,2)
+        self.assertEqual(waits,[1])
+
+    def test_denied_or_rate_limited_never_retried(self):
+        import urllib.error
+        from source_collector import fetch_text
+        for code in (401,403,429):
+            with self.subTest(code=code):
+                error=urllib.error.HTTPError("https://example.org",code,"denied",{},None)
+                with patch("source_collector._single_fetch_text",side_effect=error) as fetch:
+                    with self.assertRaises(urllib.error.HTTPError):
+                        fetch_text("https://example.org",pause=lambda n:self.fail("no backoff"))
+                    self.assertEqual(fetch.call_count,1)
+
+    def test_two_failed_transient_attempts_stop(self):
+        from source_collector import fetch_text
+        with patch("source_collector._single_fetch_text",side_effect=TimeoutError("timeout")) as fetch:
+            with self.assertRaises(TimeoutError):
+                fetch_text("https://example.org",pause=lambda n:None)
+            self.assertEqual(fetch.call_count,2)
+
 if __name__=="__main__":
     unittest.main()
