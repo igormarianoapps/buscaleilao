@@ -4,6 +4,8 @@ No publication without a future event date, a first-party event/lots URL,
 actual vehicle-lot evidence and a location explicitly attached to the event.
 No address is inferred from company headquarters.
 """
+import json
+from pathlib import Path
 import re
 import urllib.parse
 import urllib.request
@@ -164,6 +166,18 @@ def get_page(site,url):
             raise ValueError("unexpected final URL")
         return resp.read(2_000_001).decode("utf-8","replace")
 
+def fallback_candidates(site,combined):
+    # Browser diagnostics are a *discovery index only*. Every detail is
+    # freshly re-fetched and must pass the same strict event checks.
+    rows=combined.get("platforms",{}).get(site,{}).get("candidate_events",[])
+    unique={}
+    for row in rows:
+        url=row.get("source_url")
+        if trusted_url(site,url):
+            unique.setdefault(url,row.get("title") or "")
+        if len(unique)>=20:break
+    return unique
+
 def collect_secondary(today=None,loader=get_page):
     today=today or auction_today()
     found,errors=[],[]
@@ -177,6 +191,13 @@ def collect_secondary(today=None,loader=get_page):
                     # Parque's "Detalhes" links have context on the details page.
                     unique.setdefault(url,label)
                 if len(unique)>=20:break
+            if not unique and loader is get_page:
+                path=Path(__file__).resolve().parents[1]/"app/auction-discovery-combined.json"
+                try:
+                    diagnostic=json.loads(path.read_text(encoding="utf-8"))
+                    unique=fallback_candidates(site,diagnostic)
+                except (OSError,ValueError):
+                    unique={}
             if not unique:
                 errors.append({"id":site,"error":"no first-party auction detail URLs"})
             for url,label in unique.items():

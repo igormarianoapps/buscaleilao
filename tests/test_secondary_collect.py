@@ -50,3 +50,16 @@ class FlexLotLocationTests(unittest.TestCase):
     self.assertEqual(verified_lot_location(
         "Leilão de veículos Visitação: Pátio Sobradinho/DF. Lote 001 Fiat Uno"),("Sobradinho","DF"))
     self.assertIsNone(verified_lot_location("Leilão de veículos Empresa sediada em Brasília/DF"))
+
+class SecondaryFallbackTests(unittest.TestCase):
+ def test_research_urls_are_corroboration_candidates_not_published(self):
+    from secondary_collect import fallback_candidates
+    payload={"platforms":{"flex":{"candidate_events":[
+        {"title":"Leilão de Veículos 04 DATA: 24/11/2026 - 10h00",
+         "source_url":"https://www.flexleiloes.com.br/lotes/2991"},
+        {"title":"Fraud","source_url":"https://www.flexleiloes.com.br.evil.test/lotes/2991"},
+        {"title":"Category only","source_url":"https://www.flexleiloes.com.br/veiculos-leves/"}]}}}
+    rows=fallback_candidates("flex",payload)
+    self.assertEqual(len(rows),1)
+    self.assertTrue(next(iter(rows)).endswith("/lotes/2991"))
+    self.assertEqual(fallback_candidates("hisa",payload),{})
