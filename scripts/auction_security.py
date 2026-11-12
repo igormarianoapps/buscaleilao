@@ -84,6 +84,22 @@ def valid_destination(row):
         return (not row.get("event_url") and row.get("source_type")=="private"
                 and row.get("source_link_type")=="event"
                 and trusted_url(adapter,row.get("source_url")))
+    if org=="PMKLog":
+        from pmklog_collect import event_id
+        key=event_id(row.get("source_url"))
+        return (key is not None and row.get("event_id")==
+                f"pmklog-{key[1]}-{row.get('auction_date')}" and
+                not row.get("event_url") and
+                row.get("source_link_type")=="event" and
+                row.get("source_type")=="private")
+    if org=="Palácio dos Leilões":
+        from palacio_collect import auction_id
+        aid=auction_id(row.get("source_url"))
+        return (aid is not None and row.get("event_id")==
+                f"palacio-{aid}-{row.get('auction_date')}" and
+                not row.get("event_url") and
+                row.get("source_link_type")=="event" and
+                row.get("source_type")=="private")
     if org=='Freitas Leiloeiro':
         from freitas_collect import official_id
         return not row.get('event_url') and official_id(row['source_url']) is not None

@@ -214,6 +214,23 @@ def main():
             events.append(item)
             known_ids.add(item["id"])
     failures.extend(other_errors)
+    # New independent, fail-closed collectors. A source without an active edition
+    # must yield zero rows rather than recycling a previously ended event.
+    for platform_id,collector_name in (("pmklog","collect_pmklog"),
+                                       ("palacio","collect_palacio")):
+        try:
+            if platform_id=="pmklog":
+                from pmklog_collect import collect_pmklog as adapter
+            else:
+                from palacio_collect import collect_palacio as adapter
+            additional, adapter_errors=adapter(today=today)
+            for item in additional:
+                if item["id"] not in known_ids:
+                    events.append(item)
+                    known_ids.add(item["id"])
+            failures.extend(adapter_errors)
+        except Exception as exc:
+            failures.append({"id":platform_id,"error":str(exc)[:180]})
     # Preserve a discovered-at timestamp only for newly observed identities.
     try:
         previous=json.loads(OUTPUT.read_text(encoding="utf-8")).get("events",[])
@@ -288,6 +305,8 @@ def main():
         "bolsa_events":sum(e.get("organizer")=="Bolsa de Leilões" for e in events),
         "leilo_events":len({e.get("event_id") or e["id"] for e in events if e.get("organizer")=="Leilo"}),
         "secondary_events":sum(e.get("organizer") in ("Parque dos Leilões","Flex Leilões","Hisa Leilões") for e in events),
+        "pmklog_events":len({e.get("event_id") or e["id"] for e in events if e.get("organizer")=="PMKLog"}),
+        "palacio_events":len({e.get("event_id") or e["id"] for e in events if e.get("organizer")=="Palácio dos Leilões"}),
         "leilo_errors":len(leilo_errors),
         "secondary_errors":len(other_errors),
         "new_discoveries":len({e.get("event_id") or e["id"] for e in events if e.get("first_seen_at")==checked}),

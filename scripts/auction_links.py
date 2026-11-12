@@ -66,8 +66,22 @@ def destination_status(row):
                     row.get("source_link_type")=="event" and
                     row.get("source_type")=="private" and not row.get("event_url"))
         elif host in ("pmklog.com.br", "www.pmklog.com.br"):
-            q = parse_qs(p.query)
-            ok = path == "/leilao/evento/leilao-detran" and len(q.get("evento", [])) == 1 and bool(re.fullmatch(r"[a-fA-F0-9-]{36}", q["evento"][0])) and bool(row.get("event_url"))
+            if row.get("organizer")=="PMKLog":
+                from pmklog_collect import event_id
+                ok=bool(event_id(url) and row.get("source_link_type")=="event"
+                        and row.get("source_type")=="private" and
+                        not row.get("event_url"))
+            else:
+                # Curated Detran-GO events have an independently approved
+                # official notice and exact-edition URL.
+                q = parse_qs(p.query)
+                ok = path == "/leilao/evento/leilao-detran" and len(q.get("evento", [])) == 1 and bool(re.fullmatch(r"[a-fA-F0-9-]{36}", q["evento"][0])) and bool(row.get("event_url"))
+        elif host in ("palaciodosleiloes.com.br","www.palaciodosleiloes.com.br"):
+            from palacio_collect import auction_id
+            ok=bool(row.get("organizer")=="Palácio dos Leilões" and
+                    row.get("source_type")=="private" and
+                    row.get("source_link_type")=="event" and
+                    not row.get("event_url") and auction_id(url))
         elif host in ("www.focoleiloes.com.br", "focoleiloes.com.br"):
             ok = bool(re.fullmatch(r"/leilao/\d+/lotes", path)) and bool(row.get("event_url")) and row.get("source_type") in ("municipal", "state", "federal")
         elif host == "exchange.superbid.net":
