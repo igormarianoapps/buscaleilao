@@ -39,7 +39,7 @@ def audit(sites,diagnostics,triage,feed,quarantine,report,combined=None):
         combined_row=combined.get(ident,{})
         availability=combined_row.get("availability",diag.get("status","not_checked"))
         status=("verified_events" if verified else
-                "access_limited" if availability=="unreachable" else
+                "access_limited" if availability in ("unreachable","unavailable") else
                 "monitoring_no_verified_vehicle_event")
         result["per_platform"][ident]={
             "name":site["name"],"batch":site["batch"],"availability":availability,
