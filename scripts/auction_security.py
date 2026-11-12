@@ -84,6 +84,14 @@ def valid_destination(row):
         return (not row.get("event_url") and row.get("source_type")=="private"
                 and row.get("source_link_type")=="event"
                 and trusted_url(adapter,row.get("source_url")))
+    if org=="Loop Leilões":
+        from loop_collect import event_id
+        ident=event_id(row.get("source_url"))
+        return bool(ident and row.get("event_id")==
+            f"loop-{ident}-{row.get('auction_date')}" and
+            not row.get("event_url") and
+            row.get("source_link_type")=="event" and
+            row.get("source_type")=="private")
     if org=="PMKLog":
         from pmklog_collect import event_id
         key=event_id(row.get("source_url"))

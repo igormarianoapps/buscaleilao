@@ -116,10 +116,10 @@
     "source_kind": "private_auctioneer",
     "monitor_enabled": true,
     "requires_individual_event_link": true,
-    "status": "official_auction_domain_mapped_pending_events",
+    "status": "strict_calendar_adapter",
     "trust_notice": "Loop Brasil é o site institucional. Leilões devem ser extraídos exclusivamente de loopleiloes.com.br, conforme canal oficial. Veículos de Loop Carros/Revenda não são leilões.",
     "additional_discovery_urls": [
-      "https://loopleiloes.com.br/",
+      "https://loopleiloes.com.br/eventos",
       "https://loopleiloes.com.br/leilao-automotivo"
     ]
   },

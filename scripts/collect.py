@@ -231,6 +231,16 @@ def main():
             failures.extend(adapter_errors)
         except Exception as exc:
             failures.append({"id":platform_id,"error":str(exc)[:180]})
+    try:
+        from loop_collect import collect_loop
+        loop_events,loop_errors=collect_loop(today=today)
+    except Exception as exc:
+        loop_events,loop_errors=[],[{"id":"loop","error":str(exc)[:180]}]
+    for item in loop_events:
+        if item["id"] not in known_ids:
+            events.append(item)
+            known_ids.add(item["id"])
+    failures.extend(loop_errors)
     # Preserve a discovered-at timestamp only for newly observed identities.
     try:
         previous=json.loads(OUTPUT.read_text(encoding="utf-8")).get("events",[])
@@ -307,6 +317,7 @@ def main():
         "secondary_events":sum(e.get("organizer") in ("Parque dos Leilões","Flex Leilões","Hisa Leilões") for e in events),
         "pmklog_events":len({e.get("event_id") or e["id"] for e in events if e.get("organizer")=="PMKLog"}),
         "palacio_events":len({e.get("event_id") or e["id"] for e in events if e.get("organizer")=="Palácio dos Leilões"}),
+        "loop_events":len({e.get("event_id") or e["id"] for e in events if e.get("organizer")=="Loop Leilões"}),
         "leilo_errors":len(leilo_errors),
         "secondary_errors":len(other_errors),
         "new_discoveries":len({e.get("event_id") or e["id"] for e in events if e.get("first_seen_at")==checked}),
