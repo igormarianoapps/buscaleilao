@@ -18,6 +18,7 @@ DATE=re.compile(r"\b(\d{2})/(\d{2})/(20\d{2})\b")
 LOT=re.compile(r"\b(?:Finalizado\s+)?Lote\s+(\d{1,5})\b",re.I)
 UF=re.compile(r"\b(?:PATIO|PÁTIO|GOIANIA|GOIÂNIA|ANÁPOLIS|ANAPOLIS)[^.;]{0,90}/([A-Z]{2})\b",re.I)
 KNOWN="https://pmklog.com.br/leilao/evento/leilao-detran/?evento=fa724af3-d396-11f1-a2f8-02420a000014"
+INDEX_URLS=("https://pmklog.com.br/","https://pmklog.com.br/leilao/","https://pmklog.com.br/nossos-leiloes")
 def event_id(url):
     try:
         p=urllib.parse.urlsplit(url)
@@ -87,7 +88,7 @@ def parse_edition(html,url,today=None):
             "edition_id":edition,
             "last_checked_at":datetime.now(timezone.utc).isoformat(timespec="seconds")}
 def fetch(url):
-    if url!="https://pmklog.com.br/" and not event_id(url):
+    if url not in INDEX_URLS and not event_id(url):
         raise ValueError("unapproved PMKLog URL")
     req=urllib.request.Request(url,headers={"User-Agent":"BuscaLeilaoBot/0.9 (+https://github.com/igormarianoapps/buscaleilao)","Accept":"text/html"})
     with urllib.request.build_opener(NoRedirect).open(req,timeout=11) as resp:
@@ -95,15 +96,28 @@ def fetch(url):
             raise ValueError("not HTML")
         return resp.read(2_000_001).decode("utf-8","replace")
 def collect_pmklog(today=None,loader=fetch):
+    """Check three first-party public calendars and revalidate actual edition pages.
+
+    If one index fails, other indexes and the known archived event are still
+    checked. Nothing from an index is directly published.
+    """
     today=today or auction_today()
     errors=[]
-    try:urls=discover_urls(loader("https://pmklog.com.br/"))
-    except Exception as e:
-        urls=[KNOWN];errors.append({"id":"pmklog:index","error":str(e)[:160]})
+    urls={KNOWN}
+    accessed=0
+    for index in INDEX_URLS:
+        try:
+            urls.update(discover_urls(loader(index)))
+            accessed+=1
+        except Exception as exc:
+            errors.append({"id":"pmklog:index:"+index,"error":str(exc)[:160]})
     events=[]
-    for url in urls:
+    for url in sorted(urls)[:40]:
         try:
             event=parse_edition(loader(url),url,today)
             if event:events.append(event)
-        except Exception as e:errors.append({"id":"pmklog:"+url,"error":str(e)[:160]})
+        except Exception as exc:
+            errors.append({"id":"pmklog:"+url,"error":str(exc)[:160]})
+    if not accessed:
+        errors.append({"id":"pmklog","error":"all authorized indexes unavailable"})
     return events,errors
