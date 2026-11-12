@@ -83,6 +83,9 @@ jobs:
       - name: Audit per-platform data quality
         continue-on-error: true
         run: python scripts/platform_quality.py
+      - name: Audit seventeen platform integration evidence
+        continue-on-error: true
+        run: python scripts/platform_coverage_gate.py
       - name: Rebuild source directory with current discovery diagnostics
         continue-on-error: true
         run: python scripts/build_sources_page.py
@@ -108,6 +111,7 @@ jobs:
             app/platform-triage.json \
             app/platform-review-queue.json \
             app/platform-quality.json \
+            app/platform-coverage-gate.json \
             app/fontes.html; do
             if [ -f "$file" ]; then git add "$file"; fi
           done
