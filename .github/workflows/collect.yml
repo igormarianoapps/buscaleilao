@@ -25,6 +25,17 @@ jobs:
         run: |
           python -m pip install playwright==1.56.0
           python -m playwright install --with-deps chromium
+      # Prepare a fresh candidate index BEFORE checking individual events.
+      # This is discovery only; the strict collector decides what is published.
+      - name: Monitor seventeen auction platforms
+        continue-on-error: true
+        run: python scripts/auction_platform_watch.py
+      - name: Discover public first-party auction pages
+        continue-on-error: true
+        run: |
+          python scripts/auction_browser_discovery.py
+          python scripts/auction_discovery_combine.py
+          python scripts/auction_candidate_evidence.py
       - name: Check official sources
         run: python scripts/collect.py
       - name: Validate verified auction feed
@@ -56,15 +67,6 @@ jobs:
       - name: Discover official regional auction portals
         continue-on-error: true
         run: python scripts/portal_watch.py
-      - name: Monitor sixteen private auction platforms
-        continue-on-error: true
-        run: python scripts/auction_platform_watch.py
-      - name: Check JavaScript-rendered first-party auction listings
-        continue-on-error: true
-        run: |
-          python scripts/auction_browser_discovery.py
-          python scripts/auction_discovery_combine.py
-          python scripts/auction_candidate_evidence.py
       - name: Classify private auction leads
         continue-on-error: true
         run: python scripts/platform_triage.py
