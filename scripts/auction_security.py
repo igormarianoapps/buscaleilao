@@ -84,6 +84,14 @@ def valid_destination(row):
         return (not row.get("event_url") and row.get("source_type")=="private"
                 and row.get("source_link_type")=="event"
                 and trusted_url(adapter,row.get("source_url")))
+    if org=="Rogério Menezes":
+        from rogerio_collect import detail_id
+        ident=detail_id(row.get("source_url"))
+        return (ident is not None and row.get("event_id")==
+                f"rogerio-{ident}-{row.get('auction_date')}"
+                and not row.get("event_url")
+                and row.get("source_type")=="private"
+                and row.get("source_link_type")=="event")
     if org=="Loop Leilões":
         from loop_collect import event_id
         ident=event_id(row.get("source_url"))
