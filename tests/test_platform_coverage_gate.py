@@ -24,6 +24,8 @@ class CoverageGateTests(unittest.TestCase):
         self.assertEqual(result["sites_diagnosed"],17)
         self.assertEqual(result["sites_with_verified_events"],1)
         self.assertFalse(result["full_integration_complete"])
+        self.assertEqual(result["priority_four_verified"],0)
+        self.assertFalse(result["priority_four_complete"])
         statuses = {x["id"]:x["state"] for x in result["sources"]}
         self.assertEqual(statuses["loop"],"access_limited")
         self.assertEqual(statuses["flex"],"candidates_not_verified")
