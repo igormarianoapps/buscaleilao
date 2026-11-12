@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-12T13:12:12+00:00",
+  "checked_at": "2026-11-12T13:40:31+00:00",
   "platforms_total": 17,
   "reachable": 13,
   "unverified_candidates": 56,
@@ -153,7 +153,7 @@
         {
           "candidate_kind": "possible_event",
           "platform_id": "hisa",
-          "title": "Eletrônico   82   lotes  HISA REVERSA     Eletrônico 82 LOTES   SAO CAETANO DO SUL, SP   Data: 13/11/2026 às 14:00   Leilão: 2542   82 lotes",
+          "title": "Eletrônico   82   lotes  HISA REVERSA - ELETRODOMÉSTICOS, UTILIDADES DOMÉSTICAS, CALÇADOS     Eletrônico 82 LOTES   SAO CAETANO DO SUL, SP   Data: 13/11/2026 às 14:00   Leilão: 254",
           "source_url": "https://hisaleiloes.com.br/leilao/2542",
           "state_hint": "SP",
           "status": "unverified_candidate",

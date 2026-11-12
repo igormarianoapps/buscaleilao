@@ -1,100 +1,118 @@
 {
-  "checked_at": "2026-11-12T13:17:53+00:00",
+  "checked_at": "2026-11-12T13:46:51+00:00",
   "total_sources": 17,
   "sources_reachable": 15,
   "sources_with_events": 6,
   "unique_feed_events": 49,
   "feed_fresh": true,
+  "feed_status": "current",
   "warning_count": 2,
   "warnings": [
-    "loop: no authorized public connection",
-    "milan: no authorized public connection"
+    "loop: unavailable or access restricted",
+    "milan: unavailable or access restricted"
   ],
   "sources": {
     "leilo": {
       "reachable": true,
       "verified_events": 3,
-      "candidates": 25
+      "candidates": 25,
+      "condition": "verified_events"
     },
     "mcleilao": {
       "reachable": true,
       "verified_events": 0,
-      "candidates": 0
+      "candidates": 0,
+      "condition": "reachable_no_verified_events"
     },
     "flex": {
       "reachable": true,
       "verified_events": 0,
-      "candidates": 4
+      "candidates": 4,
+      "condition": "candidates_unverified"
     },
     "parque": {
       "reachable": true,
       "verified_events": 0,
-      "candidates": 12
+      "candidates": 12,
+      "condition": "candidates_unverified"
     },
     "sodre": {
       "reachable": true,
       "verified_events": 0,
-      "candidates": 27
+      "candidates": 27,
+      "condition": "candidates_unverified"
     },
     "copart": {
       "reachable": true,
       "verified_events": 11,
-      "candidates": 0
+      "candidates": 0,
+      "condition": "verified_events"
     },
     "loop": {
       "reachable": false,
       "verified_events": 0,
-      "candidates": 0
+      "candidates": 0,
+      "condition": "blocked_or_unavailable"
     },
     "freitas": {
       "reachable": true,
       "verified_events": 4,
-      "candidates": 3
+      "candidates": 3,
+      "condition": "verified_events"
     },
     "milan": {
       "reachable": false,
       "verified_events": 0,
-      "candidates": 0
+      "candidates": 0,
+      "condition": "blocked_or_unavailable"
     },
     "vip": {
       "reachable": true,
       "verified_events": 17,
-      "candidates": 1
+      "candidates": 1,
+      "condition": "verified_events"
     },
     "hisa": {
       "reachable": true,
       "verified_events": 0,
-      "candidates": 5
+      "candidates": 5,
+      "condition": "candidates_unverified"
     },
     "bolsa": {
       "reachable": true,
       "verified_events": 1,
-      "candidates": 7
+      "candidates": 7,
+      "condition": "verified_events"
     },
     "vardana": {
       "reachable": true,
       "verified_events": 1,
-      "candidates": 2
+      "candidates": 2,
+      "condition": "verified_events"
     },
     "claudio": {
       "reachable": true,
       "verified_events": 0,
-      "candidates": 1
+      "candidates": 1,
+      "condition": "candidates_unverified"
     },
     "palacio": {
       "reachable": true,
       "verified_events": 0,
-      "candidates": 14
+      "candidates": 15,
+      "condition": "candidates_unverified"
     },
     "rogerio": {
       "reachable": true,
       "verified_events": 0,
-      "candidates": 0
+      "candidates": 0,
+      "condition": "reachable_no_verified_events"
     },
     "pmklog": {
       "reachable": true,
       "verified_events": 0,
-      "candidates": 1
+      "candidates": 1,
+      "condition": "candidates_unverified"
     }
   }
 }

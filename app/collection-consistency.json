@@ -1,8 +1,12 @@
 {
   "first_unique": 49,
   "second_unique": 49,
+  "first_rows": 161,
+  "second_rows": 161,
   "added": [],
   "removed": [],
+  "changed_state_membership": [],
+  "changed_event_details": [],
   "duplicate_ids": 0,
   "stable": true
 }
