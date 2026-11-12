@@ -106,16 +106,22 @@
     "name": "Loop Brasil",
     "state_hint": "SP",
     "batch": 2,
-    "discovery_url": "https://www.loopbrasil.com/",
+    "discovery_url": "https://loopleiloes.com.br/",
     "allowed_hosts": [
       "loopbrasil.com",
-      "www.loopbrasil.com"
+      "www.loopbrasil.com",
+      "loopleiloes.com.br",
+      "www.loopleiloes.com.br"
     ],
     "source_kind": "private_auctioneer",
     "monitor_enabled": true,
     "requires_individual_event_link": true,
-    "status": "candidate_adapter",
-    "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event."
+    "status": "official_auction_domain_mapped_pending_events",
+    "trust_notice": "Loop Brasil é o site institucional. Leilões devem ser extraídos exclusivamente de loopleiloes.com.br, conforme canal oficial. Veículos de Loop Carros/Revenda não são leilões.",
+    "additional_discovery_urls": [
+      "https://loopleiloes.com.br/",
+      "https://loopleiloes.com.br/leilao-automotivo"
+    ]
   },
   {
     "id": "freitas",
