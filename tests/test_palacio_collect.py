@@ -19,6 +19,9 @@ class PalacioTests(unittest.TestCase):
     self.assertEqual(row["state"],"MG")
     self.assertEqual(row["auction_date"],"2026-11-20")
     self.assertEqual(row["vehicle_count"],None)
+ def test_numbered_lots_without_colon_are_supported(self):
+    row=extract_event(HTML.replace("Lote: 1","Lote 1").replace("Lote: 2","Lote nº 2"),URL,date(2026,11,12))
+    self.assertIsNotNone(row)
  def test_ambiguous_no_state_and_past_event_rejected(self):
     self.assertIsNone(extract_event(HTML.replace("Juatuba/MG","Juatuba"),URL,date(2026,11,12)))
     self.assertIsNone(extract_event(HTML,URL,date(2026,11,21)))
