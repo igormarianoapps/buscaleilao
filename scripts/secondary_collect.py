@@ -16,7 +16,7 @@ SITES={
  "parque":("Parque dos Leilões","https://www.parquedosleiloes.com.br/leiloes",
            {"parquedosleiloes.com.br","www.parquedosleiloes.com.br"},
            r"/leilao/[0-9]{1,10}/detalhes/?"),
- "flex":("Flex Leilões","https://www.flexleiloes.com.br/",
+ "flex":("Flex Leilões","https://www.flexleiloes.com.br/shop/",
            {"flexleiloes.com.br","www.flexleiloes.com.br"},
            r"/lotes/[0-9]{1,10}/?"),
  "hisa":("Hisa Leilões","https://hisaleiloes.com.br/",
@@ -70,6 +70,18 @@ def place(text):
             return city.title(),uf
     return None
 
+def verified_lot_location(header):
+    # Location must be attached to vehicle inspection / storage, NOT the
+    # auction house footer or a generic headquarters address.
+    matches=re.findall(
+        r"(?:Visita[cç][aã]o|Local do Bem|P[aá]tio)\s*:\s*([^.;]{5,200})",
+        header[:1700],re.I)
+    for match in matches:
+        possible=place(match[-100:])
+        if possible and not re.search(r"endere[cç]o\s+(?:da\s+)?(?:empresa|sede)",match,re.I):
+            return possible
+    return None
+
 def lot_evidence(text,site):
     if site=="flex":
         # The first-party page lists number + vehicle description in a table.
@@ -106,7 +118,7 @@ def parse_event(site,card,detail,url,today=None):
         if not TITLE_VEHICLES.search(label[:220]) or NONVEHICLES.search(label[:220]):
             return None
         when=event_date(label,today)
-        location=place(label[:300])
+        location=place(label[:300]) or verified_lot_location(header)
     if not when or not location or not lot_evidence(text,site):
         return None
     if re.search(r"^(?:Encerrado|Cancelado|Suspenso)\b",header,re.I):

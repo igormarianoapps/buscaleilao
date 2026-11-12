@@ -43,3 +43,10 @@ class FlexCanonicalRedirectTests(unittest.TestCase):
     from secondary_collect import trusted_url
     self.assertTrue(trusted_url("flex","https://www.flexleiloes.com.br/lotes/2991/"))
     self.assertFalse(trusted_url("flex","https://www.flexleiloes.com.br/lotes/2992/redirect"))
+
+class FlexLotLocationTests(unittest.TestCase):
+ def test_visitor_lot_site_explicitly_provides_state_not_company_hq(self):
+    from secondary_collect import verified_lot_location
+    self.assertEqual(verified_lot_location(
+        "Leilão de veículos Visitação: Pátio Sobradinho/DF. Lote 001 Fiat Uno"),("Sobradinho","DF"))
+    self.assertIsNone(verified_lot_location("Leilão de veículos Empresa sediada em Brasília/DF"))
