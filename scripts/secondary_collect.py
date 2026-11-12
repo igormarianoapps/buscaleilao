@@ -108,8 +108,6 @@ def rejection_reason(site,card,detail,url,today=None):
     if site=="parque":
         if not re.search(r"Categoria\s+VE[IÍ]CULOS",header,re.I):
             return "not_vehicle_category"
-        if not TITLE_VEHICLES.search(header):
-            return "vehicle_category_unconfirmed"
         when=event_date(header,today)
         location=place(header[:1500])
     elif site=="hisa":
@@ -142,8 +140,8 @@ def parse_event(site,card,detail,url,today=None):
     if site=="parque":
         if not re.search(r"Categoria\s+VE[IÍ]CULOS",header,re.I):
             return None
-        if not TITLE_VEHICLES.search(header):
-            return None
+        # The numbered event title can be the court name. Category and
+        # actual vehicle lots provide stronger evidence than the title.
         when=event_date(header,today)
         location=place(header[:1500])
     elif site=="hisa":
