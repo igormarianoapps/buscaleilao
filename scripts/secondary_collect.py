@@ -18,7 +18,7 @@ SITES={
  "parque":("Parque dos Leilões","https://www.parquedosleiloes.com.br/leiloes",
            {"parquedosleiloes.com.br","www.parquedosleiloes.com.br"},
            r"/leilao/[0-9]{1,10}/detalhes/?"),
- "flex":("Flex Leilões","https://www.flexleiloes.com.br/shop/",
+ "flex":("Flex Leilões","https://www.flexleiloes.com.br/",
            {"flexleiloes.com.br","www.flexleiloes.com.br"},
            r"/lotes/[0-9]{1,10}/?"),
  "hisa":("Hisa Leilões","https://hisaleiloes.com.br/",
