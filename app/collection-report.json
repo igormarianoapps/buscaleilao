@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-11-11T17:56:10+00:00",
-  "verified": 129,
-  "unique_events": 41,
+  "checked_at": "2026-11-12T18:23:10+00:00",
+  "verified": 116,
+  "unique_events": 34,
   "states_with_events": [
     "AM",
     "BA",
@@ -39,17 +39,16 @@
     "Copart": 10,
     "DETRAN Bahia": 1,
     "Freitas Leiloeiro": 4,
-    "Prefeitura de Cuiabá — Semob": 1,
-    "Prefeitura de Curitiba": 3,
+    "Prefeitura de Curitiba": 1,
     "Prefeitura de Serranópolis do Iguaçu": 1,
     "Prefeitura de Vieiras": 1,
-    "VIP Leilões": 20
+    "VIP Leilões": 16
   },
-  "platform_events": 122,
-  "direct_event_links": 118,
+  "platform_events": 112,
+  "direct_event_links": 108,
   "calendar_links": 0,
-  "curated_source_links": 11,
-  "curated_success": 7,
+  "curated_source_links": 8,
+  "curated_success": 4,
   "curated_failure": 2,
   "failed": [
     {
