@@ -1,0 +1,1324 @@
+{
+  "checked_at": "2026-11-12T12:26:11+00:00",
+  "sources": {
+    "mcleilao": [
+      {
+        "url": "https://www.mcleilao.com.br/",
+        "status": "ok",
+        "title": "MC Leilão",
+        "headlines": [
+          "TIPO DE LEILÃO",
+          "TIPO DE LOTE",
+          "falecom@mcleilao.com.br",
+          "EM LOTEAMENTO",
+          "falecom@mcleilao.com.br",
+          "© Copyright 2018 MCleilão."
+        ],
+        "anchors": [
+          {
+            "href": "https://www.mcleilao.com.br/#/termo-cookie",
+            "label": "SAIBA MAIS..."
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/login",
+            "label": "Entrar"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/login",
+            "label": "Cadastre-se"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/denuncia",
+            "label": "Canal de Denúncias"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/",
+            "label": ""
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/",
+            "label": "HOME"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/sobre",
+            "label": "QUEM SOMOS"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/termo",
+            "label": "Termos"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/atendimento",
+            "label": "Cadastro"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/edital",
+            "label": "NOTIFICAÇÕES"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/atendimento",
+            "label": "CONTATO"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/login",
+            "label": "ENTRAR/CADASTRAR-SE"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#",
+            "label": ""
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/",
+            "label": "Home"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/sobre",
+            "label": "Quem Somos"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#",
+            "label": "Quero vender"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/termo",
+            "label": "Termos"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/atendimento",
+            "label": "Cadastro"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/edital",
+            "label": "Notificações"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/atendimento",
+            "label": "Contato"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/login",
+            "label": "Entrar/Cadastrar-se"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/",
+            "label": "Home"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#",
+            "label": "«"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#",
+            "label": "»"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#home",
+            "label": ""
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/",
+            "label": ""
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/",
+            "label": "Home"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/sobre",
+            "label": "Quem somos"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/termo",
+            "label": "Termo/Regulamento Site"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/denuncia",
+            "label": "Canal de denúncias"
+          }
+        ]
+      },
+      {
+        "url": "https://www.mcleilao.com.br/#/home",
+        "status": "ok",
+        "title": "MC Leilão",
+        "headlines": [
+          "TIPO DE LEILÃO",
+          "TIPO DE LOTE",
+          "falecom@mcleilao.com.br",
+          "EM LOTEAMENTO",
+          "falecom@mcleilao.com.br",
+          "© Copyright 2018 MCleilão."
+        ],
+        "anchors": [
+          {
+            "href": "https://www.mcleilao.com.br/#/termo-cookie",
+            "label": "SAIBA MAIS..."
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/login",
+            "label": "Entrar"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/login",
+            "label": "Cadastre-se"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/denuncia",
+            "label": "Canal de Denúncias"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/",
+            "label": ""
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/",
+            "label": "HOME"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/sobre",
+            "label": "QUEM SOMOS"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/termo",
+            "label": "Termos"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/atendimento",
+            "label": "Cadastro"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/edital",
+            "label": "NOTIFICAÇÕES"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/atendimento",
+            "label": "CONTATO"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/login",
+            "label": "ENTRAR/CADASTRAR-SE"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#",
+            "label": ""
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/",
+            "label": "Home"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/sobre",
+            "label": "Quem Somos"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#",
+            "label": "Quero vender"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/termo",
+            "label": "Termos"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/atendimento",
+            "label": "Cadastro"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/edital",
+            "label": "Notificações"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/atendimento",
+            "label": "Contato"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/login",
+            "label": "Entrar/Cadastrar-se"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/",
+            "label": "Home"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#",
+            "label": "«"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#",
+            "label": "»"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#home",
+            "label": ""
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/",
+            "label": ""
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/",
+            "label": "Home"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/sobre",
+            "label": "Quem somos"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/termo",
+            "label": "Termo/Regulamento Site"
+          },
+          {
+            "href": "https://www.mcleilao.com.br/#/denuncia",
+            "label": "Canal de denúncias"
+          }
+        ]
+      }
+    ],
+    "flex": [
+      {
+        "url": "https://www.flexleiloes.com.br/",
+        "status": "ok",
+        "title": "FlexLeilões",
+        "headlines": [
+          "Três lotes de Terreno",
+          "1º LEILÃO: 16/11/2026 - 14h00",
+          "2º LEILÃO: 19/11/2026 - 14h00",
+          "1º LEILÃO: 23/11/2026 - 12h00",
+          "2º LEILÃO: 26/11/2026 - 12h00",
+          "1º LEILÃO: 23/11/2026 - 12h20",
+          "2º LEILÃO: 26/11/2026 - 12h00",
+          "Leilão de Veículos",
+          "04 Veículos",
+          "1º LEILÃO: 25/11/2026 - 14h00",
+          "2º LEILÃO: 02/12/2026 - 14h00",
+          "1º LEILÃO: 01/12/2026 - 14h30",
+          "2º LEILÃO: 04/12/2026 - 14h30",
+          "2º LEILÃO: 03/12/2026 - 10h00",
+          "1º LEILÃO: 10/12/2026 - 10h00",
+          "2º LEILÃO: 18/12/2026 - 10h00",
+          "1º LEILÃO: 14/12/2026 - 14h00",
+          "1º LEILÃO: 14/12/2026 - 14h30",
+          "2º LEILÃO: 17/12/2026 - 14h30",
+          "2º LEILÃO: 17/12/2026 - 14h00",
+          "1º LEILÃO: 01/02/2027 - 16h40",
+          "2º LEILÃO: 16/02/2027 - 16h40",
+          "3º LEILÃO: 03/03/2027 - 16h40"
+        ],
+        "anchors": [
+          {
+            "href": "https://www.flexleiloes.com.br/veiculos-leves/",
+            "label": "Veículos Leves"
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/veiculos-importados/",
+            "label": "Veículos Importados"
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/veiculos-utilitarios/",
+            "label": "Veículos Utilitários"
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2978",
+            "label": "Cristalina/GO \n\nTrês lotes de Terreno\n\n1º LEILÃO: 16/11/2026 - 14h00\n\nLance Mínimo: R$ 1.200.000,00\n\n\n\n\n2º LEILÃO: 19/11/2026 - 14h00\n\n\n\n\nSOMENTE ONLI"
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2978",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2978",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2963",
+            "label": "Brasília/DF - SHVP\n\nDireitos sobre Apartamento\n\n1º LEILÃO: 23/11/2026 - 12h00\n\nLance Mínimo: R$ 980.000,00\n\n\n\n\n2º LEILÃO: 26/11/2026 - 12h00\n\nLance Mí"
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2963",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2963",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2979",
+            "label": "Taguatinga/DF -  QNE 06\n\nApartamento | 78.210m²\n\n1º LEILÃO: 23/11/2026 - 12h20\n\nLance Mínimo: R$ 225.000,00\n\n\n\n\n2º LEILÃO: 26/11/2026 - 12h00\n\nLance M"
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2979",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2979",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2991",
+            "label": "Leilão de Veículos\n\n04 Veículos\n\nDATA: 24/11/2026 - 10h00\n\nSOMENTE ONLINE\nEm Andamento"
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2991",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2991",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2981",
+            "label": "03 Autoclaves - 30 litros\n\nModelo LS\n\n1º LEILÃO: 25/11/2026 - 14h00\n\nLance Mínimo: R$ 17.850,00\n\n\n\n\n2º LEILÃO: 02/12/2026 - 14h00\n\nLance Mínimo: R$ 16"
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2981",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2981",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2984",
+            "label": "Cidade Ocidental/GO \n\nDireitos sobre Apartamento\n\n\n\n\n \n\n1º LEILÃO: 01/12/2026 - 14h30\n\nLance Mínimo: R$ 90.000,00\n\n\n\n\n2º LEILÃO: 04/12/2026 - 14h30\n\n\n"
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2984",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2984",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2992",
+            "label": "Brasília/DF - Recanto das Emas \n\nImóvel | 112,50m²\n\n2º LEILÃO: 03/12/2026 - 10h00\n\nLance Mínimo: R$ 176.000,00\n\n\n\n\nSOMENTE ONLINE\nLances a partir de\n2"
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2992",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2992",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2990",
+            "label": "Brasília/DF - SIA\n\nGalpão | 2.000m²\n\n\n\n\n1º LEILÃO: 10/12/2026 - 10h00\n\nLance Mínimo: R$ 16.000.000,00\n\n\n\n\n2º LEILÃO: 18/12/2026 - 10h00\n\nLance Mínimo:"
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2990",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2990",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2987",
+            "label": "Cidade Ocidental/GO \n\nApartamento | 43,24m²\n\n\n\n\n1º LEILÃO: 14/12/2026 - 14h00\n\nLance Mínimo: R$ 90.000,00\n\n\n\n\n\n\n\nSOMENTE ONLINE\nCancelado"
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2987",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2987",
+            "label": ""
+          }
+        ]
+      },
+      {
+        "url": "https://www.flexleiloes.com.br/shop/",
+        "status": "ok",
+        "title": "FlexLeilões",
+        "headlines": [
+          "Três lotes de Terreno",
+          "1º LEILÃO: 16/11/2026 - 14h00",
+          "2º LEILÃO: 19/11/2026 - 14h00",
+          "1º LEILÃO: 23/11/2026 - 12h00",
+          "2º LEILÃO: 26/11/2026 - 12h00",
+          "1º LEILÃO: 23/11/2026 - 12h20",
+          "2º LEILÃO: 26/11/2026 - 12h00",
+          "Leilão de Veículos",
+          "04 Veículos",
+          "1º LEILÃO: 25/11/2026 - 14h00",
+          "2º LEILÃO: 02/12/2026 - 14h00",
+          "1º LEILÃO: 01/12/2026 - 14h30",
+          "2º LEILÃO: 04/12/2026 - 14h30",
+          "2º LEILÃO: 03/12/2026 - 10h00",
+          "1º LEILÃO: 10/12/2026 - 10h00",
+          "2º LEILÃO: 18/12/2026 - 10h00",
+          "1º LEILÃO: 14/12/2026 - 14h00",
+          "1º LEILÃO: 14/12/2026 - 14h30",
+          "2º LEILÃO: 17/12/2026 - 14h30",
+          "2º LEILÃO: 17/12/2026 - 14h00",
+          "1º LEILÃO: 01/02/2027 - 16h40",
+          "2º LEILÃO: 16/02/2027 - 16h40",
+          "3º LEILÃO: 03/03/2027 - 16h40"
+        ],
+        "anchors": [
+          {
+            "href": "https://www.flexleiloes.com.br/veiculos-leves/",
+            "label": "Veículos Leves"
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/veiculos-importados/",
+            "label": "Veículos Importados"
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/veiculos-utilitarios/",
+            "label": "Veículos Utilitários"
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2978",
+            "label": "Cristalina/GO \n\nTrês lotes de Terreno\n\n1º LEILÃO: 16/11/2026 - 14h00\n\nLance Mínimo: R$ 1.200.000,00\n\n\n\n\n2º LEILÃO: 19/11/2026 - 14h00\n\n\n\n\nSOMENTE ONLI"
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2978",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2978",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2963",
+            "label": "Brasília/DF - SHVP\n\nDireitos sobre Apartamento\n\n1º LEILÃO: 23/11/2026 - 12h00\n\nLance Mínimo: R$ 980.000,00\n\n\n\n\n2º LEILÃO: 26/11/2026 - 12h00\n\nLance Mí"
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2963",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2963",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2979",
+            "label": "Taguatinga/DF -  QNE 06\n\nApartamento | 78.210m²\n\n1º LEILÃO: 23/11/2026 - 12h20\n\nLance Mínimo: R$ 225.000,00\n\n\n\n\n2º LEILÃO: 26/11/2026 - 12h00\n\nLance M"
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2979",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2979",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2991",
+            "label": "Leilão de Veículos\n\n04 Veículos\n\nDATA: 24/11/2026 - 10h00\n\nSOMENTE ONLINE\nEm Andamento"
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2991",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2991",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2981",
+            "label": "03 Autoclaves - 30 litros\n\nModelo LS\n\n1º LEILÃO: 25/11/2026 - 14h00\n\nLance Mínimo: R$ 17.850,00\n\n\n\n\n2º LEILÃO: 02/12/2026 - 14h00\n\nLance Mínimo: R$ 16"
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2981",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2981",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2984",
+            "label": "Cidade Ocidental/GO \n\nDireitos sobre Apartamento\n\n\n\n\n \n\n1º LEILÃO: 01/12/2026 - 14h30\n\nLance Mínimo: R$ 90.000,00\n\n\n\n\n2º LEILÃO: 04/12/2026 - 14h30\n\n\n"
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2984",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2984",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2992",
+            "label": "Brasília/DF - Recanto das Emas \n\nImóvel | 112,50m²\n\n2º LEILÃO: 03/12/2026 - 10h00\n\nLance Mínimo: R$ 176.000,00\n\n\n\n\nSOMENTE ONLINE\nLances a partir de\n2"
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2992",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2992",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2990",
+            "label": "Brasília/DF - SIA\n\nGalpão | 2.000m²\n\n\n\n\n1º LEILÃO: 10/12/2026 - 10h00\n\nLance Mínimo: R$ 16.000.000,00\n\n\n\n\n2º LEILÃO: 18/12/2026 - 10h00\n\nLance Mínimo:"
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2990",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2990",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2987",
+            "label": "Cidade Ocidental/GO \n\nApartamento | 43,24m²\n\n\n\n\n1º LEILÃO: 14/12/2026 - 14h00\n\nLance Mínimo: R$ 90.000,00\n\n\n\n\n\n\n\nSOMENTE ONLINE\nCancelado"
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2987",
+            "label": ""
+          },
+          {
+            "href": "https://www.flexleiloes.com.br/lotes/2987",
+            "label": ""
+          }
+        ]
+      }
+    ],
+    "parque": [
+      {
+        "url": "https://www.parquedosleiloes.com.br/leiloes",
+        "status": "ok",
+        "title": "Leilões Abertos — Parque dos Leilões",
+        "headlines": [
+          "Status do leilão",
+          "Tipo do leilão",
+          "Veículos",
+          "EXIBIÇÃO POR LOTES",
+          "LEILÃO DE BENS E EQUIPAMENTOS - EMBAIXADA AMERICANA E OUTROS",
+          "VEICULOS",
+          "LEILAO DE BENS E EQUIPAMENTOS - EMBAIXADA AMERICANA E OUTROS",
+          "VEICULOS",
+          "LEILAO DE BENS",
+          "VEICULOS",
+          "LEILAO DE BENS",
+          "VEICULOS",
+          "Somos especializados na realização de leilões de Veículos, Imóveis Judiciais e Extrajudiciais, Máquinas e Equipamentos, Informática e Móveis diversos."
+        ],
+        "anchors": [
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1522/detalhes",
+            "label": ""
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1522/edital",
+            "label": "EDITAL"
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1522/detalhes",
+            "label": "DETALHES"
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1521/detalhes",
+            "label": ""
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1521/edital",
+            "label": "EDITAL"
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1521/detalhes",
+            "label": "DETALHES"
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1519/detalhes",
+            "label": ""
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1519/edital",
+            "label": "EDITAL"
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1519/detalhes",
+            "label": "DETALHES"
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1518/detalhes",
+            "label": ""
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1518/edital",
+            "label": "EDITAL"
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1518/detalhes",
+            "label": "DETALHES"
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1512/detalhes",
+            "label": ""
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1512/edital",
+            "label": "EDITAL"
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1512/detalhes",
+            "label": "DETALHES"
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1516/detalhes",
+            "label": ""
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1516/edital",
+            "label": "EDITAL"
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1516/detalhes",
+            "label": "DETALHES"
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1513/detalhes",
+            "label": ""
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1513/edital",
+            "label": "EDITAL"
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1513/detalhes",
+            "label": "DETALHES"
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1509/detalhes",
+            "label": ""
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1509/edital",
+            "label": "EDITAL"
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1509/detalhes",
+            "label": "DETALHES"
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1511/detalhes",
+            "label": ""
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1511/edital",
+            "label": "EDITAL"
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1511/detalhes",
+            "label": "DETALHES"
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1508/detalhes",
+            "label": ""
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1508/edital",
+            "label": "EDITAL"
+          },
+          {
+            "href": "https://www.parquedosleiloes.com.br/leilao/1508/detalhes",
+            "label": "DETALHES"
+          }
+        ]
+      }
+    ],
+    "sodre": [
+      {
+        "url": "https://www.sodresantoro.com.br/",
+        "status": "ok",
+        "title": "Sodre Santoro | Site Oficial: Leiloes de Veiculos e Leiloes Online",
+        "headlines": [
+          "Veiculos",
+          "Veiculos",
+          "Saiba como participar de um leilão",
+          "@leilaosodresantoro",
+          "Leilão Online",
+          "Você já considerou participar de um leilão online? Essa modalidade de compra tem se tornado cada vez mais popular e se assemelha a outras formas de comércio digital.",
+          "Todas as informações sobre os lotes ficam disponíveis no site, permitindo que os interessados verifiquem os itens. Desde a abertura do leilão, basta acessar sua conta e investir na sua estratégia.",
+          "O interessado pode dar lances a partir do início do leilão, e a data e a hora do encerramento são informadas. Um leiloeiro conduz o evento, capturando os lances e, posteriormente, a empresa vendedora analisará o processo e identificará o comprador que ofereceu o maior v",
+          "Leilão online é confiável?",
+          "Sim, o leilão online é confiável. No entanto, é preciso estar atento a alguns detalhes antes de participar de qualquer um deles, garantindo a sua integridade. Os leilões virtuais são uma excelente opção para quem deseja adquirir produtos eletrônicos e outros bens a preç",
+          "Antes de oferecer seus dados pessoais e dar lances, tome precauções. Alguns sites de leilões podem ser fraudulentos e acabar roubando dados dos usuários sem que eles percebam. Por isso, o site da Sodré Santoro possui um certificado de autenticação, garantindo segurança ",
+          "Veja também: LEILÃO DE CASAS e LEILÃO DE APARTAMENTO..",
+          "Quais cuidados devo tomar ao participar de um leilão online?",
+          "O leilão online é, de fato, seguro. Ainda assim, é preciso que os participantes estejam atentos às informações fornecidas pelos sites, assim, as chances de cair em algum golpe são bem menores. Os participantes devem sempre ter garantias de que todos os seus dados estarã",
+          "Para leilões de carros e motos, especialmente os do Detran e da Receita Federal, verifique no site do Detran se o leilão está sendo processado pelo leiloeiro designado. No caso de leilões relacionados à Receita Federal, todas as ações devem ser realizadas no sistema ofi",
+          "Para dar um lance no leilão online da Sodré Santoro, o primeiro passo é realizar o cadastro no site. O processo envolve o preenchimento de dados pessoais e financeiros e a aprovação pode levar algum tempo, dependendo das verificações necessárias. Após a aprovação, você ",
+          "Antes de mais nada, para participar do leilão online, é necessário observar todas as instruções que serão previamente passadas. É por meio do edital que será possível compreender quanto tempo o leilão permanecerá no ar e como o evento, de um modo geral, vai funcionar. S",
+          "Como o pagamento do leilão online é realizado?",
+          "Após arrematar seu bem ou lote, você será comunicado pelo leiloeiro e receberá todas as informações necessárias.",
+          "O pagamento pode ser realizado por meio de boleto bancário, parcelamento no cartão de crédito (com juros), pix, e, em alguns casos, como leilões de veículos e imóveis, existe a possibilidade de financiamento.",
+          "Todas as opções disponíveis para o seu lote serão informadas com clareza, permitindo que você escolha a forma de pagamento mais conveniente.",
+          "É importante lembrar de conferir todos os dados acerca dos valores, dos dados bancários, do prazo de pagamento e também das instruções que virão a seguir. No leilão online da Sodré Santoro, essas informações são enviadas via e-mail e também podem ser acessadas no própri",
+          "Esteja sempre atento a todos os detalhes do leilão online. O edital é um documento importante, que não deve ser deixado de lado durante o evento.",
+          "É por meio dele que você conseguirá compreender como o evento funciona e como ele poderá ser benéfico para adquirir um bem que tanto deseja.",
+          "Existem outros custos no leilão online?",
+          "Leia o edital antes do evento e fique atento à situação dos produtos de seu interesse. Na maioria dos casos, os bens são vendidos no estado de conservação e funcionamento em que se encontram, o que significa que não haverá garantia.",
+          "Site de leilão: as vantagens do leilão online",
+          "Participar de leilões ou dar lances em um site de leilão é um processo muito fácil, e não tem nada melhor do que fazer compras sem sair de casa, não é? Por isso, os leilões de veículos, móveis e outros itens maiores são os mais procurados na internet; afinal, não é prec",
+          "A liberação da visitação aberta só será considerada após a abertura do lote por meio do site do leilão. Esse procedimento nunca deverá ser exposto antes da abertura.",
+          "Quais produtos vão para leilão?",
+          "Com o mercado em ascensão, existem não apenas os convencionais, como leilão de carros e motos ou leilão de imóveis, mas também leilões de materiais e equipamentos, como maquinários, móveis, roupas, joias, lanchas e até aeronaves.",
+          "Para visualizar os lotes disponíveis, o interessado pode acessar o site da Sodré Santoro, onde as informações completas sobre cada item estarão disponíveis."
+        ],
+        "anchors": [
+          {
+            "href": "https://www.sodresantoro.com.br/lotes/favoritos",
+            "label": ""
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/lotes/em-disputa",
+            "label": ""
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/lotes/em-destaque",
+            "label": "Destaques"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/lotes/em-destaque",
+            "label": "Ver todos"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/leilao?auctions=abertos",
+            "label": "Agenda de leilões"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/leilao?auctions=abertos",
+            "label": "Ver todos"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/lotes?sort=lot_visits_desc",
+            "label": "Mais visitados"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/lotes?sort=lot_visits_desc",
+            "label": "Ver todos"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/veiculos",
+            "label": "Veiculos"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/atendimento/como-comprar",
+            "label": "Como comprar\n\nSaiba como participar de um leilão"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/imoveis/lotes?lot_category=casa",
+            "label": "LEILÃO DE CASAS"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/imoveis/lotes?lot_category=apartamentos",
+            "label": "LEILÃO DE APARTAMENTO."
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/imoveis",
+            "label": "Leilão de Imóveis"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/veiculos/lotes?lot_location=curitiba+i/pr",
+            "label": "Leilão Curitiba"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/materiais/lotes?lot_category=moveis+para+escrit%C3%B3rio__m%C3%B3veis+para+com%C3%A9rcio__m%C3%B3veis+p/+casa",
+            "label": "Leilão de Móveis"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/materiais/lotes?lot_category=maquinas+operatrizes",
+            "label": "Leilão de Máquinas"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/veiculos/lotes",
+            "label": "Leilão de Veículos"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/materiais/lotes",
+            "label": "Leilão de Materiais"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/materiais/lotes?lot_category=informatica",
+            "label": "Leilão de Informática"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/materiais/lotes?lot_category=motores",
+            "label": "Leilão de Motores"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/materiais/lotes?lot_category=sucata",
+            "label": "Leilão de Sucatas"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/materiais/lotes?lot_category=eletrodomesticos",
+            "label": "Leilão de Eletrodomésticos"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/materiais/lotes?lot_subcategory=celulares+e+smartphones",
+            "label": "Leilão de Celulares"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/judiciais/lotes",
+            "label": "Leilão Judicial"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/",
+            "label": "Leilão Online"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=volkswagen",
+            "label": "Leilão Volkswagen"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=fiat",
+            "label": "Leilão Fiat"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=bmw",
+            "label": "Leilão BMW"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=ford",
+            "label": "Leilão Ford"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=chevrolet",
+            "label": "Leilão Chevrolet"
+          }
+        ]
+      },
+      {
+        "url": "https://www.sodresantoro.com.br/leilao",
+        "status": "ok",
+        "title": "Sodré Santoro | Site Oficial: Leilões de Veículos e Leilões Online | Sodré Santoro",
+        "headlines": [
+          "Veiculos",
+          "Calendário completo: confira as próximas datas de leilão e os resultados já encerrados – tudo em um só lugar.",
+          "Leilão de Imóveis",
+          "Leilão Curitiba",
+          "Leilão de Móveis",
+          "Leilão de Máquinas",
+          "Leilão de Veículos",
+          "Leilão de Materiais",
+          "Leilão de Informática",
+          "Leilão de Motores",
+          "Leilão de Sucatas",
+          "Leilão de Eletrodomésticos",
+          "Leilão de Celulares",
+          "Leilão Judicial",
+          "Leilão Online",
+          "Leilão Volkswagen",
+          "Leilão Fiat",
+          "Leilão BMW",
+          "Leilão Ford",
+          "Leilão Chevrolet",
+          "Leilão Honda",
+          "Leilão Citroën",
+          "Leilão Mercedes",
+          "Leilão Mitsubishi",
+          "Leilão Volvo",
+          "Leilão Iveco",
+          "Leilão Toyota",
+          "Leilão Hyundai",
+          "Leilão Renault",
+          "Leilão Nissan",
+          "Leilão Peugeot",
+          "Leilão Audi"
+        ],
+        "anchors": [
+          {
+            "href": "https://www.sodresantoro.com.br/lotes/favoritos",
+            "label": ""
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/lotes/em-disputa",
+            "label": ""
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/imoveis",
+            "label": "Leilão de Imóveis"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/veiculos/lotes?lot_location=curitiba+i/pr",
+            "label": "Leilão Curitiba"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/materiais/lotes?lot_category=moveis+para+escrit%C3%B3rio__m%C3%B3veis+para+com%C3%A9rcio__m%C3%B3veis+p/+casa",
+            "label": "Leilão de Móveis"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/materiais/lotes?lot_category=maquinas+operatrizes",
+            "label": "Leilão de Máquinas"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/veiculos/lotes",
+            "label": "Leilão de Veículos"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/materiais/lotes",
+            "label": "Leilão de Materiais"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/materiais/lotes?lot_category=informatica",
+            "label": "Leilão de Informática"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/materiais/lotes?lot_category=motores",
+            "label": "Leilão de Motores"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/materiais/lotes?lot_category=sucata",
+            "label": "Leilão de Sucatas"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/materiais/lotes?lot_category=eletrodomesticos",
+            "label": "Leilão de Eletrodomésticos"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/materiais/lotes?lot_subcategory=celulares+e+smartphones",
+            "label": "Leilão de Celulares"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/judiciais/lotes",
+            "label": "Leilão Judicial"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/",
+            "label": "Leilão Online"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=volkswagen",
+            "label": "Leilão Volkswagen"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=fiat",
+            "label": "Leilão Fiat"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=bmw",
+            "label": "Leilão BMW"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=ford",
+            "label": "Leilão Ford"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=chevrolet",
+            "label": "Leilão Chevrolet"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=honda",
+            "label": "Leilão Honda"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=citroen",
+            "label": "Leilão Citroën"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=mercedes",
+            "label": "Leilão Mercedes"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=mitsubishi",
+            "label": "Leilão Mitsubishi"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=volvo",
+            "label": "Leilão Volvo"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=iveco",
+            "label": "Leilão Iveco"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=toyota",
+            "label": "Leilão Toyota"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=hyundai",
+            "label": "Leilão Hyundai"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=renault",
+            "label": "Leilão Renault"
+          },
+          {
+            "href": "https://www.sodresantoro.com.br/veiculos/lotes?lot_brand=nissan",
+            "label": "Leilão Nissan"
+          }
+        ]
+      }
+    ],
+    "loop": [
+      {
+        "url": "https://loopleiloes.com.br/",
+        "status": "error",
+        "reason": "HTTP 429"
+      },
+      {
+        "url": "https://loopleiloes.com.br/eventos",
+        "status": "error",
+        "reason": "HTTP 429"
+      },
+      {
+        "url": "https://loopleiloes.com.br/leilao-automotivo",
+        "status": "error",
+        "reason": "HTTP 429"
+      }
+    ],
+    "milan": [
+      {
+        "url": "https://www.milanleiloes.com.br/",
+        "status": "error",
+        "reason": "HTTP 403"
+      }
+    ],
+    "hisa": [
+      {
+        "url": "https://hisaleiloes.com.br/",
+        "status": "error",
+        "reason": "HTTP 403"
+      }
+    ],
+    "palacio": [
+      {
+        "url": "https://www.palaciodosleiloes.com.br/site/leilao.php",
+        "status": "ok",
+        "title": "Palácio dos Leilões",
+        "headlines": [
+          "Leilão motocicletas recuperadas de financiamento do banco pan",
+          "Leilão veículos sinistrados e sucatas",
+          "Leilão veículos no estado que se encontram da movida - leilão virtual",
+          "Leilão",
+          "1914 lotes localizados",
+          "Leilão",
+          "Lote",
+          "Leilão",
+          "Lote",
+          "Leilão",
+          "Lote",
+          "Leilão",
+          "Lote",
+          "Leilão",
+          "Lote",
+          "Leilão",
+          "Lote",
+          "Leilão",
+          "Lote",
+          "Leilão",
+          "Lote",
+          "Caixa, Documentação e Retirada de Lote: 08:15 às 17:00"
+        ],
+        "anchors": [
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/evento.php",
+            "label": "Ouvidoria"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/leilao.php?categoria_pesquisa=1%2C13059%2C15#",
+            "label": "Compartilhar"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/leilao.php?categoria_pesquisa=1%2C13059%2C15#",
+            "label": "Compartilhar"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/leilao.php?categoria_pesquisa=1%2C13059%2C15#",
+            "label": "Compartilhar"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/leilao.php?categoria_pesquisa=1%2C13059%2C15#",
+            "label": "Compartilhar"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/leilao.php?categoria_pesquisa=1%2C13059%2C15#",
+            "label": "Compartilhar"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/leilao.php?categoria_pesquisa=1%2C13059%2C15#",
+            "label": "Compartilhar"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/leilao.php?categoria_pesquisa=1%2C13059%2C15#",
+            "label": "Compartilhar"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/leilao.php?categoria_pesquisa=1%2C13059%2C15#",
+            "label": "Compartilhar"
+          }
+        ]
+      },
+      {
+        "url": "https://www.palaciodosleiloes.com.br/site/index.php?categoria_pesquisa=2",
+        "status": "ok",
+        "title": "Palácio dos Leilões",
+        "headlines": [
+          "Leilão motocicletas recuperadas de financiamento do banco pan",
+          "Leilão veículos sinistrados e sucatas",
+          "Leilão veículos no estado que se encontram da movida - leilão virtual",
+          "Lotes",
+          "Veículos",
+          "Lotes",
+          "Veículos",
+          "LEILÃO",
+          "Leilão 8882",
+          "LEILÃO",
+          "Leilão 8902",
+          "LEILÃO",
+          "Veículos sinistrados e sucatas",
+          "Leilão 8903",
+          "LEILÃO",
+          "Veículos no estado que se encontram da movida - leilão virtual",
+          "Leilão 8909",
+          "LEILÃO",
+          "Veículos sinistrados e sucatas",
+          "Leilão 8905",
+          "LEILÃO",
+          "Veículos em bom estado recuperados de financiamento",
+          "Leilão 8906",
+          "LEILÃO",
+          "Leilão de venda exclusiva de veículos premium",
+          "Leilão 8874",
+          "LEILÃO",
+          "Leilão virtual - materiais diversos e outros comitentes",
+          "Leilão 8899",
+          "LEILÃO",
+          "Leilão 8908",
+          "LEILÃO"
+        ],
+        "anchors": [
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/evento.php",
+            "label": "Ouvidoria"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8882",
+            "label": "12\nLEILÃO\nQuinta-Feira\n12/11\nMateriais outlet mix e outros comitentes\nLeilão 8882\n 231 eletrodomestico\n Em andamento"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8902",
+            "label": "12\nLEILÃO\nQuinta-Feira\n12/11\nMotocicletas recuperadas de financiamento do banco pan\nLeilão 8902\n 108 veiculo\n Em andamento"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8903",
+            "label": "12\nLEILÃO\nQuinta-Feira\n12/11\nVeículos sinistrados e sucatas\nLeilão 8903\n 250 veiculo\n Em andamento"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8909",
+            "label": "12\nLEILÃO\nQuinta-Feira\n12/11\nVeículos no estado que se encontram da movida - leilão virtual\nLeilão 8909\n 165 veiculo\n Em andamento"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8905",
+            "label": "13\nLEILÃO\nSexta-Feira\n13/11\nVeículos sinistrados e sucatas\nLeilão 8905\n 209 veiculo\n Aberto para lance"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8906",
+            "label": "13\nLEILÃO\nSexta-Feira\n13/11\nVeículos em bom estado recuperados de financiamento\nLeilão 8906\n 97 veiculo\n Aberto para lance"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8874",
+            "label": "14\nLEILÃO\nSábado\n14/11\nLeilão de venda exclusiva de veículos premium\nLeilão 8874\n 142 veiculo\n Aberto para lance"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8899",
+            "label": "16\nLEILÃO\nSegunda-Feira\n16/11\nLeilão virtual - materiais diversos e outros comitentes\nLeilão 8899\n 78 eletrodomestico\n Aberto para lance"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8908",
+            "label": "17\nLEILÃO\nTerça-Feira\n17/11\nMateriais diversos, outlet mix e outros comitentes\nLeilão 8908\n 59 eletrodomestico\n Aberto para lance"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8893",
+            "label": "18\nLEILÃO\nQuarta-Feira\n18/11\nVeículos em bom estado e caminhões e equipamentos da csn\nLeilão 8893\n 37 veiculo\n Aberto para lance"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8856",
+            "label": "23\nLEILÃO\nSegunda-Feira\n23/11\nPeças de veículos em catalão/ go\nLeilão 8856\n 529 eletrodomestico\n Aberto para lance"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8898",
+            "label": "25\nLEILÃO\nQuarta-Feira\n25/11\nVeículos em bom estado e caminhões, máquinas e equipamentos da vale s.a\nLeilão 8898\n 12 veiculo\n Aberto para lance"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8907",
+            "label": "09\nLEILÃO\nQuarta-Feira\n09/12\nHelicópteros da vale s.a e veículos em bom estado recuperados de financiamento\nLeilão 8907\n 1 veiculo\n Aberto para lance"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8902",
+            "label": "aqui"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8903",
+            "label": "aqui"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/documents/leiloes/8909.pdf",
+            "label": "Edital do leilão 8909 data 12/11/2026"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8909",
+            "label": "aqui"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8882",
+            "label": "aqui"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8905",
+            "label": "aqui"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8906",
+            "label": "aqui"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8874",
+            "label": "aqui"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8899",
+            "label": "aqui"
+          },
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8893",
+            "label": "aqui"
+          }
+        ]
+      },
+      {
+        "url": "https://www.palaciodosleiloes.com.br/site/index.php",
+        "status": "ok",
+        "title": "Palácio dos Leilões",
+        "headlines": [
+          "Leilão motocicletas recuperadas de financiamento do banco pan",
+          "Leilão veículos sinistrados e sucatas",
+          "Leilão veículos no estado que se encontram da movida - leilão virtual",
+          "Leilão",
+          "Caixa, Documentação e Retirada de Lote: 08:15 às 17:00"
+        ],
+        "anchors": [
+          {
+            "href": "https://www.palaciodosleiloes.com.br/site/evento.php",
+            "label": "Ouvidoria"
+          }
+        ]
+      }
+    ],
+    "rogerio": [
+      {
+        "url": "https://www.rogeriomenezes.com.br/leiloes",
+        "status": "ok",
+        "title": "Agenda de Leilões | Rogério Menezes",
+        "headlines": [
+          "Nenhum leilão disponível no momento",
+          "Cadastre-se para ser avisado quando abrirmos um novo leilão.",
+          "0 Lotes Favoritos",
+          "Nenhum lote nos favoritos.",
+          "Nenhum leilão nos favoritos.",
+          "Nenhum documento disponível.",
+          "Nenhum aviso no momento."
+        ],
+        "anchors": []
+      }
+    ]
+  },
+  "publication_allowed": false
+}
