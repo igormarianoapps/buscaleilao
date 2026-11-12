@@ -79,7 +79,9 @@ def verified_lot_location(header):
     for match in matches:
         possible=place(match[-100:])
         if possible and not re.search(r"endere[cç]o\s+(?:da\s+)?(?:empresa|sede)",match,re.I):
-            return possible
+            city,uf=possible
+            city=re.sub(r"^(?:P[aá]tio|Local do Bem)\s+","",city,flags=re.I).strip()
+            return (city,uf) if city else None
     return None
 
 def lot_evidence(text,site):
