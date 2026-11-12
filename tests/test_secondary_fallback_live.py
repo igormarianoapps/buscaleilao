@@ -52,6 +52,25 @@ class SecondaryLiveFallbackTests(unittest.TestCase):
             self.assertEqual(len(rows),1)
             self.assertEqual(rows[0]["state"],"DF")
 
+    def test_parque_discovers_court_event_from_homepage(self):
+        from secondary_collect import PUBLIC_INDEXES
+        url="https://www.parquedosleiloes.com.br/leilao/1524/detalhes"
+        visited=[]
+        def loader(site,uri):
+            visited.append((site,uri))
+            if site=="parque" and uri=="https://www.parquedosleiloes.com.br/":
+                return '<a href="/leilao/1524/detalhes">Detalhes</a>'
+            if uri==url:
+                return ("2ª VARA DE BRASÍLIA Data 12 de nov de 2026 às 14:00 "
+                        "Categoria VEICULOS Pátio: Asa Norte/DF 1lote FIAT PALIO")
+            return ""
+        with tempfile.TemporaryDirectory() as directory:
+            path=Path(directory)/"candidates.json"
+            path.write_text('{"platforms":{}}',encoding="utf-8")
+            rows,errors=collect_secondary(date(2026,11,12),loader,path)
+        self.assertIn(("parque","https://www.parquedosleiloes.com.br/"),visited)
+        self.assertEqual([x["organizer"] for x in rows],["Parque dos Leilões"])
+
     def test_expired_cached_event_is_rejected(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "discovery.json"
