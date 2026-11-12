@@ -29,21 +29,21 @@ jobs:
           python -m compileall -q scripts app tests
           python -m unittest discover -s tests -v
           node --test tests/agenda.test.mjs
-      - name: Monitor all sixteen requested sites
+      - name: Monitor all seventeen requested sites
         run: python scripts/auction_platform_watch.py
-      - name: Classify new platform candidates without publishing them
-        run: python scripts/platform_triage.py
-      - name: Prepare research-only review queue
-        run: python scripts/platform_review.py
       - name: Install browser for collection
         run: |
           python -m pip install playwright==1.56.0
           python -m playwright install --with-deps chromium
-      - name: Attempt browser extraction from each of the sixteen public platforms
+      - name: Attempt browser extraction from each of the seventeen public platforms
         run: |
           python scripts/auction_browser_discovery.py
           python scripts/auction_discovery_combine.py
           python scripts/auction_candidate_evidence.py
+      - name: Classify all source candidates and prepare review queue
+        run: |
+          python scripts/platform_triage.py
+          python scripts/platform_review.py
       - name: Collect auction feed from verified platforms
         run: python scripts/collect.py
       - name: Verify published feed trust gate
