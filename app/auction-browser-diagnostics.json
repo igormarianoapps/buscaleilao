@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-12T14:17:22+00:00",
+  "checked_at": "2026-11-12T14:48:05+00:00",
   "total": 17,
   "reachable": 13,
   "candidate_links": 92,
@@ -22,7 +22,7 @@
         {
           "candidate_kind": "individual_lot",
           "platform_id": "leilo",
-          "title": "LOTE 3 TO Recuperado de Financiamento IVECO/STRALIS 800S48TZ favorite calendar_today  21/22  521.088 km location_on Palmas/TO R$ 246.000,00 Lance Inicial Leilão: 13/11/2026 Sex 13/",
+          "title": "LOTE 3 TO chevron_left chevron_right Recuperado de Financiamento IVECO/STRALIS 800S48TZ favorite calendar_today  21/22  521.088 km location_on Palmas/TO R$ 246.000,00 Lance Inicial",
           "source_url": "https://leilo.com.br/lote/c10c3e7b-4eee-491e-8154-f81527b1b8fc/",
           "state_hint": "GO",
           "status": "unverified_candidate",
@@ -148,7 +148,7 @@
         {
           "candidate_kind": "individual_lot",
           "platform_id": "leilo",
-          "title": "LOTE 23 SP Recuperado de Financiamento FACCHINI/SEMI REBOQUE FACCHINI QRLO favorite calendar_today  21/22 location_on São Carlos/SP R$ 60.000,00 Lance Inicial Leilão: 13/11/2026 Se",
+          "title": "LOTE 23 SP chevron_left chevron_right Recuperado de Financiamento FACCHINI/SEMI REBOQUE FACCHINI QRLO favorite calendar_today  21/22 location_on São Carlos/SP R$ 60.000,00 Lance In",
           "source_url": "https://leilo.com.br/lote/a105f246-99c4-44b3-ab67-2e490faa837d/",
           "state_hint": "GO",
           "status": "unverified_candidate",
@@ -157,7 +157,7 @@
         {
           "candidate_kind": "individual_lot",
           "platform_id": "leilo",
-          "title": "LOTE 24 SP Recuperado de Financiamento FACCHINI/SRF LO favorite calendar_today  21/22 location_on São Carlos/SP R$ 60.000,00 Lance Inicial Leilão: 13/11/2026 Sex 13/11 Sex • 09:30 ",
+          "title": "LOTE 24 SP chevron_left chevron_right Recuperado de Financiamento FACCHINI/SRF LO favorite calendar_today  21/22 location_on São Carlos/SP R$ 60.000,00 Lance Inicial Leilão: 13/11/",
           "source_url": "https://leilo.com.br/lote/76e5fe31-fb19-4fa5-8860-cd79a32463a8/",
           "state_hint": "GO",
           "status": "unverified_candidate",
@@ -846,7 +846,7 @@
         {
           "candidate_kind": "possible_event",
           "platform_id": "palacio",
-          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Materiais outlet mix e outros comitentes \n                 Leilão 8882  163 eletrodomestico  Em andamento",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Materiais outlet mix e outros comitentes \n                 Leilão 8882  133 eletrodomestico  Em andamento",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8882",
           "state_hint": "MG",
           "status": "unverified_candidate",
@@ -855,7 +855,7 @@
         {
           "candidate_kind": "possible_event",
           "platform_id": "palacio",
-          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Motocicletas recuperadas de financiamento do banco pan \n                 Leilão 8902  83 veiculo  Em andamento",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Motocicletas recuperadas de financiamento do banco pan \n                 Leilão 8902  70 veiculo  Em andamento",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8902",
           "state_hint": "MG",
           "status": "unverified_candidate",
@@ -864,7 +864,7 @@
         {
           "candidate_kind": "possible_event",
           "platform_id": "palacio",
-          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Veículos sinistrados e sucatas \n                 Leilão 8903  218 veiculo  Em andamento",
+          "title": "12 LEILÃO \n                  Quinta-Feira \n                 12/11 Veículos sinistrados e sucatas \n                 Leilão 8903  204 veiculo  Em andamento",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8903",
           "state_hint": "MG",
           "status": "unverified_candidate",
@@ -882,7 +882,7 @@
         {
           "candidate_kind": "possible_event",
           "platform_id": "palacio",
-          "title": "13 LEILÃO \n                  Sexta-Feira \n                 13/11 Veículos sinistrados e sucatas \n                 Leilão 8905  209 veiculo  Aberto para lance",
+          "title": "13 LEILÃO \n                  Sexta-Feira \n                 13/11 Veículos sinistrados e sucatas \n                 Leilão 8905  210 veiculo  Aberto para lance",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8905",
           "state_hint": "MG",
           "status": "unverified_candidate",
@@ -891,7 +891,7 @@
         {
           "candidate_kind": "possible_event",
           "platform_id": "palacio",
-          "title": "13 LEILÃO \n                  Sexta-Feira \n                 13/11 Veículos em bom estado recuperados de financiamento \n                 Leilão 8906  103 veiculo  Aberto para lance",
+          "title": "13 LEILÃO \n                  Sexta-Feira \n                 13/11 Veículos em bom estado recuperados de financiamento \n                 Leilão 8906  102 veiculo  Aberto para lance",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8906",
           "state_hint": "MG",
           "status": "unverified_candidate",
@@ -900,7 +900,7 @@
         {
           "candidate_kind": "possible_event",
           "platform_id": "palacio",
-          "title": "14 LEILÃO \n                  Sábado \n                 14/11 Leilão de venda exclusiva de veículos premium \n                 Leilão 8874  142 veiculo  Aberto para lance",
+          "title": "14 LEILÃO \n                  Sábado \n                 14/11 Leilão de venda exclusiva de veículos premium \n                 Leilão 8874  147 veiculo  Aberto para lance",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8874",
           "state_hint": "MG",
           "status": "unverified_candidate",
@@ -909,7 +909,7 @@
         {
           "candidate_kind": "possible_event",
           "platform_id": "palacio",
-          "title": "16 LEILÃO \n                  Segunda-Feira \n                 16/11 Leilão virtual - materiais diversos e outros comitentes \n                 Leilão 8899  141 eletrodomestico  Abert",
+          "title": "16 LEILÃO \n                  Segunda-Feira \n                 16/11 Leilão virtual - materiais diversos e outros comitentes \n                 Leilão 8899  145 eletrodomestico  Abert",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8899",
           "state_hint": "MG",
           "status": "unverified_candidate",
@@ -918,7 +918,7 @@
         {
           "candidate_kind": "possible_event",
           "platform_id": "palacio",
-          "title": "17 LEILÃO \n                  Terça-Feira \n                 17/11 Materiais diversos, outlet mix e outros comitentes \n                 Leilão 8908  77 eletrodomestico  Aberto para l",
+          "title": "17 LEILÃO \n                  Terça-Feira \n                 17/11 Materiais diversos, outlet mix e outros comitentes \n                 Leilão 8908  83 eletrodomestico  Aberto para l",
           "source_url": "https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8908",
           "state_hint": "MG",
           "status": "unverified_candidate",

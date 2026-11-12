@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-12T14:16:24+00:00",
+  "checked_at": "2026-11-12T14:47:05+00:00",
   "platforms_total": 17,
   "reachable": 13,
   "unverified_candidates": 57,
@@ -180,7 +180,7 @@
         {
           "candidate_kind": "possible_event",
           "platform_id": "hisa",
-          "title": "Eletrônico  ELETRODOMÉSTICOS     Eletrônico   SAO CAETANO DO SUL, SP   Data: 26/11/2026 às 14:00   Leilão: 2543",
+          "title": "Eletrônico   2   lotes  ELETRODOMÉSTICOS     Eletrônico 2 LOTES   SAO CAETANO DO SUL, SP   Data: 26/11/2026 às 14:00   Leilão: 2543   2 lotes",
           "source_url": "https://hisaleiloes.com.br/leilao/2543",
           "state_hint": "SP",
           "status": "unverified_candidate",
@@ -214,7 +214,7 @@
         {
           "candidate_kind": "individual_lot",
           "platform_id": "leilo",
-          "title": "LOTE 3 TO Recuperado de Financiamento IVECO/STRALIS 800S48TZ favorite calendar_today  21/22  521.088 km location_on Palmas/TO R$ 246.000,00 Lance Inicial Leilão: 13/11/2026 Sex 13/",
+          "title": "LOTE 3 TO chevron_left chevron_right Recuperado de Financiamento IVECO/STRALIS 800S48TZ favorite calendar_today  21/22  521.088 km location_on Palmas/TO R$ 246.000,00 Lance Inicial",
           "source_url": "https://leilo.com.br/lote/c10c3e7b-4eee-491e-8154-f81527b1b8fc/",
           "state_hint": "GO",
           "status": "unverified_candidate",
@@ -340,7 +340,7 @@
         {
           "candidate_kind": "individual_lot",
           "platform_id": "leilo",
-          "title": "LOTE 23 SP Recuperado de Financiamento FACCHINI/SEMI REBOQUE FACCHINI QRLO favorite calendar_today  21/22 location_on São Carlos/SP R$ 60.000,00 Lance Inicial Leilão: 13/11/2026 Se",
+          "title": "LOTE 23 SP chevron_left chevron_right Recuperado de Financiamento FACCHINI/SEMI REBOQUE FACCHINI QRLO favorite calendar_today  21/22 location_on São Carlos/SP R$ 60.000,00 Lance In",
           "source_url": "https://leilo.com.br/lote/a105f246-99c4-44b3-ab67-2e490faa837d/",
           "state_hint": "GO",
           "status": "unverified_candidate",
@@ -349,7 +349,7 @@
         {
           "candidate_kind": "individual_lot",
           "platform_id": "leilo",
-          "title": "LOTE 24 SP Recuperado de Financiamento FACCHINI/SRF LO favorite calendar_today  21/22 location_on São Carlos/SP R$ 60.000,00 Lance Inicial Leilão: 13/11/2026 Sex 13/11 Sex • 09:30 ",
+          "title": "LOTE 24 SP chevron_left chevron_right Recuperado de Financiamento FACCHINI/SRF LO favorite calendar_today  21/22 location_on São Carlos/SP R$ 60.000,00 Lance Inicial Leilão: 13/11/",
           "source_url": "https://leilo.com.br/lote/76e5fe31-fb19-4fa5-8860-cd79a32463a8/",
           "state_hint": "GO",
           "status": "unverified_candidate",

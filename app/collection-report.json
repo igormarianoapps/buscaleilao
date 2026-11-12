@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-11-12T14:21:06+00:00",
-  "verified": 160,
+  "checked_at": "2026-11-12T14:51:40+00:00",
+  "verified": 161,
   "unique_events": 48,
   "states_with_events": [
     "AM",
@@ -44,8 +44,8 @@
     "VIP Leilões": 16,
     "Vardana Leilões": 1
   },
-  "platform_events": 148,
-  "direct_event_links": 160,
+  "platform_events": 149,
+  "direct_event_links": 161,
   "calendar_links": 0,
   "curated_source_links": 0,
   "curated_success": 3,
@@ -61,7 +61,7 @@
   "palacio_events": 0,
   "loop_events": 0,
   "leilo_errors": 0,
-  "secondary_errors": 0,
+  "secondary_errors": 31,
   "new_discoveries": 0,
   "failed": [
     {
@@ -83,6 +83,182 @@
     {
       "id": "claudio:https://www.claudiokussleiloes.com.br/relacao-foto/902",
       "error": "lot page not confirmed / no published lots"
+    },
+    {
+      "id": "parque:https://www.parquedosleiloes.com.br/leilao/1522/detalhes",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "parque:https://www.parquedosleiloes.com.br/leilao/1521/detalhes",
+      "error": "not published: no_verified_future_event_date"
+    },
+    {
+      "id": "parque:https://www.parquedosleiloes.com.br/leilao/1519/detalhes",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "parque:https://www.parquedosleiloes.com.br/leilao/1518/detalhes",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "parque:https://www.parquedosleiloes.com.br/leilao/1512/detalhes",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "parque:https://www.parquedosleiloes.com.br/leilao/1516/detalhes",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "parque:https://www.parquedosleiloes.com.br/leilao/1513/detalhes",
+      "error": "not published: no_verified_future_event_date"
+    },
+    {
+      "id": "parque:https://www.parquedosleiloes.com.br/leilao/1509/detalhes",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "parque:https://www.parquedosleiloes.com.br/leilao/1511/detalhes",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "parque:https://www.parquedosleiloes.com.br/leilao/1508/detalhes",
+      "error": "not published: no_verified_future_event_date"
+    },
+    {
+      "id": "parque:https://www.parquedosleiloes.com.br/leilao/1506/detalhes",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "parque:https://www.parquedosleiloes.com.br/leilao/1505/detalhes",
+      "error": "not published: no_verified_future_event_date"
+    },
+    {
+      "id": "flex:https://www.flexleiloes.com.br/lotes/2978",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "flex:https://www.flexleiloes.com.br/lotes/2963",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "flex:https://www.flexleiloes.com.br/lotes/2979",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "flex:https://www.flexleiloes.com.br/lotes/2991",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "flex:https://www.flexleiloes.com.br/lotes/2981",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "flex:https://www.flexleiloes.com.br/lotes/2984",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "flex:https://www.flexleiloes.com.br/lotes/2992",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "flex:https://www.flexleiloes.com.br/lotes/2990",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "flex:https://www.flexleiloes.com.br/lotes/2987",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "flex:https://www.flexleiloes.com.br/lotes/2988",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "flex:https://www.flexleiloes.com.br/lotes/2995",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "flex:https://www.flexleiloes.com.br/lotes/2994",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "hisa:https://hisaleiloes.com.br/leilao/2542",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "hisa:https://hisaleiloes.com.br/leilao/2534",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "hisa:https://www.hisaleiloes.com.br/leilao/2539",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "hisa:https://hisaleiloes.com.br/leilao/2539",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "hisa:https://hisaleiloes.com.br/leilao/2541",
+      "error": "not published: not_vehicle_category"
+    },
+    {
+      "id": "hisa:https://hisaleiloes.com.br/leilao/2543",
+      "error": "not published: lots_not_published"
+    },
+    {
+      "id": "hisa:https://hisaleiloes.com.br/leilao/2538",
+      "error": "not published: lots_not_published"
+    },
+    {
+      "id": "palacio:https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8856",
+      "error": "not published: event date, individual vehicle lots or lot city/UF not independently confirmed"
+    },
+    {
+      "id": "palacio:https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8874",
+      "error": "not published: event date, individual vehicle lots or lot city/UF not independently confirmed"
+    },
+    {
+      "id": "palacio:https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8882",
+      "error": "not published: event date, individual vehicle lots or lot city/UF not independently confirmed"
+    },
+    {
+      "id": "palacio:https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8893",
+      "error": "not published: event date, individual vehicle lots or lot city/UF not independently confirmed"
+    },
+    {
+      "id": "palacio:https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8898",
+      "error": "not published: event date, individual vehicle lots or lot city/UF not independently confirmed"
+    },
+    {
+      "id": "palacio:https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8899",
+      "error": "not published: event date, individual vehicle lots or lot city/UF not independently confirmed"
+    },
+    {
+      "id": "palacio:https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8902",
+      "error": "not published: event date, individual vehicle lots or lot city/UF not independently confirmed"
+    },
+    {
+      "id": "palacio:https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8903",
+      "error": "not published: event date, individual vehicle lots or lot city/UF not independently confirmed"
+    },
+    {
+      "id": "palacio:https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8905",
+      "error": "not published: event date, individual vehicle lots or lot city/UF not independently confirmed"
+    },
+    {
+      "id": "palacio:https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8906",
+      "error": "not published: event date, individual vehicle lots or lot city/UF not independently confirmed"
+    },
+    {
+      "id": "palacio:https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8907",
+      "error": "not published: event date, individual vehicle lots or lot city/UF not independently confirmed"
+    },
+    {
+      "id": "palacio:https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8908",
+      "error": "not published: event date, individual vehicle lots or lot city/UF not independently confirmed"
+    },
+    {
+      "id": "palacio:https://www.palaciodosleiloes.com.br/site/index.php?leilao_pesquisa=8909",
+      "error": "not published: event date, individual vehicle lots or lot city/UF not independently confirmed"
     },
     {
       "id": "loop",

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-12T14:23:24+00:00",
-  "feed_checked_at": "2026-11-12T14:21:06+00:00",
+  "generated_at": "2026-11-12T14:54:15+00:00",
+  "feed_checked_at": "2026-11-12T14:51:40+00:00",
   "platforms_total": 17,
   "per_platform": {
     "leilo": {
@@ -31,7 +31,7 @@
       "quarantined": 0,
       "sample_errors": [],
       "source_error": null,
-      "checked_at": "2026-11-12T14:16:24+00:00"
+      "checked_at": "2026-11-12T14:47:05+00:00"
     },
     "mcleilao": {
       "name": "MC Leilão",
@@ -46,7 +46,7 @@
       "quarantined": 0,
       "sample_errors": [],
       "source_error": null,
-      "checked_at": "2026-11-12T14:16:24+00:00"
+      "checked_at": "2026-11-12T14:47:05+00:00"
     },
     "flex": {
       "name": "Flex Leilões",
@@ -59,9 +59,15 @@
       "vehicle_candidates": 1,
       "lot_only_candidates": 0,
       "quarantined": 0,
-      "sample_errors": [],
+      "sample_errors": [
+        "not published: not_vehicle_category",
+        "not published: not_vehicle_category",
+        "not published: not_vehicle_category",
+        "not published: not_vehicle_category",
+        "not published: not_vehicle_category"
+      ],
       "source_error": null,
-      "checked_at": "2026-11-12T14:16:24+00:00"
+      "checked_at": "2026-11-12T14:47:05+00:00"
     },
     "parque": {
       "name": "Parque dos Leilões",
@@ -74,9 +80,15 @@
       "vehicle_candidates": 0,
       "lot_only_candidates": 0,
       "quarantined": 0,
-      "sample_errors": [],
+      "sample_errors": [
+        "not published: not_vehicle_category",
+        "not published: no_verified_future_event_date",
+        "not published: not_vehicle_category",
+        "not published: not_vehicle_category",
+        "not published: not_vehicle_category"
+      ],
       "source_error": null,
-      "checked_at": "2026-11-12T14:16:24+00:00"
+      "checked_at": "2026-11-12T14:47:05+00:00"
     },
     "sodre": {
       "name": "Sodré Santoro",
@@ -91,7 +103,7 @@
       "quarantined": 0,
       "sample_errors": [],
       "source_error": "HTTP Error 403: Forbidden",
-      "checked_at": "2026-11-12T14:16:24+00:00"
+      "checked_at": "2026-11-12T14:47:05+00:00"
     },
     "copart": {
       "name": "Copart",
@@ -113,7 +125,7 @@
       "quarantined": 0,
       "sample_errors": [],
       "source_error": null,
-      "checked_at": "2026-11-12T14:16:24+00:00"
+      "checked_at": "2026-11-12T14:47:05+00:00"
     },
     "loop": {
       "name": "Loop Brasil",
@@ -130,7 +142,7 @@
         "HTTP Error 429: Too Many Requests"
       ],
       "source_error": "HTTP Error 429: Too Many Requests",
-      "checked_at": "2026-11-12T14:16:24+00:00"
+      "checked_at": "2026-11-12T14:47:05+00:00"
     },
     "freitas": {
       "name": "Freitas Leiloeiro",
@@ -147,7 +159,7 @@
       "quarantined": 0,
       "sample_errors": [],
       "source_error": null,
-      "checked_at": "2026-11-12T14:16:24+00:00"
+      "checked_at": "2026-11-12T14:47:05+00:00"
     },
     "milan": {
       "name": "Milan Leilões",
@@ -162,7 +174,7 @@
       "quarantined": 0,
       "sample_errors": [],
       "source_error": "HTTP Error 403: Forbidden",
-      "checked_at": "2026-11-12T14:16:24+00:00"
+      "checked_at": "2026-11-12T14:47:05+00:00"
     },
     "vip": {
       "name": "VIP Leilões",
@@ -195,7 +207,7 @@
       "quarantined": 0,
       "sample_errors": [],
       "source_error": "redirect outside approved platform hosts",
-      "checked_at": "2026-11-12T14:16:24+00:00"
+      "checked_at": "2026-11-12T14:47:05+00:00"
     },
     "hisa": {
       "name": "Hisa Leilões",
@@ -208,9 +220,15 @@
       "vehicle_candidates": 0,
       "lot_only_candidates": 0,
       "quarantined": 0,
-      "sample_errors": [],
+      "sample_errors": [
+        "not published: not_vehicle_category",
+        "not published: not_vehicle_category",
+        "not published: not_vehicle_category",
+        "not published: not_vehicle_category",
+        "not published: not_vehicle_category"
+      ],
       "source_error": null,
-      "checked_at": "2026-11-12T14:16:24+00:00"
+      "checked_at": "2026-11-12T14:47:05+00:00"
     },
     "bolsa": {
       "name": "Bolsa de Leilões",
@@ -227,7 +245,7 @@
       "quarantined": 0,
       "sample_errors": [],
       "source_error": null,
-      "checked_at": "2026-11-12T14:16:24+00:00"
+      "checked_at": "2026-11-12T14:47:05+00:00"
     },
     "vardana": {
       "name": "Vardana Leilões",
@@ -246,7 +264,7 @@
         "lot page not confirmed / no published lots"
       ],
       "source_error": null,
-      "checked_at": "2026-11-12T14:16:24+00:00"
+      "checked_at": "2026-11-12T14:47:05+00:00"
     },
     "claudio": {
       "name": "Claudio Kuss Leilões",
@@ -263,7 +281,7 @@
         "lot page not confirmed / no published lots"
       ],
       "source_error": null,
-      "checked_at": "2026-11-12T14:16:24+00:00"
+      "checked_at": "2026-11-12T14:47:05+00:00"
     },
     "palacio": {
       "name": "Palácio dos Leilões",
@@ -276,9 +294,15 @@
       "vehicle_candidates": 9,
       "lot_only_candidates": 0,
       "quarantined": 0,
-      "sample_errors": [],
+      "sample_errors": [
+        "not published: event date, individual vehicle lots or lot city/UF not independently confirmed",
+        "not published: event date, individual vehicle lots or lot city/UF not independently confirmed",
+        "not published: event date, individual vehicle lots or lot city/UF not independently confirmed",
+        "not published: event date, individual vehicle lots or lot city/UF not independently confirmed",
+        "not published: event date, individual vehicle lots or lot city/UF not independently confirmed"
+      ],
       "source_error": null,
-      "checked_at": "2026-11-12T14:16:24+00:00"
+      "checked_at": "2026-11-12T14:47:05+00:00"
     },
     "rogerio": {
       "name": "Rogério Menezes",
@@ -293,7 +317,7 @@
       "quarantined": 0,
       "sample_errors": [],
       "source_error": null,
-      "checked_at": "2026-11-12T14:16:24+00:00"
+      "checked_at": "2026-11-12T14:47:05+00:00"
     },
     "pmklog": {
       "name": "PMKLog",
@@ -308,7 +332,7 @@
       "quarantined": 0,
       "sample_errors": [],
       "source_error": null,
-      "checked_at": "2026-11-12T14:16:24+00:00"
+      "checked_at": "2026-11-12T14:47:05+00:00"
     }
   },
   "disclaimer": "A monitored domain does not prove auctioneer legitimacy. An admitted event requires specific URL and evidence. Zero verified events may be legitimate.",
