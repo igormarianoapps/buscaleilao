@@ -264,5 +264,25 @@
     "requires_individual_event_link": true,
     "status": "candidate_adapter",
     "trust_notice": "Discovery candidate only. Site presence and HTTPS are not proof of auctioneer authorization; individually verify every published event."
+  },
+  {
+    "id": "pmklog",
+    "name": "PMKLog",
+    "state_hint": "GO",
+    "batch": 1,
+    "discovery_url": "https://pmklog.com.br/",
+    "additional_discovery_urls": [
+      "https://pmklog.com.br/leilao/",
+      "https://pmklog.com.br/nossos-leiloes"
+    ],
+    "allowed_hosts": [
+      "pmklog.com.br",
+      "www.pmklog.com.br"
+    ],
+    "source_kind": "private_auctioneer",
+    "monitor_enabled": true,
+    "requires_individual_event_link": true,
+    "status": "candidate_adapter",
+    "trust_notice": "Fonte candidata: edição atual, lotes e edital precisam ser confirmados; leilões antigos não são publicados."
   }
 ]

@@ -1,4 +1,4 @@
-"""Monitor the 16 user-nominated auction domains safely.
+"""Monitor nominated auction domains safely.
 
 Discover individual auction *candidates* from their public pages. Nothing here
 promotes a website or candidate into a trusted event. Publication requires

@@ -1,4 +1,4 @@
-"""Collector health report for all 16 sources. Never changes public events.
+"""Collector health report for all registered sources. Never changes public events.
 
 A single inaccessible site is a warning, not a reason to discard valid
 auction data. Severe drops in source coverage are explicit, not silent.
@@ -33,7 +33,7 @@ def assess(platforms,combined,quality,feed,now=None):
     if not freshness:warnings.append("last validated feed is missing or stale")
     unique=len({e.get("event_id") or e.get("id") for e in feed.get("events",[])})
     if not unique:warnings.append("feed has no confirmed events")
-    if len(sites)!=len(platforms):warnings.append("not all 16 sources have discovery results")
+    if len(sites)!=len(platforms):warnings.append("not all registered sources have discovery results")
     return {"checked_at":now.isoformat(timespec="seconds"),
             "total_sources":len(platforms),
             "sources_reachable":sum(x["reachable"] for x in status.values()),
@@ -56,7 +56,7 @@ def main():
     summary=os.environ.get("GITHUB_STEP_SUMMARY")
     if summary:
         with open(summary,"a",encoding="utf-8") as file:
-            file.write(f"\n## Saúde das 16 plataformas\n\n"
+            file.write(f"\n## Saúde das plataformas monitoradas\n\n"
                 f"- Acessíveis: {data['sources_reachable']}/{data['total_sources']}\n"
                 f"- Com eventos confirmados: {data['sources_with_events']}/{data['total_sources']}\n"
                 f"- Eventos distintos: {data['unique_feed_events']}\n"

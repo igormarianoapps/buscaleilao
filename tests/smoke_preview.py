@@ -75,9 +75,9 @@ async def main():
         assert not errors,"Browser errors: "+str(errors)
         sources_response=await page.goto(URL.rstrip("/")+"/fontes",wait_until="domcontentloaded",timeout=45000)
         assert sources_response and sources_response.status==200,"Source directory not published"
-        assert await page.locator(".source").count()==16,"Expected exactly 16 monitored sources"
+        assert await page.locator(".source").count()==17,"Expected exactly 17 monitored sources"
         assert await page.get_by_text("Uma fonte monitorada não significa um leilão validado.",exact=False).count()>=1
-        assert await page.locator(".source a[target='_blank']").count()==16
+        assert await page.locator(".source a[target='_blank']").count()==17
         assert not errors,"Browser errors on directory: "+str(errors)
         print(f"PREVIEW E2E PASS: {count} upcoming distinct auctions; "
               "keyword/state/dates/reset/direct-link/mobile checks OK")
