@@ -26,7 +26,7 @@ DIRECT={
     "vip":r"/evento/detalhes/[a-z0-9_-]+/?",
     "copart":r"/saleListResult/[0-9]+/20[0-9]{2}-[0-9]{2}-[0-9]{2}/?",
     "freitas":r"/Leiloes/Lotes",
-    "palacio":r"/site/index\\.php",
+    "palacio":r"/site/index\.php",
 }
 def normalize(value):
     x=unicodedata.normalize("NFD",str(value or "")).casefold()
@@ -41,7 +41,7 @@ def classify(row,site,today=None):
     if p.scheme!="https" or p.hostname not in hosts or p.username or p.password or p.fragment:
         return None
     special_palacio=(site["id"]=="palacio" and
-        re.fullmatch(r"/site/index\\.php",p.path,re.I) and
+        re.fullmatch(r"/site/index\.php",p.path,re.I) and
         re.fullmatch(r"leilao_pesquisa=[0-9]{1,10}",p.query or ""))
     if not special_palacio and (not re.fullmatch(DIRECT.get(site["id"],r"(?!)"),p.path,re.I) or (
         site["id"] not in ("vardana","freitas") and p.query)):
