@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-12T13:44:47+00:00",
+  "checked_at": "2026-11-12T13:55:18+00:00",
   "quarantined": [
     {
       "id": "vieiras-001-2026",
@@ -18,7 +18,13 @@
       "organizer": "Prefeitura de Serranópolis do Iguaçu",
       "source_url": "https://serranopolis.pr.gov.br/noticias/6113-governo-municipal-de-serranopolis-do-iguacu-realiza-leilao-eletronico-de-veiculos-maquinas-e-outros-bens",
       "reason": "missing direct auction destination"
+    },
+    {
+      "id": "curitiba-smdt-18-2026",
+      "organizer": "Prefeitura de Curitiba",
+      "source_url": "https://transito.curitiba.pr.gov.br/patio/leilao-eletronico-de-veiculos/52",
+      "reason": "missing direct auction destination"
     }
   ],
-  "total": 3
+  "total": 4
 }

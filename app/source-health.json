@@ -1,41 +1,40 @@
 {
-  "checked_at": "2026-11-12T13:44:47+00:00",
+  "checked_at": "2026-11-12T13:55:18+00:00",
   "sources": {
     "vieiras-001-2026": {
       "status": "ok",
-      "last_success_at": "2026-11-12T13:44:47+00:00",
+      "last_success_at": "2026-11-12T13:55:18+00:00",
       "consecutive_failures": 0
     },
     "detran-ba-23-2026": {
       "status": "ok",
-      "last_success_at": "2026-11-12T13:44:47+00:00",
+      "last_success_at": "2026-11-12T13:55:18+00:00",
       "consecutive_failures": 0
     },
     "aracaju-3-leilao-2026-11-12": {
       "status": "failed",
       "reason": "HTTP Error 403: Forbidden",
       "last_success_at": null,
-      "consecutive_failures": 31
+      "consecutive_failures": 33
     },
     "serranopolis-iguacu-pr-01-2026": {
       "status": "ok",
-      "last_success_at": "2026-11-12T13:44:47+00:00",
+      "last_success_at": "2026-11-12T13:55:18+00:00",
       "consecutive_failures": 0
     },
     "superbid-gru-06-2026-11-29": {
       "status": "failed",
       "reason": "HTTP Error 403: Forbidden",
       "last_success_at": null,
-      "consecutive_failures": 31
+      "consecutive_failures": 33
     },
     "curitiba-smdt-18-2026": {
-      "status": "failed",
-      "reason": "Page.goto: Timeout 25000ms exceeded.",
-      "last_success_at": "2026-11-12T13:08:25+00:00",
-      "consecutive_failures": 4
+      "status": "ok",
+      "last_success_at": "2026-11-12T13:55:18+00:00",
+      "consecutive_failures": 0
     }
   },
   "source_count": 6,
-  "successful_sources": 3,
-  "failed_sources": 3
+  "successful_sources": 4,
+  "failed_sources": 2
 }
