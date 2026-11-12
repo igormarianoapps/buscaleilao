@@ -126,3 +126,10 @@ jobs:
             git commit -m "data: record MVP collection stability checkpoint"
             git push
           fi
+
+      - name: Report failed verification without publishing stale data
+        if: failure()
+        run: |
+          echo "::error::Coleta ou validacao falhou; nenhum novo feed verificado deve ser publicado nesta execucao."
+          echo "## Falha na coleta" >> "$GITHUB_STEP_SUMMARY"
+          echo "O ultimo feed publicado foi preservado; sua data de atualizacao NAO representa nova verificacao." >> "$GITHUB_STEP_SUMMARY"
