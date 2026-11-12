@@ -1,5 +1,5 @@
 name: Auction platform integration pilot
-# Manual audit trigger: revalidate 17 sources with multi-state quality gates on develop.
+# Manual audit trigger: verify phase 1 resilience, alerts and double collection on develop.
 on:
   push:
     branches: [develop]
