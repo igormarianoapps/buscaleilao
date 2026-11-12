@@ -249,9 +249,19 @@ def collect_secondary(today=None, loader=get_page, discovery_path=None):
         # Use cached discovery solely as a URL index, including when the home
         # page is blocked or partially rendered. Every detail is fetched live.
         for url, label in fallback_candidates(site, combined).items():
-            if len(unique) >= 25:
+            if len(unique) >= 25 and url not in unique:
                 break
-            unique.setdefault(url, label)
+            # Homepage links can be icon-only ("Detalhes") while the public
+            # discovery card contains its full vehicle title and date.
+            # Prefer the corroborated candidate label, never candidate data
+            # as proof of lot inventory, date or location on the detail page.
+            old_label = unique.get(url, "")
+            if (url not in unique or
+                    (TITLE_VEHICLES.search(label[:220]) and
+                     event_date(label,today) and
+                     (not TITLE_VEHICLES.search(old_label[:220]) or
+                      not event_date(old_label,today)))):
+                unique[url] = label
         if not unique:
             errors.append({"id": site, "error": "no first-party auction detail URLs"})
         for url, label in unique.items():
