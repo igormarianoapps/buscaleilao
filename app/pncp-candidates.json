@@ -1,19 +1,6 @@
 {
-  "checked_at": "2026-11-12T18:25:54+00:00",
+  "checked_at": "2026-11-13T17:53:00+00:00",
   "candidates": [
-    {
-      "title": "Veículos",
-      "state": "SP",
-      "city": "São Paulo",
-      "organizer": "SECRETARIA DE GESTAO E GOVERNO DIGITAL",
-      "date_hint": "2026-11-12",
-      "date_hint_status": "pncp_deadline_unverified",
-      "source_url": "https://pncp.gov.br/app/editais/39467292000102/2026/79",
-      "pncp_control": "39467292000102-1-000079/2026",
-      "review_status": "needs_edital_confirmation",
-      "note": "PNCP proposal deadline is not independently verified auction start date.",
-      "source": "pncp_official_api"
-    },
     {
       "title": "Alienação, por meio de leilão público eletrônico, do tipo maior lance, de bens móveis inservíveis pertencentes ao patrimônio do Município de Ibiam/SC, incluindo veículos, equipamentos, mobiliários, materiais diversos e sucatas, conforme especificações, condiçõ",
       "state": "SC",
@@ -49,19 +36,6 @@
       "date_hint_status": "pncp_deadline_unverified",
       "source_url": "https://pncp.gov.br/app/editais/18128215000158/2026/46",
       "pncp_control": "18128215000158-1-000046/2026",
-      "review_status": "needs_edital_confirmation",
-      "note": "PNCP proposal deadline is not independently verified auction start date.",
-      "source": "pncp_official_api"
-    },
-    {
-      "title": "Alienação de bens móveis, incluindo máquinas pesadas, veículos leves e pesados, considerados inservíveis pelo Município de Nova Prata do Iguaçu/PR, conforme Lei Municipal n° 2039/2026 e  Decretos nº 4024/2025, nº 4091/2026 e nº 4098/2026, por meio de Leilão Pú",
-      "state": "PR",
-      "city": "Nova Prata do Iguaçu",
-      "organizer": "MUNICIPIO DE NOVA PRATA DO IGUACU",
-      "date_hint": "2026-11-16",
-      "date_hint_status": "pncp_deadline_unverified",
-      "source_url": "https://pncp.gov.br/app/editais/78103884000105/2026/159",
-      "pncp_control": "78103884000105-1-000159/2026",
       "review_status": "needs_edital_confirmation",
       "note": "PNCP proposal deadline is not independently verified auction start date.",
       "source": "pncp_official_api"
@@ -171,19 +145,6 @@
       "source": "pncp_official_api"
     },
     {
-      "title": "Veículos Automotores, Componentes e Acessórios",
-      "state": "BA",
-      "city": "Salvador",
-      "organizer": "DEPARTAMENTO ESTADUAL DE TRANSITO",
-      "date_hint": "2026-11-27",
-      "date_hint_status": "pncp_deadline_unverified",
-      "source_url": "https://pncp.gov.br/app/editais/13195920000154/2026/89",
-      "pncp_control": "13195920000154-1-000089/2026",
-      "review_status": "needs_edital_confirmation",
-      "note": "PNCP proposal deadline is not independently verified auction start date.",
-      "source": "pncp_official_api"
-    },
-    {
       "title": "ALIENACAO DE BENS MOVEIS VEICULOS  MAQUINAS  MATERIAIS E EQUIPAMENTOS INSERVIVEIS DE PROPRIEDADE DA PREFEITURA MUNICIPAL DE CRUZALIA SP",
       "state": "SP",
       "city": "Cruzália",
@@ -192,19 +153,6 @@
       "date_hint_status": "pncp_deadline_unverified",
       "source_url": "https://pncp.gov.br/app/editais/46179966000139/2026/33",
       "pncp_control": "46179966000139-1-000033/2026",
-      "review_status": "needs_edital_confirmation",
-      "note": "PNCP proposal deadline is not independently verified auction start date.",
-      "source": "pncp_official_api"
-    },
-    {
-      "title": "ALIENAÇÃO DE BENS MÓVEIS INSERVÍVEIS – VEÍCULOS, MÁQUINAS E SUCATAS, pertencentes ao patrimônio municipal",
-      "state": "PR",
-      "city": "Brasilândia do Sul",
-      "organizer": "MUNICIPIO DE BRASILANDIA DO SUL",
-      "date_hint": "2026-12-01",
-      "date_hint_status": "pncp_deadline_unverified",
-      "source_url": "https://pncp.gov.br/app/editais/95640520000175/2026/58",
-      "pncp_control": "95640520000175-1-000058/2026",
       "review_status": "needs_edital_confirmation",
       "note": "PNCP proposal deadline is not independently verified auction start date.",
       "source": "pncp_official_api"
@@ -249,19 +197,6 @@
       "source": "pncp_official_api"
     },
     {
-      "title": "LEILÃO ELETRÔNICO DE BENS MÓVEIS INSERVÍVEIS PARA PREFEITURA MUNICIPAS DE NUPORANGA/SP (VEÍCULOS)",
-      "state": "SP",
-      "city": "Nuporanga",
-      "organizer": "MUNICIPIO DE NUPORANGA",
-      "date_hint": "2026-12-02",
-      "date_hint_status": "pncp_deadline_unverified",
-      "source_url": "https://pncp.gov.br/app/editais/46754388000117/2026/27",
-      "pncp_control": "46754388000117-1-000027/2026",
-      "review_status": "needs_edital_confirmation",
-      "note": "PNCP proposal deadline is not independently verified auction start date.",
-      "source": "pncp_official_api"
-    },
-    {
       "title": "2.1.\tO objeto do presente leilão é a ALIENAÇÃO DE BENS MÓVEIS INSERVÍVEIS – VEÍCULOS, MÁQUINAS E SUCATAS, em atendimento das necessidades das Secretarias e Departamentos do Município de Esperança Nova – PR, Lei Federal nº. 14.133/2021, de 01 de abril de 2021 e",
       "state": "PR",
       "city": "Esperança Nova",
@@ -288,19 +223,6 @@
       "source": "pncp_official_api"
     },
     {
-      "title": "ALIENAÇÃO DE 23 BENS MÓVEIS DECLARADOS INSERVÍVEIS – VEÍCULOS, ÔNIBUS, AMBULÂNCIAS, CAMINHÕES, MÁQUINAS E EQUIPAMENTOS – PELO MAIOR LANCE POR LOTE .",
-      "state": "PR",
-      "city": "Altamira do Paraná",
-      "organizer": "MUNICIPIO DE ALTAMIRA DO PARANA",
-      "date_hint": "2026-12-03",
-      "date_hint_status": "pncp_deadline_unverified",
-      "source_url": "https://pncp.gov.br/app/editais/78069143000147/2026/116",
-      "pncp_control": "78069143000147-1-000116/2026",
-      "review_status": "needs_edital_confirmation",
-      "note": "PNCP proposal deadline is not independently verified auction start date.",
-      "source": "pncp_official_api"
-    },
-    {
       "title": "Alienação de 5 (cinco) veículos automotores do Poder Judiciário de Santa Catarina (PJSC)",
       "state": "SC",
       "city": "Florianópolis",
@@ -309,32 +231,6 @@
       "date_hint_status": "pncp_deadline_unverified",
       "source_url": "https://pncp.gov.br/app/editais/83845701000159/2026/73",
       "pncp_control": "83845701000159-1-000073/2026",
-      "review_status": "needs_edital_confirmation",
-      "note": "PNCP proposal deadline is not independently verified auction start date.",
-      "source": "pncp_official_api"
-    },
-    {
-      "title": "PREFEITURA DO MUNICÍPIO DE VOTUPORANGA - Veículos, Máquinas, Sucatas e Bens Móveis Inservíveis\r Município de Votuporanga/SP",
-      "state": "SP",
-      "city": "Votuporanga",
-      "organizer": "MUNICIPIO DE VOTUPORANGA",
-      "date_hint": "2026-12-04",
-      "date_hint_status": "pncp_deadline_unverified",
-      "source_url": "https://pncp.gov.br/app/editais/46599809000182/2026/402",
-      "pncp_control": "46599809000182-1-000402/2026",
-      "review_status": "needs_edital_confirmation",
-      "note": "PNCP proposal deadline is not independently verified auction start date.",
-      "source": "pncp_official_api"
-    },
-    {
-      "title": "Alienação onerosa, mediante licitação na modalidade LEILÃO ELETRÔNICO, de BENS IMÓVEIS URBANOS DOMINICAIS E BENS MÓVEIS INSERVÍVEIS - VEÍCULOS, MÁQUINAS E EQUIPAMENTOS de propriedade do Município de Nova Esperança, que, após análise individual de sua situação ",
-      "state": "PR",
-      "city": "Nova Esperança",
-      "organizer": "MUNICIPIO DE NOVA ESPERANCA",
-      "date_hint": "2026-12-04",
-      "date_hint_status": "pncp_deadline_unverified",
-      "source_url": "https://pncp.gov.br/app/editais/75730994000109/2026/418",
-      "pncp_control": "75730994000109-1-000418/2026",
       "review_status": "needs_edital_confirmation",
       "note": "PNCP proposal deadline is not independently verified auction start date.",
       "source": "pncp_official_api"
@@ -366,32 +262,6 @@
       "source": "pncp_official_api"
     },
     {
-      "title": "3.1.O presente leilão tem por objeto a alienação dos veículos descritos e\ncaracterizados no Anexo I deste Edital, que serão vendidos NO\nESTADO DE CONSERVAÇÃO EM QUE SE ENCONTRAM e SEM\nGARANTIA, reservando-se ao DETRAN/AL o direito de liberá-los, ou\nnão, a quem",
-      "state": "AL",
-      "city": "Maceió",
-      "organizer": "DEPARTAMENTO ESTADUAL DE TRANSITO DE ALAGOAS",
-      "date_hint": "2026-12-07",
-      "date_hint_status": "pncp_deadline_unverified",
-      "source_url": "https://pncp.gov.br/app/editais/04302189000128/2026/24",
-      "pncp_control": "04302189000128-1-000024/2026",
-      "review_status": "needs_edital_confirmation",
-      "note": "PNCP proposal deadline is not independently verified auction start date.",
-      "source": "pncp_official_api"
-    },
-    {
-      "title": "REALIZAÇÃO DE LEILÃO PÚBLICO DESTINADO À ALIENAÇÃO DE BENS MÓVEIS, MATERIAIS E EQUIPAMENTOS PERTENCENTES AO PATRIMÔNIO DO MUNICÍPIO DE JUARINA – TO, CONSIDERADOS INSERVÍVEIS, OCIOSOS, ANTIECONÔMICOS, OBSOLETOS OU SEM UTILIZAÇÃO PELA ADMINISTRAÇÃO PÚBLICA MUNIC",
-      "state": "TO",
-      "city": "Juarina",
-      "organizer": "MUNICIPIO DE JUARINA",
-      "date_hint": "2026-12-07",
-      "date_hint_status": "pncp_deadline_unverified",
-      "source_url": "https://pncp.gov.br/app/editais/37426509000100/2026/16",
-      "pncp_control": "37426509000100-1-000016/2026",
-      "review_status": "needs_edital_confirmation",
-      "note": "PNCP proposal deadline is not independently verified auction start date.",
-      "source": "pncp_official_api"
-    },
-    {
       "title": "- Realização de leilão público online por plataforma eletrônica para alienação de bens móveis inservíveis (ociosos, antieconômicos, irrecuperáveis, veículos, sucatas e outros), pertencentes ao patrimônio do município de Salto/SP - Rubrica nº 8003",
       "state": "SP",
       "city": "Salto",
@@ -416,24 +286,36 @@
       "review_status": "needs_edital_confirmation",
       "note": "PNCP proposal deadline is not independently verified auction start date.",
       "source": "pncp_official_api"
-    },
-    {
-      "title": "ALIENAÇÃO DE 23 LOTES DE BENS MÓVEIS INSERVÍVEIS DE PROPRIEDADE DO MUNICÍPIO DE PRESIDENTE GETÚLIO/SC, INCLUINDO VEÍCULOS, MÁQUINAS, EQUIPAMENTOS E MATERIAIS DIVERSOS, POR MEIO DE LICITAÇÃO NA MODALIDADE LEILÃO, CONFORME AUTORIZAÇÃO DA LEI MUNICIPAL N° 3.769, ",
-      "state": "SC",
-      "city": "Presidente Getúlio",
-      "organizer": "MUNICIPIO DE PRESIDENTE GETULIO",
-      "date_hint": "2027-01-20",
-      "date_hint_status": "pncp_deadline_unverified",
-      "source_url": "https://pncp.gov.br/app/editais/83102434000120/2026/194",
-      "pncp_control": "83102434000120-1-000194/2026",
-      "review_status": "needs_edital_confirmation",
-      "note": "PNCP proposal deadline is not independently verified auction start date.",
-      "source": "pncp_official_api"
     }
   ],
-  "count": 33,
+  "count": 22,
   "requests": 10,
-  "errors": [],
+  "errors": [
+    {
+      "modality": 1,
+      "week": 0,
+      "page": 1,
+      "error": "The read operation timed out"
+    },
+    {
+      "modality": 1,
+      "week": 4,
+      "page": 1,
+      "error": "The read operation timed out"
+    },
+    {
+      "modality": 13,
+      "week": 2,
+      "page": 1,
+      "error": "The read operation timed out"
+    },
+    {
+      "modality": 13,
+      "week": 4,
+      "page": 1,
+      "error": "The read operation timed out"
+    }
+  ],
   "events_automatically_published": 0,
   "note": "PNCP auctions are unverified candidates, not public scheduled events."
 }
