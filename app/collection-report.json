@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-11-12T18:23:10+00:00",
-  "verified": 116,
-  "unique_events": 34,
+  "checked_at": "2026-11-13T17:49:37+00:00",
+  "verified": 107,
+  "unique_events": 35,
   "states_with_events": [
     "AM",
     "BA",
@@ -38,23 +38,18 @@
   "organizers": {
     "Copart": 10,
     "DETRAN Bahia": 1,
-    "Freitas Leiloeiro": 4,
+    "Freitas Leiloeiro": 5,
     "Prefeitura de Curitiba": 1,
-    "Prefeitura de Serranópolis do Iguaçu": 1,
     "Prefeitura de Vieiras": 1,
-    "VIP Leilões": 16
+    "VIP Leilões": 17
   },
-  "platform_events": 112,
-  "direct_event_links": 108,
+  "platform_events": 104,
+  "direct_event_links": 99,
   "calendar_links": 0,
   "curated_source_links": 8,
-  "curated_success": 4,
-  "curated_failure": 2,
+  "curated_success": 3,
+  "curated_failure": 1,
   "failed": [
-    {
-      "id": "aracaju-3-leilao-2026-11-12",
-      "error": "HTTP Error 403: Forbidden"
-    },
     {
       "id": "superbid-gru-06-2026-11-29",
       "error": "HTTP Error 403: Forbidden"
